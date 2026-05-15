@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { useSession, signOut } from "next-auth/react";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -16,11 +17,14 @@ const navLinks = [
 export default function Navbar() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const { data: session, status } = useSession();
+  const loading = status === "loading";
 
   return (
     <nav className="bg-[#1B2A4A] shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
+
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <span className="text-white font-bold text-xl tracking-tight">
@@ -45,26 +49,43 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Desktop action buttons */}
+          {/* Desktop auth buttons */}
           <div className="hidden md:flex items-center gap-2">
-            <Link
-              href="/login"
-              className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
-            >
-              Login
-            </Link>
-            <Link
-              href="/signup"
-              className="px-4 py-2 text-sm font-medium text-white bg-[#2D6BE4] hover:bg-[#2558C5] rounded-lg transition-colors"
-            >
-              Sign Up
-            </Link>
-            <Link
-              href="/profile"
-              className="px-4 py-2 text-sm font-medium text-[#2D6BE4] border border-[#2D6BE4] hover:bg-[#2D6BE4] hover:text-white rounded-lg transition-colors"
-            >
-              My Profile
-            </Link>
+            {!loading && session ? (
+              <>
+                <Link
+                  href="/dashboard"
+                  className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+                    pathname === "/dashboard"
+                      ? "text-white bg-[#2D6BE4]/20"
+                      : "text-gray-300 hover:text-white hover:bg-white/10"
+                  }`}
+                >
+                  Dashboard
+                </Link>
+                <button
+                  onClick={() => signOut({ callbackUrl: "/" })}
+                  className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white border border-white/20 hover:border-white/40 rounded-lg transition-colors"
+                >
+                  Log Out
+                </button>
+              </>
+            ) : !loading ? (
+              <>
+                <Link
+                  href="/login"
+                  className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
+                >
+                  Login
+                </Link>
+                <Link
+                  href="/signup"
+                  className="px-4 py-2 text-sm font-medium text-white bg-[#2D6BE4] hover:bg-[#2558C5] rounded-lg transition-colors"
+                >
+                  Sign Up
+                </Link>
+              </>
+            ) : null}
           </div>
 
           {/* Mobile menu toggle */}
@@ -73,12 +94,7 @@ export default function Navbar() {
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {menuOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               ) : (
@@ -108,9 +124,17 @@ export default function Navbar() {
               </Link>
             ))}
             <hr className="border-white/10 my-2" />
-            <Link href="/login" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-gray-300 hover:text-white">Login</Link>
-            <Link href="/signup" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-center text-white bg-[#2D6BE4] hover:bg-[#2558C5] rounded-lg">Sign Up</Link>
-            <Link href="/profile" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-center text-[#2D6BE4] border border-[#2D6BE4] rounded-lg hover:bg-[#2D6BE4] hover:text-white">My Profile</Link>
+            {session ? (
+              <>
+                <Link href="/dashboard" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-gray-300 hover:text-white">Dashboard</Link>
+                <button onClick={() => signOut({ callbackUrl: "/" })} className="px-3 py-2 text-sm text-left text-gray-300 hover:text-white">Log Out</button>
+              </>
+            ) : (
+              <>
+                <Link href="/login" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-gray-300 hover:text-white">Login</Link>
+                <Link href="/signup" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-center text-white bg-[#2D6BE4] hover:bg-[#2558C5] rounded-lg">Sign Up</Link>
+              </>
+            )}
           </div>
         </div>
       )}
