@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const differenceCards = [
   {
@@ -74,33 +75,50 @@ export default function HomePage() {
     <div className="bg-[#F0F4FF]">
 
       {/* ── 1. HERO ── */}
-      <section className="bg-[#1B2A4A] text-white py-28 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <span className="inline-block mb-4 px-4 py-1 rounded-full bg-[#2D6BE4]/20 text-[#7EABFF] text-sm font-medium tracking-wide uppercase">
-            Built for South African students
-          </span>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            Your Personal{" "}
-            <span className="text-[#2D6BE4]">Study Companion</span>
-          </h1>
-          <p className="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Made for South African learners. Stay on track, boost marks, and
-            feel confident on exam day.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/nexi-tutor"
-              className="px-8 py-3.5 bg-[#2D6BE4] hover:bg-[#2558C5] text-white font-semibold rounded-xl transition-colors text-base shadow-lg shadow-[#2D6BE4]/30"
-            >
-              Ask Nexi anything...
-            </Link>
-            <Link
-              href="/signup"
-              className="px-8 py-3.5 border border-white/25 hover:bg-white/10 text-white font-semibold rounded-xl transition-colors text-base"
-            >
-              Sign Up Free
-            </Link>
+      <section className="bg-[#1B2A4A] text-white py-20 px-4">
+        <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16">
+
+          {/* Mascot */}
+          <div className="flex-shrink-0 flex justify-center w-full md:w-auto">
+            <Image
+              src="/nexi.png"
+              alt="Nexi mascot"
+              width={400}
+              height={400}
+              className="w-48 sm:w-64 md:w-auto md:h-[400px] object-contain drop-shadow-2xl"
+              priority
+            />
           </div>
+
+          {/* Text + CTAs */}
+          <div className="flex-1 text-center md:text-left">
+            <span className="inline-block mb-4 px-4 py-1 rounded-full bg-[#2D6BE4]/20 text-[#7EABFF] text-sm font-medium tracking-wide uppercase">
+              Built for South African students
+            </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              Your Personal{" "}
+              <span className="text-[#2D6BE4]">Study Companion</span>
+            </h1>
+            <p className="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+              Made for South African learners. Stay on track, boost marks, and
+              feel confident on exam day.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <Link
+                href="/nexi-tutor"
+                className="px-8 py-3.5 bg-[#2D6BE4] hover:bg-[#2558C5] text-white font-semibold rounded-xl transition-colors text-base shadow-lg shadow-[#2D6BE4]/30"
+              >
+                Ask Nexi anything...
+              </Link>
+              <Link
+                href="/signup"
+                className="px-8 py-3.5 border border-white/25 hover:bg-white/10 text-white font-semibold rounded-xl transition-colors text-base"
+              >
+                Sign Up Free
+              </Link>
+            </div>
+          </div>
+
         </div>
       </section>
 
