@@ -9,6 +9,8 @@ export interface AppUser {
   apsScore: number;
   grade: string;
   curriculum: string;
+  role: "learner" | "teacher";
+  school: string;
 }
 
 // Singleton pattern — survives Next.js hot-reload in development
@@ -16,7 +18,7 @@ const g = globalThis as typeof globalThis & { _nexiUsers?: Map<string, AppUser> 
 
 if (!g._nexiUsers) {
   g._nexiUsers = new Map<string, AppUser>();
-  // Seed a demo account
+  // Seed a demo learner account
   g._nexiUsers.set("demo@nexistudy.co.za", {
     id: "demo-1",
     name: "Thandi Dlamini",
@@ -26,6 +28,21 @@ if (!g._nexiUsers) {
     apsScore: 28,
     grade: "Grade 12",
     curriculum: "CAPS",
+    role: "learner",
+    school: "",
+  });
+  // Seed a demo teacher account
+  g._nexiUsers.set("teacher@nexistudy.co.za", {
+    id: "demo-t1",
+    name: "Mr. Naidoo",
+    email: "teacher@nexistudy.co.za",
+    password: bcrypt.hashSync("password123", 10),
+    plan: "free",
+    apsScore: 0,
+    grade: "",
+    curriculum: "CAPS",
+    role: "teacher",
+    school: "Northview High",
   });
 }
 

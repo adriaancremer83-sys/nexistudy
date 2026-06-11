@@ -33,6 +33,7 @@ export default async function DashboardPage() {
   if (!session?.user) redirect("/login");
 
   const user = session.user as ExtendedUser;
+  if (user.role === "teacher") redirect("/teachers/dashboard");
   const apsScore = user.apsScore ?? 0;
   const apsPct = Math.round((apsScore / 42) * 100);
   const status = apsStatus(apsScore);

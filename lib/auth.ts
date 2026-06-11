@@ -27,6 +27,8 @@ export const authOptions: NextAuthOptions = {
           apsScore: user.apsScore,
           grade: user.grade,
           curriculum: user.curriculum,
+          role: user.role ?? "learner",
+          school: user.school ?? "",
         };
       },
     }),
@@ -39,6 +41,8 @@ export const authOptions: NextAuthOptions = {
         token.apsScore = user.apsScore;
         token.grade = user.grade;
         token.curriculum = user.curriculum;
+        token.role = user.role;
+        token.school = user.school;
       }
       return token;
     },
@@ -48,6 +52,8 @@ export const authOptions: NextAuthOptions = {
         session.user.apsScore = token.apsScore;
         session.user.grade = token.grade;
         session.user.curriculum = token.curriculum;
+        session.user.role = token.role;
+        session.user.school = token.school;
       }
       return session;
     },

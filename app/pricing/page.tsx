@@ -201,6 +201,44 @@ export default function PricingPage() {
 
         </div>
 
+        {/* ── SCHOOLS & CLASS LICENCES ── */}
+        <Reveal>
+          <div className="max-w-5xl mx-auto mt-8 rounded-2xl border border-[#00D4AA]/30 bg-[#00D4AA]/[0.05] p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-[#00D4AA]/15 text-[#00D4AA] text-[10px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">
+              Pilot Programme
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-[#00D4AA] mb-2">
+                Schools &amp; Classes
+              </p>
+              <h3 className="text-white font-extrabold text-2xl mb-2">
+                One licence. Your whole class.
+              </h3>
+              <p className="text-white/55 text-sm leading-relaxed max-w-xl">
+                Full Premium for up to 35 learners from{" "}
+                <span className="text-white font-bold">R2,999/month</span> — that&apos;s
+                about <span className="text-[#00D4AA] font-bold">R86 per learner</span>{" "}
+                instead of R199. Includes the teacher dashboard with the class
+                weak-spots heatmap. Billed to the school, termly or annually.
+              </p>
+            </div>
+            <div className="flex flex-col items-stretch gap-2.5 flex-shrink-0">
+              <Link
+                href="/contact"
+                className="text-center px-7 py-3.5 bg-[#00D4AA] hover:bg-[#1FE5BE] text-[#050D1A] font-extrabold text-sm rounded-xl transition-colors"
+              >
+                Talk to us about a pilot
+              </Link>
+              <Link
+                href="/teachers"
+                className="text-center text-xs text-white/50 hover:text-white transition-colors"
+              >
+                Teachers start free →
+              </Link>
+            </div>
+          </div>
+        </Reveal>
+
         <p className="text-center text-xs text-white/30 mt-8">
           All prices in South African Rand (ZAR) · Billed monthly · Cancel anytime
         </p>

@@ -10,6 +10,7 @@ const EXPLORE_LINKS = [
 const ACCOUNT_LINKS = [
   { label: "Create free account", href: "/signup" },
   { label: "Sign in", href: "/login" },
+  { label: "For Teachers", href: "/teachers" },
   { label: "Contact", href: "/contact" },
 ];
 

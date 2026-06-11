@@ -7,6 +7,8 @@ declare module "next-auth" {
     apsScore: number;
     grade: string;
     curriculum: string;
+    role: "learner" | "teacher";
+    school: string;
   }
 
   interface Session {
@@ -18,6 +20,8 @@ declare module "next-auth" {
       apsScore: number;
       grade: string;
       curriculum: string;
+      role: "learner" | "teacher";
+      school: string;
     };
   }
 }
@@ -28,5 +32,7 @@ declare module "next-auth/jwt" {
     apsScore: number;
     grade: string;
     curriculum: string;
+    role: "learner" | "teacher";
+    school: string;
   }
 }
