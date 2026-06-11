@@ -1,0 +1,7 @@
+Rebuild the About Us page (app/about-us/page.tsx) with NexiStudy's real content:
+1. Hero: 'About NexiStudy' headline, subtitle 'Built in South Africa. For South African learners. Powered by AI, guided by heart.' Add Nexi image (public/nexi.png) on the right side.
+2. Mission & Vision cards side by side: Mission — 'At NexiStudy, our mission is simple: to help South African learners unlock their full potential. We provide smart, personalized tools that make studying clearer, easier, and more motivating.' Vision — 'Our vision is bold: to redefine how students learn in South Africa. By combining local curriculum expertise with cutting-edge AI, we aim to make quality education accessible, engaging, and future-ready for every learner.'
+3. The Challenge section: heading 'The Challenge in Education Today', paragraph about SA learners facing information overload, large classes, teachers with heavy workloads, students feeling alone preparing for exams.
+4. Our Core Philosophy section: 'Assisting, Not Replacing' — We believe in the irreplaceable value of human teachers. NexiStudy lightens workloads, sharpens study habits, and frees time for what matters.
+5. Three value pillars: Pinpoint weaknesses → focus on subjects that matter most / Learn smarter → structured study plans make revision stress-free / Grow confident → every step builds independence and exam readiness.
+6. CTA section: 'Let's Transform Learning Together' with two buttons: 'Start Free Today' and 'Go Premium

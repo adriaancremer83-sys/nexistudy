@@ -5,17 +5,27 @@ import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { IconCheck, IconWarning } from "@/components/icons";
 
 const INPUT_CLS =
-  "w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-[#1B2A4A] placeholder:text-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2D6BE4]/30 focus:border-[#2D6BE4] transition-colors bg-white";
+  "w-full px-4 py-3 bg-white/5 border border-white/15 rounded-xl text-sm text-white placeholder:text-white/25 focus:outline-none focus:ring-2 focus:ring-[#00D4FF]/40 focus:border-[#00D4FF] transition-colors";
+
+const GRADES = ["Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"];
+const CURRICULA = ["CAPS", "IEB", "Cambridge"];
 
 export default function SignUpPage() {
   const router = useRouter();
-  const [form, setForm] = useState({ name: "", email: "", password: "" });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    password: "",
+    grade: "",
+    curriculum: "CAPS",
+  });
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     setError("");
   }
@@ -59,29 +69,35 @@ export default function SignUpPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F0F4FF] flex flex-col lg:flex-row">
+    <div className="min-h-screen flex flex-col lg:flex-row">
 
       {/* ── Left panel — branding ── */}
-      <div className="hidden lg:flex flex-col justify-center items-center bg-[#1B2A4A] lg:w-5/12 px-12 py-16 text-white">
-        <Image
-          src="/nexi.png"
-          alt="Nexi mascot"
-          width={260}
-          height={260}
-          className="object-contain drop-shadow-2xl mb-8"
-          priority
-        />
+      <div className="hidden lg:flex flex-col justify-center items-center lg:w-5/12 px-12 py-16 text-white relative overflow-hidden border-r border-white/10 bg-white/[0.02]">
+        <div className="relative animate-float mb-8">
+          <div
+            aria-hidden
+            className="glow-ring absolute inset-0 m-auto w-[105%] h-[105%] rounded-full"
+          />
+          <Image
+            src="/nexi.png"
+            alt="Nexi mascot"
+            width={260}
+            height={260}
+            className="relative object-contain drop-shadow-2xl"
+            priority
+          />
+        </div>
         <h2 className="text-3xl font-bold text-center mb-3">
-          Join <span className="text-[#2D6BE4]">NexiStudy</span>
+          Join <span className="text-gradient">NexiStudy</span>
         </h2>
-        <p className="text-gray-400 text-center text-sm leading-relaxed max-w-xs">
+        <p className="text-white/50 text-center text-sm leading-relaxed max-w-xs">
           Smart, personalised study tools built for South African learners.
           Start free — no credit card needed.
         </p>
         <div className="mt-8 flex flex-col gap-3 w-full max-w-xs">
           {["CAPS, IEB & Cambridge aligned", "AI Tutor available 24/7", "APS Calculator + Career Roadmap"].map((f) => (
-            <div key={f} className="flex items-center gap-2.5 text-sm text-gray-300">
-              <span className="text-[#2D6BE4] font-bold flex-shrink-0">✓</span>
+            <div key={f} className="flex items-center gap-2.5 text-sm text-white/70">
+              <IconCheck className="w-4 h-4 text-[#00D4FF] flex-shrink-0" />
               {f}
             </div>
           ))}
@@ -93,17 +109,17 @@ export default function SignUpPage() {
 
         {/* Mobile logo */}
         <Link href="/" className="lg:hidden mb-8">
-          <span className="text-2xl font-bold text-[#1B2A4A]">
-            Nexi<span className="text-[#2D6BE4]">Study</span>
+          <span className="text-2xl font-bold text-white">
+            Nexi<span className="text-[#00D4FF]">Study</span>
           </span>
         </Link>
 
-        <div className="w-full max-w-md">
+        <div className="w-full max-w-md glass rounded-2xl p-8">
           <div className="mb-8 text-center lg:text-left">
-            <h1 className="text-3xl font-bold text-[#1B2A4A] mb-1">Create your account</h1>
-            <p className="text-gray-500 text-sm">
+            <h1 className="text-3xl font-bold text-white mb-1">Create your account</h1>
+            <p className="text-white/50 text-sm">
               Already have one?{" "}
-              <Link href="/login" className="text-[#2D6BE4] font-semibold hover:text-[#2558C5]">
+              <Link href="/login" className="text-[#00D4FF] font-semibold hover:text-white transition-colors">
                 Sign in
               </Link>
             </p>
@@ -111,7 +127,7 @@ export default function SignUpPage() {
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">
+              <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
                 Full Name
               </label>
               <input
@@ -127,7 +143,7 @@ export default function SignUpPage() {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">
+              <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
                 Email Address
               </label>
               <input
@@ -142,8 +158,44 @@ export default function SignUpPage() {
               />
             </div>
 
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
+                  Grade
+                </label>
+                <select
+                  name="grade"
+                  value={form.grade}
+                  onChange={handleChange}
+                  required
+                  className={INPUT_CLS + " cursor-pointer"}
+                >
+                  <option value="" disabled>Select grade</option>
+                  {GRADES.map((g) => (
+                    <option key={g} value={g}>{g}</option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
+                  Curriculum
+                </label>
+                <select
+                  name="curriculum"
+                  value={form.curriculum}
+                  onChange={handleChange}
+                  required
+                  className={INPUT_CLS + " cursor-pointer"}
+                >
+                  {CURRICULA.map((c) => (
+                    <option key={c} value={c}>{c}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
             <div>
-              <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">
+              <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
                 Password
               </label>
               <input
@@ -160,22 +212,22 @@ export default function SignUpPage() {
             </div>
 
             {error && (
-              <div className="flex items-start gap-2.5 bg-red-50 border border-red-200 rounded-xl px-4 py-3">
-                <span className="text-red-500 mt-0.5 flex-shrink-0">⚠</span>
-                <p className="text-sm text-red-600">{error}</p>
+              <div className="flex items-start gap-2.5 bg-red-400/10 border border-red-400/30 rounded-xl px-4 py-3">
+                <IconWarning className="w-4 h-4 text-red-300 mt-0.5 flex-shrink-0" />
+                <p className="text-sm text-red-300">{error}</p>
               </div>
             )}
 
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-3.5 bg-[#2D6BE4] hover:bg-[#2558C5] disabled:opacity-60 disabled:cursor-not-allowed text-white font-bold rounded-xl transition-colors text-sm shadow-md shadow-[#2D6BE4]/20 mt-2"
+              className="w-full py-3.5 bg-[#2D6BE4] hover:bg-[#4A82F0] disabled:opacity-60 disabled:cursor-not-allowed text-white font-bold rounded-xl transition-all text-sm shadow-lg shadow-[#2D6BE4]/30 hover:shadow-[#00D4FF]/30 mt-2 cursor-pointer"
             >
               {loading ? "Creating account…" : "Create Free Account"}
             </button>
           </form>
 
-          <p className="text-[10px] text-gray-400 text-center mt-5 leading-relaxed">
+          <p className="text-[10px] text-white/40 text-center mt-5 leading-relaxed">
             By signing up you agree to our Terms of Service and Privacy Policy.
             Your data is protected under POPIA.
           </p>

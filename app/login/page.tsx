@@ -6,9 +6,10 @@ import { useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
+import { IconWarning } from "@/components/icons";
 
 const INPUT_CLS =
-  "w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-[#1B2A4A] placeholder:text-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2D6BE4]/30 focus:border-[#2D6BE4] transition-colors bg-white";
+  "w-full px-4 py-3 bg-white/5 border border-white/15 rounded-xl text-sm text-white placeholder:text-white/25 focus:outline-none focus:ring-2 focus:ring-[#00D4FF]/40 focus:border-[#00D4FF] transition-colors";
 
 function LoginForm() {
   const router = useRouter();
@@ -52,7 +53,7 @@ function LoginForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">
+        <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
           Email Address
         </label>
         <input
@@ -69,13 +70,13 @@ function LoginForm() {
 
       <div>
         <div className="flex items-center justify-between mb-1.5">
-          <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider">
+          <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider">
             Password
           </label>
           <button
             type="button"
             onClick={fillDemo}
-            className="text-[10px] font-semibold text-[#2D6BE4] hover:text-[#2558C5] transition-colors"
+            className="text-[10px] font-semibold text-[#00D4FF] hover:text-white transition-colors cursor-pointer"
           >
             Use demo account
           </button>
@@ -93,16 +94,16 @@ function LoginForm() {
       </div>
 
       {error && (
-        <div className="flex items-start gap-2.5 bg-red-50 border border-red-200 rounded-xl px-4 py-3">
-          <span className="text-red-500 mt-0.5 flex-shrink-0">⚠</span>
-          <p className="text-sm text-red-600">{error}</p>
+        <div className="flex items-start gap-2.5 bg-red-400/10 border border-red-400/30 rounded-xl px-4 py-3">
+          <IconWarning className="w-4 h-4 text-red-300 mt-0.5 flex-shrink-0" />
+          <p className="text-sm text-red-300">{error}</p>
         </div>
       )}
 
       <button
         type="submit"
         disabled={loading}
-        className="w-full py-3.5 bg-[#2D6BE4] hover:bg-[#2558C5] disabled:opacity-60 disabled:cursor-not-allowed text-white font-bold rounded-xl transition-colors text-sm shadow-md shadow-[#2D6BE4]/20 mt-2"
+        className="w-full py-3.5 bg-[#2D6BE4] hover:bg-[#4A82F0] disabled:opacity-60 disabled:cursor-not-allowed text-white font-bold rounded-xl transition-all text-sm shadow-lg shadow-[#2D6BE4]/30 hover:shadow-[#00D4FF]/30 mt-2 cursor-pointer"
       >
         {loading ? "Signing in…" : "Sign In"}
       </button>
@@ -112,23 +113,29 @@ function LoginForm() {
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen bg-[#F0F4FF] flex flex-col lg:flex-row">
+    <div className="min-h-screen flex flex-col lg:flex-row">
 
       {/* ── Left panel — branding ── */}
-      <div className="hidden lg:flex flex-col justify-center items-center bg-[#1B2A4A] lg:w-5/12 px-12 py-16 text-white">
-        <Image
-          src="/nexi.png"
-          alt="Nexi mascot"
-          width={260}
-          height={260}
-          className="object-contain drop-shadow-2xl mb-8"
-          priority
-        />
+      <div className="hidden lg:flex flex-col justify-center items-center lg:w-5/12 px-12 py-16 text-white relative overflow-hidden border-r border-white/10 bg-white/[0.02]">
+        <div className="relative animate-float mb-8">
+          <div
+            aria-hidden
+            className="glow-ring absolute inset-0 m-auto w-[105%] h-[105%] rounded-full"
+          />
+          <Image
+            src="/nexi.png"
+            alt="Nexi mascot"
+            width={260}
+            height={260}
+            className="relative object-contain drop-shadow-2xl"
+            priority
+          />
+        </div>
         <h2 className="text-3xl font-bold text-center mb-3">
           Welcome back to{" "}
-          <span className="text-[#2D6BE4]">NexiStudy</span>
+          <span className="text-gradient">NexiStudy</span>
         </h2>
-        <p className="text-gray-400 text-center text-sm leading-relaxed max-w-xs">
+        <p className="text-white/50 text-center text-sm leading-relaxed max-w-xs">
           Your study companion is ready. Pick up right where you left off.
         </p>
       </div>
@@ -138,17 +145,17 @@ export default function LoginPage() {
 
         {/* Mobile logo */}
         <Link href="/" className="lg:hidden mb-8">
-          <span className="text-2xl font-bold text-[#1B2A4A]">
-            Nexi<span className="text-[#2D6BE4]">Study</span>
+          <span className="text-2xl font-bold text-white">
+            Nexi<span className="text-[#00D4FF]">Study</span>
           </span>
         </Link>
 
-        <div className="w-full max-w-md">
+        <div className="w-full max-w-md glass rounded-2xl p-8">
           <div className="mb-8 text-center lg:text-left">
-            <h1 className="text-3xl font-bold text-[#1B2A4A] mb-1">Sign in</h1>
-            <p className="text-gray-500 text-sm">
+            <h1 className="text-3xl font-bold text-white mb-1">Sign in</h1>
+            <p className="text-white/50 text-sm">
               Don&apos;t have an account?{" "}
-              <Link href="/signup" className="text-[#2D6BE4] font-semibold hover:text-[#2558C5]">
+              <Link href="/signup" className="text-[#00D4FF] font-semibold hover:text-white transition-colors">
                 Sign up free
               </Link>
             </p>
@@ -158,12 +165,12 @@ export default function LoginPage() {
             <LoginForm />
           </Suspense>
 
-          <div className="mt-5 p-4 bg-[#1B2A4A]/5 rounded-xl border border-[#1B2A4A]/8">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-1.5">Demo account</p>
-            <p className="text-xs text-gray-500">
-              Email: <span className="font-mono text-[#1B2A4A]">demo@nexistudy.co.za</span>
+          <div className="mt-5 p-4 bg-white/5 rounded-xl border border-white/10">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-1.5">Demo account</p>
+            <p className="text-xs text-white/50">
+              Email: <span className="font-mono text-white">demo@nexistudy.co.za</span>
               <br />
-              Password: <span className="font-mono text-[#1B2A4A]">password123</span>
+              Password: <span className="font-mono text-white">password123</span>
             </p>
           </div>
         </div>

@@ -1,38 +1,55 @@
 import Link from "next/link";
+import Reveal from "@/components/Reveal";
+import { IconCheck, IconLock } from "@/components/icons";
 
 // ── Feature lists ─────────────────────────────────────────────────────────────
 
 const FREE_INCLUDED = [
-  "7 Tutor chats per day",
-  "3 uploads per month",
-  "APS Tool (7 subjects)",
+  "5 Nexi Tutor chats per day",
+  "3 photo uploads per month",
+  "APS Calculator — know your score",
+  "All 11 official SA languages",
+  "Study streaks & daily motivation",
   "1 personal goal",
 ];
 
 const FREE_LOCKED = [
-  "Subject Mastery",
-  "Study tips & motivation",
+  "Nexi's Exam Plan",
+  "Weak-spots map & targeted practice",
+  "Career Roadmap",
+  "Past-paper walkthroughs",
 ];
 
 const PREMIUM_INCLUDED = [
-  "Unlimited Tutor chats",
-  "Unlimited uploads",
-  "Full APS Tool + Career Roadmap",
-  "Subject Mastery unlocked",
-  "Study tips & motivation unlocked",
-  "Ad-free + Premium support",
+  "Unlimited Nexi Tutor chats",
+  "Unlimited photo uploads",
+  "Nexi's Exam Plan — a day-by-day route to exam day",
+  "Weak-spots map + practice that targets them",
+  "Career Roadmap — what your APS unlocks & the gap to close",
+  "Past-paper walkthroughs (CAPS, IEB & Cambridge)",
+  "Weekly parent progress report",
+  "Grade 8–9: Foundation Gap Finder + termly reports",
+  "Ad-free + priority support",
 ];
 
 const ANNUAL_INCLUDED = [
   "Everything in Premium",
   "Multiple learners under one account",
-  "Priority support",
+  "Perfect for Grade 8–12 siblings",
   "Save 20% on Premium price",
 ];
 
 // ── FAQ data ──────────────────────────────────────────────────────────────────
 
 const FAQS = [
+  {
+    q: "Why is there a daily chat limit on the Free plan?",
+    a: "Every answer Nexi gives is powered by advanced AI that costs us real money per question. The Free plan gives you a genuine daily study session at no cost — and Premium members make unlimited help possible. No tricks, just honest maths.",
+  },
+  {
+    q: "Which languages does Nexi speak?",
+    a: "All 11 official South African languages — isiZulu, isiXhosa, Afrikaans, English, Sepedi, Setswana, Sesotho, Xitsonga, siSwati, Tshivenda, and isiNdebele. Language support is free for everyone, on every plan.",
+  },
   {
     q: "Can I cancel anytime?",
     a: "Yes — cancel your Premium subscription at any time with no penalties or fees. You'll keep full access until the end of your current billing period, then automatically move to the Free plan.",
@@ -43,7 +60,11 @@ const FAQS = [
   },
   {
     q: "Which grades does NexiStudy support?",
-    a: "NexiStudy currently supports Grade 10, 11, and 12 learners across the CAPS, IEB, and Cambridge curricula. Support for Grade 8 and 9 is in development and coming soon.",
+    a: "NexiStudy supports Grade 8 to 12 across CAPS, IEB, and Cambridge. Nexi Tutor covers Senior Phase (Grade 8–9) subjects like Natural Sciences, EMS, and Technology, plus the full FET curriculum. A Subject Choice Advisor — helping families pick the right subjects at the end of Grade 9 — is in development.",
+  },
+  {
+    q: "Is there a cheaper option than R199 per month?",
+    a: "We're working on two: an Exam Season Pass (a once-off pass covering the build-up to mid-year and final exams) and an Annual/Family plan that covers multiple learners at a discount. Join free and we'll let you know the moment they launch.",
   },
 ];
 
@@ -51,187 +72,202 @@ const FAQS = [
 
 export default function PricingPage() {
   return (
-    <div className="min-h-screen bg-[#F0F4FF]">
+    <div className="min-h-screen">
 
       {/* ── HERO ── */}
-      <section className="bg-[#1B2A4A] text-white py-20 px-4 text-center">
+      <section className="page-hero py-20 px-4 text-center">
         <div className="max-w-2xl mx-auto">
-          <span className="inline-block mb-4 px-4 py-1 rounded-full bg-[#2D6BE4]/20 text-[#7EABFF] text-sm font-medium tracking-wide uppercase">
+          <span className="inline-block mb-4 px-4 py-1 rounded-full glass text-[#00D4FF] text-sm font-medium tracking-wide uppercase">
             Pricing
           </span>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight text-white">
             Choose the plan that fits{" "}
-            <span className="text-[#2D6BE4]">your journey</span>
+            <span className="text-gradient">your journey</span>
           </h1>
-          <p className="text-gray-300 text-lg leading-relaxed">
+          <p className="text-white/60 text-lg leading-relaxed">
             Start free. Upgrade anytime for the full NexiStudy experience.
           </p>
         </div>
       </section>
+
+      <div className="section-divider" />
 
       {/* ── PLANS ── */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
 
           {/* ── 1. FREE ── */}
-          <div className="bg-white rounded-2xl border border-[#1B2A4A]/10 shadow-sm p-8 flex flex-col">
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Free Plan</p>
-            <div className="flex items-end gap-1 mb-1">
-              <span className="text-5xl font-extrabold text-[#1B2A4A]">R0</span>
-              <span className="text-sm text-gray-400 mb-1.5">/month</span>
+          <Reveal className="h-full">
+            <div className="glass-card p-8 flex flex-col h-full">
+              <p className="text-xs font-bold uppercase tracking-widest text-white/40 mb-3">Free Plan</p>
+              <div className="flex items-end gap-1 mb-1">
+                <span className="text-5xl font-extrabold text-white">R0</span>
+                <span className="text-sm text-white/40 mb-1.5">/month</span>
+              </div>
+              <p className="text-xs font-semibold text-white/40 mb-6">Forever free</p>
+
+              <ul className="space-y-3 mb-6 flex-1">
+                {FREE_INCLUDED.map((f) => (
+                  <li key={f} className="flex items-start gap-2.5 text-sm text-white">
+                    <IconCheck className="w-4 h-4 mt-0.5 text-[#00D4FF] flex-shrink-0" />
+                    {f}
+                  </li>
+                ))}
+                {FREE_LOCKED.map((f) => (
+                  <li key={f} className="flex items-start gap-2.5 text-sm">
+                    <IconLock className="w-4 h-4 mt-0.5 flex-shrink-0 text-white/25" />
+                    <span className="text-white/25 select-none blur-[2px]">{f}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <Link
+                href="/signup"
+                className="text-center py-3 rounded-xl font-semibold text-sm border-2 border-[#2D6BE4] text-[#7EABFF] hover:bg-[#2D6BE4] hover:text-white transition-colors"
+              >
+                Start Free — No Credit Card Needed
+              </Link>
             </div>
-            <p className="text-xs font-semibold text-gray-400 mb-6">Forever free</p>
-
-            <ul className="space-y-3 mb-6 flex-1">
-              {FREE_INCLUDED.map((f) => (
-                <li key={f} className="flex items-start gap-2.5 text-sm text-[#1B2A4A]">
-                  <span className="mt-0.5 text-[#2D6BE4] font-bold flex-shrink-0">✓</span>
-                  {f}
-                </li>
-              ))}
-              {FREE_LOCKED.map((f) => (
-                <li key={f} className="flex items-start gap-2.5 text-sm">
-                  <span className="mt-0.5 flex-shrink-0 text-gray-300">🔒</span>
-                  <span className="text-gray-300 select-none blur-[2px]">{f}</span>
-                </li>
-              ))}
-            </ul>
-
-            <Link
-              href="/signup"
-              className="text-center py-3 rounded-xl font-semibold text-sm border-2 border-[#2D6BE4] text-[#2D6BE4] hover:bg-[#2D6BE4] hover:text-white transition-colors"
-            >
-              Start Free — No Credit Card Needed
-            </Link>
-          </div>
+          </Reveal>
 
           {/* ── 2. PREMIUM ── */}
-          <div className="bg-[#1B2A4A] rounded-2xl ring-2 ring-[#2D6BE4] shadow-xl p-8 flex flex-col relative overflow-hidden">
-            {/* Best Value badge */}
-            <div className="absolute top-0 right-0">
-              <div className="bg-[#2D6BE4] text-white text-[10px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">
-                Best Value 🔥
+          <Reveal delay={120} className="h-full">
+            <div className="glass-strong rounded-2xl ring-2 ring-[#00D4FF]/60 shadow-[0_0_40px_rgba(0,212,255,0.15)] p-8 flex flex-col h-full relative overflow-hidden">
+              {/* Best Value badge */}
+              <div className="absolute top-0 right-0">
+                <div className="bg-gradient-to-r from-[#2D6BE4] to-[#00D4FF] text-white text-[10px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">
+                  Best Value
+                </div>
               </div>
+
+              <p className="text-xs font-bold uppercase tracking-widest text-[#00D4FF] mb-3">Premium Plan</p>
+              <div className="flex items-end gap-1 mb-1">
+                <span className="text-5xl font-extrabold text-white">R199</span>
+                <span className="text-sm text-white/40 mb-1.5">/month</span>
+              </div>
+              <p className="text-xs font-semibold text-[#00D4FF] mb-6">Most Popular</p>
+
+              <ul className="space-y-3 mb-8 flex-1">
+                {PREMIUM_INCLUDED.map((f) => (
+                  <li key={f} className="flex items-start gap-2.5 text-sm text-white">
+                    <IconCheck className="w-4 h-4 mt-0.5 text-[#00D4FF] flex-shrink-0" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+
+              <Link
+                href="/signup"
+                className="animate-pulse-glow text-center py-3.5 rounded-xl font-bold text-sm bg-[#2D6BE4] hover:bg-[#4A82F0] text-white transition-colors"
+              >
+                Upgrade to Premium
+              </Link>
             </div>
-
-            <p className="text-xs font-bold uppercase tracking-widest text-[#7EABFF] mb-3">Premium Plan</p>
-            <div className="flex items-end gap-1 mb-1">
-              <span className="text-5xl font-extrabold text-white">R199</span>
-              <span className="text-sm text-gray-400 mb-1.5">/month</span>
-            </div>
-            <p className="text-xs font-semibold text-[#2D6BE4] mb-6">Most Popular</p>
-
-            <ul className="space-y-3 mb-8 flex-1">
-              {PREMIUM_INCLUDED.map((f) => (
-                <li key={f} className="flex items-start gap-2.5 text-sm text-white">
-                  <span className="mt-0.5 text-[#2D6BE4] font-bold flex-shrink-0">✓</span>
-                  {f}
-                </li>
-              ))}
-            </ul>
-
-            <Link
-              href="/signup"
-              className="text-center py-3.5 rounded-xl font-bold text-sm bg-[#2D6BE4] hover:bg-[#2558C5] text-white transition-colors shadow-lg shadow-[#2D6BE4]/30"
-            >
-              Upgrade to Premium
-            </Link>
-          </div>
+          </Reveal>
 
           {/* ── 3. ANNUAL / FAMILY ── */}
-          <div className="bg-white rounded-2xl border border-[#1B2A4A]/10 shadow-sm p-8 flex flex-col relative overflow-hidden">
-            {/* Coming soon ribbon */}
-            <div className="absolute top-0 right-0">
-              <div className="bg-[#1B2A4A]/10 text-[#1B2A4A] text-[10px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">
-                Coming Soon
+          <Reveal delay={240} className="h-full">
+            <div className="glass-card p-8 flex flex-col h-full relative overflow-hidden">
+              {/* Coming soon ribbon */}
+              <div className="absolute top-0 right-0">
+                <div className="bg-white/10 text-white/70 text-[10px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">
+                  Coming Soon
+                </div>
               </div>
+
+              <p className="text-xs font-bold uppercase tracking-widest text-white/40 mb-3">Annual / Family</p>
+              <div className="flex items-end gap-2 mb-1">
+                <span className="text-5xl font-extrabold text-white">–20%</span>
+              </div>
+              <p className="text-xs font-semibold text-[#00D4FF] mb-6">Save 20% on Premium</p>
+
+              <ul className="space-y-3 mb-8 flex-1">
+                {ANNUAL_INCLUDED.map((f) => (
+                  <li key={f} className="flex items-start gap-2.5 text-sm text-white">
+                    <IconCheck className="w-4 h-4 mt-0.5 text-[#00D4FF] flex-shrink-0" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+
+              <button
+                disabled
+                className="text-center py-3 rounded-xl font-semibold text-sm border-2 border-white/15 text-white/30 cursor-not-allowed"
+              >
+                Notify Me
+              </button>
             </div>
-
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Annual / Family</p>
-            <div className="flex items-end gap-2 mb-1">
-              <span className="text-5xl font-extrabold text-[#1B2A4A]">–20%</span>
-            </div>
-            <p className="text-xs font-semibold text-[#2D6BE4] mb-6">Save 20% on Premium</p>
-
-            <ul className="space-y-3 mb-8 flex-1">
-              {ANNUAL_INCLUDED.map((f) => (
-                <li key={f} className="flex items-start gap-2.5 text-sm text-[#1B2A4A]">
-                  <span className="mt-0.5 text-[#2D6BE4] font-bold flex-shrink-0">✓</span>
-                  {f}
-                </li>
-              ))}
-            </ul>
-
-            <button
-              disabled
-              className="text-center py-3 rounded-xl font-semibold text-sm border-2 border-[#1B2A4A]/20 text-[#1B2A4A]/40 cursor-not-allowed"
-            >
-              Notify Me
-            </button>
-          </div>
+          </Reveal>
 
         </div>
 
-        <p className="text-center text-xs text-gray-400 mt-8">
+        <p className="text-center text-xs text-white/30 mt-8">
           All prices in South African Rand (ZAR) · Billed monthly · Cancel anytime
         </p>
       </section>
 
+      <div className="section-divider" />
+
       {/* ── FAQ ── */}
-      <section className="py-16 px-4 bg-white border-t border-[#1B2A4A]/8">
+      <section className="py-16 px-4">
         <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-[#1B2A4A] mb-2">
-              Frequently Asked Questions
+          <Reveal className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-white mb-2">
+              Frequently Asked <span className="text-gradient">Questions</span>
             </h2>
-            <p className="text-gray-500 text-sm">Everything you need to know before getting started.</p>
-          </div>
+            <p className="text-white/50 text-sm">Everything you need to know before getting started.</p>
+          </Reveal>
 
           <div className="space-y-4">
-            {FAQS.map((faq) => (
-              <details
-                key={faq.q}
-                className="group bg-[#F0F4FF] rounded-2xl border border-[#1B2A4A]/8 overflow-hidden"
-              >
-                <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none select-none">
-                  <span className="font-semibold text-[#1B2A4A] text-sm pr-4">{faq.q}</span>
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#2D6BE4]/10 text-[#2D6BE4] flex items-center justify-center text-sm font-bold transition-transform group-open:rotate-45">
-                    +
-                  </span>
-                </summary>
-                <div className="px-6 pb-5">
-                  <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
-                </div>
-              </details>
+            {FAQS.map((faq, i) => (
+              <Reveal key={faq.q} delay={i * 100}>
+                <details className="group glass rounded-2xl overflow-hidden">
+                  <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none select-none">
+                    <span className="font-semibold text-white text-sm pr-4">{faq.q}</span>
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#00D4FF]/15 text-[#00D4FF] flex items-center justify-center text-sm font-bold transition-transform group-open:rotate-45">
+                      +
+                    </span>
+                  </summary>
+                  <div className="px-6 pb-5">
+                    <p className="text-sm text-white/50 leading-relaxed">{faq.a}</p>
+                  </div>
+                </details>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
+      <div className="section-divider" />
+
       {/* ── FINAL CTA ── */}
-      <section className="bg-[#1B2A4A] py-16 px-4 text-center">
-        <div className="max-w-xl mx-auto">
+      <section className="py-20 px-4 text-center relative overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-b from-transparent to-[#2D6BE4]/15 pointer-events-none"
+        />
+        <Reveal className="relative max-w-xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
-            Ready to unlock your full potential?
+            Ready to unlock your <span className="text-gradient">full potential?</span>
           </h2>
-          <p className="text-gray-400 mb-8 text-sm leading-relaxed">
+          <p className="text-white/50 mb-8 text-sm leading-relaxed">
             Join thousands of South African learners already studying smarter with NexiStudy.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/signup"
-              className="px-8 py-3.5 bg-[#2D6BE4] hover:bg-[#2558C5] text-white font-bold rounded-xl transition-colors text-sm shadow-lg shadow-[#2D6BE4]/30"
+              className="animate-pulse-glow px-8 py-3.5 bg-[#2D6BE4] hover:bg-[#4A82F0] text-white font-bold rounded-xl transition-colors text-sm"
             >
               Start Free Today
             </Link>
             <Link
               href="/nexi-tutor"
-              className="px-8 py-3.5 border border-white/20 hover:bg-white/10 text-white font-semibold rounded-xl transition-colors text-sm"
+              className="glass px-8 py-3.5 hover:border-[#00D4FF]/50 hover:bg-white/10 text-white font-semibold rounded-xl transition-all text-sm"
             >
               Try Nexi Tutor
             </Link>
           </div>
-        </div>
+        </Reveal>
       </section>
 
     </div>

@@ -3,11 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import Reveal from "@/components/Reveal";
+import { IconUser, IconBookOpen, IconCpuChip } from "@/components/icons";
 
 // ── Data ─────────────────────────────────────────────────────────────────────
 
 const CURRICULA = ["CAPS", "IEB", "Cambridge"];
-const GRADES = ["Grade 10", "Grade 11", "Grade 12"];
+const GRADES = ["Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"];
+const SENIOR_GRADES = new Set(["Grade 8", "Grade 9"]);
 
 const SUBJECTS_BY_CURRICULUM: Record<string, string[]> = {
   CAPS: [
@@ -61,6 +64,98 @@ const SUBJECTS_BY_CURRICULUM: Record<string, string[]> = {
     "Literature in English",
   ],
 };
+
+// Senior Phase (Grade 8–9). CAPS and IEB schools follow the national
+// Senior Phase subject set; Cambridge uses Lower Secondary.
+const SENIOR_SUBJECTS_BY_CURRICULUM: Record<string, string[]> = {
+  CAPS: [
+    "English Home Language",
+    "Afrikaans First Additional Language",
+    "isiZulu Home Language",
+    "Mathematics",
+    "Natural Sciences",
+    "Social Sciences (History & Geography)",
+    "Economic & Management Sciences (EMS)",
+    "Technology",
+    "Creative Arts",
+    "Life Orientation",
+  ],
+  IEB: [
+    "English Home Language",
+    "Afrikaans First Additional Language",
+    "isiZulu Home Language",
+    "Mathematics",
+    "Natural Sciences",
+    "Social Sciences (History & Geography)",
+    "Economic & Management Sciences (EMS)",
+    "Technology",
+    "Creative Arts",
+    "Life Orientation",
+  ],
+  Cambridge: [
+    "English",
+    "Mathematics",
+    "Science",
+    "Geography",
+    "History",
+    "ICT & Computing",
+    "Global Perspectives",
+  ],
+};
+
+// Grade 8–9 topics. Subjects not listed here fall back to TOPICS_BY_SUBJECT.
+const SENIOR_TOPICS_BY_SUBJECT: Record<string, string[]> = {
+  "Mathematics": [
+    "Integers & Whole Numbers", "Fractions, Decimals & Percentages",
+    "Exponents", "Algebraic Expressions", "Equations",
+    "Geometry of Shapes & Angles", "Area, Perimeter & Volume",
+    "Graphs (Introduction)", "Data Handling", "Probability",
+  ],
+  "Natural Sciences": [
+    "Matter & Materials", "Energy & Change", "Life & Living", "Planet Earth & Beyond",
+  ],
+  "Social Sciences (History & Geography)": [
+    "Map Skills", "Climate & Vegetation", "Settlement & Migration",
+    "The Industrial Revolution", "The Mineral Revolution in SA",
+    "World War I & II", "Human Rights & Democracy",
+  ],
+  "Economic & Management Sciences (EMS)": [
+    "The Economy & Circular Flow", "Financial Literacy & Budgets",
+    "Accounting Equation Basics", "Entrepreneurship", "Markets, Trade & Inequality",
+  ],
+  "Technology": [
+    "The Design Process", "Structures", "Mechanical Systems & Control",
+    "Electrical Systems", "Processing of Materials",
+  ],
+  "Creative Arts": ["Visual Arts", "Music", "Drama", "Dance"],
+  "Afrikaans First Additional Language": [
+    "Begripstoets", "Taalstrukture & -konvensies", "Skryfwerk", "Letterkunde",
+  ],
+  "English": [
+    "Reading Comprehension", "Writing Skills", "Grammar & Vocabulary", "Speaking & Listening",
+  ],
+  "Science": [
+    "Scientific Enquiry", "Biology Basics", "Chemistry Basics", "Physics Basics",
+  ],
+  "ICT & Computing": [
+    "Computational Thinking", "Programming Basics", "Spreadsheets & Data", "Online Safety",
+  ],
+  "Global Perspectives": [
+    "Research Skills", "Analysis & Evaluation", "Collaboration & Communication",
+  ],
+};
+
+function subjectsFor(curriculum: string, grade: string): string[] {
+  const source = SENIOR_GRADES.has(grade) ? SENIOR_SUBJECTS_BY_CURRICULUM : SUBJECTS_BY_CURRICULUM;
+  return source[curriculum] ?? [];
+}
+
+function topicsFor(subject: string, grade: string): string[] {
+  if (SENIOR_GRADES.has(grade)) {
+    return SENIOR_TOPICS_BY_SUBJECT[subject] ?? TOPICS_BY_SUBJECT[subject] ?? [];
+  }
+  return TOPICS_BY_SUBJECT[subject] ?? [];
+}
 
 const TOPICS_BY_SUBJECT: Record<string, string[]> = {
   "Mathematics": [
@@ -173,7 +268,7 @@ const SA_LANGUAGES = [
   "isiNdebele",
 ];
 
-const FREE_CHAT_LIMIT = 10;
+const FREE_CHAT_LIMIT = 5;
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -198,13 +293,13 @@ const WELCOME_MSG: Message = {
 };
 
 function counterColor(n: number): string {
-  if (n >= 7) return "bg-emerald-50 text-emerald-700 border-emerald-200";
-  if (n >= 4) return "bg-amber-50 text-amber-700 border-amber-200";
-  return "bg-red-50 text-red-600 border-red-200";
+  if (n >= 4) return "bg-emerald-400/10 text-emerald-300 border-emerald-400/30";
+  if (n >= 2) return "bg-amber-400/10 text-amber-300 border-amber-400/30";
+  return "bg-red-400/10 text-red-300 border-red-400/30";
 }
 
 const SELECT_CLS =
-  "w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm text-[#1B2A4A] bg-white focus:outline-none focus:ring-2 focus:ring-[#2D6BE4]/30 focus:border-[#2D6BE4]";
+  "w-full bg-white/5 border border-white/15 rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#00D4FF]/40 focus:border-[#00D4FF] transition-colors cursor-pointer";
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
@@ -234,8 +329,8 @@ export default function NexiTutorPage() {
   const chatEndRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  const currentSubjects = SUBJECTS_BY_CURRICULUM[curriculum] ?? [];
-  const currentTopics = TOPICS_BY_SUBJECT[subject] ?? [];
+  const currentSubjects = subjectsFor(curriculum, grade);
+  const currentTopics = topicsFor(subject, grade);
 
   // Auto-resize textarea
   useEffect(() => {
@@ -252,8 +347,15 @@ export default function NexiTutorPage() {
 
   function handleCurriculumChange(val: string) {
     setCurriculum(val);
-    const subs = SUBJECTS_BY_CURRICULUM[val] ?? [];
+    const subs = subjectsFor(val, grade);
     setSubject(subs[0] ?? "");
+    setTopic("");
+  }
+
+  function handleGradeChange(val: string) {
+    setGrade(val);
+    const subs = subjectsFor(curriculum, val);
+    if (!subs.includes(subject)) setSubject(subs[0] ?? "");
     setTopic("");
   }
 
@@ -294,25 +396,25 @@ export default function NexiTutorPage() {
   // ── Render ────────────────────────────────────────────────────────────────
 
   return (
-    <div className="min-h-screen bg-[#F0F4FF]">
+    <div className="min-h-screen">
 
       {/* ── 1. HERO ── */}
-      <section className="bg-[#1B2A4A] text-white py-14 px-4">
+      <section className="page-hero py-16 px-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-14">
 
           {/* Text */}
           <div className="flex-1 text-center md:text-left order-2 md:order-1">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-3">
-              Nexi <span className="text-[#2D6BE4]">Tutor</span>
+            <h1 className="text-4xl sm:text-5xl font-bold mb-3 text-white">
+              Nexi <span className="text-gradient">Tutor</span>
             </h1>
-            <p className="text-xl text-gray-300 mb-7 leading-snug">
+            <p className="text-xl text-white/70 mb-7 leading-snug">
               Smarter, Faster — Always Here for You
             </p>
             <div className="flex flex-wrap gap-2 justify-center md:justify-start">
               {["SA Curriculum", "Steps", "Quizzes", "Examples"].map((badge) => (
                 <span
                   key={badge}
-                  className="px-4 py-1.5 rounded-full bg-[#2D6BE4]/20 text-[#7EABFF] text-sm font-medium border border-[#2D6BE4]/30"
+                  className="glass px-4 py-1.5 rounded-full text-[#00D4FF] text-sm font-medium"
                 >
                   {badge}
                 </span>
@@ -320,276 +422,290 @@ export default function NexiTutorPage() {
             </div>
           </div>
 
-          {/* Nexi image */}
+          {/* Nexi image with glow */}
           <div className="flex-shrink-0 order-1 md:order-2 flex justify-center">
-            <Image
-              src="/nexi.png"
-              alt="Nexi mascot"
-              width={320}
-              height={320}
-              className="w-40 sm:w-56 md:w-auto md:h-72 object-contain drop-shadow-2xl"
-              priority
-            />
+            <div className="relative animate-float">
+              <div
+                aria-hidden
+                className="glow-ring absolute inset-0 m-auto w-[105%] h-[105%] -translate-y-1 rounded-full"
+              />
+              <Image
+                src="/nexi.png"
+                alt="Nexi mascot"
+                width={320}
+                height={320}
+                className="relative w-40 sm:w-56 md:w-auto md:h-72 object-contain drop-shadow-2xl"
+                priority
+              />
+            </div>
           </div>
 
         </div>
       </section>
 
+      <div className="section-divider" />
+
       {/* ── MAIN ── */}
       <div className="max-w-4xl mx-auto px-4 py-10 space-y-6">
 
         {/* ── 2. PROFILE CARD ── */}
-        <div className="bg-white rounded-2xl border border-[#1B2A4A]/10 shadow-sm overflow-hidden">
-          <div className="flex items-center justify-between px-6 py-4 border-b border-[#1B2A4A]/8 bg-[#1B2A4A]/5">
-            <div className="flex items-center gap-2">
-              <span className="text-base">👤</span>
-              <h2 className="text-xs font-semibold text-[#1B2A4A] uppercase tracking-widest">My Profile</h2>
-            </div>
-            {!editing ? (
-              <button
-                onClick={startEdit}
-                className="text-xs font-semibold text-[#2D6BE4] hover:text-[#2558C5] border border-[#2D6BE4]/30 hover:border-[#2D6BE4] px-3 py-1.5 rounded-lg transition-colors"
-              >
-                Edit
-              </button>
-            ) : (
-              <div className="flex gap-2">
+        <Reveal>
+          <div className="glass rounded-2xl overflow-hidden">
+            <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-white/5">
+              <div className="flex items-center gap-2.5 text-[#00D4FF]">
+                <IconUser className="w-4 h-4" />
+                <h2 className="text-xs font-semibold text-white uppercase tracking-widest">My Profile</h2>
+              </div>
+              {!editing ? (
                 <button
-                  onClick={() => setEditing(false)}
-                  className="text-xs font-semibold text-gray-400 hover:text-gray-600 border border-gray-200 px-3 py-1.5 rounded-lg transition-colors"
+                  onClick={startEdit}
+                  className="text-xs font-semibold text-[#00D4FF] hover:text-white border border-[#00D4FF]/30 hover:border-[#00D4FF] px-3 py-1.5 rounded-lg transition-colors cursor-pointer"
                 >
-                  Cancel
+                  Edit
                 </button>
-                <button
-                  onClick={saveEdit}
-                  className="text-xs font-semibold text-white bg-[#2D6BE4] hover:bg-[#2558C5] px-3 py-1.5 rounded-lg transition-colors"
-                >
-                  Save
-                </button>
-              </div>
-            )}
-          </div>
-
-          <div className="px-6 py-5">
-            {!editing ? (
-              <div className="grid grid-cols-2 sm:grid-cols-5 gap-5">
-                {[
-                  { label: "Curriculum", value: profile.curriculum },
-                  { label: "Grade", value: profile.grade },
-                  { label: "School", value: profile.school || "—" },
-                  { label: "Goal", value: profile.goal || "—" },
-                  { label: "Subject", value: profile.subject },
-                ].map((field) => (
-                  <div key={field.label}>
-                    <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">
-                      {field.label}
-                    </p>
-                    <p className="text-sm font-semibold text-[#1B2A4A] leading-snug break-words">
-                      {field.value}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-xs font-semibold text-gray-500 mb-1.5">Curriculum</label>
-                  <select
-                    value={draft.curriculum}
-                    onChange={(e) => setDraft({ ...draft, curriculum: e.target.value })}
-                    className={SELECT_CLS}
-                  >
-                    {CURRICULA.map((c) => <option key={c}>{c}</option>)}
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-xs font-semibold text-gray-500 mb-1.5">Grade</label>
-                  <select
-                    value={draft.grade}
-                    onChange={(e) => setDraft({ ...draft, grade: e.target.value })}
-                    className={SELECT_CLS}
-                  >
-                    {GRADES.map((g) => <option key={g}>{g}</option>)}
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-xs font-semibold text-gray-500 mb-1.5">School</label>
-                  <input
-                    type="text"
-                    value={draft.school}
-                    onChange={(e) => setDraft({ ...draft, school: e.target.value })}
-                    placeholder="e.g. Northview High"
-                    className={SELECT_CLS + " placeholder:text-gray-300"}
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs font-semibold text-gray-500 mb-1.5">Goal</label>
-                  <input
-                    type="text"
-                    value={draft.goal}
-                    onChange={(e) => setDraft({ ...draft, goal: e.target.value })}
-                    placeholder="e.g. Study Medicine at UCT"
-                    className={SELECT_CLS + " placeholder:text-gray-300"}
-                  />
-                </div>
-                <div className="sm:col-span-2">
-                  <label className="block text-xs font-semibold text-gray-500 mb-1.5">Favourite Subject</label>
-                  <select
-                    value={draft.subject}
-                    onChange={(e) => setDraft({ ...draft, subject: e.target.value })}
-                    className={SELECT_CLS}
-                  >
-                    {(SUBJECTS_BY_CURRICULUM[draft.curriculum] ?? []).map((s) => (
-                      <option key={s}>{s}</option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* ── 3. LESSON SELECTOR ── */}
-        <div className="bg-white rounded-2xl border border-[#1B2A4A]/10 shadow-sm overflow-hidden">
-          <div className="flex items-center gap-2 px-6 py-4 border-b border-[#1B2A4A]/8 bg-[#1B2A4A]/5">
-            <span className="text-base">📚</span>
-            <h2 className="text-xs font-semibold text-[#1B2A4A] uppercase tracking-widest">Lesson Selector</h2>
-          </div>
-          <div className="px-6 py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            <div>
-              <label className="block text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1.5">Curriculum</label>
-              <select value={curriculum} onChange={(e) => handleCurriculumChange(e.target.value)} className={SELECT_CLS}>
-                {CURRICULA.map((c) => <option key={c}>{c}</option>)}
-              </select>
-            </div>
-            <div>
-              <label className="block text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1.5">Grade</label>
-              <select value={grade} onChange={(e) => setGrade(e.target.value)} className={SELECT_CLS}>
-                {GRADES.map((g) => <option key={g}>{g}</option>)}
-              </select>
-            </div>
-            <div>
-              <label className="block text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1.5">Subject</label>
-              <select value={subject} onChange={(e) => handleSubjectChange(e.target.value)} className={SELECT_CLS}>
-                {currentSubjects.map((s) => <option key={s}>{s}</option>)}
-              </select>
-            </div>
-            <div>
-              <label className="block text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1.5">Topic</label>
-              <select
-                value={topic}
-                onChange={(e) => setTopic(e.target.value)}
-                disabled={currentTopics.length === 0}
-                className={SELECT_CLS + " disabled:opacity-50 disabled:cursor-not-allowed"}
-              >
-                <option value="">— All topics —</option>
-                {currentTopics.map((t) => <option key={t}>{t}</option>)}
-              </select>
-            </div>
-            <div>
-              <label className="block text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1.5">Language</label>
-              <select value={language} onChange={(e) => setLanguage(e.target.value)} className={SELECT_CLS}>
-                {SA_LANGUAGES.map((l) => <option key={l}>{l}</option>)}
-              </select>
-            </div>
-          </div>
-        </div>
-
-        {/* ── 4. CHAT ── */}
-        <div className="bg-white rounded-2xl border border-[#1B2A4A]/10 shadow-sm overflow-hidden">
-
-          {/* Header + counter */}
-          <div className="flex items-center justify-between px-6 py-4 border-b border-[#1B2A4A]/8 bg-[#1B2A4A]/5">
-            <div className="flex items-center gap-2">
-              <span className="text-base">🤖</span>
-              <h2 className="text-xs font-semibold text-[#1B2A4A] uppercase tracking-widest">Chat with Nexi</h2>
-            </div>
-            <span className={`text-xs font-semibold px-3 py-1.5 rounded-full border ${counterColor(chatsLeft)}`}>
-              {chatsLeft} / {FREE_CHAT_LIMIT} free chats remaining
-            </span>
-          </div>
-
-          {/* Messages */}
-          <div className="h-96 overflow-y-auto p-5 space-y-5 bg-[#F8FAFF]">
-            {messages.map((msg, i) => (
-              <div
-                key={i}
-                className={`flex items-end gap-3 ${msg.role === "student" ? "flex-row-reverse" : "flex-row"}`}
-              >
-                {/* Avatar */}
-                {msg.role === "nexi" ? (
-                  <div className="flex-shrink-0 w-9 h-9 rounded-full overflow-hidden bg-[#1B2A4A] ring-2 ring-[#2D6BE4]/20">
-                    <Image
-                      src="/nexi.png"
-                      alt="Nexi"
-                      width={36}
-                      height={36}
-                      className="w-full h-full object-cover object-top scale-110"
-                    />
-                  </div>
-                ) : (
-                  <div className="flex-shrink-0 w-9 h-9 rounded-full bg-[#2D6BE4] flex items-center justify-center ring-2 ring-[#2D6BE4]/20">
-                    <span className="text-[10px] font-bold text-white leading-none">YOU</span>
-                  </div>
-                )}
-
-                {/* Bubble */}
-                <div
-                  className={`max-w-xs sm:max-w-md rounded-2xl px-4 py-3 text-sm leading-relaxed ${
-                    msg.role === "nexi"
-                      ? "bg-white border border-[#1B2A4A]/8 text-[#1B2A4A] rounded-bl-sm shadow-sm"
-                      : "bg-[#2D6BE4] text-white rounded-br-sm shadow-sm shadow-[#2D6BE4]/20"
-                  }`}
-                >
-                  {msg.text}
-                </div>
-              </div>
-            ))}
-            <div ref={chatEndRef} />
-          </div>
-
-          {/* Input */}
-          <div className="border-t border-[#1B2A4A]/8 px-4 py-4">
-            {chatsLeft <= 0 ? (
-              <div className="text-center py-2">
-                <p className="text-sm text-gray-500 mb-2">
-                  You&apos;ve used all your free chats for today.
-                </p>
-                <Link
-                  href="/pricing"
-                  className="text-sm font-semibold text-[#2D6BE4] hover:text-[#2558C5] transition-colors"
-                >
-                  Upgrade to Student plan for unlimited access →
-                </Link>
-              </div>
-            ) : (
-              <>
-                <div className="flex gap-3 items-end">
-                  <textarea
-                    ref={textareaRef}
-                    value={input}
-                    onChange={(e) => setInput(e.target.value)}
-                    onKeyDown={handleKeyDown}
-                    placeholder={`Ask Nexi about ${topic || subject}...`}
-                    rows={1}
-                    className="flex-1 resize-none border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#1B2A4A] focus:outline-none focus:ring-2 focus:ring-[#2D6BE4]/30 focus:border-[#2D6BE4] placeholder:text-gray-300 leading-relaxed overflow-hidden"
-                    style={{ minHeight: "44px", maxHeight: "120px" }}
-                  />
+              ) : (
+                <div className="flex gap-2">
                   <button
-                    onClick={handleSend}
-                    disabled={!input.trim()}
-                    className="flex-shrink-0 px-5 py-3 bg-[#2D6BE4] hover:bg-[#2558C5] disabled:opacity-40 disabled:cursor-not-allowed text-white font-semibold text-sm rounded-xl transition-colors shadow-sm shadow-[#2D6BE4]/20"
+                    onClick={() => setEditing(false)}
+                    className="text-xs font-semibold text-white/50 hover:text-white border border-white/15 px-3 py-1.5 rounded-lg transition-colors cursor-pointer"
                   >
-                    Ask Nexi
+                    Cancel
+                  </button>
+                  <button
+                    onClick={saveEdit}
+                    className="text-xs font-semibold text-white bg-[#2D6BE4] hover:bg-[#4A82F0] px-3 py-1.5 rounded-lg transition-colors cursor-pointer"
+                  >
+                    Save
                   </button>
                 </div>
-                <p className="text-[10px] text-gray-400 mt-2 text-center">
-                  Press Enter to send · Shift+Enter for new line
-                </p>
-              </>
-            )}
+              )}
+            </div>
+
+            <div className="px-6 py-5">
+              {!editing ? (
+                <div className="grid grid-cols-2 sm:grid-cols-5 gap-5">
+                  {[
+                    { label: "Curriculum", value: profile.curriculum },
+                    { label: "Grade", value: profile.grade },
+                    { label: "School", value: profile.school || "—" },
+                    { label: "Goal", value: profile.goal || "—" },
+                    { label: "Subject", value: profile.subject },
+                  ].map((field) => (
+                    <div key={field.label}>
+                      <p className="text-[10px] font-semibold uppercase tracking-widest text-white/40 mb-1">
+                        {field.label}
+                      </p>
+                      <p className="text-sm font-semibold text-white leading-snug break-words">
+                        {field.value}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-xs font-semibold text-white/50 mb-1.5">Curriculum</label>
+                    <select
+                      value={draft.curriculum}
+                      onChange={(e) => setDraft({ ...draft, curriculum: e.target.value })}
+                      className={SELECT_CLS}
+                    >
+                      {CURRICULA.map((c) => <option key={c}>{c}</option>)}
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-white/50 mb-1.5">Grade</label>
+                    <select
+                      value={draft.grade}
+                      onChange={(e) => setDraft({ ...draft, grade: e.target.value })}
+                      className={SELECT_CLS}
+                    >
+                      {GRADES.map((g) => <option key={g}>{g}</option>)}
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-white/50 mb-1.5">School</label>
+                    <input
+                      type="text"
+                      value={draft.school}
+                      onChange={(e) => setDraft({ ...draft, school: e.target.value })}
+                      placeholder="e.g. Northview High"
+                      className={SELECT_CLS + " placeholder:text-white/25 cursor-text"}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-white/50 mb-1.5">Goal</label>
+                    <input
+                      type="text"
+                      value={draft.goal}
+                      onChange={(e) => setDraft({ ...draft, goal: e.target.value })}
+                      placeholder="e.g. Study Medicine at UCT"
+                      className={SELECT_CLS + " placeholder:text-white/25 cursor-text"}
+                    />
+                  </div>
+                  <div className="sm:col-span-2">
+                    <label className="block text-xs font-semibold text-white/50 mb-1.5">Favourite Subject</label>
+                    <select
+                      value={draft.subject}
+                      onChange={(e) => setDraft({ ...draft, subject: e.target.value })}
+                      className={SELECT_CLS}
+                    >
+                      {subjectsFor(draft.curriculum, draft.grade).map((s) => (
+                        <option key={s}>{s}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
+        </Reveal>
+
+        {/* ── 3. LESSON SELECTOR ── */}
+        <Reveal delay={100}>
+          <div className="glass rounded-2xl overflow-hidden">
+            <div className="flex items-center gap-2.5 px-6 py-4 border-b border-white/10 bg-white/5 text-[#00D4FF]">
+              <IconBookOpen className="w-4 h-4" />
+              <h2 className="text-xs font-semibold text-white uppercase tracking-widest">Lesson Selector</h2>
+            </div>
+            <div className="px-6 py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+              <div>
+                <label className="block text-[10px] font-semibold uppercase tracking-widest text-white/40 mb-1.5">Curriculum</label>
+                <select value={curriculum} onChange={(e) => handleCurriculumChange(e.target.value)} className={SELECT_CLS}>
+                  {CURRICULA.map((c) => <option key={c}>{c}</option>)}
+                </select>
+              </div>
+              <div>
+                <label className="block text-[10px] font-semibold uppercase tracking-widest text-white/40 mb-1.5">Grade</label>
+                <select value={grade} onChange={(e) => handleGradeChange(e.target.value)} className={SELECT_CLS}>
+                  {GRADES.map((g) => <option key={g}>{g}</option>)}
+                </select>
+              </div>
+              <div>
+                <label className="block text-[10px] font-semibold uppercase tracking-widest text-white/40 mb-1.5">Subject</label>
+                <select value={subject} onChange={(e) => handleSubjectChange(e.target.value)} className={SELECT_CLS}>
+                  {currentSubjects.map((s) => <option key={s}>{s}</option>)}
+                </select>
+              </div>
+              <div>
+                <label className="block text-[10px] font-semibold uppercase tracking-widest text-white/40 mb-1.5">Topic</label>
+                <select
+                  value={topic}
+                  onChange={(e) => setTopic(e.target.value)}
+                  disabled={currentTopics.length === 0}
+                  className={SELECT_CLS + " disabled:opacity-50 disabled:cursor-not-allowed"}
+                >
+                  <option value="">— All topics —</option>
+                  {currentTopics.map((t) => <option key={t}>{t}</option>)}
+                </select>
+              </div>
+              <div>
+                <label className="block text-[10px] font-semibold uppercase tracking-widest text-white/40 mb-1.5">Language</label>
+                <select value={language} onChange={(e) => setLanguage(e.target.value)} className={SELECT_CLS}>
+                  {SA_LANGUAGES.map((l) => <option key={l}>{l}</option>)}
+                </select>
+              </div>
+            </div>
+          </div>
+        </Reveal>
+
+        {/* ── 4. CHAT ── */}
+        <Reveal delay={200}>
+          <div className="glass rounded-2xl overflow-hidden">
+
+            {/* Header + counter */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-white/5">
+              <div className="flex items-center gap-2.5 text-[#00D4FF]">
+                <IconCpuChip className="w-4 h-4" />
+                <h2 className="text-xs font-semibold text-white uppercase tracking-widest">Chat with Nexi</h2>
+              </div>
+              <span className={`text-xs font-semibold px-3 py-1.5 rounded-full border ${counterColor(chatsLeft)}`}>
+                {chatsLeft} / {FREE_CHAT_LIMIT} free chats remaining
+              </span>
+            </div>
+
+            {/* Messages */}
+            <div className="h-96 overflow-y-auto p-5 space-y-5 bg-[#0A1628]/40">
+              {messages.map((msg, i) => (
+                <div
+                  key={i}
+                  className={`animate-msg-in flex items-end gap-3 ${msg.role === "student" ? "flex-row-reverse" : "flex-row"}`}
+                >
+                  {/* Avatar */}
+                  {msg.role === "nexi" ? (
+                    <div className="animate-avatar-glow flex-shrink-0 w-9 h-9 rounded-full overflow-hidden bg-[#0E1F3D] ring-2 ring-[#00D4FF]/40">
+                      <Image
+                        src="/nexi.png"
+                        alt="Nexi"
+                        width={36}
+                        height={36}
+                        className="w-full h-full object-cover object-top scale-110"
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex-shrink-0 w-9 h-9 rounded-full bg-[#2D6BE4] flex items-center justify-center ring-2 ring-[#2D6BE4]/30">
+                      <span className="text-[10px] font-bold text-white leading-none">YOU</span>
+                    </div>
+                  )}
+
+                  {/* Bubble */}
+                  <div
+                    className={`max-w-xs sm:max-w-md rounded-2xl px-4 py-3 text-sm leading-relaxed ${
+                      msg.role === "nexi"
+                        ? "glass text-white rounded-bl-sm"
+                        : "bg-gradient-to-br from-[#2D6BE4] to-[#1E4FB8] text-white rounded-br-sm shadow-lg shadow-[#2D6BE4]/25"
+                    }`}
+                  >
+                    {msg.text}
+                  </div>
+                </div>
+              ))}
+              <div ref={chatEndRef} />
+            </div>
+
+            {/* Input */}
+            <div className="border-t border-white/10 px-4 py-4">
+              {chatsLeft <= 0 ? (
+                <div className="text-center py-2">
+                  <p className="text-sm text-white/50 mb-2">
+                    You&apos;ve used all your free chats for today.
+                  </p>
+                  <Link
+                    href="/pricing"
+                    className="text-sm font-semibold text-[#00D4FF] hover:text-white transition-colors"
+                  >
+                    Upgrade to Student plan for unlimited access →
+                  </Link>
+                </div>
+              ) : (
+                <>
+                  <div className="flex gap-3 items-end">
+                    <textarea
+                      ref={textareaRef}
+                      value={input}
+                      onChange={(e) => setInput(e.target.value)}
+                      onKeyDown={handleKeyDown}
+                      placeholder={`Ask Nexi about ${topic || subject}...`}
+                      rows={1}
+                      className="flex-1 resize-none bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#00D4FF]/40 focus:border-[#00D4FF] placeholder:text-white/25 leading-relaxed overflow-hidden transition-colors"
+                      style={{ minHeight: "44px", maxHeight: "120px" }}
+                    />
+                    <button
+                      onClick={handleSend}
+                      disabled={!input.trim()}
+                      className="flex-shrink-0 px-5 py-3 bg-[#2D6BE4] hover:bg-[#4A82F0] disabled:opacity-40 disabled:cursor-not-allowed text-white font-semibold text-sm rounded-xl transition-all shadow-lg shadow-[#2D6BE4]/30 hover:shadow-[#00D4FF]/30 cursor-pointer"
+                    >
+                      Ask Nexi
+                    </button>
+                  </div>
+                  <p className="text-[10px] text-white/30 mt-2 text-center">
+                    Press Enter to send · Shift+Enter for new line
+                  </p>
+                </>
+              )}
+            </div>
+          </div>
+        </Reveal>
 
       </div>
     </div>

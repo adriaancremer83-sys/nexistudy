@@ -21,14 +21,14 @@ export default function Navbar() {
   const loading = status === "loading";
 
   return (
-    <nav className="bg-[#1B2A4A] shadow-lg sticky top-0 z-50">
+    <nav className="glass-strong sticky top-0 z-50 border-x-0 border-t-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <span className="text-white font-bold text-xl tracking-tight">
-              Nexi<span className="text-[#2D6BE4]">Study</span>
+              Nexi<span className="text-[#00D4FF]">Study</span>
             </span>
           </Link>
 
@@ -38,10 +38,10 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                className={`nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   pathname === link.href
-                    ? "text-white bg-[#2D6BE4]/20 border-b-2 border-[#2D6BE4]"
-                    : "text-gray-300 hover:text-white hover:bg-white/10"
+                    ? "text-white nav-active"
+                    : "text-white/70 hover:text-white"
                 }`}
               >
                 {link.label}
@@ -57,15 +57,15 @@ export default function Navbar() {
                   href="/dashboard"
                   className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                     pathname === "/dashboard"
-                      ? "text-white bg-[#2D6BE4]/20"
-                      : "text-gray-300 hover:text-white hover:bg-white/10"
+                      ? "text-white bg-[#2D6BE4]/25"
+                      : "text-white/70 hover:text-white hover:bg-white/10"
                   }`}
                 >
                   Dashboard
                 </Link>
                 <button
                   onClick={() => signOut({ callbackUrl: "/" })}
-                  className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white border border-white/20 hover:border-white/40 rounded-lg transition-colors"
+                  className="px-4 py-2 text-sm font-medium text-white/70 hover:text-white border border-white/15 hover:border-[#00D4FF]/50 rounded-lg transition-colors cursor-pointer"
                 >
                   Log Out
                 </button>
@@ -74,13 +74,13 @@ export default function Navbar() {
               <>
                 <Link
                   href="/login"
-                  className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
+                  className="px-4 py-2 text-sm font-medium text-white/70 hover:text-white transition-colors"
                 >
                   Login
                 </Link>
                 <Link
                   href="/signup"
-                  className="px-4 py-2 text-sm font-medium text-white bg-[#2D6BE4] hover:bg-[#2558C5] rounded-lg transition-colors"
+                  className="px-4 py-2 text-sm font-medium text-white bg-[#2D6BE4] hover:bg-[#4A82F0] rounded-lg transition-all shadow-lg shadow-[#2D6BE4]/30 hover:shadow-[#00D4FF]/30"
                 >
                   Sign Up
                 </Link>
@@ -90,7 +90,7 @@ export default function Navbar() {
 
           {/* Mobile menu toggle */}
           <button
-            className="md:hidden text-gray-300 hover:text-white p-2 rounded-md"
+            className="md:hidden text-white/70 hover:text-white p-2 rounded-md cursor-pointer"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -107,7 +107,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#121D33] border-t border-white/10 px-4 pb-4">
+        <div className="md:hidden glass border-x-0 border-b-0 px-4 pb-4">
           <div className="flex flex-col gap-1 pt-2">
             {navLinks.map((link) => (
               <Link
@@ -116,8 +116,8 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   pathname === link.href
-                    ? "text-white bg-[#2D6BE4]/20"
-                    : "text-gray-300 hover:text-white hover:bg-white/10"
+                    ? "text-white bg-[#2D6BE4]/25"
+                    : "text-white/70 hover:text-white hover:bg-white/10"
                 }`}
               >
                 {link.label}
@@ -126,13 +126,13 @@ export default function Navbar() {
             <hr className="border-white/10 my-2" />
             {session ? (
               <>
-                <Link href="/dashboard" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-gray-300 hover:text-white">Dashboard</Link>
-                <button onClick={() => signOut({ callbackUrl: "/" })} className="px-3 py-2 text-sm text-left text-gray-300 hover:text-white">Log Out</button>
+                <Link href="/dashboard" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-white/70 hover:text-white">Dashboard</Link>
+                <button onClick={() => signOut({ callbackUrl: "/" })} className="px-3 py-2 text-sm text-left text-white/70 hover:text-white cursor-pointer">Log Out</button>
               </>
             ) : (
               <>
-                <Link href="/login" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-gray-300 hover:text-white">Login</Link>
-                <Link href="/signup" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-center text-white bg-[#2D6BE4] hover:bg-[#2558C5] rounded-lg">Sign Up</Link>
+                <Link href="/login" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-white/70 hover:text-white">Login</Link>
+                <Link href="/signup" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-center text-white bg-[#2D6BE4] hover:bg-[#4A82F0] rounded-lg">Sign Up</Link>
               </>
             )}
           </div>

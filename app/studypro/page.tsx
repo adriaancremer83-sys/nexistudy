@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 import { useState, useMemo } from "react";
+import Reveal from "@/components/Reveal";
+import ProgressRing from "@/components/ProgressRing";
+import { IconAcademicCap, IconDocumentText, IconRocket, IconTrendingUp, IconBookOpen, IconBolt, IconTarget, IconSparkles, IconLock, IconChartBar } from "@/components/icons";
 
 // ── APS conversion ──────────────────────────────────────────────────────────
 function toAPS(pct: number): number {
@@ -15,10 +18,17 @@ function toAPS(pct: number): number {
 }
 
 function apsBadgeColor(pts: number): string {
-  if (pts >= 6) return "text-emerald-600 bg-emerald-50 border-emerald-200";
-  if (pts >= 5) return "text-blue-600 bg-blue-50 border-blue-200";
-  if (pts >= 4) return "text-yellow-600 bg-yellow-50 border-yellow-200";
-  return "text-red-500 bg-red-50 border-red-200";
+  if (pts >= 6) return "text-emerald-300 bg-emerald-400/10 border-emerald-400/40";
+  if (pts >= 5) return "text-[#00D4FF] bg-[#00D4FF]/10 border-[#00D4FF]/40";
+  if (pts >= 4) return "text-amber-300 bg-amber-400/10 border-amber-400/40";
+  return "text-red-300 bg-red-400/10 border-red-400/40";
+}
+
+function apsBarColor(pts: number): string {
+  if (pts >= 6) return "bg-emerald-400";
+  if (pts >= 5) return "bg-[#00D4FF]";
+  if (pts >= 4) return "bg-amber-400";
+  return "bg-red-400";
 }
 
 function focusMessage(aps: number): string {
@@ -69,92 +79,142 @@ const DEFAULT_SUBJECTS = [
 ];
 
 // ── University selector data ────────────────────────────────────────────────
-type ProgrammeMap = Record<string, number>;
+interface SubjectReq {
+  subject: string;
+  minPct: number;
+  note?: string;
+}
+
+interface ProgrammeInfo {
+  minAPS: number;
+  requirements: SubjectReq[];
+}
+
+type ProgrammeMap = Record<string, ProgrammeInfo>;
 type UniversityMap = Record<string, ProgrammeMap>;
+
+// Typical subject requirements per programme family. Indicative — exact
+// thresholds vary by institution and year.
+const REQS: Record<string, SubjectReq[]> = {
+  medicine: [
+    { subject: "Mathematics", minPct: 60, note: "Maths Lit not accepted" },
+    { subject: "Physical Sciences", minPct: 60 },
+    { subject: "Life Sciences", minPct: 60 },
+    { subject: "English", minPct: 50 },
+  ],
+  engineering: [
+    { subject: "Mathematics", minPct: 70, note: "Maths Lit not accepted" },
+    { subject: "Physical Sciences", minPct: 60 },
+    { subject: "English", minPct: 50 },
+  ],
+  law: [{ subject: "English", minPct: 60 }],
+  commerce: [
+    { subject: "Mathematics", minPct: 60, note: "Maths Lit not accepted" },
+    { subject: "English", minPct: 50 },
+  ],
+  science: [
+    { subject: "Mathematics", minPct: 60, note: "Maths Lit not accepted" },
+    { subject: "Physical Sciences", minPct: 50 },
+    { subject: "English", minPct: 50 },
+  ],
+  humanities: [{ subject: "English", minPct: 50 }],
+  education: [{ subject: "English", minPct: 50 }],
+};
+
+function prog(minAPS: number, family: keyof typeof REQS): ProgrammeInfo {
+  return { minAPS, requirements: REQS[family] };
+}
 
 const UNIVERSITIES: UniversityMap = {
   "University of Cape Town (UCT)": {
-    "MBChB – Medicine": 42,
-    "BEng – Engineering": 38,
-    "LLB – Law": 36,
-    "BCom – Commerce": 34,
-    "BSc – Science": 32,
-    "BA – Humanities": 28,
-    "BEd – Education": 28,
+    "MBChB – Medicine": prog(42, "medicine"),
+    "BEng – Engineering": prog(38, "engineering"),
+    "LLB – Law": prog(36, "law"),
+    "BCom – Commerce": prog(34, "commerce"),
+    "BSc – Science": prog(32, "science"),
+    "BA – Humanities": prog(28, "humanities"),
+    "BEd – Education": prog(28, "education"),
   },
   "University of the Witwatersrand (Wits)": {
-    "MBBCh – Medicine": 42,
-    "BEng – Engineering": 36,
-    "LLB – Law": 34,
-    "BCom – Commerce": 32,
-    "BSc – Science": 30,
-    "BA – Humanities": 28,
+    "MBBCh – Medicine": prog(42, "medicine"),
+    "BEng – Engineering": prog(36, "engineering"),
+    "LLB – Law": prog(34, "law"),
+    "BCom – Commerce": prog(32, "commerce"),
+    "BSc – Science": prog(30, "science"),
+    "BA – Humanities": prog(28, "humanities"),
   },
   "Stellenbosch University (SU)": {
-    "MBChB – Medicine": 42,
-    "BEng – Engineering": 36,
-    "LLB – Law": 34,
-    "BCom – Commerce": 32,
-    "BSc – Science": 30,
-    "BEd – Education": 28,
+    "MBChB – Medicine": prog(42, "medicine"),
+    "BEng – Engineering": prog(36, "engineering"),
+    "LLB – Law": prog(34, "law"),
+    "BCom – Commerce": prog(32, "commerce"),
+    "BSc – Science": prog(30, "science"),
+    "BEd – Education": prog(28, "education"),
   },
   "University of Pretoria (UP)": {
-    "MBChB – Medicine": 40,
-    "BEng – Engineering": 34,
-    "LLB – Law": 32,
-    "BCom – Commerce": 30,
-    "BSc – Science": 28,
-    "BA – Arts": 26,
-    "BEd – Education": 26,
+    "MBChB – Medicine": prog(40, "medicine"),
+    "BEng – Engineering": prog(34, "engineering"),
+    "LLB – Law": prog(32, "law"),
+    "BCom – Commerce": prog(30, "commerce"),
+    "BSc – Science": prog(28, "science"),
+    "BA – Arts": prog(26, "humanities"),
+    "BEd – Education": prog(26, "education"),
   },
   "University of Johannesburg (UJ)": {
-    "BEng – Engineering": 32,
-    "LLB – Law": 30,
-    "BCom – Commerce": 28,
-    "BSc – Science": 26,
-    "BA – Arts": 24,
-    "BEd – Education": 24,
+    "BEng – Engineering": prog(32, "engineering"),
+    "LLB – Law": prog(30, "law"),
+    "BCom – Commerce": prog(28, "commerce"),
+    "BSc – Science": prog(26, "science"),
+    "BA – Arts": prog(24, "humanities"),
+    "BEd – Education": prog(24, "education"),
   },
   "University of KwaZulu-Natal (UKZN)": {
-    "MBChB – Medicine": 40,
-    "BEng – Engineering": 32,
-    "LLB – Law": 30,
-    "BCom – Commerce": 28,
-    "BSc – Science": 26,
-    "BEd – Education": 24,
+    "MBChB – Medicine": prog(40, "medicine"),
+    "BEng – Engineering": prog(32, "engineering"),
+    "LLB – Law": prog(30, "law"),
+    "BCom – Commerce": prog(28, "commerce"),
+    "BSc – Science": prog(26, "science"),
+    "BEd – Education": prog(24, "education"),
   },
   "University of the Free State (UFS)": {
-    "MBChB – Medicine": 38,
-    "LLB – Law": 28,
-    "BCom – Commerce": 26,
-    "BSc – Science": 24,
-    "BA – Arts": 22,
-    "BEd – Education": 22,
+    "MBChB – Medicine": prog(38, "medicine"),
+    "LLB – Law": prog(28, "law"),
+    "BCom – Commerce": prog(26, "commerce"),
+    "BSc – Science": prog(24, "science"),
+    "BA – Arts": prog(22, "humanities"),
+    "BEd – Education": prog(22, "education"),
   },
   "Rhodes University": {
-    "LLB – Law": 30,
-    "BCom – Commerce": 28,
-    "BSc – Science": 26,
-    "BA – Humanities": 24,
-    "BEd – Education": 22,
+    "LLB – Law": prog(30, "law"),
+    "BCom – Commerce": prog(28, "commerce"),
+    "BSc – Science": prog(26, "science"),
+    "BA – Humanities": prog(24, "humanities"),
+    "BEd – Education": prog(22, "education"),
   },
   "Nelson Mandela University (NMU)": {
-    "BEng – Engineering": 30,
-    "LLB – Law": 28,
-    "BCom – Commerce": 26,
-    "BSc – Science": 24,
-    "BA – Arts": 22,
-    "BEd – Education": 22,
+    "BEng – Engineering": prog(30, "engineering"),
+    "LLB – Law": prog(28, "law"),
+    "BCom – Commerce": prog(26, "commerce"),
+    "BSc – Science": prog(24, "science"),
+    "BA – Arts": prog(22, "humanities"),
+    "BEd – Education": prog(22, "education"),
   },
   "North-West University (NWU)": {
-    "MBChB – Medicine": 38,
-    "BEng – Engineering": 30,
-    "LLB – Law": 28,
-    "BCom – Commerce": 26,
-    "BSc – Science": 24,
-    "BEd – Education": 22,
+    "MBChB – Medicine": prog(38, "medicine"),
+    "BEng – Engineering": prog(30, "engineering"),
+    "LLB – Law": prog(28, "law"),
+    "BCom – Commerce": prog(26, "commerce"),
+    "BSc – Science": prog(24, "science"),
+    "BEd – Education": prog(22, "education"),
   },
 };
+
+// "English" matches Home or First Additional Language; "Mathematics" must be
+// pure Maths (deliberately does not match "Mathematical Literacy").
+function subjectMatches(required: string, subjectName: string): boolean {
+  if (required === "English") return subjectName.startsWith("English");
+  return subjectName === required;
+}
 
 // ── Flat programme catalogue for Explore Your Options ──────────────────────
 interface ProgrammeEntry {
@@ -213,18 +273,91 @@ interface SubjectRow {
 }
 
 const TYPE_COLORS: Record<ProgrammeEntry["type"], string> = {
-  "Degree": "bg-blue-100 text-blue-700",
-  "Diploma": "bg-violet-100 text-violet-700",
-  "Higher Certificate": "bg-amber-100 text-amber-700",
+  "Degree": "bg-[#2D6BE4]/20 text-[#7EABFF] border border-[#2D6BE4]/30",
+  "Diploma": "bg-violet-400/15 text-violet-300 border border-violet-400/30",
+  "Higher Certificate": "bg-amber-400/15 text-amber-300 border border-amber-400/30",
 };
 
+const SELECT_DARK =
+  "w-full bg-white/5 text-white border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#00D4FF]/40 focus:border-[#00D4FF] transition-colors cursor-pointer";
+
 // ── Component ───────────────────────────────────────────────────────────────
+// ── Grade 8–9 (Senior Phase) content ────────────────────────────────────────
+const SENIOR_SUBJECT_CHIPS = [
+  "Mathematics",
+  "Natural Sciences",
+  "Social Sciences",
+  "EMS",
+  "Technology",
+  "Languages",
+  "Creative Arts",
+  "Life Orientation",
+];
+
+const SENIOR_CARDS = [
+  {
+    icon: IconBookOpen,
+    title: "Master the basics with Nexi",
+    desc: "Nexi Tutor covers every Senior Phase subject — Maths, Natural Sciences, EMS, Technology and more — in all 11 official languages. Stuck on homework? Just ask.",
+  },
+  {
+    icon: IconBolt,
+    title: "Build the habit early",
+    desc: "Daily streaks and small goals now mean you walk into Grade 10 ahead of the pack. Learners who study a little every day never need to cram.",
+  },
+  {
+    icon: IconTarget,
+    title: "Discover your strengths",
+    desc: "Notice which subjects feel natural and which need work — that's tomorrow's subject choice taking shape, two years before you have to make it.",
+  },
+];
+
+// Grade 10 Readiness Check — fixed Senior Phase subject set.
+const READINESS_SUBJECTS = [
+  "Home Language",
+  "First Additional Language",
+  "Mathematics",
+  "Natural Sciences",
+  "Social Sciences",
+  "EMS",
+  "Technology",
+  "Creative Arts",
+  "Life Orientation",
+];
+
+function readinessBadge(pct: number): { label: string; cls: string } {
+  if (pct >= 70) return { label: "Solid", cls: "text-emerald-300 bg-emerald-400/10 border-emerald-400/30" };
+  if (pct >= 55) return { label: "Okay", cls: "text-[#00D4FF] bg-[#00D4FF]/10 border-[#00D4FF]/30" };
+  if (pct >= 40) return { label: "Shaky", cls: "text-amber-300 bg-amber-400/10 border-amber-400/30" };
+  return { label: "Gap", cls: "text-red-300 bg-red-400/10 border-red-400/30" };
+}
+
+function readinessMessage(avg: number): string {
+  if (avg >= 70) return "You're ready for Grade 10 — keep doing what you're doing.";
+  if (avg >= 55) return "On track. Tighten the shaky subjects and you'll walk into Grade 10 confident.";
+  if (avg >= 40) return "Some gaps to fix — and Grade 8–9 is exactly the right time to fix them.";
+  return "Let's rebuild the basics together. Small steps now make Grade 10 a different story.";
+}
+
+// What a weak Senior Phase subject means for Grade 10 choices.
+const READINESS_HINTS: Record<string, string> = {
+  "Mathematics": "Grade 10 pure Maths builds straight on this — and most degrees need pure Maths.",
+  "Natural Sciences": "Physical Sciences and Life Sciences in Grade 10 build directly on Natural Sciences.",
+  "EMS": "Thinking of Accounting or Business Studies in Grade 10? EMS is the foundation.",
+  "Home Language": "Every subject's exams are written and answered in language — comprehension pays off everywhere.",
+  "First Additional Language": "A strong second language lifts marks across the board — and it's compulsory through matric.",
+  "Social Sciences": "Grade 10 History and Geography start exactly where this leaves off.",
+  "Technology": "EGD and the technical streams in Grade 10 build on Technology.",
+};
+
 export default function StudyProPage() {
+  const [phase, setPhase] = useState<"fet" | "senior">("fet");
   const [subjects, setSubjects] = useState<SubjectRow[]>(
     DEFAULT_SUBJECTS.map((name) => ({ name, percentage: "" }))
   );
   const [selectedUniversity, setSelectedUniversity] = useState("");
   const [selectedProgramme, setSelectedProgramme] = useState("");
+  const [readinessMarks, setReadinessMarks] = useState<Record<string, string>>({});
 
   // ── Handlers ──────────────────────────────────────────────────────────────
   function updateName(i: number, value: string) {
@@ -258,6 +391,36 @@ export default function StudyProPage() {
     setSelectedUniversity(value);
     setSelectedProgramme("");
   }
+
+  function updateReadinessMark(subject: string, value: string) {
+    if (value === "") {
+      setReadinessMarks((prev) => ({ ...prev, [subject]: "" }));
+      return;
+    }
+    const num = Number(value);
+    if (!isNaN(num) && num >= 0 && num <= 100) {
+      setReadinessMarks((prev) => ({ ...prev, [subject]: value }));
+    }
+  }
+
+  // ── Grade 10 Readiness ────────────────────────────────────────────────────
+  const readiness = useMemo(() => {
+    const rows = READINESS_SUBJECTS.map((name) => {
+      const raw = readinessMarks[name] ?? "";
+      const pct = raw === "" ? null : Number(raw);
+      return { name, pct };
+    });
+    const filled = rows.filter((r) => r.pct !== null) as { name: string; pct: number }[];
+    const avg = filled.length > 0
+      ? Math.round(filled.reduce((sum, r) => sum + r.pct, 0) / filled.length)
+      : 0;
+    // Up to two weakest subjects below 55% that have a Grade 10 hint.
+    const focus = [...filled]
+      .filter((r) => r.pct < 55 && READINESS_HINTS[r.name])
+      .sort((a, b) => a.pct - b.pct)
+      .slice(0, 2);
+    return { rows, avg, filledCount: filled.length, focus };
+  }, [readinessMarks]);
 
   // ── APS calculation ───────────────────────────────────────────────────────
   const calc = useMemo(() => {
@@ -315,440 +478,759 @@ export default function StudyProPage() {
     ? Object.keys(UNIVERSITIES[selectedUniversity] ?? {})
     : [];
 
-  const minAPS =
+  const programmeInfo =
     selectedUniversity && selectedProgramme
       ? (UNIVERSITIES[selectedUniversity]?.[selectedProgramme] ?? null)
       : null;
 
-  const qualifies = minAPS !== null && calc.totalAPS >= minAPS;
+  const minAPS = programmeInfo?.minAPS ?? null;
+
+  // Check each required subject against what the learner entered above.
+  const reqChecks = useMemo(() => {
+    if (!programmeInfo) return [];
+    return programmeInfo.requirements.map((req) => {
+      const row = subjects.find((s) => subjectMatches(req.subject, s.name));
+      const pct = row && row.percentage !== "" ? Number(row.percentage) : null;
+      let status: "met" | "low" | "noMark" | "missing";
+      if (!row) status = "missing";
+      else if (pct === null) status = "noMark";
+      else status = pct >= req.minPct ? "met" : "low";
+      return { ...req, status, pct };
+    });
+  }, [programmeInfo, subjects]);
+
+  const reqProblems = reqChecks.filter((r) => r.status === "low" || r.status === "missing").length;
+  const allReqsMet = reqChecks.length > 0 && reqChecks.every((r) => r.status === "met");
+
+  const apsQualifies = minAPS !== null && calc.totalAPS >= minAPS;
+  const qualifies = apsQualifies && reqProblems === 0;
   const apsGap = minAPS !== null ? minAPS - calc.totalAPS : null;
 
   // ── Render ────────────────────────────────────────────────────────────────
   return (
-    <div className="bg-[#F0F4FF] min-h-screen">
+    <div className="min-h-screen">
 
       {/* ── 1. HERO ── */}
-      <section className="bg-[#1B2A4A] text-white py-20 px-4">
+      <section className="page-hero py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-            Study<span className="text-[#2D6BE4]">Pro</span> — Your Personalised
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-white">
+            Study<span className="text-gradient">Pro</span> — Your Personalised
             Roadmap to Success
           </h1>
-          <p className="text-gray-300 text-lg mb-8 max-w-xl mx-auto">
+          <p className="text-white/60 text-lg mb-8 max-w-xl mx-auto">
             Know where you stand, set your target, and build a clear path to
             university admission.
           </p>
           <div className="flex items-center justify-center gap-3 flex-wrap">
-            <button className="px-6 py-2.5 bg-[#2D6BE4] text-white font-semibold rounded-full text-sm shadow-lg shadow-[#2D6BE4]/30">
+            <button
+              onClick={() => setPhase("fet")}
+              className={`px-6 py-2.5 font-semibold rounded-full text-sm transition-colors cursor-pointer ${
+                phase === "fet"
+                  ? "bg-[#2D6BE4] text-white"
+                  : "border border-white/15 text-white/60 hover:text-white hover:border-white/35"
+              }`}
+            >
               Grade 10–12
             </button>
             <button
-              disabled
-              className="px-6 py-2.5 bg-white/10 text-gray-400 font-semibold rounded-full text-sm cursor-not-allowed border border-white/10"
+              onClick={() => setPhase("senior")}
+              className={`px-6 py-2.5 font-semibold rounded-full text-sm transition-colors cursor-pointer ${
+                phase === "senior"
+                  ? "bg-[#FFB454] text-[#0A1628] font-bold"
+                  : "border border-white/15 text-white/60 hover:text-white hover:border-white/35"
+              }`}
             >
-              Grade 8–9 — Coming Soon
+              Grade 8–9
             </button>
           </div>
         </div>
       </section>
 
+      <div className="section-divider" />
+
+      {/* ── GRADE 8–9 (SENIOR PHASE) VIEW ── */}
+      {phase === "senior" && (
+        <section className="py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <Reveal className="text-center mb-12">
+              <p className="text-sm font-bold uppercase tracking-widest text-[#FFB454] mb-3">
+                Senior Phase
+              </p>
+              <h2 className="text-3xl font-bold text-white mb-3">
+                Grade 8 &amp; 9 — where matric marks are made
+              </h2>
+              <p className="text-white/55 max-w-xl mx-auto leading-relaxed">
+                No APS pressure yet. These two years are about building rock-solid
+                foundations and discovering what you&apos;re good at — before you
+                choose the subjects that shape your matric.
+              </p>
+            </Reveal>
+
+            {/* ── Grade 10 Readiness Check ── */}
+            <Reveal className="mb-12">
+              <div className="rounded-2xl border border-[#FFB454]/25 bg-[#0E1F3D] overflow-hidden">
+                <div className="px-6 py-4 border-b border-white/10 bg-[#FFB454]/[0.06] flex items-center gap-2.5 text-[#FFB454]">
+                  <IconChartBar className="w-4 h-4" />
+                  <h3 className="text-xs font-semibold text-white uppercase tracking-widest">
+                    Grade 10 Readiness Check
+                  </h3>
+                </div>
+
+                <div className="p-6">
+                  <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-xl">
+                    Enter your latest term marks. We&apos;ll show you how ready you are
+                    for Grade 10 — and which subjects to strengthen before subject
+                    choice at the end of Grade 9.
+                  </p>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 mb-8">
+                    {readiness.rows.map((row) => {
+                      const badge = row.pct !== null ? readinessBadge(row.pct) : null;
+                      return (
+                        <div key={row.name} className="flex items-center justify-between gap-3 py-1.5 border-b border-white/5">
+                          <span className="text-sm text-white/80">{row.name}</span>
+                          <div className="flex items-center gap-2.5">
+                            <div className="relative w-[72px]">
+                              <input
+                                type="number"
+                                min={0}
+                                max={100}
+                                value={readinessMarks[row.name] ?? ""}
+                                onChange={(e) => updateReadinessMark(row.name, e.target.value)}
+                                placeholder="0"
+                                aria-label={`${row.name} term mark percentage`}
+                                className="w-full text-center text-sm font-medium text-white bg-white/5 border border-white/15 rounded-lg py-1.5 focus:outline-none focus:ring-2 focus:ring-[#FFB454]/40 focus:border-[#FFB454] placeholder:text-white/20"
+                              />
+                              <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-white/30">%</span>
+                            </div>
+                            <span
+                              className={`inline-block w-[58px] text-center text-[11px] font-bold px-2 py-1 rounded-full border ${
+                                badge ? badge.cls : "text-white/20 border-white/10"
+                              }`}
+                            >
+                              {badge ? badge.label : "—"}
+                            </span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row items-center gap-8 border-t border-white/10 pt-7">
+                    <ProgressRing value={readiness.avg} max={100} size={150} strokeWidth={11}>
+                      <span className="text-4xl font-extrabold text-white leading-none">{readiness.avg}</span>
+                      <span className="text-white/40 text-xs mt-1">/ 100</span>
+                    </ProgressRing>
+                    <div className="flex-1 text-center sm:text-left">
+                      <p className="text-sm font-bold text-white mb-1.5">
+                        {readiness.filledCount === 0
+                          ? "Enter your marks to see your readiness"
+                          : readinessMessage(readiness.avg)}
+                      </p>
+                      <p className="text-xs text-white/50 mb-4">
+                        Based on {readiness.filledCount} of {READINESS_SUBJECTS.length} subjects.
+                      </p>
+                      {readiness.focus.length > 0 && (
+                        <div className="space-y-2 text-left">
+                          {readiness.focus.map((f) => (
+                            <p key={f.name} className="text-xs text-white/55 leading-relaxed">
+                              <span className="text-[#FFB454] font-bold">{f.name} ({f.pct}%):</span>{" "}
+                              {READINESS_HINTS[f.name]}
+                            </p>
+                          ))}
+                        </div>
+                      )}
+                      {readiness.filledCount > 0 && (
+                        <Link
+                          href="/nexi-tutor"
+                          className="inline-block mt-4 text-sm font-bold text-[#FFB454] hover:text-white transition-colors"
+                        >
+                          Strengthen these with Nexi →
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
+              {SENIOR_CARDS.map((card, i) => (
+                <Reveal key={card.title} delay={i * 100} className="h-full">
+                  <div className="rounded-2xl border border-[#FFB454]/20 bg-[#0E1F3D] p-7 h-full transition-colors hover:border-[#FFB454]/45">
+                    <div className="w-11 h-11 rounded-xl bg-[#FFB454]/15 flex items-center justify-center mb-5 text-[#FFB454]">
+                      <card.icon className="w-6 h-6" />
+                    </div>
+                    <h3 className="text-white font-bold text-base mb-2.5 leading-snug">{card.title}</h3>
+                    <p className="text-white/50 text-sm leading-relaxed">{card.desc}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+
+            <Reveal>
+              <div className="flex flex-wrap justify-center gap-2 mb-12">
+                {SENIOR_SUBJECT_CHIPS.map((s) => (
+                  <span
+                    key={s}
+                    className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-white/70 text-sm"
+                  >
+                    {s}
+                  </span>
+                ))}
+              </div>
+            </Reveal>
+
+            {/* Premium for Grade 8–9 */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+              <Reveal className="h-full">
+                <div className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-7 h-full relative overflow-hidden">
+                  <span className="absolute top-0 right-0 bg-white/10 text-white/60 text-[10px] font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-bl-xl flex items-center gap-1.5">
+                    <IconLock className="w-3 h-3" /> Premium · Coming Soon
+                  </span>
+                  <div className="w-11 h-11 rounded-xl bg-[#FFB454]/15 flex items-center justify-center mb-5 text-[#FFB454]">
+                    <IconSparkles className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-white font-bold text-lg mb-2.5">Foundation Gap Finder</h3>
+                  <p className="text-white/50 text-sm leading-relaxed mb-5">
+                    Your Readiness Check says Maths is shaky — but <em>which</em> building
+                    blocks cracked? Fractions from Grade 6? Basic algebra? The Gap Finder
+                    digs down, finds the broken foundations, and repairs them with a
+                    week-by-week fix-it plan.
+                  </p>
+                  <Link
+                    href="/pricing"
+                    className="text-sm font-bold text-[#FFB454] hover:text-white transition-colors"
+                  >
+                    See Premium →
+                  </Link>
+                </div>
+              </Reveal>
+
+              <Reveal delay={100} className="h-full">
+                <div className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-7 h-full relative overflow-hidden">
+                  <span className="absolute top-0 right-0 bg-white/10 text-white/60 text-[10px] font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-bl-xl flex items-center gap-1.5">
+                    <IconLock className="w-3 h-3" /> Premium · Coming Soon
+                  </span>
+                  <div className="w-11 h-11 rounded-xl bg-[#FFB454]/15 flex items-center justify-center mb-5 text-[#FFB454]">
+                    <IconDocumentText className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-white font-bold text-lg mb-2.5">Termly Parent Report</h3>
+                  <p className="text-white/50 text-sm leading-relaxed mb-5">
+                    A plain-language report for parents every term: marks trend per subject,
+                    what improved, where the gaps are, and what Nexi is working on next.
+                    See the dip before the report card does.
+                  </p>
+                  <Link
+                    href="/pricing"
+                    className="text-sm font-bold text-[#FFB454] hover:text-white transition-colors"
+                  >
+                    See Premium →
+                  </Link>
+                </div>
+              </Reveal>
+            </div>
+
+            {/* Subject Choice Advisor — flagship, coming soon */}
+            <Reveal>
+              <div className="rounded-2xl border border-[#FFB454]/30 bg-[#FFB454]/[0.06] p-8 relative overflow-hidden">
+                <span className="absolute top-0 right-0 bg-[#FFB454]/15 text-[#FFB454] text-[10px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">
+                  Coming Soon
+                </span>
+                <h3 className="text-white font-bold text-xl mb-2.5 pr-24">Subject Choice Advisor</h3>
+                <p className="text-white/55 text-sm leading-relaxed max-w-2xl mb-6">
+                  At the end of Grade 9 you choose the subjects that decide your matric —
+                  and your university options. Nexi is learning how you work across your
+                  Grade 8 and 9 subjects, so when the moment comes she can help you and
+                  your family choose with confidence: Maths or Maths Lit, the science
+                  stream, EMS — with your future options mapped out clearly.
+                </p>
+                <Link
+                  href="/nexi-tutor"
+                  className="inline-block px-6 py-3 bg-[#FFB454] hover:bg-[#FFC474] text-[#0A1628] font-bold text-sm rounded-xl transition-colors"
+                >
+                  Get homework help now →
+                </Link>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      )}
+
+      {phase === "fet" && (
+        <>
       {/* ── 2. APS CALCULATOR ── */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-[#1B2A4A] mb-2">APS Calculator</h2>
-            <p className="text-gray-500 text-sm max-w-lg mx-auto">
+          <Reveal className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-white mb-2">APS Calculator</h2>
+            <p className="text-white/50 text-sm max-w-lg mx-auto">
               Enter your marks for all 7 subjects. We use your best 6 (excluding
               Life Orientation) to calculate your university APS score.
             </p>
-          </div>
+          </Reveal>
 
-          <div className="bg-white rounded-2xl shadow-sm border border-[#1B2A4A]/8 overflow-hidden">
-            <div className="grid grid-cols-12 gap-2 px-6 py-3 bg-[#1B2A4A] text-white text-xs font-semibold uppercase tracking-wider">
-              <div className="col-span-1 text-center">#</div>
-              <div className="col-span-5">Subject</div>
-              <div className="col-span-3 text-center">Mark (%)</div>
-              <div className="col-span-2 text-center">APS</div>
-              <div className="col-span-1 text-center">✓</div>
-            </div>
+          <Reveal>
+            <div className="glass rounded-2xl overflow-hidden">
+              <div className="grid grid-cols-12 gap-2 px-6 py-3 bg-white/5 border-b border-white/10 text-white/70 text-xs font-semibold uppercase tracking-wider">
+                <div className="col-span-1 text-center">#</div>
+                <div className="col-span-5">Subject</div>
+                <div className="col-span-3 text-center">Mark (%)</div>
+                <div className="col-span-2 text-center">APS</div>
+                <div className="col-span-1 text-center">✓</div>
+              </div>
 
-            <div className="divide-y divide-gray-100">
-              {calc.rows.map((row, i) => {
-                const inBest6 = calc.best6Names.has(row.name) && !row.isLO;
-                return (
-                  <div
-                    key={i}
-                    className={`grid grid-cols-12 gap-2 px-6 py-3 items-center transition-colors ${
-                      row.isLO ? "bg-amber-50/60" : inBest6 ? "bg-blue-50/40" : ""
-                    }`}
-                  >
-                    <div className="col-span-1 text-center text-xs text-gray-400 font-medium">{i + 1}</div>
-                    <div className="col-span-5">
-                      <select
-                        value={subjects[i].name}
-                        onChange={(e) => updateName(i, e.target.value)}
-                        className="w-full text-sm text-[#1B2A4A] bg-transparent border-b border-gray-200 focus:border-[#2D6BE4] focus:outline-none py-1 pr-2 cursor-pointer"
-                      >
-                        {SUBJECT_OPTIONS.map((s) => (
-                          <option key={s} value={s}>{s}</option>
-                        ))}
-                      </select>
-                      {row.isLO && (
-                        <span className="text-[10px] text-amber-600 font-medium">
-                          Recorded — excluded from university APS
-                        </span>
-                      )}
-                    </div>
-                    <div className="col-span-3 flex items-center justify-center">
-                      <div className="relative w-20">
-                        <input
-                          type="number"
-                          min={0}
-                          max={100}
-                          value={subjects[i].percentage}
-                          onChange={(e) => updatePercentage(i, e.target.value)}
-                          placeholder="0"
-                          className="w-full text-center text-sm font-medium text-[#1B2A4A] border border-gray-200 rounded-lg py-1.5 focus:outline-none focus:ring-2 focus:ring-[#2D6BE4]/40 focus:border-[#2D6BE4]"
-                        />
-                        <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-gray-400">%</span>
+              <div className="divide-y divide-white/5">
+                {calc.rows.map((row, i) => {
+                  const inBest6 = calc.best6Names.has(row.name) && !row.isLO;
+                  return (
+                    <div
+                      key={i}
+                      className={`grid grid-cols-12 gap-2 px-6 py-3 items-center transition-colors ${
+                        row.isLO ? "bg-amber-400/5" : inBest6 ? "bg-[#2D6BE4]/10" : ""
+                      }`}
+                    >
+                      <div className="col-span-1 text-center text-xs text-white/30 font-medium">{i + 1}</div>
+                      <div className="col-span-5">
+                        <select
+                          value={subjects[i].name}
+                          onChange={(e) => updateName(i, e.target.value)}
+                          className="w-full text-[15px] font-semibold text-white bg-transparent border-b border-white/15 focus:border-[#00D4FF] focus:outline-none py-1.5 pr-2 cursor-pointer"
+                        >
+                          {SUBJECT_OPTIONS.map((s) => (
+                            <option key={s} value={s}>{s}</option>
+                          ))}
+                        </select>
+                        {row.isLO && (
+                          <span className="text-[10px] text-amber-300 font-medium">
+                            Recorded — excluded from university APS
+                          </span>
+                        )}
+                      </div>
+                      <div className="col-span-3 flex items-center justify-center">
+                        <div className="relative w-20">
+                          <input
+                            type="number"
+                            min={0}
+                            max={100}
+                            value={subjects[i].percentage}
+                            onChange={(e) => updatePercentage(i, e.target.value)}
+                            placeholder="0"
+                            className="w-full text-center text-sm font-medium text-white bg-white/5 border border-white/15 rounded-lg py-1.5 focus:outline-none focus:ring-2 focus:ring-[#00D4FF]/40 focus:border-[#00D4FF] placeholder:text-white/20"
+                          />
+                          <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-white/30">%</span>
+                        </div>
+                      </div>
+                      <div className="col-span-2 flex justify-center">
+                        {row.aps !== null ? (
+                          <span className={`inline-flex items-center justify-center w-9 h-9 rounded-full border font-bold text-sm ${apsBadgeColor(row.aps)}`}>
+                            {row.aps}
+                          </span>
+                        ) : (
+                          <span className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/10 text-white/20 text-sm">—</span>
+                        )}
+                      </div>
+                      <div className="col-span-1 flex justify-center">
+                        {inBest6 ? (
+                          <span className="text-[#00D4FF] text-base">✓</span>
+                        ) : row.isLO ? (
+                          <span className="text-amber-300 text-base">★</span>
+                        ) : (
+                          <span className="text-white/15 text-base">○</span>
+                        )}
                       </div>
                     </div>
-                    <div className="col-span-2 flex justify-center">
-                      {row.aps !== null ? (
-                        <span className={`inline-flex items-center justify-center w-9 h-9 rounded-full border font-bold text-sm ${apsBadgeColor(row.aps)}`}>
-                          {row.aps}
-                        </span>
-                      ) : (
-                        <span className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-gray-100 text-gray-300 text-sm">—</span>
-                      )}
-                    </div>
-                    <div className="col-span-1 flex justify-center">
-                      {inBest6 ? (
-                        <span className="text-[#2D6BE4] text-base">✓</span>
-                      ) : row.isLO ? (
-                        <span className="text-amber-400 text-base">★</span>
-                      ) : (
-                        <span className="text-gray-200 text-base">○</span>
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-
-            <div className="border-t border-[#1B2A4A]/10 px-6 py-5 bg-[#F0F4FF] flex items-center justify-between flex-wrap gap-4">
-              <div>
-                <p className="text-xs text-gray-500 mb-0.5">
-                  Based on best {Math.min(calc.filledCount, 6)} of {calc.filledCount} completed subjects (excl. Life Orientation)
-                </p>
-                <div className="flex items-center gap-3">
-                  <span className="text-sm font-medium text-gray-600">Your APS Score</span>
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-4xl font-extrabold text-[#1B2A4A]">{calc.totalAPS}</span>
-                    <span className="text-gray-400 text-sm">/ 42</span>
-                  </div>
-                </div>
+                  );
+                })}
               </div>
-              <div className="flex-1 min-w-[160px] max-w-xs">
-                <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-[#2D6BE4] rounded-full transition-all duration-500"
-                    style={{ width: `${Math.min((calc.totalAPS / 42) * 100, 100)}%` }}
-                  />
-                </div>
-                <div className="flex justify-between text-[10px] text-gray-400 mt-1">
-                  <span>0</span><span>21</span><span>42</span>
+
+              {/* ── Glowing APS ring ── */}
+              <div className="border-t border-white/10 px-6 py-8 bg-white/[0.03] flex flex-col sm:flex-row items-center justify-center gap-8">
+                <ProgressRing value={calc.totalAPS} max={42} size={190} strokeWidth={13}>
+                  <span className="text-5xl font-extrabold text-white leading-none">{calc.totalAPS}</span>
+                  <span className="text-white/40 text-sm mt-1">/ 42 APS</span>
+                </ProgressRing>
+                <div className="text-center sm:text-left">
+                  <p className="text-sm font-semibold text-white mb-1">Your APS Score</p>
+                  <p className="text-xs text-white/50 max-w-[220px] leading-relaxed">
+                    Based on best {Math.min(calc.filledCount, 6)} of {calc.filledCount} completed
+                    subjects (excl. Life Orientation)
+                  </p>
                 </div>
               </div>
             </div>
+          </Reveal>
+
+          <div className="flex flex-wrap gap-4 mt-4 text-xs text-white/50">
+            <span className="flex items-center gap-1.5"><span className="text-[#00D4FF]">✓</span> Counted in your APS</span>
+            <span className="flex items-center gap-1.5"><span className="text-amber-300">★</span> Life Orientation (recorded only)</span>
+            <span className="flex items-center gap-1.5"><span className="text-white/20">○</span> Not in best 6</span>
           </div>
 
-          <div className="flex flex-wrap gap-4 mt-4 text-xs text-gray-500">
-            <span className="flex items-center gap-1.5"><span className="text-[#2D6BE4]">✓</span> Counted in your APS</span>
-            <span className="flex items-center gap-1.5"><span className="text-amber-400">★</span> Life Orientation (recorded only)</span>
-            <span className="flex items-center gap-1.5"><span className="text-gray-300">○</span> Not in best 6</span>
-          </div>
-
-          <div className="mt-6 bg-white rounded-xl border border-[#1B2A4A]/8 overflow-hidden">
-            <div className="px-5 py-3 bg-[#1B2A4A]/5 border-b border-[#1B2A4A]/8">
-              <p className="text-xs font-semibold text-[#1B2A4A] uppercase tracking-wider">APS Points Scale</p>
+          <Reveal className="mt-6">
+            <div className="glass rounded-xl overflow-hidden">
+              <div className="px-5 py-3 bg-white/5 border-b border-white/10">
+                <p className="text-xs font-semibold text-white uppercase tracking-wider">APS Points Scale</p>
+              </div>
+              <div className="grid grid-cols-7 divide-x divide-white/5 text-center text-xs">
+                {[
+                  { range: "80–100%", pts: 7, color: "text-emerald-300" },
+                  { range: "70–79%", pts: 6, color: "text-emerald-400" },
+                  { range: "60–69%", pts: 5, color: "text-[#00D4FF]" },
+                  { range: "50–59%", pts: 4, color: "text-[#7EABFF]" },
+                  { range: "40–49%", pts: 3, color: "text-amber-300" },
+                  { range: "30–39%", pts: 2, color: "text-orange-300" },
+                  { range: "0–29%", pts: 1, color: "text-red-300" },
+                ].map((r) => (
+                  <div key={r.pts} className="py-3 px-1">
+                    <p className={`font-bold text-base ${r.color}`}>{r.pts}</p>
+                    <p className="text-white/30 text-[10px] mt-0.5 leading-tight">{r.range}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="grid grid-cols-7 divide-x divide-gray-100 text-center text-xs">
-              {[
-                { range: "80–100%", pts: 7, color: "text-emerald-600" },
-                { range: "70–79%", pts: 6, color: "text-emerald-500" },
-                { range: "60–69%", pts: 5, color: "text-blue-500" },
-                { range: "50–59%", pts: 4, color: "text-blue-400" },
-                { range: "40–49%", pts: 3, color: "text-yellow-500" },
-                { range: "30–39%", pts: 2, color: "text-orange-500" },
-                { range: "0–29%", pts: 1, color: "text-red-500" },
-              ].map((r) => (
-                <div key={r.pts} className="py-3 px-1">
-                  <p className={`font-bold text-base ${r.color}`}>{r.pts}</p>
-                  <p className="text-gray-400 text-[10px] mt-0.5 leading-tight">{r.range}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          </Reveal>
         </div>
       </section>
+
+      <div className="section-divider" />
 
       {/* ── 3. UNIVERSITY & PROGRAMME MATCH ── */}
-      <section className="py-16 px-4 bg-[#1B2A4A]">
+      <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-10">
+          <Reveal className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-2">
-              Choose Your Dream University & Programme
+              Choose Your Dream <span className="text-gradient">University &amp; Programme</span>
             </h2>
-            <p className="text-gray-400 text-sm max-w-lg mx-auto">
+            <p className="text-white/50 text-sm max-w-lg mx-auto">
               See whether your current APS qualifies — and how close you are if it doesn&apos;t.
             </p>
-          </div>
+          </Reveal>
 
-          <div className="bg-[#243660] rounded-2xl border border-white/8 overflow-hidden">
-            <div className="p-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
-              <div>
-                <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">University</label>
-                <select
-                  value={selectedUniversity}
-                  onChange={(e) => handleUniversityChange(e.target.value)}
-                  className="w-full bg-[#1B2A4A] text-white border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2D6BE4]/50 focus:border-[#2D6BE4]"
-                >
-                  <option value="">— Select a university —</option>
-                  {Object.keys(UNIVERSITIES).map((u) => (
-                    <option key={u} value={u}>{u}</option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Programme</label>
-                <select
-                  value={selectedProgramme}
-                  onChange={(e) => setSelectedProgramme(e.target.value)}
-                  disabled={!selectedUniversity}
-                  className="w-full bg-[#1B2A4A] text-white border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2D6BE4]/50 focus:border-[#2D6BE4] disabled:opacity-40 disabled:cursor-not-allowed"
-                >
-                  <option value="">— Select a programme —</option>
-                  {programmes.map((p) => (
-                    <option key={p} value={p}>{p}</option>
-                  ))}
-                </select>
-              </div>
-            </div>
-
-            {minAPS !== null && (
-              <div className={`mx-6 mb-6 rounded-xl p-5 border ${qualifies ? "bg-emerald-900/30 border-emerald-500/30" : "bg-red-900/20 border-red-500/20"}`}>
-                <div className="flex items-start justify-between gap-4 flex-wrap">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Min APS required</p>
-                    <p className="text-4xl font-extrabold text-white">{minAPS}</p>
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Your APS</p>
-                    <p className={`text-4xl font-extrabold ${qualifies ? "text-emerald-400" : "text-red-400"}`}>{calc.totalAPS}</p>
-                  </div>
-                  <div className="flex-1 min-w-[160px]">
-                    {qualifies ? (
-                      <div className="flex items-center gap-2 mt-1">
-                        <span className="text-2xl">🎉</span>
-                        <div>
-                          <p className="text-emerald-400 font-bold text-sm">You qualify!</p>
-                          <p className="text-gray-400 text-xs">Your APS meets the minimum for this programme.</p>
-                        </div>
-                      </div>
-                    ) : (
-                      <div className="flex items-center gap-2 mt-1">
-                        <span className="text-2xl">📈</span>
-                        <div>
-                          <p className="text-red-400 font-bold text-sm">
-                            {apsGap !== null && apsGap > 0 ? `${apsGap} more APS point${apsGap > 1 ? "s" : ""} needed` : "Keep improving"}
-                          </p>
-                          <p className="text-gray-400 text-xs">Use Nexi Tutor to target your weakest subjects.</p>
-                        </div>
-                      </div>
-                    )}
-                  </div>
+          <Reveal>
+            <div className="glass rounded-2xl overflow-hidden">
+              <div className="p-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label className="block text-xs font-semibold uppercase tracking-wider text-white/50 mb-2">University</label>
+                  <select
+                    value={selectedUniversity}
+                    onChange={(e) => handleUniversityChange(e.target.value)}
+                    className={SELECT_DARK}
+                  >
+                    <option value="">— Select a university —</option>
+                    {Object.keys(UNIVERSITIES).map((u) => (
+                      <option key={u} value={u}>{u}</option>
+                    ))}
+                  </select>
                 </div>
-                {!qualifies && apsGap !== null && apsGap > 0 && (
-                  <div className="mt-4">
-                    <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-[#2D6BE4] rounded-full transition-all duration-500"
-                        style={{ width: `${Math.min((calc.totalAPS / minAPS) * 100, 100)}%` }}
-                      />
-                    </div>
-                    <p className="text-[10px] text-gray-500 mt-1 text-right">{calc.totalAPS} / {minAPS} APS</p>
-                  </div>
-                )}
+                <div>
+                  <label className="block text-xs font-semibold uppercase tracking-wider text-white/50 mb-2">Programme</label>
+                  <select
+                    value={selectedProgramme}
+                    onChange={(e) => setSelectedProgramme(e.target.value)}
+                    disabled={!selectedUniversity}
+                    className={SELECT_DARK + " disabled:opacity-40 disabled:cursor-not-allowed"}
+                  >
+                    <option value="">— Select a programme —</option>
+                    {programmes.map((p) => (
+                      <option key={p} value={p}>{p}</option>
+                    ))}
+                  </select>
+                </div>
               </div>
-            )}
 
-            {!selectedUniversity && (
-              <div className="px-6 pb-6 text-center text-gray-500 text-sm">
-                Select a university and programme above to see if you qualify.
-              </div>
-            )}
-          </div>
+              {minAPS !== null && (
+                <div
+                  className={`mx-6 mb-6 rounded-xl p-5 border ${
+                    qualifies
+                      ? "bg-emerald-400/10 border-emerald-400/30"
+                      : apsQualifies
+                        ? "bg-amber-400/10 border-amber-400/25"
+                        : "bg-red-400/10 border-red-400/25"
+                  }`}
+                >
+                  <div className="flex items-start justify-between gap-4 flex-wrap">
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wider text-white/50 mb-1">Min APS required</p>
+                      <p className="text-4xl font-extrabold text-white">{minAPS}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wider text-white/50 mb-1">Your APS</p>
+                      <p className={`text-4xl font-extrabold ${apsQualifies ? "text-emerald-300" : "text-red-300"}`}>{calc.totalAPS}</p>
+                    </div>
+                    <div className="flex-1 min-w-[160px]">
+                      {qualifies ? (
+                        <div className="flex items-center gap-3 mt-1">
+                          <IconRocket className="w-7 h-7 text-emerald-300 flex-shrink-0" />
+                          <div>
+                            <p className="text-emerald-300 font-bold text-sm">You qualify!</p>
+                            <p className="text-white/50 text-xs">Your APS and subjects meet the requirements for this programme.</p>
+                          </div>
+                        </div>
+                      ) : apsQualifies ? (
+                        <div className="flex items-center gap-3 mt-1">
+                          <IconTrendingUp className="w-7 h-7 text-amber-300 flex-shrink-0" />
+                          <div>
+                            <p className="text-amber-300 font-bold text-sm">
+                              APS met — {reqProblems} subject requirement{reqProblems !== 1 ? "s" : ""} to sort out
+                            </p>
+                            <p className="text-white/50 text-xs">See the subject checklist below.</p>
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="flex items-center gap-3 mt-1">
+                          <IconTrendingUp className="w-7 h-7 text-amber-300 flex-shrink-0" />
+                          <div>
+                            <p className="text-red-300 font-bold text-sm">
+                              {apsGap !== null && apsGap > 0 ? `${apsGap} more APS point${apsGap > 1 ? "s" : ""} needed` : "Keep improving"}
+                            </p>
+                            <p className="text-white/50 text-xs">Use Nexi Tutor to target your weakest subjects.</p>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                  {!apsQualifies && apsGap !== null && apsGap > 0 && (
+                    <div className="mt-4">
+                      <div className="h-2 bg-white/10 rounded-full overflow-hidden">
+                        <div
+                          className="h-full bg-gradient-to-r from-[#2D6BE4] to-[#00D4FF] rounded-full transition-all duration-700"
+                          style={{ width: `${Math.min((calc.totalAPS / minAPS) * 100, 100)}%` }}
+                        />
+                      </div>
+                      <p className="text-[10px] text-white/40 mt-1 text-right">{calc.totalAPS} / {minAPS} APS</p>
+                    </div>
+                  )}
+
+                  {/* ── Subject requirements checklist ── */}
+                  {reqChecks.length > 0 && (
+                    <div className="mt-5 pt-5 border-t border-white/10">
+                      <p className="text-xs font-semibold uppercase tracking-wider text-white/50 mb-3">
+                        Required subjects
+                      </p>
+                      <ul className="space-y-2.5">
+                        {reqChecks.map((r) => (
+                          <li key={r.subject} className="flex items-center justify-between gap-3 text-sm flex-wrap">
+                            <span className="text-white/80">
+                              {r.subject} <span className="text-white/40">≥ {r.minPct}%</span>
+                              {r.note && (
+                                <span className="text-white/35 text-xs"> · {r.note}</span>
+                              )}
+                            </span>
+                            {r.status === "met" && (
+                              <span className="text-emerald-300 font-semibold text-xs">
+                                ✓ You&apos;re at {r.pct}%
+                              </span>
+                            )}
+                            {r.status === "low" && (
+                              <span className="text-amber-300 font-semibold text-xs">
+                                {r.pct}% — need {r.minPct}%
+                              </span>
+                            )}
+                            {r.status === "noMark" && (
+                              <span className="text-white/40 text-xs">
+                                Enter your mark above
+                              </span>
+                            )}
+                            {r.status === "missing" && (
+                              <span className="text-red-300 font-semibold text-xs">
+                                Not one of your subjects
+                              </span>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                      {allReqsMet && (
+                        <p className="text-emerald-300/80 text-xs mt-3">
+                          You take all the required subjects and your marks meet the minimums.
+                        </p>
+                      )}
+                      {reqChecks.some((r) => r.status === "missing") && (
+                        <p className="text-white/40 text-xs mt-3 leading-relaxed">
+                          Missing a required subject? Talk to your school about your subject
+                          choices as early as possible — some subjects can&apos;t be added late.
+                        </p>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {!selectedUniversity && (
+                <div className="px-6 pb-6 text-center text-white/40 text-sm">
+                  Select a university and programme above to see if you qualify.
+                </div>
+              )}
+            </div>
+          </Reveal>
         </div>
       </section>
+
+      <div className="section-divider" />
 
       {/* ── 4. YOUR FOCUS AREAS ── */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-[#1B2A4A] mb-2">Your Focus Areas</h2>
-            <p className="text-gray-500 text-sm max-w-lg mx-auto">
+          <Reveal className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-white mb-2">Your <span className="text-gradient">Focus Areas</span></h2>
+            <p className="text-white/50 text-sm max-w-lg mx-auto">
               These are your weakest subjects right now. Improving them has the
               biggest impact on your APS score.
             </p>
-          </div>
+          </Reveal>
 
           {focusAreas.length === 0 ? (
-            <div className="bg-white rounded-2xl border border-[#1B2A4A]/8 p-10 text-center">
-              <p className="text-4xl mb-3">📝</p>
-              <p className="text-[#1B2A4A] font-semibold mb-1">No marks entered yet</p>
-              <p className="text-gray-400 text-sm">Enter your subject percentages above to see your personalised focus areas.</p>
-            </div>
+            <Reveal>
+              <div className="glass rounded-2xl p-10 text-center">
+                <IconDocumentText className="w-10 h-10 text-[#00D4FF] mx-auto mb-3" />
+                <p className="text-white font-semibold mb-1">No marks entered yet</p>
+                <p className="text-white/40 text-sm">Enter your subject percentages above to see your personalised focus areas.</p>
+              </div>
+            </Reveal>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-              {focusAreas.map((row) => (
-                <div
-                  key={row.name}
-                  className="bg-white rounded-2xl border border-[#1B2A4A]/8 shadow-sm p-6 flex flex-col"
-                >
-                  {/* APS badge + subject */}
-                  <div className="flex items-center justify-between mb-4">
-                    <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full border font-bold text-base ${apsBadgeColor(row.aps ?? 1)}`}>
-                      {row.aps}
-                    </span>
-                    <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">APS point{row.aps !== 1 ? "s" : ""}</span>
-                  </div>
-
-                  <h3 className="font-bold text-[#1B2A4A] text-base mb-1 leading-snug">{row.name}</h3>
-
-                  <p className="text-sm text-gray-500 mb-1">
-                    Current mark: <span className="font-semibold text-[#1B2A4A]">{row.pct}%</span>
-                  </p>
-
-                  {/* Progress bar to next APS threshold */}
-                  <div className="my-3">
-                    <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-[#2D6BE4] rounded-full transition-all duration-500"
-                        style={{ width: `${Math.min(((row.pct ?? 0) / 100) * 100, 100)}%` }}
-                      />
+              {focusAreas.map((row, i) => (
+                <Reveal key={row.name} delay={i * 120} className="h-full">
+                  <div className="glass-card p-6 flex flex-col h-full">
+                    {/* APS badge + subject */}
+                    <div className="flex items-center justify-between mb-4">
+                      <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full border font-bold text-base ${apsBadgeColor(row.aps ?? 1)}`}>
+                        {row.aps}
+                      </span>
+                      <span className="text-xs font-semibold text-white/40 uppercase tracking-wider">APS point{row.aps !== 1 ? "s" : ""}</span>
                     </div>
+
+                    <h3 className="font-bold text-white text-base mb-1 leading-snug">{row.name}</h3>
+
+                    <p className="text-sm text-white/50 mb-1">
+                      Current mark: <span className="font-semibold text-white">{row.pct}%</span>
+                    </p>
+
+                    {/* Progress bar, color-coded by APS level */}
+                    <div className="my-3">
+                      <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
+                        <div
+                          className={`h-full rounded-full transition-all duration-700 ${apsBarColor(row.aps ?? 1)}`}
+                          style={{ width: `${Math.min(((row.pct ?? 0) / 100) * 100, 100)}%` }}
+                        />
+                      </div>
+                    </div>
+
+                    <p className="text-xs text-white/40 leading-relaxed mb-5 flex-1">
+                      {focusMessage(row.aps ?? 1)}
+                    </p>
+
+                    <Link
+                      href="/nexi-tutor"
+                      className="mt-auto inline-flex items-center gap-1 text-sm font-semibold text-[#00D4FF] hover:text-white transition-colors group"
+                    >
+                      Improve this subject
+                      <span className="group-hover:translate-x-0.5 transition-transform">→</span>
+                    </Link>
                   </div>
-
-                  <p className="text-xs text-gray-400 leading-relaxed mb-5 flex-1">
-                    {focusMessage(row.aps ?? 1)}
-                  </p>
-
-                  <Link
-                    href="/nexi-tutor"
-                    className="mt-auto inline-flex items-center gap-1 text-sm font-semibold text-[#2D6BE4] hover:text-[#2558C5] transition-colors group"
-                  >
-                    Improve this subject
-                    <span className="group-hover:translate-x-0.5 transition-transform">→</span>
-                  </Link>
-                </div>
+                </Reveal>
               ))}
             </div>
           )}
         </div>
       </section>
 
+      <div className="section-divider" />
+
       {/* ── 5. EXPLORE YOUR OPTIONS ── */}
-      <section className="py-16 px-4 bg-[#1B2A4A]">
+      <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-white mb-2">Explore Your Options</h2>
-            <p className="text-gray-400 text-sm max-w-lg mx-auto">
+          <Reveal className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-white mb-2">Explore Your <span className="text-gradient">Options</span></h2>
+            <p className="text-white/50 text-sm max-w-lg mx-auto">
               Based on your current APS of{" "}
               <span className="text-white font-bold">{calc.totalAPS}</span>
               {calc.totalAPS > 0
                 ? " — here are programmes you qualify for and ones just within reach."
                 : " — enter your marks above to see personalised programme suggestions."}
             </p>
-          </div>
+          </Reveal>
 
           {exploreOptions.length === 0 ? (
-            <div className="bg-[#243660] rounded-2xl border border-white/8 p-10 text-center">
-              <p className="text-4xl mb-3">🎓</p>
-              <p className="text-white font-semibold mb-1">Enter your marks above</p>
-              <p className="text-gray-400 text-sm">We&apos;ll show you programmes matched to your APS score — from higher certificates to degrees.</p>
-            </div>
+            <Reveal>
+              <div className="glass rounded-2xl p-10 text-center">
+                <IconAcademicCap className="w-10 h-10 text-[#00D4FF] mx-auto mb-3" />
+                <p className="text-white font-semibold mb-1">Enter your marks above</p>
+                <p className="text-white/40 text-sm">We&apos;ll show you programmes matched to your APS score — from higher certificates to degrees.</p>
+              </div>
+            </Reveal>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {exploreOptions.map((option, idx) => {
                 const gap = option.minAPS - calc.totalAPS;
                 const qualifiesForThis = gap <= 0;
                 return (
-                  <div
-                    key={idx}
-                    className={`rounded-2xl p-5 border flex flex-col transition-all ${
-                      qualifiesForThis
-                        ? "bg-[#243660] border-emerald-500/30"
-                        : "bg-[#1F3158] border-white/8"
-                    }`}
-                  >
-                    {/* Type + qualify badge */}
-                    <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
-                      <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${TYPE_COLORS[option.type]}`}>
-                        {option.type}
-                      </span>
-                      {qualifiesForThis ? (
-                        <span className="text-[10px] font-bold text-emerald-400 bg-emerald-900/40 px-2 py-0.5 rounded-full">
-                          ✓ You qualify
+                  <Reveal key={idx} delay={(idx % 3) * 100} className="h-full">
+                    <div
+                      className={`glass-card p-5 flex flex-col h-full ${
+                        qualifiesForThis ? "!border-emerald-400/40" : ""
+                      }`}
+                    >
+                      {/* Type + qualify badge */}
+                      <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
+                        <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${TYPE_COLORS[option.type]}`}>
+                          {option.type}
                         </span>
-                      ) : (
-                        <span className="text-[10px] font-bold text-amber-400 bg-amber-900/30 px-2 py-0.5 rounded-full">
-                          {gap} pt{gap !== 1 ? "s" : ""} away
-                        </span>
-                      )}
-                    </div>
-
-                    {/* Programme & university */}
-                    <h3 className="text-white font-bold text-base leading-snug mb-1">{option.programme}</h3>
-                    <p className="text-gray-400 text-xs mb-4 leading-relaxed">{option.university}</p>
-
-                    {/* APS info */}
-                    <div className="mt-auto">
-                      <div className="flex items-center justify-between text-xs text-gray-500 mb-1.5">
-                        <span>Min APS: <span className="text-white font-semibold">{option.minAPS}</span></span>
-                        <span>Yours: <span className={`font-semibold ${qualifiesForThis ? "text-emerald-400" : "text-[#7EABFF]"}`}>{calc.totalAPS}</span></span>
-                      </div>
-                      <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
-                        <div
-                          className={`h-full rounded-full transition-all duration-500 ${qualifiesForThis ? "bg-emerald-500" : "bg-[#2D6BE4]"}`}
-                          style={{ width: `${Math.min((calc.totalAPS / option.minAPS) * 100, 100)}%` }}
-                        />
-                      </div>
-
-                      {/* Status line */}
-                      <p className="text-xs mt-2.5">
                         {qualifiesForThis ? (
-                          <span className="text-emerald-400 font-medium">You meet the minimum requirement.</span>
+                          <span className="text-[10px] font-bold text-emerald-300 bg-emerald-400/15 border border-emerald-400/30 px-2 py-0.5 rounded-full">
+                            ✓ You qualify
+                          </span>
                         ) : (
-                          <span className="text-gray-400">
-                            You&apos;re <span className="text-amber-400 font-semibold">{gap} point{gap !== 1 ? "s" : ""}</span> away from qualifying.
+                          <span className="text-[10px] font-bold text-amber-300 bg-amber-400/15 border border-amber-400/30 px-2 py-0.5 rounded-full">
+                            {gap} pt{gap !== 1 ? "s" : ""} away
                           </span>
                         )}
-                      </p>
+                      </div>
+
+                      {/* Programme & university */}
+                      <h3 className="text-white font-bold text-base leading-snug mb-1">{option.programme}</h3>
+                      <p className="text-white/40 text-xs mb-4 leading-relaxed">{option.university}</p>
+
+                      {/* APS info */}
+                      <div className="mt-auto">
+                        <div className="flex items-center justify-between text-xs text-white/40 mb-1.5">
+                          <span>Min APS: <span className="text-white font-semibold">{option.minAPS}</span></span>
+                          <span>Yours: <span className={`font-semibold ${qualifiesForThis ? "text-emerald-300" : "text-[#00D4FF]"}`}>{calc.totalAPS}</span></span>
+                        </div>
+                        <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
+                          <div
+                            className={`h-full rounded-full transition-all duration-700 ${qualifiesForThis ? "bg-emerald-400" : "bg-gradient-to-r from-[#2D6BE4] to-[#00D4FF]"}`}
+                            style={{ width: `${Math.min((calc.totalAPS / option.minAPS) * 100, 100)}%` }}
+                          />
+                        </div>
+
+                        {/* Status line */}
+                        <p className="text-xs mt-2.5">
+                          {qualifiesForThis ? (
+                            <span className="text-emerald-300 font-medium">You meet the minimum requirement.</span>
+                          ) : (
+                            <span className="text-white/40">
+                              You&apos;re <span className="text-amber-300 font-semibold">{gap} point{gap !== 1 ? "s" : ""}</span> away from qualifying.
+                            </span>
+                          )}
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  </Reveal>
                 );
               })}
             </div>
           )}
 
           {exploreOptions.length > 0 && (
-            <p className="text-center text-gray-500 text-xs mt-8">
+            <p className="text-center text-white/30 text-xs mt-8">
               APS requirements are indicative. Always confirm with the institution directly.
             </p>
           )}
         </div>
       </section>
+        </>
+      )}
 
     </div>
   );
