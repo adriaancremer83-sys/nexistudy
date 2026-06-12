@@ -1,23 +1,27 @@
-import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/lib/auth";
 import Link from "next/link";
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
-import { IconDocumentText, IconSparkles, IconTarget } from "@/components/icons";
-import { PAST_PAPERS } from "@/lib/pastPapers";
+import { IconDocumentText, IconSparkles } from "@/components/icons";
+import { getSubjects, GROUP_ORDER } from "@/lib/pastPapers";
 
 export const metadata: Metadata = {
-  title: "NSC Past Exam Papers — Free Download | NexiStudy",
+  title: "NSC Past Exam Papers — All Subjects, Free | NexiStudy",
   description:
-    "Download official Grade 12 NSC Mathematics past exam papers and memos from the Department of Basic Education — free, organised by year.",
+    "Download official Grade 12 NSC past exam papers and memos for Mathematics, Physical Sciences, Life Sciences, Accounting, all 11 languages and more — free, organised by subject and year.",
 };
 
-export default async function PastPapersPage() {
-  const session = await getServerSession(authOptions);
-  const loggedIn = Boolean(session?.user);
+const GROUP_BLURBS: Record<string, string> = {
+  Core: "The gateway subjects every learner writes",
+  Sciences: "Physical, Life and Agricultural Sciences",
+  Commerce: "Accounting, Business Studies and Economics",
+  Humanities: "Geography, History and Tourism",
+  Technology: "CAT and Information Technology",
+  Languages: "All 11 official languages — HL and FAL",
+};
 
-  // Group papers by year, newest first
-  const years = [...new Set(PAST_PAPERS.map((p) => p.year))].sort((a, b) => b - a);
+export default function PastPapersPage() {
+  const subjects = getSubjects();
+  const groups = GROUP_ORDER.filter((g) => subjects.some((s) => s.group === g));
 
   return (
     <div className="min-h-screen">
@@ -28,96 +32,72 @@ export default async function PastPapersPage() {
             NSC Past Exam Papers
           </h1>
           <p className="text-white/40 text-sm mt-2 max-w-xl leading-relaxed">
-            Official papers and memos, straight from the Department of Basic
-            Education. Free for everyone — practising with real papers is the
-            single best way to prepare for the real thing.
+            Official Grade 12 papers and memos, straight from the Department of
+            Basic Education — free, and organised so you find your subject in
+            seconds. Pick a subject to see its papers by year.
           </p>
         </div>
       </section>
 
       <div className="section-divider" />
 
-      <div className="max-w-5xl mx-auto px-4 py-10 space-y-6">
-        <Reveal>
-          <div className="flex items-center justify-between flex-wrap gap-3">
-            <h2 className="text-white font-bold text-xl">Grade 12 · Mathematics</h2>
-            <span className="text-xs font-semibold uppercase tracking-widest text-white/30">
-              More subjects on the way
-            </span>
-          </div>
-        </Reveal>
-
-        {years.map((year, i) => {
-          const papers = PAST_PAPERS.filter((p) => p.year === year);
-          return (
-            <Reveal key={year} delay={80 + i * 80}>
-              <div className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] overflow-hidden">
-                <div className="px-6 py-4 border-b border-white/10 bg-white/5 flex items-center gap-2.5 text-[#00D4FF]">
-                  <IconDocumentText className="w-4 h-4" />
-                  <h3 className="text-xs font-semibold text-white uppercase tracking-widest">
-                    {papers[0].session} {year}
-                  </h3>
-                </div>
-                <ul className="divide-y divide-white/[0.06]">
-                  {papers.map((p) => (
-                    <li
-                      key={p.paper}
-                      className="px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3"
-                    >
-                      <span className="text-white font-semibold text-sm">
-                        {p.subject} {p.paper}
-                      </span>
-                      <span className="flex gap-2.5 flex-shrink-0">
-                        <a
-                          href={p.paperUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="px-4 py-2 bg-[#2D6BE4] hover:bg-[#4A82F0] text-white text-xs font-bold rounded-lg transition-colors"
-                        >
-                          Question Paper ↓
-                        </a>
-                        <a
-                          href={p.memoUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="px-4 py-2 glass hover:bg-white/10 text-white/80 hover:text-white text-xs font-bold rounded-lg transition-colors"
-                        >
-                          Memo ↓
-                        </a>
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+      <div className="max-w-5xl mx-auto px-4 py-10 space-y-10">
+        {groups.map((group, gi) => (
+          <Reveal key={group} delay={60 + gi * 60}>
+            <section>
+              <div className="flex items-baseline justify-between flex-wrap gap-2 mb-4">
+                <h2 className="text-white font-bold text-xl">{group}</h2>
+                <span className="text-xs text-white/30">{GROUP_BLURBS[group]}</span>
               </div>
-            </Reveal>
-          );
-        })}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {subjects
+                  .filter((s) => s.group === group)
+                  .map((s) => (
+                    <Link
+                      key={s.slug}
+                      href={`/past-papers/${s.slug}`}
+                      className="group rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-5 transition-[border-color,box-shadow] duration-300 hover:border-[#00D4FF]/40 hover:shadow-[0_0_24px_rgba(0,212,255,0.12)]"
+                    >
+                      <div className="flex items-center justify-between gap-3 mb-2">
+                        <h3 className="text-white font-bold leading-snug">{s.subject}</h3>
+                        <IconDocumentText className="w-5 h-5 text-[#00D4FF] flex-shrink-0" />
+                      </div>
+                      <p className="text-white/40 text-xs">
+                        {s.paperCount} {s.paperCount === 1 ? "paper" : "papers"} with memos ·{" "}
+                        {s.yearFrom === s.yearTo ? s.yearTo : `${s.yearFrom}–${s.yearTo}`}
+                      </p>
+                      <span className="inline-block mt-3 text-xs font-semibold text-[#00D4FF] group-hover:text-white transition-colors">
+                        View papers →
+                      </span>
+                    </Link>
+                  ))}
+              </div>
+            </section>
+          </Reveal>
+        ))}
 
-        {/* Work the paper, then fix the gaps */}
-        <Reveal delay={360}>
+        <Reveal delay={420}>
           <div className="glass-strong rounded-2xl p-7 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 !border-[#00D4FF]/25">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-[#2D6BE4]/20 border border-[#00D4FF]/20 flex items-center justify-center flex-shrink-0 text-[#00D4FF]">
-                {loggedIn ? <IconTarget className="w-6 h-6" /> : <IconSparkles className="w-6 h-6" />}
+                <IconSparkles className="w-6 h-6" />
               </div>
               <div>
                 <h3 className="text-white font-bold text-lg mb-1">
-                  {loggedIn
-                    ? "Found a section you struggled with?"
-                    : "Don't just download — actually improve"}
+                  Don&apos;t just download — actually improve
                 </h3>
                 <p className="text-white/50 text-sm leading-relaxed max-w-md">
-                  {loggedIn
-                    ? "Take a quick topic quiz and Nexi will add it to your weak-spots map, then help you fix it before exam day."
-                    : "Create a free account and Nexi will quiz you topic by topic, map your weak spots, and show you exactly what to fix before the exam."}
+                  With a free NexiStudy account, Nexi quizzes you topic by topic,
+                  maps your weak spots, and shows you exactly what to fix before
+                  the exam.
                 </p>
               </div>
             </div>
             <Link
-              href={loggedIn ? "/practice" : "/signup"}
+              href="/signup"
               className="flex-shrink-0 px-6 py-3 bg-[#2D6BE4] hover:bg-[#4A82F0] text-white font-bold text-sm rounded-xl transition-colors whitespace-nowrap"
             >
-              {loggedIn ? "Practise weak topics →" : "Create free account →"}
+              Create free account →
             </Link>
           </div>
         </Reveal>
