@@ -1,0 +1,530 @@
+[
+ {
+  "id": "d17e239e-2714-4d21-bcd3-cd5d23758f91",
+  "topic": "Cellular Respiration & Energy",
+  "prompt": "Cellular respiration takes place mainly in the ___ of the cell.",
+  "options": [
+   "nucleus",
+   "mitochondria",
+   "chloroplast",
+   "cell wall"
+  ]
+ },
+ {
+  "id": "55f0c61c-cdd4-4ab3-b44f-7d26f7021bc5",
+  "topic": "Cellular Respiration & Energy",
+  "prompt": "The energy-carrying molecule produced by cellular respiration is:",
+  "options": [
+   "ATP",
+   "DNA",
+   "glucose",
+   "chlorophyll"
+  ]
+ },
+ {
+  "id": "75c16335-0f02-4f76-9ef0-3c7756db257c",
+  "topic": "Cellular Respiration & Energy",
+  "prompt": "Aerobic respiration requires:",
+  "options": [
+   "nitrogen",
+   "carbon dioxide",
+   "oxygen",
+   "light"
+  ]
+ },
+ {
+  "id": "ad47bf10-b023-4f31-9d81-194348d44b83",
+  "topic": "Cellular Respiration & Energy",
+  "prompt": "The aerobic respiration of glucose produces carbon dioxide, water and:",
+  "options": [
+   "oxygen",
+   "more glucose",
+   "nitrogen",
+   "energy (ATP)"
+  ]
+ },
+ {
+  "id": "2cf88e9c-00bc-4b36-a87c-83846cb83e90",
+  "topic": "Cellular Respiration & Energy",
+  "prompt": "Respiration that takes place WITHOUT oxygen is called:",
+  "options": [
+   "photosynthesis",
+   "anaerobic respiration",
+   "transpiration",
+   "digestion"
+  ]
+ },
+ {
+  "id": "486dab58-0ff5-47fd-a7cc-2fe3e0f20669",
+  "topic": "Cellular Respiration & Energy",
+  "prompt": "Anaerobic respiration in yeast produces carbon dioxide and:",
+  "options": [
+   "alcohol (ethanol)",
+   "oxygen",
+   "only water",
+   "glucose"
+  ]
+ },
+ {
+  "id": "938149ae-969c-4738-aded-e0340b0f30ed",
+  "topic": "Cellular Respiration & Energy",
+  "prompt": "Anaerobic respiration in human muscle cells produces:",
+  "options": [
+   "alcohol",
+   "oxygen",
+   "lactic acid",
+   "glucose"
+  ]
+ },
+ {
+  "id": "730be525-3aea-4aa8-9fce-a553d99b657a",
+  "topic": "Cellular Respiration & Energy",
+  "prompt": "Compared with anaerobic respiration, aerobic respiration releases:",
+  "options": [
+   "less energy",
+   "no energy",
+   "exactly the same energy",
+   "much more energy"
+  ]
+ },
+ {
+  "id": "5e0ca4a6-9e4f-457f-92aa-9f062e25c8c7",
+  "topic": "Population Ecology",
+  "prompt": "A group of organisms of the SAME species living in the same area at the same time is a:",
+  "options": [
+   "population",
+   "community",
+   "ecosystem",
+   "biome"
+  ]
+ },
+ {
+  "id": "b73db360-8c44-4276-a529-dbb87bb478c2",
+  "topic": "Population Ecology",
+  "prompt": "All the different populations living and interacting in the same area form a:",
+  "options": [
+   "single population",
+   "community",
+   "single species",
+   "niche"
+  ]
+ },
+ {
+  "id": "ea8abda2-d0d8-4781-8e5d-ae9e54035043",
+  "topic": "Population Ecology",
+  "prompt": "The number of individuals of a species per unit area is called population:",
+  "options": [
+   "growth",
+   "migration",
+   "density",
+   "succession"
+  ]
+ },
+ {
+  "id": "eb8da31b-99c6-436c-a181-5e97b0fa0505",
+  "topic": "Population Ecology",
+  "prompt": "When individuals move INTO a population from elsewhere, it is called:",
+  "options": [
+   "emigration",
+   "mortality",
+   "natality",
+   "immigration"
+  ]
+ },
+ {
+  "id": "1875fcf3-8c22-413d-b42a-7465da549dbd",
+  "topic": "Population Ecology",
+  "prompt": "The movement of individuals OUT of a population is called:",
+  "options": [
+   "emigration",
+   "immigration",
+   "natality",
+   "density"
+  ]
+ },
+ {
+  "id": "3fe38c29-746a-47f8-88db-8e0764103850",
+  "topic": "Population Ecology",
+  "prompt": "The birth rate of a population is also known as:",
+  "options": [
+   "mortality",
+   "natality",
+   "emigration",
+   "density"
+  ]
+ },
+ {
+  "id": "8532a186-9f8d-406a-b63c-f0a8c5638121",
+  "topic": "Population Ecology",
+  "prompt": "Factors such as competition, predation and disease, whose effect depends on population size, are called ___ factors.",
+  "options": [
+   "density-independent",
+   "abiotic",
+   "density-dependent",
+   "climatic"
+  ]
+ },
+ {
+  "id": "bded120d-28c8-41b1-bba8-c42a034b05c3",
+  "topic": "Population Ecology",
+  "prompt": "A population growth graph that rises and then levels off at the carrying capacity has a(n) ___ shape.",
+  "options": [
+   "straight-line",
+   "exponential J",
+   "completely random",
+   "S-shaped (sigmoid)"
+  ]
+ },
+ {
+  "id": "d054aea5-d054-451d-943c-52d6e8942577",
+  "topic": "Animal Nutrition & Digestion",
+  "prompt": "Biological catalysts that speed up the breakdown of food during digestion are:",
+  "options": [
+   "enzymes",
+   "hormones",
+   "vitamins",
+   "minerals"
+  ]
+ },
+ {
+  "id": "a99eb34f-2926-472f-b041-71f9ffc72d44",
+  "topic": "Animal Nutrition & Digestion",
+  "prompt": "The enzyme in saliva that begins the digestion of starch is:",
+  "options": [
+   "pepsin",
+   "amylase",
+   "lipase",
+   "trypsin"
+  ]
+ },
+ {
+  "id": "ba6f20f3-f3c5-43a3-84e2-f1fce63f785a",
+  "topic": "Animal Nutrition & Digestion",
+  "prompt": "Proteins are digested (broken down) into:",
+  "options": [
+   "glucose",
+   "fatty acids",
+   "amino acids",
+   "starch"
+  ]
+ },
+ {
+  "id": "dd0c87ba-eff3-4903-a8ee-aed5cc8531d3",
+  "topic": "Animal Nutrition & Digestion",
+  "prompt": "Carbohydrates such as starch are eventually digested into simple sugars such as:",
+  "options": [
+   "amino acids",
+   "fatty acids",
+   "glycerol",
+   "glucose"
+  ]
+ },
+ {
+  "id": "9c741a4e-6fd2-4f22-97e4-525b59d1abbb",
+  "topic": "Animal Nutrition & Digestion",
+  "prompt": "The absorption of digested food into the bloodstream takes place mainly in the:",
+  "options": [
+   "small intestine",
+   "mouth",
+   "oesophagus",
+   "large intestine"
+  ]
+ },
+ {
+  "id": "c9f85c7b-2100-4bcf-993a-13375d2d0e39",
+  "topic": "Animal Nutrition & Digestion",
+  "prompt": "The finger-like projections that increase the surface area for absorption in the small intestine are the:",
+  "options": [
+   "alveoli",
+   "villi",
+   "nephrons",
+   "stomata"
+  ]
+ },
+ {
+  "id": "3ea62b95-7313-4695-a714-f178e70779c6",
+  "topic": "Animal Nutrition & Digestion",
+  "prompt": "The muscular, wave-like movement that pushes food along the digestive tract is called:",
+  "options": [
+   "digestion",
+   "diffusion",
+   "peristalsis",
+   "absorption"
+  ]
+ },
+ {
+  "id": "d2f764ca-913e-4248-b11c-ce9d0f9b09da",
+  "topic": "Animal Nutrition & Digestion",
+  "prompt": "Fats (lipids) are digested into fatty acids and:",
+  "options": [
+   "glucose",
+   "amino acids",
+   "starch",
+   "glycerol"
+  ]
+ },
+ {
+  "id": "86ba2cd4-7886-48fa-8266-de52a59406b8",
+  "topic": "Classification & Biodiversity",
+  "prompt": "The science of classifying and naming organisms is called:",
+  "options": [
+   "taxonomy",
+   "ecology",
+   "genetics",
+   "anatomy"
+  ]
+ },
+ {
+  "id": "88073a65-52d7-474b-8bed-9898b6f9bac2",
+  "topic": "Classification & Biodiversity",
+  "prompt": "Which sequence shows the taxonomic hierarchy from the largest to the smallest grouping?",
+  "options": [
+   "Species, Genus, Family, Order",
+   "Kingdom, Phylum, Class, Order, Family, Genus, Species",
+   "Genus, Species, Kingdom, Phylum",
+   "Class, Kingdom, Phylum, Order"
+  ]
+ },
+ {
+  "id": "c559e651-9554-4d4e-a607-3813c47fe883",
+  "topic": "Classification & Biodiversity",
+  "prompt": "The system of giving each organism a two-part scientific name (genus and species) is called:",
+  "options": [
+   "common naming",
+   "the metric system",
+   "binomial nomenclature",
+   "a dichotomous key"
+  ]
+ },
+ {
+  "id": "7c688f20-cb1b-4402-9379-1dd84eab704a",
+  "topic": "Classification & Biodiversity",
+  "prompt": "In the scientific name Panthera leo, the word 'Panthera' is the:",
+  "options": [
+   "species",
+   "kingdom",
+   "family",
+   "genus"
+  ]
+ },
+ {
+  "id": "2473fc3a-980b-4c83-b67f-9b048f86170d",
+  "topic": "Classification & Biodiversity",
+  "prompt": "Organisms that make their own food through photosynthesis are called:",
+  "options": [
+   "autotrophs",
+   "heterotrophs",
+   "decomposers",
+   "parasites"
+  ]
+ },
+ {
+  "id": "3d10bf0e-99ea-4908-9d36-0217683922ab",
+  "topic": "Classification & Biodiversity",
+  "prompt": "Bacteria are classified in the kingdom:",
+  "options": [
+   "Animalia",
+   "Monera (Prokaryotae)",
+   "Plantae",
+   "Fungi"
+  ]
+ },
+ {
+  "id": "3a38e47f-627f-41f1-99bf-dedb5179127a",
+  "topic": "Classification & Biodiversity",
+  "prompt": "A key feature that makes viruses different from living cells is that viruses:",
+  "options": [
+   "are made of many cells",
+   "make their own food",
+   "can only reproduce inside a host cell",
+   "have a true nucleus"
+  ]
+ },
+ {
+  "id": "4ca73471-976a-4176-8e2e-f44d3cca9b4a",
+  "topic": "Classification & Biodiversity",
+  "prompt": "The variety of all the different living organisms in an area is called:",
+  "options": [
+   "a population",
+   "a niche",
+   "a food chain",
+   "biodiversity"
+  ]
+ },
+ {
+  "id": "caa7ff74-6518-4a98-98c9-ff2c0c86e088",
+  "topic": "Photosynthesis",
+  "prompt": "Photosynthesis takes place mainly in the ___ of plant cells.",
+  "options": [
+   "mitochondria",
+   "chloroplasts",
+   "nucleus",
+   "ribosomes"
+  ]
+ },
+ {
+  "id": "7278a859-f3f0-4840-9704-e59682bede42",
+  "topic": "Photosynthesis",
+  "prompt": "The green pigment that absorbs light energy for photosynthesis is:",
+  "options": [
+   "chlorophyll",
+   "haemoglobin",
+   "melanin",
+   "carotene"
+  ]
+ },
+ {
+  "id": "3a44f77d-c388-44ba-8251-b9e95e6f025b",
+  "topic": "Photosynthesis",
+  "prompt": "The two raw materials (reactants) needed for photosynthesis are:",
+  "options": [
+   "oxygen and glucose",
+   "water and oxygen",
+   "carbon dioxide and water",
+   "glucose and water"
+  ]
+ },
+ {
+  "id": "7807b4eb-9b4a-41a4-8e57-504bdff1674f",
+  "topic": "Photosynthesis",
+  "prompt": "The products of photosynthesis are:",
+  "options": [
+   "carbon dioxide and water",
+   "water and nitrogen",
+   "carbon dioxide and oxygen",
+   "glucose and oxygen"
+  ]
+ },
+ {
+  "id": "8e3bf745-c594-4807-947b-3a70d661404b",
+  "topic": "Photosynthesis",
+  "prompt": "The gas taken IN by a plant during photosynthesis is:",
+  "options": [
+   "oxygen",
+   "carbon dioxide",
+   "nitrogen",
+   "hydrogen"
+  ]
+ },
+ {
+  "id": "c70a6325-aa8b-4123-9f4f-5e18e529b8cc",
+  "topic": "Photosynthesis",
+  "prompt": "The gas RELEASED during photosynthesis is:",
+  "options": [
+   "oxygen",
+   "carbon dioxide",
+   "nitrogen",
+   "methane"
+  ]
+ },
+ {
+  "id": "a730d4e4-6601-4c72-844a-0a48e7850372",
+  "topic": "Photosynthesis",
+  "prompt": "Besides carbon dioxide and water, photosynthesis also requires:",
+  "options": [
+   "darkness",
+   "soil only",
+   "light energy",
+   "extra oxygen"
+  ]
+ },
+ {
+  "id": "6115db91-a33a-438a-8a2e-6bc2c0d69ff4",
+  "topic": "Photosynthesis",
+  "prompt": "The main source of energy for photosynthesis is:",
+  "options": [
+   "heat from the soil",
+   "chemical fertiliser",
+   "wind",
+   "sunlight"
+  ]
+ },
+ {
+  "id": "6cf3cb87-4c2f-4d4f-a006-2a5ec6810a10",
+  "topic": "Gaseous Exchange",
+  "prompt": "Efficient gaseous exchange surfaces are typically:",
+  "options": [
+   "thick and dry",
+   "thin and moist with a large surface area",
+   "small and hard",
+   "covered in a layer of wax"
+  ]
+ },
+ {
+  "id": "e3dbee9d-8330-44ce-b5db-602a0cffad93",
+  "topic": "Gaseous Exchange",
+  "prompt": "In humans, gaseous exchange takes place in the tiny air sacs of the lungs called:",
+  "options": [
+   "alveoli",
+   "bronchi",
+   "nephrons",
+   "villi"
+  ]
+ },
+ {
+  "id": "1e436f49-82c4-4ee9-9757-19a014f90fd2",
+  "topic": "Gaseous Exchange",
+  "prompt": "During gaseous exchange in the lungs, oxygen moves from the alveoli into the:",
+  "options": [
+   "stomach",
+   "bones",
+   "blood (capillaries)",
+   "nerves"
+  ]
+ },
+ {
+  "id": "1b8702a1-1e89-4014-b27c-060b8f53c7b1",
+  "topic": "Gaseous Exchange",
+  "prompt": "Insects carry out gaseous exchange through a system of tubes called:",
+  "options": [
+   "alveoli",
+   "gills",
+   "stomata",
+   "tracheae (with spiracles)"
+  ]
+ },
+ {
+  "id": "ef5dca1b-fa62-4e4a-a5ae-e1a6767110f8",
+  "topic": "Gaseous Exchange",
+  "prompt": "Fish carry out gaseous exchange using their:",
+  "options": [
+   "lungs",
+   "gills",
+   "skin only",
+   "spiracles"
+  ]
+ },
+ {
+  "id": "85cba556-9fb0-4ead-abdd-9c8398705073",
+  "topic": "Gaseous Exchange",
+  "prompt": "The process by which gases move across a respiratory surface, from high to low concentration, is:",
+  "options": [
+   "diffusion",
+   "active transport",
+   "osmosis",
+   "respiration"
+  ]
+ },
+ {
+  "id": "86caa007-394a-43e6-a6c8-b48747f1d8dc",
+  "topic": "Gaseous Exchange",
+  "prompt": "In plants, gaseous exchange occurs mainly through small pores in the leaf called:",
+  "options": [
+   "alveoli",
+   "veins",
+   "stomata",
+   "roots"
+  ]
+ },
+ {
+  "id": "5323f020-a7c8-4313-bb79-abc31a2181a8",
+  "topic": "Gaseous Exchange",
+  "prompt": "A good gaseous exchange surface has a rich blood supply in order to:",
+  "options": [
+   "store food",
+   "produce bone",
+   "make hormones",
+   "transport gases to and from the cells quickly"
+  ]
+ }
+]
