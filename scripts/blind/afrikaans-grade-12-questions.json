@@ -1,0 +1,530 @@
+[
+ {
+  "id": "a899cd3e-8592-4ab4-b8a7-b468974ede4c",
+  "topic": "Ontkenning",
+  "prompt": "\"Ek sien die hond.\" In die ontkennende vorm word dit:",
+  "options": [
+   "Ek sien nie die hond.",
+   "Ek nie sien die hond nie.",
+   "Ek sien nie die hond nie.",
+   "Ek sien die hond nie."
+  ]
+ },
+ {
+  "id": "2766f1c3-9808-4cad-a621-d4021639200c",
+  "topic": "Ontkenning",
+  "prompt": "Die ontkennende vorm van \"iemand\" is:",
+  "options": [
+   "niemand",
+   "niks",
+   "nêrens",
+   "nooit"
+  ]
+ },
+ {
+  "id": "c8ee0de3-3ef3-497b-931e-a1c1a2f55dbf",
+  "topic": "Ontkenning",
+  "prompt": "Die ontkennende vorm van \"iets\" is:",
+  "options": [
+   "niemand",
+   "nêrens",
+   "nooit",
+   "niks"
+  ]
+ },
+ {
+  "id": "e3550f9f-9b80-4274-ad5a-654441172445",
+  "topic": "Ontkenning",
+  "prompt": "\"Sy is altyd vroeg.\" In die ontkennende vorm word dit:",
+  "options": [
+   "Sy is nie altyd vroeg.",
+   "Sy is nooit vroeg nie.",
+   "Sy is altyd nie vroeg nie.",
+   "Sy is nooit nie vroeg."
+  ]
+ },
+ {
+  "id": "b19603ed-f1a1-40da-a4b1-f5ed511bddc1",
+  "topic": "Ontkenning",
+  "prompt": "Die ontkennende vorm van \"êrens\" is:",
+  "options": [
+   "nêrens",
+   "niks",
+   "niemand",
+   "geen"
+  ]
+ },
+ {
+  "id": "6d7a17a7-4488-49c7-a0c9-13719d259381",
+  "topic": "Ontkenning",
+  "prompt": "\"Het jy al geëet?\" Die korrekte ontkennende antwoord is:",
+  "options": [
+   "Nee, ek het nie geëet.",
+   "Nee, ek het al nie geëet nie.",
+   "Nee, ek het nog nie geëet nie.",
+   "Nee, ek het nooit geëet."
+  ]
+ },
+ {
+  "id": "0ae65f0f-a3dc-4e8b-a7ff-425aece6d324",
+  "topic": "Ontkenning",
+  "prompt": "\"Ek ken daardie man.\" In die ontkennende vorm word dit:",
+  "options": [
+   "Ek ken daardie man nie.",
+   "Ek ken nie daardie man nie.",
+   "Ek nie ken daardie man.",
+   "Ek ken nie daardie man."
+  ]
+ },
+ {
+  "id": "5f49e559-c38c-41b8-8576-49ac440ae86d",
+  "topic": "Ontkenning",
+  "prompt": "\"Ek het iets gesê.\" In die ontkennende vorm word dit:",
+  "options": [
+   "Ek het nie iets gesê nie.",
+   "Ek het niemand gesê nie.",
+   "Ek niks gesê het nie.",
+   "Ek het niks gesê nie."
+  ]
+ },
+ {
+  "id": "9e46d06b-95e1-4c31-a127-50cc02d81539",
+  "topic": "Intensiewe Vorme",
+  "prompt": "Die intensiewe vorm van \"koud\" is:",
+  "options": [
+   "yskoud",
+   "vuurkoud",
+   "doodkoud",
+   "sneeukoud"
+  ]
+ },
+ {
+  "id": "149471bf-fd7a-4379-954d-c5b1fd4cc403",
+  "topic": "Intensiewe Vorme",
+  "prompt": "Die intensiewe vorm van \"warm\" is:",
+  "options": [
+   "yswarm",
+   "kliphard",
+   "vuurwarm",
+   "spierwarm"
+  ]
+ },
+ {
+  "id": "05321f4c-aa19-4d5e-af32-cdc9f61acc7b",
+  "topic": "Intensiewe Vorme",
+  "prompt": "Die intensiewe vorm van \"hard\" is:",
+  "options": [
+   "bloedhard",
+   "kliphard",
+   "sneeuhard",
+   "gitshard"
+  ]
+ },
+ {
+  "id": "bcec2c8d-83df-4aff-9cfb-354628b4159c",
+  "topic": "Intensiewe Vorme",
+  "prompt": "Die intensiewe vorm van \"ryk\" is:",
+  "options": [
+   "klipryk",
+   "witryk",
+   "bloedryk",
+   "skatryk"
+  ]
+ },
+ {
+  "id": "a73a6546-960a-4edb-8d77-4d9c8bdf07ee",
+  "topic": "Intensiewe Vorme",
+  "prompt": "Die intensiewe vorm van \"arm\" is:",
+  "options": [
+   "skatarm",
+   "ysarm",
+   "brandarm",
+   "spierarm"
+  ]
+ },
+ {
+  "id": "3a37bba4-0752-4b94-a6d7-6b0c29df50ba",
+  "topic": "Intensiewe Vorme",
+  "prompt": "Die intensiewe vorm van \"nuut\" is:",
+  "options": [
+   "splinternuut",
+   "blinknuut",
+   "vuurnuut",
+   "gitnuut"
+  ]
+ },
+ {
+  "id": "381694b4-43cd-48d4-b277-c3156fce6327",
+  "topic": "Intensiewe Vorme",
+  "prompt": "Die intensiewe vorm van \"swart\" is:",
+  "options": [
+   "sneeuswart",
+   "doodswart",
+   "yswart",
+   "gitswart"
+  ]
+ },
+ {
+  "id": "5e84e859-f3ff-4a1c-a967-e69f1ada90d0",
+  "topic": "Intensiewe Vorme",
+  "prompt": "Die intensiewe vorm van \"wit\" is:",
+  "options": [
+   "gitwit",
+   "spierwit",
+   "bloedwit",
+   "pikwit"
+  ]
+ },
+ {
+  "id": "8da11098-3b92-40f8-98ec-f396238302a0",
+  "topic": "Direkte & Indirekte Rede",
+  "prompt": "Sipho sê: \"Ek is honger.\" In die indirekte rede word dit:",
+  "options": [
+   "Sipho sê dat ek honger is.",
+   "Sipho sê dat hy honger is.",
+   "Sipho sê dat hy is honger.",
+   "Sipho sê hy honger dat is."
+  ]
+ },
+ {
+  "id": "aa502219-912d-4e2c-b19a-a53a73f75c12",
+  "topic": "Direkte & Indirekte Rede",
+  "prompt": "In die indirekte rede verander \"môre\" gewoonlik na:",
+  "options": [
+   "daardie dag",
+   "gister",
+   "vandag",
+   "die volgende dag"
+  ]
+ },
+ {
+  "id": "74f9b83e-edbf-40d8-8d31-31d3cf2deb91",
+  "topic": "Direkte & Indirekte Rede",
+  "prompt": "Sy het gesê: \"Ek sal jou help.\" In die indirekte rede word dit:",
+  "options": [
+   "Sy het gesê dat sy my sou help.",
+   "Sy het gesê dat sy jou sal help.",
+   "Sy het gesê dat ek haar sou help.",
+   "Sy sê dat sy my sal help."
+  ]
+ },
+ {
+  "id": "725efd08-a35c-41cc-bd1d-63c131f65d64",
+  "topic": "Direkte & Indirekte Rede",
+  "prompt": "In die indirekte rede verander \"hier\" gewoonlik na:",
+  "options": [
+   "oral",
+   "nêrens",
+   "daar",
+   "iewers"
+  ]
+ },
+ {
+  "id": "42642987-34e7-4c70-b6b9-2614b298001e",
+  "topic": "Direkte & Indirekte Rede",
+  "prompt": "Hy vra: \"Kom jy saam?\" In die indirekte rede word dit:",
+  "options": [
+   "Hy vra dat jy saamkom.",
+   "Hy vra kom jy saam.",
+   "Hy vra of jy saam kom?",
+   "Hy vra of ek saamkom."
+  ]
+ },
+ {
+  "id": "292e1f97-37cf-45b4-b5a6-0a61a2fe550a",
+  "topic": "Direkte & Indirekte Rede",
+  "prompt": "In die indirekte rede verander \"vandag\" gewoonlik na:",
+  "options": [
+   "môre",
+   "daardie dag",
+   "die volgende dag",
+   "hierdie dag"
+  ]
+ },
+ {
+  "id": "cc0a9e24-38ce-4ee6-924e-4159e90b5789",
+  "topic": "Direkte & Indirekte Rede",
+  "prompt": "Ma het gesê: \"Ek het gister die fliek gesien.\" In die indirekte rede word dit:",
+  "options": [
+   "Ma het gesê dat sy die vorige dag die fliek gesien het.",
+   "Ma het gesê dat ek gister die fliek gesien het.",
+   "Ma sê dat sy gister die fliek sien.",
+   "Ma het gesê dat sy die volgende dag die fliek gesien het."
+  ]
+ },
+ {
+  "id": "3b4ec66d-fbde-4b68-b157-0c13aa9467cc",
+  "topic": "Direkte & Indirekte Rede",
+  "prompt": "Wanneer 'n stelsin met \"dat\" na die indirekte rede oorgesit word, skuif die werkwoord gewoonlik na:",
+  "options": [
+   "die begin van die sin",
+   "direk ná \"dat\"",
+   "die einde van die sin",
+   "dit bly op dieselfde plek"
+  ]
+ },
+ {
+  "id": "1580383a-dccb-4008-aecc-afb77d7f22bf",
+  "topic": "Lydende & Bedrywende Vorm",
+  "prompt": "\"Die hond byt die man.\" In die lydende vorm word dit:",
+  "options": [
+   "Die man word deur die hond gebyt.",
+   "Die man is deur die hond gebyt.",
+   "Die man sal deur die hond gebyt word.",
+   "Die hond word deur die man gebyt."
+  ]
+ },
+ {
+  "id": "db4ec20d-7b3d-4101-887a-3f87ad4dd715",
+  "topic": "Lydende & Bedrywende Vorm",
+  "prompt": "\"Thandi het die brief geskryf.\" In die lydende vorm word dit:",
+  "options": [
+   "Die brief word deur Thandi geskryf.",
+   "Die brief sal deur Thandi geskryf word.",
+   "Die brief is deur Thandi geskryf.",
+   "Thandi is deur die brief geskryf."
+  ]
+ },
+ {
+  "id": "45c7c646-af24-4c7a-8b64-14aed196f2eb",
+  "topic": "Lydende & Bedrywende Vorm",
+  "prompt": "In die lydende vorm word die doener van die handeling ingelei deur die woord:",
+  "options": [
+   "met",
+   "deur",
+   "van",
+   "by"
+  ]
+ },
+ {
+  "id": "e6952b44-1c75-4058-ab9a-8c874f426c8c",
+  "topic": "Lydende & Bedrywende Vorm",
+  "prompt": "\"Die onderwyser sal die toetse nasien.\" In die lydende vorm word dit:",
+  "options": [
+   "Die toetse word deur die onderwyser nagesien.",
+   "Die toetse is deur die onderwyser nagesien.",
+   "Die onderwyser word deur die toetse nagesien.",
+   "Die toetse sal deur die onderwyser nagesien word."
+  ]
+ },
+ {
+  "id": "c5856c69-ff08-4b94-8f09-a33a6bc47d21",
+  "topic": "Lydende & Bedrywende Vorm",
+  "prompt": "Watter sin is in die lydende vorm?",
+  "options": [
+   "Die kat jaag die muis.",
+   "Die seun skop die bal.",
+   "Die koek word deur Ouma gebak.",
+   "Die meisie sing 'n lied."
+  ]
+ },
+ {
+  "id": "5cd585d5-ecef-490a-a479-e933ce8e227f",
+  "topic": "Lydende & Bedrywende Vorm",
+  "prompt": "\"Die koek is deur Ouma gebak.\" In die bedrywende vorm word dit:",
+  "options": [
+   "Ouma het die koek gebak.",
+   "Ouma bak die koek.",
+   "Ouma sal die koek bak.",
+   "Die koek het Ouma gebak."
+  ]
+ },
+ {
+  "id": "4974375d-d6f2-49d6-82da-cef5a16a2629",
+  "topic": "Lydende & Bedrywende Vorm",
+  "prompt": "Watter sin is in die bedrywende vorm?",
+  "options": [
+   "Die venster word deur die bal gebreek.",
+   "Die lied is deur die koor gesing.",
+   "Die pad word herstel.",
+   "Die leerders voltooi die projek."
+  ]
+ },
+ {
+  "id": "a851aa03-4102-4c42-8ec8-a95afa048fab",
+  "topic": "Lydende & Bedrywende Vorm",
+  "prompt": "\"Sy was die skottelgoed.\" In die lydende vorm word dit:",
+  "options": [
+   "Die skottelgoed is deur haar gewas.",
+   "Die skottelgoed word deur haar gewas.",
+   "Die skottelgoed sal deur haar gewas word.",
+   "Die skottelgoed het deur haar gewas."
+  ]
+ },
+ {
+  "id": "f747b32e-1fc4-4cc3-9135-53ccfd9d0e76",
+  "topic": "Woordsoorte",
+  "prompt": "In die sin \"Die hond blaf hard\" is die woord \"hard\" 'n:",
+  "options": [
+   "selfstandige naamwoord",
+   "bywoord",
+   "byvoeglike naamwoord",
+   "werkwoord"
+  ]
+ },
+ {
+  "id": "f22b838e-5c69-4005-904c-f22c8c6c546c",
+  "topic": "Woordsoorte",
+  "prompt": "In die sin \"Sy koop 'n pragtige rok\" is die woord \"pragtige\" 'n:",
+  "options": [
+   "werkwoord",
+   "bywoord",
+   "voornaamwoord",
+   "byvoeglike naamwoord"
+  ]
+ },
+ {
+  "id": "6991bb12-c690-4f32-a18d-ef7eaf1e217a",
+  "topic": "Woordsoorte",
+  "prompt": "In die sin \"Hulle wag by die stasie\" is die woord \"by\" 'n:",
+  "options": [
+   "voorsetsel",
+   "voegwoord",
+   "lidwoord",
+   "tussenwerpsel"
+  ]
+ },
+ {
+  "id": "bac6a8b9-bc1f-4e7f-aee5-5b9e94777224",
+  "topic": "Woordsoorte",
+  "prompt": "In die sin \"Thabo en Sipho speel sokker\" is die woord \"en\" 'n:",
+  "options": [
+   "voorsetsel",
+   "bywoord",
+   "voegwoord",
+   "voornaamwoord"
+  ]
+ },
+ {
+  "id": "ec6b224f-7190-422b-b6d8-2a243b1e1042",
+  "topic": "Woordsoorte",
+  "prompt": "Watter woord in hierdie sin is 'n voornaamwoord: \"Sy gee die boek vir die onderwyser\"?",
+  "options": [
+   "boek",
+   "gee",
+   "onderwyser",
+   "Sy"
+  ]
+ },
+ {
+  "id": "9860dea6-b416-4607-be74-466b311da4cf",
+  "topic": "Woordsoorte",
+  "prompt": "Die woord \"geluk\" is 'n:",
+  "options": [
+   "abstrakte selfstandige naamwoord",
+   "konkrete selfstandige naamwoord",
+   "eienaam",
+   "versamelnaam"
+  ]
+ },
+ {
+  "id": "bcb0c396-c170-4877-97b9-3d0fa667c693",
+  "topic": "Woordsoorte",
+  "prompt": "In die frase \"'n trop skape\" is die woord \"trop\" 'n:",
+  "options": [
+   "eienaam",
+   "abstrakte naamwoord",
+   "versamelnaam",
+   "voornaamwoord"
+  ]
+ },
+ {
+  "id": "e9638bc1-0999-4532-bbd7-a95b00b204a8",
+  "topic": "Woordsoorte",
+  "prompt": "In die sin \"Eina! Dit is seer\" is die woord \"Eina\" 'n:",
+  "options": [
+   "werkwoord",
+   "tussenwerpsel",
+   "lidwoord",
+   "voegwoord"
+  ]
+ },
+ {
+  "id": "25653e99-992a-4525-b1e1-7c5912e8f97c",
+  "topic": "Meervoude & Verkleinwoorde",
+  "prompt": "Die meervoud van \"kind\" is:",
+  "options": [
+   "kinde",
+   "kindjies",
+   "kinders",
+   "kindes"
+  ]
+ },
+ {
+  "id": "92e1093a-c739-4374-afcf-b1bf887cfccf",
+  "topic": "Meervoude & Verkleinwoorde",
+  "prompt": "Die meervoud van \"stad\" is:",
+  "options": [
+   "stede",
+   "stads",
+   "stadde",
+   "stade"
+  ]
+ },
+ {
+  "id": "45efd579-73d1-42ac-893f-1ba848d78b43",
+  "topic": "Meervoude & Verkleinwoorde",
+  "prompt": "Die meervoud van \"skip\" is:",
+  "options": [
+   "skips",
+   "skippe",
+   "skipe",
+   "skepe"
+  ]
+ },
+ {
+  "id": "0aefc3d9-29e4-4973-bcd4-6a14281a9883",
+  "topic": "Meervoude & Verkleinwoorde",
+  "prompt": "Die verkleinwoord van \"boom\" is:",
+  "options": [
+   "boomjie",
+   "boompie",
+   "boomtjie",
+   "bometjie"
+  ]
+ },
+ {
+  "id": "f045a8ac-7de9-4cf4-9c43-93cbd6fe5521",
+  "topic": "Meervoude & Verkleinwoorde",
+  "prompt": "Die verkleinwoord van \"hond\" is:",
+  "options": [
+   "hondjie",
+   "hondtjie",
+   "hondetjie",
+   "hondpie"
+  ]
+ },
+ {
+  "id": "00e0f224-9055-43fe-a305-729087d226c1",
+  "topic": "Meervoude & Verkleinwoorde",
+  "prompt": "Die meervoud van \"oog\" is:",
+  "options": [
+   "oogte",
+   "oons",
+   "ogies",
+   "oë"
+  ]
+ },
+ {
+  "id": "904bb110-c9bb-42d2-ac1c-4d0a313435ce",
+  "topic": "Meervoude & Verkleinwoorde",
+  "prompt": "Die verkleinwoord van \"ring\" is:",
+  "options": [
+   "ringjie",
+   "ringetjie",
+   "ringtjie",
+   "ringkie"
+  ]
+ },
+ {
+  "id": "7b14bcc8-0bea-4efe-9ced-1a1ae6fee0e0",
+  "topic": "Meervoude & Verkleinwoorde",
+  "prompt": "Die meervoud van \"blad\" is:",
+  "options": [
+   "blads",
+   "bladde",
+   "blaaie",
+   "blade"
+  ]
+ }
+]
