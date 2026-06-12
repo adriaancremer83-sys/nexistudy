@@ -1,0 +1,530 @@
+[
+ {
+  "id": "fc8bb4c5-a257-4430-9b9c-b6caaeea98bc",
+  "topic": "Bank Reconciliation",
+  "prompt": "On a bank statement, a debit balance indicates:",
+  "options": [
+   "a favourable balance",
+   "interest earned on the account",
+   "an overdraft (the account holder owes the bank)",
+   "a deposit not yet credited"
+  ]
+ },
+ {
+  "id": "da37f0f2-bed2-4b4b-8f11-f3bc2cfb6104",
+  "topic": "Bank Reconciliation",
+  "prompt": "An outstanding cheque is a cheque that has been:",
+  "options": [
+   "recorded in the Cash Payments Journal but not yet presented to the bank for payment",
+   "cancelled by the business",
+   "paid twice by the bank in error",
+   "deposited but not yet credited by the bank"
+  ]
+ },
+ {
+  "id": "532d5295-a460-4520-8498-f86f9b657ec2",
+  "topic": "Bank Reconciliation",
+  "prompt": "Bank charges that appear on the bank statement but not yet in the business's books are recorded in the:",
+  "options": [
+   "Cash Receipts Journal",
+   "Cash Payments Journal",
+   "Debtors Journal",
+   "Creditors Journal"
+  ]
+ },
+ {
+  "id": "be2ef39c-723e-4819-af75-656dcf5533d7",
+  "topic": "Bank Reconciliation",
+  "prompt": "A direct deposit by a debtor that appears only on the bank statement must be entered in the:",
+  "options": [
+   "Creditors Journal",
+   "Cash Payments Journal",
+   "General Journal",
+   "Cash Receipts Journal"
+  ]
+ },
+ {
+  "id": "83576ae2-a456-4e61-bfb0-88282ae8aed1",
+  "topic": "Bank Reconciliation",
+  "prompt": "The bank statement shows a favourable balance of R5 000. Deposits of R2 000 are outstanding and cheques of R3 000 have not yet been presented. The bank account balance in the business's books should be:",
+  "options": [
+   "R10 000",
+   "R4 000",
+   "R6 000",
+   "R5 000"
+  ]
+ },
+ {
+  "id": "b136d71f-96ea-4448-9f0c-17a229149cdf",
+  "topic": "Bank Reconciliation",
+  "prompt": "A debtor's cheque is returned by the bank marked R/D (refer to drawer). The business must:",
+  "options": [
+   "record it in the Cash Payments Journal and add the amount back to the debtor's account",
+   "record it in the Cash Receipts Journal as extra income",
+   "ignore it until the debtor is contacted",
+   "deduct the amount from a creditor's account"
+  ]
+ },
+ {
+  "id": "99346293-8d5c-429f-9f9e-e51a55fc97eb",
+  "topic": "Bank Reconciliation",
+  "prompt": "In the Bank Reconciliation Statement, a deposit not yet credited by the bank is:",
+  "options": [
+   "subtracted from the favourable bank statement balance",
+   "left out of the reconciliation",
+   "recorded in the Cash Payments Journal",
+   "added to the favourable bank statement balance"
+  ]
+ },
+ {
+  "id": "7dcc026f-3873-4bf6-818d-5a75471e6bd7",
+  "topic": "Bank Reconciliation",
+  "prompt": "Interest earned on a favourable bank balance, shown on the bank statement, is entered in the:",
+  "options": [
+   "Cash Payments Journal",
+   "General Journal",
+   "Cash Receipts Journal",
+   "Creditors Journal"
+  ]
+ },
+ {
+  "id": "5c6cf385-da03-4c32-a787-e8810a463e37",
+  "topic": "Fixed Assets & Depreciation",
+  "prompt": "Depreciation is best described as:",
+  "options": [
+   "cash set aside to replace an asset",
+   "the allocation of a fixed asset's cost over its useful life",
+   "the loss of cash when an asset is sold",
+   "the increase in an asset's market value"
+  ]
+ },
+ {
+  "id": "1465b6af-b0bd-4e22-b0a4-c849537049e0",
+  "topic": "Fixed Assets & Depreciation",
+  "prompt": "Equipment cost R40 000. Depreciation is calculated at 10% p.a. on cost. The annual depreciation is:",
+  "options": [
+   "R400",
+   "R36 000",
+   "R44 000",
+   "R4 000"
+  ]
+ },
+ {
+  "id": "b865f394-ea44-42b4-93be-edc852942b38",
+  "topic": "Fixed Assets & Depreciation",
+  "prompt": "A vehicle cost R100 000 and has accumulated depreciation of R20 000. Depreciation at 20% p.a. on the diminishing balance for the year is:",
+  "options": [
+   "R16 000",
+   "R20 000",
+   "R4 000",
+   "R24 000"
+  ]
+ },
+ {
+  "id": "3750f88e-c933-4cfe-8b48-b8aacf6bb7ac",
+  "topic": "Fixed Assets & Depreciation",
+  "prompt": "A machine costing R120 000 was bought on 1 July. The financial year ends on 31 December. Depreciation at 15% p.a. on cost for this financial year is:",
+  "options": [
+   "R18 000",
+   "R4 500",
+   "R9 000",
+   "R13 500"
+  ]
+ },
+ {
+  "id": "4753fa08-b2f4-49e5-8986-e596a782deb6",
+  "topic": "Fixed Assets & Depreciation",
+  "prompt": "An asset cost R60 000 and has accumulated depreciation of R25 000. Its carrying (book) value is:",
+  "options": [
+   "R35 000",
+   "R60 000",
+   "R85 000",
+   "R25 000"
+  ]
+ },
+ {
+  "id": "8658e517-fa9c-4a81-b7ba-aa00f0368061",
+  "topic": "Fixed Assets & Depreciation",
+  "prompt": "In the Statement of Financial Position, accumulated depreciation is:",
+  "options": [
+   "shown as a current liability",
+   "shown as an operating expense",
+   "added to the cost of the asset",
+   "deducted from the cost of the asset"
+  ]
+ },
+ {
+  "id": "b2388f22-01a9-4347-907d-9acb2b03ac27",
+  "topic": "Fixed Assets & Depreciation",
+  "prompt": "An asset with a carrying value of R8 000 is sold for R10 000 cash. The result is:",
+  "options": [
+   "a loss on sale of R2 000",
+   "a profit on sale of R2 000",
+   "a profit on sale of R10 000",
+   "no profit or loss"
+  ]
+ },
+ {
+  "id": "daac8d04-f684-4794-8e2f-cbd36cce8970",
+  "topic": "Fixed Assets & Depreciation",
+  "prompt": "When a fixed asset is sold, its cost price and accumulated depreciation are transferred to the:",
+  "options": [
+   "Trading account",
+   "Capital account",
+   "Asset Disposal account",
+   "Drawings account"
+  ]
+ },
+ {
+  "id": "506c8b4b-3888-4290-a7eb-814af7d8b2f3",
+  "topic": "Partnerships",
+  "prompt": "Profits in a partnership are divided according to:",
+  "options": [
+   "the number of hours each partner works",
+   "SARS regulations",
+   "equal shares in all cases",
+   "the partnership agreement"
+  ]
+ },
+ {
+  "id": "fcb397e0-69bd-4ef9-a563-b3d100425732",
+  "topic": "Partnerships",
+  "prompt": "A partner's salary, interest on capital, share of the remaining profit and drawings are all recorded in the partner's:",
+  "options": [
+   "Capital account",
+   "Drawings account",
+   "Current account",
+   "Loan account"
+  ]
+ },
+ {
+  "id": "b584b908-03ca-446d-838e-22e0a60901a2",
+  "topic": "Partnerships",
+  "prompt": "Partner A's capital balance is R200 000 and interest on capital is 10% p.a. The interest on capital for the year is:",
+  "options": [
+   "R2 000",
+   "R20 000",
+   "R200 000",
+   "R10 000"
+  ]
+ },
+ {
+  "id": "c4efd702-c78f-415d-b250-356e9bec7a91",
+  "topic": "Partnerships",
+  "prompt": "Net profit is R300 000. Partners' salaries total R100 000 and interest on capital totals R50 000. The remaining profit is shared equally between the two partners. Each partner's share of the remaining profit is:",
+  "options": [
+   "R75 000",
+   "R150 000",
+   "R100 000",
+   "R125 000"
+  ]
+ },
+ {
+  "id": "8e835d3b-8190-46c5-9505-f76efdaa14f2",
+  "topic": "Partnerships",
+  "prompt": "The division of a partnership's net profit between the partners is shown in the:",
+  "options": [
+   "Trading account",
+   "Bank account",
+   "Appropriation account",
+   "Asset Disposal account"
+  ]
+ },
+ {
+  "id": "59d250da-7789-4f83-be6c-44703d1f0938",
+  "topic": "Partnerships",
+  "prompt": "A partner's drawings are closed off at the end of the year to the:",
+  "options": [
+   "credit side of the Appropriation account",
+   "debit side of the partner's Current account",
+   "credit side of the Bank account",
+   "debit side of the Trading account"
+  ]
+ },
+ {
+  "id": "52a41c6f-b8e4-4967-be55-58ab80558bd0",
+  "topic": "Partnerships",
+  "prompt": "Unlimited liability in a partnership means that:",
+  "options": [
+   "partners may not be sued for business debts",
+   "the partnership pays no income tax",
+   "partners' losses are limited to their capital contributions",
+   "partners can be held personally liable for the debts of the partnership"
+  ]
+ },
+ {
+  "id": "c7d1f96b-b4a7-48d1-a834-4af9f3e7bc2f",
+  "topic": "Partnerships",
+  "prompt": "A profit of R120 000 is shared between two partners in the ratio 3 : 2. The bigger share is:",
+  "options": [
+   "R72 000",
+   "R48 000",
+   "R60 000",
+   "R80 000"
+  ]
+ },
+ {
+  "id": "2f73e869-84e4-4ad6-a063-e941247a785a",
+  "topic": "Clubs (Non-profit Organisations)",
+  "prompt": "The main aim of a non-profit organisation such as a sports club is to:",
+  "options": [
+   "make the highest possible profit for its owners",
+   "provide services to its members",
+   "pay dividends to shareholders",
+   "trade in goods for profit"
+  ]
+ },
+ {
+  "id": "5e2615d1-64f9-40c6-9ded-7116d844ae91",
+  "topic": "Clubs (Non-profit Organisations)",
+  "prompt": "The club equivalent of a business's Capital account is the:",
+  "options": [
+   "Accumulated Fund",
+   "Capital Fund Reserve",
+   "Trading account",
+   "Appropriation account"
+  ]
+ },
+ {
+  "id": "07bda508-fb85-4970-9f78-cc055b196811",
+  "topic": "Clubs (Non-profit Organisations)",
+  "prompt": "A club calculates its surplus or deficit in the:",
+  "options": [
+   "Receipts and Payments account",
+   "Bank account",
+   "Trading account",
+   "Statement of Income and Expenditure"
+  ]
+ },
+ {
+  "id": "e0057059-8197-4ee4-8a39-14f70c0c50c2",
+  "topic": "Clubs (Non-profit Organisations)",
+  "prompt": "Membership fees received in advance for next year are shown at the year-end as:",
+  "options": [
+   "income for the current year",
+   "a fixed asset",
+   "a current liability",
+   "a current asset"
+  ]
+ },
+ {
+  "id": "d87026b8-af61-47b6-b5c9-7e3a38e8aa00",
+  "topic": "Clubs (Non-profit Organisations)",
+  "prompt": "Membership fees still owed by members at the year-end (accrued income) are shown as:",
+  "options": [
+   "a current asset",
+   "a current liability",
+   "an expense",
+   "a deficit"
+  ]
+ },
+ {
+  "id": "45c10c96-b38d-496d-bb22-013db64552f4",
+  "topic": "Clubs (Non-profit Organisations)",
+  "prompt": "A club received R18 000 in membership fees during the year. Of this, R1 500 was for next year, and members still owe R2 000 for the current year. The membership fee income for the current year is:",
+  "options": [
+   "R18 000",
+   "R21 500",
+   "R18 500",
+   "R14 500"
+  ]
+ },
+ {
+  "id": "03d6b8b7-dd61-4813-bdee-bab41fb60462",
+  "topic": "Clubs (Non-profit Organisations)",
+  "prompt": "The Receipts and Payments account of a club is best described as:",
+  "options": [
+   "a statement of profit for the year",
+   "a summary of all cash received and paid during the year",
+   "a list of the club's members",
+   "a statement of assets and liabilities"
+  ]
+ },
+ {
+  "id": "fd006c6b-5e58-478c-bbd0-41ee7be7e201",
+  "topic": "Clubs (Non-profit Organisations)",
+  "prompt": "When a club's expenditure for the year is more than its income, the difference is called a:",
+  "options": [
+   "surplus",
+   "net profit",
+   "drawing",
+   "deficit"
+  ]
+ },
+ {
+  "id": "daa7657d-394f-411c-9d7a-c68b75e3bcbe",
+  "topic": "Cost Accounting (Manufacturing)",
+  "prompt": "Direct material cost plus direct labour cost is known as:",
+  "options": [
+   "prime cost",
+   "overhead cost",
+   "period cost",
+   "total cost of production"
+  ]
+ },
+ {
+  "id": "469f8f31-878a-4c5d-9ffd-239552ebe0ab",
+  "topic": "Cost Accounting (Manufacturing)",
+  "prompt": "Factory rent and the wages of factory cleaners are examples of:",
+  "options": [
+   "direct labour costs",
+   "direct material costs",
+   "factory overhead costs",
+   "selling and distribution costs"
+  ]
+ },
+ {
+  "id": "f9f0d6b1-88e7-4982-ae10-5e1ad9fa7ee7",
+  "topic": "Cost Accounting (Manufacturing)",
+  "prompt": "Direct materials cost R50 000 and direct labour cost R30 000. The prime cost is:",
+  "options": [
+   "R20 000",
+   "R80 000",
+   "R50 000",
+   "R30 000"
+  ]
+ },
+ {
+  "id": "2bc7cc11-9057-4f40-aff4-99c76d7ab7e9",
+  "topic": "Cost Accounting (Manufacturing)",
+  "prompt": "Prime cost is R80 000 and factory overhead costs are R25 000. The total cost of production is:",
+  "options": [
+   "R55 000",
+   "R80 000",
+   "R25 000",
+   "R105 000"
+  ]
+ },
+ {
+  "id": "96570478-5020-4c91-9dd5-4e6309ef6d4c",
+  "topic": "Cost Accounting (Manufacturing)",
+  "prompt": "The salary of the factory foreman who supervises all production workers is classified as:",
+  "options": [
+   "direct labour",
+   "direct materials",
+   "indirect labour (factory overheads)",
+   "administration cost"
+  ]
+ },
+ {
+  "id": "7800867f-59b1-4f22-b43c-5aa47c3cbea2",
+  "topic": "Cost Accounting (Manufacturing)",
+  "prompt": "Advertising the finished product is classified as a:",
+  "options": [
+   "selling and distribution cost",
+   "direct material cost",
+   "factory overhead cost",
+   "prime cost"
+  ]
+ },
+ {
+  "id": "d64d783a-f67c-411d-a771-2a658366c978",
+  "topic": "Cost Accounting (Manufacturing)",
+  "prompt": "The total cost of production is R150 000 for 5 000 units produced. The unit cost of production is:",
+  "options": [
+   "R3",
+   "R300",
+   "R50",
+   "R30"
+  ]
+ },
+ {
+  "id": "dfe5763d-9b4d-41fc-94d2-c29ce5e600b7",
+  "topic": "Cost Accounting (Manufacturing)",
+  "prompt": "A fixed cost is a cost that:",
+  "options": [
+   "increases in total as production increases",
+   "remains the same in total regardless of the level of production",
+   "is the same per unit at all production levels",
+   "only applies to direct materials"
+  ]
+ },
+ {
+  "id": "e55f39eb-5e66-41fc-a95a-824960e8db77",
+  "topic": "Cash Budgets & VAT",
+  "prompt": "A cash budget shows:",
+  "options": [
+   "the profit for the past year",
+   "the assets and liabilities of a business",
+   "the expected cash receipts and payments for a future period",
+   "actual income and expenses already recorded"
+  ]
+ },
+ {
+  "id": "a120f653-1a3c-4433-ab14-d949a47d7455",
+  "topic": "Cash Budgets & VAT",
+  "prompt": "Which item is never included in a cash budget?",
+  "options": [
+   "wages paid",
+   "depreciation",
+   "cash sales",
+   "rent paid"
+  ]
+ },
+ {
+  "id": "f0e5f79f-e2e0-4a8f-a341-3ef94ba3caa0",
+  "topic": "Cash Budgets & VAT",
+  "prompt": "The opening bank balance is R5 000, expected receipts are R80 000 and expected payments are R65 000. The expected closing bank balance is:",
+  "options": [
+   "R15 000",
+   "R150 000",
+   "R10 000",
+   "R20 000"
+  ]
+ },
+ {
+  "id": "5fdb229b-3d87-45f0-9753-930fef378b70",
+  "topic": "Cash Budgets & VAT",
+  "prompt": "Total sales for March are R60 000: 40% for cash and 60% on credit, collected one month after the sale. The cash expected from March credit sales during April is:",
+  "options": [
+   "R36 000",
+   "R24 000",
+   "R60 000",
+   "R30 000"
+  ]
+ },
+ {
+  "id": "a2433d65-b241-449b-adf7-b797c9be98ce",
+  "topic": "Cash Budgets & VAT",
+  "prompt": "The standard rate of VAT in South Africa is:",
+  "options": [
+   "14%",
+   "15%",
+   "20%",
+   "10%"
+  ]
+ },
+ {
+  "id": "a2e71c05-1aaf-4c3a-851e-9276a61493c8",
+  "topic": "Cash Budgets & VAT",
+  "prompt": "Which item is zero-rated for VAT?",
+  "options": [
+   "brown bread",
+   "restaurant meals",
+   "cooldrinks",
+   "cellphones"
+  ]
+ },
+ {
+  "id": "4a8aab6e-d29b-4e0d-ab65-fb786fc15cb6",
+  "topic": "Cash Budgets & VAT",
+  "prompt": "An item is priced at R400 excluding VAT. The selling price including 15% VAT is:",
+  "options": [
+   "R415",
+   "R400",
+   "R340",
+   "R460"
+  ]
+ },
+ {
+  "id": "dec74d74-3a2c-4a25-8452-2c7e9660e0a3",
+  "topic": "Cash Budgets & VAT",
+  "prompt": "An item sells for R1 150 including 15% VAT. The VAT included in the price is:",
+  "options": [
+   "R172,50",
+   "R115",
+   "R150",
+   "R1 000"
+  ]
+ }
+]
