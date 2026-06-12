@@ -1,4 +1,5 @@
 import bcrypt from "bcryptjs";
+import { supabaseAdmin } from "./supabase";
 
 export interface AppUser {
   id: string;
@@ -13,49 +14,70 @@ export interface AppUser {
   school: string;
 }
 
-// Singleton pattern — survives Next.js hot-reload in development
-const g = globalThis as typeof globalThis & { _nexiUsers?: Map<string, AppUser> };
-
-if (!g._nexiUsers) {
-  g._nexiUsers = new Map<string, AppUser>();
-  // Seed a demo learner account
-  g._nexiUsers.set("demo@nexistudy.co.za", {
-    id: "demo-1",
-    name: "Thandi Dlamini",
-    email: "demo@nexistudy.co.za",
-    password: bcrypt.hashSync("password123", 10),
-    plan: "free",
-    apsScore: 28,
-    grade: "Grade 12",
-    curriculum: "CAPS",
-    role: "learner",
-    school: "",
-  });
-  // Seed a demo teacher account
-  g._nexiUsers.set("teacher@nexistudy.co.za", {
-    id: "demo-t1",
-    name: "Mr. Naidoo",
-    email: "teacher@nexistudy.co.za",
-    password: bcrypt.hashSync("password123", 10),
-    plan: "free",
-    apsScore: 0,
-    grade: "",
-    curriculum: "CAPS",
-    role: "teacher",
-    school: "Northview High",
-  });
+interface UserRow {
+  id: string;
+  name: string;
+  email: string;
+  password_hash: string;
+  plan: "free" | "premium";
+  aps_score: number;
+  grade: string;
+  curriculum: string;
+  role: "learner" | "teacher";
+  school: string;
 }
 
-const users: Map<string, AppUser> = g._nexiUsers;
-
-export function findUser(email: string): AppUser | null {
-  return users.get(email.toLowerCase()) ?? null;
+function rowToUser(row: UserRow): AppUser {
+  return {
+    id: row.id,
+    name: row.name,
+    email: row.email,
+    password: row.password_hash,
+    plan: row.plan,
+    apsScore: row.aps_score,
+    grade: row.grade,
+    curriculum: row.curriculum,
+    role: row.role,
+    school: row.school,
+  };
 }
 
-export function createUser(data: Omit<AppUser, "id">): AppUser {
-  const user: AppUser = { ...data, id: Date.now().toString() };
-  users.set(data.email.toLowerCase(), user);
-  return user;
+export async function findUser(email: string): Promise<AppUser | null> {
+  const { data, error } = await supabaseAdmin
+    .from("users")
+    .select("*")
+    .eq("email", email.toLowerCase())
+    .maybeSingle();
+
+  if (error) {
+    console.error("findUser failed:", error.message);
+    return null;
+  }
+  return data ? rowToUser(data as UserRow) : null;
+}
+
+export async function createUser(data: Omit<AppUser, "id">): Promise<AppUser | null> {
+  const { data: row, error } = await supabaseAdmin
+    .from("users")
+    .insert({
+      name: data.name,
+      email: data.email.toLowerCase(),
+      password_hash: data.password,
+      plan: data.plan,
+      aps_score: data.apsScore,
+      grade: data.grade,
+      curriculum: data.curriculum,
+      role: data.role,
+      school: data.school,
+    })
+    .select()
+    .single();
+
+  if (error) {
+    console.error("createUser failed:", error.message);
+    return null;
+  }
+  return rowToUser(row as UserRow);
 }
 
 export function verifyPassword(plain: string, hash: string): boolean {
