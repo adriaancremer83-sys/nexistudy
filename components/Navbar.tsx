@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "Study Pro", href: "/studypro" },
   { label: "Nexi Tutor", href: "/nexi-tutor" },
+  { label: "Past Papers", href: "/past-papers" },
   { label: "Pricing", href: "/pricing" },
   { label: "About Us", href: "/about-us" },
   { label: "Contact", href: "/contact" },

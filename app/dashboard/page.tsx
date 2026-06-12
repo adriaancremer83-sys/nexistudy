@@ -6,7 +6,7 @@ import Image from "next/image";
 import type { Session } from "next-auth";
 import Reveal from "@/components/Reveal";
 import ProgressRing from "@/components/ProgressRing";
-import { IconAcademicCap, IconCpuChip, IconChartBar, IconStar, IconLock, IconTarget } from "@/components/icons";
+import { IconAcademicCap, IconCpuChip, IconChartBar, IconStar, IconLock, IconTarget, IconDocumentText } from "@/components/icons";
 import { getWeakSpots } from "@/lib/practice";
 
 type ExtendedUser = NonNullable<Session["user"]>;
@@ -196,7 +196,7 @@ export default async function DashboardPage() {
         {/* ── QUICK LINKS ── */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
 
-          <Reveal delay={120} className="h-full sm:col-span-2">
+          <Reveal delay={120} className="h-full">
             <Link
               href="/practice"
               className="group rounded-2xl border border-[#00D4FF]/25 bg-[#0E1F3D] p-9 flex items-start gap-5 h-full transition-[border-color,box-shadow] duration-300 hover:border-[#00D4FF]/50 hover:shadow-[0_0_24px_rgba(0,212,255,0.12)]"
@@ -212,6 +212,27 @@ export default async function DashboardPage() {
                 </p>
                 <span className="inline-block mt-4 text-sm font-semibold text-[#00D4FF] group-hover:text-white transition-colors">
                   Start practising →
+                </span>
+              </div>
+            </Link>
+          </Reveal>
+
+          <Reveal delay={140} className="h-full">
+            <Link
+              href="/past-papers"
+              className="group rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-9 flex items-start gap-5 h-full transition-[border-color,box-shadow] duration-300 hover:border-[#00D4FF]/40 hover:shadow-[0_0_24px_rgba(0,212,255,0.12)]"
+            >
+              <div className="w-14 h-14 rounded-xl bg-[#2D6BE4]/20 border border-[#00D4FF]/20 flex items-center justify-center flex-shrink-0 text-[#00D4FF] group-hover:bg-[#2D6BE4]/30 transition-colors">
+                <IconDocumentText className="w-7 h-7" />
+              </div>
+              <div>
+                <h3 className="text-white font-bold text-xl mb-1.5">Past Papers</h3>
+                <p className="text-white/50 text-sm leading-relaxed">
+                  Official NSC exam papers and memos, organised by year — the
+                  closest thing to the real exam.
+                </p>
+                <span className="inline-block mt-4 text-sm font-semibold text-[#00D4FF] group-hover:text-white transition-colors">
+                  Browse papers →
                 </span>
               </div>
             </Link>
