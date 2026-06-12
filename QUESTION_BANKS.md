@@ -12,8 +12,8 @@ Any mismatch: fix or discard. A bank is not announced/marketed until LIVE-OK.
 | Physical Sciences | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-12, 48/48) |
 | Life Sciences | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-12, 48/48 blind re-solve) |
 | Mathematical Literacy | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-12, 48/48 fresh-context subagent solve) |
-| Accounting | 12 | 6 | 48 | seeded 2026-06-12 — needs blind-verify (export ready) |
-| Mathematics | 11 | 6 | 48 | seeded 2026-06-12 — needs blind-verify (export ready) |
+| Accounting | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-12, 48/48 fresh-context subagent solve) |
+| Mathematics | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-12, 48/48 fresh-context subagent solve) |
 
 ## Report-a-question safety net (built 2026-06-12)
 `supabase-reports-setup.sql` adds `questions.flagged` + `question_reports` table.

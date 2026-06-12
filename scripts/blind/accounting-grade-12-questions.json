@@ -1,5 +1,93 @@
 [
  {
+  "id": "2711869c-659a-4e89-b304-64f8260a60fc",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "The basic accounting equation is:",
+  "options": [
+   "Assets = Owner's Equity − Liabilities",
+   "Assets = Owner's Equity + Liabilities",
+   "Assets + Liabilities = Owner's Equity",
+   "Assets + Owner's Equity = Liabilities"
+  ]
+ },
+ {
+  "id": "e00665c8-e790-4adb-a5ae-a0500de44b12",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "A business owns R50 000 in assets and owes R20 000 in liabilities. The owner's equity is:",
+  "options": [
+   "R20 000",
+   "R30 000",
+   "R50 000",
+   "R70 000"
+  ]
+ },
+ {
+  "id": "dc4d3bf1-98a6-418f-a0d0-dec976b17e48",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "According to which GAAP concept is the business treated as separate from its owner?",
+  "options": [
+   "The business entity concept",
+   "Historical cost",
+   "Prudence",
+   "Going concern"
+  ]
+ },
+ {
+  "id": "3de4907e-548b-4e0f-8fe0-900cf11f6640",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "In the ledger, an asset account increases on the:",
+  "options": [
+   "credit side",
+   "debit side",
+   "both sides equally",
+   "income side"
+  ]
+ },
+ {
+  "id": "49b8ea6c-751c-4a3f-a2e9-62d2f7d8aba6",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "The owner takes R2 000 cash out of the business for personal use. This is recorded as:",
+  "options": [
+   "Drawings",
+   "Capital",
+   "Salary",
+   "Loan"
+  ]
+ },
+ {
+  "id": "8e2559e0-31d2-43da-85c1-1ee58083b277",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "Which of the following is a non-current (fixed) asset?",
+  "options": [
+   "Trading stock",
+   "Debtors",
+   "Equipment",
+   "Bank"
+  ]
+ },
+ {
+  "id": "76d465f8-8d24-4d22-82b2-2085972487dc",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "The GAAP principle requiring income and the expenses incurred to earn it to be recorded in the same period is the:",
+  "options": [
+   "matching (accrual) principle",
+   "prudence principle",
+   "going concern principle",
+   "materiality principle"
+  ]
+ },
+ {
+  "id": "881098c7-2799-406b-807f-f238184fe9fb",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "A liability is best described as:",
+  "options": [
+   "something the business owns",
+   "an amount the business owes to others",
+   "the owner's investment in the business",
+   "an expense paid in cash"
+  ]
+ },
+ {
   "id": "92e68c60-279d-4101-8845-113e0e00d870",
   "topic": "Financial Statements",
   "prompt": "The financial statement that shows a business's profit or loss over a period is the:",
@@ -176,94 +264,6 @@
   ]
  },
  {
-  "id": "aecdf972-7c21-4c0c-8beb-a221ad26cc03",
-  "topic": "Financial Indicators (Ratios)",
-  "prompt": "The current ratio is calculated as:",
-  "options": [
-   "current assets : current liabilities",
-   "current liabilities : current assets",
-   "current assets : fixed assets",
-   "sales : cost of sales"
-  ]
- },
- {
-  "id": "2b46180a-7359-438a-8217-8c385d7fc808",
-  "topic": "Financial Indicators (Ratios)",
-  "prompt": "A business has current assets of R80 000 and current liabilities of R40 000. The current ratio is:",
-  "options": [
-   "1 : 2",
-   "2 : 1",
-   "1 : 1",
-   "4 : 1"
-  ]
- },
- {
-  "id": "29826271-af04-4717-8d46-6fea3f9eb3a9",
-  "topic": "Financial Indicators (Ratios)",
-  "prompt": "The acid-test (quick) ratio differs from the current ratio in that it:",
-  "options": [
-   "excludes inventory from current assets",
-   "includes fixed assets",
-   "uses sales instead of assets",
-   "ignores liabilities entirely"
-  ]
- },
- {
-  "id": "5226a0e2-85a9-4e27-a5ab-23b0eb75a6fe",
-  "topic": "Financial Indicators (Ratios)",
-  "prompt": "A business has a gross profit of R30 000 on sales of R120 000. Its gross profit on sales (margin) is:",
-  "options": [
-   "20%",
-   "25%",
-   "30%",
-   "40%"
-  ]
- },
- {
-  "id": "1070d3d8-0734-4bcd-a74c-27c3accd17b0",
-  "topic": "Financial Indicators (Ratios)",
-  "prompt": "A high debt-to-equity ratio indicates that a business:",
-  "options": [
-   "relies heavily on borrowed funds",
-   "has no liabilities at all",
-   "is extremely liquid",
-   "is holding too much cash"
-  ]
- },
- {
-  "id": "317cb25f-b17e-4bc9-a3a6-474a55551773",
-  "topic": "Financial Indicators (Ratios)",
-  "prompt": "The percentage mark-up on cost is calculated as:",
-  "options": [
-   "(gross profit ÷ cost of sales) × 100",
-   "(gross profit ÷ sales) × 100",
-   "(sales ÷ cost of sales) × 100",
-   "(cost of sales ÷ sales) × 100"
-  ]
- },
- {
-  "id": "d6da7ed1-37da-45a1-b3f5-c473e27dd241",
-  "topic": "Financial Indicators (Ratios)",
-  "prompt": "If cost of sales is R50 000 and the business uses a mark-up of 40% on cost, the gross profit is:",
-  "options": [
-   "R12 500",
-   "R20 000",
-   "R25 000",
-   "R70 000"
-  ]
- },
- {
-  "id": "91dc454b-0b36-41c7-9ceb-db8408607917",
-  "topic": "Financial Indicators (Ratios)",
-  "prompt": "Liquidity ratios are used mainly to measure a business's ability to:",
-  "options": [
-   "pay its short-term debts",
-   "make a long-term profit",
-   "increase its share capital",
-   "calculate depreciation"
-  ]
- },
- {
   "id": "659b8136-e8a2-45be-bea2-94a1a102ab38",
   "topic": "Cash Flow Statement",
   "prompt": "The Cash Flow Statement classifies cash flows into three types of activities:",
@@ -352,91 +352,91 @@
   ]
  },
  {
-  "id": "2711869c-659a-4e89-b304-64f8260a60fc",
-  "topic": "Accounting Equation & Concepts",
-  "prompt": "The basic accounting equation is:",
+  "id": "aecdf972-7c21-4c0c-8beb-a221ad26cc03",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "The current ratio is calculated as:",
   "options": [
-   "Assets = Owner's Equity − Liabilities",
-   "Assets = Owner's Equity + Liabilities",
-   "Assets + Liabilities = Owner's Equity",
-   "Assets + Owner's Equity = Liabilities"
+   "current assets : current liabilities",
+   "current liabilities : current assets",
+   "current assets : fixed assets",
+   "sales : cost of sales"
   ]
  },
  {
-  "id": "e00665c8-e790-4adb-a5ae-a0500de44b12",
-  "topic": "Accounting Equation & Concepts",
-  "prompt": "A business owns R50 000 in assets and owes R20 000 in liabilities. The owner's equity is:",
+  "id": "2b46180a-7359-438a-8217-8c385d7fc808",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "A business has current assets of R80 000 and current liabilities of R40 000. The current ratio is:",
   "options": [
+   "1 : 2",
+   "2 : 1",
+   "1 : 1",
+   "4 : 1"
+  ]
+ },
+ {
+  "id": "29826271-af04-4717-8d46-6fea3f9eb3a9",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "The acid-test (quick) ratio differs from the current ratio in that it:",
+  "options": [
+   "excludes inventory from current assets",
+   "includes fixed assets",
+   "uses sales instead of assets",
+   "ignores liabilities entirely"
+  ]
+ },
+ {
+  "id": "5226a0e2-85a9-4e27-a5ab-23b0eb75a6fe",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "A business has a gross profit of R30 000 on sales of R120 000. Its gross profit on sales (margin) is:",
+  "options": [
+   "20%",
+   "25%",
+   "30%",
+   "40%"
+  ]
+ },
+ {
+  "id": "1070d3d8-0734-4bcd-a74c-27c3accd17b0",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "A high debt-to-equity ratio indicates that a business:",
+  "options": [
+   "relies heavily on borrowed funds",
+   "has no liabilities at all",
+   "is extremely liquid",
+   "is holding too much cash"
+  ]
+ },
+ {
+  "id": "317cb25f-b17e-4bc9-a3a6-474a55551773",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "The percentage mark-up on cost is calculated as:",
+  "options": [
+   "(gross profit ÷ cost of sales) × 100",
+   "(gross profit ÷ sales) × 100",
+   "(sales ÷ cost of sales) × 100",
+   "(cost of sales ÷ sales) × 100"
+  ]
+ },
+ {
+  "id": "d6da7ed1-37da-45a1-b3f5-c473e27dd241",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "If cost of sales is R50 000 and the business uses a mark-up of 40% on cost, the gross profit is:",
+  "options": [
+   "R12 500",
    "R20 000",
-   "R30 000",
-   "R50 000",
+   "R25 000",
    "R70 000"
   ]
  },
  {
-  "id": "dc4d3bf1-98a6-418f-a0d0-dec976b17e48",
-  "topic": "Accounting Equation & Concepts",
-  "prompt": "According to which GAAP concept is the business treated as separate from its owner?",
+  "id": "91dc454b-0b36-41c7-9ceb-db8408607917",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "Liquidity ratios are used mainly to measure a business's ability to:",
   "options": [
-   "The business entity concept",
-   "Historical cost",
-   "Prudence",
-   "Going concern"
-  ]
- },
- {
-  "id": "3de4907e-548b-4e0f-8fe0-900cf11f6640",
-  "topic": "Accounting Equation & Concepts",
-  "prompt": "In the ledger, an asset account increases on the:",
-  "options": [
-   "credit side",
-   "debit side",
-   "both sides equally",
-   "income side"
-  ]
- },
- {
-  "id": "49b8ea6c-751c-4a3f-a2e9-62d2f7d8aba6",
-  "topic": "Accounting Equation & Concepts",
-  "prompt": "The owner takes R2 000 cash out of the business for personal use. This is recorded as:",
-  "options": [
-   "Drawings",
-   "Capital",
-   "Salary",
-   "Loan"
-  ]
- },
- {
-  "id": "8e2559e0-31d2-43da-85c1-1ee58083b277",
-  "topic": "Accounting Equation & Concepts",
-  "prompt": "Which of the following is a non-current (fixed) asset?",
-  "options": [
-   "Trading stock",
-   "Debtors",
-   "Equipment",
-   "Bank"
-  ]
- },
- {
-  "id": "76d465f8-8d24-4d22-82b2-2085972487dc",
-  "topic": "Accounting Equation & Concepts",
-  "prompt": "The GAAP principle requiring income and the expenses incurred to earn it to be recorded in the same period is the:",
-  "options": [
-   "matching (accrual) principle",
-   "prudence principle",
-   "going concern principle",
-   "materiality principle"
-  ]
- },
- {
-  "id": "881098c7-2799-406b-807f-f238184fe9fb",
-  "topic": "Accounting Equation & Concepts",
-  "prompt": "A liability is best described as:",
-  "options": [
-   "something the business owns",
-   "an amount the business owes to others",
-   "the owner's investment in the business",
-   "an expense paid in cash"
+   "pay its short-term debts",
+   "make a long-term profit",
+   "increase its share capital",
+   "calculate depreciation"
   ]
  },
  {
