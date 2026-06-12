@@ -1,0 +1,530 @@
+[
+ {
+  "id": "1715e8ab-20e6-4616-b83e-bad5370f9af7",
+  "topic": "Travel Documents, Health & Responsible Tourism",
+  "prompt": "The official document required to travel internationally, issued by your home country, is a:",
+  "options": [
+   "passport",
+   "boarding pass",
+   "loyalty card",
+   "restaurant menu"
+  ]
+ },
+ {
+  "id": "d0b0910b-3f93-42c0-b0d5-b9f3319c3a2c",
+  "topic": "Travel Documents, Health & Responsible Tourism",
+  "prompt": "An official endorsement in a passport that grants permission to enter a foreign country is a:",
+  "options": [
+   "receipt",
+   "visa",
+   "tariff",
+   "voucher"
+  ]
+ },
+ {
+  "id": "f13687cc-0efb-4863-a2b1-34df7c690e18",
+  "topic": "Travel Documents, Health & Responsible Tourism",
+  "prompt": "'Jet lag' is best described as:",
+  "options": [
+   "a fear of flying",
+   "lost luggage",
+   "tiredness and disorientation from quickly crossing several time zones",
+   "a delayed flight"
+  ]
+ },
+ {
+  "id": "f4a3790d-8619-4f56-9d57-ce81648f8c45",
+  "topic": "Travel Documents, Health & Responsible Tourism",
+  "prompt": "Deep Vein Thrombosis (DVT), a health risk on long flights, can be reduced by:",
+  "options": [
+   "sitting completely still for the whole flight",
+   "not drinking any water",
+   "smoking during the flight",
+   "moving and stretching the legs regularly"
+  ]
+ },
+ {
+  "id": "80aec882-e25f-4dc4-9fbc-309a08b39d72",
+  "topic": "Travel Documents, Health & Responsible Tourism",
+  "prompt": "Responsible (sustainable) tourism means tourism that:",
+  "options": [
+   "protects the environment and benefits local communities",
+   "ignores the environment",
+   "wastes natural resources",
+   "excludes local people"
+  ]
+ },
+ {
+  "id": "37fa327f-0de1-4023-94d0-cdc0be27b18b",
+  "topic": "Travel Documents, Health & Responsible Tourism",
+  "prompt": "Which of the following is an example of responsible tourist behaviour?",
+  "options": [
+   "leaving litter behind at a site",
+   "respecting local cultures and not littering",
+   "damaging plants for souvenirs",
+   "disturbing wildlife for photos"
+  ]
+ },
+ {
+  "id": "e5a92b3c-ac23-4029-87e3-4c528bc593c2",
+  "topic": "Travel Documents, Health & Responsible Tourism",
+  "prompt": "Before travelling to a malaria-risk area, a tourist should:",
+  "options": [
+   "ignore all health advice",
+   "wear no protection",
+   "take prophylaxis (anti-malaria medication) and use repellent",
+   "travel only at night"
+  ]
+ },
+ {
+  "id": "10b41308-9d7d-471d-8c9d-e7a3ac279c02",
+  "topic": "Travel Documents, Health & Responsible Tourism",
+  "prompt": "Travel insurance is recommended because it:",
+  "options": [
+   "guarantees good weather",
+   "makes the flight faster",
+   "is required to obtain a passport",
+   "covers costs such as medical emergencies, cancellations or lost luggage"
+  ]
+ },
+ {
+  "id": "cee44805-6084-41ea-b4eb-7bc3ba956a5d",
+  "topic": "World Heritage & Culture",
+  "prompt": "The organisation that designates World Heritage Sites is:",
+  "options": [
+   "UNESCO",
+   "SADC",
+   "FIFA",
+   "OPEC"
+  ]
+ },
+ {
+  "id": "4645db2e-b075-45e4-8fa0-9ff49aac5bf2",
+  "topic": "World Heritage & Culture",
+  "prompt": "A World Heritage Site is a place recognised for its:",
+  "options": [
+   "cheap accommodation",
+   "outstanding cultural or natural value to humanity",
+   "large shopping malls",
+   "fast-food outlets"
+  ]
+ },
+ {
+  "id": "08f219e4-acb8-43b6-aafd-f3968badc9f9",
+  "topic": "World Heritage & Culture",
+  "prompt": "Robben Island is a South African World Heritage Site best known as:",
+  "options": [
+   "a large shopping centre",
+   "a ski resort",
+   "the prison where Nelson Mandela was held",
+   "a motor-racing track"
+  ]
+ },
+ {
+  "id": "a801fbf8-47e4-4eaf-b491-91dfcc6516f6",
+  "topic": "World Heritage & Culture",
+  "prompt": "Which of the following is a South African World Heritage Site?",
+  "options": [
+   "the Eiffel Tower",
+   "Big Ben",
+   "the Colosseum",
+   "the Cradle of Humankind"
+  ]
+ },
+ {
+  "id": "624e2293-7989-4d73-bd3a-062bc139e75e",
+  "topic": "World Heritage & Culture",
+  "prompt": "The Taj Mahal, a World Heritage Site, is located in:",
+  "options": [
+   "India",
+   "China",
+   "Egypt",
+   "Peru"
+  ]
+ },
+ {
+  "id": "adb19deb-bae8-400e-9dbf-20a46e0d800e",
+  "topic": "World Heritage & Culture",
+  "prompt": "'Cultural tourism' involves travelling mainly to experience:",
+  "options": [
+   "only the beaches",
+   "the history, traditions and customs of a place",
+   "only shopping centres",
+   "only sports events"
+  ]
+ },
+ {
+  "id": "462efae4-84d1-4d35-a0d8-c7cc9514d4a4",
+  "topic": "World Heritage & Culture",
+  "prompt": "The Great Wall is a World Heritage Site located in:",
+  "options": [
+   "Japan",
+   "India",
+   "China",
+   "Russia"
+  ]
+ },
+ {
+  "id": "d909d631-d5a4-465f-a08f-332aedb3abc1",
+  "topic": "World Heritage & Culture",
+  "prompt": "Machu Picchu, an ancient Inca site and World Heritage Site, is located in:",
+  "options": [
+   "Mexico",
+   "Brazil",
+   "Chile",
+   "Peru"
+  ]
+ },
+ {
+  "id": "7d896073-7fa5-459b-9acb-1d013d53c7b0",
+  "topic": "World Time Zones & Travel",
+  "prompt": "The world is divided into time zones based on lines of:",
+  "options": [
+   "latitude",
+   "longitude",
+   "altitude",
+   "contour"
+  ]
+ },
+ {
+  "id": "1a8fd84c-85ee-48c3-a13e-1b23e551ecd1",
+  "topic": "World Time Zones & Travel",
+  "prompt": "The Earth rotates through 360° in 24 hours, which means 1 hour is equal to:",
+  "options": [
+   "10° of longitude",
+   "20° of longitude",
+   "30° of longitude",
+   "15° of longitude"
+  ]
+ },
+ {
+  "id": "eb569b1b-8d5b-436b-9b50-cb3eecd5a977",
+  "topic": "World Time Zones & Travel",
+  "prompt": "As you travel EAST across time zones, you:",
+  "options": [
+   "gain time (clocks go forward)",
+   "lose time",
+   "stay on the same time",
+   "stop the clock"
+  ]
+ },
+ {
+  "id": "2ba98172-c795-49e4-b129-ff5ef4ddcf08",
+  "topic": "World Time Zones & Travel",
+  "prompt": "As you travel WEST across time zones, clocks generally go:",
+  "options": [
+   "forward",
+   "to GMT",
+   "backward",
+   "stop"
+  ]
+ },
+ {
+  "id": "53caa0e6-891e-4a7f-980c-716b12b94540",
+  "topic": "World Time Zones & Travel",
+  "prompt": "Greenwich Mean Time (GMT) is measured at the prime meridian, which lies at:",
+  "options": [
+   "90°E",
+   "0° longitude",
+   "180°",
+   "30°E"
+  ]
+ },
+ {
+  "id": "1789c585-d181-4e62-98fb-09772448b91d",
+  "topic": "World Time Zones & Travel",
+  "prompt": "South African Standard Time is:",
+  "options": [
+   "GMT −2",
+   "GMT +0",
+   "GMT +5",
+   "GMT +2"
+  ]
+ },
+ {
+  "id": "eff037a4-e45e-4b19-8248-2b867c3b6437",
+  "topic": "World Time Zones & Travel",
+  "prompt": "If it is 12:00 (noon) GMT, the time in South Africa (GMT +2) is:",
+  "options": [
+   "14:00",
+   "10:00",
+   "12:00",
+   "16:00"
+  ]
+ },
+ {
+  "id": "0372a61f-055b-4baf-925c-18f6cee6c6aa",
+  "topic": "World Time Zones & Travel",
+  "prompt": "A city at GMT +8 is how many hours ahead of a city at GMT +2?",
+  "options": [
+   "2 hours",
+   "4 hours",
+   "6 hours",
+   "8 hours"
+  ]
+ },
+ {
+  "id": "60dd7f83-4821-46a6-83dc-417a68945646",
+  "topic": "Tourism Geography (SA & World)",
+  "prompt": "The administrative capital of South Africa, home to the Union Buildings, is:",
+  "options": [
+   "Pretoria (Tshwane)",
+   "Cape Town",
+   "Bloemfontein",
+   "Durban"
+  ]
+ },
+ {
+  "id": "bddb4f9d-a5c8-4413-8877-8cbc5f322534",
+  "topic": "Tourism Geography (SA & World)",
+  "prompt": "Cape Town is the ___ capital of South Africa.",
+  "options": [
+   "administrative",
+   "legislative",
+   "judicial",
+   "financial"
+  ]
+ },
+ {
+  "id": "39d38e8d-510e-4562-acdf-a0df5d3302bb",
+  "topic": "Tourism Geography (SA & World)",
+  "prompt": "Bloemfontein is the ___ capital of South Africa.",
+  "options": [
+   "administrative",
+   "legislative",
+   "judicial",
+   "economic"
+  ]
+ },
+ {
+  "id": "6aa13802-2569-4d4f-8ebb-c629a089a2fc",
+  "topic": "Tourism Geography (SA & World)",
+  "prompt": "The Kruger National Park, a major wildlife attraction, is located mainly in which provinces?",
+  "options": [
+   "Western Cape",
+   "KwaZulu-Natal",
+   "Gauteng",
+   "Mpumalanga and Limpopo"
+  ]
+ },
+ {
+  "id": "2273d04d-fbce-41bc-ac6b-a7601c26a611",
+  "topic": "Tourism Geography (SA & World)",
+  "prompt": "The Eiffel Tower is a famous tourist icon located in:",
+  "options": [
+   "Paris, France",
+   "London, England",
+   "Rome, Italy",
+   "New York, USA"
+  ]
+ },
+ {
+  "id": "7737d665-a7a1-498d-9db5-70afac9d883a",
+  "topic": "Tourism Geography (SA & World)",
+  "prompt": "The Statue of Liberty is found in:",
+  "options": [
+   "London",
+   "New York, USA",
+   "Sydney",
+   "Cairo"
+  ]
+ },
+ {
+  "id": "77616e40-f034-4fd9-b7d9-55a8706cdb8b",
+  "topic": "Tourism Geography (SA & World)",
+  "prompt": "The Great Pyramids of Giza are located in:",
+  "options": [
+   "Greece",
+   "Mexico",
+   "Egypt",
+   "India"
+  ]
+ },
+ {
+  "id": "afa70cf3-c5c7-4746-83f3-4440f9201bdc",
+  "topic": "Tourism Geography (SA & World)",
+  "prompt": "The Sydney Opera House is an iconic attraction in:",
+  "options": [
+   "Brazil",
+   "China",
+   "Canada",
+   "Australia"
+  ]
+ },
+ {
+  "id": "fc94a53f-9f69-4471-86a3-d706d41538e4",
+  "topic": "Tourism Sectors & Industry",
+  "prompt": "A person who travels to and stays in a place outside their usual environment for less than a year for leisure or business is a:",
+  "options": [
+   "tourist",
+   "resident",
+   "citizen",
+   "commuter"
+  ]
+ },
+ {
+  "id": "887f8734-0690-45c8-9bc0-4abc17318e16",
+  "topic": "Tourism Sectors & Industry",
+  "prompt": "Which of the following forms part of the accommodation sector?",
+  "options": [
+   "an airline",
+   "a hotel",
+   "a car-rental company",
+   "a travel agency"
+  ]
+ },
+ {
+  "id": "5a07095f-693a-4512-832d-3642681707e9",
+  "topic": "Tourism Sectors & Industry",
+  "prompt": "A business that sells travel products such as flights, tours and accommodation to the public on behalf of suppliers is a:",
+  "options": [
+   "museum",
+   "airline",
+   "travel agency",
+   "hotel"
+  ]
+ },
+ {
+  "id": "c7169292-2b54-4db3-b880-2fe421320259",
+  "topic": "Tourism Sectors & Industry",
+  "prompt": "Tour operators differ from travel agents in that tour operators:",
+  "options": [
+   "only sell airline tickets",
+   "provide accommodation only",
+   "transport luggage only",
+   "design and package the tours that agents then sell"
+  ]
+ },
+ {
+  "id": "764d4b2d-298b-4acc-955f-3870de448ec4",
+  "topic": "Tourism Sectors & Industry",
+  "prompt": "Air, road, rail and sea travel all belong to the ___ sector.",
+  "options": [
+   "transport",
+   "accommodation",
+   "catering",
+   "entertainment"
+  ]
+ },
+ {
+  "id": "60373cb0-ba45-4888-bbad-ba7b46ef46b7",
+  "topic": "Tourism Sectors & Industry",
+  "prompt": "A 'domestic tourist' is someone who:",
+  "options": [
+   "travels to another country",
+   "travels within their own country",
+   "never travels at all",
+   "works at an airport"
+  ]
+ },
+ {
+  "id": "2a007d94-0b0e-4aa0-b80c-53ea9a1f90ea",
+  "topic": "Tourism Sectors & Industry",
+  "prompt": "The tourism multiplier effect refers to how:",
+  "options": [
+   "tourists multiply in number each year",
+   "hotels multiply their prices",
+   "tourist spending circulates and benefits the wider economy",
+   "the number of flights is doubled"
+  ]
+ },
+ {
+  "id": "f9003bc8-416f-4d03-bdb4-ec5f01ac6050",
+  "topic": "Tourism Sectors & Industry",
+  "prompt": "Which of the following is an example of a tourist attraction?",
+  "options": [
+   "a passport",
+   "a credit card",
+   "a boarding pass",
+   "Table Mountain"
+  ]
+ },
+ {
+  "id": "85b16f73-87b5-45c5-b847-5b1dcc83b189",
+  "topic": "Foreign Exchange",
+  "prompt": "The exchange rate is best described as:",
+  "options": [
+   "the price of one currency in terms of another",
+   "a tax on imports",
+   "an interest rate",
+   "the price of gold"
+  ]
+ },
+ {
+  "id": "8f6e26db-25e5-4a0a-91a3-bbf04a2ca358",
+  "topic": "Foreign Exchange",
+  "prompt": "When a tourist BUYS foreign currency from a bank before travelling, the bank uses the:",
+  "options": [
+   "bank buying rate (BBR)",
+   "interest rate",
+   "bank selling rate (BSR)",
+   "prime rate"
+  ]
+ },
+ {
+  "id": "def295ec-70f4-43b0-8028-6c89279e7b26",
+  "topic": "Foreign Exchange",
+  "prompt": "When a returning tourist exchanges leftover foreign currency back into rand, the bank uses the:",
+  "options": [
+   "bank selling rate (BSR)",
+   "bank buying rate (BBR)",
+   "prime rate",
+   "repo rate"
+  ]
+ },
+ {
+  "id": "2e1bd0fe-6606-4123-ba6c-1f7841e041c8",
+  "topic": "Foreign Exchange",
+  "prompt": "A tourist exchanges R10 000 into US dollars at a rate of R20 = US$1. How many dollars do they receive?",
+  "options": [
+   "$2 000",
+   "$5 000",
+   "$50",
+   "$500"
+  ]
+ },
+ {
+  "id": "4a97ccdd-a098-4e57-bf9d-cd963d2f852f",
+  "topic": "Foreign Exchange",
+  "prompt": "A tourist buys £200 when the rate is R23 = £1. How much does it cost in rand?",
+  "options": [
+   "R4 600",
+   "R2 300",
+   "R460",
+   "R200"
+  ]
+ },
+ {
+  "id": "b9cb3999-3586-4699-8484-841096df2352",
+  "topic": "Foreign Exchange",
+  "prompt": "If the rand weakens (depreciates) against the US dollar, travelling to the USA becomes:",
+  "options": [
+   "cheaper",
+   "free",
+   "more expensive for South Africans",
+   "impossible"
+  ]
+ },
+ {
+  "id": "4722f6e3-3516-41cc-89ae-fc0e81981c95",
+  "topic": "Foreign Exchange",
+  "prompt": "A tourist exchanges €300 back into rand at a rate of R19 = €1. How much do they receive?",
+  "options": [
+   "R3 000",
+   "R5 700",
+   "R570",
+   "R300"
+  ]
+ },
+ {
+  "id": "21c324e4-c491-4763-acf1-8781253dc759",
+  "topic": "Foreign Exchange",
+  "prompt": "Foreign exchange earned from international tourists benefits South Africa because it:",
+  "options": [
+   "reduces local jobs",
+   "raises taxes automatically",
+   "prints more money",
+   "brings foreign currency into the country"
+  ]
+ }
+]
