@@ -1,0 +1,530 @@
+[
+ {
+  "id": "4ca79832-b7d6-4f7d-a148-5e385b552107",
+  "topic": "Momentum & Impulse",
+  "prompt": "A 1 200 kg car travels at 20 m/s. What is the magnitude of its momentum?",
+  "options": [
+   "60 kg·m/s",
+   "24 000 kg·m/s",
+   "2 400 kg·m/s",
+   "12 000 kg·m/s"
+  ]
+ },
+ {
+  "id": "1e5f8e2c-1d15-4222-a8c2-3d23dc3dd4b7",
+  "topic": "Momentum & Impulse",
+  "prompt": "The SI unit of momentum is:",
+  "options": [
+   "kg·m/s²",
+   "N/s",
+   "kg·m/s",
+   "J"
+  ]
+ },
+ {
+  "id": "b4ff2ffe-922f-4aae-88bb-411454742bc7",
+  "topic": "Momentum & Impulse",
+  "prompt": "A net force of 50 N acts on an object for 0.2 s. The impulse delivered is:",
+  "options": [
+   "250 N·s",
+   "10 N·s",
+   "50.2 N·s",
+   "2.5 N·s"
+  ]
+ },
+ {
+  "id": "bfd05bbe-bfd4-4234-87fd-dcec372be7aa",
+  "topic": "Momentum & Impulse",
+  "prompt": "A 0.5 kg ball hits a wall at 10 m/s and rebounds at 8 m/s along the same line. The magnitude of its change in momentum is:",
+  "options": [
+   "1 kg·m/s",
+   "4 kg·m/s",
+   "5 kg·m/s",
+   "9 kg·m/s"
+  ]
+ },
+ {
+  "id": "cc177f24-689a-47be-b8d4-739b2df6f7cb",
+  "topic": "Momentum & Impulse",
+  "prompt": "A 2 kg trolley moving at 6 m/s collides with a stationary 4 kg trolley and they stick together. Their common velocity after the collision is:",
+  "options": [
+   "2 m/s",
+   "3 m/s",
+   "6 m/s",
+   "1 m/s"
+  ]
+ },
+ {
+  "id": "5fe9727d-1cb1-418f-811d-5935c8cd786c",
+  "topic": "Momentum & Impulse",
+  "prompt": "Newton's second law expressed in terms of momentum states that the net force equals:",
+  "options": [
+   "mΔv",
+   "the rate of change of momentum",
+   "the change in kinetic energy",
+   "mass × distance"
+  ]
+ },
+ {
+  "id": "2ef7fd7e-eb52-4736-8adf-0afc38b38b45",
+  "topic": "Momentum & Impulse",
+  "prompt": "An airbag reduces injury in a crash because it:",
+  "options": [
+   "decreases the change in momentum",
+   "increases the time over which momentum changes, reducing the force",
+   "increases the impulse on the passenger",
+   "stops the passenger instantly"
+  ]
+ },
+ {
+  "id": "6e5a62c8-3d0b-42cb-9872-dc6280d6e72d",
+  "topic": "Momentum & Impulse",
+  "prompt": "A collision is perfectly elastic when:",
+  "options": [
+   "both momentum and kinetic energy are conserved",
+   "only momentum is conserved",
+   "the objects stick together",
+   "kinetic energy is converted to heat"
+  ]
+ },
+ {
+  "id": "60224598-2969-4caa-acc0-33961a7620c6",
+  "topic": "Vertical Projectile Motion",
+  "prompt": "A ball is thrown straight up at 19.6 m/s. How long does it take to reach its highest point? (g = 9.8 m/s²)",
+  "options": [
+   "1 s",
+   "4 s",
+   "2 s",
+   "9.8 s"
+  ]
+ },
+ {
+  "id": "8c9ab352-7dd4-4db9-934a-d741ed7a1fed",
+  "topic": "Vertical Projectile Motion",
+  "prompt": "A ball is thrown straight up at 19.6 m/s. Its maximum height is: (g = 9.8 m/s²)",
+  "options": [
+   "19.6 m",
+   "39.2 m",
+   "9.8 m",
+   "29.4 m"
+  ]
+ },
+ {
+  "id": "409bccd8-6634-482a-8982-109d05a738f5",
+  "topic": "Vertical Projectile Motion",
+  "prompt": "At the highest point of its flight, a ball thrown vertically upward has:",
+  "options": [
+   "zero velocity and zero acceleration",
+   "zero velocity and acceleration 9.8 m/s² downward",
+   "zero acceleration and maximum velocity",
+   "velocity and acceleration both upward"
+  ]
+ },
+ {
+  "id": "46f796c1-1d7c-4980-94fb-f7bfb4f2a5c6",
+  "topic": "Vertical Projectile Motion",
+  "prompt": "An object is dropped from rest. Its speed after falling for 2 s is: (g = 9.8 m/s², ignore air resistance)",
+  "options": [
+   "4.9 m/s",
+   "9.8 m/s",
+   "39.2 m/s",
+   "19.6 m/s"
+  ]
+ },
+ {
+  "id": "a15c5e55-9ffd-4d8c-8152-1e1d7e4d8b07",
+  "topic": "Vertical Projectile Motion",
+  "prompt": "A ball is launched vertically upward from the ground at 14.7 m/s. The total time of flight before it lands is: (g = 9.8 m/s²)",
+  "options": [
+   "1.5 s",
+   "3 s",
+   "4.5 s",
+   "2 s"
+  ]
+ },
+ {
+  "id": "70ecab1e-5df7-4b9b-9189-a196bee5ea11",
+  "topic": "Vertical Projectile Motion",
+  "prompt": "For a ball in free fall (air resistance ignored), the gradient of its velocity-time graph is:",
+  "options": [
+   "zero",
+   "constantly changing",
+   "constant at 9.8 m/s² (magnitude)",
+   "equal to the ball's speed"
+  ]
+ },
+ {
+  "id": "f466c765-d009-43ff-b7e6-d5ab7991f7dd",
+  "topic": "Vertical Projectile Motion",
+  "prompt": "An object is dropped from rest and falls 10 m. Its speed at that point is: (g = 9.8 m/s²)",
+  "options": [
+   "14 m/s",
+   "98 m/s",
+   "10 m/s",
+   "19.6 m/s"
+  ]
+ },
+ {
+  "id": "5dc04b68-37f5-414e-8a7b-d2156a2e3487",
+  "topic": "Vertical Projectile Motion",
+  "prompt": "A ball thrown vertically upward returns to its launch height. Ignoring air resistance, its speed there is:",
+  "options": [
+   "less than the launch speed",
+   "greater than the launch speed",
+   "zero",
+   "equal to the launch speed, directed downward"
+  ]
+ },
+ {
+  "id": "7d5393c5-7ac2-4be5-a9fc-8a1f902e423d",
+  "topic": "Work, Energy & Power",
+  "prompt": "A horizontal force of 100 N pushes a crate 5 m across a floor in the direction of the force. The work done by the force is:",
+  "options": [
+   "20 J",
+   "500 J",
+   "105 J",
+   "250 J"
+  ]
+ },
+ {
+  "id": "fa78af33-86e3-4fe6-865a-86e9ccd1110b",
+  "topic": "Work, Energy & Power",
+  "prompt": "The kinetic energy of a 2 kg object moving at 4 m/s is:",
+  "options": [
+   "8 J",
+   "4 J",
+   "16 J",
+   "32 J"
+  ]
+ },
+ {
+  "id": "ae967623-82a9-4970-8370-28deeb670517",
+  "topic": "Work, Energy & Power",
+  "prompt": "The gravitational potential energy of a 5 kg object held 10 m above the ground is: (g = 9.8 m/s²)",
+  "options": [
+   "490 J",
+   "50 J",
+   "98 J",
+   "4 900 J"
+  ]
+ },
+ {
+  "id": "205a81ab-d406-4188-804d-28dcd99c391d",
+  "topic": "Work, Energy & Power",
+  "prompt": "A car engine applies a forward force of 200 N while the car travels at a constant 15 m/s. The power delivered is:",
+  "options": [
+   "13.3 W",
+   "215 W",
+   "1 500 W",
+   "3 000 W"
+  ]
+ },
+ {
+  "id": "f5d90e88-5a0b-47a7-9f67-9cd3b7634116",
+  "topic": "Work, Energy & Power",
+  "prompt": "The work-energy theorem states that the net work done on an object equals:",
+  "options": [
+   "its change in kinetic energy",
+   "its change in potential energy",
+   "its total mechanical energy",
+   "the force applied to it"
+  ]
+ },
+ {
+  "id": "0eb0d2bc-fd14-4dff-a5e5-03ba4f8647ca",
+  "topic": "Work, Energy & Power",
+  "prompt": "A kinetic frictional force of 20 N acts on a sliding crate over 3 m. The energy dissipated as heat is:",
+  "options": [
+   "6.7 J",
+   "60 J",
+   "23 J",
+   "0 J"
+  ]
+ },
+ {
+  "id": "349f25c9-f176-416e-bd2e-54a1a5964518",
+  "topic": "Work, Energy & Power",
+  "prompt": "An object slides from rest down a frictionless slope of vertical height 4.9 m. Its speed at the bottom is: (g = 9.8 m/s²)",
+  "options": [
+   "4.9 m/s",
+   "48 m/s",
+   "9.8 m/s",
+   "96 m/s"
+  ]
+ },
+ {
+  "id": "c492347d-beb1-4738-958b-f6a7bf01294e",
+  "topic": "Work, Energy & Power",
+  "prompt": "Which of the following is a conservative force?",
+  "options": [
+   "kinetic friction",
+   "air resistance",
+   "the gravitational force",
+   "the applied force of a person pushing"
+  ]
+ },
+ {
+  "id": "f609b0a8-13c3-44c0-98bd-832350980eeb",
+  "topic": "Electric Circuits",
+  "prompt": "A resistor has 12 V across it and 3 A through it. Its resistance is:",
+  "options": [
+   "36 Ω",
+   "4 Ω",
+   "0.25 Ω",
+   "15 Ω"
+  ]
+ },
+ {
+  "id": "d6bd9b80-6546-4fd1-b7ad-cf8a3f81806e",
+  "topic": "Electric Circuits",
+  "prompt": "A 4 Ω and a 6 Ω resistor are connected in series. The total resistance is:",
+  "options": [
+   "2.4 Ω",
+   "1.5 Ω",
+   "10 Ω",
+   "24 Ω"
+  ]
+ },
+ {
+  "id": "d549cbea-31be-4c96-ad7d-c0a99d67148d",
+  "topic": "Electric Circuits",
+  "prompt": "A 4 Ω and a 6 Ω resistor are connected in parallel. The total resistance is:",
+  "options": [
+   "10 Ω",
+   "2.4 Ω",
+   "5 Ω",
+   "0.42 Ω"
+  ]
+ },
+ {
+  "id": "8185f713-53b6-4722-9ec3-a107277b002f",
+  "topic": "Electric Circuits",
+  "prompt": "A device draws 2 A from a 12 V supply. The power it dissipates is:",
+  "options": [
+   "6 W",
+   "14 W",
+   "24 W",
+   "48 W"
+  ]
+ },
+ {
+  "id": "90bda048-6232-45d1-a558-8911f94dbf68",
+  "topic": "Electric Circuits",
+  "prompt": "A battery has an emf of 12 V and internal resistance 0.5 Ω, connected to a 5.5 Ω resistor. The current in the circuit is:",
+  "options": [
+   "2 A",
+   "2.18 A",
+   "24 A",
+   "1.09 A"
+  ]
+ },
+ {
+  "id": "d127d344-9d7c-4876-97ae-774ff20b966b",
+  "topic": "Electric Circuits",
+  "prompt": "In a series circuit, the current:",
+  "options": [
+   "is largest at the battery",
+   "is the same at every point in the circuit",
+   "decreases through each resistor",
+   "splits between the resistors"
+  ]
+ },
+ {
+  "id": "3c9ced92-eaee-4a95-8974-a318b39ae808",
+  "topic": "Electric Circuits",
+  "prompt": "Adding another resistor in parallel to an existing circuit:",
+  "options": [
+   "decreases the total resistance and increases the total current",
+   "increases the total resistance and decreases the total current",
+   "leaves the total resistance unchanged",
+   "decreases both total resistance and total current"
+  ]
+ },
+ {
+  "id": "cffa8352-9c38-46ba-8e18-8604cbd5a569",
+  "topic": "Electric Circuits",
+  "prompt": "A kettle element draws 5 A from a 220 V supply for 60 s. The electrical energy transferred is:",
+  "options": [
+   "1 100 J",
+   "66 000 J",
+   "18.3 J",
+   "13 200 J"
+  ]
+ },
+ {
+  "id": "c2e7b4e6-d9d1-443a-9d57-1d96ffe8c26b",
+  "topic": "Organic Chemistry",
+  "prompt": "The functional group of the alcohols is the:",
+  "options": [
+   "carbonyl group (C=O)",
+   "carboxyl group (−COOH)",
+   "hydroxyl group (−OH)",
+   "formyl group (−CHO)"
+  ]
+ },
+ {
+  "id": "9b80ef8f-d1a8-4f75-a99d-f3728de437ba",
+  "topic": "Organic Chemistry",
+  "prompt": "The general formula of the alkanes is:",
+  "options": [
+   "CnH2n",
+   "CnH2n+2",
+   "CnH2n−2",
+   "CnH2nO"
+  ]
+ },
+ {
+  "id": "3aeaa5c5-0d95-4611-8f3b-9a353fad07f7",
+  "topic": "Organic Chemistry",
+  "prompt": "The IUPAC name of CH₃CH₂CH₂CH₃ is:",
+  "options": [
+   "propane",
+   "pentane",
+   "methylpropane",
+   "butane"
+  ]
+ },
+ {
+  "id": "9edf44ea-c7fb-4487-8ce1-d3a5b7d98ea9",
+  "topic": "Organic Chemistry",
+  "prompt": "CH₃COOH belongs to which homologous series?",
+  "options": [
+   "carboxylic acids",
+   "esters",
+   "aldehydes",
+   "alcohols"
+  ]
+ },
+ {
+  "id": "12cd5293-7443-4af9-94b4-338087c4b49c",
+  "topic": "Organic Chemistry",
+  "prompt": "Structural isomers are compounds with:",
+  "options": [
+   "the same structural formula but different molecular formulae",
+   "the same molecular formula but different structural formulae",
+   "identical physical properties",
+   "the same functional group only"
+  ]
+ },
+ {
+  "id": "b1cdc2cb-7636-4baa-9132-c9c32d3423a6",
+  "topic": "Organic Chemistry",
+  "prompt": "Bromine water is added to two test tubes, one with an alkane and one with an alkene. The alkene is identified because it:",
+  "options": [
+   "turns the bromine water darker",
+   "produces a gas",
+   "decolourises the bromine water rapidly without UV light",
+   "has no effect"
+  ]
+ },
+ {
+  "id": "9fb8a8d1-1efa-4e9b-828e-367ebc092a9e",
+  "topic": "Organic Chemistry",
+  "prompt": "As the chain length of straight-chain alkanes increases, their boiling points:",
+  "options": [
+   "increase, because the London (dispersion) forces become stronger",
+   "decrease, because the molecules become heavier",
+   "stay the same, because the functional group is unchanged",
+   "decrease, because the surface area increases"
+  ]
+ },
+ {
+  "id": "cf0106a3-55a0-40d8-be1e-8390ace87229",
+  "topic": "Organic Chemistry",
+  "prompt": "An ester is formed by the reaction between:",
+  "options": [
+   "two alcohols",
+   "an alkane and an alkene",
+   "a carboxylic acid and an alcohol",
+   "an aldehyde and a ketone"
+  ]
+ },
+ {
+  "id": "4ca00848-f8db-4b7c-8c5f-6d6c5d370ad4",
+  "topic": "Acids & Bases",
+  "prompt": "According to the Lowry-Brønsted definition, an acid is:",
+  "options": [
+   "a proton donor",
+   "a proton acceptor",
+   "an electron donor",
+   "a substance containing OH⁻"
+  ]
+ },
+ {
+  "id": "bc1e3e2d-94d5-4c87-ba60-55fa88bff70f",
+  "topic": "Acids & Bases",
+  "prompt": "The pH of a 0.01 mol/dm³ solution of the strong acid HCl is:",
+  "options": [
+   "1",
+   "12",
+   "2",
+   "0.01"
+  ]
+ },
+ {
+  "id": "38383cb9-060d-4956-8385-b9e3ed39b2aa",
+  "topic": "Acids & Bases",
+  "prompt": "In an aqueous solution at 25 °C, [H₃O⁺] = 1 × 10⁻⁵ mol/dm³. The hydroxide concentration [OH⁻] is:",
+  "options": [
+   "1 × 10⁻⁵ mol/dm³",
+   "1 × 10⁻⁹ mol/dm³",
+   "1 × 10⁻¹⁴ mol/dm³",
+   "1 × 10⁻⁷ mol/dm³"
+  ]
+ },
+ {
+  "id": "56b7b3bd-409d-49c8-bd52-361b9e386a85",
+  "topic": "Acids & Bases",
+  "prompt": "The conjugate base of HSO₄⁻ is:",
+  "options": [
+   "H₂SO₄",
+   "SO₄²⁻",
+   "H₃O⁺",
+   "OH⁻"
+  ]
+ },
+ {
+  "id": "23edf270-ba0c-41a7-bf29-acdb275720cd",
+  "topic": "Acids & Bases",
+  "prompt": "The difference between a strong acid and a weak acid is that a strong acid:",
+  "options": [
+   "is more concentrated",
+   "has a higher pH",
+   "ionises completely in water",
+   "always reacts faster with all metals"
+  ]
+ },
+ {
+  "id": "25adb0d5-e256-4dae-af6b-ad4bf54a698f",
+  "topic": "Acids & Bases",
+  "prompt": "25 cm³ of 0.1 mol/dm³ NaOH exactly neutralises a sample of 0.05 mol/dm³ HCl. The volume of the HCl sample is:",
+  "options": [
+   "12.5 cm³",
+   "25 cm³",
+   "100 cm³",
+   "50 cm³"
+  ]
+ },
+ {
+  "id": "75c95f42-1d85-4614-893f-4f498a27798f",
+  "topic": "Acids & Bases",
+  "prompt": "Water is described as amphiprotic (an ampholyte) because it:",
+  "options": [
+   "can both donate and accept protons",
+   "is neutral at pH 7",
+   "ionises completely",
+   "contains both hydrogen and oxygen"
+  ]
+ },
+ {
+  "id": "506133ed-39bf-4e4d-9407-d2487c8d846d",
+  "topic": "Acids & Bases",
+  "prompt": "A solution of ammonium chloride (NH₄Cl) in water is:",
+  "options": [
+   "neutral",
+   "basic, with pH above 7",
+   "acidic, with pH below 7",
+   "impossible to predict"
+  ]
+ }
+]

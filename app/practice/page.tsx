@@ -14,12 +14,12 @@ export default async function PracticePage() {
   const user = session.user as ExtendedUser;
   if (user.role === "teacher") redirect("/teachers/dashboard");
 
-  // Mathematics is the launch subject. Show the learner's own grade if we
-  // have questions for it, otherwise fall back to Grade 12 (the first bank).
-  let topics = await getTopicsWithMastery(user.id, "Mathematics", user.grade);
+  // Show the learner's own grade if we have question banks for it,
+  // otherwise fall back to Grade 12 (the first banks built).
+  let topics = await getTopicsWithMastery(user.id, user.grade);
   let gradeShown = user.grade;
   if (topics.length === 0) {
-    topics = await getTopicsWithMastery(user.id, "Mathematics", "Grade 12");
+    topics = await getTopicsWithMastery(user.id, "Grade 12");
     gradeShown = "Grade 12";
   }
 
@@ -33,7 +33,7 @@ export default async function PracticePage() {
         <div className="max-w-5xl mx-auto">
           <p className="text-[#00D4FF] text-sm font-medium mb-1">Practice</p>
           <h1 className="text-3xl sm:text-4xl font-bold text-white">
-            {gradeShown} Mathematics
+            {gradeShown} Practice
           </h1>
           <p className="text-white/40 text-sm mt-2 max-w-xl leading-relaxed">
             Short topic quizzes, marked instantly. Every answer builds your

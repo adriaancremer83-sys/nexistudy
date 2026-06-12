@@ -8,9 +8,9 @@ Any mismatch: fix or discard. A bank is not announced/marketed until LIVE-OK.
 
 | Subject | Grade | Topics | Questions | Status |
 |---|---|---|---|---|
-| Mathematics | 12 | 6 | 48 | seeded — needs blind-verify |
-| Physical Sciences | 12 | — | — | next up |
-| Life Sciences | 12 | — | — | queued |
+| Mathematics | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-12, 48/48 computational re-solve) |
+| Physical Sciences | 12 | 6 | 48 | seeded 2026-06-12 — needs blind-verify (export ready in scripts/blind/) |
+| Life Sciences | 12 | — | — | next up |
 | Mathematical Literacy | 12 | — | — | queued |
 | Accounting | 12 | — | — | queued |
 | Mathematics | 11 | — | — | queued (widens funnel) |

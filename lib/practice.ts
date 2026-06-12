@@ -54,16 +54,19 @@ export async function countQuizzesToday(userId: string): Promise<number> {
 
 export async function getTopicsWithMastery(
   userId: string,
-  subject: string,
-  grade: string
+  grade: string,
+  subject?: string
 ): Promise<TopicWithMastery[]> {
+  let topicsQuery = supabaseAdmin
+    .from("topics")
+    .select("id,subject,grade,name,sort_order")
+    .eq("grade", grade)
+    .order("subject")
+    .order("sort_order");
+  if (subject) topicsQuery = topicsQuery.eq("subject", subject);
+
   const [topicsRes, masteryRes] = await Promise.all([
-    supabaseAdmin
-      .from("topics")
-      .select("id,subject,grade,name,sort_order")
-      .eq("subject", subject)
-      .eq("grade", grade)
-      .order("sort_order"),
+    topicsQuery,
     supabaseAdmin
       .from("learner_topics")
       .select("topic_id,attempts,mastery,last_practised")

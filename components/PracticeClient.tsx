@@ -6,6 +6,7 @@ import { IconCheck, IconLock, IconTarget, IconArrowRight } from "@/components/ic
 
 interface Topic {
   id: string;
+  subject: string;
   name: string;
   attempts: number;
   mastery: number | null;
@@ -143,52 +144,59 @@ export default function PracticeClient({ topics, plan, quizzesLeft }: Props) {
           </div>
         )}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {topics.map((topic) => {
-            const locked = plan === "free" && left === 0;
-            return (
-              <button
-                key={topic.id}
-                onClick={() => !locked && !loading && startQuiz(topic)}
-                disabled={locked || loading}
-                className={`group text-left rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-6 transition-[border-color,box-shadow] duration-300 ${
-                  locked
-                    ? "opacity-50 cursor-not-allowed"
-                    : "hover:border-[#00D4FF]/40 hover:shadow-[0_0_24px_rgba(0,212,255,0.12)]"
-                }`}
-              >
-                <div className="flex items-start justify-between gap-3 mb-4">
-                  <h3 className="text-white font-bold text-lg leading-snug">{topic.name}</h3>
-                  {locked ? (
-                    <IconLock className="w-5 h-5 text-white/30 flex-shrink-0" />
-                  ) : (
-                    <IconArrowRight className="w-5 h-5 text-[#00D4FF] flex-shrink-0 group-hover:translate-x-0.5 transition-transform" />
-                  )}
-                </div>
+        {[...new Set(topics.map((t) => t.subject))].map((subject) => (
+          <section key={subject}>
+            <h2 className="text-white font-bold text-xl mb-4">{subject}</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {topics
+                .filter((t) => t.subject === subject)
+                .map((topic) => {
+                  const locked = plan === "free" && left === 0;
+                  return (
+                    <button
+                      key={topic.id}
+                      onClick={() => !locked && !loading && startQuiz(topic)}
+                      disabled={locked || loading}
+                      className={`group text-left rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-6 transition-[border-color,box-shadow] duration-300 ${
+                        locked
+                          ? "opacity-50 cursor-not-allowed"
+                          : "hover:border-[#00D4FF]/40 hover:shadow-[0_0_24px_rgba(0,212,255,0.12)]"
+                      }`}
+                    >
+                      <div className="flex items-start justify-between gap-3 mb-4">
+                        <h3 className="text-white font-bold text-lg leading-snug">{topic.name}</h3>
+                        {locked ? (
+                          <IconLock className="w-5 h-5 text-white/30 flex-shrink-0" />
+                        ) : (
+                          <IconArrowRight className="w-5 h-5 text-[#00D4FF] flex-shrink-0 group-hover:translate-x-0.5 transition-transform" />
+                        )}
+                      </div>
 
-                {topic.mastery === null ? (
-                  <p className="text-white/40 text-sm">Not practised yet — take your first quiz</p>
-                ) : (
-                  <div>
-                    <div className="flex items-center justify-between text-xs mb-1.5">
-                      <span className="text-white/40 uppercase tracking-widest font-semibold">Mastery</span>
-                      <span className="text-white font-bold">{topic.mastery}%</span>
-                    </div>
-                    <div className="h-2 rounded-full bg-white/10 overflow-hidden">
-                      <div
-                        className={`h-full rounded-full ${masteryColour(topic.mastery)}`}
-                        style={{ width: `${topic.mastery}%` }}
-                      />
-                    </div>
-                    <p className="text-white/30 text-xs mt-2">
-                      {topic.attempts} {topic.attempts === 1 ? "quiz" : "quizzes"} done
-                    </p>
-                  </div>
-                )}
-              </button>
-            );
-          })}
-        </div>
+                      {topic.mastery === null ? (
+                        <p className="text-white/40 text-sm">Not practised yet — take your first quiz</p>
+                      ) : (
+                        <div>
+                          <div className="flex items-center justify-between text-xs mb-1.5">
+                            <span className="text-white/40 uppercase tracking-widest font-semibold">Mastery</span>
+                            <span className="text-white font-bold">{topic.mastery}%</span>
+                          </div>
+                          <div className="h-2 rounded-full bg-white/10 overflow-hidden">
+                            <div
+                              className={`h-full rounded-full ${masteryColour(topic.mastery)}`}
+                              style={{ width: `${topic.mastery}%` }}
+                            />
+                          </div>
+                          <p className="text-white/30 text-xs mt-2">
+                            {topic.attempts} {topic.attempts === 1 ? "quiz" : "quizzes"} done
+                          </p>
+                        </div>
+                      )}
+                    </button>
+                  );
+                })}
+            </div>
+          </section>
+        ))}
       </div>
     );
   }
