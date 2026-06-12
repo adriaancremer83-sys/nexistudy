@@ -14,7 +14,9 @@ import { createClient } from "@supabase/supabase-js";
 import { writeFileSync, readFileSync, mkdirSync } from "fs";
 
 const [mode, subject = "Mathematics", grade = "Grade 12"] = process.argv.slice(2);
-const slug = subject.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+// Slug includes grade so same-subject banks across grades (e.g. Maths Gr11 vs
+// Gr12) don't collide on the same blind filenames.
+const slug = `${subject} ${grade}`.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL,

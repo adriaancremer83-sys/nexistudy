@@ -1,0 +1,530 @@
+[
+ {
+  "id": "b6ecf12b-2d54-4204-a53c-a0ac4e8c0203",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "On a plan with a scale of 1 : 100, a wall is drawn 5 cm long. What is the real length of the wall?",
+  "options": [
+   "50 cm",
+   "5 m",
+   "50 m",
+   "500 m"
+  ]
+ },
+ {
+  "id": "eac8c5e5-5fd7-4128-8112-86e653020356",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "Simplify the ratio 8 : 12 to its simplest form.",
+  "options": [
+   "2 : 3",
+   "3 : 2",
+   "4 : 6",
+   "1 : 2"
+  ]
+ },
+ {
+  "id": "e9d54496-0e1d-45de-b24d-05a318831795",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "R100 is shared between two people in the ratio 2 : 3. How much does the person with the larger share receive?",
+  "options": [
+   "R40",
+   "R50",
+   "R60",
+   "R66"
+  ]
+ },
+ {
+  "id": "57f15ffd-3f5d-43ae-82de-4a4c2ce911fa",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "A car travels 240 km in 3 hours. What is its average speed?",
+  "options": [
+   "60 km/h",
+   "70 km/h",
+   "80 km/h",
+   "720 km/h"
+  ]
+ },
+ {
+  "id": "7abab012-1ab8-43b8-972b-3611f4050e4b",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "If 4 pens cost R20, how much will 7 pens cost at the same rate?",
+  "options": [
+   "R28",
+   "R35",
+   "R40",
+   "R140"
+  ]
+ },
+ {
+  "id": "04acdf6e-8832-47bf-9d74-6fb8265243fc",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "What is 25% of 80?",
+  "options": [
+   "16",
+   "20",
+   "25",
+   "32"
+  ]
+ },
+ {
+  "id": "f83a6383-953f-4063-828d-a51acea4e68c",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "Express the fraction 3/4 as a percentage.",
+  "options": [
+   "34%",
+   "43%",
+   "75%",
+   "80%"
+  ]
+ },
+ {
+  "id": "4c1021ca-f388-4f31-9781-97d3dcf9cce4",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "A recipe for 4 people needs 200 g of flour. How much flour is needed for 6 people?",
+  "options": [
+   "250 g",
+   "300 g",
+   "350 g",
+   "400 g"
+  ]
+ },
+ {
+  "id": "564518f2-6efc-4263-88c5-0391c0f22753",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "Round 3 467 to the nearest hundred.",
+  "options": [
+   "3 400",
+   "3 460",
+   "3 470",
+   "3 500"
+  ]
+ },
+ {
+  "id": "fc3447e5-ff77-4921-8b34-a93fc021c5d3",
+  "topic": "Finance",
+  "prompt": "An item costs R200 before VAT. VAT in South Africa is 15%. How much VAT is added?",
+  "options": [
+   "R15",
+   "R30",
+   "R45",
+   "R230"
+  ]
+ },
+ {
+  "id": "4d72c098-e651-463a-8f0d-08197681e9e2",
+  "topic": "Finance",
+  "prompt": "A till slip shows a total of R115, which includes 15% VAT. The price excluding VAT is:",
+  "options": [
+   "R100",
+   "R97.75",
+   "R98.05",
+   "R115"
+  ]
+ },
+ {
+  "id": "ef10f74d-970e-44c0-aae8-f55e11cf604d",
+  "topic": "Finance",
+  "prompt": "R5 000 is invested at 8% simple interest per year. How much interest is earned after 3 years?",
+  "options": [
+   "R400",
+   "R1 200",
+   "R1 344",
+   "R5 000"
+  ]
+ },
+ {
+  "id": "b4ac961c-3728-4195-b974-03da69789913",
+  "topic": "Finance",
+  "prompt": "R1 000 is invested at 10% per year compound interest. What is the value of the investment after 2 years?",
+  "options": [
+   "R1 100",
+   "R1 200",
+   "R1 210",
+   "R1 020"
+  ]
+ },
+ {
+  "id": "7cc72ee6-0286-44f3-9d40-723360a768e4",
+  "topic": "Finance",
+  "prompt": "If the exchange rate is US$1 = R18, how many US dollars can you buy with R900?",
+  "options": [
+   "$40",
+   "$50",
+   "$60",
+   "$16 200"
+  ]
+ },
+ {
+  "id": "09bba668-087a-4452-9d33-494b45fc7cea",
+  "topic": "Finance",
+  "prompt": "A jacket marked R450 is on sale at 20% off. What is the sale price?",
+  "options": [
+   "R90",
+   "R360",
+   "R430",
+   "R540"
+  ]
+ },
+ {
+  "id": "f6fa0c3b-1d4f-4d11-9ced-116c4fc0ed97",
+  "topic": "Finance",
+  "prompt": "A household has a monthly income of R8 000 and total expenses of R6 500. The monthly balance is:",
+  "options": [
+   "A deficit of R1 500",
+   "A surplus of R1 500",
+   "A surplus of R14 500",
+   "A balanced budget"
+  ]
+ },
+ {
+  "id": "488b4135-61a8-4e2d-8ec5-ff8bd64ffcb7",
+  "topic": "Finance",
+  "prompt": "Inflation is best described as:",
+  "options": [
+   "a general increase in prices over time",
+   "an increase in your salary",
+   "a decrease in prices over time",
+   "the interest a bank pays you"
+  ]
+ },
+ {
+  "id": "2ac28b72-b80e-4a33-9e3f-439c2c1a035d",
+  "topic": "Measurement & Conversions",
+  "prompt": "Convert 2.5 metres to centimetres.",
+  "options": [
+   "25 cm",
+   "250 cm",
+   "2 500 cm",
+   "0.025 cm"
+  ]
+ },
+ {
+  "id": "4a871b03-d88d-45f9-bd48-05db68d38477",
+  "topic": "Measurement & Conversions",
+  "prompt": "How many metres are there in 3.2 kilometres?",
+  "options": [
+   "320 m",
+   "3 200 m",
+   "32 000 m",
+   "0.0032 m"
+  ]
+ },
+ {
+  "id": "0ab815cc-926d-4868-92f9-5bc8611b03c4",
+  "topic": "Measurement & Conversions",
+  "prompt": "A rectangular room is 8 m long and 5 m wide. What is its floor area?",
+  "options": [
+   "13 m²",
+   "26 m²",
+   "40 m²",
+   "80 m²"
+  ]
+ },
+ {
+  "id": "18cfbe4b-0925-495d-ad40-56bce9cbb157",
+  "topic": "Measurement & Conversions",
+  "prompt": "What is the perimeter of a rectangle that is 8 m long and 5 m wide?",
+  "options": [
+   "13 m",
+   "26 m",
+   "40 m",
+   "80 m"
+  ]
+ },
+ {
+  "id": "00df5143-2d0e-45cd-8ba2-989b2ccfa709",
+  "topic": "Measurement & Conversions",
+  "prompt": "How many millilitres are there in 1.5 litres?",
+  "options": [
+   "15 ml",
+   "150 ml",
+   "1 500 ml",
+   "15 000 ml"
+  ]
+ },
+ {
+  "id": "4e615bd2-cc65-415c-9ebe-729b33c74394",
+  "topic": "Measurement & Conversions",
+  "prompt": "A storage container measures 2 m × 3 m × 4 m. What is its volume?",
+  "options": [
+   "9 m³",
+   "24 m³",
+   "26 m³",
+   "48 m³"
+  ]
+ },
+ {
+  "id": "70405f50-0b6f-44c5-af17-a9183f920afc",
+  "topic": "Measurement & Conversions",
+  "prompt": "How many minutes are there in 2.5 hours?",
+  "options": [
+   "125 min",
+   "150 min",
+   "200 min",
+   "250 min"
+  ]
+ },
+ {
+  "id": "7d6d487c-dcd0-4b7f-ae3e-723a671feb30",
+  "topic": "Measurement & Conversions",
+  "prompt": "Convert 0.75 kilograms to grams.",
+  "options": [
+   "75 g",
+   "750 g",
+   "7 500 g",
+   "0.00075 g"
+  ]
+ },
+ {
+  "id": "7386774e-f5cf-48bb-af32-e7b5ace8a550",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "A map scale of 1 : 50 000 means that 1 cm on the map represents:",
+  "options": [
+   "50 000 cm in reality",
+   "50 000 m in reality",
+   "50 000 km in reality",
+   "5 000 cm in reality"
+  ]
+ },
+ {
+  "id": "738b6fb7-66c3-4a3b-af97-88fbb416b32b",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "On a compass, the direction directly opposite North is:",
+  "options": [
+   "East",
+   "South",
+   "West",
+   "North-East"
+  ]
+ },
+ {
+  "id": "dc72d8d9-8afd-4fdf-adc3-99c1d50244a7",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "A scale of 1 : 200 is used. A real wall 8 m long will be drawn on the plan as:",
+  "options": [
+   "2 cm",
+   "4 cm",
+   "8 cm",
+   "40 cm"
+  ]
+ },
+ {
+  "id": "e2a1dce6-2fe2-4ee7-811e-4a6f5adb9454",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "If you are facing North and turn 90° clockwise, you will be facing:",
+  "options": [
+   "East",
+   "South",
+   "West",
+   "North-West"
+  ]
+ },
+ {
+  "id": "8d97c816-6452-4ae2-a702-5b079a44af1a",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "On a map with a scale of 1 : 100 000, two towns are 3 cm apart. The actual distance between them is:",
+  "options": [
+   "3 m",
+   "300 m",
+   "3 km",
+   "30 km"
+  ]
+ },
+ {
+  "id": "d996e12d-fe4a-49ce-ae9b-62540d66cf83",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "On most maps, which direction is at the top?",
+  "options": [
+   "North",
+   "South",
+   "East",
+   "West"
+  ]
+ },
+ {
+  "id": "cfb616c0-8f2a-4dcb-811a-2af41c9115f5",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "Compared with a scale of 1 : 500, a drawing made at a scale of 1 : 50 shows the object:",
+  "options": [
+   "larger and in more detail",
+   "smaller",
+   "the same size",
+   "upside down"
+  ]
+ },
+ {
+  "id": "3abbf001-3e47-4a2a-abde-bfa9ddfee715",
+  "topic": "Data Handling",
+  "prompt": "Find the mean of: 4, 6, 8, 10, 12.",
+  "options": [
+   "8",
+   "9",
+   "10",
+   "40"
+  ]
+ },
+ {
+  "id": "d78bcc3a-114e-4d42-8868-e70f5f20f04f",
+  "topic": "Data Handling",
+  "prompt": "Find the median of: 3, 7, 9, 12, 15.",
+  "options": [
+   "7",
+   "9",
+   "12",
+   "15"
+  ]
+ },
+ {
+  "id": "2739dfb1-d341-447c-ab6e-4f0962c0bc5f",
+  "topic": "Data Handling",
+  "prompt": "Find the mode of: 5, 3, 5, 8, 5, 2.",
+  "options": [
+   "2",
+   "3",
+   "5",
+   "8"
+  ]
+ },
+ {
+  "id": "817e19b9-4b93-4074-9039-474f2336884e",
+  "topic": "Data Handling",
+  "prompt": "Find the range of: 12, 5, 20, 8, 15.",
+  "options": [
+   "8",
+   "12",
+   "15",
+   "20"
+  ]
+ },
+ {
+  "id": "1b4254d2-0b75-404f-9939-e237518f0aea",
+  "topic": "Data Handling",
+  "prompt": "Find the median of: 4, 8, 10, 14.",
+  "options": [
+   "8",
+   "9",
+   "10",
+   "12"
+  ]
+ },
+ {
+  "id": "fd208bd5-8436-465f-9f06-88af235e1bee",
+  "topic": "Data Handling",
+  "prompt": "The mode of a data set is:",
+  "options": [
+   "the value that occurs most often",
+   "the middle value when ordered",
+   "the average of all the values",
+   "the difference between highest and lowest"
+  ]
+ },
+ {
+  "id": "ee5b6e25-aa37-4c0b-a90d-b5bac3892e7d",
+  "topic": "Data Handling",
+  "prompt": "In a class of 30 learners, 40% walk to school. How many learners walk to school?",
+  "options": [
+   "12",
+   "15",
+   "18",
+   "40"
+  ]
+ },
+ {
+  "id": "ccabd544-7902-46d7-8e71-3633227dce3c",
+  "topic": "Data Handling",
+  "prompt": "The mean of 5 test scores is 60. What is the total of all 5 scores?",
+  "options": [
+   "12",
+   "65",
+   "300",
+   "600"
+  ]
+ },
+ {
+  "id": "88ae5928-82b3-49a5-ac51-4083188c7abb",
+  "topic": "Probability",
+  "prompt": "What is the probability of getting heads when tossing one fair coin?",
+  "options": [
+   "0",
+   "0.25",
+   "0.5",
+   "1"
+  ]
+ },
+ {
+  "id": "d8dc065e-39d5-4027-b016-bd2af455121a",
+  "topic": "Probability",
+  "prompt": "What is the probability of rolling a 4 on an ordinary six-sided die?",
+  "options": [
+   "1/6",
+   "1/4",
+   "1/2",
+   "4/6"
+  ]
+ },
+ {
+  "id": "0699c77e-3254-4b3e-87f8-84b8c8f794e2",
+  "topic": "Probability",
+  "prompt": "What is the probability of rolling an even number on an ordinary six-sided die?",
+  "options": [
+   "1/6",
+   "1/3",
+   "1/2",
+   "2/3"
+  ]
+ },
+ {
+  "id": "fec6de21-d3cc-4bbd-9ede-21f5407ff466",
+  "topic": "Probability",
+  "prompt": "A probability of 0 means an event is:",
+  "options": [
+   "certain to happen",
+   "impossible",
+   "likely",
+   "a 50-50 chance"
+  ]
+ },
+ {
+  "id": "ef3ab376-9730-4980-a43a-09025ce9e3fd",
+  "topic": "Probability",
+  "prompt": "A bag contains 3 red and 2 blue marbles. What is the probability of drawing a red marble?",
+  "options": [
+   "2/5",
+   "3/5",
+   "1/2",
+   "3/2"
+  ]
+ },
+ {
+  "id": "f630e00d-7f8e-4e18-a3d6-61cea80206ed",
+  "topic": "Probability",
+  "prompt": "A bag contains 3 red and 2 blue marbles. What is the probability of NOT drawing a red marble?",
+  "options": [
+   "3/5",
+   "2/5",
+   "1/5",
+   "1"
+  ]
+ },
+ {
+  "id": "a333742d-e17e-4b7a-bb88-039c7b5b0798",
+  "topic": "Probability",
+  "prompt": "The probability of an event that is certain to happen is:",
+  "options": [
+   "0",
+   "0.5",
+   "1",
+   "100"
+  ]
+ },
+ {
+  "id": "1a0bd1c6-63e0-4b2e-8f51-b55b95c0aa90",
+  "topic": "Probability",
+  "prompt": "A spinner is divided into 4 equal sections numbered 1 to 4. What is the probability of landing on 3?",
+  "options": [
+   "1/4",
+   "1/3",
+   "3/4",
+   "1/2"
+  ]
+ }
+]

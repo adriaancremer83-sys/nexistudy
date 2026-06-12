@@ -1,0 +1,530 @@
+[
+ {
+  "id": "92e68c60-279d-4101-8845-113e0e00d870",
+  "topic": "Financial Statements",
+  "prompt": "The financial statement that shows a business's profit or loss over a period is the:",
+  "options": [
+   "Statement of Financial Position",
+   "Income Statement (Statement of Comprehensive Income)",
+   "Cash Flow Statement",
+   "Statement of Changes in Equity"
+  ]
+ },
+ {
+  "id": "605395ea-b32c-4ccc-9eba-9163f1213f98",
+  "topic": "Financial Statements",
+  "prompt": "The Statement of Financial Position (Balance Sheet) shows the:",
+  "options": [
+   "income and expenses for the year",
+   "assets, equity and liabilities at a point in time",
+   "cash inflows and outflows",
+   "profit earned over a year"
+  ]
+ },
+ {
+  "id": "21eb3762-e1f7-44ad-ba5b-3c221b4be68e",
+  "topic": "Financial Statements",
+  "prompt": "Gross profit is calculated as:",
+  "options": [
+   "Sales − Cost of sales",
+   "Sales − Operating expenses",
+   "Net profit + Income tax",
+   "Sales + Cost of sales"
+  ]
+ },
+ {
+  "id": "3e3cd677-bc05-4c50-80ed-69a8560ea6f9",
+  "topic": "Financial Statements",
+  "prompt": "If sales are R100 000 and cost of sales is R60 000, the gross profit is:",
+  "options": [
+   "R40 000",
+   "R60 000",
+   "R100 000",
+   "R160 000"
+  ]
+ },
+ {
+  "id": "871255db-d898-4970-b708-7d7b1b06b4db",
+  "topic": "Financial Statements",
+  "prompt": "Net profit is calculated as:",
+  "options": [
+   "Gross profit + other income − operating expenses",
+   "Sales − cost of sales",
+   "Cost of sales − sales",
+   "Operating expenses − gross profit"
+  ]
+ },
+ {
+  "id": "b3a0f8b5-8c1d-49a3-8460-08e46045f371",
+  "topic": "Financial Statements",
+  "prompt": "Which of these items appears in the Income Statement?",
+  "options": [
+   "Land and buildings",
+   "Trading stock",
+   "Rent income",
+   "Mortgage loan"
+  ]
+ },
+ {
+  "id": "fb018e5f-9c12-4d16-a4fe-5badabc2996b",
+  "topic": "Financial Statements",
+  "prompt": "Trading stock (inventory) appears in the Statement of Financial Position as a:",
+  "options": [
+   "non-current asset",
+   "current asset",
+   "current liability",
+   "expense"
+  ]
+ },
+ {
+  "id": "45f93c7e-6771-42d9-a63f-5f75a5578d3f",
+  "topic": "Financial Statements",
+  "prompt": "The amount the owner has invested in the business, shown in the Statement of Financial Position, is the:",
+  "options": [
+   "capital (owner's equity)",
+   "net profit",
+   "current liabilities",
+   "cost of sales"
+  ]
+ },
+ {
+  "id": "480ce200-c19d-4e8f-8c3a-8d5aca19ffd6",
+  "topic": "Companies & Share Capital",
+  "prompt": "The owners of a company are called:",
+  "options": [
+   "partners",
+   "shareholders",
+   "creditors",
+   "directors"
+  ]
+ },
+ {
+  "id": "1878972f-d4fd-42e3-a12c-c86a7b1e1fe1",
+  "topic": "Companies & Share Capital",
+  "prompt": "A portion of a company's profit paid out to its shareholders is called a:",
+  "options": [
+   "dividend",
+   "salary",
+   "commission",
+   "loan"
+  ]
+ },
+ {
+  "id": "eabd90d5-2e4e-4945-a758-1313f1ac1228",
+  "topic": "Companies & Share Capital",
+  "prompt": "A company issues 10 000 shares at R5 each. The total share capital raised is:",
+  "options": [
+   "R2 000",
+   "R15 000",
+   "R50 000",
+   "R5 000"
+  ]
+ },
+ {
+  "id": "3b673027-50a5-48d6-a88e-18dc34bbcb6b",
+  "topic": "Companies & Share Capital",
+  "prompt": "A company declares a dividend of 50 cents per share on 20 000 shares. The total dividend is:",
+  "options": [
+   "R1 000",
+   "R10 000",
+   "R40 000",
+   "R100 000"
+  ]
+ },
+ {
+  "id": "86a61271-d75c-485c-a799-03c3e36ccd5f",
+  "topic": "Companies & Share Capital",
+  "prompt": "The people elected by shareholders to manage a company are the:",
+  "options": [
+   "board of directors",
+   "creditors",
+   "auditors",
+   "debtors"
+  ]
+ },
+ {
+  "id": "3c17aa9f-8110-4201-8ad5-c84e0a5c751f",
+  "topic": "Companies & Share Capital",
+  "prompt": "The independent person appointed to check that a company's financial statements are fair is the:",
+  "options": [
+   "auditor",
+   "shareholder",
+   "director",
+   "debtor"
+  ]
+ },
+ {
+  "id": "fde5707f-17f8-4944-aa1b-eab3ecee6e98",
+  "topic": "Companies & Share Capital",
+  "prompt": "A key feature of a company is that:",
+  "options": [
+   "the owners have unlimited liability",
+   "it has a separate legal identity from its owners",
+   "it cannot have more than two owners",
+   "profits must by law be shared equally"
+  ]
+ },
+ {
+  "id": "c40653b7-9ecb-419a-bf88-6cc572d6a211",
+  "topic": "Companies & Share Capital",
+  "prompt": "Company income tax is calculated on the:",
+  "options": [
+   "net profit before tax",
+   "total sales",
+   "gross profit only",
+   "dividends paid"
+  ]
+ },
+ {
+  "id": "aecdf972-7c21-4c0c-8beb-a221ad26cc03",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "The current ratio is calculated as:",
+  "options": [
+   "current assets : current liabilities",
+   "current liabilities : current assets",
+   "current assets : fixed assets",
+   "sales : cost of sales"
+  ]
+ },
+ {
+  "id": "2b46180a-7359-438a-8217-8c385d7fc808",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "A business has current assets of R80 000 and current liabilities of R40 000. The current ratio is:",
+  "options": [
+   "1 : 2",
+   "2 : 1",
+   "1 : 1",
+   "4 : 1"
+  ]
+ },
+ {
+  "id": "29826271-af04-4717-8d46-6fea3f9eb3a9",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "The acid-test (quick) ratio differs from the current ratio in that it:",
+  "options": [
+   "excludes inventory from current assets",
+   "includes fixed assets",
+   "uses sales instead of assets",
+   "ignores liabilities entirely"
+  ]
+ },
+ {
+  "id": "5226a0e2-85a9-4e27-a5ab-23b0eb75a6fe",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "A business has a gross profit of R30 000 on sales of R120 000. Its gross profit on sales (margin) is:",
+  "options": [
+   "20%",
+   "25%",
+   "30%",
+   "40%"
+  ]
+ },
+ {
+  "id": "1070d3d8-0734-4bcd-a74c-27c3accd17b0",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "A high debt-to-equity ratio indicates that a business:",
+  "options": [
+   "relies heavily on borrowed funds",
+   "has no liabilities at all",
+   "is extremely liquid",
+   "is holding too much cash"
+  ]
+ },
+ {
+  "id": "317cb25f-b17e-4bc9-a3a6-474a55551773",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "The percentage mark-up on cost is calculated as:",
+  "options": [
+   "(gross profit ÷ cost of sales) × 100",
+   "(gross profit ÷ sales) × 100",
+   "(sales ÷ cost of sales) × 100",
+   "(cost of sales ÷ sales) × 100"
+  ]
+ },
+ {
+  "id": "d6da7ed1-37da-45a1-b3f5-c473e27dd241",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "If cost of sales is R50 000 and the business uses a mark-up of 40% on cost, the gross profit is:",
+  "options": [
+   "R12 500",
+   "R20 000",
+   "R25 000",
+   "R70 000"
+  ]
+ },
+ {
+  "id": "91dc454b-0b36-41c7-9ceb-db8408607917",
+  "topic": "Financial Indicators (Ratios)",
+  "prompt": "Liquidity ratios are used mainly to measure a business's ability to:",
+  "options": [
+   "pay its short-term debts",
+   "make a long-term profit",
+   "increase its share capital",
+   "calculate depreciation"
+  ]
+ },
+ {
+  "id": "659b8136-e8a2-45be-bea2-94a1a102ab38",
+  "topic": "Cash Flow Statement",
+  "prompt": "The Cash Flow Statement classifies cash flows into three types of activities:",
+  "options": [
+   "operating, investing and financing",
+   "current, non-current and fixed",
+   "sales, purchases and returns",
+   "debit, credit and balance"
+  ]
+ },
+ {
+  "id": "43eb0e35-5acd-4c4e-af5b-b391acbeb39e",
+  "topic": "Cash Flow Statement",
+  "prompt": "The purchase of new equipment (a fixed asset) is shown under which activity?",
+  "options": [
+   "operating activities",
+   "investing activities",
+   "financing activities",
+   "trading activities"
+  ]
+ },
+ {
+  "id": "35b39e1d-7e33-44f1-8e36-ecd4ccc8fbbe",
+  "topic": "Cash Flow Statement",
+  "prompt": "Cash received from issuing new shares is classified under:",
+  "options": [
+   "operating activities",
+   "investing activities",
+   "financing activities",
+   "drawings"
+  ]
+ },
+ {
+  "id": "2e5008b0-bcbf-42fb-bb0f-1d81e25d31fc",
+  "topic": "Cash Flow Statement",
+  "prompt": "Cash received from customers for goods sold forms part of:",
+  "options": [
+   "operating activities",
+   "investing activities",
+   "financing activities",
+   "share capital"
+  ]
+ },
+ {
+  "id": "1dfbdfaa-3030-4939-80b2-7b5fbbdb829d",
+  "topic": "Cash Flow Statement",
+  "prompt": "Dividends paid to shareholders are shown under which activity?",
+  "options": [
+   "operating activities",
+   "investing activities",
+   "financing activities",
+   "cost of sales"
+  ]
+ },
+ {
+  "id": "ad1acaf4-a794-4418-8fc9-f9936f069964",
+  "topic": "Cash Flow Statement",
+  "prompt": "A positive net cash flow for the period means that:",
+  "options": [
+   "cash decreased over the period",
+   "cash increased over the period",
+   "the business definitely made a profit",
+   "the business has no debt"
+  ]
+ },
+ {
+  "id": "238c78c6-108f-4059-8156-99b45e318a91",
+  "topic": "Cash Flow Statement",
+  "prompt": "The Cash Flow Statement is mainly concerned with the:",
+  "options": [
+   "profit for the year",
+   "movement of cash into and out of the business",
+   "total value of the assets",
+   "owner's drawings"
+  ]
+ },
+ {
+  "id": "8d7eeeef-b8a3-400f-96f8-140c37ec4a49",
+  "topic": "Cash Flow Statement",
+  "prompt": "Repayment of a loan is recorded under which activity in the Cash Flow Statement?",
+  "options": [
+   "operating activities",
+   "investing activities",
+   "financing activities",
+   "trading stock"
+  ]
+ },
+ {
+  "id": "2711869c-659a-4e89-b304-64f8260a60fc",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "The basic accounting equation is:",
+  "options": [
+   "Assets = Owner's Equity − Liabilities",
+   "Assets = Owner's Equity + Liabilities",
+   "Assets + Liabilities = Owner's Equity",
+   "Assets + Owner's Equity = Liabilities"
+  ]
+ },
+ {
+  "id": "e00665c8-e790-4adb-a5ae-a0500de44b12",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "A business owns R50 000 in assets and owes R20 000 in liabilities. The owner's equity is:",
+  "options": [
+   "R20 000",
+   "R30 000",
+   "R50 000",
+   "R70 000"
+  ]
+ },
+ {
+  "id": "dc4d3bf1-98a6-418f-a0d0-dec976b17e48",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "According to which GAAP concept is the business treated as separate from its owner?",
+  "options": [
+   "The business entity concept",
+   "Historical cost",
+   "Prudence",
+   "Going concern"
+  ]
+ },
+ {
+  "id": "3de4907e-548b-4e0f-8fe0-900cf11f6640",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "In the ledger, an asset account increases on the:",
+  "options": [
+   "credit side",
+   "debit side",
+   "both sides equally",
+   "income side"
+  ]
+ },
+ {
+  "id": "49b8ea6c-751c-4a3f-a2e9-62d2f7d8aba6",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "The owner takes R2 000 cash out of the business for personal use. This is recorded as:",
+  "options": [
+   "Drawings",
+   "Capital",
+   "Salary",
+   "Loan"
+  ]
+ },
+ {
+  "id": "8e2559e0-31d2-43da-85c1-1ee58083b277",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "Which of the following is a non-current (fixed) asset?",
+  "options": [
+   "Trading stock",
+   "Debtors",
+   "Equipment",
+   "Bank"
+  ]
+ },
+ {
+  "id": "76d465f8-8d24-4d22-82b2-2085972487dc",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "The GAAP principle requiring income and the expenses incurred to earn it to be recorded in the same period is the:",
+  "options": [
+   "matching (accrual) principle",
+   "prudence principle",
+   "going concern principle",
+   "materiality principle"
+  ]
+ },
+ {
+  "id": "881098c7-2799-406b-807f-f238184fe9fb",
+  "topic": "Accounting Equation & Concepts",
+  "prompt": "A liability is best described as:",
+  "options": [
+   "something the business owns",
+   "an amount the business owes to others",
+   "the owner's investment in the business",
+   "an expense paid in cash"
+  ]
+ },
+ {
+  "id": "a29d82e6-69f9-413a-b392-a22e75436af9",
+  "topic": "Inventory Valuation",
+  "prompt": "Under the FIFO (first-in-first-out) method, it is assumed that:",
+  "options": [
+   "the oldest stock is sold first",
+   "the newest stock is sold first",
+   "stock is sold in random order",
+   "stock is never sold"
+  ]
+ },
+ {
+  "id": "eca575cf-143e-423b-a5d7-1005b1b3f4af",
+  "topic": "Inventory Valuation",
+  "prompt": "In a perpetual inventory system, the cost of sales is:",
+  "options": [
+   "recorded continuously at the time of each sale",
+   "calculated only at the end of the year",
+   "never recorded",
+   "always equal to gross profit"
+  ]
+ },
+ {
+  "id": "a5d01340-9943-4ff8-89ec-d4a6d9eb8a0c",
+  "topic": "Inventory Valuation",
+  "prompt": "In a periodic inventory system, the value of stock on hand is determined by:",
+  "options": [
+   "a physical stock count at the end of the period",
+   "recording every sale as it happens",
+   "reading the bank statement",
+   "counting the cash float"
+  ]
+ },
+ {
+  "id": "5f41ce23-ff76-4c2f-a21a-662977a8dc10",
+  "topic": "Inventory Valuation",
+  "prompt": "A business buys 100 units at R10 each and later 100 units at R14 each. Using the weighted-average method, the cost per unit is:",
+  "options": [
+   "R10",
+   "R12",
+   "R14",
+   "R24"
+  ]
+ },
+ {
+  "id": "e953bda2-c126-408e-b846-7c96a63e9f05",
+  "topic": "Inventory Valuation",
+  "prompt": "Using FIFO, a business buys 50 units at R8 then 50 units at R12, and sells 60 units. The cost of the 60 units sold is:",
+  "options": [
+   "R480",
+   "R520",
+   "R600",
+   "R720"
+  ]
+ },
+ {
+  "id": "379af136-e25f-4c10-bf47-b7fbd145d690",
+  "topic": "Inventory Valuation",
+  "prompt": "The 'trading stock deficit' account records:",
+  "options": [
+   "stock missing compared with the records (a shortfall)",
+   "extra stock found over the records",
+   "the profit made on sales",
+   "a shortage of cash in the till"
+  ]
+ },
+ {
+  "id": "822248d8-0851-4122-a8d5-5640b240b02d",
+  "topic": "Inventory Valuation",
+  "prompt": "Which inventory system best suits a business selling a small number of high-value items (such as cars)?",
+  "options": [
+   "the perpetual (continuous) system",
+   "the periodic system",
+   "no system is needed",
+   "the weighted-average system only"
+  ]
+ },
+ {
+  "id": "f19c7008-8bd5-4e85-b84e-36f7369b2822",
+  "topic": "Inventory Valuation",
+  "prompt": "During a period of rising prices, the FIFO method generally gives a closing stock value that is:",
+  "options": [
+   "higher, because it is based on the most recent, higher prices",
+   "lower, because it is based on the oldest prices",
+   "zero",
+   "negative"
+  ]
+ }
+]
