@@ -15,6 +15,7 @@ Any mismatch: fix or discard. A bank is not announced/marketed until LIVE-OK.
 | Accounting | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-12, 48/48 fresh-context subagent solve) |
 | Mathematics | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-12, 48/48 fresh-context subagent solve) |
 | Geography | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-12, 48/48 fresh-context subagent solve) |
+| Business Studies | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-12, 48/48 fresh-context subagent solve) |
 
 ## Report-a-question safety net (built 2026-06-12)
 `supabase-reports-setup.sql` adds `questions.flagged` + `question_reports` table.

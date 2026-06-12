@@ -1,0 +1,530 @@
+[
+ {
+  "id": "08c6d47b-1b04-407c-9527-2652e0593959",
+  "topic": "Business Environments",
+  "prompt": "The three business environments are the micro, market and ___ environment.",
+  "options": [
+   "macro",
+   "internal only",
+   "global",
+   "natural"
+  ]
+ },
+ {
+  "id": "e89a9022-4b77-491f-82a8-a435efa4f651",
+  "topic": "Business Environments",
+  "prompt": "Over which environment does a business have FULL control?",
+  "options": [
+   "the market environment",
+   "the macro environment",
+   "the natural environment",
+   "the micro (internal) environment"
+  ]
+ },
+ {
+  "id": "0c421661-4409-468a-bd30-91c95767af1a",
+  "topic": "Business Environments",
+  "prompt": "The macro environment is the one over which a business has:",
+  "options": [
+   "full control",
+   "some control",
+   "no control",
+   "shared control"
+  ]
+ },
+ {
+  "id": "dd5868e1-7b9b-49de-b4c2-a14b93c1ebd3",
+  "topic": "Business Environments",
+  "prompt": "Suppliers, customers and competitors form part of the ___ environment.",
+  "options": [
+   "micro",
+   "market",
+   "macro",
+   "internal"
+  ]
+ },
+ {
+  "id": "150ca6c5-f82c-4e95-9556-4dddacc95b40",
+  "topic": "Business Environments",
+  "prompt": "The framework that analyses the macro environment using Political, Economic, Social, Technological, Environmental and Legal factors is:",
+  "options": [
+   "PESTLE analysis",
+   "SWOT analysis",
+   "the marketing mix",
+   "Porter's five forces"
+  ]
+ },
+ {
+  "id": "cbc26c57-4a51-4e1a-a393-c49f74fdc5f4",
+  "topic": "Business Environments",
+  "prompt": "SWOT analysis stands for Strengths, Weaknesses, Opportunities and:",
+  "options": [
+   "Trends",
+   "Time",
+   "Teamwork",
+   "Threats"
+  ]
+ },
+ {
+  "id": "912ae7aa-e52c-4e8c-bef9-879f74be33c9",
+  "topic": "Business Environments",
+  "prompt": "In a SWOT analysis, strengths and weaknesses are ___ factors.",
+  "options": [
+   "external",
+   "macro",
+   "internal",
+   "political"
+  ]
+ },
+ {
+  "id": "3818aba4-8533-4dd2-9cc3-5a83778735b5",
+  "topic": "Business Environments",
+  "prompt": "Which Act promotes equal opportunity and fair treatment by eliminating unfair discrimination in employment?",
+  "options": [
+   "the Consumer Protection Act",
+   "the Employment Equity Act",
+   "the National Credit Act",
+   "the Companies Act"
+  ]
+ },
+ {
+  "id": "28310ae5-bd04-488c-8b05-78e5cbec4bff",
+  "topic": "Forms of Ownership",
+  "prompt": "A business owned and run by one person, who has unlimited liability, is a:",
+  "options": [
+   "partnership",
+   "private company",
+   "sole proprietor (sole trader)",
+   "co-operative"
+  ]
+ },
+ {
+  "id": "3a4f5c39-d160-4a0d-9c48-fd5401912689",
+  "topic": "Forms of Ownership",
+  "prompt": "In a sole proprietorship, the owner's liability for the business's debts is:",
+  "options": [
+   "unlimited",
+   "limited to their investment",
+   "shared with the bank",
+   "covered by the state"
+  ]
+ },
+ {
+  "id": "2af0d8f9-9dc4-45ec-bb5f-de99a884a926",
+  "topic": "Forms of Ownership",
+  "prompt": "A private company in South Africa uses which abbreviation after its name?",
+  "options": [
+   "Ltd",
+   "(Pty) Ltd",
+   "Inc",
+   "CC"
+  ]
+ },
+ {
+  "id": "b59c1674-b12a-4da2-82e4-21ecd5634d57",
+  "topic": "Forms of Ownership",
+  "prompt": "A key feature of a company is that it has a separate ___ from its owners.",
+  "options": [
+   "bank account only",
+   "tax number only",
+   "physical building",
+   "legal identity (legal personality)"
+  ]
+ },
+ {
+  "id": "67336a59-42d7-4720-9c57-ccebfe4fd557",
+  "topic": "Forms of Ownership",
+  "prompt": "Shareholders in a private or public company have ___ liability.",
+  "options": [
+   "unlimited",
+   "no",
+   "limited",
+   "joint and several"
+  ]
+ },
+ {
+  "id": "e1768c63-6b5e-476e-b619-2cc8012d8aea",
+  "topic": "Forms of Ownership",
+  "prompt": "A form of ownership where members work together for their mutual benefit and share profits among members is a:",
+  "options": [
+   "co-operative",
+   "public company",
+   "sole trader",
+   "partnership"
+  ]
+ },
+ {
+  "id": "cdb380aa-a314-4c17-b110-854d0062bb62",
+  "topic": "Forms of Ownership",
+  "prompt": "A disadvantage of a partnership is that the partners generally have:",
+  "options": [
+   "limited liability",
+   "no say in decisions",
+   "a separate legal identity",
+   "unlimited liability for the debts of the business"
+  ]
+ },
+ {
+  "id": "1656ab47-9558-4647-97c5-fd843efc2752",
+  "topic": "Forms of Ownership",
+  "prompt": "A public company can raise large amounts of capital because it may:",
+  "options": [
+   "borrow only from its members",
+   "sell shares to the public",
+   "avoid being taxed",
+   "avoid all regulation"
+  ]
+ },
+ {
+  "id": "444a8fd8-2baf-4a33-8795-3d1150156e02",
+  "topic": "Insurance & Investment",
+  "prompt": "The insurance principle stating that the insured may not profit from a claim but is only restored to the same financial position as before the loss is:",
+  "options": [
+   "utmost good faith",
+   "indemnity",
+   "average",
+   "security"
+  ]
+ },
+ {
+  "id": "25a76854-32dd-40c3-9e4d-377ab4e94388",
+  "topic": "Insurance & Investment",
+  "prompt": "The principle of 'utmost good faith' requires the insured to:",
+  "options": [
+   "disclose all relevant information honestly when taking out a policy",
+   "pay double premiums",
+   "insure only valuable items",
+   "share the risk with competitors"
+  ]
+ },
+ {
+  "id": "00e90744-5b26-4cf9-8106-043589793d2a",
+  "topic": "Insurance & Investment",
+  "prompt": "Insurance covers an event that is uncertain and measurable, such as fire or theft. Such an event is a(n):",
+  "options": [
+   "non-insurable risk",
+   "guaranteed profit",
+   "insurable risk",
+   "unlimited liability"
+  ]
+ },
+ {
+  "id": "86ec57e0-3c0d-4307-87dc-308c099f793e",
+  "topic": "Insurance & Investment",
+  "prompt": "Which of the following is COMPULSORY insurance in South Africa?",
+  "options": [
+   "household contents insurance",
+   "life cover",
+   "travel insurance",
+   "UIF (Unemployment Insurance Fund) contributions"
+  ]
+ },
+ {
+  "id": "61069dad-f30e-4e0d-8cf5-3dd9ef2779ea",
+  "topic": "Insurance & Investment",
+  "prompt": "The principle of 'average' applies when an item is:",
+  "options": [
+   "under-insured, so the payout is reduced proportionally",
+   "over-insured, so extra is paid out",
+   "insured with two companies",
+   "not insured at all"
+  ]
+ },
+ {
+  "id": "41d71c15-cb55-4f57-9480-3b345ef42ba4",
+  "topic": "Insurance & Investment",
+  "prompt": "Buying shares in a company listed on the JSE is an example of a(n):",
+  "options": [
+   "expense",
+   "donation",
+   "investment",
+   "liability"
+  ]
+ },
+ {
+  "id": "f7944316-5407-4e94-b538-5851607eaec5",
+  "topic": "Insurance & Investment",
+  "prompt": "An arrangement where many investors' money is pooled and managed by professionals who invest it in a range of shares is a:",
+  "options": [
+   "fixed deposit",
+   "unit trust",
+   "current account",
+   "personal loan"
+  ]
+ },
+ {
+  "id": "9c59e4e4-6c65-44ae-a983-c99dfc45d204",
+  "topic": "Insurance & Investment",
+  "prompt": "A business takes out insurance mainly in order to:",
+  "options": [
+   "guarantee it will make a profit",
+   "avoid paying any tax",
+   "remove all business risk completely",
+   "transfer the risk of certain losses to the insurer"
+  ]
+ },
+ {
+  "id": "ec5a0e2a-4f04-48d1-a6cb-54cb0806f3ac",
+  "topic": "Business Functions & Operations",
+  "prompt": "The business function responsible for recruiting, training and paying employees is the ___ function.",
+  "options": [
+   "human resources",
+   "marketing",
+   "production",
+   "financial"
+  ]
+ },
+ {
+  "id": "a9e4177b-c951-4780-9cf3-2395f879bdfc",
+  "topic": "Business Functions & Operations",
+  "prompt": "The function that manages the four elements of the marketing mix is the ___ function.",
+  "options": [
+   "purchasing",
+   "marketing",
+   "administration",
+   "public relations"
+  ]
+ },
+ {
+  "id": "f1b17cbd-a3a8-4d94-8779-a6c361b02088",
+  "topic": "Business Functions & Operations",
+  "prompt": "The '4 Ps' of the marketing mix are product, price, promotion and:",
+  "options": [
+   "people",
+   "profit",
+   "place",
+   "packaging"
+  ]
+ },
+ {
+  "id": "a80de5bf-5d84-4eb1-a4e2-4b11433ae107",
+  "topic": "Business Functions & Operations",
+  "prompt": "The function that obtains raw materials and stock at the right time, price and quality is the ___ function.",
+  "options": [
+   "production",
+   "marketing",
+   "financial",
+   "purchasing"
+  ]
+ },
+ {
+  "id": "08104036-b0b6-4ebc-8f30-816453c8a4da",
+  "topic": "Business Functions & Operations",
+  "prompt": "Total Quality Management (TQM) aims to:",
+  "options": [
+   "continuously improve quality and customer satisfaction throughout the business",
+   "reduce employees' wages",
+   "increase prices only",
+   "remove the human resources function"
+  ]
+ },
+ {
+  "id": "0727329f-d38e-4d18-add2-8af35260dc1b",
+  "topic": "Business Functions & Operations",
+  "prompt": "The process of attracting suitable candidates to apply for a job vacancy is called:",
+  "options": [
+   "induction",
+   "recruitment",
+   "dismissal",
+   "remuneration"
+  ]
+ },
+ {
+  "id": "00511fa6-20ee-431a-be9a-d2839e7f07d0",
+  "topic": "Business Functions & Operations",
+  "prompt": "The induction of a new employee refers to:",
+  "options": [
+   "dismissing an employee",
+   "paying overtime",
+   "introducing and orientating the new employee to the business",
+   "promoting a manager"
+  ]
+ },
+ {
+  "id": "5b3a9fd9-da1e-40d4-bca4-d7ed8d5e74bf",
+  "topic": "Business Functions & Operations",
+  "prompt": "A 'quality circle' is:",
+  "options": [
+   "the profit margin",
+   "a type of share",
+   "a marketing logo",
+   "a small group of workers who meet to solve quality-related problems"
+  ]
+ },
+ {
+  "id": "d74703ab-98a1-44b0-a3f9-db5cb15a1e46",
+  "topic": "Ethics, CSR & Human Rights",
+  "prompt": "CSR stands for Corporate Social ___.",
+  "options": [
+   "Responsibility",
+   "Revenue",
+   "Reporting",
+   "Recruitment"
+  ]
+ },
+ {
+  "id": "0fdbfa1a-7dc3-4c89-aa94-c525b0d3c55e",
+  "topic": "Ethics, CSR & Human Rights",
+  "prompt": "Corporate Social Investment (CSI) refers to:",
+  "options": [
+   "investing in new machinery",
+   "a business contributing money or resources to community and social projects",
+   "buying shares for profit",
+   "paying employees' salaries"
+  ]
+ },
+ {
+  "id": "cd8569ce-e359-4410-a138-8414047a7569",
+  "topic": "Ethics, CSR & Human Rights",
+  "prompt": "Acting ethically in business means:",
+  "options": [
+   "maximising profit at any cost",
+   "ignoring the law",
+   "doing what is morally right, honest and fair",
+   "avoiding all taxes"
+  ]
+ },
+ {
+  "id": "1acdb086-d326-411f-9c04-756f94af8bde",
+  "topic": "Ethics, CSR & Human Rights",
+  "prompt": "The King Code (King IV) provides guidelines on:",
+  "options": [
+   "marketing campaigns",
+   "production techniques",
+   "insurance claims",
+   "corporate governance"
+  ]
+ },
+ {
+  "id": "baf8c6f9-c5ba-45b1-bfca-c410eaf4290a",
+  "topic": "Ethics, CSR & Human Rights",
+  "prompt": "Which of the following is an example of UNETHICAL business behaviour?",
+  "options": [
+   "bribery and corruption",
+   "paying fair wages",
+   "honest advertising",
+   "recycling waste"
+  ]
+ },
+ {
+  "id": "ebf3ac60-3ab8-4973-b7cb-d9ef7f2b74f0",
+  "topic": "Ethics, CSR & Human Rights",
+  "prompt": "Including and respecting employees of different races, genders, ages and cultures is known as managing:",
+  "options": [
+   "production",
+   "diversity",
+   "stock",
+   "premiums"
+  ]
+ },
+ {
+  "id": "84375b29-01a7-49b0-b0e6-65e7212a5180",
+  "topic": "Ethics, CSR & Human Rights",
+  "prompt": "Which right protects employees from being treated unfairly because of race, gender or religion?",
+  "options": [
+   "the right to extra profit",
+   "the right to avoid work",
+   "the right to equality (freedom from unfair discrimination)",
+   "the right to set their own salary"
+  ]
+ },
+ {
+  "id": "3cccf794-570d-4f9a-883a-8651ab6ed068",
+  "topic": "Ethics, CSR & Human Rights",
+  "prompt": "A business that pollutes a river and refuses to clean it up is failing in its:",
+  "options": [
+   "marketing function",
+   "purchasing function",
+   "duty to pay dividends",
+   "social responsibility to the environment"
+  ]
+ },
+ {
+  "id": "7eda33b1-f625-4859-a140-8ade5a527c58",
+  "topic": "Leadership, Teams & Conflict",
+  "prompt": "A leadership style where the leader makes all decisions alone and simply tells employees what to do is:",
+  "options": [
+   "autocratic",
+   "democratic",
+   "laissez-faire",
+   "consultative"
+  ]
+ },
+ {
+  "id": "27034ee6-6d62-40a1-8f0f-955816be7883",
+  "topic": "Leadership, Teams & Conflict",
+  "prompt": "A leadership style where the leader involves employees and lets them participate in decision-making is:",
+  "options": [
+   "autocratic",
+   "democratic (participative)",
+   "dictatorial",
+   "bureaucratic"
+  ]
+ },
+ {
+  "id": "995f4d0a-72e1-4a99-8edd-3716a7ea6227",
+  "topic": "Leadership, Teams & Conflict",
+  "prompt": "A 'laissez-faire' (free-rein) leader:",
+  "options": [
+   "controls every small detail",
+   "never communicates with staff",
+   "gives employees freedom to make their own decisions",
+   "always works completely alone"
+  ]
+ },
+ {
+  "id": "209617c4-5767-4778-8c04-a57618fbf5b9",
+  "topic": "Leadership, Teams & Conflict",
+  "prompt": "The stages of team development are commonly described as forming, storming, norming and:",
+  "options": [
+   "planning",
+   "producing",
+   "promoting",
+   "performing"
+  ]
+ },
+ {
+  "id": "4ba48315-9f11-4851-80bd-f2ded79183bc",
+  "topic": "Leadership, Teams & Conflict",
+  "prompt": "A constructive way to handle conflict in the workplace is:",
+  "options": [
+   "negotiation to find a win-win solution",
+   "ignoring it completely",
+   "shouting at staff",
+   "dismissing everyone involved"
+  ]
+ },
+ {
+  "id": "e511e788-7a06-4340-bcd6-6faeff58d58a",
+  "topic": "Leadership, Teams & Conflict",
+  "prompt": "The CCMA (Commission for Conciliation, Mediation and Arbitration) helps to:",
+  "options": [
+   "set interest rates",
+   "resolve labour disputes between employers and employees",
+   "collect taxes",
+   "register new companies"
+  ]
+ },
+ {
+  "id": "9eb3800f-c1d6-461f-af18-4d3ce4927dc6",
+  "topic": "Leadership, Teams & Conflict",
+  "prompt": "A characteristic of a successful team is:",
+  "options": [
+   "members working against each other",
+   "no leadership at all",
+   "clear shared goals and good communication",
+   "constant unresolved conflict"
+  ]
+ },
+ {
+  "id": "caee65e4-7738-47d3-8e2a-d428e92e8756",
+  "topic": "Leadership, Teams & Conflict",
+  "prompt": "'Delegation' by a manager means:",
+  "options": [
+   "doing all the work themselves",
+   "firing employees",
+   "ignoring the team",
+   "assigning tasks and authority to subordinates"
+  ]
+ }
+]
