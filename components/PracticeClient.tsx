@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { IconCheck, IconLock, IconTarget, IconArrowRight } from "@/components/icons";
+import { IconCheck, IconLock, IconTarget, IconArrowRight, IconChevronDown } from "@/components/icons";
 
 interface Topic {
   id: string;
@@ -57,6 +57,12 @@ export default function PracticeClient({ topics, plan, quizzesLeft }: Props) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [left, setLeft] = useState(quizzesLeft);
+  // Subjects collapse into accordions so the list never dumps every topic at
+  // once. Topics arrive ordered by subject, so topics[0] is the first subject —
+  // open it by default so the page always shows something to start on.
+  const [openSubject, setOpenSubject] = useState<string | null>(
+    topics.length > 0 ? topics[0].subject : null
+  );
 
   async function startQuiz(topic: Topic) {
     setLoading(true);
@@ -144,59 +150,94 @@ export default function PracticeClient({ topics, plan, quizzesLeft }: Props) {
           </div>
         )}
 
-        {[...new Set(topics.map((t) => t.subject))].map((subject) => (
-          <section key={subject}>
-            <h2 className="text-white font-bold text-xl mb-4">{subject}</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {topics
-                .filter((t) => t.subject === subject)
-                .map((topic) => {
-                  const locked = plan === "free" && left === 0;
-                  return (
-                    <button
-                      key={topic.id}
-                      onClick={() => !locked && !loading && startQuiz(topic)}
-                      disabled={locked || loading}
-                      className={`group text-left rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-6 transition-[border-color,box-shadow] duration-300 ${
-                        locked
-                          ? "opacity-50 cursor-not-allowed"
-                          : "hover:border-[#00D4FF]/40 hover:shadow-[0_0_24px_rgba(0,212,255,0.12)]"
-                      }`}
-                    >
-                      <div className="flex items-start justify-between gap-3 mb-4">
-                        <h3 className="text-white font-bold text-lg leading-snug">{topic.name}</h3>
-                        {locked ? (
-                          <IconLock className="w-5 h-5 text-white/30 flex-shrink-0" />
-                        ) : (
-                          <IconArrowRight className="w-5 h-5 text-[#00D4FF] flex-shrink-0 group-hover:translate-x-0.5 transition-transform" />
-                        )}
-                      </div>
+        <div className="space-y-3">
+          {[...new Set(topics.map((t) => t.subject))].map((subject) => {
+            const subjectTopics = topics.filter((t) => t.subject === subject);
+            const practised = subjectTopics.filter((t) => t.mastery !== null);
+            const avgMastery = practised.length
+              ? Math.round(
+                  practised.reduce((sum, t) => sum + (t.mastery ?? 0), 0) / practised.length
+                )
+              : null;
+            const open = openSubject === subject;
+            return (
+              <section
+                key={subject}
+                className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] overflow-hidden"
+              >
+                <button
+                  onClick={() => setOpenSubject(open ? null : subject)}
+                  aria-expanded={open}
+                  className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-white/[0.02] transition-colors"
+                >
+                  <div>
+                    <h2 className="text-white font-bold text-lg leading-snug">{subject}</h2>
+                    <p className="text-white/40 text-xs mt-1">
+                      {subjectTopics.length} {subjectTopics.length === 1 ? "topic" : "topics"}
+                      {avgMastery !== null
+                        ? ` · ${avgMastery}% average mastery`
+                        : " · not started yet"}
+                    </p>
+                  </div>
+                  <IconChevronDown
+                    className={`w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-200 ${
+                      open ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
 
-                      {topic.mastery === null ? (
-                        <p className="text-white/40 text-sm">Not practised yet — take your first quiz</p>
-                      ) : (
-                        <div>
-                          <div className="flex items-center justify-between text-xs mb-1.5">
-                            <span className="text-white/40 uppercase tracking-widest font-semibold">Mastery</span>
-                            <span className="text-white font-bold">{topic.mastery}%</span>
+                {open && (
+                  <div className="px-6 pb-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {subjectTopics.map((topic) => {
+                      const locked = plan === "free" && left === 0;
+                      return (
+                        <button
+                          key={topic.id}
+                          onClick={() => !locked && !loading && startQuiz(topic)}
+                          disabled={locked || loading}
+                          className={`group text-left rounded-2xl border border-white/[0.08] bg-[#0A1730] p-6 transition-[border-color,box-shadow] duration-300 ${
+                            locked
+                              ? "opacity-50 cursor-not-allowed"
+                              : "hover:border-[#00D4FF]/40 hover:shadow-[0_0_24px_rgba(0,212,255,0.12)]"
+                          }`}
+                        >
+                          <div className="flex items-start justify-between gap-3 mb-4">
+                            <h3 className="text-white font-bold text-lg leading-snug">{topic.name}</h3>
+                            {locked ? (
+                              <IconLock className="w-5 h-5 text-white/30 flex-shrink-0" />
+                            ) : (
+                              <IconArrowRight className="w-5 h-5 text-[#00D4FF] flex-shrink-0 group-hover:translate-x-0.5 transition-transform" />
+                            )}
                           </div>
-                          <div className="h-2 rounded-full bg-white/10 overflow-hidden">
-                            <div
-                              className={`h-full rounded-full ${masteryColour(topic.mastery)}`}
-                              style={{ width: `${topic.mastery}%` }}
-                            />
-                          </div>
-                          <p className="text-white/30 text-xs mt-2">
-                            {topic.attempts} {topic.attempts === 1 ? "quiz" : "quizzes"} done
-                          </p>
-                        </div>
-                      )}
-                    </button>
-                  );
-                })}
-            </div>
-          </section>
-        ))}
+
+                          {topic.mastery === null ? (
+                            <p className="text-white/40 text-sm">Not practised yet — take your first quiz</p>
+                          ) : (
+                            <div>
+                              <div className="flex items-center justify-between text-xs mb-1.5">
+                                <span className="text-white/40 uppercase tracking-widest font-semibold">Mastery</span>
+                                <span className="text-white font-bold">{topic.mastery}%</span>
+                              </div>
+                              <div className="h-2 rounded-full bg-white/10 overflow-hidden">
+                                <div
+                                  className={`h-full rounded-full ${masteryColour(topic.mastery)}`}
+                                  style={{ width: `${topic.mastery}%` }}
+                                />
+                              </div>
+                              <p className="text-white/30 text-xs mt-2">
+                                {topic.attempts} {topic.attempts === 1 ? "quiz" : "quizzes"} done
+                              </p>
+                            </div>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </section>
+            );
+          })}
+        </div>
       </div>
     );
   }

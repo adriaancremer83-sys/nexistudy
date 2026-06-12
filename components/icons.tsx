@@ -189,3 +189,11 @@ export function IconTrendingUp({ className }: IconProps) {
     </Base>
   );
 }
+
+export function IconChevronDown({ className }: IconProps) {
+  return (
+    <Base className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </Base>
+  );
+}
