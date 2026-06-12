@@ -1,0 +1,530 @@
+[
+ {
+  "id": "30196bab-f2d1-47b6-a36b-625c042e664d",
+  "topic": "Income, Taxes & Inflation",
+  "prompt": "Gross salary minus deductions (such as income tax and UIF) equals:",
+  "options": [
+   "gross profit",
+   "taxable profit",
+   "net income (take-home pay)",
+   "capital income"
+  ]
+ },
+ {
+  "id": "cbb430ab-ee2b-49f9-aefe-65e98a1d90d2",
+  "topic": "Income, Taxes & Inflation",
+  "prompt": "VAT is an example of:",
+  "options": [
+   "an indirect tax",
+   "a direct tax",
+   "a progressive income tax",
+   "a municipal rate"
+  ]
+ },
+ {
+  "id": "620541a8-6ff8-4285-9632-b035c18666b8",
+  "topic": "Income, Taxes & Inflation",
+  "prompt": "Personal income tax in South Africa is collected by:",
+  "options": [
+   "the Reserve Bank",
+   "Stats SA",
+   "the National Consumer Commission",
+   "SARS"
+  ]
+ },
+ {
+  "id": "4e147d7f-5b59-4ea5-a107-092ca2126436",
+  "topic": "Income, Taxes & Inflation",
+  "prompt": "Inflation is best described as:",
+  "options": [
+   "a decrease in the price of goods",
+   "a sustained increase in the general price level, which reduces buying power",
+   "an increase in the value of the rand",
+   "a tax on luxury goods"
+  ]
+ },
+ {
+  "id": "516fcc43-462f-4b04-9314-74c8955b2de8",
+  "topic": "Income, Taxes & Inflation",
+  "prompt": "Inflation in South Africa is measured by means of the:",
+  "options": [
+   "Consumer Price Index (CPI)",
+   "Gross Domestic Product (GDP)",
+   "exchange rate",
+   "repo rate"
+  ]
+ },
+ {
+  "id": "4a77e23c-f70f-4879-ae74-cfec7aac151e",
+  "topic": "Income, Taxes & Inflation",
+  "prompt": "The UIF contribution deducted from an employee's salary provides:",
+  "options": [
+   "a pension at retirement",
+   "medical aid cover",
+   "a housing subsidy",
+   "short-term financial relief when a worker becomes unemployed"
+  ]
+ },
+ {
+  "id": "a301640a-1a6f-44df-b3e5-422000ee837c",
+  "topic": "Income, Taxes & Inflation",
+  "prompt": "Income tax in South Africa is a progressive tax, which means:",
+  "options": [
+   "everyone pays the same percentage",
+   "the higher your income, the higher the percentage of tax you pay",
+   "only businesses pay it",
+   "it is included in the price of goods"
+  ]
+ },
+ {
+  "id": "f05cded2-1d1c-4cf0-982e-35db5eacf7ba",
+  "topic": "Income, Taxes & Inflation",
+  "prompt": "An employee earns R12 000 per month and R1 800 is deducted in total. The take-home (net) pay is:",
+  "options": [
+   "R13 800",
+   "R12 000",
+   "R10 200",
+   "R1 800"
+  ]
+ },
+ {
+  "id": "af944128-9021-49a9-8bd4-4fc829adafa5",
+  "topic": "Nutrition & Deficiency Diseases",
+  "prompt": "Kwashiorkor is caused by a serious shortage of:",
+  "options": [
+   "vitamin C",
+   "iron",
+   "iodine",
+   "protein"
+  ]
+ },
+ {
+  "id": "992b5edb-4042-4eb9-9f8c-f3cf2a0a3099",
+  "topic": "Nutrition & Deficiency Diseases",
+  "prompt": "Scurvy is caused by a deficiency of:",
+  "options": [
+   "vitamin D",
+   "vitamin C",
+   "calcium",
+   "vitamin A"
+  ]
+ },
+ {
+  "id": "b6271a8c-3a59-4025-ae32-e0b6f396816f",
+  "topic": "Nutrition & Deficiency Diseases",
+  "prompt": "A shortage of iron in the diet causes:",
+  "options": [
+   "anaemia",
+   "rickets",
+   "goitre",
+   "scurvy"
+  ]
+ },
+ {
+  "id": "ac54a6bd-352a-4830-a158-024150e02058",
+  "topic": "Nutrition & Deficiency Diseases",
+  "prompt": "Goitre (an enlarged thyroid gland) is caused by a shortage of:",
+  "options": [
+   "calcium",
+   "vitamin B",
+   "iodine",
+   "protein"
+  ]
+ },
+ {
+  "id": "4c97b04c-123e-43dc-b74a-2a99a32e7871",
+  "topic": "Nutrition & Deficiency Diseases",
+  "prompt": "Rickets in children is caused by a deficiency of:",
+  "options": [
+   "vitamin C and zinc",
+   "vitamin D and calcium",
+   "protein and fat",
+   "iron and iodine"
+  ]
+ },
+ {
+  "id": "f6eaecef-b3e7-4e5e-adda-c49da8434b42",
+  "topic": "Nutrition & Deficiency Diseases",
+  "prompt": "Which nutrient is the body's main source of energy?",
+  "options": [
+   "vitamins",
+   "minerals",
+   "water",
+   "carbohydrates"
+  ]
+ },
+ {
+  "id": "285eb76b-ae9b-4fa1-a773-727fb3551d8d",
+  "topic": "Nutrition & Deficiency Diseases",
+  "prompt": "Type 2 diabetes is most strongly associated with:",
+  "options": [
+   "a shortage of vitamin A",
+   "eating too much fibre",
+   "obesity and a diet high in sugar",
+   "drinking too much water"
+  ]
+ },
+ {
+  "id": "ab7d591b-d4c6-43ca-8f28-6713bfacfa96",
+  "topic": "Nutrition & Deficiency Diseases",
+  "prompt": "Dietary fibre (roughage) helps to:",
+  "options": [
+   "prevent constipation by keeping the digestive system healthy",
+   "build muscles",
+   "strengthen bones",
+   "carry oxygen in the blood"
+  ]
+ },
+ {
+  "id": "69a2e6ac-c163-41b4-8022-ebf3484652bb",
+  "topic": "Consumer Rights & Protection",
+  "prompt": "Which body would a consumer approach to resolve a complaint about a supplier under the Consumer Protection Act?",
+  "options": [
+   "SARS",
+   "the National Consumer Commission",
+   "the Reserve Bank",
+   "Stats SA"
+  ]
+ },
+ {
+  "id": "ae831ba5-580a-4e29-bc52-0f9435148b25",
+  "topic": "Consumer Rights & Protection",
+  "prompt": "Under the Consumer Protection Act, goods bought through direct marketing may be cancelled within a cooling-off period of:",
+  "options": [
+   "30 days",
+   "6 months",
+   "24 hours",
+   "5 business days"
+  ]
+ },
+ {
+  "id": "04ae994d-d36a-46a3-bf72-cbd45a47f2b4",
+  "topic": "Consumer Rights & Protection",
+  "prompt": "A consumer's right to return unsafe or defective goods within 6 months of purchase falls under the right to:",
+  "options": [
+   "fair value, good quality and safety",
+   "privacy",
+   "choose",
+   "disclosure of information"
+  ]
+ },
+ {
+  "id": "0a56f060-752f-4b78-a494-006377f29fb7",
+  "topic": "Consumer Rights & Protection",
+  "prompt": "Which of the following is a consumer RESPONSIBILITY rather than a consumer right?",
+  "options": [
+   "the right to redress",
+   "the right to safety",
+   "comparing prices and products before buying",
+   "the right to choose"
+  ]
+ },
+ {
+  "id": "c28ea54b-ec7e-4ccd-8c35-29e6ba572957",
+  "topic": "Consumer Rights & Protection",
+  "prompt": "A contract is legally binding when:",
+  "options": [
+   "only a written document exists",
+   "one party knows about the terms",
+   "it is signed by a lawyer",
+   "both parties agree and all legal requirements are met"
+  ]
+ },
+ {
+  "id": "90b9b87b-d2ba-4c02-95ed-c6745fa63503",
+  "topic": "Consumer Rights & Protection",
+  "prompt": "Buying on credit means:",
+  "options": [
+   "paying the full amount in cash immediately",
+   "receiving goods now and paying later, usually with interest",
+   "exchanging goods for other goods",
+   "paying with a debit card"
+  ]
+ },
+ {
+  "id": "2dbee670-b748-46e5-b391-540c92d14a25",
+  "topic": "Consumer Rights & Protection",
+  "prompt": "The National Credit Act protects consumers against:",
+  "options": [
+   "high food prices",
+   "load-shedding",
+   "reckless lending by credit providers",
+   "poor workmanship by builders"
+  ]
+ },
+ {
+  "id": "6bb84b51-2446-4c33-87a9-1cfa7fc41876",
+  "topic": "Consumer Rights & Protection",
+  "prompt": "Buying on lay-by means:",
+  "options": [
+   "the shop keeps the goods while the consumer pays in instalments, and the consumer receives the goods once fully paid",
+   "the consumer takes the goods home immediately and pays later",
+   "the goods are rented for a fixed period",
+   "the goods are exchanged for vouchers"
+  ]
+ },
+ {
+  "id": "a16fe179-6913-4875-8ee3-408880ab59a0",
+  "topic": "Entrepreneurship & Costing",
+  "prompt": "If an item's selling price is R150 and its production cost is R100, the markup on cost is:",
+  "options": [
+   "33%",
+   "25%",
+   "50%",
+   "150%"
+  ]
+ },
+ {
+  "id": "86728962-34eb-4048-ab05-fe5664d2d597",
+  "topic": "Entrepreneurship & Costing",
+  "prompt": "Direct materials for one item cost R30, direct labour R20 and overheads R10. The production cost per item is:",
+  "options": [
+   "R50",
+   "R30",
+   "R60",
+   "R600"
+  ]
+ },
+ {
+  "id": "9503ac99-ff8b-45ab-adf1-e00d2a4bc518",
+  "topic": "Entrepreneurship & Costing",
+  "prompt": "An item costs R80 to make and is sold with a 50% markup on cost. The selling price is:",
+  "options": [
+   "R120",
+   "R130",
+   "R40",
+   "R160"
+  ]
+ },
+ {
+  "id": "d56d08b3-9b88-4941-93d7-b316da2d1675",
+  "topic": "Entrepreneurship & Costing",
+  "prompt": "Profit is calculated as:",
+  "options": [
+   "selling price plus cost price",
+   "cost price minus selling price",
+   "selling price multiplied by cost price",
+   "total income minus total costs"
+  ]
+ },
+ {
+  "id": "b3e90cbf-772c-4d8c-a993-555ec502d2ef",
+  "topic": "Entrepreneurship & Costing",
+  "prompt": "Fixed costs are R10 000 per month. Each item sells for R50 and has variable costs of R30. The break-even point is:",
+  "options": [
+   "200 items",
+   "500 items",
+   "333 items",
+   "1 000 items"
+  ]
+ },
+ {
+  "id": "194eaaae-bd57-46e3-8f0f-a7c4fc8326b3",
+  "topic": "Entrepreneurship & Costing",
+  "prompt": "Which of the following is a fixed cost for a small bakery?",
+  "options": [
+   "flour",
+   "sugar",
+   "packaging",
+   "monthly rent of the premises"
+  ]
+ },
+ {
+  "id": "f5925553-3cff-4e87-9784-220661f78d8e",
+  "topic": "Entrepreneurship & Costing",
+  "prompt": "A baker makes 200 muffins at a total cost of R600. The cost per muffin is:",
+  "options": [
+   "R30",
+   "R3",
+   "R6",
+   "R12"
+  ]
+ },
+ {
+  "id": "2742525c-63ab-4929-92f5-db6f4cffcaa3",
+  "topic": "Entrepreneurship & Costing",
+  "prompt": "An entrepreneur is a person who:",
+  "options": [
+   "starts and runs a business, taking the risk in order to make a profit",
+   "works for a salary at a company",
+   "collects taxes for the government",
+   "only invests in shares"
+  ]
+ },
+ {
+  "id": "d56c5582-9665-49e8-9337-77c4e0b0ebe6",
+  "topic": "Housing & Financing",
+  "prompt": "A home loan from a bank, with the property serving as security, is called a:",
+  "options": [
+   "lease",
+   "bond (mortgage)",
+   "levy",
+   "title deed"
+  ]
+ },
+ {
+  "id": "480a70c6-e521-45c9-85dc-f47e4be88426",
+  "topic": "Housing & Financing",
+  "prompt": "The legal document that proves ownership of a property is the:",
+  "options": [
+   "lease agreement",
+   "bond statement",
+   "municipal account",
+   "title deed"
+  ]
+ },
+ {
+  "id": "f3e83c34-da2b-4dc7-af63-5e39d075c45e",
+  "topic": "Housing & Financing",
+  "prompt": "Owners of units in a sectional-title complex pay a monthly amount for the upkeep of common property. This is called a:",
+  "options": [
+   "bond",
+   "deposit",
+   "levy",
+   "rates rebate"
+  ]
+ },
+ {
+  "id": "0a1d677f-d60f-4699-b4ec-2cb7bc411bd9",
+  "topic": "Housing & Financing",
+  "prompt": "A tenant is a person who:",
+  "options": [
+   "rents a property from the owner",
+   "owns the property",
+   "sells properties",
+   "values properties for banks"
+  ]
+ },
+ {
+  "id": "41e8a2c7-ef47-4412-90b8-1f29d81af253",
+  "topic": "Housing & Financing",
+  "prompt": "Which is an advantage of renting rather than buying a home?",
+  "options": [
+   "the tenant builds up ownership of the property",
+   "rent never increases",
+   "the tenant pays transfer duty",
+   "the tenant is not responsible for major maintenance costs"
+  ]
+ },
+ {
+  "id": "8ffc2a13-3f1d-41b8-9084-ca691fb3fe4b",
+  "topic": "Housing & Financing",
+  "prompt": "Transfer duty is:",
+  "options": [
+   "a monthly municipal service fee",
+   "a tax paid to SARS when fixed property above a threshold is bought",
+   "interest on a home loan",
+   "the deposit on a rented flat"
+  ]
+ },
+ {
+  "id": "8372048a-75bd-47ca-b48d-8977ab3ddf66",
+  "topic": "Housing & Financing",
+  "prompt": "If the interest rate on a home loan increases, the monthly bond repayment will:",
+  "options": [
+   "increase",
+   "decrease",
+   "stay the same",
+   "fall away"
+  ]
+ },
+ {
+  "id": "5f5ab4e4-f064-4bf7-8e87-cc88344d7784",
+  "topic": "Housing & Financing",
+  "prompt": "A written agreement between a landlord and a tenant is called a:",
+  "options": [
+   "title deed",
+   "bond",
+   "lease (rental agreement)",
+   "levy statement"
+  ]
+ },
+ {
+  "id": "b94f3e2b-de92-4860-9daa-6355aabc9404",
+  "topic": "Food Safety",
+  "prompt": "The temperature danger zone, in which bacteria in food multiply fastest, is between:",
+  "options": [
+   "5 °C and 60 °C",
+   "0 °C and 5 °C",
+   "60 °C and 100 °C",
+   "−18 °C and 0 °C"
+  ]
+ },
+ {
+  "id": "da74f362-b3f9-4470-b41e-4a6b0054af74",
+  "topic": "Food Safety",
+  "prompt": "The 2017–2018 listeriosis outbreak in South Africa was mainly linked to:",
+  "options": [
+   "fresh vegetables",
+   "tinned fish",
+   "processed cold meats such as polony",
+   "fruit juice"
+  ]
+ },
+ {
+  "id": "6c3b7abe-66eb-4487-8a0c-20cdadb79c46",
+  "topic": "Food Safety",
+  "prompt": "Salmonella food poisoning is most commonly linked to:",
+  "options": [
+   "boiled water",
+   "fresh bread",
+   "tinned vegetables",
+   "raw or undercooked eggs and poultry"
+  ]
+ },
+ {
+  "id": "b5cee1af-7c64-435f-9dd8-2085570238b1",
+  "topic": "Food Safety",
+  "prompt": "Cholera is spread mainly through:",
+  "options": [
+   "coughing and sneezing",
+   "contaminated water and food",
+   "mosquito bites",
+   "skin contact"
+  ]
+ },
+ {
+  "id": "cfade167-a692-4402-829d-81a3f1eaf72a",
+  "topic": "Food Safety",
+  "prompt": "Frozen food should be stored at a temperature of about:",
+  "options": [
+   "10 °C",
+   "0 °C",
+   "−18 °C",
+   "5 °C"
+  ]
+ },
+ {
+  "id": "e081a35a-6bf8-4f06-b90c-3fa231cfbba7",
+  "topic": "Food Safety",
+  "prompt": "Cross-contamination in the kitchen is best prevented by:",
+  "options": [
+   "using separate cutting boards for raw meat and ready-to-eat food",
+   "cooking all food in the same pot",
+   "washing hands only after cooking",
+   "storing raw meat above cooked food in the fridge"
+  ]
+ },
+ {
+  "id": "ad0114f4-a498-49f0-ae5b-7cba1feaf485",
+  "topic": "Food Safety",
+  "prompt": "Botulism is a dangerous form of food poisoning associated with:",
+  "options": [
+   "fresh fruit",
+   "damaged or bulging tinned (canned) food",
+   "dry biscuits",
+   "pasteurised milk"
+  ]
+ },
+ {
+  "id": "53c52dc9-ef93-4530-b135-3e16726ea3c3",
+  "topic": "Food Safety",
+  "prompt": "Leftover cooked food should be:",
+  "options": [
+   "left on the counter overnight",
+   "reheated only once a week",
+   "kept warm at 30 °C",
+   "cooled quickly and refrigerated within two hours"
+  ]
+ }
+]
