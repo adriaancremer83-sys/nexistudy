@@ -1,0 +1,530 @@
+[
+ {
+  "id": "45669051-1720-4c79-82d5-6e0106aefcd7",
+  "topic": "Figures of Speech",
+  "prompt": "\"Her smile is like sunshine\" is an example of:",
+  "options": [
+   "a metaphor",
+   "personification",
+   "a simile",
+   "hyperbole"
+  ]
+ },
+ {
+  "id": "e19d5930-cac7-4cb3-86fc-2211601bbe7f",
+  "topic": "Figures of Speech",
+  "prompt": "\"He is a lion in battle\" is an example of:",
+  "options": [
+   "a metaphor",
+   "a simile",
+   "onomatopoeia",
+   "a euphemism"
+  ]
+ },
+ {
+  "id": "701efb5f-e319-4212-8568-656edbcc5a41",
+  "topic": "Figures of Speech",
+  "prompt": "\"The wind whispered through the trees\" is an example of:",
+  "options": [
+   "hyperbole",
+   "a simile",
+   "irony",
+   "personification"
+  ]
+ },
+ {
+  "id": "d00bb10f-4633-45ee-af8b-4d869d11c5a1",
+  "topic": "Figures of Speech",
+  "prompt": "\"I've told you a million times!\" is an example of:",
+  "options": [
+   "understatement",
+   "hyperbole",
+   "a simile",
+   "a metaphor"
+  ]
+ },
+ {
+  "id": "aebd4f41-e9d4-4d80-9f30-988dd6357791",
+  "topic": "Figures of Speech",
+  "prompt": "In \"The bees buzzed in the garden\", the word \"buzzed\" is an example of:",
+  "options": [
+   "onomatopoeia",
+   "a metaphor",
+   "an oxymoron",
+   "alliteration"
+  ]
+ },
+ {
+  "id": "5668244f-cda9-4677-ac15-f5af21f544f3",
+  "topic": "Figures of Speech",
+  "prompt": "\"Peter Piper picked a peck of pickled peppers\" is an example of:",
+  "options": [
+   "hyperbole",
+   "personification",
+   "irony",
+   "alliteration"
+  ]
+ },
+ {
+  "id": "c3003c12-06ac-4d70-8344-211bc5c0a28d",
+  "topic": "Figures of Speech",
+  "prompt": "Saying someone \"passed away\" instead of \"died\" is an example of:",
+  "options": [
+   "sarcasm",
+   "a euphemism",
+   "a paradox",
+   "an idiom"
+  ]
+ },
+ {
+  "id": "4ecb0e78-7646-47ca-8e3d-451ea3e82126",
+  "topic": "Figures of Speech",
+  "prompt": "\"Deafening silence\" is an example of:",
+  "options": [
+   "a simile",
+   "a euphemism",
+   "an oxymoron",
+   "onomatopoeia"
+  ]
+ },
+ {
+  "id": "64b20893-8adc-4b11-aa70-8bb7bf6196f0",
+  "topic": "Parts of Speech",
+  "prompt": "In the sentence \"The dog barked loudly\", the word \"loudly\" is:",
+  "options": [
+   "a noun",
+   "an adverb",
+   "an adjective",
+   "a verb"
+  ]
+ },
+ {
+  "id": "1e36a995-5741-49ef-aff1-07a3cc29fa6a",
+  "topic": "Parts of Speech",
+  "prompt": "In the sentence \"She bought a beautiful dress\", the word \"beautiful\" is:",
+  "options": [
+   "a verb",
+   "an adverb",
+   "a pronoun",
+   "an adjective"
+  ]
+ },
+ {
+  "id": "6f88a623-8cf3-4bb9-a930-c3c164aeec7a",
+  "topic": "Parts of Speech",
+  "prompt": "In the sentence \"They arrived at the station\", the word \"at\" is:",
+  "options": [
+   "a preposition",
+   "a conjunction",
+   "an article",
+   "an interjection"
+  ]
+ },
+ {
+  "id": "16b46258-c5a8-4f8c-bd90-ca0cd68d249a",
+  "topic": "Parts of Speech",
+  "prompt": "In the sentence \"Thabo and Sipho play soccer\", the word \"and\" is:",
+  "options": [
+   "a preposition",
+   "an adverb",
+   "a conjunction",
+   "a pronoun"
+  ]
+ },
+ {
+  "id": "48b6e11a-5df8-46ee-97d5-793a2651142e",
+  "topic": "Parts of Speech",
+  "prompt": "Which word in this sentence is a pronoun: \"She gave the book to the teacher\"?",
+  "options": [
+   "book",
+   "gave",
+   "teacher",
+   "She"
+  ]
+ },
+ {
+  "id": "4d67c489-ce9b-4362-97fe-3ab735ef5fbb",
+  "topic": "Parts of Speech",
+  "prompt": "In the sentence \"Wow! That was an amazing goal\", the word \"Wow\" is:",
+  "options": [
+   "a verb",
+   "an interjection",
+   "a noun",
+   "an adjective"
+  ]
+ },
+ {
+  "id": "996578fb-fc2d-4d49-8fff-8c54fda22bd3",
+  "topic": "Parts of Speech",
+  "prompt": "The word \"happiness\" is:",
+  "options": [
+   "an abstract noun",
+   "a concrete noun",
+   "a proper noun",
+   "a collective noun"
+  ]
+ },
+ {
+  "id": "91a3be4a-9591-4673-a034-bd0b3e37aa04",
+  "topic": "Parts of Speech",
+  "prompt": "In the phrase \"a flock of sheep\", the word \"flock\" is:",
+  "options": [
+   "a proper noun",
+   "an abstract noun",
+   "a collective noun",
+   "a pronoun"
+  ]
+ },
+ {
+  "id": "29a82d53-c7c6-46a1-89a7-628dacdda67f",
+  "topic": "Direct & Indirect Speech",
+  "prompt": "Sipho said, \"I am hungry.\" In indirect (reported) speech this becomes:",
+  "options": [
+   "Sipho said that he was hungry.",
+   "Sipho said that I am hungry.",
+   "Sipho said that he is hungry.",
+   "Sipho says that he was hungry."
+  ]
+ },
+ {
+  "id": "4a902f24-624d-4e81-95af-53a1bc76c83e",
+  "topic": "Direct & Indirect Speech",
+  "prompt": "When changing direct speech to indirect speech, the word \"tomorrow\" usually becomes:",
+  "options": [
+   "that day",
+   "yesterday",
+   "the next day",
+   "today"
+  ]
+ },
+ {
+  "id": "681a8b31-e255-4877-9607-381a29ab73fa",
+  "topic": "Direct & Indirect Speech",
+  "prompt": "She said, \"I will help you.\" In indirect speech this becomes:",
+  "options": [
+   "She said that she will help me.",
+   "She said that she would help me.",
+   "She says that she would help me.",
+   "She said that I will help you."
+  ]
+ },
+ {
+  "id": "d1a840b4-bfd6-48ab-8a04-715ba16bce0e",
+  "topic": "Direct & Indirect Speech",
+  "prompt": "When changing direct speech to indirect speech, \"here\" usually becomes:",
+  "options": [
+   "nowhere",
+   "everywhere",
+   "where",
+   "there"
+  ]
+ },
+ {
+  "id": "9b4e2409-1b88-421d-bb19-b27c19dfb9fb",
+  "topic": "Direct & Indirect Speech",
+  "prompt": "He said, \"I saw the movie yesterday.\" In indirect speech this becomes:",
+  "options": [
+   "He said that he saw the movie yesterday.",
+   "He said that I had seen the movie yesterday.",
+   "He said that he had seen the movie the previous day.",
+   "He says that he sees the movie the day before."
+  ]
+ },
+ {
+  "id": "cb164400-5873-4471-885d-69a52e9ad647",
+  "topic": "Direct & Indirect Speech",
+  "prompt": "In indirect speech, a verb in the present tense usually changes to:",
+  "options": [
+   "the past tense",
+   "the future tense",
+   "the present continuous",
+   "it never changes"
+  ]
+ },
+ {
+  "id": "6d186c74-44a2-4d2b-85a9-d2dfd8391ddb",
+  "topic": "Direct & Indirect Speech",
+  "prompt": "\"Are you coming?\" she asked. In indirect speech this becomes:",
+  "options": [
+   "She asked are you coming.",
+   "She asked that I am coming.",
+   "She said, are you coming?",
+   "She asked whether I was coming."
+  ]
+ },
+ {
+  "id": "5a6559a9-5ff7-4c4a-8b42-a983f503864c",
+  "topic": "Direct & Indirect Speech",
+  "prompt": "Mom said, \"We are leaving today.\" In indirect speech, \"today\" becomes:",
+  "options": [
+   "tomorrow",
+   "that day",
+   "the next day",
+   "this day"
+  ]
+ },
+ {
+  "id": "ca98d0de-29c9-4557-bac8-3bc472602f0e",
+  "topic": "Concord & Tenses",
+  "prompt": "Choose the correct verb: \"Each of the learners ___ a textbook.\"",
+  "options": [
+   "have",
+   "were having",
+   "has",
+   "are having"
+  ]
+ },
+ {
+  "id": "0c5de633-82f3-4f41-a90e-7a743ee3b040",
+  "topic": "Concord & Tenses",
+  "prompt": "Choose the correct verb: \"Neither Sipho nor his friends ___ at school today.\"",
+  "options": [
+   "are",
+   "is",
+   "am",
+   "be"
+  ]
+ },
+ {
+  "id": "0e19e6c8-907c-4e3d-8ee0-a6843d8c6993",
+  "topic": "Concord & Tenses",
+  "prompt": "Choose the correct verb: \"Yesterday she ___ to the shop.\"",
+  "options": [
+   "go",
+   "goes",
+   "gone",
+   "went"
+  ]
+ },
+ {
+  "id": "8f1cdf99-29b7-4dbe-a9bc-9114dc07d6dc",
+  "topic": "Concord & Tenses",
+  "prompt": "Choose the correct verb: \"By next year, I ___ my studies.\"",
+  "options": [
+   "will finish",
+   "will have finished",
+   "finished",
+   "am finishing"
+  ]
+ },
+ {
+  "id": "1ce3dbbe-5915-4262-847c-1d47f51504b1",
+  "topic": "Concord & Tenses",
+  "prompt": "Choose the correct verb: \"The news ___ shocking.\"",
+  "options": [
+   "is",
+   "are",
+   "were",
+   "have been"
+  ]
+ },
+ {
+  "id": "d371e0b9-0b19-43cc-86ad-b0b9213c57be",
+  "topic": "Concord & Tenses",
+  "prompt": "Choose the correct sentence:",
+  "options": [
+   "She have been waiting for an hour.",
+   "She been waiting for an hour.",
+   "She has been waiting for an hour.",
+   "She have waited for an hour."
+  ]
+ },
+ {
+  "id": "d0e59874-3e3c-4bb5-94e8-e522eb96a6de",
+  "topic": "Concord & Tenses",
+  "prompt": "Choose the correct verb: \"While I ___ supper, the lights went out.\"",
+  "options": [
+   "cook",
+   "was cooking",
+   "am cooking",
+   "will cook"
+  ]
+ },
+ {
+  "id": "95edb886-d7da-4e1d-82d6-ba6331e94bbf",
+  "topic": "Concord & Tenses",
+  "prompt": "Choose the correct verb: \"My brother, together with his friends, ___ playing outside.\"",
+  "options": [
+   "are",
+   "were",
+   "be",
+   "is"
+  ]
+ },
+ {
+  "id": "4176529a-53a5-40a9-976b-8a1300dbecac",
+  "topic": "Punctuation",
+  "prompt": "An ellipsis ( ... ) is used to show:",
+  "options": [
+   "that a question follows",
+   "strong emotion",
+   "possession",
+   "that words have been left out or a thought trails off"
+  ]
+ },
+ {
+  "id": "4d9ea4f4-c896-4663-834c-f118ff709a2b",
+  "topic": "Punctuation",
+  "prompt": "The apostrophe in \"the boy's bag\" shows:",
+  "options": [
+   "that there is more than one boy",
+   "that the bag belongs to the boy",
+   "that words have been left out",
+   "that the sentence is a question"
+  ]
+ },
+ {
+  "id": "1d31eed0-9276-4076-82ef-d8ba4a6ccfc2",
+  "topic": "Punctuation",
+  "prompt": "The contraction \"don't\" stands for:",
+  "options": [
+   "do not",
+   "did not",
+   "does not",
+   "will not"
+  ]
+ },
+ {
+  "id": "b07ed640-f7eb-48b9-9d3d-c8f38304f2d0",
+  "topic": "Punctuation",
+  "prompt": "Which punctuation mark is used at the end of a direct question?",
+  "options": [
+   "a full stop",
+   "an exclamation mark",
+   "a question mark",
+   "a comma"
+  ]
+ },
+ {
+  "id": "5d22ca85-b492-440a-bc3d-e2f82ef1c52d",
+  "topic": "Punctuation",
+  "prompt": "Which sentence uses the apostrophe correctly?",
+  "options": [
+   "Its a sunny day.",
+   "It's a sunny day.",
+   "Its' a sunny day.",
+   "It is' a sunny day."
+  ]
+ },
+ {
+  "id": "d99a7fc0-e32d-409d-9a3e-78a103904a25",
+  "topic": "Punctuation",
+  "prompt": "A colon ( : ) is commonly used to:",
+  "options": [
+   "end a sentence",
+   "join two unrelated paragraphs",
+   "show possession",
+   "introduce a list"
+  ]
+ },
+ {
+  "id": "bbe9a078-5f41-48fe-9298-2f517b7de46f",
+  "topic": "Punctuation",
+  "prompt": "In direct speech, the words actually spoken are placed:",
+  "options": [
+   "in brackets",
+   "after a full stop only",
+   "inside quotation (inverted) commas",
+   "in italics only"
+  ]
+ },
+ {
+  "id": "77ceaa5c-466f-4480-9429-5866d2a22723",
+  "topic": "Punctuation",
+  "prompt": "Which sentence is punctuated correctly?",
+  "options": [
+   "\"I am tired,\" said Lerato.",
+   "\"I am tired\" said, Lerato.",
+   "I am tired, \"said Lerato.\"",
+   "\"I am tired said Lerato.\""
+  ]
+ },
+ {
+  "id": "5ac03947-20ef-445e-bd5b-9b33a7113d1f",
+  "topic": "Active & Passive Voice",
+  "prompt": "In which sentence is the verb in the passive voice?",
+  "options": [
+   "The cat chased the mouse.",
+   "The mouse was chased by the cat.",
+   "The cat is chasing the mouse.",
+   "The cat will chase the mouse."
+  ]
+ },
+ {
+  "id": "2c29a567-570a-4a44-b310-38d1cc54642b",
+  "topic": "Active & Passive Voice",
+  "prompt": "\"Thandi wrote the letter.\" In the passive voice this becomes:",
+  "options": [
+   "The letter is written by Thandi.",
+   "Thandi was written by the letter.",
+   "The letter will be written by Thandi.",
+   "The letter was written by Thandi."
+  ]
+ },
+ {
+  "id": "6dc67025-761a-4b0c-9ad0-651747fc0e93",
+  "topic": "Active & Passive Voice",
+  "prompt": "\"The boys play soccer.\" In the passive voice this becomes:",
+  "options": [
+   "Soccer is played by the boys.",
+   "Soccer was played by the boys.",
+   "Soccer will be played by the boys.",
+   "Soccer is playing the boys."
+  ]
+ },
+ {
+  "id": "c34c28ca-ff3f-41d8-9415-89aeb47a522d",
+  "topic": "Active & Passive Voice",
+  "prompt": "\"The cake was baked by Gogo.\" In the active voice this becomes:",
+  "options": [
+   "Gogo bakes the cake.",
+   "The cake baked Gogo.",
+   "Gogo baked the cake.",
+   "Gogo will bake the cake."
+  ]
+ },
+ {
+  "id": "b8280fcc-9769-4663-b21b-9d315f015ddc",
+  "topic": "Active & Passive Voice",
+  "prompt": "In a passive sentence, the doer of the action is usually introduced by the word:",
+  "options": [
+   "of",
+   "with",
+   "from",
+   "by"
+  ]
+ },
+ {
+  "id": "e17c6e62-e7bf-4652-be32-0abb14d63178",
+  "topic": "Active & Passive Voice",
+  "prompt": "\"The teacher will mark the tests.\" In the passive voice this becomes:",
+  "options": [
+   "The tests will be marked by the teacher.",
+   "The tests were marked by the teacher.",
+   "The tests are marked by the teacher.",
+   "The tests will mark the teacher."
+  ]
+ },
+ {
+  "id": "25126a1f-6f35-45e7-8752-76851ee5f16c",
+  "topic": "Active & Passive Voice",
+  "prompt": "Which sentence is in the active voice?",
+  "options": [
+   "The window was broken by the ball.",
+   "The song was sung by the choir.",
+   "The learners completed the project.",
+   "The road is being repaired."
+  ]
+ },
+ {
+  "id": "04292d3b-c828-4b89-a3c2-0a81a52543b2",
+  "topic": "Active & Passive Voice",
+  "prompt": "\"She is washing the dishes.\" In the passive voice this becomes:",
+  "options": [
+   "The dishes are washed by her.",
+   "The dishes are being washed by her.",
+   "The dishes were being washed by her.",
+   "The dishes have been washed by her."
+  ]
+ }
+]
