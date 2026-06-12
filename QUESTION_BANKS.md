@@ -9,11 +9,18 @@ Any mismatch: fix or discard. A bank is not announced/marketed until LIVE-OK.
 | Subject | Grade | Topics | Questions | Status |
 |---|---|---|---|---|
 | Mathematics | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-12, 48/48 computational re-solve) |
-| Physical Sciences | 12 | 6 | 48 | seeded 2026-06-12 — needs blind-verify (export ready in scripts/blind/) |
-| Life Sciences | 12 | — | — | next up |
-| Mathematical Literacy | 12 | — | — | queued |
+| Physical Sciences | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-12, 48/48) |
+| Life Sciences | 12 | 6 | 48 | seeded 2026-06-12 — needs blind-verify (conceptual; export ready) |
+| Mathematical Literacy | 12 | — | — | next up |
 | Accounting | 12 | — | — | queued |
 | Mathematics | 11 | — | — | queued (widens funnel) |
+
+## Report-a-question safety net (built 2026-06-12)
+`supabase-reports-setup.sql` adds `questions.flagged` + `question_reports` table.
+`getQuizQuestions` filters `flagged=false`; learners flag via results-page button
+→ `POST /api/practice/report` hides the question instantly until reviewed.
+**To review reports:** query `question_reports where resolved=false`, fix the
+question via its seed script, then set `flagged=false` + `resolved=true`.
 
 ## Session rhythm
 1. Start of session: blind-verify the previous session's bank (script:

@@ -306,6 +306,7 @@ export default function PracticeClient({ topics, plan, quizzesLeft }: Props) {
               <p className="text-white/50 text-sm leading-relaxed border-t border-white/10 pt-3">
                 {r.explanation}
               </p>
+              <QuestionReport questionId={r.id} />
             </div>
           ))}
         </div>
@@ -342,4 +343,63 @@ export default function PracticeClient({ topics, plan, quizzesLeft }: Props) {
   }
 
   return null;
+}
+
+// Per-question report control shown under each explanation. Lets a learner
+// flag a question they believe is wrong; the server hides it from rotation.
+function QuestionReport({ questionId }: { questionId: string }) {
+  const [state, setState] = useState<"idle" | "open" | "sending" | "done">("idle");
+  const [reason, setReason] = useState("");
+
+  async function send() {
+    setState("sending");
+    try {
+      await fetch("/api/practice/report", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ questionId, reason }),
+      });
+    } catch {
+      // Best-effort: even if the network hiccups, don't block the learner.
+    }
+    setState("done");
+  }
+
+  if (state === "done") {
+    return (
+      <p className="text-white/30 text-xs mt-3">
+        Thanks — we&apos;ll review this question. It won&apos;t appear again until we do.
+      </p>
+    );
+  }
+
+  if (state === "open" || state === "sending") {
+    return (
+      <div className="mt-3 flex flex-col sm:flex-row gap-2">
+        <input
+          type="text"
+          value={reason}
+          onChange={(e) => setReason(e.target.value)}
+          placeholder="What looks wrong? (optional)"
+          className="flex-1 px-3 py-2 rounded-lg bg-white/[0.04] border border-white/10 text-white/80 text-xs placeholder:text-white/30 focus:outline-none focus:border-[#00D4FF]/40"
+        />
+        <button
+          onClick={send}
+          disabled={state === "sending"}
+          className="px-4 py-2 bg-[#2D6BE4] hover:bg-[#4A82F0] text-white text-xs font-bold rounded-lg transition-colors disabled:opacity-50"
+        >
+          {state === "sending" ? "Sending…" : "Submit report"}
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <button
+      onClick={() => setState("open")}
+      className="text-white/25 hover:text-white/60 text-xs mt-3 transition-colors"
+    >
+      ⚑ Report a problem with this question
+    </button>
+  );
 }

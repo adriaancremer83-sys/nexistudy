@@ -120,7 +120,8 @@ export async function getQuizQuestions(topicId: string): Promise<QuizQuestion[]>
   const { data, error } = await supabaseAdmin
     .from("questions")
     .select("id,prompt,options")
-    .eq("topic_id", topicId);
+    .eq("topic_id", topicId)
+    .eq("flagged", false);
 
   if (error) {
     console.error("getQuizQuestions failed:", error.message);
@@ -205,4 +206,32 @@ export async function submitQuiz(
   if (upsertError) console.error("submitQuiz mastery upsert failed:", upsertError.message);
 
   return { total, correct, mastery, results };
+}
+
+// Logs a learner's report and immediately removes the question from rotation
+// until a human reviews it. Errs on the side of hiding — a wrong question in a
+// study app costs more trust than a briefly missing one.
+export async function reportQuestion(
+  userId: string,
+  questionId: string,
+  reason: string
+): Promise<boolean> {
+  const { error: reportError } = await supabaseAdmin.from("question_reports").insert({
+    question_id: questionId,
+    user_id: userId,
+    reason: reason.slice(0, 500),
+  });
+  if (reportError) {
+    console.error("reportQuestion insert failed:", reportError.message);
+    return false;
+  }
+  const { error: flagError } = await supabaseAdmin
+    .from("questions")
+    .update({ flagged: true })
+    .eq("id", questionId);
+  if (flagError) {
+    console.error("reportQuestion flag failed:", flagError.message);
+    return false;
+  }
+  return true;
 }
