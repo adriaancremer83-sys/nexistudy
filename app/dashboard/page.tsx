@@ -6,7 +6,8 @@ import Image from "next/image";
 import type { Session } from "next-auth";
 import Reveal from "@/components/Reveal";
 import ProgressRing from "@/components/ProgressRing";
-import { IconAcademicCap, IconCpuChip, IconChartBar, IconStar, IconLock } from "@/components/icons";
+import { IconAcademicCap, IconCpuChip, IconChartBar, IconStar, IconLock, IconTarget } from "@/components/icons";
+import { getWeakSpots } from "@/lib/practice";
 
 type ExtendedUser = NonNullable<Session["user"]>;
 
@@ -45,13 +46,18 @@ export default async function DashboardPage() {
     { label: "Study Streak", value: "🔥 1 day" },
   ];
 
-  // Example topics shown blurred to free users as a Premium preview.
-  const weakSpotPreview = [
-    "Trigonometry identities",
-    "Stoichiometry calculations",
-    "Essay structure & planning",
-    "Algebraic fractions",
-  ];
+  // Real weak spots from quiz history; falls back to example topics for the
+  // free-plan blurred preview when the learner hasn't practised yet.
+  const weakSpots = await getWeakSpots(user.id);
+  const weakSpotPreview =
+    weakSpots.length > 0
+      ? weakSpots.map((w) => w.name)
+      : [
+          "Trigonometry identities",
+          "Stoichiometry calculations",
+          "Essay structure & planning",
+          "Algebraic fractions",
+        ];
 
   return (
     <div className="min-h-screen">
@@ -190,6 +196,27 @@ export default async function DashboardPage() {
         {/* ── QUICK LINKS ── */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
 
+          <Reveal delay={120} className="h-full sm:col-span-2">
+            <Link
+              href="/practice"
+              className="group rounded-2xl border border-[#00D4FF]/25 bg-[#0E1F3D] p-9 flex items-start gap-5 h-full transition-[border-color,box-shadow] duration-300 hover:border-[#00D4FF]/50 hover:shadow-[0_0_24px_rgba(0,212,255,0.12)]"
+            >
+              <div className="w-14 h-14 rounded-xl bg-[#2D6BE4]/20 border border-[#00D4FF]/20 flex items-center justify-center flex-shrink-0 text-[#00D4FF] group-hover:bg-[#2D6BE4]/30 transition-colors">
+                <IconTarget className="w-7 h-7" />
+              </div>
+              <div>
+                <h3 className="text-white font-bold text-xl mb-1.5">Practice Quizzes</h3>
+                <p className="text-white/50 text-sm leading-relaxed">
+                  Short topic quizzes marked instantly, with explanations for every
+                  answer. Each quiz builds your weak-spots map.
+                </p>
+                <span className="inline-block mt-4 text-sm font-semibold text-[#00D4FF] group-hover:text-white transition-colors">
+                  Start practising →
+                </span>
+              </div>
+            </Link>
+          </Reveal>
+
           <Reveal delay={160} className="h-full">
             <Link
               href="/nexi-tutor"
@@ -231,6 +258,65 @@ export default async function DashboardPage() {
           </Reveal>
 
         </div>
+
+        {/* ── WEAK SPOTS (premium: real data) ── */}
+        {user.plan === "premium" && (
+          <Reveal delay={320}>
+            <div className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] overflow-hidden">
+              <div className="px-6 py-4 border-b border-white/10 bg-white/5 flex items-center gap-2.5 text-[#00D4FF]">
+                <IconTarget className="w-4 h-4" />
+                <h2 className="text-xs font-semibold text-white uppercase tracking-widest">Your Weak Spots</h2>
+              </div>
+              <div className="p-6">
+                {weakSpots.length === 0 ? (
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <p className="text-white/50 text-sm leading-relaxed max-w-md">
+                      Take your first practice quiz and Nexi will start mapping
+                      exactly which topics need work.
+                    </p>
+                    <Link
+                      href="/practice"
+                      className="flex-shrink-0 px-5 py-2.5 bg-[#2D6BE4] hover:bg-[#4A82F0] text-white text-sm font-bold rounded-xl transition-colors"
+                    >
+                      Take a quiz →
+                    </Link>
+                  </div>
+                ) : (
+                  <ul className="space-y-4">
+                    {weakSpots.map((spot) => (
+                      <li key={spot.id} className="flex items-center gap-4">
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center justify-between text-sm mb-1.5">
+                            <span className="text-white font-semibold truncate">{spot.name}</span>
+                            <span className="text-white/40 text-xs font-bold">{spot.mastery}%</span>
+                          </div>
+                          <div className="h-2 rounded-full bg-white/10 overflow-hidden">
+                            <div
+                              className={`h-full rounded-full ${
+                                spot.mastery < 50
+                                  ? "bg-red-400"
+                                  : spot.mastery < 75
+                                    ? "bg-amber-300"
+                                    : "bg-emerald-400"
+                              }`}
+                              style={{ width: `${Math.max(spot.mastery, 4)}%` }}
+                            />
+                          </div>
+                        </div>
+                        <Link
+                          href="/practice"
+                          className="flex-shrink-0 text-sm font-semibold text-[#00D4FF] hover:text-white transition-colors"
+                        >
+                          Practise →
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+          </Reveal>
+        )}
 
         {/* ── WEAK SPOTS TEASE (free plan) ── */}
         {user.plan === "free" && (

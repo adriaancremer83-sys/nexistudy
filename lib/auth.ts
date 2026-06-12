@@ -48,6 +48,7 @@ export const authOptions: NextAuthOptions = {
     },
     async session({ session, token }) {
       if (session.user) {
+        session.user.id = token.sub ?? "";
         session.user.plan = token.plan;
         session.user.apsScore = token.apsScore;
         session.user.grade = token.grade;
