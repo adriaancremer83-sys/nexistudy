@@ -1,0 +1,530 @@
+[
+ {
+  "id": "0a922266-8cb1-4787-9317-f60afd4c1890",
+  "topic": "Sequences & Series",
+  "prompt": "The arithmetic sequence 3; 7; 11; ... continues. What is the 20th term?",
+  "options": [
+   "76",
+   "79",
+   "83",
+   "80"
+  ]
+ },
+ {
+  "id": "be9760a0-daec-442e-9ca2-36e04d64a5ca",
+  "topic": "Sequences & Series",
+  "prompt": "In a geometric sequence the 2nd term is 6 and the 5th term is 48. What is the first term?",
+  "options": [
+   "2",
+   "3",
+   "6",
+   "1.5"
+  ]
+ },
+ {
+  "id": "322fd7b2-317c-46c3-86f3-7dfba5b96c93",
+  "topic": "Sequences & Series",
+  "prompt": "Calculate the sum of the arithmetic series 5 + 8 + 11 + ... + 62.",
+  "options": [
+   "640",
+   "685",
+   "670",
+   "700"
+  ]
+ },
+ {
+  "id": "4ca53d25-305b-47e1-8947-9c23ebb1b0a4",
+  "topic": "Sequences & Series",
+  "prompt": "Find the sum to infinity of the series 16 + 8 + 4 + 2 + ...",
+  "options": [
+   "32",
+   "28",
+   "36",
+   "24"
+  ]
+ },
+ {
+  "id": "4586fae3-b78a-4601-bcdf-29d4402d2ca3",
+  "topic": "Sequences & Series",
+  "prompt": "For which values of r does the sum to infinity of a geometric series exist?",
+  "options": [
+   "r > 1",
+   "r < −1",
+   "−1 < r < 1, r ≠ 0",
+   "r = 1"
+  ]
+ },
+ {
+  "id": "0e2ad236-05a0-48e2-bd7d-a9cd956b9ecb",
+  "topic": "Sequences & Series",
+  "prompt": "The quadratic sequence 2; 6; 12; 20; ... continues. What is the next term?",
+  "options": [
+   "26",
+   "28",
+   "30",
+   "32"
+  ]
+ },
+ {
+  "id": "d1591360-f538-4912-940c-b079f24841a0",
+  "topic": "Sequences & Series",
+  "prompt": "Evaluate: Σ (2k + 1) for k = 1 to 10.",
+  "options": [
+   "121",
+   "120",
+   "110",
+   "130"
+  ]
+ },
+ {
+  "id": "483effc0-5eeb-4dc8-ba9c-e902e42826f9",
+  "topic": "Sequences & Series",
+  "prompt": "In an arithmetic sequence T3 = 10 and T7 = 26. What is the first term?",
+  "options": [
+   "2",
+   "4",
+   "6",
+   "3"
+  ]
+ },
+ {
+  "id": "72918cd3-35f3-4bc1-afda-3a43c8853762",
+  "topic": "Functions & Graphs",
+  "prompt": "If f(x) = 3x − 6, what is f⁻¹(x)?",
+  "options": [
+   "(x − 6)/3",
+   "(x + 6)/3",
+   "3x + 6",
+   "1/(3x − 6)"
+  ]
+ },
+ {
+  "id": "d00cc597-1967-4162-9e17-23f9cea9a940",
+  "topic": "Functions & Graphs",
+  "prompt": "Why must the domain of f(x) = x² be restricted (e.g. to x ≥ 0) before finding its inverse?",
+  "options": [
+   "So that the inverse is also a function",
+   "Because x² is undefined for negative x",
+   "To make the graph pass through the origin",
+   "Because the inverse must have a positive gradient"
+  ]
+ },
+ {
+  "id": "ec693661-e70f-4007-b060-de864a7d4eda",
+  "topic": "Functions & Graphs",
+  "prompt": "What are the asymptotes of y = 2/(x − 3) + 1?",
+  "options": [
+   "x = −3 and y = 1",
+   "x = 3 and y = 1",
+   "x = 3 and y = 2",
+   "x = 1 and y = 3"
+  ]
+ },
+ {
+  "id": "fd0a384d-eb64-4f72-8d33-fdd7f8868f99",
+  "topic": "Functions & Graphs",
+  "prompt": "What is the inverse of y = 2ˣ?",
+  "options": [
+   "y = x²",
+   "y = 2⁻ˣ",
+   "y = log₂ x",
+   "y = x/2"
+  ]
+ },
+ {
+  "id": "479adfa6-622f-4d20-ba4e-d941578f9220",
+  "topic": "Functions & Graphs",
+  "prompt": "What is the range of f(x) = −x² + 4?",
+  "options": [
+   "y ≥ 4",
+   "y ≤ 4",
+   "y ≥ −4",
+   "all real numbers"
+  ]
+ },
+ {
+  "id": "67d53759-3589-4923-b708-77b6aa53db22",
+  "topic": "Functions & Graphs",
+  "prompt": "If f(x) = log₃ x, what is f(27)?",
+  "options": [
+   "9",
+   "81",
+   "3",
+   "1/3"
+  ]
+ },
+ {
+  "id": "90cab38a-8c3c-4030-82cd-b4d9dc2d6361",
+  "topic": "Functions & Graphs",
+  "prompt": "The graph of y = a/(x + p) + q has asymptotes x = −2 and y = 3. What are p and q?",
+  "options": [
+   "p = −2, q = 3",
+   "p = 2, q = 3",
+   "p = 3, q = −2",
+   "p = −3, q = 2"
+  ]
+ },
+ {
+  "id": "c261461e-9937-41e9-983f-d440cc194e1b",
+  "topic": "Functions & Graphs",
+  "prompt": "What is the turning point of f(x) = x² − 4x + 1?",
+  "options": [
+   "(2; −3)",
+   "(−2; 13)",
+   "(2; 1)",
+   "(4; 1)"
+  ]
+ },
+ {
+  "id": "3cba94cc-bda0-4877-ab6f-55ec31a3d211",
+  "topic": "Finance, Growth & Decay",
+  "prompt": "R5 000 is invested at 8% p.a. compounded annually. How much is it worth after 3 years?",
+  "options": [
+   "R6 200.00",
+   "R6 298.56",
+   "R6 480.00",
+   "R5 400.00"
+  ]
+ },
+ {
+  "id": "dc7351f4-293d-4be2-8d9a-b54d1abf3746",
+  "topic": "Finance, Growth & Decay",
+  "prompt": "A car worth R200 000 depreciates at 15% p.a. on the reducing balance. Its value after 4 years is:",
+  "options": [
+   "R80 000.00",
+   "R140 000.00",
+   "R104 401.25",
+   "R110 000.00"
+  ]
+ },
+ {
+  "id": "35793f24-ec3a-4b04-81cf-05ca5d6c4cde",
+  "topic": "Finance, Growth & Decay",
+  "prompt": "What is the effective annual rate of 12% p.a. compounded monthly? (to 2 decimals)",
+  "options": [
+   "12.00%",
+   "13.00%",
+   "12.55%",
+   "12.68%"
+  ]
+ },
+ {
+  "id": "1d6c5077-9db7-4d90-b270-649890c640ef",
+  "topic": "Finance, Growth & Decay",
+  "prompt": "Equipment worth R150 000 depreciates on the straight-line method at 10% p.a. Its value after 5 years is:",
+  "options": [
+   "R75 000",
+   "R88 573.50",
+   "R90 000",
+   "R97 500"
+  ]
+ },
+ {
+  "id": "1161d6dd-cd60-40c3-9c53-4053d7e2bc64",
+  "topic": "Finance, Growth & Decay",
+  "prompt": "R10 000 grows to R13 310 at 10% p.a. compounded annually. For how many years was it invested?",
+  "options": [
+   "2",
+   "4",
+   "3",
+   "5"
+  ]
+ },
+ {
+  "id": "642f66e3-08af-4b67-9e3a-be2a585b91d7",
+  "topic": "Finance, Growth & Decay",
+  "prompt": "Which formula gives the future value of equal monthly deposits of x at interest i per month for n months?",
+  "options": [
+   "F = x[(1 + i)ⁿ − 1] / i",
+   "F = P(1 + i)ⁿ",
+   "F = x[1 − (1 + i)⁻ⁿ] / i",
+   "F = P(1 + i·n)"
+  ]
+ },
+ {
+  "id": "5c0fae45-b668-49b0-ac5e-65b7eb874919",
+  "topic": "Finance, Growth & Decay",
+  "prompt": "An interest rate of 10% p.a. compounded quarterly is used for a 5-year investment. What are i (per period) and n?",
+  "options": [
+   "i = 0.10, n = 5",
+   "i = 0.025, n = 20",
+   "i = 0.025, n = 5",
+   "i = 0.10, n = 20"
+  ]
+ },
+ {
+  "id": "d1ad5178-6894-4d26-bb5c-98ca6b4e7243",
+  "topic": "Finance, Growth & Decay",
+  "prompt": "If interest is compounded more frequently (monthly instead of annually) at the same nominal rate, the effective annual rate:",
+  "options": [
+   "stays the same",
+   "decreases",
+   "increases",
+   "becomes zero"
+  ]
+ },
+ {
+  "id": "02db18a3-8411-41b0-955d-6b3c0c481199",
+  "topic": "Differential Calculus",
+  "prompt": "If f(x) = 3x², then f′(x) = ?",
+  "options": [
+   "3x",
+   "6x",
+   "6x²",
+   "x³"
+  ]
+ },
+ {
+  "id": "65f77ea6-72fb-4a0f-8c23-1f8657c41f6d",
+  "topic": "Differential Calculus",
+  "prompt": "If f(x) = 2x³ − 3x² + 5, then f′(x) = ?",
+  "options": [
+   "6x² − 6x",
+   "2x² − 3x",
+   "6x² − 6x + 5",
+   "6x³ − 6x²"
+  ]
+ },
+ {
+  "id": "04fca39b-27bd-4a31-949b-4f47ac8831e8",
+  "topic": "Differential Calculus",
+  "prompt": "Using first principles on f(x) = x², the limit of [(x+h)² − x²]/h as h → 0 equals:",
+  "options": [
+   "x",
+   "2x + h",
+   "x²",
+   "2x"
+  ]
+ },
+ {
+  "id": "1621f1e8-b5a8-4498-9311-a94195f3d2d0",
+  "topic": "Differential Calculus",
+  "prompt": "The turning points of f(x) = x³ − 3x are at:",
+  "options": [
+   "x = 1 and x = −1",
+   "x = 0 only",
+   "x = 3 and x = −3",
+   "x = √3 only"
+  ]
+ },
+ {
+  "id": "fbbe804c-5f6b-461e-85dc-1a5ea46dcc68",
+  "topic": "Differential Calculus",
+  "prompt": "What is the gradient of the tangent to f(x) = x² + 3x at the point where x = 2?",
+  "options": [
+   "10",
+   "7",
+   "5",
+   "4"
+  ]
+ },
+ {
+  "id": "57bcd8e5-d843-4ec3-b58b-5b8ac6f41605",
+  "topic": "Differential Calculus",
+  "prompt": "If f(x) = 4/x, then f′(x) = ?",
+  "options": [
+   "−4/x²",
+   "4/x²",
+   "−4x",
+   "4 ln x"
+  ]
+ },
+ {
+  "id": "20062f62-16d8-4376-b34d-79c6e876be21",
+  "topic": "Differential Calculus",
+  "prompt": "f(x) = x³ − 6x² + 9x has a local maximum at which x-value?",
+  "options": [
+   "x = 3",
+   "x = 0",
+   "x = 1",
+   "x = 2"
+  ]
+ },
+ {
+  "id": "efd781dd-fde0-4157-9140-f4c5b5a060da",
+  "topic": "Differential Calculus",
+  "prompt": "Two positive numbers add up to 10. What is the maximum possible value of their product?",
+  "options": [
+   "24",
+   "30",
+   "21",
+   "25"
+  ]
+ },
+ {
+  "id": "84e0d2ca-ea23-40a1-9946-c56bcded21fd",
+  "topic": "Trigonometry",
+  "prompt": "Simplify: sin²x + cos²x",
+  "options": [
+   "0",
+   "1",
+   "sin 2x",
+   "cos²x − sin²x"
+  ]
+ },
+ {
+  "id": "f79ff2fa-4ccd-4ae8-816a-4c028d9ef9d9",
+  "topic": "Trigonometry",
+  "prompt": "If sin θ = 3/5 and 90° < θ < 180°, what is cos θ?",
+  "options": [
+   "4/5",
+   "−3/4",
+   "−4/5",
+   "3/4"
+  ]
+ },
+ {
+  "id": "caafdfac-bae5-4e76-a3f0-4f20b452984d",
+  "topic": "Trigonometry",
+  "prompt": "sin(180° − x) is equal to:",
+  "options": [
+   "sin x",
+   "−sin x",
+   "cos x",
+   "−cos x"
+  ]
+ },
+ {
+  "id": "6f40ec01-1bdc-48e0-8880-f76bea6fd389",
+  "topic": "Trigonometry",
+  "prompt": "cos(A − B) expands to:",
+  "options": [
+   "cos A cos B − sin A sin B",
+   "cos A cos B + sin A sin B",
+   "sin A cos B + cos A sin B",
+   "sin A sin B − cos A cos B"
+  ]
+ },
+ {
+  "id": "186e5138-8385-4b45-8f61-0f63944db212",
+  "topic": "Trigonometry",
+  "prompt": "sin 2x is identically equal to:",
+  "options": [
+   "2 sin x cos x",
+   "sin²x − cos²x",
+   "2 sin x",
+   "sin x cos x"
+  ]
+ },
+ {
+  "id": "df45e6d8-ec3a-492e-978f-439160815db4",
+  "topic": "Trigonometry",
+  "prompt": "The general solution of sin x = ½ is:",
+  "options": [
+   "x = 30° + k·360° or x = 150° + k·360°, k ∈ ℤ",
+   "x = 30° + k·360° only, k ∈ ℤ",
+   "x = 60° + k·360° or x = 120° + k·360°, k ∈ ℤ",
+   "x = 30° + k·180°, k ∈ ℤ"
+  ]
+ },
+ {
+  "id": "361dca6f-7e18-4d56-bbce-88ac1d6e2e12",
+  "topic": "Trigonometry",
+  "prompt": "A triangle has sides a = 8, b = 5 and included angle C = 30°. Its area is:",
+  "options": [
+   "20",
+   "10",
+   "17.32",
+   "40"
+  ]
+ },
+ {
+  "id": "4f135aa6-0e15-41e1-a405-67b50b6f9b7f",
+  "topic": "Trigonometry",
+  "prompt": "cos 2x written in terms of cos x only is:",
+  "options": [
+   "1 − 2cos²x",
+   "2cos²x − 1",
+   "cos²x + sin²x",
+   "2sin²x − 1"
+  ]
+ },
+ {
+  "id": "996d9dd8-7b86-4aa3-b9cb-54581eb4eafc",
+  "topic": "Probability & Counting",
+  "prompt": "P(A) = 0.4, P(B) = 0.5 and P(A and B) = 0.2. What is P(A or B)?",
+  "options": [
+   "0.9",
+   "0.7",
+   "0.2",
+   "1.1"
+  ]
+ },
+ {
+  "id": "1cde713a-e99b-4a3d-969a-5b8642025764",
+  "topic": "Probability & Counting",
+  "prompt": "Events A and B are mutually exclusive. This means:",
+  "options": [
+   "P(A and B) = 0",
+   "P(A) = P(B)",
+   "P(A and B) = P(A) × P(B)",
+   "P(A or B) = 0"
+  ]
+ },
+ {
+  "id": "8c2751aa-8e35-472d-a040-0a3781647932",
+  "topic": "Probability & Counting",
+  "prompt": "A and B are independent with P(A) = 0.3 and P(B) = 0.6. What is P(A and B)?",
+  "options": [
+   "0.9",
+   "0.3",
+   "0.18",
+   "0.48"
+  ]
+ },
+ {
+  "id": "32e8f2fe-9f50-4b83-b4f0-7ce6f7482c0a",
+  "topic": "Probability & Counting",
+  "prompt": "If P(A) = 0.35, what is P(not A)?",
+  "options": [
+   "0.35",
+   "0.65",
+   "0.5",
+   "0.7"
+  ]
+ },
+ {
+  "id": "1f98a912-51f6-41a0-b385-c8b261d7dd34",
+  "topic": "Probability & Counting",
+  "prompt": "How many 4-digit codes can be made from the digits 0–9 if no digit may repeat?",
+  "options": [
+   "10 000",
+   "6 561",
+   "5 040",
+   "715"
+  ]
+ },
+ {
+  "id": "852b94d9-de1e-45f9-8edf-b5b04ffb6f81",
+  "topic": "Probability & Counting",
+  "prompt": "In how many different ways can the letters of the word MATHS be arranged?",
+  "options": [
+   "25",
+   "60",
+   "720",
+   "120"
+  ]
+ },
+ {
+  "id": "f97c3e7c-be5a-497b-96db-a81f28a0a7c0",
+  "topic": "Probability & Counting",
+  "prompt": "Two fair dice are rolled. What is the probability that the total is 7?",
+  "options": [
+   "1/6",
+   "1/12",
+   "7/36",
+   "1/7"
+  ]
+ },
+ {
+  "id": "d2b64372-a1c0-4693-b1c1-be835fa5d105",
+  "topic": "Probability & Counting",
+  "prompt": "A bag holds 3 red and 2 blue balls. Two are drawn without replacement. P(both red) = ?",
+  "options": [
+   "9/25",
+   "3/10",
+   "2/5",
+   "3/5"
+  ]
+ }
+]
