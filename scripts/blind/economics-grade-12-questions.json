@@ -1,0 +1,530 @@
+[
+ {
+  "id": "49a07e61-7b59-4656-bfa3-4e09fdde9491",
+  "topic": "Money, Banking & Inflation",
+  "prompt": "The central bank of South Africa, responsible for monetary policy, is the:",
+  "options": [
+   "South African Reserve Bank (SARB)",
+   "Standard Bank",
+   "Johannesburg Stock Exchange",
+   "National Treasury"
+  ]
+ },
+ {
+  "id": "ced996fc-767b-4e95-b02b-449cc8826c3e",
+  "topic": "Money, Banking & Inflation",
+  "prompt": "The interest rate at which the Reserve Bank lends to commercial banks is the:",
+  "options": [
+   "exchange rate",
+   "repo rate",
+   "inflation rate",
+   "tax rate"
+  ]
+ },
+ {
+  "id": "1f469d66-4196-4d76-9c7e-1257d4015831",
+  "topic": "Money, Banking & Inflation",
+  "prompt": "A sustained general increase in the price level over time is called:",
+  "options": [
+   "deflation",
+   "depreciation",
+   "inflation",
+   "devaluation"
+  ]
+ },
+ {
+  "id": "a6b66986-6d1d-4538-9a3a-ec837a9975d0",
+  "topic": "Money, Banking & Inflation",
+  "prompt": "Inflation caused by rising production costs, such as higher wages or oil prices, is called ___ inflation.",
+  "options": [
+   "demand-pull",
+   "hyper",
+   "creeping",
+   "cost-push"
+  ]
+ },
+ {
+  "id": "374daa1a-7e5e-4542-a7d2-7f0c30d22e78",
+  "topic": "Money, Banking & Inflation",
+  "prompt": "Inflation caused by total demand in the economy exceeding total supply is ___ inflation.",
+  "options": [
+   "demand-pull",
+   "cost-push",
+   "imported",
+   "structural"
+  ]
+ },
+ {
+  "id": "da3385e9-df91-4715-b785-26f6d65935da",
+  "topic": "Money, Banking & Inflation",
+  "prompt": "The measure most commonly used to calculate inflation, based on a basket of consumer goods, is the:",
+  "options": [
+   "JSE All Share Index",
+   "Consumer Price Index (CPI)",
+   "exchange rate",
+   "prime rate"
+  ]
+ },
+ {
+  "id": "737188a5-dd89-4b44-a713-3b62d65126c2",
+  "topic": "Money, Banking & Inflation",
+  "prompt": "To bring down high inflation, the Reserve Bank would typically:",
+  "options": [
+   "lower interest rates",
+   "keep rates unchanged",
+   "raise (increase) interest rates",
+   "abolish interest rates"
+  ]
+ },
+ {
+  "id": "735cd3ca-4589-4ed1-96f1-e7b1a6b265bb",
+  "topic": "Money, Banking & Inflation",
+  "prompt": "Which of the following is a function of money?",
+  "options": [
+   "a cause of inflation",
+   "a type of tax",
+   "a factor of production",
+   "a medium of exchange"
+  ]
+ },
+ {
+  "id": "fe7c9e8c-e437-4206-bfbd-5975fbe4dd10",
+  "topic": "Circular Flow & National Accounts",
+  "prompt": "The four factors of production are land, labour, capital and:",
+  "options": [
+   "entrepreneurship",
+   "money",
+   "goods",
+   "profit"
+  ]
+ },
+ {
+  "id": "f041c4e2-4c1c-463e-8974-99658384f292",
+  "topic": "Circular Flow & National Accounts",
+  "prompt": "In the circular flow, the payment (reward) for the use of labour is:",
+  "options": [
+   "rent",
+   "wages",
+   "interest",
+   "profit"
+  ]
+ },
+ {
+  "id": "4724f84d-db73-4fb1-a83b-fcdd7fcb7327",
+  "topic": "Circular Flow & National Accounts",
+  "prompt": "Which of the following is an injection into the circular flow of income?",
+  "options": [
+   "savings",
+   "taxes",
+   "investment",
+   "imports"
+  ]
+ },
+ {
+  "id": "67472635-c65a-4870-aec7-847370813811",
+  "topic": "Circular Flow & National Accounts",
+  "prompt": "Which of the following is a leakage (withdrawal) from the circular flow?",
+  "options": [
+   "exports",
+   "government spending",
+   "investment",
+   "imports"
+  ]
+ },
+ {
+  "id": "1133c1a4-c535-4b4f-b700-47355393745e",
+  "topic": "Circular Flow & National Accounts",
+  "prompt": "GDP stands for Gross Domestic:",
+  "options": [
+   "Product",
+   "Profit",
+   "Price",
+   "Provision"
+  ]
+ },
+ {
+  "id": "3772e872-4474-410f-aeb3-761d5faa6ef7",
+  "topic": "Circular Flow & National Accounts",
+  "prompt": "Which method measures national income by adding consumption, investment, government spending and net exports?",
+  "options": [
+   "the income method",
+   "the expenditure method",
+   "the production method",
+   "the multiplier method"
+  ]
+ },
+ {
+  "id": "4a2b9a8b-372c-4d9e-9537-a327a8009010",
+  "topic": "Circular Flow & National Accounts",
+  "prompt": "If the marginal propensity to consume (MPC) is 0.8, the multiplier is:",
+  "options": [
+   "2",
+   "4",
+   "5",
+   "8"
+  ]
+ },
+ {
+  "id": "2813ae7b-ba40-46ed-bff1-922c0512f900",
+  "topic": "Circular Flow & National Accounts",
+  "prompt": "GDP measured at the prices actually paid, without removing the effect of inflation, is called ___ GDP.",
+  "options": [
+   "real",
+   "potential",
+   "per capita",
+   "nominal"
+  ]
+ },
+ {
+  "id": "80e2a8b1-68d0-4d7d-830c-21468f1eb729",
+  "topic": "Market Structures (Microeconomics)",
+  "prompt": "A market with many small sellers, an identical (homogeneous) product and free entry is:",
+  "options": [
+   "perfect competition",
+   "monopoly",
+   "oligopoly",
+   "monopolistic competition"
+  ]
+ },
+ {
+  "id": "c703efc7-d349-402a-a53b-7ef20a6129b2",
+  "topic": "Market Structures (Microeconomics)",
+  "prompt": "A market with only ONE seller and no close substitutes is a:",
+  "options": [
+   "perfect market",
+   "monopoly",
+   "oligopoly",
+   "duopoly"
+  ]
+ },
+ {
+  "id": "f21d1c02-14ae-4c63-9134-8e3f1c40dcd0",
+  "topic": "Market Structures (Microeconomics)",
+  "prompt": "A market dominated by a FEW large sellers is a(n):",
+  "options": [
+   "perfect competition",
+   "monopolistic competition",
+   "oligopoly",
+   "monopoly"
+  ]
+ },
+ {
+  "id": "4441e4b4-d4cc-4ca1-a8be-8ae3060c4e84",
+  "topic": "Market Structures (Microeconomics)",
+  "prompt": "In perfect competition, an individual firm is a ___ because it cannot influence the market price.",
+  "options": [
+   "price maker",
+   "monopolist",
+   "central bank",
+   "price taker"
+  ]
+ },
+ {
+  "id": "492fa926-42a5-4db2-83a5-ba434928b9d2",
+  "topic": "Market Structures (Microeconomics)",
+  "prompt": "Eskom, as effectively the sole supplier of electricity, is an example of a:",
+  "options": [
+   "monopoly",
+   "perfect market",
+   "oligopoly",
+   "free market"
+  ]
+ },
+ {
+  "id": "dfe8c58c-66d3-4a7f-a97e-28524abd728b",
+  "topic": "Market Structures (Microeconomics)",
+  "prompt": "A situation where the market fails to allocate resources efficiently, such as pollution or public goods, is called:",
+  "options": [
+   "perfect competition",
+   "market failure",
+   "free trade",
+   "a budget surplus"
+  ]
+ },
+ {
+  "id": "7799db9f-6dcc-4da5-b086-11cd21912b24",
+  "topic": "Market Structures (Microeconomics)",
+  "prompt": "A firm maximises profit at the level of output where marginal cost equals:",
+  "options": [
+   "total cost",
+   "fixed cost",
+   "marginal revenue",
+   "average cost"
+  ]
+ },
+ {
+  "id": "7c9d133c-3d63-4f46-9613-220633f6d5ac",
+  "topic": "Market Structures (Microeconomics)",
+  "prompt": "A market with many sellers offering slightly DIFFERENTIATED products, such as restaurants or hairdressers, is:",
+  "options": [
+   "perfect competition",
+   "monopoly",
+   "oligopoly",
+   "monopolistic competition"
+  ]
+ },
+ {
+  "id": "705c5e69-d8b9-414b-b258-b562f105094d",
+  "topic": "Business Cycles",
+  "prompt": "A business cycle describes the ___ in economic activity over time.",
+  "options": [
+   "upward and downward movements (fluctuations)",
+   "constant unchanging level",
+   "permanent decline",
+   "fixed rate of growth"
+  ]
+ },
+ {
+  "id": "c1b7220f-4e20-4d85-b849-274c03c07f67",
+  "topic": "Business Cycles",
+  "prompt": "The phase of the business cycle where economic activity reaches its highest point is the:",
+  "options": [
+   "trough",
+   "peak (boom)",
+   "recession",
+   "recovery"
+  ]
+ },
+ {
+  "id": "fbcbfe01-b85b-49e3-947a-0b1a5a6b299b",
+  "topic": "Business Cycles",
+  "prompt": "The lowest point of a business cycle is called the:",
+  "options": [
+   "peak",
+   "expansion",
+   "trough",
+   "boom"
+  ]
+ },
+ {
+  "id": "37d64918-7596-49d5-8f0d-ca5670c17c10",
+  "topic": "Business Cycles",
+  "prompt": "A period of declining activity, often defined as two consecutive quarters of negative GDP growth, is a:",
+  "options": [
+   "boom",
+   "expansion",
+   "peak",
+   "recession"
+  ]
+ },
+ {
+  "id": "19b11a78-bdd2-46a7-8463-4011bbfa329f",
+  "topic": "Business Cycles",
+  "prompt": "Economic indicators that change BEFORE the economy as a whole and help predict turning points are called:",
+  "options": [
+   "leading indicators",
+   "lagging indicators",
+   "coincident indicators",
+   "random indicators"
+  ]
+ },
+ {
+  "id": "96088c3c-d56f-497d-8d4a-8142425dbf1a",
+  "topic": "Business Cycles",
+  "prompt": "Indicators that change AFTER the overall economy has already changed are called:",
+  "options": [
+   "leading indicators",
+   "lagging indicators",
+   "coincident indicators",
+   "early indicators"
+  ]
+ },
+ {
+  "id": "e746d962-7cf5-4a86-a09e-74c4108456e5",
+  "topic": "Business Cycles",
+  "prompt": "The time from one peak to the next peak is known as the ___ of the business cycle.",
+  "options": [
+   "amplitude",
+   "trend",
+   "length (period)",
+   "extrapolation"
+  ]
+ },
+ {
+  "id": "c709412c-bc4d-46cb-8dac-c4a3fa80acf9",
+  "topic": "Business Cycles",
+  "prompt": "The general long-term direction of the business cycle is shown by the:",
+  "options": [
+   "peak",
+   "trough",
+   "amplitude",
+   "trend line"
+  ]
+ },
+ {
+  "id": "1376ff89-f8a5-4b50-8368-36d5871ab997",
+  "topic": "International Trade & Exchange Rates",
+  "prompt": "A record of all transactions between one country and the rest of the world is the:",
+  "options": [
+   "balance of payments",
+   "national budget",
+   "business cycle",
+   "circular flow"
+  ]
+ },
+ {
+  "id": "bcbebb77-c8d1-4caa-b87b-5fdf934c180d",
+  "topic": "International Trade & Exchange Rates",
+  "prompt": "Under a floating system, when the value of the rand falls relative to other currencies, the rand has:",
+  "options": [
+   "appreciated",
+   "depreciated",
+   "been revalued",
+   "been fixed"
+  ]
+ },
+ {
+  "id": "e195840d-7a1d-4e95-bca2-fba9e58e05a1",
+  "topic": "International Trade & Exchange Rates",
+  "prompt": "Taxes placed on imported goods to make them dearer and protect local industries are called:",
+  "options": [
+   "subsidies",
+   "exports",
+   "tariffs (customs duties)",
+   "quotas"
+  ]
+ },
+ {
+  "id": "1b27a946-5369-4239-ae2f-9727a966b188",
+  "topic": "International Trade & Exchange Rates",
+  "prompt": "A physical limit on the quantity of a good that may be imported is a:",
+  "options": [
+   "tariff",
+   "subsidy",
+   "free-trade zone",
+   "quota"
+  ]
+ },
+ {
+  "id": "72b476d7-4199-4091-a32e-ba5abf7d8dcd",
+  "topic": "International Trade & Exchange Rates",
+  "prompt": "The policy of protecting local industries from foreign competition is called:",
+  "options": [
+   "protectionism",
+   "free trade",
+   "globalisation",
+   "privatisation"
+  ]
+ },
+ {
+  "id": "5f4ed92f-7ad8-4811-b6ad-c048c2845a55",
+  "topic": "International Trade & Exchange Rates",
+  "prompt": "If South Africa exports more goods than it imports, its trade balance shows a:",
+  "options": [
+   "deficit",
+   "surplus",
+   "depreciation",
+   "tariff"
+  ]
+ },
+ {
+  "id": "835ff675-bd72-4f60-8936-34731fb8a89d",
+  "topic": "International Trade & Exchange Rates",
+  "prompt": "A weaker (depreciated) rand generally makes South African exports:",
+  "options": [
+   "more expensive for foreigners",
+   "illegal to sell",
+   "cheaper and more competitive for foreigners",
+   "unavailable abroad"
+  ]
+ },
+ {
+  "id": "e456d0ce-00ed-4336-bfed-3d339d98931a",
+  "topic": "International Trade & Exchange Rates",
+  "prompt": "An advantage of international (free) trade is that countries can:",
+  "options": [
+   "produce everything themselves",
+   "avoid all competition",
+   "stop specialising",
+   "specialise and benefit from comparative advantage"
+  ]
+ },
+ {
+  "id": "5ad81261-5446-48ec-9d76-77e55177753f",
+  "topic": "Public Sector & Fiscal Policy",
+  "prompt": "Fiscal policy, which uses government spending and taxation, is controlled by the:",
+  "options": [
+   "government (Minister of Finance / Treasury)",
+   "South African Reserve Bank",
+   "commercial banks",
+   "Johannesburg Stock Exchange"
+  ]
+ },
+ {
+  "id": "ec0c824c-4b27-452a-bfa1-630b7522ed1e",
+  "topic": "Public Sector & Fiscal Policy",
+  "prompt": "The document in which the government sets out its planned spending and revenue for the year is the:",
+  "options": [
+   "balance of payments",
+   "national Budget",
+   "business cycle",
+   "exchange rate"
+  ]
+ },
+ {
+  "id": "37586c75-5edf-402a-afcd-e7371e632cb9",
+  "topic": "Public Sector & Fiscal Policy",
+  "prompt": "A tax whose rate increases as income increases, so higher earners pay a higher percentage, is a ___ tax.",
+  "options": [
+   "regressive",
+   "proportional",
+   "progressive",
+   "indirect"
+  ]
+ },
+ {
+  "id": "de70fcb6-90be-4759-b995-809d38514519",
+  "topic": "Public Sector & Fiscal Policy",
+  "prompt": "VAT (Value-Added Tax) is an example of a(n) ___ tax.",
+  "options": [
+   "direct",
+   "progressive",
+   "wealth",
+   "indirect"
+  ]
+ },
+ {
+  "id": "9c6d4dda-04e4-4821-9506-c3883b332d41",
+  "topic": "Public Sector & Fiscal Policy",
+  "prompt": "When the government spends more than it collects in revenue, the result is a budget:",
+  "options": [
+   "deficit",
+   "surplus",
+   "balance",
+   "multiplier"
+  ]
+ },
+ {
+  "id": "2d8f23a9-2e8e-4f08-964d-f40cc6a9bc0a",
+  "topic": "Public Sector & Fiscal Policy",
+  "prompt": "The main source of government revenue is:",
+  "options": [
+   "loans only",
+   "taxes",
+   "donations",
+   "printing money"
+  ]
+ },
+ {
+  "id": "ad9597c2-28e6-46d9-b7d4-dbd68c87e4bd",
+  "topic": "Public Sector & Fiscal Policy",
+  "prompt": "Personal income tax, paid directly by individuals on their earnings, is an example of a ___ tax.",
+  "options": [
+   "indirect",
+   "value-added",
+   "direct",
+   "customs"
+  ]
+ },
+ {
+  "id": "ea9d098b-79a7-44e8-a9da-6ec356b4b999",
+  "topic": "Public Sector & Fiscal Policy",
+  "prompt": "Expansionary fiscal policy, used to stimulate the economy, typically involves:",
+  "options": [
+   "raising taxes and cutting spending",
+   "doing nothing at all",
+   "reducing all government services",
+   "increasing government spending and/or cutting taxes"
+  ]
+ }
+]
