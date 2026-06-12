@@ -1,0 +1,530 @@
+[
+ {
+  "id": "0baf9ef1-05b6-456e-82e0-b8a58b313f02",
+  "topic": "Settlement Geography",
+  "prompt": "A settlement where most people make a living from farming is best described as a ___ settlement.",
+  "options": [
+   "urban",
+   "rural",
+   "industrial",
+   "nucleated"
+  ]
+ },
+ {
+  "id": "53319628-fe6c-4c63-9f68-27e38d095a4d",
+  "topic": "Settlement Geography",
+  "prompt": "A settlement pattern where buildings are clustered closely together around a central point is described as:",
+  "options": [
+   "dispersed",
+   "nucleated",
+   "linear",
+   "random"
+  ]
+ },
+ {
+  "id": "ac51f3e6-fd99-4e2b-b692-01902e8d2f99",
+  "topic": "Settlement Geography",
+  "prompt": "A settlement that is stretched out in a line along a road, river or valley shows a ___ pattern.",
+  "options": [
+   "nucleated",
+   "linear",
+   "dispersed",
+   "circular"
+  ]
+ },
+ {
+  "id": "9ddf8def-7d5d-418c-9157-4ba21ee21448",
+  "topic": "Settlement Geography",
+  "prompt": "The 'range' of a good or service is:",
+  "options": [
+   "the maximum distance people are willing to travel to obtain it",
+   "the minimum number of people needed to support it",
+   "the size of the shop",
+   "the profit the shop makes"
+  ]
+ },
+ {
+  "id": "fcce5e9f-1383-4c68-b226-608f73c68e93",
+  "topic": "Settlement Geography",
+  "prompt": "The 'threshold' of a service is:",
+  "options": [
+   "the maximum distance customers will travel",
+   "the minimum number of customers needed for it to survive",
+   "the height of the building",
+   "the number of competitors nearby"
+  ]
+ },
+ {
+  "id": "898a27d2-555c-45f6-af52-0cfdf86d772d",
+  "topic": "Settlement Geography",
+  "prompt": "A high-order good or service, such as a specialist hospital, typically has:",
+  "options": [
+   "a small range and a low threshold",
+   "a large range and a high threshold",
+   "no threshold at all",
+   "an outlet in every small town"
+  ]
+ },
+ {
+  "id": "45df7e32-5b82-4e03-aada-80b886f498c7",
+  "topic": "Settlement Geography",
+  "prompt": "The movement of people from rural areas to towns and cities is called:",
+  "options": [
+   "urbanisation (rural-urban migration)",
+   "suburbanisation",
+   "deforestation",
+   "gentrification"
+  ]
+ },
+ {
+  "id": "959f4d38-ad7a-4ac4-a9e5-7d233f92c5f6",
+  "topic": "Settlement Geography",
+  "prompt": "An area of poor-quality, often self-built housing on the edge of a city is commonly called a(n):",
+  "options": [
+   "central business district",
+   "informal (squatter) settlement",
+   "green belt",
+   "commercial zone"
+  ]
+ },
+ {
+  "id": "a1475ac4-2b25-450d-92cd-3ccd35abe27c",
+  "topic": "Economic Geography of South Africa",
+  "prompt": "Mining and farming are examples of ___ economic activities.",
+  "options": [
+   "primary",
+   "secondary",
+   "tertiary",
+   "quaternary"
+  ]
+ },
+ {
+  "id": "94aa1e0c-0484-47c7-97c8-e270e4bc1b39",
+  "topic": "Economic Geography of South Africa",
+  "prompt": "Manufacturing, in which raw materials are processed into finished goods, is a ___ activity.",
+  "options": [
+   "primary",
+   "secondary",
+   "tertiary",
+   "quaternary"
+  ]
+ },
+ {
+  "id": "5eac27f1-b688-47b8-814b-076a0d965060",
+  "topic": "Economic Geography of South Africa",
+  "prompt": "Services such as banking, retail and transport belong to the ___ sector.",
+  "options": [
+   "primary",
+   "secondary",
+   "tertiary",
+   "agricultural"
+  ]
+ },
+ {
+  "id": "41e7f30c-0771-4ad1-a4cd-10e92cf0fefe",
+  "topic": "Economic Geography of South Africa",
+  "prompt": "South Africa's largest industrial region, centred on Johannesburg and Gauteng, is:",
+  "options": [
+   "the PWV / Gauteng region",
+   "the Western Cape",
+   "Richards Bay",
+   "the Vaal alone"
+  ]
+ },
+ {
+  "id": "e5ee5e5e-2e3d-4fe6-b906-31482a6e9acc",
+  "topic": "Economic Geography of South Africa",
+  "prompt": "The informal sector is best described as economic activity that is:",
+  "options": [
+   "registered and taxed",
+   "unregistered and not taxed",
+   "owned by the government",
+   "found only in rural areas"
+  ]
+ },
+ {
+  "id": "b62aff8d-0651-4020-9fa1-862ae460e261",
+  "topic": "Economic Geography of South Africa",
+  "prompt": "An industry that loses a lot of mass during processing, and so locates near its raw materials, is called a ___ industry.",
+  "options": [
+   "raw-material oriented (weight-losing)",
+   "market oriented",
+   "footloose",
+   "labour-intensive"
+  ]
+ },
+ {
+  "id": "1e2100c7-cb77-4d43-a847-99c21a2659ad",
+  "topic": "Economic Geography of South Africa",
+  "prompt": "A 'footloose' industry is one that:",
+  "options": [
+   "must be located near its raw materials",
+   "is not tied to any particular location",
+   "can only operate at the coast",
+   "depends on heavy, bulky raw materials"
+  ]
+ },
+ {
+  "id": "6e2ab4af-f701-4b3f-a105-1ba82f7e967e",
+  "topic": "Economic Geography of South Africa",
+  "prompt": "South Africa's export economy depends heavily on:",
+  "options": [
+   "minerals such as gold, platinum and coal",
+   "tropical fruit only",
+   "oil and natural gas",
+   "manufactured electronics"
+  ]
+ },
+ {
+  "id": "9c97b74c-b0ec-461b-8179-949810ef46bd",
+  "topic": "Climate & Weather",
+  "prompt": "A mid-latitude cyclone forms where:",
+  "options": [
+   "two warm air masses meet",
+   "a warm and a cold air mass meet along fronts",
+   "two cold air masses meet",
+   "a tropical and a monsoon air mass meet"
+  ]
+ },
+ {
+  "id": "27830053-d564-4fed-9f45-9b50a2e1c4cc",
+  "topic": "Climate & Weather",
+  "prompt": "On a synoptic weather map, the lines joining places of equal air pressure are called:",
+  "options": [
+   "isobars",
+   "isotherms",
+   "isohyets",
+   "contours"
+  ]
+ },
+ {
+  "id": "002d71e7-4877-4d10-8ec5-fe02e8840b41",
+  "topic": "Climate & Weather",
+  "prompt": "In the Southern Hemisphere, air circulates around a high-pressure cell (anticyclone) in a(n):",
+  "options": [
+   "clockwise direction",
+   "anticlockwise direction",
+   "straight line",
+   "random direction"
+  ]
+ },
+ {
+  "id": "153434a7-7ceb-4931-b906-3deaea55621d",
+  "topic": "Climate & Weather",
+  "prompt": "Which high-pressure cell develops over the interior of South Africa in winter?",
+  "options": [
+   "The Kalahari High",
+   "The South Atlantic High",
+   "The South Indian High",
+   "The Hawaiian High"
+  ]
+ },
+ {
+  "id": "2884e5ae-de68-44bc-a623-c3accb5ca80a",
+  "topic": "Climate & Weather",
+  "prompt": "A tropical cyclone weakens and dies out when it:",
+  "options": [
+   "moves over warm ocean water",
+   "moves over land or cooler water",
+   "reaches the equator",
+   "meets a warm front"
+  ]
+ },
+ {
+  "id": "c666e061-be39-4d53-8bdf-52c12655e89a",
+  "topic": "Climate & Weather",
+  "prompt": "The urban heat island effect describes how:",
+  "options": [
+   "cities are cooler than the surrounding rural areas",
+   "cities are warmer than the surrounding rural areas",
+   "islands form in the ocean near cities",
+   "parks cool the whole region"
+  ]
+ },
+ {
+  "id": "401dd2f0-6de8-4fd8-8cc0-b0f391a945db",
+  "topic": "Climate & Weather",
+  "prompt": "On a synoptic weather map, a cold front is shown by a line marked with:",
+  "options": [
+   "triangles pointing in the direction of movement",
+   "semicircles",
+   "alternating triangles and semicircles",
+   "small circles"
+  ]
+ },
+ {
+  "id": "0c4fdb16-2d14-4654-ae8c-9d4c08987cfc",
+  "topic": "Climate & Weather",
+  "prompt": "Berg winds along the South African coast are typically:",
+  "options": [
+   "cold and moist",
+   "hot and dry",
+   "cold and dry",
+   "warm and moist"
+  ]
+ },
+ {
+  "id": "cb9d8165-7dff-4194-9400-834326d2202a",
+  "topic": "Geomorphology (Fluvial)",
+  "prompt": "A drainage pattern that develops on uniform, gently sloping rock and branches like a tree is described as:",
+  "options": [
+   "dendritic",
+   "trellis",
+   "radial",
+   "rectangular"
+  ]
+ },
+ {
+  "id": "a982d42b-2450-49bc-ad52-db2e1da945e4",
+  "topic": "Geomorphology (Fluvial)",
+  "prompt": "The whole area drained by a single river and its tributaries is called a:",
+  "options": [
+   "watershed",
+   "drainage basin (catchment)",
+   "confluence",
+   "tributary"
+  ]
+ },
+ {
+  "id": "452d2bb8-165e-4039-862e-de2e292aba8f",
+  "topic": "Geomorphology (Fluvial)",
+  "prompt": "The point where a tributary joins the main river is called the:",
+  "options": [
+   "source",
+   "confluence",
+   "mouth",
+   "watershed"
+  ]
+ },
+ {
+  "id": "26e2bcda-bfe6-42a0-a297-2927b2061965",
+  "topic": "Geomorphology (Fluvial)",
+  "prompt": "In which part of its course does a river flow fastest over steep gradients and erode mainly vertically (downwards)?",
+  "options": [
+   "the upper course",
+   "the middle course",
+   "the lower course",
+   "the mouth"
+  ]
+ },
+ {
+  "id": "6ea4fc07-0d06-4e7c-9422-f0c98075cc7d",
+  "topic": "Geomorphology (Fluvial)",
+  "prompt": "The area of higher ground that separates two neighbouring drainage basins is called a:",
+  "options": [
+   "watershed",
+   "confluence",
+   "floodplain",
+   "delta"
+  ]
+ },
+ {
+  "id": "3dc9f108-276c-41b6-b31e-34d2127dd564",
+  "topic": "Geomorphology (Fluvial)",
+  "prompt": "A river in an arid region that flows only briefly after a rainstorm and is dry for the rest of the time is described as:",
+  "options": [
+   "perennial",
+   "periodic",
+   "episodic",
+   "permanent"
+  ]
+ },
+ {
+  "id": "842d778f-d268-4626-9177-8205407bf243",
+  "topic": "Geomorphology (Fluvial)",
+  "prompt": "Meanders and floodplains are landforms typical of a river's:",
+  "options": [
+   "upper course",
+   "lower course",
+   "source",
+   "watershed"
+  ]
+ },
+ {
+  "id": "eaa4ea5d-fe3e-4119-a719-29d5f41b907b",
+  "topic": "Geomorphology (Fluvial)",
+  "prompt": "River capture (river piracy) occurs when:",
+  "options": [
+   "one river erodes headward and diverts the flow of another river",
+   "two rivers simply join at a confluence",
+   "a dam is built across a river",
+   "a river overflows its banks"
+  ]
+ },
+ {
+  "id": "8dc9d76d-1908-4b91-ac7c-f3bc73a6e6f1",
+  "topic": "Map Skills — Calculations",
+  "prompt": "On a 1 : 50 000 topographic map, 1 cm represents an actual distance of:",
+  "options": [
+   "0.5 km",
+   "5 km",
+   "50 km",
+   "500 km"
+  ]
+ },
+ {
+  "id": "63b0fb35-fb71-4fa6-9e2c-fab3fc0da862",
+  "topic": "Map Skills — Calculations",
+  "prompt": "On a 1 : 50 000 map, a straight road measures 4 cm. The actual distance is:",
+  "options": [
+   "0.5 km",
+   "1 km",
+   "2 km",
+   "20 km"
+  ]
+ },
+ {
+  "id": "31ff9b6d-7030-465d-a314-4f964138c0df",
+  "topic": "Map Skills — Calculations",
+  "prompt": "Gradient is calculated using the formula:",
+  "options": [
+   "vertical interval ÷ horizontal distance",
+   "horizontal distance ÷ vertical interval",
+   "vertical interval × horizontal distance",
+   "vertical interval + horizontal distance"
+  ]
+ },
+ {
+  "id": "0fb0e745-749b-45af-8f9a-426bd6f53308",
+  "topic": "Map Skills — Calculations",
+  "prompt": "The vertical interval between two points is 100 m and the horizontal distance is 2 000 m. The gradient is:",
+  "options": [
+   "1 : 5",
+   "1 : 20",
+   "1 : 200",
+   "1 : 2 000"
+  ]
+ },
+ {
+  "id": "9ea90fb2-c87f-4903-9918-07e206aeb9ea",
+  "topic": "Map Skills — Calculations",
+  "prompt": "The Earth rotates 15° of longitude per hour, so 1° of longitude is equal to:",
+  "options": [
+   "1 minute",
+   "4 minutes",
+   "15 minutes",
+   "60 minutes"
+  ]
+ },
+ {
+  "id": "ef92685b-26e1-4fc6-9a07-aa6593d58551",
+  "topic": "Map Skills — Calculations",
+  "prompt": "South African Standard Time (SAST) is based on the meridian of longitude:",
+  "options": [
+   "15°E",
+   "30°E",
+   "0° (Greenwich)",
+   "30°W"
+  ]
+ },
+ {
+  "id": "3e9c4023-7380-42d6-b3e3-8cb6e40dbfb7",
+  "topic": "Map Skills — Calculations",
+  "prompt": "Vertical exaggeration of a cross-section is calculated as:",
+  "options": [
+   "vertical scale ÷ horizontal scale",
+   "horizontal scale ÷ vertical scale",
+   "vertical scale × horizontal scale",
+   "vertical scale + horizontal scale"
+  ]
+ },
+ {
+  "id": "8be0bce6-4a23-401c-9c38-8d3f56c56b52",
+  "topic": "Map Skills — Calculations",
+  "prompt": "A vehicle travels 30 km in 30 minutes. Its average speed is:",
+  "options": [
+   "15 km/h",
+   "30 km/h",
+   "60 km/h",
+   "90 km/h"
+  ]
+ },
+ {
+  "id": "773f1f0c-f9b9-4f9f-b958-2ce52614f9a9",
+  "topic": "Map Skills — Concepts & GIS",
+  "prompt": "On a topographic map, the brown lines joining points of equal height above sea level are called:",
+  "options": [
+   "contour lines",
+   "isobars",
+   "isohyets",
+   "grid lines"
+  ]
+ },
+ {
+  "id": "c3687dee-4fbb-4963-a6c4-4cc872d57485",
+  "topic": "Map Skills — Concepts & GIS",
+  "prompt": "When contour lines on a map are very close together, the slope is:",
+  "options": [
+   "gentle",
+   "steep",
+   "flat",
+   "concave only"
+  ]
+ },
+ {
+  "id": "7ff7677e-5a07-4f7d-b224-8fdc888a9d4e",
+  "topic": "Map Skills — Concepts & GIS",
+  "prompt": "The compass direction exactly halfway between North and East is:",
+  "options": [
+   "north-east",
+   "north-west",
+   "south-east",
+   "east-south-east"
+  ]
+ },
+ {
+  "id": "c34174f2-49c3-498f-8401-c8a5f5e8008f",
+  "topic": "Map Skills — Concepts & GIS",
+  "prompt": "A true bearing is measured in degrees:",
+  "options": [
+   "clockwise from north (0° to 360°)",
+   "anticlockwise from north",
+   "clockwise from south",
+   "from east to west"
+  ]
+ },
+ {
+  "id": "c3fbcb06-1221-4a05-bf91-31358f4ad864",
+  "topic": "Map Skills — Concepts & GIS",
+  "prompt": "In mapping, 'GIS' stands for:",
+  "options": [
+   "Geographic Information System",
+   "Global Imaging Software",
+   "General Information Service",
+   "Geological Inspection System"
+  ]
+ },
+ {
+  "id": "7dffb2a5-98da-4982-8f71-3183501766e2",
+  "topic": "Map Skills — Concepts & GIS",
+  "prompt": "In a GIS, information about one theme, such as rivers or roads, is stored in a separate:",
+  "options": [
+   "layer",
+   "pixel",
+   "contour",
+   "legend"
+  ]
+ },
+ {
+  "id": "01fbbddb-0ef9-4dbd-a00b-58c4f2bc006e",
+  "topic": "Map Skills — Concepts & GIS",
+  "prompt": "Spatial data in a GIS that is made up of points, lines and polygons is called:",
+  "options": [
+   "vector data",
+   "raster data",
+   "analogue data",
+   "verbal data"
+  ]
+ },
+ {
+  "id": "10eaa19b-e2e1-4350-88b6-acaba5533355",
+  "topic": "Map Skills — Concepts & GIS",
+  "prompt": "In a GIS, a 'buffer' is:",
+  "options": [
+   "a zone of a set distance created around a feature",
+   "a type of contour line",
+   "the map's legend",
+   "a weather satellite"
+  ]
+ }
+]
