@@ -1,0 +1,530 @@
+[
+ {
+  "id": "1b9be55e-9fc5-4ffe-9b62-2a0112855e6f",
+  "topic": "Data Representation & Number Systems",
+  "prompt": "The binary number system uses only which two digits?",
+  "options": [
+   "0 and 1",
+   "1 and 2",
+   "0 and 9",
+   "1 and 10"
+  ]
+ },
+ {
+  "id": "e0a89905-851f-404b-9f45-5f41e20b451f",
+  "topic": "Data Representation & Number Systems",
+  "prompt": "What is the denary (decimal) value of the binary number 1010?",
+  "options": [
+   "8",
+   "10",
+   "12",
+   "20"
+  ]
+ },
+ {
+  "id": "1be5bc56-e549-47a5-8b9d-e86bcde34e0a",
+  "topic": "Data Representation & Number Systems",
+  "prompt": "How many different values can be represented using one byte (8 bits)?",
+  "options": [
+   "8",
+   "16",
+   "256",
+   "1024"
+  ]
+ },
+ {
+  "id": "442000b1-9181-4279-803e-460679fecfaf",
+  "topic": "Data Representation & Number Systems",
+  "prompt": "Which number system, often used as a shorthand for binary, uses base 16?",
+  "options": [
+   "denary (decimal)",
+   "octal",
+   "binary",
+   "hexadecimal"
+  ]
+ },
+ {
+  "id": "a8bfe867-eba5-4653-9464-8d6003222e73",
+  "topic": "Data Representation & Number Systems",
+  "prompt": "The denary number 5 is represented in binary as:",
+  "options": [
+   "101",
+   "110",
+   "011",
+   "111"
+  ]
+ },
+ {
+  "id": "13b65964-7e38-41bf-9039-8456206c0814",
+  "topic": "Data Representation & Number Systems",
+  "prompt": "A coding scheme that represents characters such as letters, digits and symbols as binary numbers is:",
+  "options": [
+   "RGB",
+   "ASCII",
+   "RAM",
+   "CPU"
+  ]
+ },
+ {
+  "id": "6da8811c-f095-46a4-90de-ed1d5acdd8aa",
+  "topic": "Data Representation & Number Systems",
+  "prompt": "How many bits are there in 2 bytes?",
+  "options": [
+   "8",
+   "10",
+   "16",
+   "32"
+  ]
+ },
+ {
+  "id": "7f18fac8-dc18-4cab-b437-dbe7f06d2135",
+  "topic": "Data Representation & Number Systems",
+  "prompt": "In the 4-bit binary number 1101, the place value of the leftmost (most significant) bit is:",
+  "options": [
+   "1",
+   "2",
+   "4",
+   "8"
+  ]
+ },
+ {
+  "id": "38164e29-bc76-4938-acba-e54b04ebab1c",
+  "topic": "Hardware & System Software",
+  "prompt": "The part of the CPU that performs arithmetic calculations and logical comparisons is the:",
+  "options": [
+   "ALU (Arithmetic Logic Unit)",
+   "hard drive",
+   "monitor",
+   "power supply"
+  ]
+ },
+ {
+  "id": "c4c61850-79a5-4a59-a904-4a7991339d3e",
+  "topic": "Hardware & System Software",
+  "prompt": "The part of the CPU that fetches, decodes and coordinates the execution of instructions is the:",
+  "options": [
+   "ALU",
+   "Control Unit",
+   "RAM",
+   "GPU"
+  ]
+ },
+ {
+  "id": "8a2ead5a-3515-4089-81ff-0a180a18649e",
+  "topic": "Hardware & System Software",
+  "prompt": "Small, very fast memory located on or close to the CPU that stores frequently used data and instructions is called:",
+  "options": [
+   "a hard disk",
+   "ROM",
+   "cache memory",
+   "a flash drive"
+  ]
+ },
+ {
+  "id": "ea7aa672-882e-487a-b91c-e429ce182c12",
+  "topic": "Hardware & System Software",
+  "prompt": "Which of the following is an example of an operating system?",
+  "options": [
+   "Microsoft Word",
+   "Google Chrome",
+   "Adobe Photoshop",
+   "Windows"
+  ]
+ },
+ {
+  "id": "0643692a-b181-4143-a08e-d42b3a224309",
+  "topic": "Hardware & System Software",
+  "prompt": "The sequence the CPU repeats to process each instruction (fetch, decode, execute) is known as the:",
+  "options": [
+   "machine cycle (fetch-decode-execute cycle)",
+   "boot sequence",
+   "compile cycle",
+   "refresh rate"
+  ]
+ },
+ {
+  "id": "808c34f2-bfba-4463-8b4b-620871bde943",
+  "topic": "Hardware & System Software",
+  "prompt": "Which of the following is a function of an operating system?",
+  "options": [
+   "editing photographs",
+   "managing hardware resources and running application programs",
+   "designing websites",
+   "browsing the internet"
+  ]
+ },
+ {
+  "id": "fce32676-4885-49aa-8c66-59c5b96cf302",
+  "topic": "Hardware & System Software",
+  "prompt": "The non-volatile memory chip that holds the start-up (boot) firmware the computer uses when switched on is:",
+  "options": [
+   "RAM",
+   "cache memory",
+   "ROM",
+   "the GPU"
+  ]
+ },
+ {
+  "id": "f3961273-9fe5-40d8-b1fd-a964555e8ec2",
+  "topic": "Hardware & System Software",
+  "prompt": "A 'device driver' is software that:",
+  "options": [
+   "controls who is allowed to log in",
+   "speeds up the internet connection",
+   "protects the computer against viruses",
+   "allows the operating system to communicate with a hardware device"
+  ]
+ },
+ {
+  "id": "e5dcb0be-5c88-4eb3-8296-ae529bd0dda3",
+  "topic": "Networks & Internet Technologies",
+  "prompt": "A network in which every device is connected to a single central device such as a switch uses a:",
+  "options": [
+   "star topology",
+   "bus topology",
+   "ring topology",
+   "mesh topology"
+  ]
+ },
+ {
+  "id": "ae2557af-1f7c-4a39-9610-8d1008f69c6a",
+  "topic": "Networks & Internet Technologies",
+  "prompt": "The agreed set of rules that governs how data is transmitted over a network is called a:",
+  "options": [
+   "topology",
+   "protocol",
+   "bandwidth",
+   "packet"
+  ]
+ },
+ {
+  "id": "cd85195c-5374-451c-9027-99ba55b41f79",
+  "topic": "Networks & Internet Technologies",
+  "prompt": "Which protocol is mainly responsible for transferring web pages from a web server to a browser?",
+  "options": [
+   "FTP",
+   "SMTP",
+   "HTTP",
+   "POP3"
+  ]
+ },
+ {
+  "id": "5c51b186-49c1-4b9f-9899-d74431ff9173",
+  "topic": "Networks & Internet Technologies",
+  "prompt": "Which transmission medium carries data as pulses of light and offers the highest speed over long distances?",
+  "options": [
+   "UTP copper cable",
+   "coaxial cable",
+   "Wi-Fi radio waves",
+   "fibre-optic cable"
+  ]
+ },
+ {
+  "id": "1ea4d7ee-0126-4de3-a2c5-ccc5d664cb2b",
+  "topic": "Networks & Internet Technologies",
+  "prompt": "A device that connects two or more different networks and routes data between them is a:",
+  "options": [
+   "router",
+   "monitor",
+   "keyboard",
+   "scanner"
+  ]
+ },
+ {
+  "id": "d7f98b9e-2155-46f9-9e27-6155469001b6",
+  "topic": "Networks & Internet Technologies",
+  "prompt": "When data is sent over a network it is broken into small units that are routed separately and reassembled at the destination. Each such unit is called a:",
+  "options": [
+   "topology",
+   "packet",
+   "protocol",
+   "node"
+  ]
+ },
+ {
+  "id": "700a3bd2-93f5-4493-ab5c-d9de920df6f8",
+  "topic": "Networks & Internet Technologies",
+  "prompt": "The unique hardware address assigned to a network interface card by its manufacturer is the:",
+  "options": [
+   "IP address",
+   "URL",
+   "MAC address",
+   "domain name"
+  ]
+ },
+ {
+  "id": "279431c8-a075-4208-a274-a7ea9c2755f9",
+  "topic": "Networks & Internet Technologies",
+  "prompt": "Which of the following is the best example of a WAN (Wide Area Network)?",
+  "options": [
+   "two computers linked in one room",
+   "a single home Wi-Fi network",
+   "one office LAN",
+   "the internet"
+  ]
+ },
+ {
+  "id": "952c75a3-8d4f-47e6-8ec7-a1e1c1e6452b",
+  "topic": "Database & SQL Concepts",
+  "prompt": "In a relational database, a field whose value uniquely identifies each record in a table is the:",
+  "options": [
+   "primary key",
+   "foreign key",
+   "index",
+   "query"
+  ]
+ },
+ {
+  "id": "f8ec59a9-d492-4797-99f9-f6c73e4a52bb",
+  "topic": "Database & SQL Concepts",
+  "prompt": "A field in one table that refers to the primary key of another table, creating a link between them, is a:",
+  "options": [
+   "primary key",
+   "foreign key",
+   "composite field",
+   "candidate key"
+  ]
+ },
+ {
+  "id": "a2313f30-27c3-436a-8443-e9295ad20bad",
+  "topic": "Database & SQL Concepts",
+  "prompt": "Which SQL statement is used to retrieve data from a database?",
+  "options": [
+   "INSERT",
+   "DELETE",
+   "SELECT",
+   "UPDATE"
+  ]
+ },
+ {
+  "id": "dab895ef-5437-4506-bda1-6702f5ba68af",
+  "topic": "Database & SQL Concepts",
+  "prompt": "Organising the fields and tables of a database to reduce data redundancy and improve data integrity is called:",
+  "options": [
+   "querying",
+   "indexing",
+   "encryption",
+   "normalisation"
+  ]
+ },
+ {
+  "id": "23f08992-0270-466b-9969-a4df16a1cf8e",
+  "topic": "Database & SQL Concepts",
+  "prompt": "In a database table, a single complete row of related data (e.g. all the details of one learner) is called a:",
+  "options": [
+   "record (row)",
+   "field",
+   "key",
+   "table"
+  ]
+ },
+ {
+  "id": "3d6ed824-456e-46b5-a13b-0fe864e6c449",
+  "topic": "Database & SQL Concepts",
+  "prompt": "Which SQL clause is used to filter rows so that only those meeting a condition are returned?",
+  "options": [
+   "ORDER BY",
+   "WHERE",
+   "FROM",
+   "INSERT"
+  ]
+ },
+ {
+  "id": "ebfc7975-6a06-47af-829d-4b853b2f1b3c",
+  "topic": "Database & SQL Concepts",
+  "prompt": "A DBMS is software that:",
+  "options": [
+   "edits images",
+   "designs computer networks",
+   "creates, manages and controls access to a database",
+   "compiles program source code"
+  ]
+ },
+ {
+  "id": "88df4a0c-b77b-4c99-9b32-adfe2fe72072",
+  "topic": "Database & SQL Concepts",
+  "prompt": "A relationship in which one record in a table can be linked to many records in another table is called a:",
+  "options": [
+   "one-to-one relationship",
+   "many-to-many relationship",
+   "self-relationship",
+   "one-to-many relationship"
+  ]
+ },
+ {
+  "id": "6189aabf-9654-4019-8948-0bc2dd766039",
+  "topic": "Programming & Algorithm Concepts",
+  "prompt": "Which data type is used to store whole numbers such as -3, 0 and 25?",
+  "options": [
+   "integer",
+   "string",
+   "boolean",
+   "real (float)"
+  ]
+ },
+ {
+  "id": "764d6a26-c9f7-48e5-a8cf-e5b5e2363290",
+  "topic": "Programming & Algorithm Concepts",
+  "prompt": "A data type that can store only one of two values, true or false, is a:",
+  "options": [
+   "integer",
+   "boolean",
+   "string",
+   "character"
+  ]
+ },
+ {
+  "id": "5775ba49-b168-4c0f-9335-8f01f9a0ab83",
+  "topic": "Programming & Algorithm Concepts",
+  "prompt": "A programming structure that repeats a block of code while a condition remains true is called a:",
+  "options": [
+   "selection (if) statement",
+   "variable",
+   "loop (iteration structure)",
+   "comment"
+  ]
+ },
+ {
+  "id": "de6b4681-08ef-47af-8794-7c5e48c03c4a",
+  "topic": "Programming & Algorithm Concepts",
+  "prompt": "A named storage location whose value can change while a program runs is called a:",
+  "options": [
+   "constant",
+   "loop",
+   "comment",
+   "variable"
+  ]
+ },
+ {
+  "id": "b5dec652-fe43-454c-8d3f-596579543f4c",
+  "topic": "Programming & Algorithm Concepts",
+  "prompt": "A clear, step-by-step set of instructions for solving a problem, usually planned before coding, is an:",
+  "options": [
+   "algorithm",
+   "operating system",
+   "interface",
+   "array"
+  ]
+ },
+ {
+  "id": "da5a38a0-e275-47ae-afb5-83e37d5f31ee",
+  "topic": "Programming & Algorithm Concepts",
+  "prompt": "A data structure that stores many values of the same type under one name, each accessed by an index, is an:",
+  "options": [
+   "if statement",
+   "array",
+   "comment",
+   "constant"
+  ]
+ },
+ {
+  "id": "13bca9fb-98c9-4f1e-bb62-75a97bfa82af",
+  "topic": "Programming & Algorithm Concepts",
+  "prompt": "Software that translates an entire high-level program into machine code before it is run is a:",
+  "options": [
+   "debugger",
+   "web browser",
+   "compiler",
+   "spreadsheet"
+  ]
+ },
+ {
+  "id": "9a0ad046-76c9-4159-8dce-cd9182fa1b8e",
+  "topic": "Programming & Algorithm Concepts",
+  "prompt": "The process of finding and fixing errors (bugs) in a program is called:",
+  "options": [
+   "compiling",
+   "encrypting",
+   "formatting",
+   "debugging"
+  ]
+ },
+ {
+  "id": "7792384b-dd4b-4dc8-a8df-c353c031c7af",
+  "topic": "Social, Ethical & Security Issues",
+  "prompt": "A self-replicating program that spreads from computer to computer, often without the user's knowledge, is a:",
+  "options": [
+   "computer virus or worm",
+   "spreadsheet",
+   "compiler",
+   "firewall"
+  ]
+ },
+ {
+  "id": "79e13d84-b7c1-417f-b781-bedb610700cb",
+  "topic": "Social, Ethical & Security Issues",
+  "prompt": "Converting data into a coded form so that only an authorised party with the correct key can read it is called:",
+  "options": [
+   "compression",
+   "encryption",
+   "formatting",
+   "defragmentation"
+  ]
+ },
+ {
+  "id": "75830749-70e7-4708-ab06-af56b3c56bf6",
+  "topic": "Social, Ethical & Security Issues",
+  "prompt": "An attempt to obtain sensitive information such as passwords by sending an email that pretends to be from a trustworthy organisation is called:",
+  "options": [
+   "compressing",
+   "encrypting",
+   "phishing",
+   "backing up"
+  ]
+ },
+ {
+  "id": "cde24343-a6e3-415a-b4bb-d6bb02464f60",
+  "topic": "Social, Ethical & Security Issues",
+  "prompt": "Making illegal copies of software in breach of its licence agreement is an example of:",
+  "options": [
+   "encryption",
+   "normalisation",
+   "debugging",
+   "software piracy"
+  ]
+ },
+ {
+  "id": "52dc4458-7941-45b0-97d0-538789b29300",
+  "topic": "Social, Ethical & Security Issues",
+  "prompt": "Gaining unauthorised access to a computer system or its data by overcoming its security is known as:",
+  "options": [
+   "hacking",
+   "encryption",
+   "compression",
+   "making a backup"
+  ]
+ },
+ {
+  "id": "21c750bd-1ad0-4e7e-9db7-a0c61bc37ee3",
+  "topic": "Social, Ethical & Security Issues",
+  "prompt": "A DDoS (Distributed Denial of Service) attack aims to:",
+  "options": [
+   "repair a damaged network",
+   "overwhelm a server with traffic so it cannot serve legitimate users",
+   "encrypt files to keep them safe",
+   "speed up a slow website"
+  ]
+ },
+ {
+  "id": "e76ab9f7-5115-45ca-8b59-6abba33615a8",
+  "topic": "Social, Ethical & Security Issues",
+  "prompt": "Using, manufacturing and disposing of computer equipment in an environmentally responsible way is referred to as:",
+  "options": [
+   "hacking",
+   "phishing",
+   "green computing",
+   "encryption"
+  ]
+ },
+ {
+  "id": "b8d290b4-b40d-4ea4-bd31-299dbc21df1d",
+  "topic": "Social, Ethical & Security Issues",
+  "prompt": "Regularly making a separate copy of important data so it can be restored if the original is lost is called:",
+  "options": [
+   "hacking",
+   "phishing",
+   "software piracy",
+   "making a backup"
+  ]
+ }
+]
