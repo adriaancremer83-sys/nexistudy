@@ -1,0 +1,530 @@
+[
+ {
+  "id": "54e9ec8d-a211-4652-afff-d7f8e1fa6960",
+  "topic": "Systems Technologies",
+  "prompt": "What does the abbreviation CPU stand for?",
+  "options": [
+   "Central Processing Unit",
+   "Computer Power Unit",
+   "Central Program Utility",
+   "Core Processing Underlay"
+  ]
+ },
+ {
+  "id": "524515ac-d0e2-4568-8ff4-e18cc5980790",
+  "topic": "Systems Technologies",
+  "prompt": "Which type of memory is volatile, meaning its contents are lost when the computer is switched off?",
+  "options": [
+   "ROM",
+   "RAM",
+   "an SSD",
+   "a hard drive"
+  ]
+ },
+ {
+  "id": "327d15a0-fb12-4bfa-bd6d-6b3ce236af4d",
+  "topic": "Systems Technologies",
+  "prompt": "How many bits are there in one byte?",
+  "options": [
+   "4",
+   "16",
+   "8",
+   "1 024"
+  ]
+ },
+ {
+  "id": "d8c15186-3faa-4b3f-8da2-64bafbfdeeb3",
+  "topic": "Systems Technologies",
+  "prompt": "Which storage unit is the largest?",
+  "options": [
+   "Kilobyte (KB)",
+   "Megabyte (MB)",
+   "Gigabyte (GB)",
+   "Terabyte (TB)"
+  ]
+ },
+ {
+  "id": "f1ac6dba-62ff-4282-9215-a7e7909aacb2",
+  "topic": "Systems Technologies",
+  "prompt": "Which of the following is an example of system software?",
+  "options": [
+   "The operating system",
+   "A web browser",
+   "A word processor",
+   "A photo editor"
+  ]
+ },
+ {
+  "id": "020b7adc-4124-4d1f-8681-08a85f2f8615",
+  "topic": "Systems Technologies",
+  "prompt": "What is the main advantage of an SSD compared to a traditional hard disk drive (HDD)?",
+  "options": [
+   "It has a much larger capacity for the same price",
+   "It is faster and has no moving parts",
+   "It never needs any electricity",
+   "It stores data without using any chips"
+  ]
+ },
+ {
+  "id": "213a30c2-71f8-4d72-a474-188ebad085a8",
+  "topic": "Systems Technologies",
+  "prompt": "ROM (Read-Only Memory) is best described as:",
+  "options": [
+   "volatile memory that is cleared at shutdown",
+   "memory used only for graphics",
+   "non-volatile memory that retains its contents when powered off",
+   "external backup storage"
+  ]
+ },
+ {
+  "id": "ddc9fcdd-fd68-4d2f-8e2b-9a3feceb56a7",
+  "topic": "Systems Technologies",
+  "prompt": "Which component is mainly responsible for processing the graphics displayed on the screen?",
+  "options": [
+   "The RAM",
+   "The hard drive",
+   "The power supply",
+   "The GPU"
+  ]
+ },
+ {
+  "id": "37577138-7f30-4f31-b329-076e49345a2a",
+  "topic": "Network & Internet Technologies",
+  "prompt": "What does LAN stand for?",
+  "options": [
+   "Local Area Network",
+   "Large Access Node",
+   "Linked Audio Network",
+   "Limited Access Network"
+  ]
+ },
+ {
+  "id": "00f146e8-b571-4474-ab1f-1428c0752e5c",
+  "topic": "Network & Internet Technologies",
+  "prompt": "A network that covers a large geographical area, such as the Internet, is called a:",
+  "options": [
+   "LAN",
+   "WAN",
+   "PAN",
+   "HAN"
+  ]
+ },
+ {
+  "id": "4bcb9ec6-abff-4836-ab5b-93f41288e6cf",
+  "topic": "Network & Internet Technologies",
+  "prompt": "What is the main difference between the Internet and the World Wide Web (WWW)?",
+  "options": [
+   "They are exactly the same thing",
+   "The Web is the cables and the Internet is the websites",
+   "The Internet is the global network of computers, while the Web is the collection of websites accessed over it",
+   "The Internet works only on cellphones"
+  ]
+ },
+ {
+  "id": "c1317d0a-ef35-4762-881c-b3e9ba0b8dc5",
+  "topic": "Network & Internet Technologies",
+  "prompt": "Which device connects a home network to the Internet and directs data between networks?",
+  "options": [
+   "A scanner",
+   "A monitor",
+   "A keyboard",
+   "A router"
+  ]
+ },
+ {
+  "id": "46722356-fb03-4ea3-a4c4-3fae6edf7bdf",
+  "topic": "Network & Internet Technologies",
+  "prompt": "Bandwidth refers to:",
+  "options": [
+   "the amount of data that can be transferred over a connection in a given time",
+   "the physical length of a network cable",
+   "the number of devices in a network",
+   "the amount of storage on a server"
+  ]
+ },
+ {
+  "id": "c2f97803-35a1-4cce-b11f-95f9d144b8e3",
+  "topic": "Network & Internet Technologies",
+  "prompt": "A 'cap' on an internet account refers to:",
+  "options": [
+   "the maximum speed of the connection",
+   "a limit on the amount of data you may use",
+   "the number of users allowed",
+   "the monthly cost of the router"
+  ]
+ },
+ {
+  "id": "d57e3535-4339-4d4c-848a-3c6ed6620cfc",
+  "topic": "Network & Internet Technologies",
+  "prompt": "Which of the following is an example of a wireless network technology?",
+  "options": [
+   "A fibre cable",
+   "A UTP cable",
+   "Wi-Fi",
+   "A USB cable"
+  ]
+ },
+ {
+  "id": "b584189c-2927-4869-a403-a853aa53c7f9",
+  "topic": "Network & Internet Technologies",
+  "prompt": "The unique numerical address that identifies a device on a network is its:",
+  "options": [
+   "URL",
+   "email address",
+   "domain name",
+   "IP address"
+  ]
+ },
+ {
+  "id": "fb68a620-27b8-4d1b-9317-71234431c878",
+  "topic": "Information Management",
+  "prompt": "What is the difference between data and information?",
+  "options": [
+   "Data is processed and given meaning to become information",
+   "Data and information mean exactly the same thing",
+   "Information is raw and unprocessed, while data has meaning",
+   "Data can only ever be numbers"
+  ]
+ },
+ {
+  "id": "c603d85d-9906-4bd0-b377-1d1ee1559f26",
+  "topic": "Information Management",
+  "prompt": "Which of the following is an example of raw data rather than information?",
+  "options": [
+   "A report showing the class average",
+   "A list of unprocessed test marks",
+   "A graph of monthly sales",
+   "A summary of survey results"
+  ]
+ },
+ {
+  "id": "7d39e947-d06e-4075-9386-a45deaf0fdfe",
+  "topic": "Information Management",
+  "prompt": "In a questionnaire, a 'closed' question is one that:",
+  "options": [
+   "lets the respondent write any answer they like",
+   "asks for a long written opinion",
+   "offers a fixed set of options to choose from",
+   "can only be asked face to face"
+  ]
+ },
+ {
+  "id": "642188c6-a6aa-432e-8c93-c79ca2a85e78",
+  "topic": "Information Management",
+  "prompt": "Which source would give the most reliable, up-to-date information?",
+  "options": [
+   "a personal blog with no named author",
+   "an anonymous social media post",
+   "a forwarded chain email",
+   "the official Statistics South Africa website"
+  ]
+ },
+ {
+  "id": "524d1505-95c8-4c82-8dfc-ef655902d2ec",
+  "topic": "Information Management",
+  "prompt": "The process of checking that data entered into a system is reasonable and within accepted limits is called:",
+  "options": [
+   "validation",
+   "compression",
+   "encryption",
+   "formatting"
+  ]
+ },
+ {
+  "id": "22f62f2f-e49d-4dd6-9927-d742de96ce69",
+  "topic": "Information Management",
+  "prompt": "Verification of captured data means:",
+  "options": [
+   "deleting old data",
+   "checking that data was captured accurately, e.g. by entering it twice or proofreading",
+   "sorting the data alphabetically",
+   "making a backup copy of the data"
+  ]
+ },
+ {
+  "id": "d69fe362-89e4-413d-bde9-70c2920936fa",
+  "topic": "Information Management",
+  "prompt": "Which file format is best suited to sharing a final document so that it looks the same on any device and is not easily edited?",
+  "options": [
+   "DOCX",
+   "TXT",
+   "PDF",
+   "CSV"
+  ]
+ },
+ {
+  "id": "1eefd644-41b0-477b-8360-96fe2dabff9b",
+  "topic": "Information Management",
+  "prompt": "Sending a questionnaire to many people to gather their responses is a method of:",
+  "options": [
+   "data processing",
+   "data storage",
+   "data encryption",
+   "data collection"
+  ]
+ },
+ {
+  "id": "54b41b6f-f1d2-49ff-bc8e-515ae4eca6c2",
+  "topic": "Social Implications",
+  "prompt": "Malware that disguises itself as legitimate software but carries a harmful payload is called a:",
+  "options": [
+   "Trojan",
+   "spreadsheet",
+   "firewall",
+   "cookie"
+  ]
+ },
+ {
+  "id": "4fa82d1f-684c-4aeb-9ca7-d871a233cbeb",
+  "topic": "Social Implications",
+  "prompt": "Sending fraudulent emails that pretend to be from a trusted institution to trick people into revealing passwords or banking details is called:",
+  "options": [
+   "spamming",
+   "phishing",
+   "defragmenting",
+   "encrypting"
+  ]
+ },
+ {
+  "id": "278181f6-e634-4a77-a4dc-199a90fd6882",
+  "topic": "Social Implications",
+  "prompt": "Which of the following is the best practice for creating a strong password?",
+  "options": [
+   "use your name and birth year",
+   "use the word 'password'",
+   "use a long mix of upper- and lowercase letters, numbers and symbols",
+   "use the same password for every account"
+  ]
+ },
+ {
+  "id": "3927fc3f-76a9-4547-be79-47ea13a1b66e",
+  "topic": "Social Implications",
+  "prompt": "A firewall is used to:",
+  "options": [
+   "cool down the computer",
+   "speed up the internet connection",
+   "store backup files",
+   "control and block unauthorised network traffic"
+  ]
+ },
+ {
+  "id": "0fa997bf-9b4e-463c-b77b-db15f7bbd024",
+  "topic": "Social Implications",
+  "prompt": "'Green computing' refers to:",
+  "options": [
+   "using and disposing of computers in an environmentally responsible way",
+   "using only green-coloured devices",
+   "a particular type of computer virus",
+   "playing computer games outdoors"
+  ]
+ },
+ {
+  "id": "aebd30dc-40b8-47a3-bdb9-32b339fcec83",
+  "topic": "Social Implications",
+  "prompt": "Copying someone else's work or ideas and presenting them as your own is called:",
+  "options": [
+   "encryption",
+   "plagiarism",
+   "validation",
+   "compression"
+  ]
+ },
+ {
+  "id": "308fc30d-4966-4f86-abaf-f65aa84ad564",
+  "topic": "Social Implications",
+  "prompt": "Which health problem is most associated with poor ergonomics and prolonged computer use?",
+  "options": [
+   "measles",
+   "the common cold",
+   "repetitive strain injury (RSI)",
+   "food poisoning"
+  ]
+ },
+ {
+  "id": "3a1f609b-9769-4270-bf55-71e6ab27fb45",
+  "topic": "Social Implications",
+  "prompt": "Software that you may use free of charge for a limited trial period, after which you must pay to keep using it, is called:",
+  "options": [
+   "freeware",
+   "open-source software",
+   "malware",
+   "shareware"
+  ]
+ },
+ {
+  "id": "fd4b3e05-7586-4267-8545-bf7f4ac85f5a",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "In a spreadsheet, every formula must begin with which symbol?",
+  "options": [
+   "=",
+   "+",
+   "#",
+   "@"
+  ]
+ },
+ {
+  "id": "dc1c8c43-294d-464f-b7d0-c46cb67d587b",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "Which function would you use to add up the values in a range of cells, e.g. =____(A1:A10)?",
+  "options": [
+   "AVERAGE",
+   "SUM",
+   "COUNT",
+   "MAX"
+  ]
+ },
+ {
+  "id": "0e11d988-1214-4a9e-9668-21d9deeedd27",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "What does the function =AVERAGE(B2:B6) calculate?",
+  "options": [
+   "the largest value in the range",
+   "the number of cells in the range",
+   "the mean (average) of the values in the range",
+   "the smallest value in the range"
+  ]
+ },
+ {
+  "id": "0867db7a-bbd2-491a-a5c5-651882934397",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "In the cell reference $A$1, the dollar signs indicate:",
+  "options": [
+   "a currency value",
+   "a spelling error",
+   "a hidden cell",
+   "an absolute reference that does not change when the formula is copied"
+  ]
+ },
+ {
+  "id": "c4e2f0bb-ff40-491a-9c6d-bd9c816174a0",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "Which function counts how many cells in a range contain numbers?",
+  "options": [
+   "COUNT",
+   "SUM",
+   "IF",
+   "AVERAGE"
+  ]
+ },
+ {
+  "id": "1e4cd95b-c738-4743-a8ce-964173032c42",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "The function =MAX(C1:C10) returns:",
+  "options": [
+   "the total of the range",
+   "the highest value in the range",
+   "the average of the range",
+   "the lowest value in the range"
+  ]
+ },
+ {
+  "id": "e5f7f1c7-be80-4e31-ab95-aad2820b640a",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "An =IF() function in a spreadsheet is used to:",
+  "options": [
+   "add up a column of numbers",
+   "sort the data",
+   "make a decision and return one of two results depending on a condition",
+   "change the font colour of a cell"
+  ]
+ },
+ {
+  "id": "5aa3553f-0e1c-470e-88be-d0753b976703",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "If cell A1 contains 10 and cell A2 contains 5, what is the result of =A1*A2?",
+  "options": [
+   "15",
+   "2",
+   "5",
+   "50"
+  ]
+ },
+ {
+  "id": "1afc50c0-4c5c-4178-9e78-58ca54de0328",
+  "topic": "Database Concepts",
+  "prompt": "In a database table, a single row that holds all the data about one item (e.g. one learner) is called a:",
+  "options": [
+   "record",
+   "field",
+   "query",
+   "form"
+  ]
+ },
+ {
+  "id": "57cbb24c-8f41-44e8-b1b5-ea5a40eba371",
+  "topic": "Database Concepts",
+  "prompt": "A column in a database table, such as 'Surname' or 'DateOfBirth', is called a:",
+  "options": [
+   "record",
+   "field",
+   "report",
+   "macro"
+  ]
+ },
+ {
+  "id": "ba8ce9e3-c60d-45fe-b539-a995d14c2523",
+  "topic": "Database Concepts",
+  "prompt": "A primary key in a database is:",
+  "options": [
+   "the password used to open the database",
+   "always the first field in the table",
+   "a field whose value uniquely identifies each record",
+   "the largest field in the table"
+  ]
+ },
+ {
+  "id": "6281ef8e-ec22-458d-9b97-6ecfe2ccb02a",
+  "topic": "Database Concepts",
+  "prompt": "Which data type would be most suitable for a field that stores whether a learner has paid (yes or no)?",
+  "options": [
+   "text",
+   "number",
+   "currency",
+   "Boolean (yes/no)"
+  ]
+ },
+ {
+  "id": "f7b6d0ae-be5d-4c93-871d-ec5d4b7326ed",
+  "topic": "Database Concepts",
+  "prompt": "A database object used to extract and display only the records that meet certain criteria is a:",
+  "options": [
+   "query",
+   "field",
+   "primary key",
+   "record"
+  ]
+ },
+ {
+  "id": "901a3415-82c2-4328-acd4-dfb007027d4d",
+  "topic": "Database Concepts",
+  "prompt": "Which data type should be used for a field that stores a cellphone number?",
+  "options": [
+   "number",
+   "text",
+   "currency",
+   "date/time"
+  ]
+ },
+ {
+  "id": "de4a4608-46f8-45c6-a60e-2ef021fe5d6a",
+  "topic": "Database Concepts",
+  "prompt": "The main advantage of a database over storing the same data in many separate files is that it:",
+  "options": [
+   "uses much more paper",
+   "makes the data harder to find",
+   "reduces duplication and keeps data consistent",
+   "can only store numbers"
+  ]
+ },
+ {
+  "id": "d6e1db03-a34f-491c-8e60-9ccc5bfae115",
+  "topic": "Database Concepts",
+  "prompt": "A database object designed to present data in a neatly formatted layout suitable for printing is a:",
+  "options": [
+   "query",
+   "field",
+   "primary key",
+   "report"
+  ]
+ }
+]
