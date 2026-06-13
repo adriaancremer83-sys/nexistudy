@@ -1,0 +1,530 @@
+[
+ {
+  "id": "dd5767a6-da63-4ef3-8cf0-567aa6756572",
+  "topic": "Business Environments",
+  "prompt": "The micro environment of a business consists of factors that are:",
+  "options": [
+   "within the business's control, such as its employees and resources",
+   "completely outside any influence",
+   "only international in nature",
+   "limited to the weather"
+  ]
+ },
+ {
+  "id": "396f4ab0-5d96-4a52-a33c-fec0a828ef9b",
+  "topic": "Business Environments",
+  "prompt": "The market environment of a business includes:",
+  "options": [
+   "only the business's own employees",
+   "suppliers, customers and competitors, which the business can influence but not control",
+   "national laws only",
+   "global interest rates only"
+  ]
+ },
+ {
+  "id": "5856ffe2-58f4-4c89-b771-697c8353e04a",
+  "topic": "Business Environments",
+  "prompt": "Which of the following forms part of the MACRO environment?",
+  "options": [
+   "the business's own staff",
+   "the business's direct competitors",
+   "government legislation and the state of the economy",
+   "the firm's internal budget"
+  ]
+ },
+ {
+  "id": "53c587c8-0bd0-4f2c-8c1e-a80a1869c5a0",
+  "topic": "Business Environments",
+  "prompt": "The degree of control a business has over its three environments is best described as:",
+  "options": [
+   "full control over all three",
+   "no control over any of them",
+   "control only over the macro environment",
+   "full control over micro, some influence over market, no control over macro"
+  ]
+ },
+ {
+  "id": "e118731e-b82c-46df-934a-1a9967df0d28",
+  "topic": "Business Environments",
+  "prompt": "A new law passed by government that affects how businesses operate is a challenge from the:",
+  "options": [
+   "macro environment",
+   "micro environment",
+   "market environment",
+   "internal environment"
+  ]
+ },
+ {
+  "id": "1a31ad81-37ee-4907-8b0c-2474cc814c33",
+  "topic": "Business Environments",
+  "prompt": "A business losing customers because a competitor lowers its prices is a challenge from the:",
+  "options": [
+   "macro environment",
+   "market environment",
+   "micro environment",
+   "physical environment"
+  ]
+ },
+ {
+  "id": "ada700dc-dfad-42ea-b94a-ef1a04ec5230",
+  "topic": "Business Environments",
+  "prompt": "Poor leadership and a shortage of skilled workers inside the business are challenges in the:",
+  "options": [
+   "macro environment",
+   "market environment",
+   "micro environment",
+   "international environment"
+  ]
+ },
+ {
+  "id": "3c44f7d6-83af-43df-952b-b9996642505b",
+  "topic": "Business Environments",
+  "prompt": "A PESTLE analysis is a tool used mainly to analyse the:",
+  "options": [
+   "micro environment",
+   "market environment",
+   "internal finances",
+   "macro environment"
+  ]
+ },
+ {
+  "id": "ab6e66ef-6336-48fc-8200-22ea7410b870",
+  "topic": "Forms of Ownership",
+  "prompt": "A business owned and run by one person, who keeps all the profit and bears all the losses, is a:",
+  "options": [
+   "sole trader (sole proprietor)",
+   "private company",
+   "close corporation",
+   "co-operative"
+  ]
+ },
+ {
+  "id": "15cf19bc-61a1-4b94-af34-7c9804b87353",
+  "topic": "Forms of Ownership",
+  "prompt": "A key DISADVANTAGE of a sole trader is that the owner has:",
+  "options": [
+   "limited liability",
+   "unlimited liability for the business's debts",
+   "many shareholders",
+   "a separate legal personality"
+  ]
+ },
+ {
+  "id": "710c5df2-2064-4383-97ac-638c0cb642c5",
+  "topic": "Forms of Ownership",
+  "prompt": "A business owned by 2 to 20 partners who share profits and management, with no separate legal personality, is a:",
+  "options": [
+   "sole trader",
+   "public company",
+   "partnership",
+   "state-owned enterprise"
+  ]
+ },
+ {
+  "id": "bb07a691-d87a-45de-8ac2-00cb8d438a41",
+  "topic": "Forms of Ownership",
+  "prompt": "The abbreviation '(Pty) Ltd' after a company's name indicates a:",
+  "options": [
+   "sole trader",
+   "partnership",
+   "public company",
+   "private company"
+  ]
+ },
+ {
+  "id": "2581c5b7-214c-41e6-b2cc-2acf73e92ab0",
+  "topic": "Forms of Ownership",
+  "prompt": "'Limited liability' means that:",
+  "options": [
+   "shareholders can only lose the amount they invested, not their personal assets",
+   "the business can never make a loss",
+   "there is no limit to how much profit may be made",
+   "the owners must personally pay all the debts"
+  ]
+ },
+ {
+  "id": "d7bccb6b-a76e-4f99-889e-933e4fc3b685",
+  "topic": "Forms of Ownership",
+  "prompt": "A company that may sell its shares to the public and can be listed on a stock exchange is a:",
+  "options": [
+   "sole trader",
+   "public company (Ltd)",
+   "partnership",
+   "private company (Pty Ltd)"
+  ]
+ },
+ {
+  "id": "02aedf97-13e6-4c24-9a4c-67e27c12cd51",
+  "topic": "Forms of Ownership",
+  "prompt": "A business formed by a group of people to serve their common economic interests, where each member has one vote, is a:",
+  "options": [
+   "public company",
+   "sole trader",
+   "co-operative",
+   "private company"
+  ]
+ },
+ {
+  "id": "20c09d8c-2535-4063-af32-6b7a912e22bf",
+  "topic": "Forms of Ownership",
+  "prompt": "Which form of ownership has a separate legal personality, so the business can own property and be sued in its own name?",
+  "options": [
+   "a sole trader",
+   "a partnership",
+   "a verbal agreement",
+   "a company"
+  ]
+ },
+ {
+  "id": "90e4dc97-4d06-499a-ad42-c12249957d2d",
+  "topic": "Business Sectors",
+  "prompt": "The primary sector of the economy involves:",
+  "options": [
+   "extracting raw materials from nature, e.g. farming and mining",
+   "manufacturing goods in factories",
+   "providing services such as banking",
+   "selling insurance policies"
+  ]
+ },
+ {
+  "id": "6ce4f264-9236-4270-be1c-ff7bd91915d4",
+  "topic": "Business Sectors",
+  "prompt": "The secondary sector of the economy is mainly concerned with:",
+  "options": [
+   "mining raw materials",
+   "processing and manufacturing raw materials into finished goods",
+   "providing legal advice",
+   "growing crops"
+  ]
+ },
+ {
+  "id": "da8f86bb-f0e0-4ad1-93e0-7ab860f2a843",
+  "topic": "Business Sectors",
+  "prompt": "A bank, a school and a tour guide all belong to the:",
+  "options": [
+   "primary sector",
+   "secondary sector",
+   "tertiary sector",
+   "raw-material sector"
+  ]
+ },
+ {
+  "id": "d52e4737-98cb-49f6-92fd-a9e3d4321bfd",
+  "topic": "Business Sectors",
+  "prompt": "Turning raw wheat into bread in a bakery is an activity of the:",
+  "options": [
+   "primary sector",
+   "tertiary sector",
+   "service sector",
+   "secondary sector"
+  ]
+ },
+ {
+  "id": "c3994e63-da3e-4206-9d18-b88e74436a74",
+  "topic": "Business Sectors",
+  "prompt": "Which of the following is a primary-sector activity?",
+  "options": [
+   "catching fish at sea",
+   "selling clothes in a shop",
+   "repairing cellphones",
+   "teaching learners"
+  ]
+ },
+ {
+  "id": "6b506e73-09db-4bf9-b035-191581a3a27f",
+  "topic": "Business Sectors",
+  "prompt": "Which of the following is a secondary-sector activity?",
+  "options": [
+   "mining gold",
+   "assembling motor vehicles in a factory",
+   "offering haircuts",
+   "providing internet access"
+  ]
+ },
+ {
+  "id": "06081e11-d24d-4ff5-bee6-06aee2e17f0b",
+  "topic": "Business Sectors",
+  "prompt": "Which of the following is a tertiary-sector activity?",
+  "options": [
+   "growing maize",
+   "building furniture",
+   "delivering parcels for customers",
+   "drilling for oil"
+  ]
+ },
+ {
+  "id": "73e4cab1-b330-4339-b1e5-c78758d37eb7",
+  "topic": "Business Sectors",
+  "prompt": "In a developed economy, the sector that usually contributes the most to the economy is the:",
+  "options": [
+   "primary sector",
+   "mining sector",
+   "farming sector",
+   "tertiary (services) sector"
+  ]
+ },
+ {
+  "id": "4f0b61ce-e439-4615-9de5-4acdceccd6d4",
+  "topic": "Entrepreneurship",
+  "prompt": "An entrepreneur is best described as a person who:",
+  "options": [
+   "identifies an opportunity and starts a business, taking the risk to make a profit",
+   "works for a fixed salary and takes no risk",
+   "only invests money in a savings account",
+   "collects taxes for the government"
+  ]
+ },
+ {
+  "id": "08746cc7-339a-4fc8-8e90-0b693e2cac69",
+  "topic": "Entrepreneurship",
+  "prompt": "The four factors of production are natural resources, labour, capital and:",
+  "options": [
+   "advertising",
+   "entrepreneurship",
+   "the weather",
+   "taxation"
+  ]
+ },
+ {
+  "id": "8c53d57a-66d0-49aa-92c7-a37d9d07c74a",
+  "topic": "Entrepreneurship",
+  "prompt": "A written document that describes a business idea, its goals and how they will be achieved is a:",
+  "options": [
+   "tax return",
+   "salary slip",
+   "business plan",
+   "delivery note"
+  ]
+ },
+ {
+  "id": "6ed42554-a471-451c-ba58-3102beca5942",
+  "topic": "Entrepreneurship",
+  "prompt": "Which of the following is a desirable quality of a successful entrepreneur?",
+  "options": [
+   "avoiding all responsibility",
+   "giving up at the first problem",
+   "being afraid of every risk",
+   "being innovative, hardworking and willing to take calculated risks"
+  ]
+ },
+ {
+  "id": "575ca278-262d-44fb-939f-014c11878135",
+  "topic": "Entrepreneurship",
+  "prompt": "'Capital' as a factor of production refers to:",
+  "options": [
+   "the money, equipment and buildings used to run the business",
+   "the natural resources only",
+   "the workers' skills only",
+   "the government's laws"
+  ]
+ },
+ {
+  "id": "e3d06734-d2c0-414b-b52c-ed7988a0ab4f",
+  "topic": "Entrepreneurship",
+  "prompt": "A common reason why new small businesses fail is:",
+  "options": [
+   "keeping accurate financial records",
+   "poor planning and a lack of management skills",
+   "doing thorough market research",
+   "controlling costs carefully"
+  ]
+ },
+ {
+  "id": "c250cf23-412e-4a14-8500-c16661ffc5b6",
+  "topic": "Entrepreneurship",
+  "prompt": "Conducting market research before starting a business helps the entrepreneur to:",
+  "options": [
+   "avoid paying any tax",
+   "guarantee that profits are impossible",
+   "understand customers' needs and the level of competition",
+   "ignore the competition completely"
+  ]
+ },
+ {
+  "id": "61a66215-ae55-4c50-8da4-9f10aaad78bf",
+  "topic": "Entrepreneurship",
+  "prompt": "'Innovation' in business means:",
+  "options": [
+   "copying a competitor exactly",
+   "keeping everything exactly the same",
+   "reducing the number of customers",
+   "introducing new or improved products, services or ways of doing things"
+  ]
+ },
+ {
+  "id": "889283da-2d9e-4fdd-9503-c50eccaea7ce",
+  "topic": "Business Functions",
+  "prompt": "The business function responsible for recruiting, training and paying staff is the:",
+  "options": [
+   "human resources function",
+   "production function",
+   "marketing function",
+   "purchasing function"
+  ]
+ },
+ {
+  "id": "89a5411a-ac33-4189-9477-b4b4860cad40",
+  "topic": "Business Functions",
+  "prompt": "The business function responsible for managing the money of the business, including budgets and financial records, is the:",
+  "options": [
+   "marketing function",
+   "financial function",
+   "production function",
+   "public relations function"
+  ]
+ },
+ {
+  "id": "2fbc9593-7733-4f89-ab7a-d218e2098fa8",
+  "topic": "Business Functions",
+  "prompt": "The business function responsible for promoting and selling products to customers is the:",
+  "options": [
+   "purchasing function",
+   "administration function",
+   "marketing function",
+   "production function"
+  ]
+ },
+ {
+  "id": "208b0dd3-62e0-43fe-b5ad-64eea8f6d3d3",
+  "topic": "Business Functions",
+  "prompt": "The business function responsible for buying the raw materials, stock and equipment the business needs is the:",
+  "options": [
+   "marketing function",
+   "human resources function",
+   "public relations function",
+   "purchasing function"
+  ]
+ },
+ {
+  "id": "e23b7fe8-518a-431e-9080-424dde86c98d",
+  "topic": "Business Functions",
+  "prompt": "The business function that converts raw materials into finished goods is the:",
+  "options": [
+   "production function",
+   "financial function",
+   "public relations function",
+   "administration function"
+  ]
+ },
+ {
+  "id": "c7d02da4-8f00-444c-9456-5f5ffa9358b6",
+  "topic": "Business Functions",
+  "prompt": "The function that maintains a positive image of the business and good relations with the public and media is the:",
+  "options": [
+   "purchasing function",
+   "public relations function",
+   "production function",
+   "financial function"
+  ]
+ },
+ {
+  "id": "0a541e6f-60f3-4dae-a5f9-5ef6ec82df8d",
+  "topic": "Business Functions",
+  "prompt": "The general management function is mainly responsible for:",
+  "options": [
+   "only cleaning the offices",
+   "only selling the products",
+   "planning, organising, leading and controlling the whole business",
+   "only buying the stock"
+  ]
+ },
+ {
+  "id": "66d2fda4-30ff-42db-9429-b58de120a618",
+  "topic": "Business Functions",
+  "prompt": "The administration function of a business mainly deals with:",
+  "options": [
+   "manufacturing goods",
+   "advertising on television",
+   "training factory workers",
+   "managing information, records and office systems"
+  ]
+ },
+ {
+  "id": "0d62b8d3-e7e1-4c50-a96b-eb2cb259e37c",
+  "topic": "Contemporary Socio-Economic Issues",
+  "prompt": "'Inflation' refers to:",
+  "options": [
+   "a sustained general increase in prices, which reduces buying power",
+   "a fall in all prices",
+   "an increase in the value of money",
+   "a rise in employment"
+  ]
+ },
+ {
+  "id": "5e35b7e5-0976-4113-a151-70fac1476983",
+  "topic": "Contemporary Socio-Economic Issues",
+  "prompt": "'Unemployment' describes a situation where people who are:",
+  "options": [
+   "too young to work stay at home",
+   "able and willing to work, and looking for jobs, cannot find work",
+   "retired and choose not to work",
+   "self-employed and run their own businesses"
+  ]
+ },
+ {
+  "id": "13cc70a9-9b01-4804-8683-27a6e8972b44",
+  "topic": "Contemporary Socio-Economic Issues",
+  "prompt": "Which of the following is a way a business can act in a socially responsible manner?",
+  "options": [
+   "polluting rivers to save money",
+   "ignoring worker safety",
+   "supporting community projects and reducing pollution",
+   "paying workers below the minimum wage"
+  ]
+ },
+ {
+  "id": "b6b18cd1-c8f1-4a11-aebc-cc5e6eaaf51e",
+  "topic": "Contemporary Socio-Economic Issues",
+  "prompt": "'Productivity' in a business measures:",
+  "options": [
+   "the total number of employees",
+   "the colour of the products",
+   "how many managers there are",
+   "how efficiently inputs are turned into outputs"
+  ]
+ },
+ {
+  "id": "d5f4b0e6-4ded-42fb-8492-62f36c1d166f",
+  "topic": "Contemporary Socio-Economic Issues",
+  "prompt": "A minimum wage is:",
+  "options": [
+   "the lowest amount an employer may legally pay a worker",
+   "the highest salary a manager may earn",
+   "a tax charged on businesses",
+   "the price of raw materials"
+  ]
+ },
+ {
+  "id": "7155e3d0-4cb2-467b-9200-d458f4622aa9",
+  "topic": "Contemporary Socio-Economic Issues",
+  "prompt": "HIV/AIDS in the workplace can affect a business by:",
+  "options": [
+   "increasing productivity",
+   "increasing absenteeism and reducing productivity",
+   "lowering all medical costs",
+   "having no effect at all"
+  ]
+ },
+ {
+  "id": "f82328f9-7bc6-4e6a-902f-700cddf69396",
+  "topic": "Contemporary Socio-Economic Issues",
+  "prompt": "'Affirmative action' in South Africa is intended to:",
+  "options": [
+   "favour only foreign workers",
+   "prevent anyone from being employed",
+   "redress past unfair discrimination by advancing previously disadvantaged groups",
+   "reduce wages for everyone"
+  ]
+ },
+ {
+  "id": "f03db4dd-954e-4935-8afd-6cf60542b35a",
+  "topic": "Contemporary Socio-Economic Issues",
+  "prompt": "One way for a business to help reduce unemployment in its community is to:",
+  "options": [
+   "replace all its workers with machines",
+   "import all its labour from overseas",
+   "close down its operations",
+   "create jobs and provide skills training such as learnerships"
+  ]
+ }
+]
