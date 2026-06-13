@@ -1,0 +1,530 @@
+[
+ {
+  "id": "7ff37080-1ea5-4889-8125-865d7a3fcd83",
+  "topic": "Animal Nutrition",
+  "prompt": "Which nutrient is the main source of body-building material needed for growth and repair of tissue?",
+  "options": [
+   "Protein",
+   "Carbohydrates",
+   "Water",
+   "Vitamins"
+  ]
+ },
+ {
+  "id": "eaa6e498-b58f-43b2-b7df-87360e7303f1",
+  "topic": "Animal Nutrition",
+  "prompt": "A ruminant animal such as a cow has a stomach made up of how many compartments?",
+  "options": [
+   "one",
+   "four",
+   "two",
+   "three"
+  ]
+ },
+ {
+  "id": "679d46ec-1f6d-49a2-b655-9bc43282e48c",
+  "topic": "Animal Nutrition",
+  "prompt": "Which of the following is classified as a roughage (high-fibre feed)?",
+  "options": [
+   "maize meal",
+   "fish meal",
+   "lucerne hay",
+   "molasses"
+  ]
+ },
+ {
+  "id": "79881a45-c139-48e5-9a5f-7f8cf7d0cc37",
+  "topic": "Animal Nutrition",
+  "prompt": "In which compartment of the ruminant stomach does most microbial fermentation of fibre take place?",
+  "options": [
+   "the abomasum",
+   "the omasum",
+   "the reticulum",
+   "the rumen"
+  ]
+ },
+ {
+  "id": "62d5cd74-facd-4f2d-99f4-e3dc8d0b4b20",
+  "topic": "Animal Nutrition",
+  "prompt": "Which mineral is the most important component of bones and teeth and is needed in large amounts by dairy cows?",
+  "options": [
+   "calcium",
+   "iron",
+   "iodine",
+   "sodium"
+  ]
+ },
+ {
+  "id": "b8560a20-5b47-4322-9e91-9a4aae7763ff",
+  "topic": "Animal Nutrition",
+  "prompt": "A 'balanced ration' is a feed that:",
+  "options": [
+   "contains only protein",
+   "supplies all the nutrients an animal needs in the correct proportions",
+   "is fed to the animal only once a day",
+   "contains no water at all"
+  ]
+ },
+ {
+  "id": "ffdc5a16-5218-4afe-8a12-982bce3b61cc",
+  "topic": "Animal Nutrition",
+  "prompt": "The abomasum is called the 'true stomach' of a ruminant because it:",
+  "options": [
+   "stores water",
+   "ferments fibre using micro-organisms",
+   "secretes digestive enzymes and acid like a monogastric stomach",
+   "absorbs all the nutrients"
+  ]
+ },
+ {
+  "id": "80f5049d-48a1-41c3-8e2f-35cae13c08d3",
+  "topic": "Animal Nutrition",
+  "prompt": "Which of the following animals is a monogastric (single-stomached) animal?",
+  "options": [
+   "a sheep",
+   "a cow",
+   "a goat",
+   "a pig"
+  ]
+ },
+ {
+  "id": "53517ccc-deb8-4235-8801-60c3ef8e8928",
+  "topic": "Animal Reproduction",
+  "prompt": "The female sex cell (gamete) produced by the ovary is called the:",
+  "options": [
+   "ovum (egg)",
+   "sperm",
+   "zygote",
+   "embryo"
+  ]
+ },
+ {
+  "id": "456db487-b609-4811-8c7e-8cc9cec6ba71",
+  "topic": "Animal Reproduction",
+  "prompt": "Fertilisation in mammals normally takes place in the:",
+  "options": [
+   "uterus",
+   "oviduct (Fallopian tube)",
+   "vagina",
+   "ovary"
+  ]
+ },
+ {
+  "id": "3124db87-e70f-4dbb-9f89-f5fbb288bb76",
+  "topic": "Animal Reproduction",
+  "prompt": "The period of pregnancy from fertilisation until birth is called the:",
+  "options": [
+   "oestrus",
+   "lactation",
+   "gestation period",
+   "ovulation"
+  ]
+ },
+ {
+  "id": "66e165c7-c917-458b-9dd0-eb11799c53f2",
+  "topic": "Animal Reproduction",
+  "prompt": "'Oestrus' (being on heat) is the period during which the female:",
+  "options": [
+   "is pregnant",
+   "is producing milk",
+   "has just given birth",
+   "is sexually receptive and will accept the male for mating"
+  ]
+ },
+ {
+  "id": "11f0e9ff-679b-4b27-b6f9-1af9e4d153e6",
+  "topic": "Animal Reproduction",
+  "prompt": "Artificial insemination (AI) is best described as:",
+  "options": [
+   "placing semen into the female's reproductive tract by artificial means",
+   "the surgical removal of the ovaries",
+   "feeding hormones to increase milk yield",
+   "natural mating of animals in a camp"
+  ]
+ },
+ {
+  "id": "9ee56358-1b1f-4338-b2cb-b93681edbd08",
+  "topic": "Animal Reproduction",
+  "prompt": "The approximate gestation period of a cow is:",
+  "options": [
+   "about 3 months",
+   "about 9 months (roughly 280 days)",
+   "about 5 months",
+   "about 12 months"
+  ]
+ },
+ {
+  "id": "f728f2fd-fc98-485b-9838-ad5574c1eb70",
+  "topic": "Animal Reproduction",
+  "prompt": "The hormone mainly responsible for the development of male sexual characteristics and sperm production is:",
+  "options": [
+   "oestrogen",
+   "progesterone",
+   "testosterone",
+   "oxytocin"
+  ]
+ },
+ {
+  "id": "0c198221-ad64-4fb4-ac23-2c56c2ba264d",
+  "topic": "Animal Reproduction",
+  "prompt": "A major ADVANTAGE of artificial insemination (AI) over natural mating is that it:",
+  "options": [
+   "requires no record keeping at all",
+   "is always cheaper than keeping any bull",
+   "removes the need to detect oestrus",
+   "lets one superior male breed with many females and reduces the spread of disease"
+  ]
+ },
+ {
+  "id": "e2678acc-73f2-43a6-b9de-8e653bec7e02",
+  "topic": "Genetics",
+  "prompt": "The basic unit of heredity that carries the code for a characteristic is the:",
+  "options": [
+   "gene",
+   "ribosome",
+   "vacuole",
+   "enzyme"
+  ]
+ },
+ {
+  "id": "46581bb7-0a65-48c5-b5cb-23c3d3fd447a",
+  "topic": "Genetics",
+  "prompt": "An organism that has two identical alleles for a trait (for example TT or tt) is said to be:",
+  "options": [
+   "heterozygous",
+   "homozygous",
+   "recessive",
+   "a hybrid"
+  ]
+ },
+ {
+  "id": "e4216038-0441-41ee-99d0-08cd258dcc9b",
+  "topic": "Genetics",
+  "prompt": "In a monohybrid cross between two heterozygous parents (Tt × Tt), the expected PHENOTYPIC ratio of the offspring is:",
+  "options": [
+   "1:1",
+   "9:3:3:1",
+   "3:1",
+   "1:2:1"
+  ]
+ },
+ {
+  "id": "4c3d94e0-6c0f-4ecc-8ee5-8e410d0c2bc6",
+  "topic": "Genetics",
+  "prompt": "The observable physical characteristics of an organism are known as its:",
+  "options": [
+   "genotype",
+   "allele",
+   "genome",
+   "phenotype"
+  ]
+ },
+ {
+  "id": "1ab61a73-d51f-4bed-81e4-f76fa8079113",
+  "topic": "Genetics",
+  "prompt": "An allele that is expressed in the phenotype even when only one copy is present is described as:",
+  "options": [
+   "dominant",
+   "recessive",
+   "homozygous",
+   "mutant"
+  ]
+ },
+ {
+  "id": "e0f83a00-f101-43e0-a75e-dcab59ce0bae",
+  "topic": "Genetics",
+  "prompt": "A recessive trait will appear in the phenotype only when the genotype is:",
+  "options": [
+   "heterozygous",
+   "homozygous recessive",
+   "homozygous dominant",
+   "always, in every case"
+  ]
+ },
+ {
+  "id": "6d8395b4-ab86-4a21-9574-d800cb8db972",
+  "topic": "Genetics",
+  "prompt": "In a dihybrid cross between two organisms heterozygous for both traits (e.g. RrYy × RrYy), the expected phenotypic ratio is:",
+  "options": [
+   "3:1",
+   "1:1",
+   "9:3:3:1",
+   "1:2:1"
+  ]
+ },
+ {
+  "id": "d71e90b6-6a29-49a5-99ed-c4bd130ad7b2",
+  "topic": "Genetics",
+  "prompt": "The cross used to find out whether an organism showing the dominant phenotype is homozygous or heterozygous is the:",
+  "options": [
+   "dihybrid cross",
+   "monohybrid cross",
+   "self-cross",
+   "test cross (with a homozygous recessive individual)"
+  ]
+ },
+ {
+  "id": "19cb03a9-2219-4007-b337-479a091d32f9",
+  "topic": "Selection & Breeding Systems",
+  "prompt": "Selecting breeding animals based on the recorded performance of their ancestors and relatives is called:",
+  "options": [
+   "pedigree (family) selection",
+   "mass selection",
+   "natural selection",
+   "random selection"
+  ]
+ },
+ {
+  "id": "e2b7012e-6594-4177-96b3-c0deebb6ce04",
+  "topic": "Selection & Breeding Systems",
+  "prompt": "The mating of animals that are more closely related than the average of the population is called:",
+  "options": [
+   "crossbreeding",
+   "inbreeding",
+   "outcrossing",
+   "upgrading"
+  ]
+ },
+ {
+  "id": "4ff8ed59-e362-4161-8e78-93a3e6c58f06",
+  "topic": "Selection & Breeding Systems",
+  "prompt": "The improved vigour, growth and performance often seen in the offspring of two different breeds is called:",
+  "options": [
+   "inbreeding depression",
+   "natural selection",
+   "heterosis (hybrid vigour)",
+   "the selection differential"
+  ]
+ },
+ {
+  "id": "5c1ea5dd-3695-4435-9ed6-34bd95d64001",
+  "topic": "Selection & Breeding Systems",
+  "prompt": "A possible DISADVANTAGE of continued inbreeding is:",
+  "options": [
+   "increased hybrid vigour",
+   "greater genetic variation in the herd",
+   "faster growth in all offspring",
+   "inbreeding depression — reduced fertility and vigour"
+  ]
+ },
+ {
+  "id": "69ebcdeb-0f0a-4c6f-ac29-906ed58fc09f",
+  "topic": "Selection & Breeding Systems",
+  "prompt": "Selection in which the farmer keeps the best animals judged on their OWN appearance or performance records is called:",
+  "options": [
+   "mass (individual) selection",
+   "pedigree selection",
+   "progeny testing",
+   "crossbreeding"
+  ]
+ },
+ {
+  "id": "7584add1-2043-4bc4-965c-cb9f7e7a7f06",
+  "topic": "Selection & Breeding Systems",
+  "prompt": "Mating animals of two different breeds in order to combine their desirable traits is called:",
+  "options": [
+   "inbreeding",
+   "crossbreeding",
+   "line breeding",
+   "self-pollination"
+  ]
+ },
+ {
+  "id": "1b3fdae4-eced-402a-b0d2-e49a0c116937",
+  "topic": "Selection & Breeding Systems",
+  "prompt": "Evaluating the breeding value of an animal by studying the performance of its offspring is called:",
+  "options": [
+   "mass selection",
+   "pedigree selection",
+   "progeny testing",
+   "inbreeding"
+  ]
+ },
+ {
+  "id": "2e2884c3-56e7-4b58-82fc-835c2a6bf292",
+  "topic": "Selection & Breeding Systems",
+  "prompt": "The main aim of selection in animal breeding is to:",
+  "options": [
+   "increase the number of harmful recessive genes",
+   "reduce the herd down to a single animal",
+   "keep every animal regardless of its quality",
+   "increase the frequency of desirable genes in the herd"
+  ]
+ },
+ {
+  "id": "6b9ddada-74cb-4eec-83bd-a1334b38151f",
+  "topic": "Animal Health & Diseases",
+  "prompt": "A disease caused by a pathogen that can spread from one animal to another is described as:",
+  "options": [
+   "infectious (contagious)",
+   "hereditary",
+   "nutritional",
+   "metabolic"
+  ]
+ },
+ {
+  "id": "749ac643-aae5-4f3e-9078-50e1c09ff51e",
+  "topic": "Animal Health & Diseases",
+  "prompt": "Which of the following animal diseases is caused by a virus?",
+  "options": [
+   "heartwater",
+   "foot-and-mouth disease",
+   "internal roundworms",
+   "liver fluke"
+  ]
+ },
+ {
+  "id": "1f5e8346-c95d-479a-984f-92d5a14615fd",
+  "topic": "Animal Health & Diseases",
+  "prompt": "Ticks, lice and fleas that live on the OUTSIDE of an animal's body are called:",
+  "options": [
+   "endoparasites",
+   "pathogens",
+   "ectoparasites",
+   "vectors"
+  ]
+ },
+ {
+  "id": "e024519f-cab7-4aba-aee9-857706af5749",
+  "topic": "Animal Health & Diseases",
+  "prompt": "Giving an animal a vaccine so that it becomes immune to a specific disease is called:",
+  "options": [
+   "dosing",
+   "dipping",
+   "drenching",
+   "vaccination (immunisation)"
+  ]
+ },
+ {
+  "id": "0c800ba0-717a-4f94-835f-b542f253023b",
+  "topic": "Animal Health & Diseases",
+  "prompt": "Dipping or spraying cattle with an acaricide is done mainly to control:",
+  "options": [
+   "ticks and other external parasites",
+   "internal worms",
+   "viral diseases",
+   "mineral deficiencies"
+  ]
+ },
+ {
+  "id": "545e9a03-64ad-4977-b2b1-b87feb2a019b",
+  "topic": "Animal Health & Diseases",
+  "prompt": "Roundworms and tapeworms living in an animal's digestive tract are examples of:",
+  "options": [
+   "ectoparasites",
+   "internal parasites (endoparasites)",
+   "viruses",
+   "bacteria"
+  ]
+ },
+ {
+  "id": "40a1862d-d026-4433-b7c4-37c4309dbe60",
+  "topic": "Animal Health & Diseases",
+  "prompt": "Placing a newly bought or sick animal in 'quarantine' means:",
+  "options": [
+   "slaughtering it immediately",
+   "mixing it with the herd straight away",
+   "keeping it isolated from the herd for a period to prevent disease spreading",
+   "selling it as quickly as possible"
+  ]
+ },
+ {
+  "id": "c5861baa-95b4-4efa-bf33-85ec819bb19f",
+  "topic": "Animal Health & Diseases",
+  "prompt": "Which of the following is a sign of a HEALTHY animal?",
+  "options": [
+   "dull, sunken eyes",
+   "loss of appetite",
+   "standing apart, isolated from the herd",
+   "a smooth, shiny coat and a good appetite"
+  ]
+ },
+ {
+  "id": "f105b453-11c2-419c-9a0d-0e2dbae39411",
+  "topic": "Agricultural Management & Marketing",
+  "prompt": "The four factors of production (resources) in farming are land, labour, capital and:",
+  "options": [
+   "management (entrepreneurship)",
+   "the weather",
+   "fertiliser",
+   "water"
+  ]
+ },
+ {
+  "id": "76ecd1f8-efe9-4887-8658-7548adb765d7",
+  "topic": "Agricultural Management & Marketing",
+  "prompt": "The machinery, buildings, equipment and money invested to run the farm business are referred to as:",
+  "options": [
+   "labour",
+   "capital",
+   "land",
+   "rent"
+  ]
+ },
+ {
+  "id": "7e3e6b48-bc2a-4813-b70b-ecf16928ab8b",
+  "topic": "Agricultural Management & Marketing",
+  "prompt": "'Fixed costs' on a farm are costs that:",
+  "options": [
+   "change directly with the amount produced",
+   "are paid only once, ever",
+   "stay the same regardless of the level of production, e.g. rent and licences",
+   "include feed and seed bought for the season"
+  ]
+ },
+ {
+  "id": "4c458984-cef0-41c5-be94-c0e281bc0ef5",
+  "topic": "Agricultural Management & Marketing",
+  "prompt": "The gross income of a farm enterprise minus its total costs is equal to the:",
+  "options": [
+   "total assets",
+   "fixed cost",
+   "turnover",
+   "net profit (or loss)"
+  ]
+ },
+ {
+  "id": "058349db-583a-4d97-b418-485db3febc35",
+  "topic": "Agricultural Management & Marketing",
+  "prompt": "A written financial plan that estimates a farm's expected income and expenditure for a future period is a:",
+  "options": [
+   "budget",
+   "stock register",
+   "title deed",
+   "balance sheet"
+  ]
+ },
+ {
+  "id": "eee6de41-be91-45a8-9c87-8bb5706cf737",
+  "topic": "Agricultural Management & Marketing",
+  "prompt": "Selling farm produce straight to the public, for example from a farm stall, is an example of:",
+  "options": [
+   "an auction",
+   "direct marketing",
+   "futures trading",
+   "importing"
+  ]
+ },
+ {
+  "id": "3bc0f587-210c-4855-94a7-3285555de0cf",
+  "topic": "Agricultural Management & Marketing",
+  "prompt": "According to the law of supply and demand, if the supply of a product is high but demand is low, the price will usually:",
+  "options": [
+   "rise sharply",
+   "stay exactly the same",
+   "fall (drop)",
+   "double"
+  ]
+ },
+ {
+  "id": "a099de93-34dc-4e69-b7f3-98cbf2b7ba61",
+  "topic": "Agricultural Management & Marketing",
+  "prompt": "Keeping accurate financial and production records on a farm is important mainly because it:",
+  "options": [
+   "is required in order to enter agricultural shows",
+   "simply wastes the farmer's time",
+   "is only needed when the farm is sold",
+   "helps the farmer make informed management decisions and plan ahead"
+  ]
+ }
+]
