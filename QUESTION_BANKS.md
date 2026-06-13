@@ -29,6 +29,7 @@ Any mismatch: fix or discard. A bank is not announced/marketed until LIVE-OK.
 | Agricultural Sciences | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-13, 48/48 fresh-context subagent solve) |
 | Hospitality Studies | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-13, 48/48 fresh-context subagent solve; blind solve caught + fixed a mis-keyed menu-planning question) |
 | Information Technology | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-13, 48/48 fresh-context subagent solve incl. computed binary conversions) |
+| Computer Applications Technology | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-13, 48/48 fresh-context subagent solve; questions distinct from Gr12 CAT) |
 
 ## Report-a-question safety net (built 2026-06-12)
 `supabase-reports-setup.sql` adds `questions.flagged` + `question_reports` table.
