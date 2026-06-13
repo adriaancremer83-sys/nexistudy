@@ -1,0 +1,530 @@
+[
+ {
+  "id": "0064dc9a-cf14-44bf-806f-de67f3a8672f",
+  "topic": "Nutrition & Menu Planning",
+  "prompt": "A vegetarian who eats no meat, poultry or fish can obtain protein from:",
+  "options": [
+   "only from red meat",
+   "only from chicken",
+   "legumes such as beans, lentils and soya",
+   "only from fish"
+  ]
+ },
+ {
+  "id": "c9a647f1-f1b0-4df3-83f6-638e15e5217b",
+  "topic": "The Hospitality Industry",
+  "prompt": "The hospitality industry mainly provides:",
+  "options": [
+   "accommodation, food and beverage services to guests",
+   "medical treatment to patients",
+   "legal advice to clients",
+   "banking and insurance services"
+  ]
+ },
+ {
+  "id": "248aa6d3-5a71-437a-a753-4df82156824e",
+  "topic": "The Hospitality Industry",
+  "prompt": "The document that lists the dishes available, and usually their prices, in a restaurant is called the:",
+  "options": [
+   "invoice",
+   "menu",
+   "receipt",
+   "duty roster"
+  ]
+ },
+ {
+  "id": "a2645638-b0b6-405f-a183-c3609c613b41",
+  "topic": "The Hospitality Industry",
+  "prompt": "'Mise en place' is a French term that means:",
+  "options": [
+   "serving the guests their food",
+   "washing the dirty dishes",
+   "everything in its place — all preparation done before service begins",
+   "presenting the final bill"
+  ]
+ },
+ {
+  "id": "9539bc3e-5570-407f-aefa-df5d273793a6",
+  "topic": "The Hospitality Industry",
+  "prompt": "Which of the following is a front-of-house (service) position rather than a kitchen position?",
+  "options": [
+   "chef de partie",
+   "pastry chef",
+   "sous chef",
+   "waiter"
+  ]
+ },
+ {
+  "id": "4668992d-f7a6-4568-af5f-ebf9e0388a8e",
+  "topic": "The Hospitality Industry",
+  "prompt": "A professional appearance for someone working in the hospitality industry includes:",
+  "options": [
+   "a clean, neat uniform and good personal hygiene",
+   "long, loose hair hanging over the food",
+   "wearing strong perfume close to the food",
+   "chewing gum while serving guests"
+  ]
+ },
+ {
+  "id": "b4a98beb-bc5b-41e5-b9f7-82a54383cf9c",
+  "topic": "The Hospitality Industry",
+  "prompt": "The 'back-of-house' area of a restaurant refers to the:",
+  "options": [
+   "dining room where guests sit",
+   "kitchen and food-preparation areas",
+   "entrance and reception desk",
+   "outdoor parking area"
+  ]
+ },
+ {
+  "id": "989658ea-1c28-4e7e-b9a7-1c655bbb5d54",
+  "topic": "The Hospitality Industry",
+  "prompt": "Good customer service in a restaurant is shown by:",
+  "options": [
+   "ignoring the guests' requests",
+   "arguing with a guest who complains",
+   "being friendly and attentive and dealing politely with complaints",
+   "serving the food as slowly as possible"
+  ]
+ },
+ {
+  "id": "1697ea3c-4e5b-4ff2-9c5e-a66350da44ff",
+  "topic": "The Hospitality Industry",
+  "prompt": "Which of the following is a sector of the hospitality industry?",
+  "options": [
+   "motor-vehicle manufacturing",
+   "gold mining",
+   "maize farming",
+   "accommodation, such as hotels and guesthouses"
+  ]
+ },
+ {
+  "id": "364a9a78-5496-440e-bcab-2e99f26783f5",
+  "topic": "Hygiene, Safety & Security",
+  "prompt": "An important personal-hygiene practice in the kitchen is:",
+  "options": [
+   "washing your hands thoroughly and regularly",
+   "tasting food with the cooking spoon and returning it to the pot",
+   "wearing a dirty apron throughout the shift",
+   "coughing over open food"
+  ]
+ },
+ {
+  "id": "1a1538e3-008a-44f0-9c53-adaef059189d",
+  "topic": "Hygiene, Safety & Security",
+  "prompt": "The temperature 'danger zone', in which bacteria in food multiply most rapidly, is between:",
+  "options": [
+   "−18 °C and 0 °C",
+   "5 °C and 60 °C",
+   "60 °C and 100 °C",
+   "100 °C and 150 °C"
+  ]
+ },
+ {
+  "id": "d5adc354-fdf0-493c-8fb4-9894bca1a6ef",
+  "topic": "Hygiene, Safety & Security",
+  "prompt": "In food safety, the abbreviation HACCP stands for:",
+  "options": [
+   "Hotel And Catering Control Plan",
+   "Hygiene And Cleaning Code of Practice",
+   "Hazard Analysis and Critical Control Points",
+   "Health And Customer Care Programme"
+  ]
+ },
+ {
+  "id": "b5b1861a-4a58-4c96-9356-885b8018e4b1",
+  "topic": "Hygiene, Safety & Security",
+  "prompt": "Cross-contamination in the kitchen is best prevented by:",
+  "options": [
+   "using one cutting board for everything",
+   "storing raw chicken above ready-to-eat foods",
+   "wiping all surfaces with the same dirty cloth",
+   "using separate cutting boards and utensils for raw and cooked foods"
+  ]
+ },
+ {
+  "id": "1bec28d2-1097-44f9-a834-6d4b5cc44fb4",
+  "topic": "Hygiene, Safety & Security",
+  "prompt": "The correct first step when treating a minor burn in the kitchen is to:",
+  "options": [
+   "cool the burn under cool running water",
+   "rub butter or oil onto the burn",
+   "burst any blisters that form",
+   "ignore it and carry on working"
+  ]
+ },
+ {
+  "id": "642fb0d4-4865-4dfe-9e16-c2a791bc9739",
+  "topic": "Hygiene, Safety & Security",
+  "prompt": "Raw meat and poultry should be stored in the refrigerator:",
+  "options": [
+   "on the top shelf above the salads",
+   "on the bottom shelf, below ready-to-eat foods",
+   "at room temperature on the counter",
+   "next to cooked food on the same plate"
+  ]
+ },
+ {
+  "id": "90940eb2-1169-45cb-9363-ae0bafe684a2",
+  "topic": "Hygiene, Safety & Security",
+  "prompt": "An oil or fat fire on the stove must NEVER be put out with:",
+  "options": [
+   "a fire blanket",
+   "a suitable fire extinguisher",
+   "water",
+   "turning off the heat and smothering it"
+  ]
+ },
+ {
+  "id": "bcf16093-e0e2-45b5-95ee-0c8f0415381c",
+  "topic": "Hygiene, Safety & Security",
+  "prompt": "Stock rotation using the FIFO principle means:",
+  "options": [
+   "using the newest stock first",
+   "throwing away all stock every week",
+   "never checking expiry dates",
+   "First In, First Out — using the oldest stock first"
+  ]
+ },
+ {
+  "id": "c9087fc8-5057-422d-8f57-61a6b630ebd2",
+  "topic": "Nutrition & Menu Planning",
+  "prompt": "Which nutrient is the body's main and most readily available source of energy?",
+  "options": [
+   "carbohydrates",
+   "vitamins",
+   "minerals",
+   "water"
+  ]
+ },
+ {
+  "id": "99377943-bd14-4885-81b7-0336ede0cfb5",
+  "topic": "Nutrition & Menu Planning",
+  "prompt": "Proteins are especially important in the diet because they:",
+  "options": [
+   "provide most of the body's water",
+   "are needed for growth and the repair of body tissue",
+   "lubricate the joints",
+   "are the main source of dietary fibre"
+  ]
+ },
+ {
+  "id": "29e92e5b-e7dd-4f64-b05d-fb1da63507fb",
+  "topic": "Nutrition & Menu Planning",
+  "prompt": "In a classic three-course meal, the dessert is served:",
+  "options": [
+   "before the starter",
+   "instead of the main course",
+   "at the same time as the starter",
+   "last, after the main course"
+  ]
+ },
+ {
+  "id": "6c64aec7-f7dc-4764-9a48-3783406297d4",
+  "topic": "Nutrition & Menu Planning",
+  "prompt": "An 'à la carte' menu is one where:",
+  "options": [
+   "each dish is individually listed and priced and chosen separately",
+   "there is no choice at all",
+   "a fixed set meal is offered at one price",
+   "only beverages are available"
+  ]
+ },
+ {
+  "id": "aadc2ba4-0228-47f2-a01a-4c77c0b280ff",
+  "topic": "Nutrition & Menu Planning",
+  "prompt": "A 'table d'hôte' menu offers:",
+  "options": [
+   "only beverages",
+   "a set selection of courses at a fixed price",
+   "every dish priced separately",
+   "no food, only snacks"
+  ]
+ },
+ {
+  "id": "294f7e55-aca1-40b2-8cab-0c78af7bbe1c",
+  "topic": "Nutrition & Menu Planning",
+  "prompt": "When planning a balanced and appealing menu, a good practice is to:",
+  "options": [
+   "repeat the same colour and texture in every dish",
+   "use only deep-fried foods",
+   "include a variety of colours, textures and cooking methods",
+   "serve three creamy dishes one after another"
+  ]
+ },
+ {
+  "id": "56b8e732-d6ed-449d-a1d2-fd5068f4df53",
+  "topic": "Nutrition & Menu Planning",
+  "prompt": "A person with diabetes should be offered a menu that is:",
+  "options": [
+   "very high in sugar",
+   "based mainly on sweets and cakes",
+   "high in added sugar and refined carbohydrates",
+   "controlled (limited) in sugar and refined carbohydrates"
+  ]
+ },
+ {
+  "id": "a41d2eb3-c596-4ba2-9bc4-bc2d80f40eee",
+  "topic": "Food Commodities",
+  "prompt": "In baking, the main functions of eggs are to:",
+  "options": [
+   "bind, enrich and help to aerate mixtures",
+   "make the food taste sour",
+   "add dietary fibre",
+   "preserve the food for years"
+  ]
+ },
+ {
+  "id": "a41b8116-3073-4b21-b913-2d92a55df94f",
+  "topic": "Food Commodities",
+  "prompt": "Which of the following is a chemical raising agent used in baking?",
+  "options": [
+   "yeast",
+   "baking powder",
+   "salt",
+   "vinegar"
+  ]
+ },
+ {
+  "id": "b58fb5f3-b56d-41da-8289-582620c99167",
+  "topic": "Food Commodities",
+  "prompt": "Yeast makes bread dough rise by:",
+  "options": [
+   "simply melting in the heat",
+   "absorbing water from the dough",
+   "fermenting sugars and producing carbon dioxide gas",
+   "turning entirely into steam"
+  ]
+ },
+ {
+  "id": "f83b90ed-28c8-4611-a525-8f5f77e80290",
+  "topic": "Food Commodities",
+  "prompt": "Gluten, the protein that gives bread its structure and elasticity, is found in:",
+  "options": [
+   "sugar",
+   "butter",
+   "eggs",
+   "wheat flour"
+  ]
+ },
+ {
+  "id": "5593ad8c-0ead-42c9-95c9-1f11722566c6",
+  "topic": "Food Commodities",
+  "prompt": "Heating milk to a high temperature for a short time to kill harmful bacteria is called:",
+  "options": [
+   "pasteurisation",
+   "fermentation",
+   "caramelisation",
+   "evaporation"
+  ]
+ },
+ {
+  "id": "77949b3f-7c94-4c75-ace2-3113fd8e8b57",
+  "topic": "Food Commodities",
+  "prompt": "When sugar is heated until it melts and turns a golden-brown colour, the process is called:",
+  "options": [
+   "pasteurisation",
+   "caramelisation",
+   "coagulation",
+   "fermentation"
+  ]
+ },
+ {
+  "id": "8e2fb5b3-9d49-4dbd-bbb6-f42f08c9119c",
+  "topic": "Food Commodities",
+  "prompt": "When an egg is cooked, the clear egg white sets and turns firm and white. This setting of the egg protein is called:",
+  "options": [
+   "caramelisation",
+   "evaporation",
+   "coagulation",
+   "fermentation"
+  ]
+ },
+ {
+  "id": "706bc3e2-bfb8-45e0-826e-9047a71a3dab",
+  "topic": "Food Commodities",
+  "prompt": "Which cooking fat has a high smoke point, making it the most suitable for deep-frying?",
+  "options": [
+   "butter",
+   "soft tub margarine",
+   "fresh cream",
+   "vegetable (cooking) oil"
+  ]
+ },
+ {
+  "id": "7b2f00cf-3e76-403c-b727-4b0f6c1b5349",
+  "topic": "Food Preparation & Cooking Methods",
+  "prompt": "Boiling, steaming and poaching are all examples of:",
+  "options": [
+   "moist-heat (wet) cooking methods",
+   "dry-heat cooking methods",
+   "deep-frying methods",
+   "raw (no-cook) preparation"
+  ]
+ },
+ {
+  "id": "f99f8d8e-c35d-4a77-90ca-655cd5e00f76",
+  "topic": "Food Preparation & Cooking Methods",
+  "prompt": "Which of the following is a dry-heat cooking method?",
+  "options": [
+   "poaching",
+   "baking (roasting)",
+   "steaming",
+   "boiling"
+  ]
+ },
+ {
+  "id": "a3a09712-4664-46f2-b50d-a56c271f37ce",
+  "topic": "Food Preparation & Cooking Methods",
+  "prompt": "To 'blanch' a vegetable means to:",
+  "options": [
+   "fry it until crisp",
+   "freeze it while still raw",
+   "briefly boil it and then plunge it into iced water",
+   "bake it slowly for an hour"
+  ]
+ },
+ {
+  "id": "623d505a-39a6-4169-b6ef-1632e764ed24",
+  "topic": "Food Preparation & Cooking Methods",
+  "prompt": "To 'sauté' food means to:",
+  "options": [
+   "boil it in plenty of water",
+   "steam it over boiling water",
+   "bake it slowly in the oven",
+   "fry it quickly in a little hot fat while tossing it"
+  ]
+ },
+ {
+  "id": "06a3cfd1-447f-4bee-bed1-f72a34538903",
+  "topic": "Food Preparation & Cooking Methods",
+  "prompt": "Cutting vegetables into small, even cube shapes is known as a:",
+  "options": [
+   "dice",
+   "julienne",
+   "chiffonade",
+   "fillet"
+  ]
+ },
+ {
+  "id": "34359e7f-6e88-4096-ba4a-ec60083e23f8",
+  "topic": "Food Preparation & Cooking Methods",
+  "prompt": "Cutting vegetables such as carrots into thin matchstick strips is called:",
+  "options": [
+   "dicing",
+   "julienne",
+   "grating",
+   "mincing"
+  ]
+ },
+ {
+  "id": "9d2770fe-67b8-49ed-87be-a7f49efc333f",
+  "topic": "Food Preparation & Cooking Methods",
+  "prompt": "To 'marinate' meat means to:",
+  "options": [
+   "cook it in a hot oven",
+   "freeze it until solid",
+   "soak it in a seasoned liquid to add flavour and help tenderise it",
+   "coat it in dry breadcrumbs"
+  ]
+ },
+ {
+  "id": "063222c9-f624-4322-8a02-a23de00ed2d3",
+  "topic": "Food Preparation & Cooking Methods",
+  "prompt": "Grilling and roasting brown the surface of food and develop rich flavour mainly because of:",
+  "options": [
+   "pasteurisation",
+   "fermentation",
+   "coagulation",
+   "browning reactions caused by dry heat"
+  ]
+ },
+ {
+  "id": "081b09d5-1a39-4444-a1b5-aec48f6e5ac0",
+  "topic": "Food & Beverage Service",
+  "prompt": "In a basic place setting (cover), the dinner fork is placed:",
+  "options": [
+   "to the left of the dinner plate",
+   "to the right of the dinner plate",
+   "directly above the plate",
+   "on top of the plate"
+  ]
+ },
+ {
+  "id": "10b8e457-bd74-4d0f-a0e3-79c13ad5e55b",
+  "topic": "Food & Beverage Service",
+  "prompt": "In a standard place setting, the dinner knife is placed:",
+  "options": [
+   "to the left of the plate",
+   "to the right of the plate with the blade facing the plate",
+   "directly above the plate",
+   "inside the water glass"
+  ]
+ },
+ {
+  "id": "a56253cd-d322-47ea-8985-d2692762d94e",
+  "topic": "Food & Beverage Service",
+  "prompt": "'Silver service' (English service) is a style of service in which the:",
+  "options": [
+   "guest serves themselves at a buffet",
+   "food is plated in the kitchen and simply carried out",
+   "waiter serves food onto the guest's plate at the table using a spoon and fork",
+   "guest collects the food from a self-service counter"
+  ]
+ },
+ {
+  "id": "e46db3c9-96b9-4332-903b-7f1a353f5b77",
+  "topic": "Food & Beverage Service",
+  "prompt": "In 'plate service' (American service), the food is:",
+  "options": [
+   "served from a large platter at the table",
+   "collected by guests from a buffet",
+   "cooked at the table in front of the guest",
+   "fully plated and portioned in the kitchen, then carried to the guest"
+  ]
+ },
+ {
+  "id": "be1f7d80-c50e-455c-bb6a-97ece80efa87",
+  "topic": "Food & Beverage Service",
+  "prompt": "A common convention for serving and clearing at a table is to:",
+  "options": [
+   "serve food from the guest's left and clear used plates from the right",
+   "serve and clear everything from directly above",
+   "place the plates down anywhere on the table",
+   "serve only from behind the guest's head"
+  ]
+ },
+ {
+  "id": "5ee69d0f-7af2-4082-879c-3b7eb3cc987a",
+  "topic": "Food & Beverage Service",
+  "prompt": "In restaurant service, a 'cover' refers to:",
+  "options": [
+   "the lid of a serving dish",
+   "the complete place setting laid out for one guest",
+   "the tablecloth only",
+   "the printed menu card"
+  ]
+ },
+ {
+  "id": "61644021-16ec-4f40-9247-bbc53ecb714d",
+  "topic": "Food & Beverage Service",
+  "prompt": "Which of the following is a non-alcoholic beverage?",
+  "options": [
+   "red wine",
+   "brandy",
+   "fresh fruit juice",
+   "beer"
+  ]
+ },
+ {
+  "id": "f48df507-064c-4748-8c10-905fb2d21ee5",
+  "topic": "Food & Beverage Service",
+  "prompt": "A serviette (napkin) at a place setting is mainly used to:",
+  "options": [
+   "wipe down the table",
+   "cover the food on the plate",
+   "polish the cutlery",
+   "protect the guest's clothing and wipe the mouth and hands"
+  ]
+ }
+]

@@ -27,6 +27,7 @@ Any mismatch: fix or discard. A bank is not announced/marketed until LIVE-OK.
 | Consumer Studies | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-12, 48/48 fresh-context subagent solve) |
 | Computer Applications Technology | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-13, 48/48 fresh-context subagent solve) |
 | Agricultural Sciences | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-13, 48/48 fresh-context subagent solve) |
+| Hospitality Studies | 12 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-13, 48/48 fresh-context subagent solve; blind solve caught + fixed a mis-keyed menu-planning question) |
 
 ## Report-a-question safety net (built 2026-06-12)
 `supabase-reports-setup.sql` adds `questions.flagged` + `question_reports` table.
