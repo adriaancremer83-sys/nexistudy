@@ -1,0 +1,530 @@
+[
+ {
+  "id": "69020b87-3b78-4f58-9d37-ea245a4d6fe6",
+  "topic": "The Atmosphere: Composition & Structure",
+  "prompt": "The most abundant gas in the Earth's atmosphere is:",
+  "options": [
+   "nitrogen",
+   "oxygen",
+   "carbon dioxide",
+   "argon"
+  ]
+ },
+ {
+  "id": "73c8275b-409c-4eb5-81dc-b49ea4246b9b",
+  "topic": "The Atmosphere: Composition & Structure",
+  "prompt": "Approximately what percentage of the atmosphere is made up of oxygen?",
+  "options": [
+   "1%",
+   "21%",
+   "50%",
+   "78%"
+  ]
+ },
+ {
+  "id": "03044b1a-4e67-4da1-b00e-5b05ab9f31c0",
+  "topic": "The Atmosphere: Composition & Structure",
+  "prompt": "The lowest layer of the atmosphere, in which almost all weather occurs, is the:",
+  "options": [
+   "stratosphere",
+   "mesosphere",
+   "troposphere",
+   "thermosphere"
+  ]
+ },
+ {
+  "id": "1e898e46-d8f0-436b-be06-eb62aae89f34",
+  "topic": "The Atmosphere: Composition & Structure",
+  "prompt": "The ozone layer, which absorbs harmful ultraviolet radiation from the Sun, is found in the:",
+  "options": [
+   "troposphere",
+   "mesosphere",
+   "thermosphere",
+   "stratosphere"
+  ]
+ },
+ {
+  "id": "35b044b0-c7fc-4570-b3fe-2a842cc4334c",
+  "topic": "The Atmosphere: Composition & Structure",
+  "prompt": "Within the troposphere, temperature generally _____ as altitude increases.",
+  "options": [
+   "decreases",
+   "increases",
+   "stays the same",
+   "doubles"
+  ]
+ },
+ {
+  "id": "4fcee106-bcdf-473f-be26-da468c95e597",
+  "topic": "The Atmosphere: Composition & Structure",
+  "prompt": "Which gas is most associated with the greenhouse effect and global warming?",
+  "options": [
+   "nitrogen",
+   "carbon dioxide",
+   "argon",
+   "oxygen"
+  ]
+ },
+ {
+  "id": "37178466-783d-44cb-beac-85deea8903f0",
+  "topic": "The Atmosphere: Composition & Structure",
+  "prompt": "The thin layer of gases held around the Earth by gravity is called the:",
+  "options": [
+   "lithosphere",
+   "hydrosphere",
+   "atmosphere",
+   "biosphere"
+  ]
+ },
+ {
+  "id": "0cb52adc-a20d-48ba-9416-b5c2e8d9d7c8",
+  "topic": "The Atmosphere: Composition & Structure",
+  "prompt": "The depletion of the ozone layer is mainly caused by human-made chemicals called:",
+  "options": [
+   "nitrogen oxides only",
+   "water vapour",
+   "oxygen molecules",
+   "chlorofluorocarbons (CFCs)"
+  ]
+ },
+ {
+  "id": "53298205-540a-4b31-ac2b-a66208486477",
+  "topic": "Heating of the Atmosphere",
+  "prompt": "The Earth's main source of energy and heat is:",
+  "options": [
+   "the Sun (solar radiation)",
+   "the Moon",
+   "volcanoes",
+   "the oceans"
+  ]
+ },
+ {
+  "id": "c352e828-71b9-4dc0-bf41-853aad9be83e",
+  "topic": "Heating of the Atmosphere",
+  "prompt": "Incoming solar radiation received from the Sun is known as:",
+  "options": [
+   "terrestrial radiation",
+   "insolation",
+   "convection",
+   "conduction"
+  ]
+ },
+ {
+  "id": "00ef2ac1-6bb8-4138-a78f-21eef043b841",
+  "topic": "Heating of the Atmosphere",
+  "prompt": "Heat transfer through the direct contact of the ground with the air immediately above it is called:",
+  "options": [
+   "radiation",
+   "convection",
+   "conduction",
+   "advection"
+  ]
+ },
+ {
+  "id": "04f1db83-4004-4f42-98c7-76b713e608a7",
+  "topic": "Heating of the Atmosphere",
+  "prompt": "The vertical transfer of heat as warm air rises and cooler air sinks is called:",
+  "options": [
+   "conduction",
+   "radiation",
+   "advection",
+   "convection"
+  ]
+ },
+ {
+  "id": "763742d4-dc9d-4569-9e2c-8227802a0cf4",
+  "topic": "Heating of the Atmosphere",
+  "prompt": "Areas near the equator are generally hotter than areas near the poles because near the equator the Sun's rays:",
+  "options": [
+   "strike the Earth more directly (closer to vertical)",
+   "strike at a very low angle",
+   "never reach the surface",
+   "are completely blocked by ozone"
+  ]
+ },
+ {
+  "id": "3ecf7557-9db3-4a53-acbf-a1497ebd4bf1",
+  "topic": "Heating of the Atmosphere",
+  "prompt": "As altitude increases up a mountain, the temperature generally:",
+  "options": [
+   "increases",
+   "decreases",
+   "stays exactly the same",
+   "rises and then doubles"
+  ]
+ },
+ {
+  "id": "a4a761f1-d3a9-4b8e-a706-b70ec0c2d9e0",
+  "topic": "Heating of the Atmosphere",
+  "prompt": "Which surface would reflect the most incoming solar radiation (have the highest albedo)?",
+  "options": [
+   "a dark tar road",
+   "a dark forest",
+   "fresh white snow",
+   "deep ocean water"
+  ]
+ },
+ {
+  "id": "128afff3-3ab5-4a23-b884-9444c86d3700",
+  "topic": "Heating of the Atmosphere",
+  "prompt": "Heat radiated back into the atmosphere from the warmed surface of the Earth is called:",
+  "options": [
+   "insolation",
+   "solar radiation",
+   "ultraviolet radiation",
+   "terrestrial radiation"
+  ]
+ },
+ {
+  "id": "7808a856-a893-4596-9614-98a53385d801",
+  "topic": "Moisture in the Atmosphere",
+  "prompt": "The amount of water vapour present in the air is called:",
+  "options": [
+   "humidity",
+   "precipitation",
+   "albedo",
+   "insolation"
+  ]
+ },
+ {
+  "id": "5839f49e-4f12-4b3c-87f6-1f0f4cc30c83",
+  "topic": "Moisture in the Atmosphere",
+  "prompt": "The process by which water vapour changes into liquid water droplets is called:",
+  "options": [
+   "evaporation",
+   "condensation",
+   "transpiration",
+   "infiltration"
+  ]
+ },
+ {
+  "id": "aee6274a-a6e6-44d3-b104-9df567409f10",
+  "topic": "Moisture in the Atmosphere",
+  "prompt": "The temperature to which air must be cooled for it to become saturated and condensation to begin is the:",
+  "options": [
+   "boiling point",
+   "lapse rate",
+   "dew point",
+   "freezing point"
+  ]
+ },
+ {
+  "id": "93579daf-5934-4ef0-a352-f0d0509dad04",
+  "topic": "Moisture in the Atmosphere",
+  "prompt": "Rain that forms when moist air is forced to rise over a mountain is called:",
+  "options": [
+   "convectional rainfall",
+   "frontal rainfall",
+   "drizzle",
+   "relief (orographic) rainfall"
+  ]
+ },
+ {
+  "id": "dc80df9e-f210-4123-a00b-de974000fad7",
+  "topic": "Moisture in the Atmosphere",
+  "prompt": "Rainfall caused by intense surface heating, rapidly rising warm moist air and towering cumulonimbus clouds (common on hot afternoons) is:",
+  "options": [
+   "convectional rainfall",
+   "relief rainfall",
+   "frontal rainfall",
+   "frost"
+  ]
+ },
+ {
+  "id": "5b143d46-4bbb-48fb-a161-f44fb4e14105",
+  "topic": "Moisture in the Atmosphere",
+  "prompt": "Rainfall that occurs when a warm air mass meets and is forced to rise over a cold air mass along a front is called:",
+  "options": [
+   "relief rainfall",
+   "frontal rainfall",
+   "convectional rainfall",
+   "dew"
+  ]
+ },
+ {
+  "id": "5ed8fdf4-a4f4-45f5-8abc-d244dbdf3fbf",
+  "topic": "Moisture in the Atmosphere",
+  "prompt": "Low cloud that forms at or near ground level, reducing visibility, is called:",
+  "options": [
+   "cirrus",
+   "cumulonimbus",
+   "fog",
+   "hail"
+  ]
+ },
+ {
+  "id": "8583d815-a150-4937-8f3c-59fdda641c91",
+  "topic": "Moisture in the Atmosphere",
+  "prompt": "Which of the following is a form of precipitation?",
+  "options": [
+   "humidity",
+   "evaporation",
+   "condensation",
+   "hail"
+  ]
+ },
+ {
+  "id": "b39a7ade-281e-439d-b9dd-811b241e1332",
+  "topic": "Geomorphology: Rock Structure & Landforms",
+  "prompt": "A flat-topped hill with steep sides, larger than a butte but smaller than a plateau, formed from horizontal rock layers, is a:",
+  "options": [
+   "mesa",
+   "cuesta",
+   "ridge",
+   "valley"
+  ]
+ },
+ {
+  "id": "cf999de0-64ea-4dff-b752-7b1eb1c834ef",
+  "topic": "Geomorphology: Rock Structure & Landforms",
+  "prompt": "A small, steep-sided, flat-topped hill that is the last eroded remnant of a mesa is called a:",
+  "options": [
+   "plateau",
+   "butte",
+   "spur",
+   "delta"
+  ]
+ },
+ {
+  "id": "1aee9e1a-c5e2-4e54-87db-15fe597a83ff",
+  "topic": "Geomorphology: Rock Structure & Landforms",
+  "prompt": "A large, elevated, relatively flat area of land bounded by steep slopes is a:",
+  "options": [
+   "butte",
+   "mesa",
+   "plateau",
+   "floodplain"
+  ]
+ },
+ {
+  "id": "b63d2f07-05e9-493b-8a4b-f819ab1f26ae",
+  "topic": "Geomorphology: Rock Structure & Landforms",
+  "prompt": "A hill or ridge with one steep slope and one gentle slope, formed from gently inclined (tilted) rock strata, is a:",
+  "options": [
+   "mesa",
+   "butte",
+   "plateau",
+   "cuesta"
+  ]
+ },
+ {
+  "id": "652f086b-0bde-467b-ba0f-5bd50e0af4bb",
+  "topic": "Geomorphology: Rock Structure & Landforms",
+  "prompt": "A landscape of horizontally layered rocks of differing hardness typically produces a stepped slope pattern because:",
+  "options": [
+   "harder layers resist erosion and form steeper sections, while softer layers erode more easily",
+   "all the layers erode at exactly the same rate",
+   "the softer layers never erode at all",
+   "the rock is all of the same hardness"
+  ]
+ },
+ {
+  "id": "4f831d57-eeae-4cb8-bbd8-26b605dbec4a",
+  "topic": "Geomorphology: Rock Structure & Landforms",
+  "prompt": "The steep slope of a cuesta, formed at the edge of the resistant rock layer, is called the:",
+  "options": [
+   "dip slope",
+   "scarp slope",
+   "floodplain",
+   "watershed"
+  ]
+ },
+ {
+  "id": "9f1dba57-283c-493d-bbeb-edc56e429087",
+  "topic": "Geomorphology: Rock Structure & Landforms",
+  "prompt": "Landforms such as mesas, buttes and plateaus are typically associated with rock strata that are:",
+  "options": [
+   "folded into mountains",
+   "tilted steeply",
+   "horizontally layered",
+   "completely molten"
+  ]
+ },
+ {
+  "id": "7532e5cb-06f3-49ad-9138-eaa5e0ea0247",
+  "topic": "Geomorphology: Rock Structure & Landforms",
+  "prompt": "The gentle slope of a cuesta, which follows the angle of the dipping rock layers, is called the:",
+  "options": [
+   "scarp slope",
+   "watershed",
+   "cliff",
+   "dip slope"
+  ]
+ },
+ {
+  "id": "23060934-0a7c-4b39-b0f3-1606d780edde",
+  "topic": "Development Geography",
+  "prompt": "A country with a high income per person, advanced industry and good infrastructure is best described as a:",
+  "options": [
+   "developed country",
+   "developing country",
+   "least developed country",
+   "subsistence economy"
+  ]
+ },
+ {
+  "id": "8de80823-59cd-4018-a344-05fe0f25445b",
+  "topic": "Development Geography",
+  "prompt": "Which of the following is an indicator commonly used to measure a country's level of development?",
+  "options": [
+   "the number of mountains",
+   "Gross Domestic Product (GDP) per capita",
+   "the design of the national flag",
+   "the number of rivers"
+  ]
+ },
+ {
+  "id": "2f944e11-9b3d-46f0-a863-e7ad3b983053",
+  "topic": "Development Geography",
+  "prompt": "The Human Development Index (HDI) measures development using income, education and:",
+  "options": [
+   "the total area of the country",
+   "the population's favourite sport",
+   "life expectancy (health)",
+   "the number of cities"
+  ]
+ },
+ {
+  "id": "8e4f30c3-21b5-443a-91c1-f492cc1f5f62",
+  "topic": "Development Geography",
+  "prompt": "A high infant mortality rate in a country usually indicates:",
+  "options": [
+   "a very high level of development",
+   "excellent healthcare for everyone",
+   "very high average incomes",
+   "a lower level of development"
+  ]
+ },
+ {
+  "id": "451cc8a4-1b7d-41a4-abd5-18eede418ad9",
+  "topic": "Development Geography",
+  "prompt": "Which of the following is typical of a developing country?",
+  "options": [
+   "a large percentage of workers in subsistence agriculture",
+   "a very high GDP per capita",
+   "an ageing population with very low birth rates",
+   "almost everyone employed in financial services"
+  ]
+ },
+ {
+  "id": "11858c0a-21d9-459e-91f0-287e33696325",
+  "topic": "Development Geography",
+  "prompt": "The gap between the rich and the poor within a country, often measured by the Gini coefficient, is referred to as:",
+  "options": [
+   "the development index",
+   "income inequality",
+   "life expectancy",
+   "the literacy rate"
+  ]
+ },
+ {
+  "id": "b8aa61c0-4e36-4945-9677-ec0b7965ba28",
+  "topic": "Development Geography",
+  "prompt": "Financial or material help given by richer countries or organisations to poorer countries is called:",
+  "options": [
+   "foreign trade",
+   "globalisation",
+   "development aid",
+   "urbanisation"
+  ]
+ },
+ {
+  "id": "a4145183-dd6d-46d3-800b-658dfe5ca1ec",
+  "topic": "Development Geography",
+  "prompt": "The increasing connection and interdependence of countries through trade, technology and communication is called:",
+  "options": [
+   "subsistence farming",
+   "deforestation",
+   "migration",
+   "globalisation"
+  ]
+ },
+ {
+  "id": "3e3d6227-bf6c-4103-8dcd-5d7d3fa2d1dd",
+  "topic": "Resources & Sustainability",
+  "prompt": "A resource that can be replaced or replenished naturally within a short time, such as solar or wind energy, is called:",
+  "options": [
+   "a renewable resource",
+   "a non-renewable resource",
+   "a fossil fuel",
+   "a mineral resource"
+  ]
+ },
+ {
+  "id": "38439040-95eb-4a0c-9ea5-b0f35656b538",
+  "topic": "Resources & Sustainability",
+  "prompt": "Coal, oil and natural gas are examples of:",
+  "options": [
+   "renewable resources",
+   "non-renewable (fossil-fuel) resources",
+   "solar resources",
+   "wind resources"
+  ]
+ },
+ {
+  "id": "a3bc986d-eca3-4494-8e94-be68e02adcf5",
+  "topic": "Resources & Sustainability",
+  "prompt": "The removal of fertile topsoil by wind or running water is called:",
+  "options": [
+   "irrigation",
+   "afforestation",
+   "soil erosion",
+   "condensation"
+  ]
+ },
+ {
+  "id": "e1fc4552-5fc8-4b04-9a03-e2e465344435",
+  "topic": "Resources & Sustainability",
+  "prompt": "Which farming practice helps to REDUCE soil erosion on slopes?",
+  "options": [
+   "ploughing straight up and down the slope",
+   "removing all the vegetation",
+   "overgrazing the land",
+   "contour ploughing and planting cover crops"
+  ]
+ },
+ {
+  "id": "a8464b4e-c911-4fa0-888b-e5f8a7f762dc",
+  "topic": "Resources & Sustainability",
+  "prompt": "Which of the following is a renewable (non-conventional) energy source?",
+  "options": [
+   "wind power",
+   "coal",
+   "petrol",
+   "natural gas"
+  ]
+ },
+ {
+  "id": "339d7f6b-2f7e-4943-9444-9db0a622004e",
+  "topic": "Resources & Sustainability",
+  "prompt": "In South Africa, most electricity has traditionally been generated by:",
+  "options": [
+   "wind farms",
+   "burning coal",
+   "nuclear power only",
+   "solar panels"
+  ]
+ },
+ {
+  "id": "6369e977-66d4-45fa-9592-a1cd0a5e6295",
+  "topic": "Resources & Sustainability",
+  "prompt": "Using resources in a way that meets present needs without harming the ability of future generations to meet their needs is called:",
+  "options": [
+   "overexploitation",
+   "deforestation",
+   "sustainable use (sustainability)",
+   "pollution"
+  ]
+ },
+ {
+  "id": "aea37f90-4f94-46f8-9029-399c297225e5",
+  "topic": "Resources & Sustainability",
+  "prompt": "Which of the following is a major reason to conserve water in South Africa?",
+  "options": [
+   "South Africa has unlimited water",
+   "water is not needed for farming",
+   "rainfall is very high everywhere in the country",
+   "South Africa is a water-scarce country with limited, uneven rainfall"
+  ]
+ }
+]
