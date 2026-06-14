@@ -32,6 +32,7 @@ Any mismatch: fix or discard. A bank is not announced/marketed until LIVE-OK.
 | Computer Applications Technology | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-13, 48/48 fresh-context subagent solve; questions distinct from Gr12 CAT) |
 | Business Studies | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-13, 48/48 fresh-context subagent solve; questions distinct from Gr12 BS) |
 | Geography | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-14, 48/48 fresh-context subagent solve; Gr11 topics distinct from Gr12 Geography) |
+| Economics | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-14, 48/48 fresh-context subagent solve; Gr11 framing distinct from Gr12 Economics) |
 
 ## Report-a-question safety net (built 2026-06-12)
 `supabase-reports-setup.sql` adds `questions.flagged` + `question_reports` table.

@@ -1,0 +1,530 @@
+[
+ {
+  "id": "5216120a-8726-44e9-baf7-468820ce7e0e",
+  "topic": "Business Cycles",
+  "prompt": "Government policies used to smooth out the business cycle and stabilise the economy include monetary policy and:",
+  "options": [
+   "the business cycle itself",
+   "the weather",
+   "consumer fashion",
+   "fiscal policy"
+  ]
+ },
+ {
+  "id": "e3bb5d33-b514-49b2-8d97-9f699f05e09b",
+  "topic": "Money & Banking",
+  "prompt": "Which of the following is a function of money?",
+  "options": [
+   "it serves as a medium of exchange",
+   "it causes inflation",
+   "it removes the need for production",
+   "it guarantees a profit"
+  ]
+ },
+ {
+  "id": "dae0b088-2897-4003-82fb-52bcfbe57538",
+  "topic": "Money & Banking",
+  "prompt": "The central bank of South Africa, which issues banknotes and controls monetary policy, is the:",
+  "options": [
+   "Standard Bank",
+   "South African Reserve Bank (SARB)",
+   "Capitec Bank",
+   "the JSE"
+  ]
+ },
+ {
+  "id": "9385ea83-21db-415a-a059-d540baf504b7",
+  "topic": "Money & Banking",
+  "prompt": "The interest rate at which the SARB lends money to commercial banks is called the:",
+  "options": [
+   "prime rate",
+   "exchange rate",
+   "repo rate",
+   "inflation rate"
+  ]
+ },
+ {
+  "id": "27699fa0-eb21-49c6-a0b9-345bdbdbbb8e",
+  "topic": "Circular Flow & Economic Participants",
+  "prompt": "In the circular flow model, the participants that own the factors of production and supply labour are the:",
+  "options": [
+   "households",
+   "foreign sector",
+   "government",
+   "banks"
+  ]
+ },
+ {
+  "id": "48377be6-a8a8-487a-a4c4-2c3cc3056ab4",
+  "topic": "Circular Flow & Economic Participants",
+  "prompt": "Firms (businesses) in the circular flow are the participants that:",
+  "options": [
+   "only save money",
+   "produce goods and services using the factors of production",
+   "collect taxes",
+   "import all goods"
+  ]
+ },
+ {
+  "id": "b3ebb220-c34e-4e42-a66f-7bed2771c16c",
+  "topic": "Circular Flow & Economic Participants",
+  "prompt": "Which participant in the circular flow collects taxes and provides public goods and services?",
+  "options": [
+   "households",
+   "the foreign sector",
+   "the government (public sector)",
+   "commercial banks"
+  ]
+ },
+ {
+  "id": "70119beb-0e8d-4486-8312-c56c15236c66",
+  "topic": "Circular Flow & Economic Participants",
+  "prompt": "The participant that represents trade (imports and exports) with other countries is the:",
+  "options": [
+   "households",
+   "firms",
+   "government",
+   "foreign sector"
+  ]
+ },
+ {
+  "id": "23c97d07-e548-4232-a874-2dc483e5217a",
+  "topic": "Circular Flow & Economic Participants",
+  "prompt": "In the circular flow, the payments made by households to firms in exchange for goods and services are called:",
+  "options": [
+   "consumption expenditure",
+   "wages",
+   "taxes",
+   "exports"
+  ]
+ },
+ {
+  "id": "132e094e-985d-4aa0-ad88-244d024269f8",
+  "topic": "Circular Flow & Economic Participants",
+  "prompt": "The income households earn by supplying their labour to firms is called:",
+  "options": [
+   "profit",
+   "wages (salaries)",
+   "rent",
+   "interest"
+  ]
+ },
+ {
+  "id": "f0ff163d-8a39-4b59-ae42-e430146957ca",
+  "topic": "Circular Flow & Economic Participants",
+  "prompt": "'Leakages' (withdrawals) from the circular flow include:",
+  "options": [
+   "consumption spending",
+   "exports",
+   "savings, taxes and imports",
+   "household income"
+  ]
+ },
+ {
+  "id": "61f232f7-be75-467f-a6bc-472f1526fac8",
+  "topic": "Circular Flow & Economic Participants",
+  "prompt": "Money that flows back into the circular flow, such as investment, government spending and exports, is called:",
+  "options": [
+   "leakages",
+   "savings",
+   "taxes",
+   "injections"
+  ]
+ },
+ {
+  "id": "ad035134-4fdd-4309-95ec-cc641a48ba7f",
+  "topic": "Demand, Supply & Price Determination",
+  "prompt": "The law of demand states that, all else being equal, as the price of a good rises, the quantity demanded:",
+  "options": [
+   "falls (decreases)",
+   "rises",
+   "stays the same",
+   "doubles"
+  ]
+ },
+ {
+  "id": "44c8f0fd-b633-4946-b043-3c4344f3daa0",
+  "topic": "Demand, Supply & Price Determination",
+  "prompt": "The law of supply states that, all else being equal, as the price of a good rises, the quantity supplied:",
+  "options": [
+   "falls",
+   "rises (increases)",
+   "stays the same",
+   "becomes zero"
+  ]
+ },
+ {
+  "id": "81d679a5-d10b-4a66-addc-944f1e9fa386",
+  "topic": "Demand, Supply & Price Determination",
+  "prompt": "The price at which the quantity demanded equals the quantity supplied is called the:",
+  "options": [
+   "maximum price",
+   "minimum price",
+   "equilibrium price",
+   "cost price"
+  ]
+ },
+ {
+  "id": "efb5dda4-63f1-4229-b72a-c27aa00668aa",
+  "topic": "Demand, Supply & Price Determination",
+  "prompt": "If the price of a product is set ABOVE the equilibrium price, the result will be a:",
+  "options": [
+   "shortage",
+   "rise in demand",
+   "exact equilibrium",
+   "surplus (excess supply)"
+  ]
+ },
+ {
+  "id": "ca9bbcb4-e2c5-4134-9871-af5d730c5e05",
+  "topic": "Demand, Supply & Price Determination",
+  "prompt": "On a graph, the demand curve normally slopes:",
+  "options": [
+   "downward from left to right",
+   "upward from left to right",
+   "horizontally",
+   "vertically"
+  ]
+ },
+ {
+  "id": "e8ed8efd-d46c-450a-9f56-96052edae2c0",
+  "topic": "Demand, Supply & Price Determination",
+  "prompt": "The supply curve normally slopes:",
+  "options": [
+   "downward from left to right",
+   "upward from left to right",
+   "horizontally",
+   "in a circle"
+  ]
+ },
+ {
+  "id": "00d49a86-9246-49a0-974a-8ee079bd0faa",
+  "topic": "Demand, Supply & Price Determination",
+  "prompt": "If a product becomes very fashionable and popular, its demand curve will:",
+  "options": [
+   "shift to the left",
+   "disappear",
+   "shift to the right (demand increases)",
+   "become vertical"
+  ]
+ },
+ {
+  "id": "19ca54a2-b029-4735-afd0-18ff15a6a2bb",
+  "topic": "Demand, Supply & Price Determination",
+  "prompt": "A price set BELOW the equilibrium price will cause a:",
+  "options": [
+   "surplus",
+   "rise in supply",
+   "no change at all",
+   "shortage (excess demand)"
+  ]
+ },
+ {
+  "id": "021ed010-7ac8-4038-8e2e-dfe43c09b4d0",
+  "topic": "Business Cycles",
+  "prompt": "A business cycle refers to:",
+  "options": [
+   "the wavelike ups and downs in overall economic activity over time",
+   "the daily opening and closing of shops",
+   "the life cycle of a single product",
+   "the working hours of one factory"
+  ]
+ },
+ {
+  "id": "315cd8c8-12f2-4701-9e05-eaf873b6fc10",
+  "topic": "Business Cycles",
+  "prompt": "The phase of the business cycle in which economic activity is at its highest point is called the:",
+  "options": [
+   "trough",
+   "peak (boom)",
+   "recession",
+   "recovery"
+  ]
+ },
+ {
+  "id": "1f88bdc4-1d27-49d2-b260-327495b5dda3",
+  "topic": "Business Cycles",
+  "prompt": "A period of declining economic activity, often defined as two consecutive quarters of negative economic growth, is a:",
+  "options": [
+   "boom",
+   "peak",
+   "recession",
+   "recovery"
+  ]
+ },
+ {
+  "id": "bf96c7ed-e744-4a34-a7ec-4a10dceb3ffa",
+  "topic": "Business Cycles",
+  "prompt": "The lowest point of a business cycle, where economic activity is at its weakest, is the:",
+  "options": [
+   "peak",
+   "boom",
+   "expansion",
+   "trough"
+  ]
+ },
+ {
+  "id": "1d5dc1a2-c48f-4650-b2ac-5f28964adb16",
+  "topic": "Business Cycles",
+  "prompt": "During an upswing (recovery) phase of the business cycle, you would generally expect:",
+  "options": [
+   "rising production and falling unemployment",
+   "rising unemployment and falling production",
+   "no change at all",
+   "factories closing down everywhere"
+  ]
+ },
+ {
+  "id": "f601af1c-4312-48d2-8988-03e38e89caa7",
+  "topic": "Business Cycles",
+  "prompt": "Economic indicators that change BEFORE the overall economy and help to predict future activity are called:",
+  "options": [
+   "lagging indicators",
+   "leading indicators",
+   "coincident indicators",
+   "price indicators"
+  ]
+ },
+ {
+  "id": "8cf54a57-3d48-4c99-9927-69fb4e4ca61f",
+  "topic": "Business Cycles",
+  "prompt": "Economic indicators that change at roughly the same time as the overall economy are called:",
+  "options": [
+   "leading indicators",
+   "lagging indicators",
+   "coincident indicators",
+   "random indicators"
+  ]
+ },
+ {
+  "id": "9e719520-704a-46e8-9be9-cacf6266c449",
+  "topic": "Money & Banking",
+  "prompt": "The main aim of the South African Reserve Bank's monetary policy is to:",
+  "options": [
+   "maximise its own profit",
+   "set school fees",
+   "build roads and bridges",
+   "protect the value of the currency by keeping inflation low and stable"
+  ]
+ },
+ {
+  "id": "278fef96-d65a-4ec4-a227-9ab48df8bca7",
+  "topic": "Money & Banking",
+  "prompt": "'Barter' is a system of trade in which:",
+  "options": [
+   "goods and services are exchanged directly for other goods and services, without money",
+   "only coins may be used",
+   "only banks are allowed to trade",
+   "prices are never allowed to change"
+  ]
+ },
+ {
+  "id": "7a15572d-1248-412f-9e4e-86b7a8806966",
+  "topic": "Money & Banking",
+  "prompt": "When commercial banks accept deposits and grant loans, they are acting as:",
+  "options": [
+   "a central bank",
+   "financial intermediaries",
+   "the government",
+   "the foreign sector"
+  ]
+ },
+ {
+  "id": "ca938377-11ae-4441-a062-85be01a7388f",
+  "topic": "Money & Banking",
+  "prompt": "If the SARB increases the repo rate, the cost of borrowing for consumers will generally:",
+  "options": [
+   "fall",
+   "stay exactly the same",
+   "increase",
+   "become zero"
+  ]
+ },
+ {
+  "id": "17c0a51e-afbb-4325-b739-540e2daa7d03",
+  "topic": "Money & Banking",
+  "prompt": "Which of the following is a non-cash (electronic) means of payment?",
+  "options": [
+   "a R100 banknote",
+   "a R5 coin",
+   "a R20 note",
+   "a debit card or electronic transfer"
+  ]
+ },
+ {
+  "id": "523f0ee6-c3c7-4b5a-a82f-33ffe102acec",
+  "topic": "The Public Sector",
+  "prompt": "The public sector of the economy refers to:",
+  "options": [
+   "the government and state-owned enterprises",
+   "private companies only",
+   "foreign businesses only",
+   "households only"
+  ]
+ },
+ {
+  "id": "71ab1975-797e-40f1-ad2e-2dabdb836b31",
+  "topic": "The Public Sector",
+  "prompt": "A tax charged directly on the income of individuals and companies (for example PAYE) is a:",
+  "options": [
+   "value-added tax",
+   "direct tax",
+   "customs duty",
+   "excise duty"
+  ]
+ },
+ {
+  "id": "382cf2d2-f7a3-4191-b550-17b386200120",
+  "topic": "The Public Sector",
+  "prompt": "VAT (Value-Added Tax) is an example of:",
+  "options": [
+   "a direct tax on income",
+   "a tax on company profits",
+   "an indirect tax on goods and services",
+   "a tax on property only"
+  ]
+ },
+ {
+  "id": "ba924539-90f7-45fd-96c2-b9708f5a79eb",
+  "topic": "The Public Sector",
+  "prompt": "The annual statement in which the Minister of Finance sets out government's expected income and spending is the:",
+  "options": [
+   "circular flow",
+   "business cycle",
+   "supply curve",
+   "national budget"
+  ]
+ },
+ {
+  "id": "50af83c9-9765-4329-9ed9-99f0bc4ffa26",
+  "topic": "The Public Sector",
+  "prompt": "A 'public good', such as street lighting or national defence, is best described as something that is:",
+  "options": [
+   "provided by government and available to everyone, where one person's use does not reduce another's",
+   "only able to be bought by the rich",
+   "sold in shops for profit",
+   "owned privately by one person"
+  ]
+ },
+ {
+  "id": "f34572b9-779e-49c3-bcf8-516421671bdf",
+  "topic": "The Public Sector",
+  "prompt": "When government spends more money than it collects in revenue, the result is a:",
+  "options": [
+   "budget surplus",
+   "budget deficit",
+   "trade surplus",
+   "profit"
+  ]
+ },
+ {
+  "id": "d81e5022-8cfd-4249-a044-993c9e567270",
+  "topic": "The Public Sector",
+  "prompt": "The main source of revenue (income) for the South African government is:",
+  "options": [
+   "donations from other countries",
+   "lottery winnings",
+   "taxes collected by SARS",
+   "selling its head office"
+  ]
+ },
+ {
+  "id": "bdc55a6d-c894-48dc-90b5-f2d35459ede2",
+  "topic": "The Public Sector",
+  "prompt": "One important reason governments levy taxes is to:",
+  "options": [
+   "increase company profits",
+   "make money disappear",
+   "reduce the number of citizens",
+   "fund public services such as healthcare, education and infrastructure"
+  ]
+ },
+ {
+  "id": "db6df90c-5579-4e27-901d-37e8f5acbc4c",
+  "topic": "Economic Growth, Development & Indicators",
+  "prompt": "The total value of all final goods and services produced WITHIN a country's borders in a year is the:",
+  "options": [
+   "Gross Domestic Product (GDP)",
+   "inflation rate",
+   "repo rate",
+   "exchange rate"
+  ]
+ },
+ {
+  "id": "c8f47ce9-7e3d-4db0-bf18-dc9d81334ac8",
+  "topic": "Economic Growth, Development & Indicators",
+  "prompt": "'Economic growth' is best defined as:",
+  "options": [
+   "a fall in total production",
+   "an increase in a country's total production of goods and services (real GDP)",
+   "a rise in prices only",
+   "an increase in the population only"
+  ]
+ },
+ {
+  "id": "88e5a10c-65ae-4e9a-b619-08f997eddfb4",
+  "topic": "Economic Growth, Development & Indicators",
+  "prompt": "'Economic development' differs from economic growth because development also includes:",
+  "options": [
+   "only an increase in GDP",
+   "only a rise in prices",
+   "improvements in living standards, health, education and quality of life",
+   "only a larger population"
+  ]
+ },
+ {
+  "id": "30ff538b-8b82-48ac-bc3e-82ad9c59d8fb",
+  "topic": "Economic Growth, Development & Indicators",
+  "prompt": "A sustained general increase in the prices of goods and services over time is called:",
+  "options": [
+   "economic growth",
+   "deflation",
+   "a surplus",
+   "inflation"
+  ]
+ },
+ {
+  "id": "d6beb7cb-7467-4544-bb1b-33b797e73f22",
+  "topic": "Economic Growth, Development & Indicators",
+  "prompt": "Which of the following is a SOCIAL indicator of development rather than a purely economic one?",
+  "options": [
+   "the literacy rate or life expectancy",
+   "the repo rate",
+   "the exchange rate",
+   "GDP"
+  ]
+ },
+ {
+  "id": "f36f6b89-6cc2-4fdc-843f-8c5c05a74f96",
+  "topic": "Economic Growth, Development & Indicators",
+  "prompt": "The percentage of people who are able and willing to work but cannot find jobs is the:",
+  "options": [
+   "inflation rate",
+   "unemployment rate",
+   "interest rate",
+   "growth rate"
+  ]
+ },
+ {
+  "id": "33264b6a-8e7b-4b80-8655-ca86ab494333",
+  "topic": "Economic Growth, Development & Indicators",
+  "prompt": "GDP per capita is calculated by:",
+  "options": [
+   "adding GDP and the population together",
+   "subtracting taxes from GDP",
+   "dividing GDP by the total population",
+   "multiplying GDP by the inflation rate"
+  ]
+ },
+ {
+  "id": "eddd9b90-9b0f-408c-ae2c-5009ab868440",
+  "topic": "Economic Growth, Development & Indicators",
+  "prompt": "Which of the following would most likely PROMOTE economic growth in a country?",
+  "options": [
+   "closing all the factories",
+   "discouraging investment",
+   "stopping all education",
+   "investment in infrastructure, education and skills"
+  ]
+ }
+]
