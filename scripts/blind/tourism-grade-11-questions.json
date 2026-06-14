@@ -1,0 +1,530 @@
+[
+ {
+  "id": "bb85eefe-3eb5-4648-9f42-95f31ae24ef0",
+  "topic": "Tourism Sectors & the Industry",
+  "prompt": "A 'tourist' is best defined as a person who travels to and stays in a place outside their usual environment for:",
+  "options": [
+   "at least one night (more than 24 hours), for leisure, business or other purposes",
+   "less than one hour",
+   "work every single day",
+   "no particular reason at all"
+  ]
+ },
+ {
+  "id": "05193c8e-9a61-429d-9f1c-673dd0f6e6c9",
+  "topic": "Tourism Sectors & the Industry",
+  "prompt": "Which of the following is part of the ACCOMMODATION sector of the tourism industry?",
+  "options": [
+   "an airline",
+   "a guesthouse (B&B)",
+   "a car-rental company",
+   "a travel insurance company"
+  ]
+ },
+ {
+  "id": "352ebb04-4a35-48d3-9514-7a290ac615ad",
+  "topic": "Tourism Sectors & the Industry",
+  "prompt": "Airlines, buses, trains and car-rental companies all belong to which tourism sector?",
+  "options": [
+   "accommodation",
+   "food and beverage",
+   "transport",
+   "attractions"
+  ]
+ },
+ {
+  "id": "fc0a102d-88f6-4c28-88f1-e62c7015d02b",
+  "topic": "Tourism Sectors & the Industry",
+  "prompt": "A person who travels for tourism within their own country is engaging in:",
+  "options": [
+   "international tourism",
+   "outbound tourism",
+   "inbound tourism",
+   "domestic tourism"
+  ]
+ },
+ {
+  "id": "6dc77e90-f479-43ea-9eee-ab90d9fa62f9",
+  "topic": "Tourism Sectors & the Industry",
+  "prompt": "A foreign tourist visiting South Africa is an example of:",
+  "options": [
+   "inbound tourism",
+   "domestic tourism",
+   "outbound tourism",
+   "no tourism at all"
+  ]
+ },
+ {
+  "id": "b30afffd-6c41-44eb-81f2-bab6a5a370f7",
+  "topic": "Tourism Sectors & the Industry",
+  "prompt": "A travel agency mainly:",
+  "options": [
+   "builds aircraft",
+   "books and arranges travel, accommodation and tours for clients",
+   "grows food for hotels",
+   "prints passports"
+  ]
+ },
+ {
+  "id": "c5f99a37-ebf7-4fd7-b65b-c315c779063b",
+  "topic": "Tourism Sectors & the Industry",
+  "prompt": "Which of the following is an example of a 'business tourist'?",
+  "options": [
+   "a family on a beach holiday",
+   "friends visiting a game reserve for fun",
+   "a person attending a work conference in another city",
+   "a couple on honeymoon"
+  ]
+ },
+ {
+  "id": "6196b18f-0ba8-436a-8c30-4539a2e7a7c3",
+  "topic": "Tourism Sectors & the Industry",
+  "prompt": "The tourism industry is important to the South African economy mainly because it:",
+  "options": [
+   "reduces the number of jobs",
+   "uses up all natural resources",
+   "discourages foreign visitors",
+   "creates jobs and earns foreign exchange"
+  ]
+ },
+ {
+  "id": "deb2c450-39ed-450f-88dc-477225fc1c79",
+  "topic": "Map Work, Time Zones & Travel",
+  "prompt": "The starting point (0°) for measuring world time zones, running through Greenwich, is the:",
+  "options": [
+   "Prime Meridian",
+   "Equator",
+   "Tropic of Cancer",
+   "International Date Line"
+  ]
+ },
+ {
+  "id": "28a86e9b-7fc9-44f6-a79d-de47bf9beda3",
+  "topic": "Map Work, Time Zones & Travel",
+  "prompt": "South African Standard Time is:",
+  "options": [
+   "GMT (the same as Greenwich)",
+   "GMT + 2 hours",
+   "GMT − 5 hours",
+   "GMT + 10 hours"
+  ]
+ },
+ {
+  "id": "8f7a8bc2-005d-411d-8805-02fa191dbd2d",
+  "topic": "Map Work, Time Zones & Travel",
+  "prompt": "As you travel EAST across the world, time generally:",
+  "options": [
+   "goes backward (becomes earlier)",
+   "stays exactly the same",
+   "goes forward (becomes later)",
+   "stops completely"
+  ]
+ },
+ {
+  "id": "3a2e2f63-589a-472d-a35d-3a9b443b7e9f",
+  "topic": "Map Work, Time Zones & Travel",
+  "prompt": "The imaginary line at roughly 180° longitude, where the calendar date changes by one day, is the:",
+  "options": [
+   "Prime Meridian",
+   "Equator",
+   "Tropic of Capricorn",
+   "International Date Line"
+  ]
+ },
+ {
+  "id": "e9c3e476-ebd6-4b67-b3bb-f8d0d9af6657",
+  "topic": "Map Work, Time Zones & Travel",
+  "prompt": "If it is 12:00 (noon) GMT in London, the time in South Africa (GMT + 2) is:",
+  "options": [
+   "14:00",
+   "10:00",
+   "12:00",
+   "16:00"
+  ]
+ },
+ {
+  "id": "0f745180-47dd-4445-9188-7baf8697b87d",
+  "topic": "Map Work, Time Zones & Travel",
+  "prompt": "Which travel document is an official booklet, issued by your government, that proves your identity and nationality when travelling internationally?",
+  "options": [
+   "a boarding pass",
+   "a passport",
+   "a hotel voucher",
+   "a credit card"
+  ]
+ },
+ {
+  "id": "8c20046e-e14b-42ca-9071-b9cf6952dfe7",
+  "topic": "Map Work, Time Zones & Travel",
+  "prompt": "An official endorsement placed in a passport that gives permission to enter a particular foreign country is a:",
+  "options": [
+   "boarding pass",
+   "loyalty card",
+   "visa",
+   "luggage tag"
+  ]
+ },
+ {
+  "id": "11f67fdc-e3d7-4acb-ac64-2776454f467c",
+  "topic": "Map Work, Time Zones & Travel",
+  "prompt": "'Jet lag' is a condition experienced by travellers who:",
+  "options": [
+   "drive a short distance",
+   "walk to a nearby town",
+   "stay at home",
+   "fly quickly across several time zones"
+  ]
+ },
+ {
+  "id": "c3a319ab-44a6-4bfb-8592-3b3df32cbc0e",
+  "topic": "Foreign Exchange",
+  "prompt": "'Foreign exchange' refers to:",
+  "options": [
+   "the currency of other countries (foreign money)",
+   "exchanging old clothes",
+   "swapping passports",
+   "a type of aircraft"
+  ]
+ },
+ {
+  "id": "68eea61c-a562-48b9-9db3-0bb0c0c31193",
+  "topic": "Foreign Exchange",
+  "prompt": "The official currency of South Africa is the:",
+  "options": [
+   "US dollar",
+   "rand",
+   "euro",
+   "pound"
+  ]
+ },
+ {
+  "id": "80bb1a01-06fe-457a-b4d4-a7b374357adf",
+  "topic": "Foreign Exchange",
+  "prompt": "If 1 US dollar = R18, then to buy goods costing US$100 you would need:",
+  "options": [
+   "R18",
+   "R118",
+   "R1 800",
+   "R100"
+  ]
+ },
+ {
+  "id": "b907b465-f90f-44df-ba5e-8f50c82beab9",
+  "topic": "Foreign Exchange",
+  "prompt": "When a foreign tourist arrives in South Africa, they will usually need to:",
+  "options": [
+   "keep using only their own currency in all shops",
+   "post their money back home",
+   "avoid spending any money",
+   "exchange their foreign currency for rands"
+  ]
+ },
+ {
+  "id": "05700ff6-ceee-4033-9026-dbe0134d0142",
+  "topic": "Foreign Exchange",
+  "prompt": "If the rand WEAKENS against the US dollar (for example from R18 to R20 per dollar), then for tourists holding US dollars, South Africa becomes:",
+  "options": [
+   "cheaper to visit, because their dollars buy more rands",
+   "more expensive to visit",
+   "impossible to visit",
+   "exactly the same price"
+  ]
+ },
+ {
+  "id": "9173ba9c-c345-4377-96f3-99f952e2aba6",
+  "topic": "Foreign Exchange",
+  "prompt": "A South African travelling overseas who needs foreign currency would typically obtain it from:",
+  "options": [
+   "a supermarket till",
+   "a bank or a registered bureau de change",
+   "a petrol station",
+   "a post-office stamp counter"
+  ]
+ },
+ {
+  "id": "d4a74d52-5cb1-4cfc-a69e-41ef43cf4fc0",
+  "topic": "Foreign Exchange",
+  "prompt": "A traveller exchanges R10 000 into US dollars at a rate of R20 = US$1. How many dollars do they receive (ignoring fees)?",
+  "options": [
+   "US$200 000",
+   "US$2 000",
+   "US$500",
+   "US$200"
+  ]
+ },
+ {
+  "id": "544b7391-c0a8-4e86-9264-74264babeee1",
+  "topic": "Foreign Exchange",
+  "prompt": "The official currency used in most countries of the European Union is the:",
+  "options": [
+   "rand",
+   "dollar",
+   "yen",
+   "euro"
+  ]
+ },
+ {
+  "id": "df948f27-d195-4df1-82fe-1b0573266720",
+  "topic": "Tourism Attractions (World & SA Icons)",
+  "prompt": "Table Mountain, a famous flat-topped mountain and a New7Wonder of Nature, overlooks which South African city?",
+  "options": [
+   "Cape Town",
+   "Durban",
+   "Johannesburg",
+   "Bloemfontein"
+  ]
+ },
+ {
+  "id": "43e3fcb3-cc7f-4b99-8462-537af54f47c6",
+  "topic": "Tourism Attractions (World & SA Icons)",
+  "prompt": "The Eiffel Tower, a world-famous iron tower and tourist icon, is located in:",
+  "options": [
+   "London",
+   "Paris (France)",
+   "Rome",
+   "New York"
+  ]
+ },
+ {
+  "id": "bef0744e-458e-401b-a767-c255504e8446",
+  "topic": "Tourism Attractions (World & SA Icons)",
+  "prompt": "The Kruger National Park, one of Africa's largest game reserves, is especially famous for viewing the:",
+  "options": [
+   "Northern Lights",
+   "Great Barrier Reef",
+   "Big Five animals",
+   "Egyptian pyramids"
+  ]
+ },
+ {
+  "id": "672a75f5-e74f-4cb0-8753-0f0fb176bc5b",
+  "topic": "Tourism Attractions (World & SA Icons)",
+  "prompt": "The Statue of Liberty, a famous tourist landmark, is found in which city?",
+  "options": [
+   "Paris",
+   "London",
+   "Cape Town",
+   "New York (USA)"
+  ]
+ },
+ {
+  "id": "2f9fb4ee-3762-4d8e-ad77-afda03a20dc3",
+  "topic": "Tourism Attractions (World & SA Icons)",
+  "prompt": "The Victoria Falls, one of the world's largest waterfalls, lies on the border between Zambia and:",
+  "options": [
+   "Zimbabwe",
+   "Egypt",
+   "Kenya",
+   "Nigeria"
+  ]
+ },
+ {
+  "id": "85888db4-76f3-417f-b6df-15d51a251f95",
+  "topic": "Tourism Attractions (World & SA Icons)",
+  "prompt": "The Great Pyramids of Giza, an ancient world icon, are located in:",
+  "options": [
+   "South Africa",
+   "Egypt",
+   "Greece",
+   "India"
+  ]
+ },
+ {
+  "id": "20d19903-9361-4558-9cf8-9cff60626d76",
+  "topic": "Tourism Attractions (World & SA Icons)",
+  "prompt": "Robben Island, a World Heritage Site near Cape Town, is best known as the place where:",
+  "options": [
+   "the 2010 World Cup final was held",
+   "the Eiffel Tower stands",
+   "Nelson Mandela was imprisoned",
+   "gold was first discovered"
+  ]
+ },
+ {
+  "id": "286728cf-30b2-4205-9e49-09c141aeb655",
+  "topic": "Tourism Attractions (World & SA Icons)",
+  "prompt": "The Taj Mahal, a white marble mausoleum and famous world icon, is located in:",
+  "options": [
+   "Brazil",
+   "Australia",
+   "South Africa",
+   "India"
+  ]
+ },
+ {
+  "id": "a4209aed-0283-41c8-8adb-37e6c869c076",
+  "topic": "Responsible & Sustainable Tourism",
+  "prompt": "'Sustainable tourism' means tourism that:",
+  "options": [
+   "meets present needs without harming the ability of future generations to enjoy the same resources",
+   "uses up all the resources as quickly as possible",
+   "completely ignores the environment",
+   "only ever benefits the tourists"
+  ]
+ },
+ {
+  "id": "cc7d5c66-072a-4da0-8634-5f61d595ce81",
+  "topic": "Responsible & Sustainable Tourism",
+  "prompt": "The 'triple bottom line' of responsible tourism refers to balancing:",
+  "options": [
+   "only profit",
+   "people (social), planet (environmental) and profit (economic)",
+   "only the environment",
+   "only the tourists' comfort"
+  ]
+ },
+ {
+  "id": "444d9450-0a87-4dea-8331-9642b2dfebda",
+  "topic": "Responsible & Sustainable Tourism",
+  "prompt": "Which of the following is an example of ENVIRONMENTALLY responsible tourism?",
+  "options": [
+   "littering at a beach",
+   "leaving taps running in a hotel",
+   "reducing water use and not littering in a nature reserve",
+   "driving off-road through fragile sand dunes"
+  ]
+ },
+ {
+  "id": "054c55d6-13e0-42dc-8ee1-4fb8417bcb29",
+  "topic": "Responsible & Sustainable Tourism",
+  "prompt": "Buying locally made crafts and using local guides is an example of responsible tourism that provides:",
+  "options": [
+   "environmental benefits only",
+   "no real responsibility",
+   "harm to local communities",
+   "economic and social benefits to local communities"
+  ]
+ },
+ {
+  "id": "387396ee-8f20-4692-a3cb-cf46bf3daa8a",
+  "topic": "Responsible & Sustainable Tourism",
+  "prompt": "'Ecotourism' is best described as:",
+  "options": [
+   "responsible travel to natural areas that conserves the environment and benefits local people",
+   "building large factories in nature reserves",
+   "mass tourism with no rules at all",
+   "tourism that pollutes rivers and lakes"
+  ]
+ },
+ {
+  "id": "23601e28-8a17-46b8-970e-d1814aea07ce",
+  "topic": "Responsible & Sustainable Tourism",
+  "prompt": "Which action by a hotel would BEST reduce its impact on the environment?",
+  "options": [
+   "leaving all the lights on overnight",
+   "using solar power and recycling waste",
+   "wasting food every day",
+   "dumping sewage into a nearby river"
+  ]
+ },
+ {
+  "id": "3598fc18-59db-49f8-b982-27e6d30f1dee",
+  "topic": "Responsible & Sustainable Tourism",
+  "prompt": "A benefit of responsible tourism for a local community is that it:",
+  "options": [
+   "forces people to move away",
+   "destroys the local culture",
+   "creates jobs and supports local businesses",
+   "increases pollution in the area"
+  ]
+ },
+ {
+  "id": "390e9c58-4037-4519-a3c1-39749c944e57",
+  "topic": "Responsible & Sustainable Tourism",
+  "prompt": "The 'carrying capacity' of a tourist attraction refers to:",
+  "options": [
+   "how much luggage a tourist may bring",
+   "the price of entry to the site",
+   "the number of staff employed there",
+   "the maximum number of visitors a site can handle without being damaged"
+  ]
+ },
+ {
+  "id": "a1fff12e-6211-46a1-ac88-d7a12281402d",
+  "topic": "Customer Care & Professionalism",
+  "prompt": "Good customer service in tourism means:",
+  "options": [
+   "meeting and exceeding customers' needs in a friendly, helpful way",
+   "ignoring customers' complaints",
+   "being rude to tourists",
+   "overcharging the customers"
+  ]
+ },
+ {
+  "id": "0107f973-6868-4646-ae34-c3a197d61150",
+  "topic": "Customer Care & Professionalism",
+  "prompt": "When a tourist makes a complaint, a professional employee should:",
+  "options": [
+   "argue with the tourist",
+   "listen carefully, apologise and try to solve the problem",
+   "ignore the tourist completely",
+   "blame the tourist for the problem"
+  ]
+ },
+ {
+  "id": "525259de-e448-4da5-9cb2-5a96a9a88a91",
+  "topic": "Customer Care & Professionalism",
+  "prompt": "Which of the following shows professional behaviour by a tour guide?",
+  "options": [
+   "arriving late and unprepared",
+   "being dishonest with the guests",
+   "being punctual, knowledgeable and well-groomed",
+   "ignoring the group's questions"
+  ]
+ },
+ {
+  "id": "40935ee4-b20c-4afa-be22-ff816718548c",
+  "topic": "Customer Care & Professionalism",
+  "prompt": "'Verbal communication' with a tourist is shown by:",
+  "options": [
+   "body language only",
+   "a written email",
+   "a printed brochure",
+   "speaking clearly and politely to the tourist"
+  ]
+ },
+ {
+  "id": "4e50e4d9-48e5-43b3-8073-e7189e93e319",
+  "topic": "Customer Care & Professionalism",
+  "prompt": "An example of effective NON-VERBAL communication is:",
+  "options": [
+   "smiling and making eye contact",
+   "shouting loudly",
+   "speaking very quickly",
+   "writing a long letter"
+  ]
+ },
+ {
+  "id": "5aa0eddb-34cc-4492-86ef-d882a3ea15fa",
+  "topic": "Customer Care & Professionalism",
+  "prompt": "Being aware of and respecting the different customs of international tourists is known as:",
+  "options": [
+   "ignoring them",
+   "cultural sensitivity (awareness)",
+   "being unprofessional",
+   "giving poor service"
+  ]
+ },
+ {
+  "id": "0a790369-6fb2-4225-97aa-2610b9a5c5ab",
+  "topic": "Customer Care & Professionalism",
+  "prompt": "The main reason businesses aim to provide excellent customer service is that satisfied customers:",
+  "options": [
+   "never come back again",
+   "tell others nothing about the business",
+   "return and recommend the business to others",
+   "always demand refunds"
+  ]
+ },
+ {
+  "id": "17c1a813-5849-4215-a6a5-8daf88430b4c",
+  "topic": "Customer Care & Professionalism",
+  "prompt": "A professional appearance for a tourism employee includes:",
+  "options": [
+   "an untidy, dirty uniform",
+   "chewing gum while talking to guests",
+   "ignoring personal hygiene",
+   "a clean, neat uniform and good personal hygiene"
+  ]
+ }
+]
