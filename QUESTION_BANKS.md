@@ -47,6 +47,7 @@ Any mismatch: fix or discard. A bank is not announced/marketed until LIVE-OK.
 | Business Studies | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; topics fully distinct from Gr11 — creative thinking, self-management, stakeholders, SWOT, business plan, ethics) |
 | Geography | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; topics fully distinct from Gr11 — mapwork, Earth structure & plate tectonics, folding/faulting/quakes/volcanoes, population, water cycle, settlements) |
 | Tourism | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; topics distinct from Gr11 — concepts/travel reasons, SA provinces, SA heritage, travel docs/health, marketing, economic importance) |
+| Accounting | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; foundational topics distinct from Gr11 — accounting equation, source documents & journals, general ledger & trial balance, sole-trader financial statements, debtors & creditors, salaries/wages/ethics) |
 
 ## Report-a-question safety net (built 2026-06-12)
 `supabase-reports-setup.sql` adds `questions.flagged` + `question_reports` table.

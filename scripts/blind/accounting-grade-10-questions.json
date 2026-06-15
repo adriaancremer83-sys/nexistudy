@@ -1,0 +1,530 @@
+[
+ {
+  "id": "abfac916-3b22-4dcc-abf3-c1bb4524335a",
+  "topic": "Source Documents & Subsidiary Journals",
+  "prompt": "Goods sold on credit are recorded in the:",
+  "options": [
+   "Cash Receipts Journal",
+   "Creditors Journal",
+   "Cash Payments Journal",
+   "Debtors Journal"
+  ]
+ },
+ {
+  "id": "fd078d91-f8dd-498a-99c5-080f4fd8b1dd",
+  "topic": "The Accounting Equation",
+  "prompt": "The basic accounting equation is:",
+  "options": [
+   "Assets = Owner's Equity + Liabilities",
+   "Assets = Owner's Equity − Liabilities",
+   "Assets + Owner's Equity = Liabilities",
+   "Liabilities = Assets + Owner's Equity"
+  ]
+ },
+ {
+  "id": "a22b610c-50de-40bb-87dd-81d1535dc7cf",
+  "topic": "The Accounting Equation",
+  "prompt": "The owner deposits R50 000 of her own money into the business bank account as capital. The effect on the accounting equation is:",
+  "options": [
+   "assets decrease and liabilities increase",
+   "assets increase and owner's equity increases",
+   "owner's equity decreases and liabilities increase",
+   "assets stay the same and liabilities decrease"
+  ]
+ },
+ {
+  "id": "27e33863-8f59-4ef7-ae18-22a99d2d59c3",
+  "topic": "The Accounting Equation",
+  "prompt": "A business buys equipment for R10 000 and pays by EFT. The effect on the accounting equation is that:",
+  "options": [
+   "total assets increase by R10 000",
+   "liabilities increase by R10 000",
+   "one asset (equipment) increases and another asset (bank) decreases, so total assets stay the same",
+   "owner's equity increases by R10 000"
+  ]
+ },
+ {
+  "id": "04907af2-11d7-43bb-ba93-5b1be26aec25",
+  "topic": "The Accounting Equation",
+  "prompt": "A business buys a vehicle on credit for R80 000. The effect on the accounting equation is that:",
+  "options": [
+   "assets decrease and owner's equity decreases",
+   "owner's equity increases and liabilities decrease",
+   "total assets stay the same",
+   "assets increase and liabilities increase"
+  ]
+ },
+ {
+  "id": "bbc7e182-c3fc-4945-a19a-4f7dcecc2199",
+  "topic": "The Accounting Equation",
+  "prompt": "A business has assets of R150 000 and liabilities of R40 000. The owner's equity is:",
+  "options": [
+   "R110 000",
+   "R190 000",
+   "R40 000",
+   "R150 000"
+  ]
+ },
+ {
+  "id": "6b598194-83b3-40af-bf8f-57d015c6f77f",
+  "topic": "The Accounting Equation",
+  "prompt": "A business has owner's equity of R200 000 and liabilities of R60 000. Its total assets are:",
+  "options": [
+   "R140 000",
+   "R260 000",
+   "R200 000",
+   "R60 000"
+  ]
+ },
+ {
+  "id": "f749704d-9465-4078-b06f-40f295675947",
+  "topic": "The Accounting Equation",
+  "prompt": "The owner takes R2 000 cash out of the business for personal use (drawings). The effect on the accounting equation is that:",
+  "options": [
+   "assets increase and owner's equity increases",
+   "liabilities decrease and assets increase",
+   "assets decrease and owner's equity decreases",
+   "there is no effect on the accounting equation"
+  ]
+ },
+ {
+  "id": "53eb5cd5-e6f8-4ede-8eb1-656c674986e5",
+  "topic": "The Accounting Equation",
+  "prompt": "A business pays a creditor R5 000 by EFT. The effect on the accounting equation is that:",
+  "options": [
+   "assets increase and liabilities increase",
+   "owner's equity decreases and assets increase",
+   "liabilities increase and owner's equity decreases",
+   "assets (bank) decrease and liabilities (creditors) decrease"
+  ]
+ },
+ {
+  "id": "5e9f68e6-ae6b-45ef-943b-9fc704446787",
+  "topic": "Source Documents & Subsidiary Journals",
+  "prompt": "A source document is:",
+  "options": [
+   "a journal used to record sales",
+   "the owner's personal bank card",
+   "written proof that a transaction took place",
+   "a summary of all the accounts in the ledger"
+  ]
+ },
+ {
+  "id": "aca0c3c2-f770-4e36-bee6-63647e71b686",
+  "topic": "Source Documents & Subsidiary Journals",
+  "prompt": "The source document a business issues when it sells goods on credit is a(n):",
+  "options": [
+   "invoice",
+   "receipt",
+   "cheque counterfoil",
+   "deposit slip"
+  ]
+ },
+ {
+  "id": "7fa995a6-f575-40bf-9250-6909eda4a330",
+  "topic": "Source Documents & Subsidiary Journals",
+  "prompt": "Cash sales of goods are recorded in the:",
+  "options": [
+   "Creditors Journal",
+   "Debtors Journal",
+   "General Journal",
+   "Cash Receipts Journal"
+  ]
+ },
+ {
+  "id": "7791c175-d60a-467d-8cb9-1eaa346741b5",
+  "topic": "Source Documents & Subsidiary Journals",
+  "prompt": "Goods bought on credit from a supplier are recorded in the:",
+  "options": [
+   "Cash Payments Journal",
+   "Creditors Journal",
+   "Debtors Journal",
+   "Cash Receipts Journal"
+  ]
+ },
+ {
+  "id": "fec33ea6-ace0-4f12-8510-57c419d7d68a",
+  "topic": "Source Documents & Subsidiary Journals",
+  "prompt": "A receipt is a source document that serves as proof of:",
+  "options": [
+   "goods sold on credit",
+   "goods returned by a customer",
+   "cash received",
+   "a credit purchase"
+  ]
+ },
+ {
+  "id": "90951fe9-0086-4cd4-8db1-352279edb683",
+  "topic": "Source Documents & Subsidiary Journals",
+  "prompt": "When a debtor returns goods previously bought on credit, the business issues a:",
+  "options": [
+   "credit note",
+   "debit note",
+   "receipt",
+   "cheque"
+  ]
+ },
+ {
+  "id": "fe777412-7d18-4ddb-8e3a-c8207e7465d1",
+  "topic": "Source Documents & Subsidiary Journals",
+  "prompt": "The monthly rent paid by EFT is recorded in the:",
+  "options": [
+   "Cash Receipts Journal",
+   "Cash Payments Journal",
+   "Debtors Journal",
+   "General Journal"
+  ]
+ },
+ {
+  "id": "89613372-d343-430d-a6d4-810953abb74d",
+  "topic": "General Ledger & Trial Balance",
+  "prompt": "In the General Ledger, asset and expense accounts are increased on the:",
+  "options": [
+   "debit side",
+   "credit side",
+   "income side",
+   "balance side"
+  ]
+ },
+ {
+  "id": "c8c040d7-325c-4213-8ee7-8030b2e0ab5f",
+  "topic": "General Ledger & Trial Balance",
+  "prompt": "Owner's equity, income and liability accounts increase on the:",
+  "options": [
+   "debit side",
+   "asset side",
+   "expense side",
+   "credit side"
+  ]
+ },
+ {
+  "id": "b2c90551-bd2f-40d7-8313-d85cea24b0e2",
+  "topic": "General Ledger & Trial Balance",
+  "prompt": "A Trial Balance is prepared mainly to:",
+  "options": [
+   "calculate the net profit",
+   "check that total debits equal total credits",
+   "list the business's customers",
+   "show the cash budget for next month"
+  ]
+ },
+ {
+  "id": "0b277a98-13b8-4709-bb5c-2fa7d68b7aa6",
+  "topic": "General Ledger & Trial Balance",
+  "prompt": "An account has a debit total of R8 000 and a credit total of R3 000. Its closing balance is:",
+  "options": [
+   "R11 000 credit",
+   "R3 000 debit",
+   "R5 000 debit",
+   "R5 000 credit"
+  ]
+ },
+ {
+  "id": "dc2b63b3-d6bd-4be7-b940-94524ef92e78",
+  "topic": "General Ledger & Trial Balance",
+  "prompt": "The Capital account normally has a:",
+  "options": [
+   "credit balance",
+   "debit balance",
+   "nil balance",
+   "stock balance"
+  ]
+ },
+ {
+  "id": "ffbe1761-12dd-4b4a-b2f2-55536e2ac2ca",
+  "topic": "General Ledger & Trial Balance",
+  "prompt": "Which of the following accounts would have a debit balance?",
+  "options": [
+   "Capital",
+   "Loan from bank",
+   "Sales",
+   "Equipment"
+  ]
+ },
+ {
+  "id": "2bcd136f-376b-4ec2-8afd-493433126a0f",
+  "topic": "General Ledger & Trial Balance",
+  "prompt": "If the totals of a Trial Balance do not agree, it means that:",
+  "options": [
+   "the business made a loss",
+   "there is an error in the recording or posting",
+   "the business is bankrupt",
+   "no transactions took place"
+  ]
+ },
+ {
+  "id": "347c6a75-cb1f-4b62-819c-d7c618c0b20d",
+  "topic": "General Ledger & Trial Balance",
+  "prompt": "The Vehicles account would appear in the Trial Balance as a:",
+  "options": [
+   "credit, because it is income",
+   "credit, because it is a liability",
+   "debit, because it is an asset",
+   "debit, because it is income"
+  ]
+ },
+ {
+  "id": "7041fd38-bbb0-485c-89eb-67049c889d01",
+  "topic": "Financial Statements of a Sole Trader",
+  "prompt": "Gross profit is calculated as:",
+  "options": [
+   "sales − operating expenses",
+   "sales − cost of sales",
+   "net profit + drawings",
+   "assets − liabilities"
+  ]
+ },
+ {
+  "id": "d5385a38-8860-404d-add7-2aef0d23981e",
+  "topic": "Financial Statements of a Sole Trader",
+  "prompt": "Sales were R200 000 and the cost of sales was R120 000. The gross profit is:",
+  "options": [
+   "R80 000",
+   "R320 000",
+   "R120 000",
+   "R200 000"
+  ]
+ },
+ {
+  "id": "49234bab-0db3-49df-b539-a95044111dc6",
+  "topic": "Financial Statements of a Sole Trader",
+  "prompt": "Gross profit is R80 000 and total operating expenses are R50 000 (with no other income). The net profit is:",
+  "options": [
+   "R130 000",
+   "R50 000",
+   "R30 000",
+   "R80 000"
+  ]
+ },
+ {
+  "id": "080aaad3-04fd-4e84-bb1a-1b0c68eb0c7d",
+  "topic": "Financial Statements of a Sole Trader",
+  "prompt": "The financial statement that shows a business's assets, owner's equity and liabilities on a specific date is the:",
+  "options": [
+   "Trading account",
+   "Cash budget",
+   "Statement of Comprehensive Income (Income Statement)",
+   "Statement of Financial Position (Balance Sheet)"
+  ]
+ },
+ {
+  "id": "6f4eec01-55ef-46f2-af3e-d896ff7999be",
+  "topic": "Financial Statements of a Sole Trader",
+  "prompt": "Which of the following is a current asset?",
+  "options": [
+   "land and buildings",
+   "trading stock (inventory)",
+   "a long-term loan",
+   "equipment"
+  ]
+ },
+ {
+  "id": "1aab43ef-e0fe-4d0a-9bd3-6aa6e0e93b0d",
+  "topic": "Financial Statements of a Sole Trader",
+  "prompt": "Which of the following is a non-current (fixed) asset?",
+  "options": [
+   "vehicles",
+   "bank",
+   "debtors",
+   "trading stock"
+  ]
+ },
+ {
+  "id": "09b4d896-7958-41f1-a552-6561e96732cc",
+  "topic": "Financial Statements of a Sole Trader",
+  "prompt": "The Statement of Comprehensive Income (Income Statement) is prepared to determine the:",
+  "options": [
+   "amount of cash in the bank",
+   "list of debtors",
+   "profit or loss for the year",
+   "value of the fixed assets only"
+  ]
+ },
+ {
+  "id": "0a74b181-d56c-4df3-8bae-d3c9adf9cf3a",
+  "topic": "Financial Statements of a Sole Trader",
+  "prompt": "The cost of sales was R120 000 and the goods were sold for R180 000. The profit (mark-up) expressed as a percentage of cost of sales is:",
+  "options": [
+   "33,3%",
+   "60%",
+   "120%",
+   "50%"
+  ]
+ },
+ {
+  "id": "96d63ca6-edae-4a35-acf0-f5e8a6b01ff0",
+  "topic": "Debtors & Creditors",
+  "prompt": "A 'debtor' is a person or business that:",
+  "options": [
+   "the business owes money to",
+   "pays cash immediately",
+   "supplies goods on credit to the business",
+   "owes money to the business"
+  ]
+ },
+ {
+  "id": "8139780b-5304-4eb4-85e6-241e760ff920",
+  "topic": "Debtors & Creditors",
+  "prompt": "A 'creditor' is a person or business that:",
+  "options": [
+   "owes money to the business",
+   "the business owes money to",
+   "buys goods for cash only",
+   "is a customer paying cash"
+  ]
+ },
+ {
+  "id": "95516dbd-939c-4d4d-b0cc-f909f29a2249",
+  "topic": "Debtors & Creditors",
+  "prompt": "A debtor settles an account of R1 000 and is allowed a 5% discount for paying early. The amount of cash received by the business is:",
+  "options": [
+   "R950",
+   "R1 050",
+   "R50",
+   "R1 000"
+  ]
+ },
+ {
+  "id": "adee4c91-5cb5-4344-8f92-58207c43d523",
+  "topic": "Debtors & Creditors",
+  "prompt": "The Debtors Control account in the General Ledger normally has a:",
+  "options": [
+   "credit balance",
+   "nil balance",
+   "debit balance",
+   "loan balance"
+  ]
+ },
+ {
+  "id": "67b60574-c254-4c15-bda9-ac7f97be6914",
+  "topic": "Debtors & Creditors",
+  "prompt": "A business buys trading stock and pays for it immediately by EFT. This is recorded in the:",
+  "options": [
+   "Debtors Journal",
+   "Creditors Journal",
+   "General Journal",
+   "Cash Payments Journal"
+  ]
+ },
+ {
+  "id": "743ecb7f-0bf2-4517-9c1b-d58e9583fa2a",
+  "topic": "Debtors & Creditors",
+  "prompt": "At the start of the month a debtor owed R800. During the month the debtor bought a further R500 on credit and paid R300. At month-end the debtor owes:",
+  "options": [
+   "R600",
+   "R1 000",
+   "R1 300",
+   "R800"
+  ]
+ },
+ {
+  "id": "000b9668-a2ca-4e74-a821-2cd45c4acbc8",
+  "topic": "Debtors & Creditors",
+  "prompt": "Offering customers a cash (settlement) discount is mainly intended to encourage them to:",
+  "options": [
+   "pay their accounts early",
+   "never pay at all",
+   "buy on credit only",
+   "return their goods"
+  ]
+ },
+ {
+  "id": "3888fbe9-3532-412a-acc5-cac8c1ab34a6",
+  "topic": "Debtors & Creditors",
+  "prompt": "The Creditors Control account in the General Ledger normally has a:",
+  "options": [
+   "debit balance",
+   "nil balance",
+   "credit balance",
+   "asset balance"
+  ]
+ },
+ {
+  "id": "1feccca8-44f3-47cf-8564-08ceaf6fbdb4",
+  "topic": "Salaries, Wages & Accounting Ethics",
+  "prompt": "'Gross pay' (gross salary) is:",
+  "options": [
+   "the amount paid after deductions",
+   "only the annual bonus",
+   "the total amount earned before any deductions",
+   "the tax paid over to SARS"
+  ]
+ },
+ {
+  "id": "b665bf0f-4462-486c-bcb4-c0a24a16f6a8",
+  "topic": "Salaries, Wages & Accounting Ethics",
+  "prompt": "Net pay is calculated as:",
+  "options": [
+   "gross pay + total deductions",
+   "total deductions − gross pay",
+   "gross pay × the tax rate",
+   "gross pay − total deductions"
+  ]
+ },
+ {
+  "id": "434f0087-6d55-4bd6-ac53-661547552e8b",
+  "topic": "Salaries, Wages & Accounting Ethics",
+  "prompt": "Which of the following is a compulsory deduction from an employee's salary?",
+  "options": [
+   "PAYE (income tax)",
+   "a loan to a friend",
+   "a personal grocery bill",
+   "a cellphone contract"
+  ]
+ },
+ {
+  "id": "8473c731-df44-43d3-9543-867c3e312aca",
+  "topic": "Salaries, Wages & Accounting Ethics",
+  "prompt": "'UIF' stands for:",
+  "options": [
+   "United Income Fund",
+   "Unemployment Insurance Fund",
+   "Universal Investment Finance",
+   "Union Industrial Fee"
+  ]
+ },
+ {
+  "id": "af9f46db-39cd-4d60-8ae0-2cc7880cde0c",
+  "topic": "Salaries, Wages & Accounting Ethics",
+  "prompt": "An employee earns a gross salary of R15 000. Deductions are PAYE R2 000 and UIF R150. The net pay is:",
+  "options": [
+   "R17 150",
+   "R13 000",
+   "R12 850",
+   "R15 000"
+  ]
+ },
+ {
+  "id": "28d318e8-b95c-48dc-944b-e1011d1fa835",
+  "topic": "Salaries, Wages & Accounting Ethics",
+  "prompt": "An employee's UIF contribution is 1% of gross salary. On a gross salary of R20 000, the employee's UIF contribution is:",
+  "options": [
+   "R2 000",
+   "R20",
+   "R2",
+   "R200"
+  ]
+ },
+ {
+  "id": "87f9589c-6bcd-4b7e-8d37-b534463becd0",
+  "topic": "Salaries, Wages & Accounting Ethics",
+  "prompt": "A 'wage' usually differs from a 'salary' in that a wage is:",
+  "options": [
+   "usually paid weekly and often based on hours worked or output",
+   "always paid once a year",
+   "paid only to senior managers",
+   "never recorded in the books"
+  ]
+ },
+ {
+  "id": "cc4dcd0f-3922-4eaf-923f-9be2f04e4282",
+  "topic": "Salaries, Wages & Accounting Ethics",
+  "prompt": "The requirement that financial information must be truthful, accurate and free from error reflects the accounting principle of:",
+  "options": [
+   "making the maximum possible profit",
+   "honesty and reliability in financial reporting",
+   "hiding losses from the owner",
+   "paying as little tax as possible"
+  ]
+ }
+]
