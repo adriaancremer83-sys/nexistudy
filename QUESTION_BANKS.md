@@ -36,6 +36,7 @@ Any mismatch: fix or discard. A bank is not announced/marketed until LIVE-OK.
 | Tourism | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-14, 48/48 fresh-context subagent solve incl. computed time-zone & forex; distinct from Gr12 Tourism) |
 | Consumer Studies | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; topics distinct from Gr12 Consumer Studies) |
 | Agricultural Sciences | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; Gr11 leans soil/plant/ecology, distinct from animal-focused Gr12) |
+| Information Technology | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; blind solve caught + fixed a mis-keyed application-software question; pitched below Gr12 IT) |
 
 ## Report-a-question safety net (built 2026-06-12)
 `supabase-reports-setup.sql` adds `questions.flagged` + `question_reports` table.

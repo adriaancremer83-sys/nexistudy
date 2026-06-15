@@ -1,0 +1,530 @@
+[
+ {
+  "id": "cefe314c-7d60-4454-aa2d-5857deb80451",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "A single binary digit, which can be either 0 or 1, is called a:",
+  "options": [
+   "bit",
+   "byte",
+   "pixel",
+   "field"
+  ]
+ },
+ {
+  "id": "735d9171-8ccd-40f6-a9cc-2ebe809474d9",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "How many bits make up one byte?",
+  "options": [
+   "4",
+   "8",
+   "16",
+   "32"
+  ]
+ },
+ {
+  "id": "86f27cc9-38dc-4b51-8367-eb959b51a9e1",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "What is the denary (decimal) value of the binary number 0110?",
+  "options": [
+   "3",
+   "5",
+   "6",
+   "9"
+  ]
+ },
+ {
+  "id": "15ace62d-0dac-4fe7-a2bc-4ecf364fcd44",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "Which of the following lists storage units in order from SMALLEST to LARGEST?",
+  "options": [
+   "gigabyte, megabyte, kilobyte",
+   "megabyte, kilobyte, gigabyte",
+   "gigabyte, kilobyte, megabyte",
+   "kilobyte, megabyte, gigabyte"
+  ]
+ },
+ {
+  "id": "358d474b-3904-41cb-9848-e91f9e96b8a2",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "The denary number 8 is represented in binary as:",
+  "options": [
+   "1000",
+   "0100",
+   "0010",
+   "0001"
+  ]
+ },
+ {
+  "id": "e844d859-6e65-4df6-b000-3a939939dc6e",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "The smallest dot, or picture element, that makes up a bitmap image is called a:",
+  "options": [
+   "byte",
+   "pixel",
+   "bit",
+   "record"
+  ]
+ },
+ {
+  "id": "dff50f00-8404-49fa-9ecf-f4b60468fbbf",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "Hexadecimal is a base-16 system. Which set of symbols does it use?",
+  "options": [
+   "only 0 and 1",
+   "0 to 7 only",
+   "0 to 9 and A to F",
+   "1 to 16"
+  ]
+ },
+ {
+  "id": "e6701b0b-3be2-4c15-be5c-87790071e092",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "Computers ultimately store and process all data — text, images and sound — in the form of:",
+  "options": [
+   "hexadecimal letters",
+   "decimal numbers",
+   "analogue waves",
+   "binary (0s and 1s)"
+  ]
+ },
+ {
+  "id": "df47f782-b785-4c64-8e9d-5bd7270da57d",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "Which of the following is an INPUT device?",
+  "options": [
+   "keyboard",
+   "monitor",
+   "printer",
+   "speaker"
+  ]
+ },
+ {
+  "id": "33278a5d-49b3-42fe-a892-fd89ab44d385",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "Which of the following is an OUTPUT device?",
+  "options": [
+   "mouse",
+   "printer",
+   "scanner",
+   "microphone"
+  ]
+ },
+ {
+  "id": "e12f878a-3ef8-4c69-9503-0b3e4ce1e277",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "Which type of memory is volatile, meaning its contents are lost when the power is switched off?",
+  "options": [
+   "ROM",
+   "a hard drive",
+   "RAM",
+   "a DVD"
+  ]
+ },
+ {
+  "id": "fbc65a6e-f794-401a-9ab1-3a68fd9421f6",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "Which storage device has NO moving parts and therefore reads and writes data faster than a traditional hard disk drive?",
+  "options": [
+   "a magnetic tape",
+   "an optical CD",
+   "a floppy disk",
+   "a solid-state drive (SSD)"
+  ]
+ },
+ {
+  "id": "24ca5cd1-7670-46ce-856b-ec4744041f00",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "A device that works as BOTH an input and an output device is a:",
+  "options": [
+   "touch screen",
+   "keyboard",
+   "scanner",
+   "mouse"
+  ]
+ },
+ {
+  "id": "cf71ece8-4f02-4dea-be9f-c68122404e0b",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "Which unit would best describe the storage capacity of a modern hard drive?",
+  "options": [
+   "bits",
+   "terabytes (TB)",
+   "pixels",
+   "hertz"
+  ]
+ },
+ {
+  "id": "45526bf3-2acb-4a68-8de2-1b7907d501f7",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "The physical socket on a computer into which a device such as a flash drive or printer is plugged is called a:",
+  "options": [
+   "pixel",
+   "driver",
+   "port",
+   "byte"
+  ]
+ },
+ {
+  "id": "624e0c93-e908-4983-b996-0befa6480ff9",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "Which of the following is an example of secondary (permanent) storage?",
+  "options": [
+   "RAM",
+   "cache memory",
+   "a CPU register",
+   "a hard disk drive"
+  ]
+ },
+ {
+  "id": "85aa3e2f-9004-42e2-a712-28047c0ba03b",
+  "topic": "System & Application Software",
+  "prompt": "Software that manages the computer's hardware and provides a platform for other programs to run is called:",
+  "options": [
+   "system software",
+   "application software",
+   "a spreadsheet",
+   "a web page"
+  ]
+ },
+ {
+  "id": "105640ee-4c52-4d0d-938c-b5e991de78a3",
+  "topic": "System & Application Software",
+  "prompt": "Which of the following is an example of APPLICATION software?",
+  "options": [
+   "Windows",
+   "a word processor",
+   "Linux",
+   "a device driver"
+  ]
+ },
+ {
+  "id": "5b4c11d6-4a09-43fa-97a1-1f88b6aca6ff",
+  "topic": "System & Application Software",
+  "prompt": "Utility software such as antivirus, disk clean-up and file compression is used mainly to:",
+  "options": [
+   "create presentations",
+   "play video games",
+   "maintain, manage and protect the computer system",
+   "browse social media"
+  ]
+ },
+ {
+  "id": "2130c5b0-9b77-49c7-8979-3ca7196deb09",
+  "topic": "System & Application Software",
+  "prompt": "The part of the software that the user sees and interacts with — buttons, icons, menus and windows — is called the:",
+  "options": [
+   "CPU",
+   "algorithm",
+   "database",
+   "user interface (GUI)"
+  ]
+ },
+ {
+  "id": "c679348d-d34b-489c-bada-67f6fde6e29f",
+  "topic": "System & Application Software",
+  "prompt": "An interface in which the user types text commands instead of clicking icons is a:",
+  "options": [
+   "command line interface (CLI)",
+   "graphical user interface",
+   "touch interface",
+   "menu interface"
+  ]
+ },
+ {
+  "id": "296a3e0c-17e7-41a9-a8c9-e7cddc3341f1",
+  "topic": "System & Application Software",
+  "prompt": "Software that is supplied free of charge, with its source code available so users may use, copy and modify it, is known as:",
+  "options": [
+   "pirated software",
+   "free and open-source software (FOSS)",
+   "a device driver",
+   "an operating system"
+  ]
+ },
+ {
+  "id": "e14dc56e-8f83-42ce-9071-80e7de5fdcfd",
+  "topic": "System & Application Software",
+  "prompt": "The process of starting up a computer and loading the operating system into memory is called:",
+  "options": [
+   "compiling",
+   "formatting",
+   "booting",
+   "encrypting"
+  ]
+ },
+ {
+  "id": "8806435f-0246-4a8e-8126-d387f0d08aa0",
+  "topic": "System & Application Software",
+  "prompt": "Which of the following is a core function of an operating system?",
+  "options": [
+   "designing a poster",
+   "editing a photograph",
+   "calculating a budget",
+   "managing files, memory and input/output devices"
+  ]
+ },
+ {
+  "id": "7d16708a-254c-4d24-b5db-b53e26618a85",
+  "topic": "Computer Networks & Communications",
+  "prompt": "A network that connects computers within a single building or small area, such as a school computer lab, is a:",
+  "options": [
+   "LAN (Local Area Network)",
+   "WAN (Wide Area Network)",
+   "the internet",
+   "a modem"
+  ]
+ },
+ {
+  "id": "8b7aa7bb-9391-4631-92dd-282d74438a39",
+  "topic": "Computer Networks & Communications",
+  "prompt": "A device that converts a computer's digital signals so that they can travel over a communication line, and back again, is a:",
+  "options": [
+   "printer",
+   "modem",
+   "scanner",
+   "monitor"
+  ]
+ },
+ {
+  "id": "b99d61ea-ecc2-4e17-befc-045f21c73a91",
+  "topic": "Computer Networks & Communications",
+  "prompt": "A unique numerical address that identifies a device on a network or the internet is its:",
+  "options": [
+   "MAC name",
+   "URL",
+   "IP address",
+   "password"
+  ]
+ },
+ {
+  "id": "224b9001-e67c-4ce2-90b2-703059e21abf",
+  "topic": "Computer Networks & Communications",
+  "prompt": "The amount of data that can be transferred over a network connection in a given time is called its:",
+  "options": [
+   "topology",
+   "protocol",
+   "pixel rate",
+   "bandwidth"
+  ]
+ },
+ {
+  "id": "9190365f-b9b3-4ec6-bb2c-49d4bae81653",
+  "topic": "Computer Networks & Communications",
+  "prompt": "A powerful central computer that stores files and provides services to other computers (clients) on a network is a:",
+  "options": [
+   "server",
+   "scanner",
+   "modem",
+   "router"
+  ]
+ },
+ {
+  "id": "882cb5fb-be4a-438b-80c5-380c37ccb808",
+  "topic": "Computer Networks & Communications",
+  "prompt": "Connecting to a network using radio waves, without physical cables, is known as:",
+  "options": [
+   "fibre networking",
+   "wireless (Wi-Fi) networking",
+   "cabled networking",
+   "serial networking"
+  ]
+ },
+ {
+  "id": "16335345-fbd5-482a-8bce-9750bf745b7f",
+  "topic": "Computer Networks & Communications",
+  "prompt": "A private network that uses internet technologies but is accessible only to an organisation's own members is an:",
+  "options": [
+   "extranet",
+   "internet",
+   "intranet",
+   "ethernet"
+  ]
+ },
+ {
+  "id": "6711c15a-5bd1-4903-bd6e-018d9732138e",
+  "topic": "Computer Networks & Communications",
+  "prompt": "Which of the following is an ADVANTAGE of connecting computers in a network?",
+  "options": [
+   "data can never be shared",
+   "hardware such as printers cannot be shared",
+   "it makes communication impossible",
+   "users can share files, hardware and an internet connection"
+  ]
+ },
+ {
+  "id": "5c5eafdd-3cb7-4a17-805e-e3263c373b49",
+  "topic": "Database Concepts",
+  "prompt": "In a database, raw, unprocessed facts such as a list of numbers are called:",
+  "options": [
+   "data",
+   "information",
+   "a query",
+   "a report"
+  ]
+ },
+ {
+  "id": "c56d3f7f-5057-4575-85c6-c53a1627c1fc",
+  "topic": "Database Concepts",
+  "prompt": "A single piece of information about an item, such as a learner's surname, stored in one column of a table, is called a:",
+  "options": [
+   "record",
+   "field",
+   "table",
+   "form"
+  ]
+ },
+ {
+  "id": "5fe769cf-3511-4abb-ad65-a670f66cdc7c",
+  "topic": "Database Concepts",
+  "prompt": "All the related fields about ONE item — for example all the details of a single learner — make up a:",
+  "options": [
+   "field",
+   "table",
+   "record",
+   "query"
+  ]
+ },
+ {
+  "id": "31db7f37-5fec-4149-84f5-56f1553f2d42",
+  "topic": "Database Concepts",
+  "prompt": "A field that uniquely identifies each record in a table, so that no two records share the same value, is the:",
+  "options": [
+   "text field",
+   "foreign field",
+   "validation field",
+   "primary key"
+  ]
+ },
+ {
+  "id": "7040ac26-b4a5-4996-abdc-fe20eebaa16e",
+  "topic": "Database Concepts",
+  "prompt": "Which database data type would best store a learner's date of birth?",
+  "options": [
+   "date/time",
+   "text (string)",
+   "boolean (yes/no)",
+   "currency"
+  ]
+ },
+ {
+  "id": "aad1d970-d571-44ef-95b6-ba534b74f5d9",
+  "topic": "Database Concepts",
+  "prompt": "A check the database performs to make sure entered data is reasonable and in the correct format — for example that an age is not negative — is called:",
+  "options": [
+   "encryption",
+   "data validation",
+   "compression",
+   "sorting"
+  ]
+ },
+ {
+  "id": "b8398a48-5e49-4222-9b63-15fe9c1cbb16",
+  "topic": "Database Concepts",
+  "prompt": "A database made up of several linked tables, rather than one single large table, is called a:",
+  "options": [
+   "flat-file database",
+   "spreadsheet",
+   "relational database",
+   "text file"
+  ]
+ },
+ {
+  "id": "4de57b91-006e-41dc-81a4-af3ed0678b76",
+  "topic": "Database Concepts",
+  "prompt": "Storing the same data in several places, which wastes space and can lead to inconsistencies, is known as data:",
+  "options": [
+   "validation",
+   "encryption",
+   "compression",
+   "redundancy"
+  ]
+ },
+ {
+  "id": "eb94103c-d790-4f89-8cff-6698036dc363",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "A diagram that uses standard symbols such as boxes and arrows to show the steps of an algorithm is a:",
+  "options": [
+   "flowchart",
+   "spreadsheet",
+   "database",
+   "network"
+  ]
+ },
+ {
+  "id": "07028e2c-b9e0-469b-a32e-a2063f9b5f49",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "Writing out the logic of a program in structured, plain-language statements before coding it is called:",
+  "options": [
+   "compiling",
+   "pseudocode",
+   "encryption",
+   "debugging"
+  ]
+ },
+ {
+  "id": "2128c937-41c6-46bc-a1e1-0f7972012d64",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "Which data type would be used to store a person's name, such as 'Thandi'?",
+  "options": [
+   "integer",
+   "boolean",
+   "string",
+   "real (float)"
+  ]
+ },
+ {
+  "id": "b878da8b-a88f-4dbd-b33e-77aa6d4a7c3d",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "A named value that is set once and does NOT change while the program runs, such as PI = 3.14, is a:",
+  "options": [
+   "variable",
+   "loop",
+   "array",
+   "constant"
+  ]
+ },
+ {
+  "id": "0192cbda-b9f7-4105-9602-cf9708b9110a",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "A programming structure that chooses between different actions depending on whether a condition is true or false (e.g. an IF statement) is called:",
+  "options": [
+   "selection (a decision structure)",
+   "iteration",
+   "a constant",
+   "an array"
+  ]
+ },
+ {
+  "id": "1611f395-317d-4db4-86bb-d071318c966f",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "The basic sequence that most simple programs follow is:",
+  "options": [
+   "output, process, input",
+   "input, process, output",
+   "process, input, output",
+   "output, input, process"
+  ]
+ },
+ {
+  "id": "a2f728ce-619f-4bd0-a66e-05d89449b597",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "In programming, the symbols +, −, * and / are examples of:",
+  "options": [
+   "logical operators",
+   "data types",
+   "arithmetic operators",
+   "variables"
+  ]
+ },
+ {
+  "id": "8120fc38-5b14-4f66-a832-912fa79b4af2",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "An error that occurs because a programmer breaks the grammar rules of the programming language (e.g. a missing bracket) is a:",
+  "options": [
+   "logic error",
+   "runtime error",
+   "power failure",
+   "syntax error"
+  ]
+ }
+]
