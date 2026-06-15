@@ -1,0 +1,530 @@
+[
+ {
+  "id": "4d7406ca-2248-4d1d-b00e-e7756525b462",
+  "topic": "Kitchen Equipment & Utensils",
+  "prompt": "A 'chef's knife' is mainly used for:",
+  "options": [
+   "stirring sauces",
+   "measuring sugar",
+   "cutting, slicing and chopping food",
+   "draining vegetables"
+  ]
+ },
+ {
+  "id": "11f29d16-f261-40dd-af0c-d2d502b561db",
+  "topic": "Kitchen Equipment & Utensils",
+  "prompt": "A 'measuring jug' is used to:",
+  "options": [
+   "grate cheese",
+   "fry chips",
+   "peel apples",
+   "measure the volume of liquids accurately"
+  ]
+ },
+ {
+  "id": "11ca8522-2498-4826-a5f7-b2a8cfb7626c",
+  "topic": "Introduction to the Hospitality Industry",
+  "prompt": "The word 'hospitality' refers to:",
+  "options": [
+   "the friendly and welcoming treatment of guests and visitors",
+   "the building of roads and bridges",
+   "the mining of gold and minerals",
+   "the growing of crops on a farm"
+  ]
+ },
+ {
+  "id": "1acca49c-8433-4e4b-9c5e-cc4eb2d8bc38",
+  "topic": "Introduction to the Hospitality Industry",
+  "prompt": "In the hospitality industry, a person who pays to stay at or eat at an establishment is called a:",
+  "options": [
+   "chef",
+   "guest (customer)",
+   "supplier",
+   "cleaner"
+  ]
+ },
+ {
+  "id": "6a8f52be-6cbc-4f03-b4d3-7ea849b42621",
+  "topic": "Introduction to the Hospitality Industry",
+  "prompt": "Which of the following is an example of a hospitality establishment?",
+  "options": [
+   "a gold mine",
+   "a car factory",
+   "a restaurant",
+   "a clothing shop"
+  ]
+ },
+ {
+  "id": "f68bc181-61d3-4558-8006-e7608b850ab4",
+  "topic": "Introduction to the Hospitality Industry",
+  "prompt": "Good customer service is important in hospitality mainly because it:",
+  "options": [
+   "chases guests away",
+   "makes the food unsafe",
+   "has no effect on the business",
+   "makes guests feel welcome so they return and recommend the place"
+  ]
+ },
+ {
+  "id": "dd9ef781-d71b-455d-ba77-dc004b499129",
+  "topic": "Introduction to the Hospitality Industry",
+  "prompt": "An establishment that provides people with a place to sleep, such as a hotel or B&B, is part of the ___ sector.",
+  "options": [
+   "accommodation",
+   "farming",
+   "clothing",
+   "transport"
+  ]
+ },
+ {
+  "id": "b09f4774-3fc2-4398-b005-114c930e7968",
+  "topic": "Introduction to the Hospitality Industry",
+  "prompt": "The main aim of a hospitality business is to:",
+  "options": [
+   "make its guests unhappy",
+   "provide food, drink or accommodation and satisfy its guests",
+   "manufacture motor cars",
+   "avoid having any customers"
+  ]
+ },
+ {
+  "id": "4f58a20d-19fa-419e-8228-2f13f7819b0d",
+  "topic": "Introduction to the Hospitality Industry",
+  "prompt": "Which of the following shows a well-presented, professional hospitality worker?",
+  "options": [
+   "a dirty, untidy uniform",
+   "being rude to the guests",
+   "a clean, neat uniform and a friendly attitude",
+   "ignoring guests' requests"
+  ]
+ },
+ {
+  "id": "357f059b-0833-419b-ac52-32dabd9bc279",
+  "topic": "Introduction to the Hospitality Industry",
+  "prompt": "When a guest makes a complaint, a good hospitality worker should:",
+  "options": [
+   "shout at the guest",
+   "ignore the guest completely",
+   "walk away and say nothing",
+   "listen politely and try to solve the problem"
+  ]
+ },
+ {
+  "id": "848ed7f1-5634-4803-8f05-beb8abfcec7b",
+  "topic": "Kitchen Equipment & Utensils",
+  "prompt": "A 'colander' is a kitchen utensil used mainly to:",
+  "options": [
+   "beat eggs until fluffy",
+   "drain water from cooked pasta or washed vegetables",
+   "measure the temperature of food",
+   "slice a loaf of bread"
+  ]
+ },
+ {
+  "id": "258f808e-becd-4ff9-bd3a-e5890421358a",
+  "topic": "Kitchen Equipment & Utensils",
+  "prompt": "A 'whisk' is used to:",
+  "options": [
+   "peel potatoes",
+   "weigh out flour",
+   "beat or mix ingredients such as eggs or cream, adding air",
+   "drain cooked pasta"
+  ]
+ },
+ {
+  "id": "62c4d250-56d4-4dc5-b80b-fd9e5f2b712e",
+  "topic": "Kitchen Equipment & Utensils",
+  "prompt": "A 'vegetable peeler' is used to:",
+  "options": [
+   "boil water quickly",
+   "grate a block of cheese",
+   "stir a pot of soup",
+   "remove the skin from vegetables and fruit"
+  ]
+ },
+ {
+  "id": "08ff1326-b062-4b97-942c-712bb4ff5472",
+  "topic": "Kitchen Equipment & Utensils",
+  "prompt": "A 'grater' is used to:",
+  "options": [
+   "shred or grate food such as cheese or carrots into small pieces",
+   "measure liquids accurately",
+   "fry eggs in a pan",
+   "set the table for guests"
+  ]
+ },
+ {
+  "id": "d69664ab-bdf7-42fc-b82c-edbae8417e01",
+  "topic": "Kitchen Equipment & Utensils",
+  "prompt": "A 'sieve' (strainer) is used to:",
+  "options": [
+   "chop onions finely",
+   "separate lumps from dry ingredients like flour, or to strain liquids",
+   "bake a cake in the oven",
+   "weigh a piece of meat"
+  ]
+ },
+ {
+  "id": "45897b54-d39b-4989-b45b-e32fa7619934",
+  "topic": "Kitchen Equipment & Utensils",
+  "prompt": "A 'rolling pin' is used to:",
+  "options": [
+   "flatten and roll out dough or pastry",
+   "measure the temperature of an oven",
+   "drain cooked pasta",
+   "beat eggs"
+  ]
+ },
+ {
+  "id": "87d2807f-0a89-4b6d-98e6-eb4a1e9939f1",
+  "topic": "Personal Hygiene & Kitchen Safety",
+  "prompt": "A food handler should wash their hands:",
+  "options": [
+   "only once at the start of the day",
+   "never, in order to save water",
+   "before handling food, after using the toilet, and after touching raw meat",
+   "only at the very end of the shift"
+  ]
+ },
+ {
+  "id": "b3b79b9c-31be-4b2d-a15d-a6ecf6471cfc",
+  "topic": "Personal Hygiene & Kitchen Safety",
+  "prompt": "Why should kitchen staff wear a hairnet or cap?",
+  "options": [
+   "to look stylish and modern",
+   "to keep their head warm",
+   "to be able to hear better",
+   "to stop hair from falling into the food"
+  ]
+ },
+ {
+  "id": "bd02c1f6-ecf2-488a-964a-bd45242255d6",
+  "topic": "Personal Hygiene & Kitchen Safety",
+  "prompt": "To carry a sharp kitchen knife safely, you should:",
+  "options": [
+   "hold it pointing down at your side, with the blade facing away from you",
+   "wave it around in the air while walking",
+   "run across the kitchen holding it up high",
+   "point the blade towards other people"
+  ]
+ },
+ {
+  "id": "567ad169-e654-461e-b511-e1da7bf927f9",
+  "topic": "Personal Hygiene & Kitchen Safety",
+  "prompt": "To prevent burns when removing a hot pot from the stove, you should:",
+  "options": [
+   "use your bare hands",
+   "use a dry oven cloth or oven gloves",
+   "use a soaking-wet cloth",
+   "use a thin paper towel"
+  ]
+ },
+ {
+  "id": "97cd4cf0-d35f-404a-9dec-8217dc7560a3",
+  "topic": "Personal Hygiene & Kitchen Safety",
+  "prompt": "If a small oil fire starts in a pan on the stove, you should NEVER:",
+  "options": [
+   "turn off the heat",
+   "cover the pan with a lid",
+   "throw water onto it",
+   "call for help"
+  ]
+ },
+ {
+  "id": "c43a0525-6568-4d85-ac2d-0243c3f00c1a",
+  "topic": "Personal Hygiene & Kitchen Safety",
+  "prompt": "A clean uniform and apron are worn in the kitchen mainly to:",
+  "options": [
+   "look fashionable",
+   "keep the worker warm",
+   "win a prize",
+   "keep dirt and bacteria away from the food and protect the worker's clothes"
+  ]
+ },
+ {
+  "id": "08ddd657-000a-4902-8aee-bdc6734a6eba",
+  "topic": "Personal Hygiene & Kitchen Safety",
+  "prompt": "To prevent someone from slipping in the kitchen, a spill on the floor should be:",
+  "options": [
+   "wiped up immediately",
+   "left until the end of the day",
+   "ignored completely",
+   "covered with a cloth and left there"
+  ]
+ },
+ {
+  "id": "e11feb15-104e-4da6-a45d-b14a18c0319e",
+  "topic": "Personal Hygiene & Kitchen Safety",
+  "prompt": "Long loose hair, dangling jewellery and loose clothing are dangerous in a kitchen because they:",
+  "options": [
+   "make you work faster",
+   "can catch fire or get caught in equipment",
+   "improve food hygiene",
+   "keep the food warm"
+  ]
+ },
+ {
+  "id": "746e4464-62ad-43e1-8579-248255979802",
+  "topic": "Mise en Place & Basic Food Preparation",
+  "prompt": "The French term 'mise en place' means:",
+  "options": [
+   "wash all the dishes",
+   "serve the guests their food",
+   "sweep and clean the floor",
+   "everything in its place — having all ingredients and equipment ready before cooking"
+  ]
+ },
+ {
+  "id": "1bbebb7c-3e30-4fc5-9ae9-c1ebcda11154",
+  "topic": "Mise en Place & Basic Food Preparation",
+  "prompt": "'Mise en place' is important because it helps the cook to:",
+  "options": [
+   "work in an organised, efficient way and avoid mistakes",
+   "waste much more time",
+   "forget important ingredients",
+   "make the kitchen untidy"
+  ]
+ },
+ {
+  "id": "99d3f582-06f5-4902-9efb-0d3824c13dfb",
+  "topic": "Mise en Place & Basic Food Preparation",
+  "prompt": "To 'dice' a vegetable means to:",
+  "options": [
+   "boil it whole in water",
+   "cut it into small, even, cube-shaped pieces",
+   "mash it into a smooth paste",
+   "fry it in deep oil"
+  ]
+ },
+ {
+  "id": "b1c51d58-8220-469b-8b0f-119dfa4c22e9",
+  "topic": "Mise en Place & Basic Food Preparation",
+  "prompt": "To 'grate' a carrot means to:",
+  "options": [
+   "cut it into long thin strips with a knife",
+   "boil it until it is soft",
+   "rub it against a grater to make small shreds",
+   "roast it whole in the oven"
+  ]
+ },
+ {
+  "id": "87220535-54fa-4ed5-9d2e-4e9920dd38dc",
+  "topic": "Mise en Place & Basic Food Preparation",
+  "prompt": "When measuring flour for a recipe, the most accurate method is to:",
+  "options": [
+   "use a rough handful",
+   "simply guess the amount",
+   "fill any glass to the top",
+   "weigh it on a scale or use levelled measuring cups"
+  ]
+ },
+ {
+  "id": "2dc32278-c67a-43c6-967b-a66d32b524ff",
+  "topic": "Mise en Place & Basic Food Preparation",
+  "prompt": "'Sifting' flour before baking is done to:",
+  "options": [
+   "remove lumps and add air so the mixture is light",
+   "make the flour heavier",
+   "add water to the flour",
+   "cook the flour"
+  ]
+ },
+ {
+  "id": "066c2ce4-2ab5-44de-bec8-da7fcb44a26a",
+  "topic": "Mise en Place & Basic Food Preparation",
+  "prompt": "To 'peel' a vegetable means to:",
+  "options": [
+   "cut it neatly in half",
+   "remove its outer skin",
+   "boil it in salted water",
+   "add salt to it"
+  ]
+ },
+ {
+  "id": "c72c97f7-4ef9-40b6-8427-85432f40b530",
+  "topic": "Mise en Place & Basic Food Preparation",
+  "prompt": "Reading the whole recipe before you start cooking is a good habit because it:",
+  "options": [
+   "wastes a lot of time",
+   "is never necessary",
+   "helps you gather all the ingredients and understand the steps first",
+   "makes the food taste worse"
+  ]
+ },
+ {
+  "id": "b67c4de0-cdba-4051-bf51-e7125a85a8b0",
+  "topic": "Basic Cooking Methods",
+  "prompt": "Cooking food in hot water at about 100 °C, with large bubbles rising, is called:",
+  "options": [
+   "boiling",
+   "baking",
+   "grilling",
+   "frying"
+  ]
+ },
+ {
+  "id": "64348bf0-85a8-4488-986e-b73af793b90f",
+  "topic": "Basic Cooking Methods",
+  "prompt": "A 'moist-heat' cooking method, which uses water or steam, is:",
+  "options": [
+   "grilling over hot coals",
+   "boiling or steaming",
+   "baking in a dry oven",
+   "deep-frying in oil"
+  ]
+ },
+ {
+  "id": "346208b1-2abf-4333-aff9-c4b82a81450c",
+  "topic": "Basic Cooking Methods",
+  "prompt": "A 'dry-heat' method that cooks food in a hot oven using hot air is called:",
+  "options": [
+   "boiling",
+   "steaming",
+   "baking",
+   "stewing"
+  ]
+ },
+ {
+  "id": "0b25d8e8-e75f-46ef-8fe0-420628d127fe",
+  "topic": "Basic Cooking Methods",
+  "prompt": "Cooking food quickly in a little hot oil in a pan is called:",
+  "options": [
+   "boiling",
+   "steaming",
+   "poaching",
+   "frying"
+  ]
+ },
+ {
+  "id": "45ee241e-4a18-4c2a-bd4a-40da6fa324e5",
+  "topic": "Basic Cooking Methods",
+  "prompt": "Cooking food over the steam of boiling water, without the food touching the water, is called:",
+  "options": [
+   "steaming",
+   "frying",
+   "grilling",
+   "roasting"
+  ]
+ },
+ {
+  "id": "5016d5ff-dbed-4e50-93d6-81bf043a6f68",
+  "topic": "Basic Cooking Methods",
+  "prompt": "One important reason for cooking food is to:",
+  "options": [
+   "make it more dangerous to eat",
+   "make it safer to eat and easier to digest",
+   "remove all of its flavour",
+   "make it look worse"
+  ]
+ },
+ {
+  "id": "c58ec615-d63a-4081-9f06-ca2a0d063073",
+  "topic": "Basic Cooking Methods",
+  "prompt": "'Grilling' cooks food using:",
+  "options": [
+   "cold running water",
+   "a large amount of oil",
+   "direct, strong heat from above or below (such as from a grill element or hot coals)",
+   "steam only"
+  ]
+ },
+ {
+  "id": "8a63d599-a79d-49ba-ba36-cc399f16a406",
+  "topic": "Basic Cooking Methods",
+  "prompt": "Which cooking method is generally the healthiest because it uses no added fat?",
+  "options": [
+   "deep-frying",
+   "shallow-frying",
+   "roasting in oil",
+   "steaming"
+  ]
+ },
+ {
+  "id": "a6d1a1cc-3052-4007-a7ee-2ba490f74533",
+  "topic": "Table Setting & Food Service Basics",
+  "prompt": "A basic place setting laid out for one guest at a table is called a:",
+  "options": [
+   "menu",
+   "cover",
+   "garnish",
+   "course"
+  ]
+ },
+ {
+  "id": "a6454eee-9a72-424d-bcea-7b1821215011",
+  "topic": "Table Setting & Food Service Basics",
+  "prompt": "When setting a table, the fork is usually placed:",
+  "options": [
+   "on top of the plate",
+   "above the plate",
+   "to the left of the plate",
+   "inside the glass"
+  ]
+ },
+ {
+  "id": "376cde05-fa80-45a1-96d4-708db500c8e3",
+  "topic": "Table Setting & Food Service Basics",
+  "prompt": "When setting a table, the dinner knife is usually placed:",
+  "options": [
+   "to the left of the plate",
+   "above the plate",
+   "inside the cup",
+   "to the right of the plate, with the blade facing the plate"
+  ]
+ },
+ {
+  "id": "12a8b80d-ec27-4aa5-9779-81f4af140520",
+  "topic": "Table Setting & Food Service Basics",
+  "prompt": "The water glass is usually placed:",
+  "options": [
+   "above the knife, on the right-hand side of the place setting",
+   "on the floor next to the chair",
+   "underneath the plate",
+   "to the far left of the fork"
+  ]
+ },
+ {
+  "id": "ca935202-6aee-4376-bc42-6fb37afd2a04",
+  "topic": "Table Setting & Food Service Basics",
+  "prompt": "A serviette (napkin) at a place setting is used by the guest to:",
+  "options": [
+   "clean the floor",
+   "wipe their mouth and protect their clothes",
+   "cover the food on the plate",
+   "dry the washed dishes"
+  ]
+ },
+ {
+  "id": "e10e5401-ebc7-4e02-831e-a9250d82fed9",
+  "topic": "Table Setting & Food Service Basics",
+  "prompt": "A waiter (server) in a restaurant is mainly responsible for:",
+  "options": [
+   "cooking all of the food",
+   "washing the dishes only",
+   "taking orders and serving food and drink to guests",
+   "managing the whole hotel"
+  ]
+ },
+ {
+  "id": "935efd5b-12c5-42d6-8ce3-6f95bfcecda8",
+  "topic": "Table Setting & Food Service Basics",
+  "prompt": "Neat table settings and good table manners are important because they:",
+  "options": [
+   "make the meal unpleasant",
+   "are never noticed by guests",
+   "make the food unsafe",
+   "create a pleasant dining experience for the guest"
+  ]
+ },
+ {
+  "id": "75f7a56c-b547-4c3d-9cb7-d03c1ba4ebbe",
+  "topic": "Table Setting & Food Service Basics",
+  "prompt": "Clearing a guest's plate should only be done:",
+  "options": [
+   "once the guest has finished eating",
+   "while the guest is still eating",
+   "before the food is even served",
+   "never at all"
+  ]
+ }
+]
