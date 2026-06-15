@@ -1,0 +1,530 @@
+[
+ {
+  "id": "4c7d3d6b-f7a4-4e03-b632-be001607a8f2",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "Simplify the ratio 8 : 12 to its simplest form.",
+  "options": [
+   "2 : 3",
+   "3 : 2",
+   "4 : 6",
+   "2 : 4"
+  ]
+ },
+ {
+  "id": "0629dc91-2427-412d-a395-681d23747785",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "What is 20% of 150?",
+  "options": [
+   "20",
+   "30",
+   "50",
+   "15"
+  ]
+ },
+ {
+  "id": "0c053bdf-3d4b-425d-bef5-7d637ba4cdeb",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "R160 is shared between two people in the ratio 1 : 3. How much is the larger share?",
+  "options": [
+   "R40",
+   "R80",
+   "R120",
+   "R60"
+  ]
+ },
+ {
+  "id": "c329f651-7170-4751-a995-4028651b8e6c",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "Convert the fraction 3/4 to a percentage.",
+  "options": [
+   "25%",
+   "34%",
+   "50%",
+   "75%"
+  ]
+ },
+ {
+  "id": "ffa75ec4-9d80-4118-9d7e-9ddd794a5a4c",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "A car travels 240 km on 20 litres of petrol. At the same rate, how far can it travel on 5 litres?",
+  "options": [
+   "60 km",
+   "48 km",
+   "120 km",
+   "12 km"
+  ]
+ },
+ {
+  "id": "843687e6-5ee4-462d-a41c-2f29621ca11e",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "Write 0.25 as a fraction in its simplest form.",
+  "options": [
+   "1/2",
+   "1/4",
+   "2/5",
+   "25/10"
+  ]
+ },
+ {
+  "id": "81a2147b-6e33-4af9-b4e8-8589218791ab",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "Decrease R300 by 10%.",
+  "options": [
+   "R310",
+   "R330",
+   "R270",
+   "R290"
+  ]
+ },
+ {
+  "id": "ec4a66da-60f4-478a-a283-105c6c7bcdaa",
+  "topic": "Numbers, Ratio & Proportion",
+  "prompt": "A worker earns R50 per hour. How much is earned for a 6-hour shift?",
+  "options": [
+   "R56",
+   "R250",
+   "R350",
+   "R300"
+  ]
+ },
+ {
+  "id": "bad6066d-00bc-42b1-9a1a-f2756387eb7f",
+  "topic": "Finance",
+  "prompt": "A learner's pocket money is R250 and they spend R180. How much is left over (saved)?",
+  "options": [
+   "R70",
+   "R430",
+   "R180",
+   "R250"
+  ]
+ },
+ {
+  "id": "08dd96d9-54b7-4a1d-91e0-99525104a950",
+  "topic": "Finance",
+  "prompt": "The VAT (at 15%) on an item costing R100 (excluding VAT) is:",
+  "options": [
+   "R10",
+   "R15",
+   "R20",
+   "R115"
+  ]
+ },
+ {
+  "id": "98da32d1-df7d-4872-8987-5646bdbc14ed",
+  "topic": "Finance",
+  "prompt": "A shirt marked R250 is offered at 20% off. The discount is:",
+  "options": [
+   "R20",
+   "R200",
+   "R50",
+   "R230"
+  ]
+ },
+ {
+  "id": "cf0b723b-1227-4cd2-b7e6-6d28840beb43",
+  "topic": "Finance",
+  "prompt": "R2 000 is invested at 5% simple interest per year. The interest earned after 1 year is:",
+  "options": [
+   "R10",
+   "R1 000",
+   "R200",
+   "R100"
+  ]
+ },
+ {
+  "id": "66bd8e57-89d7-406d-8b23-4e429c10433c",
+  "topic": "Finance",
+  "prompt": "A T-shirt costs R120 cash. On a lay-by you pay a R30 deposit. How much is still owed?",
+  "options": [
+   "R90",
+   "R150",
+   "R30",
+   "R120"
+  ]
+ },
+ {
+  "id": "ba2110a6-d7f4-4271-8a3e-0eacb1281148",
+  "topic": "Finance",
+  "prompt": "If the exchange rate is US$1 = R20, how many US dollars can you buy with R200?",
+  "options": [
+   "$5",
+   "$10",
+   "$20",
+   "$40"
+  ]
+ },
+ {
+  "id": "a6a271e0-9801-44ed-b924-93dda9b094c8",
+  "topic": "Finance",
+  "prompt": "A R600 item is bought with a 25% deposit. The deposit is:",
+  "options": [
+   "R60",
+   "R450",
+   "R150",
+   "R300"
+  ]
+ },
+ {
+  "id": "e091bcde-0f60-4d79-9736-e58fe76cbfc8",
+  "topic": "Finance",
+  "prompt": "A budget shows an income of R5 000 and expenses of R5 800. This is a:",
+  "options": [
+   "surplus of R800",
+   "balanced budget",
+   "surplus of R10 800",
+   "deficit of R800"
+  ]
+ },
+ {
+  "id": "6320038d-69dd-4133-8a0c-8c05a62e5eea",
+  "topic": "Measurement & Conversions",
+  "prompt": "Convert 5 metres to centimetres.",
+  "options": [
+   "500 cm",
+   "50 cm",
+   "5 000 cm",
+   "0.05 cm"
+  ]
+ },
+ {
+  "id": "7f93050c-4975-4b8e-9610-aa5c0dabc7c9",
+  "topic": "Measurement & Conversions",
+  "prompt": "Convert 3 000 millilitres to litres.",
+  "options": [
+   "30 L",
+   "3 L",
+   "300 L",
+   "0.3 L"
+  ]
+ },
+ {
+  "id": "9aa3813a-d233-4c8b-a5b4-1634161d3ae6",
+  "topic": "Measurement & Conversions",
+  "prompt": "The area of a rectangle 8 m long and 5 m wide is:",
+  "options": [
+   "13 m²",
+   "26 m²",
+   "40 m²",
+   "80 m²"
+  ]
+ },
+ {
+  "id": "2813cf0f-34a3-448e-9352-e63665774412",
+  "topic": "Measurement & Conversions",
+  "prompt": "The perimeter of a rectangle 7 m long and 3 m wide is:",
+  "options": [
+   "21 m",
+   "10 m",
+   "28 m",
+   "20 m"
+  ]
+ },
+ {
+  "id": "47d010c4-99e7-4738-a7e7-aa585dcb16a2",
+  "topic": "Measurement & Conversions",
+  "prompt": "Convert 4 kilograms to grams.",
+  "options": [
+   "4 000 g",
+   "400 g",
+   "40 g",
+   "40 000 g"
+  ]
+ },
+ {
+  "id": "1461e6d8-0a57-4102-beed-13ed041580e5",
+  "topic": "Measurement & Conversions",
+  "prompt": "How many minutes are there in 2½ hours?",
+  "options": [
+   "120",
+   "150",
+   "125",
+   "180"
+  ]
+ },
+ {
+  "id": "460cf1be-91b7-43b3-8251-f6164e2285b3",
+  "topic": "Measurement & Conversions",
+  "prompt": "The volume of a box measuring 3 m × 2 m × 2 m is:",
+  "options": [
+   "7 m³",
+   "10 m³",
+   "12 m³",
+   "14 m³"
+  ]
+ },
+ {
+  "id": "99785f2e-9d84-4f70-b144-6af0725e7671",
+  "topic": "Measurement & Conversions",
+  "prompt": "Convert 2 kilometres to metres.",
+  "options": [
+   "20 m",
+   "200 m",
+   "20 000 m",
+   "2 000 m"
+  ]
+ },
+ {
+  "id": "fe38cee0-b3c8-430d-9975-1e340b933854",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "On most maps, if North is at the top, the direction at the bottom of the page is:",
+  "options": [
+   "South",
+   "North",
+   "East",
+   "West"
+  ]
+ },
+ {
+  "id": "63f29187-8669-4733-869b-eaca6bc5b816",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "On a plan with a scale of 1 : 100, a length of 2 cm represents an actual distance of:",
+  "options": [
+   "20 cm",
+   "2 m",
+   "20 m",
+   "200 m"
+  ]
+ },
+ {
+  "id": "63655ca5-e25c-448c-9a3e-b47323949603",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "On a compass, the direction directly opposite North is:",
+  "options": [
+   "East",
+   "West",
+   "South",
+   "North-West"
+  ]
+ },
+ {
+  "id": "148997e6-0c33-49ac-94b5-04d35503c9ca",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "A scale of 1 : 50 is used. A real object 100 cm long is drawn as:",
+  "options": [
+   "50 cm",
+   "5 cm",
+   "1 cm",
+   "2 cm"
+  ]
+ },
+ {
+  "id": "4aa899e2-f242-4219-a818-7c07237064bb",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "On a plan with a scale of 1 : 100, a wall drawn 4 cm long is actually:",
+  "options": [
+   "4 m",
+   "40 cm",
+   "40 m",
+   "400 m"
+  ]
+ },
+ {
+  "id": "2b47759b-e53d-42f4-856e-414437105790",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "If you face North and turn 90° clockwise (to the right), you will face:",
+  "options": [
+   "West",
+   "East",
+   "South",
+   "North-East"
+  ]
+ },
+ {
+  "id": "ffaa85e8-7ca1-4ce8-b4dd-0f27dcf6612e",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "A scale of 1 : 500 means that 1 cm on the plan represents ___ in reality.",
+  "options": [
+   "50 cm",
+   "5 cm",
+   "500 cm",
+   "5 000 cm"
+  ]
+ },
+ {
+  "id": "4ee89082-f20d-4b9b-9ea8-d988c55dc439",
+  "topic": "Maps, Plans & Scale",
+  "prompt": "On a map with a scale of 1 : 50 000, two towns are 6 cm apart. The actual distance is:",
+  "options": [
+   "30 m",
+   "300 m",
+   "30 km",
+   "3 km"
+  ]
+ },
+ {
+  "id": "1aa563ce-6927-4207-8a24-0d36b18b8b06",
+  "topic": "Data Handling",
+  "prompt": "Find the mean of: 3, 5, 7, 9.",
+  "options": [
+   "6",
+   "7",
+   "5",
+   "24"
+  ]
+ },
+ {
+  "id": "2a52de78-bae1-4f74-8a39-03a15ed68f57",
+  "topic": "Data Handling",
+  "prompt": "Find the median of: 2, 4, 6, 8, 10.",
+  "options": [
+   "4",
+   "6",
+   "8",
+   "30"
+  ]
+ },
+ {
+  "id": "5e4112fd-945b-4239-9bd6-9b27628411b9",
+  "topic": "Data Handling",
+  "prompt": "Find the range of: 9, 3, 15, 6.",
+  "options": [
+   "3",
+   "9",
+   "12",
+   "15"
+  ]
+ },
+ {
+  "id": "39ce52a8-6a14-4f6b-beae-56f8a221f8c6",
+  "topic": "Data Handling",
+  "prompt": "Find the mode of: 5, 8, 5, 2, 5, 9.",
+  "options": [
+   "8",
+   "2",
+   "9",
+   "5"
+  ]
+ },
+ {
+  "id": "5fa9b5a4-35a9-4357-968d-a44d25cd216e",
+  "topic": "Data Handling",
+  "prompt": "The value that appears most often in a data set is called the:",
+  "options": [
+   "mode",
+   "mean",
+   "median",
+   "range"
+  ]
+ },
+ {
+  "id": "b7a1fa3f-cc91-4fc8-95a6-dabfc8ebb875",
+  "topic": "Data Handling",
+  "prompt": "In a group of 20 learners, 50% play sport. How many learners play sport?",
+  "options": [
+   "5",
+   "10",
+   "15",
+   "20"
+  ]
+ },
+ {
+  "id": "01f4a062-b330-4d93-8417-f4ea54b0142a",
+  "topic": "Data Handling",
+  "prompt": "The mean of 5 numbers is 8. Their total is:",
+  "options": [
+   "13",
+   "3",
+   "40",
+   "85"
+  ]
+ },
+ {
+  "id": "586887fb-0a0d-4ba2-9508-f1659f3b805b",
+  "topic": "Data Handling",
+  "prompt": "Find the median of the data set 7, 1, 5, 3 (arrange in order first).",
+  "options": [
+   "3",
+   "5",
+   "6",
+   "4"
+  ]
+ },
+ {
+  "id": "f4abc6a8-bcb5-4a00-b888-a29568dd58a5",
+  "topic": "Probability",
+  "prompt": "The probability of an event that is certain to happen is:",
+  "options": [
+   "1",
+   "0",
+   "1/2",
+   "10"
+  ]
+ },
+ {
+  "id": "92161043-26d1-4471-ad65-4431a3ed3df8",
+  "topic": "Probability",
+  "prompt": "The probability of getting heads when tossing one fair coin is:",
+  "options": [
+   "1",
+   "1/2",
+   "1/4",
+   "0"
+  ]
+ },
+ {
+  "id": "4253c2e3-411c-489f-8746-4f03a39e458c",
+  "topic": "Probability",
+  "prompt": "The probability of rolling a 5 on an ordinary six-sided die is:",
+  "options": [
+   "1/2",
+   "1/3",
+   "1/6",
+   "5/6"
+  ]
+ },
+ {
+  "id": "f1befacb-aff4-4fd4-8c27-8fc5e6d3a71a",
+  "topic": "Probability",
+  "prompt": "A bag contains 3 green and 2 yellow sweets. The probability of drawing a yellow sweet is:",
+  "options": [
+   "3/5",
+   "1/2",
+   "2/3",
+   "2/5"
+  ]
+ },
+ {
+  "id": "241ac439-512c-4548-a96d-33a1336cbe13",
+  "topic": "Probability",
+  "prompt": "The probability of an impossible event is:",
+  "options": [
+   "0",
+   "1/2",
+   "1",
+   "100"
+  ]
+ },
+ {
+  "id": "5819a18f-2734-466e-bd79-1eb47652619a",
+  "topic": "Probability",
+  "prompt": "A bag contains 3 green and 2 yellow sweets. The probability of drawing a green sweet is:",
+  "options": [
+   "2/5",
+   "3/5",
+   "1/3",
+   "3/2"
+  ]
+ },
+ {
+  "id": "3b32524a-f1b5-4a36-9f7d-377cdfdb2b00",
+  "topic": "Probability",
+  "prompt": "The probability of rolling an even number on an ordinary six-sided die is:",
+  "options": [
+   "1/6",
+   "1/3",
+   "1/2",
+   "2/3"
+  ]
+ },
+ {
+  "id": "72ceb265-f6e3-4ff5-bc41-f42ad7d6d9a7",
+  "topic": "Probability",
+  "prompt": "A spinner has 4 equal sections coloured red, blue, green and yellow. The probability of landing on blue is:",
+  "options": [
+   "1/2",
+   "3/4",
+   "4/1",
+   "1/4"
+  ]
+ }
+]
