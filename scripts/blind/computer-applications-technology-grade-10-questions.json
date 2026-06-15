@@ -1,0 +1,530 @@
+[
+ {
+  "id": "7e4100d5-9d29-4640-b809-13a0c1f92e91",
+  "topic": "Network & Internet Technologies",
+  "prompt": "'Wi-Fi' allows devices to connect to a network:",
+  "options": [
+   "only by using a cable",
+   "wirelessly, using radio signals",
+   "by posting a letter",
+   "by printing a page"
+  ]
+ },
+ {
+  "id": "721b216d-6ab2-4b27-8eaf-183bb2643ef5",
+  "topic": "Systems Technologies",
+  "prompt": "'Hardware' refers to:",
+  "options": [
+   "the physical parts of a computer that you can touch",
+   "the programs and apps that run on a computer",
+   "data stored on the internet",
+   "an email message"
+  ]
+ },
+ {
+  "id": "33e68393-3384-456a-9ee5-4bf8dd5c3421",
+  "topic": "Systems Technologies",
+  "prompt": "'Software' refers to:",
+  "options": [
+   "the physical parts of a computer",
+   "the programs and instructions that tell the computer what to do",
+   "the desk the computer stands on",
+   "the electricity supply to the computer"
+  ]
+ },
+ {
+  "id": "dc857348-f9da-4308-8f06-cc0bfb9959ef",
+  "topic": "Systems Technologies",
+  "prompt": "RAM is described as 'volatile' memory because it:",
+  "options": [
+   "stores data permanently forever",
+   "is a type of printer",
+   "loses its contents when the power is switched off",
+   "can never be changed"
+  ]
+ },
+ {
+  "id": "995c84bf-05ad-4187-adba-51c499406f5b",
+  "topic": "Systems Technologies",
+  "prompt": "Which of the following is an example of system software?",
+  "options": [
+   "a word processor",
+   "a web browser",
+   "a spreadsheet program",
+   "the operating system (for example Windows)"
+  ]
+ },
+ {
+  "id": "ad85c938-db9a-4bba-b948-4d2d68ae24c2",
+  "topic": "Systems Technologies",
+  "prompt": "A 'GUI' (Graphical User Interface) allows a user to:",
+  "options": [
+   "interact with the computer using icons, windows and a mouse",
+   "type only text commands",
+   "physically repair the hardware",
+   "increase the internet speed"
+  ]
+ },
+ {
+  "id": "b0ae5940-01bc-4902-bbe7-fb188325e083",
+  "topic": "Systems Technologies",
+  "prompt": "Which of the following is a portable storage device?",
+  "options": [
+   "the monitor",
+   "a USB flash drive",
+   "the CPU",
+   "the keyboard"
+  ]
+ },
+ {
+  "id": "ddbdbf8a-b674-4c6e-be0b-fa8bbc930ee0",
+  "topic": "Systems Technologies",
+  "prompt": "The smallest unit of data in a computer is a:",
+  "options": [
+   "megabyte",
+   "kilobyte",
+   "bit",
+   "gigabyte"
+  ]
+ },
+ {
+  "id": "e3905684-3dc3-4570-9f28-66afb9a77182",
+  "topic": "Systems Technologies",
+  "prompt": "Which device is BOTH an input and an output device?",
+  "options": [
+   "a mouse",
+   "a scanner",
+   "a microphone",
+   "a touch screen"
+  ]
+ },
+ {
+  "id": "4c664764-285d-4f22-b343-295c2aa86524",
+  "topic": "Network & Internet Technologies",
+  "prompt": "A 'computer network' is:",
+  "options": [
+   "a single computer with no connections",
+   "two or more computers connected together to share data and resources",
+   "a type of printer",
+   "a word-processing document"
+  ]
+ },
+ {
+  "id": "a0764865-fd9f-4553-bb6a-0942ecbce04c",
+  "topic": "Network & Internet Technologies",
+  "prompt": "A 'LAN' (Local Area Network) is a network that:",
+  "options": [
+   "covers an entire country on its own",
+   "connects computers across the whole world",
+   "connects computers in one building or a small area, such as a school",
+   "uses only the postal service"
+  ]
+ },
+ {
+  "id": "77c4e2b4-dfef-45b1-a6ee-10e803d9d09a",
+  "topic": "Network & Internet Technologies",
+  "prompt": "The 'internet' is best described as:",
+  "options": [
+   "a single computer in a school",
+   "a word processor",
+   "a type of keyboard",
+   "a massive global network connecting millions of computers worldwide"
+  ]
+ },
+ {
+  "id": "5b8d4de4-0c96-48ed-87bb-213eea5a271e",
+  "topic": "Network & Internet Technologies",
+  "prompt": "A 'search engine' such as Google is used to:",
+  "options": [
+   "find information and websites on the internet",
+   "print documents",
+   "edit photographs",
+   "scan paper documents"
+  ]
+ },
+ {
+  "id": "0bf26728-c017-4b13-851c-f4400abc16d7",
+  "topic": "Network & Internet Technologies",
+  "prompt": "The device that connects a home network to the internet is usually a:",
+  "options": [
+   "monitor",
+   "scanner",
+   "router (modem)",
+   "speaker"
+  ]
+ },
+ {
+  "id": "a299a1d9-1e91-4c31-a3cb-27d352a61369",
+  "topic": "Network & Internet Technologies",
+  "prompt": "The 'World Wide Web' is:",
+  "options": [
+   "exactly the same thing as a printer",
+   "a single website only",
+   "a type of network cable",
+   "the collection of web pages and websites accessed through the internet"
+  ]
+ },
+ {
+  "id": "4d1e352b-daf6-4b2b-a366-e3a0e6b4a404",
+  "topic": "Network & Internet Technologies",
+  "prompt": "An advantage of connecting computers in a network is that users can:",
+  "options": [
+   "share resources such as files and a printer",
+   "never communicate with one another",
+   "lose all their data automatically",
+   "stop using the internet completely"
+  ]
+ },
+ {
+  "id": "7f00e7a3-f8a9-4ef2-b301-bfa96b20938b",
+  "topic": "Information Management",
+  "prompt": "The difference between 'data' and 'information' is that information is:",
+  "options": [
+   "always longer than data",
+   "exactly the same as data",
+   "data that has been processed and given meaning so that it is useful",
+   "always a picture"
+  ]
+ },
+ {
+  "id": "7fc06052-e8c6-4585-8dd9-9293efa21486",
+  "topic": "Information Management",
+  "prompt": "The basic information processing cycle is:",
+  "options": [
+   "print, scan, copy, delete",
+   "open, close, save, exit",
+   "type, read, write, send",
+   "input, processing, output and storage"
+  ]
+ },
+ {
+  "id": "9719b32d-5463-4028-bc66-41ccf350ac80",
+  "topic": "Information Management",
+  "prompt": "When using a search engine, using specific 'keywords' helps you to:",
+  "options": [
+   "get more relevant and accurate results",
+   "slow down the computer",
+   "delete the web page",
+   "increase the screen brightness"
+  ]
+ },
+ {
+  "id": "26215f18-68a1-4358-9aee-c2b11d6e1e05",
+  "topic": "Information Management",
+  "prompt": "Organising your files into clearly named 'folders' helps you to:",
+  "options": [
+   "use much more electricity",
+   "find and manage your files more easily",
+   "delete the operating system",
+   "make the files larger"
+  ]
+ },
+ {
+  "id": "76660fb3-a28a-4e54-bfb1-d7e94ba4c598",
+  "topic": "Information Management",
+  "prompt": "Giving a file a clear, descriptive file name is useful because it:",
+  "options": [
+   "changes the file into a picture",
+   "makes the file print faster",
+   "makes it easier to identify and find the file later",
+   "connects the computer to Wi-Fi"
+  ]
+ },
+ {
+  "id": "8467ba1f-4b25-47a7-ba1f-7180f808f983",
+  "topic": "Information Management",
+  "prompt": "When deciding whether a website is trustworthy, you should consider:",
+  "options": [
+   "how colourful the page is",
+   "how many adverts it shows",
+   "the size of the font used",
+   "who created it and whether the information is accurate and up to date"
+  ]
+ },
+ {
+  "id": "fec9259a-aff1-45b8-bc6d-90516d0f7e5f",
+  "topic": "Information Management",
+  "prompt": "A graph or chart is often used instead of a long table of numbers because it:",
+  "options": [
+   "makes trends and comparisons easier to see at a glance",
+   "always uses more paper",
+   "hides the information",
+   "deletes the data"
+  ]
+ },
+ {
+  "id": "d618f8de-5b67-40b7-9b81-18d8f8a0b752",
+  "topic": "Information Management",
+  "prompt": "'Sorting' a list of data means:",
+  "options": [
+   "deleting some of the data",
+   "arranging it in a particular order, such as alphabetically",
+   "printing it twice",
+   "changing it into a photograph"
+  ]
+ },
+ {
+  "id": "081fc82f-f9eb-47b1-8e28-224bd272d1cb",
+  "topic": "Social Implications & Computer Ethics",
+  "prompt": "'Green computing' refers to:",
+  "options": [
+   "painting your computer green",
+   "using the internet only at night",
+   "playing computer games outdoors",
+   "using computers in an environmentally friendly way, such as saving energy and recycling e-waste"
+  ]
+ },
+ {
+  "id": "abf620be-2234-4552-a9aa-354765f43cf4",
+  "topic": "Social Implications & Computer Ethics",
+  "prompt": "'Netiquette' refers to:",
+  "options": [
+   "the rules of polite and respectful behaviour when communicating online",
+   "a type of computer virus",
+   "the speed of the internet connection",
+   "a brand of computer"
+  ]
+ },
+ {
+  "id": "1428c3fa-61a9-4a65-a00a-15ecca48eb13",
+  "topic": "Social Implications & Computer Ethics",
+  "prompt": "'Cyberbullying' is:",
+  "options": [
+   "fixing a broken computer",
+   "using technology to harass, threaten or embarrass someone",
+   "making a backup of your files",
+   "typing very quickly"
+  ]
+ },
+ {
+  "id": "536a7814-fbff-4356-b79e-4e5a219ed97a",
+  "topic": "Social Implications & Computer Ethics",
+  "prompt": "'Phishing' is a scam in which criminals try to:",
+  "options": [
+   "improve your internet speed",
+   "recycle old computers",
+   "trick you into giving out personal information such as passwords or bank details",
+   "physically clean your keyboard"
+  ]
+ },
+ {
+  "id": "42ace1b1-08a2-4eb8-99b4-9acd64fc901c",
+  "topic": "Social Implications & Computer Ethics",
+  "prompt": "To protect your health when using a computer for long periods, you should:",
+  "options": [
+   "stare at the screen without blinking",
+   "sit in the most awkward position possible",
+   "never move from your chair",
+   "sit with good posture and take regular breaks to rest your eyes and body"
+  ]
+ },
+ {
+  "id": "b9290752-9a9e-42dc-9085-ee684e7fec72",
+  "topic": "Social Implications & Computer Ethics",
+  "prompt": "A 'firewall' is used to:",
+  "options": [
+   "help protect a computer or network from unauthorised access",
+   "physically cool down the CPU",
+   "increase the font size on screen",
+   "print documents faster"
+  ]
+ },
+ {
+  "id": "bea98197-9166-4ebf-9b51-11afb88f600c",
+  "topic": "Social Implications & Computer Ethics",
+  "prompt": "The 'digital divide' refers to:",
+  "options": [
+   "splitting a screen into two windows",
+   "the gap between people who have access to technology and those who do not",
+   "dividing two numbers in a spreadsheet",
+   "a cracked monitor"
+  ]
+ },
+ {
+  "id": "6dc5e5a9-1da5-4f1a-8e9d-b4ca5f8a0299",
+  "topic": "Social Implications & Computer Ethics",
+  "prompt": "Before posting a photo of a friend online, good ethical behaviour is to:",
+  "options": [
+   "post it immediately without thinking",
+   "tag as many strangers as possible",
+   "ask your friend's permission first",
+   "delete your own account"
+  ]
+ },
+ {
+  "id": "2fb977b2-4414-4d80-b561-815dfb840a37",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "Every formula in a spreadsheet must begin with:",
+  "options": [
+   "an equals sign (=)",
+   "a full stop",
+   "the letter F",
+   "a space"
+  ]
+ },
+ {
+  "id": "0ccb2581-3752-4b20-8606-191eb6353293",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "The function =AVERAGE(B1:B4) calculates the:",
+  "options": [
+   "largest value in the range",
+   "average (mean) of the values in the range",
+   "number of cells in the range",
+   "smallest value in the range"
+  ]
+ },
+ {
+  "id": "3ef579ce-5852-4825-9036-522a33cef42e",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "In a spreadsheet, the result of =5*3 is:",
+  "options": [
+   "8",
+   "2",
+   "15",
+   "53"
+  ]
+ },
+ {
+  "id": "3fad208c-4a67-477d-9bcd-559afaf9a584",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "Columns in a spreadsheet are labelled with:",
+  "options": [
+   "numbers",
+   "symbols",
+   "colours",
+   "letters (A, B, C ...)"
+  ]
+ },
+ {
+  "id": "64c73811-b3cc-4ebb-94e7-2db88a1fd830",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "The function =MAX(A1:A5) returns the:",
+  "options": [
+   "largest value in the range",
+   "total of the range",
+   "average of the range",
+   "first cell in the range"
+  ]
+ },
+ {
+  "id": "74fa4570-33bd-4686-b3be-2834fcc36f68",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "The cell that is currently selected and ready to be used is called the:",
+  "options": [
+   "hidden cell",
+   "active cell",
+   "deleted cell",
+   "locked cell"
+  ]
+ },
+ {
+  "id": "ea63b9ab-68b8-4545-875a-8f8532fb4fa9",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "In a spreadsheet, the result of =20-8 is:",
+  "options": [
+   "28",
+   "208",
+   "12",
+   "160"
+  ]
+ },
+ {
+  "id": "fb631209-10d0-4a97-bc56-3275bd9f0b9a",
+  "topic": "Spreadsheet Concepts",
+  "prompt": "Rows in a spreadsheet are labelled with:",
+  "options": [
+   "letters",
+   "colours",
+   "symbols",
+   "numbers (1, 2, 3 ...)"
+  ]
+ },
+ {
+  "id": "27e18ed3-2b79-4df0-bf36-80ce319f8ac0",
+  "topic": "Word Processing & Database Concepts",
+  "prompt": "Which word-processing feature places text in the middle of the page from left to right?",
+  "options": [
+   "left align",
+   "centre align",
+   "justify",
+   "bold"
+  ]
+ },
+ {
+  "id": "2b9aa521-5ba3-456f-8188-c6a5bb04ff49",
+  "topic": "Word Processing & Database Concepts",
+  "prompt": "The 'undo' feature in a word processor is used to:",
+  "options": [
+   "save the document",
+   "print the document",
+   "reverse the last action you performed",
+   "close the program"
+  ]
+ },
+ {
+  "id": "38fe80fe-88c1-4b91-81b4-49ed3a5154ce",
+  "topic": "Word Processing & Database Concepts",
+  "prompt": "A 'bulleted list' is used to:",
+  "options": [
+   "draw a picture",
+   "calculate numbers",
+   "play music",
+   "present a list of items, each marked with a symbol such as a dot"
+  ]
+ },
+ {
+  "id": "abd3b75c-25b9-480e-8b74-e925517a36ae",
+  "topic": "Word Processing & Database Concepts",
+  "prompt": "Changing the 'font size' in a document changes:",
+  "options": [
+   "how big or small the text appears",
+   "the colour of the page",
+   "the speed of the printer",
+   "the file's location on the computer"
+  ]
+ },
+ {
+  "id": "4cb84232-732c-4d13-bd8a-da010bb4b22b",
+  "topic": "Word Processing & Database Concepts",
+  "prompt": "In a database table, a 'record' is:",
+  "options": [
+   "a single category of data shown as a column",
+   "all the data about one item, shown as a row",
+   "the name of the database file",
+   "a printed page"
+  ]
+ },
+ {
+  "id": "0972e9b1-21ee-4bd8-8e28-2e47c8e593dc",
+  "topic": "Word Processing & Database Concepts",
+  "prompt": "In a database, a 'field' is:",
+  "options": [
+   "a complete row of data about one item",
+   "the whole database file",
+   "a single category of data, shown as a column (for example 'FirstName')",
+   "a chart"
+  ]
+ },
+ {
+  "id": "8cb27bc3-d809-428d-b61d-a9692fb38131",
+  "topic": "Word Processing & Database Concepts",
+  "prompt": "A 'primary key' in a database is a field that:",
+  "options": [
+   "is always left empty",
+   "stores only pictures",
+   "may be the same for every record",
+   "uniquely identifies each record, so no two records have the same value"
+  ]
+ },
+ {
+  "id": "1326a408-5a32-41a7-b0bc-9ae21de4bab7",
+  "topic": "Word Processing & Database Concepts",
+  "prompt": "Using 'Save As' instead of 'Save' allows you to:",
+  "options": [
+   "save the document with a new name, or in a new location or format",
+   "permanently delete the document",
+   "print the document",
+   "switch off the computer"
+  ]
+ }
+]

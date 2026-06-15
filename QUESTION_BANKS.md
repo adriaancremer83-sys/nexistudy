@@ -50,6 +50,7 @@ Any mismatch: fix or discard. A bank is not announced/marketed until LIVE-OK.
 | Accounting | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; foundational topics distinct from Gr11 — accounting equation, source documents & journals, general ledger & trial balance, sole-trader financial statements, debtors & creditors, salaries/wages/ethics) |
 | Economics | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; foundational topics distinct from Gr11 — basic economic concepts/scarcity, factors of production, economic systems, production possibility curve, population & demographics, labour & trade unions) |
 | Consumer Studies | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; topics distinct from BOTH Gr11 & Gr12 — the consumer & behaviour, nutrients & functions, balanced diet & meal planning, clothing choice/design/care, housing & furnishings, entrepreneurship) |
+| Computer Applications Technology | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; same CAPS content areas as Gr11/Gr12 but basic Gr10 facts, no reuse — hardware/software, networks/internet, info management, social implications & ethics, spreadsheet basics, word processing & database) |
 
 ## Report-a-question safety net (built 2026-06-12)
 `supabase-reports-setup.sql` adds `questions.flagged` + `question_reports` table.
