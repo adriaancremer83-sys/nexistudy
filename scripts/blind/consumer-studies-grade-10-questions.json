@@ -1,0 +1,530 @@
+[
+ {
+  "id": "4c5c8455-e7eb-4984-8678-3dd322c07e3e",
+  "topic": "The Consumer & Consumer Behaviour",
+  "prompt": "A 'consumer' is best described as:",
+  "options": [
+   "a person who buys and uses goods and services to satisfy their needs and wants",
+   "a person who only manufactures goods in a factory",
+   "a shop that sells products",
+   "a person who never spends any money"
+  ]
+ },
+ {
+  "id": "278f16e1-b6f8-47f5-b1bb-bd89a25fa6b8",
+  "topic": "The Consumer & Consumer Behaviour",
+  "prompt": "The difference between 'goods' and 'services' is that goods are tangible (physical) items, while services are:",
+  "options": [
+   "always provided free of charge",
+   "actions or work done for others, such as a haircut or a bus ride",
+   "exactly the same thing as goods",
+   "only ever sold in supermarkets"
+  ]
+ },
+ {
+  "id": "4e8d488a-a803-45ee-9d7a-916c22ace18f",
+  "topic": "The Consumer & Consumer Behaviour",
+  "prompt": "A 'durable' good is one that:",
+  "options": [
+   "is used up immediately, like a slice of bread",
+   "can never be bought in a shop",
+   "lasts a long time and can be used repeatedly, such as a fridge",
+   "is always the cheapest item available"
+  ]
+ },
+ {
+  "id": "6003f3bd-8ecb-42fa-91b2-fcfd418d490f",
+  "topic": "The Consumer & Consumer Behaviour",
+  "prompt": "Bread and milk are examples of 'non-durable' goods because they:",
+  "options": [
+   "last for many years",
+   "are actually types of services",
+   "can be reused many times",
+   "are used up quickly and do not last long"
+  ]
+ },
+ {
+  "id": "694a7f2d-ccde-415d-a73d-6393d71217d3",
+  "topic": "The Consumer & Consumer Behaviour",
+  "prompt": "Which of the following is most likely to influence a teenager's buying decisions?",
+  "options": [
+   "peer pressure and advertising",
+   "the price of gold on world markets",
+   "the national budget speech",
+   "the repo rate set by the Reserve Bank"
+  ]
+ },
+ {
+  "id": "9e9fc9a3-0757-426a-a3bf-34fb67dc4b2f",
+  "topic": "The Consumer & Consumer Behaviour",
+  "prompt": "A consumer's 'income' affects their buying behaviour because it determines:",
+  "options": [
+   "the weather on shopping day",
+   "how much they can afford to spend",
+   "the colour of the products in a shop",
+   "the number of shops in a town"
+  ]
+ },
+ {
+  "id": "f3bc046d-1f36-408f-9e90-766aa30f2c6f",
+  "topic": "The Consumer & Consumer Behaviour",
+  "prompt": "Buying a product simply because a famous celebrity advertises it is an example of being influenced by:",
+  "options": [
+   "the product's nutritional value",
+   "the unit price on the shelf",
+   "advertising and marketing",
+   "the garment's care label"
+  ]
+ },
+ {
+  "id": "26d4f24c-ca9c-4e61-9ec1-bf6679797848",
+  "topic": "The Consumer & Consumer Behaviour",
+  "prompt": "A responsible consumer planning to buy an expensive item should first:",
+  "options": [
+   "buy it immediately without thinking about it",
+   "ignore the price completely",
+   "borrow as much money as possible",
+   "compare prices and quality and consider whether they can afford it"
+  ]
+ },
+ {
+  "id": "89960cb7-993f-405d-9ced-e2b17c345331",
+  "topic": "Nutrients & Their Functions",
+  "prompt": "The nutrient that is the body's main source of energy is:",
+  "options": [
+   "vitamins",
+   "carbohydrates",
+   "water",
+   "minerals"
+  ]
+ },
+ {
+  "id": "5da2f4bc-00c9-45dd-9af4-7f4234c61e67",
+  "topic": "Nutrients & Their Functions",
+  "prompt": "The nutrient mainly needed for the growth and repair of body tissues (body-building) is:",
+  "options": [
+   "fat",
+   "carbohydrate",
+   "protein",
+   "fibre"
+  ]
+ },
+ {
+  "id": "97c426cf-4df8-4231-aa97-6d289ab04bcc",
+  "topic": "Nutrients & Their Functions",
+  "prompt": "A good source of protein is:",
+  "options": [
+   "white sugar",
+   "cooking oil",
+   "white bread",
+   "eggs, meat and beans"
+  ]
+ },
+ {
+  "id": "bb2566d7-a4bf-4d4c-9945-8e4cc3026449",
+  "topic": "Nutrients & Their Functions",
+  "prompt": "Fats and oils are important in the diet because they:",
+  "options": [
+   "provide a concentrated source of energy and help the body absorb certain vitamins",
+   "contain no kilojoules at all",
+   "are the body's main building material",
+   "cannot be stored by the body"
+  ]
+ },
+ {
+  "id": "dc550c02-2261-4b85-9c2c-a3157128ba0a",
+  "topic": "Nutrients & Their Functions",
+  "prompt": "Vitamins and minerals are known as 'protective' nutrients because they:",
+  "options": [
+   "provide most of our daily energy",
+   "help protect the body from illness and keep it working properly",
+   "build muscle tissue only",
+   "are found only in fats"
+  ]
+ },
+ {
+  "id": "7877606a-e65c-487f-a571-8f6ae233c32c",
+  "topic": "Nutrients & Their Functions",
+  "prompt": "Dietary fibre (roughage) is important because it:",
+  "options": [
+   "provides most of the body's energy",
+   "builds strong muscles",
+   "helps the digestive system work and prevents constipation",
+   "is a type of mineral"
+  ]
+ },
+ {
+  "id": "51a215ab-de9c-455a-83d2-f20681766816",
+  "topic": "Nutrients & Their Functions",
+  "prompt": "The mineral needed to build strong bones and teeth is:",
+  "options": [
+   "iron",
+   "vitamin C",
+   "protein",
+   "calcium"
+  ]
+ },
+ {
+  "id": "53921d90-7c2a-4d26-82d3-eff461f44d84",
+  "topic": "Nutrients & Their Functions",
+  "prompt": "The nutrient that makes up a large part of the body and is essential for many body processes such as digestion is:",
+  "options": [
+   "water",
+   "fat",
+   "sugar",
+   "starch"
+  ]
+ },
+ {
+  "id": "85c6ba2e-6cf9-41b4-aa75-509178a296d5",
+  "topic": "A Balanced Diet & Meal Planning",
+  "prompt": "A 'balanced diet' is one that:",
+  "options": [
+   "contains only carbohydrates",
+   "is made up entirely of fruit",
+   "contains the right amounts and variety of all the nutrients the body needs",
+   "avoids all of the food groups"
+  ]
+ },
+ {
+  "id": "6f987922-b69f-47fc-93d8-1a257e17c516",
+  "topic": "A Balanced Diet & Meal Planning",
+  "prompt": "The 'food groups' are useful because they help people to:",
+  "options": [
+   "avoid eating any vegetables",
+   "spend much more money on food",
+   "eat only one type of food",
+   "plan meals that include a variety of foods for a balanced diet"
+  ]
+ },
+ {
+  "id": "e0d2520e-2c04-4fae-a127-cdca1e1041ba",
+  "topic": "A Balanced Diet & Meal Planning",
+  "prompt": "Foods such as bread, rice, pap and potatoes belong mainly to the group that provides:",
+  "options": [
+   "carbohydrates (energy)",
+   "mostly protein",
+   "only vitamins",
+   "only fat"
+  ]
+ },
+ {
+  "id": "c324a3ac-131a-4404-9339-964ff8524617",
+  "topic": "A Balanced Diet & Meal Planning",
+  "prompt": "A meal of pap, beans, spinach and a glass of milk is considered balanced because it:",
+  "options": [
+   "contains only one nutrient",
+   "includes energy, body-building and protective foods",
+   "has no vegetables in it",
+   "is made only of sugar"
+  ]
+ },
+ {
+  "id": "66c59222-e7c6-41dd-b93a-3824d18fa7e7",
+  "topic": "A Balanced Diet & Meal Planning",
+  "prompt": "When planning family meals on a tight budget, a consumer should:",
+  "options": [
+   "always buy the most expensive brands",
+   "buy only imported luxury foods",
+   "choose affordable, nutritious foods and buy produce that is in season",
+   "skip meals in order to save money"
+  ]
+ },
+ {
+  "id": "60b076d3-5e36-4c6a-ad8a-84f358b9d208",
+  "topic": "A Balanced Diet & Meal Planning",
+  "prompt": "Eating too much sugar and fatty food, together with too little exercise, can lead to:",
+  "options": [
+   "stronger bones immediately",
+   "better eyesight",
+   "faster growth only",
+   "obesity and related health problems"
+  ]
+ },
+ {
+  "id": "37bffc33-5203-4d4b-8527-63b03d348a19",
+  "topic": "A Balanced Diet & Meal Planning",
+  "prompt": "Choosing fruit and vegetables that are 'in season' is usually a good idea because they are generally:",
+  "options": [
+   "fresher, cheaper and more readily available",
+   "always far more expensive",
+   "much lower in all nutrients",
+   "never available in shops"
+  ]
+ },
+ {
+  "id": "b4038140-7d00-4a33-bdd6-228a8d5e4c0a",
+  "topic": "A Balanced Diet & Meal Planning",
+  "prompt": "Drinking enough clean water every day is important because water:",
+  "options": [
+   "provides most of our energy",
+   "is needed for digestion, controlling body temperature and removing waste",
+   "builds muscle tissue",
+   "replaces the need for all other nutrients"
+  ]
+ },
+ {
+  "id": "74b928a5-0a28-4f6f-b2dd-a051ad0d8500",
+  "topic": "Clothing: Choice, Design & Care",
+  "prompt": "An important factor to consider when choosing clothing for a particular purpose is:",
+  "options": [
+   "the colour of the shop",
+   "the name of the cashier",
+   "the brand of the till",
+   "the occasion, the climate, comfort and cost"
+  ]
+ },
+ {
+  "id": "a36ce18f-2816-4ba8-a7b8-17d9df3faff8",
+  "topic": "Clothing: Choice, Design & Care",
+  "prompt": "In clothing design, the 'elements of design' include:",
+  "options": [
+   "line, colour, texture and shape",
+   "price, brand and shop name",
+   "washing, drying and ironing",
+   "income, savings and tax"
+  ]
+ },
+ {
+  "id": "4620367a-3be1-40ee-b048-f91f53c452af",
+  "topic": "Clothing: Choice, Design & Care",
+  "prompt": "Vertical lines on a garment tend to make the wearer appear:",
+  "options": [
+   "shorter and wider",
+   "taller and slimmer",
+   "exactly the same as before",
+   "invisible"
+  ]
+ },
+ {
+  "id": "e5664e1b-1ea9-4732-8432-11304a0e9c44",
+  "topic": "Clothing: Choice, Design & Care",
+  "prompt": "A care label showing a washing tub with a hand in it means the garment should be:",
+  "options": [
+   "tumble dried on high heat",
+   "machine washed in very hot water",
+   "hand washed",
+   "dry cleaned only"
+  ]
+ },
+ {
+  "id": "0511de93-e62d-42bf-b0d5-0ba309336d4d",
+  "topic": "Clothing: Choice, Design & Care",
+  "prompt": "The main reason for following the care label instructions on clothing is to:",
+  "options": [
+   "increase the price of the garment",
+   "make the garment shrink",
+   "change the brand of the garment",
+   "keep the garment looking good and make it last longer"
+  ]
+ },
+ {
+  "id": "c1171435-ff64-4547-8f7d-fbd1f62e3b6c",
+  "topic": "Clothing: Choice, Design & Care",
+  "prompt": "'Fashion' is best described as:",
+  "options": [
+   "a style of clothing that is popular at a particular time",
+   "a permanent style that never changes",
+   "a type of fabric",
+   "the price printed on a garment"
+  ]
+ },
+ {
+  "id": "30b5b5fe-cee6-47e3-9b1d-a3d37492925b",
+  "topic": "Clothing: Choice, Design & Care",
+  "prompt": "When buying clothing on a budget, a wise consumer should:",
+  "options": [
+   "always buy the most expensive designer labels",
+   "choose good-quality, versatile items that can be mixed and matched",
+   "buy clothes that do not fit properly",
+   "ignore the care label completely"
+  ]
+ },
+ {
+  "id": "8e698f06-4a95-4b36-8eaa-536af03be60b",
+  "topic": "Clothing: Choice, Design & Care",
+  "prompt": "Storing clean clothing correctly, such as folding knitwear instead of hanging it, helps to:",
+  "options": [
+   "make it dirty",
+   "raise its price",
+   "keep it in good shape and prevent stretching",
+   "change its colour"
+  ]
+ },
+ {
+  "id": "eff2ed56-c93c-4931-b8a1-62ab9dc1a7d6",
+  "topic": "Housing & Furnishings",
+  "prompt": "An important factor to consider when choosing where to live is:",
+  "options": [
+   "the cost, location, size and safety of the home",
+   "the colour of the neighbour's car",
+   "the brand of the kettle",
+   "the name of the street only"
+  ]
+ },
+ {
+  "id": "5a7c66fc-1ae9-4e38-8ea2-86435bbc9c97",
+  "topic": "Housing & Furnishings",
+  "prompt": "A person who pays a monthly amount to live in a home they do not own is called a:",
+  "options": [
+   "landlord",
+   "tenant",
+   "estate agent",
+   "builder"
+  ]
+ },
+ {
+  "id": "336a85a6-4fb2-489d-aa4b-39ab25f6ff68",
+  "topic": "Housing & Furnishings",
+  "prompt": "A 'landlord' is a person who:",
+  "options": [
+   "rents a home from someone else",
+   "builds public roads",
+   "owns a property and rents it out to others",
+   "sells groceries in a shop"
+  ]
+ },
+ {
+  "id": "09949a27-1a6a-41b2-833d-72de848bef7b",
+  "topic": "Housing & Furnishings",
+  "prompt": "When furnishing a first home on a limited budget, a sensible approach is to:",
+  "options": [
+   "buy only the most expensive furniture available",
+   "fill every room immediately on credit",
+   "buy nothing at all, ever",
+   "buy the essential items first and add others over time"
+  ]
+ },
+ {
+  "id": "20aa5e5d-7c68-4278-b68f-0d05dabf30f6",
+  "topic": "Housing & Furnishings",
+  "prompt": "A 'lease agreement' is:",
+  "options": [
+   "a contract between a landlord and a tenant setting out the rental terms",
+   "a grocery receipt",
+   "a type of food",
+   "a clothing care label"
+  ]
+ },
+ {
+  "id": "45716a33-5bf4-4e71-bf42-1e3d8a445d76",
+  "topic": "Housing & Furnishings",
+  "prompt": "One advantage of renting rather than buying a home is that:",
+  "options": [
+   "the tenant becomes the owner of the property",
+   "it usually requires less money upfront and offers more flexibility to move",
+   "the tenant never has to pay anything",
+   "renting always builds personal wealth"
+  ]
+ },
+ {
+  "id": "74cabc92-731c-49c5-b970-8bcb4e94d061",
+  "topic": "Housing & Furnishings",
+  "prompt": "When arranging furniture in a room, making good use of space means:",
+  "options": [
+   "blocking all of the doorways",
+   "covering the windows completely",
+   "allowing easy and safe movement around the room",
+   "placing furniture in a random way"
+  ]
+ },
+ {
+  "id": "7b2798fd-0cc1-4cd7-aa98-b56a23840bbd",
+  "topic": "Housing & Furnishings",
+  "prompt": "A 'deposit' paid when renting a home is:",
+  "options": [
+   "a free gift from the landlord",
+   "the monthly grocery bill",
+   "money that can never be refunded under any circumstances",
+   "an amount paid in advance as security, often refundable if the property is left undamaged"
+  ]
+ },
+ {
+  "id": "d4a542a2-9a5e-4073-8994-f3cfb09cc657",
+  "topic": "Entrepreneurship",
+  "prompt": "An 'entrepreneur' is a person who:",
+  "options": [
+   "only works for a large company for a fixed salary",
+   "starts and runs their own business, taking the risk in the hope of making a profit",
+   "never takes any risks at all",
+   "spends money without ever earning any"
+  ]
+ },
+ {
+  "id": "db662357-87cc-4013-93d1-042934895e04",
+  "topic": "Entrepreneurship",
+  "prompt": "Which of the following is a typical characteristic of a successful entrepreneur?",
+  "options": [
+   "giving up at the first problem",
+   "avoiding all hard work",
+   "creativity, determination and a willingness to take calculated risks",
+   "refusing to plan ahead"
+  ]
+ },
+ {
+  "id": "fc9c35d6-417a-4f58-b3e3-289d97d960bb",
+  "topic": "Entrepreneurship",
+  "prompt": "A small business selling handmade candles has a monthly income of R3 000 and expenses of R1 800. Its profit is:",
+  "options": [
+   "R4 800",
+   "R1 800",
+   "R3 000",
+   "R1 200"
+  ]
+ },
+ {
+  "id": "83796fb2-341f-4cca-9631-0f3f9c16acb7",
+  "topic": "Entrepreneurship",
+  "prompt": "'Profit' is best described as:",
+  "options": [
+   "the amount left over after total expenses are subtracted from total income",
+   "the total income before any costs are taken off",
+   "the money borrowed from a bank",
+   "the tax paid to the government"
+  ]
+ },
+ {
+  "id": "7bf8e05e-5282-4434-b706-d220afdf3f59",
+  "topic": "Entrepreneurship",
+  "prompt": "A young person who wants to start a small business should first:",
+  "options": [
+   "spend all their money on advertising",
+   "identify a need in the market and make a simple plan",
+   "copy a friend exactly without thinking it through",
+   "borrow as much money as possible"
+  ]
+ },
+ {
+  "id": "83e7f215-ef0b-4b7e-baee-f61b1f243792",
+  "topic": "Entrepreneurship",
+  "prompt": "A 'business plan' helps an entrepreneur to:",
+  "options": [
+   "avoid having any customers",
+   "guarantee instant wealth",
+   "set out their goals and how the business will be run",
+   "ignore costs and income"
+  ]
+ },
+ {
+  "id": "814b8049-bc94-44ed-9a89-79099760deff",
+  "topic": "Entrepreneurship",
+  "prompt": "If a business's expenses are greater than its income, the business makes a:",
+  "options": [
+   "profit",
+   "saving",
+   "donation",
+   "loss"
+  ]
+ },
+ {
+  "id": "64d51e4e-e324-493e-af34-db2d818cef1f",
+  "topic": "Entrepreneurship",
+  "prompt": "One benefit of entrepreneurship for the country is that it:",
+  "options": [
+   "creates jobs and helps the economy grow",
+   "increases unemployment",
+   "reduces the number of goods available",
+   "removes the need for any workers"
+  ]
+ }
+]
