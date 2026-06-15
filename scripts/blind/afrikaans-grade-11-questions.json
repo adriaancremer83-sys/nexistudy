@@ -1,0 +1,530 @@
+[
+ {
+  "id": "6cf21a20-bad7-4bea-985e-0e2f1dc4805f",
+  "topic": "Sinsbou: Sinsdele & Sinsoorte",
+  "prompt": "In die sin \"Die seun skop die bal\" is die onderwerp:",
+  "options": [
+   "Die seun",
+   "skop",
+   "die bal",
+   "skop die bal"
+  ]
+ },
+ {
+  "id": "0c12be55-31ea-41ac-ab85-3f167ce9cd9a",
+  "topic": "Sinsbou: Sinsdele & Sinsoorte",
+  "prompt": "'n Sin wat net een hoofsin bevat en een volledige gedagte uitdruk, word 'n ___ genoem.",
+  "options": [
+   "saamgestelde sin",
+   "enkelvoudige sin",
+   "veelvoudige sin",
+   "bysin"
+  ]
+ },
+ {
+  "id": "4cf70b7b-3a9e-42d5-9bf1-63dcbd95e34e",
+  "topic": "Sinsbou: Sinsdele & Sinsoorte",
+  "prompt": "\"Ek wou speel, maar dit het gereën.\" Hierdie sin bestaan uit:",
+  "options": [
+   "een hoofsin",
+   "een bysin",
+   "twee hoofsinne",
+   "geen werkwoord nie"
+  ]
+ },
+ {
+  "id": "0c698c4a-29ae-4e8f-8ea4-3c62b4a8cad2",
+  "topic": "Sinsbou: Sinsdele & Sinsoorte",
+  "prompt": "In die sin \"Sy lees die boek\" is \"die boek\" die:",
+  "options": [
+   "onderwerp",
+   "werkwoord",
+   "bywoord",
+   "voorwerp"
+  ]
+ },
+ {
+  "id": "01ba0fbe-6202-44dd-8032-2634e11dd9ae",
+  "topic": "Sinsbou: Sinsdele & Sinsoorte",
+  "prompt": "In die sin \"Die kinders speel buite\" is die gesegde (werkwoord):",
+  "options": [
+   "speel",
+   "Die kinders",
+   "buite",
+   "kinders"
+  ]
+ },
+ {
+  "id": "c1facba3-9e27-4e89-84f6-9b37dabb0649",
+  "topic": "Sinsbou: Sinsdele & Sinsoorte",
+  "prompt": "'n Groep woorde met 'n onderwerp en 'n werkwoord wat NIE alleen kan staan nie, word 'n ___ genoem.",
+  "options": [
+   "hoofsin",
+   "bysin",
+   "voorsetsel",
+   "naamwoord"
+  ]
+ },
+ {
+  "id": "d262f564-180b-4ef5-88bc-fd8f603e21f2",
+  "topic": "Sinsbou: Sinsdele & Sinsoorte",
+  "prompt": "\"Omdat sy moeg was, het sy gaan slaap.\" Die woorde \"Omdat sy moeg was\" vorm 'n:",
+  "options": [
+   "hoofsin",
+   "volledige sin",
+   "bysin",
+   "frase sonder werkwoord"
+  ]
+ },
+ {
+  "id": "900d7696-0d21-47fc-a5ff-aae41874d5da",
+  "topic": "Sinsbou: Sinsdele & Sinsoorte",
+  "prompt": "\"Toe die klok lui, het die leerders uitgehardloop.\" Hierdie sin bestaan uit:",
+  "options": [
+   "net een hoofsin",
+   "twee gelyke hoofsinne",
+   "net 'n frase",
+   "'n hoofsin en 'n bysin"
+  ]
+ },
+ {
+  "id": "9f17e63a-1d68-4e2b-a8f3-26d18119ce55",
+  "topic": "Sinonieme & Antonieme",
+  "prompt": "Watter woord is 'n SINONIEM (naaste in betekenis) vir \"bly\"?",
+  "options": [
+   "gelukkig",
+   "kwaad",
+   "moeg",
+   "honger"
+  ]
+ },
+ {
+  "id": "8240fb07-93e7-4cac-a7cd-1888cb8db45c",
+  "topic": "Sinonieme & Antonieme",
+  "prompt": "Watter woord is 'n ANTONIEM (teenoorgestelde) van \"oud\"?",
+  "options": [
+   "bejaard",
+   "jonk",
+   "antiek",
+   "grys"
+  ]
+ },
+ {
+  "id": "26e8e271-4a6e-45ea-8296-84bbaa77d006",
+  "topic": "Sinonieme & Antonieme",
+  "prompt": "Watter woord is 'n SINONIEM vir \"begin\"?",
+  "options": [
+   "eindig",
+   "ophou",
+   "aanvang",
+   "stop"
+  ]
+ },
+ {
+  "id": "2e37a74f-89ed-446b-ae52-94de78967857",
+  "topic": "Sinonieme & Antonieme",
+  "prompt": "Watter woord is 'n ANTONIEM van \"vinnig\"?",
+  "options": [
+   "rats",
+   "haastig",
+   "blitsig",
+   "stadig"
+  ]
+ },
+ {
+  "id": "3ab0569d-7b73-4c46-b2e9-8c66dee75bb1",
+  "topic": "Sinonieme & Antonieme",
+  "prompt": "Watter woord is 'n SINONIEM vir \"mooi\"?",
+  "options": [
+   "pragtig",
+   "lelik",
+   "vuil",
+   "stukkend"
+  ]
+ },
+ {
+  "id": "9fea8038-c8c8-4fe3-8292-bed6393cc228",
+  "topic": "Sinonieme & Antonieme",
+  "prompt": "Watter woord is 'n ANTONIEM van \"ryk\"?",
+  "options": [
+   "welgesteld",
+   "arm",
+   "vermoënd",
+   "gegoed"
+  ]
+ },
+ {
+  "id": "fba7ef99-67d1-4c81-af1c-38be8c300ae2",
+  "topic": "Sinonieme & Antonieme",
+  "prompt": "Watter woord is 'n SINONIEM vir \"dapper\"?",
+  "options": [
+   "bang",
+   "lafhartig",
+   "moedig",
+   "skrikkerig"
+  ]
+ },
+ {
+  "id": "9391301e-1661-45cd-9271-258deee0ffe2",
+  "topic": "Sinonieme & Antonieme",
+  "prompt": "Watter woord is 'n ANTONIEM van \"oop\"?",
+  "options": [
+   "wyd",
+   "los",
+   "ruim",
+   "toe"
+  ]
+ },
+ {
+  "id": "53a4e7ee-55c3-478b-93be-b4d204e5065f",
+  "topic": "Voorvoegsels & Agtervoegsels",
+  "prompt": "Die voorvoegsel \"her-\" in die woord \"herskryf\" beteken:",
+  "options": [
+   "weer / opnuut",
+   "nie",
+   "voor",
+   "verkeerd"
+  ]
+ },
+ {
+  "id": "363b4c33-4f96-43b4-b583-127d695696b3",
+  "topic": "Voorvoegsels & Agtervoegsels",
+  "prompt": "Die voorvoegsel \"on-\" in die woord \"ongelukkig\" beteken:",
+  "options": [
+   "baie gelukkig",
+   "nie (die teenoorgestelde)",
+   "weer gelukkig",
+   "voor gelukkig"
+  ]
+ },
+ {
+  "id": "3c108494-75c6-48a0-973e-863183493d3f",
+  "topic": "Voorvoegsels & Agtervoegsels",
+  "prompt": "Die agtervoegsel \"-loos\" in die woord \"werkloos\" beteken:",
+  "options": [
+   "vol van",
+   "weer",
+   "sonder",
+   "voor"
+  ]
+ },
+ {
+  "id": "07e3a210-4156-4530-8f56-0d189d67dd95",
+  "topic": "Voorvoegsels & Agtervoegsels",
+  "prompt": "Watter agtervoegsel maak van die byvoeglike naamwoord \"mooi\" die selfstandige naamwoord \"mooiheid\"?",
+  "options": [
+   "-loos",
+   "-skap",
+   "-ig",
+   "-heid"
+  ]
+ },
+ {
+  "id": "3f484058-a81e-4b67-b75a-372e0fc1abfb",
+  "topic": "Voorvoegsels & Agtervoegsels",
+  "prompt": "Die voorvoegsel \"wan-\" in die woord \"wanhoop\" dui aan dat iets:",
+  "options": [
+   "sleg / verkeerd / 'n gebrek is",
+   "weer gebeur",
+   "voor plaasvind",
+   "baie goed is"
+  ]
+ },
+ {
+  "id": "341ebf64-09c8-4804-9930-2bdb4a22ed27",
+  "topic": "Voorvoegsels & Agtervoegsels",
+  "prompt": "Die agtervoegsel \"-skap\" in die woord \"vriendskap\" vorm 'n:",
+  "options": [
+   "werkwoord",
+   "selfstandige naamwoord",
+   "bywoord",
+   "voorsetsel"
+  ]
+ },
+ {
+  "id": "419a44c2-995a-4705-9b29-79dcfb4a0501",
+  "topic": "Voorvoegsels & Agtervoegsels",
+  "prompt": "Die voorvoegsel \"ver-\" in die woord \"vergroot\" dui aan dat die voorwerp:",
+  "options": [
+   "kleiner gemaak word",
+   "weggegooi word",
+   "groter gemaak word",
+   "weer gemaak word"
+  ]
+ },
+ {
+  "id": "5b93b75d-877c-461f-9e02-8b50c02ab374",
+  "topic": "Voorvoegsels & Agtervoegsels",
+  "prompt": "As 'n mens \"-jie\", \"-tjie\" of \"-pie\" agter 'n woord voeg, maak jy 'n:",
+  "options": [
+   "meervoud",
+   "werkwoord",
+   "bywoord",
+   "verkleinwoord"
+  ]
+ },
+ {
+  "id": "3d3c3c4e-7f02-4fd7-91cb-6fa38a220127",
+  "topic": "Idiome & Spreekwoorde",
+  "prompt": "Die idioom \"om die spyker op die kop te slaan\" beteken om:",
+  "options": [
+   "presies reg te wees / die kern van die saak raak te sê",
+   "hard te werk met 'n hamer",
+   "'n fout te maak",
+   "iemand seer te maak"
+  ]
+ },
+ {
+  "id": "5d21b381-24e3-4b07-8a13-dffb651a7e22",
+  "topic": "Idiome & Spreekwoorde",
+  "prompt": "Die idioom \"om die hasepad te kies\" beteken om:",
+  "options": [
+   "stadig te loop",
+   "weg te hardloop / te vlug",
+   "'n haas te vang",
+   "'n pad te bou"
+  ]
+ },
+ {
+  "id": "6c69314f-9408-4c7a-ab32-194d4b170581",
+  "topic": "Idiome & Spreekwoorde",
+  "prompt": "Die idioom \"om twee vlieë met een klap te slaan\" beteken om:",
+  "options": [
+   "baie kwaad te wees",
+   "insekte dood te maak",
+   "twee dinge gelyktydig met een handeling reg te kry",
+   "twee keer te misluk"
+  ]
+ },
+ {
+  "id": "da909b40-b830-4694-aa46-7070b7013c7e",
+  "topic": "Idiome & Spreekwoorde",
+  "prompt": "Die spreekwoord \"Haastige hond verbrand sy mond\" waarsku 'n mens om nie:",
+  "options": [
+   "honde te voer nie",
+   "warm kos te eet nie",
+   "vir honde bang te wees nie",
+   "te haastig of onverantwoordelik op te tree nie"
+  ]
+ },
+ {
+  "id": "fed3877b-5cce-4d14-a6c7-18e64e52fdc9",
+  "topic": "Idiome & Spreekwoorde",
+  "prompt": "Die idioom \"om 'n appeltjie met iemand te skil\" beteken om:",
+  "options": [
+   "'n meningsverskil met iemand uit te stryk / iemand oor iets aan te spreek",
+   "vrugte te eet",
+   "kos te maak",
+   "iemand te help"
+  ]
+ },
+ {
+  "id": "f12c8a5b-0b92-4891-9870-10b44e47ad62",
+  "topic": "Idiome & Spreekwoorde",
+  "prompt": "Die idioom \"om in die sewende hemel te wees\" beteken om:",
+  "options": [
+   "baie hartseer te wees",
+   "baie gelukkig of in vervoering te wees",
+   "hoog te vlieg",
+   "in die kerk te wees"
+  ]
+ },
+ {
+  "id": "ac320229-6fe5-4bcb-a2da-ffa11943042e",
+  "topic": "Idiome & Spreekwoorde",
+  "prompt": "Die spreekwoord \"'n Appel val nie ver van die boom nie\" beteken dat:",
+  "options": [
+   "appels swaar is",
+   "bome naby mekaar groei",
+   "kinders dikwels soos hul ouers is",
+   "vrugte vinnig val"
+  ]
+ },
+ {
+  "id": "42160dc1-7524-46f8-a152-04078268dc4e",
+  "topic": "Idiome & Spreekwoorde",
+  "prompt": "Die idioom \"om die kat in die sak te koop\" beteken om:",
+  "options": [
+   "'n troeteldier aan te skaf",
+   "geld te mors",
+   "'n kat weg te gee",
+   "iets te koop sonder om dit eers te ondersoek (en bedroë daarvan af te kom)"
+  ]
+ },
+ {
+  "id": "a431e5a7-2a70-4f2a-b6aa-89b6f69617f7",
+  "topic": "Trappe van Vergelyking",
+  "prompt": "Die vergrotende trap van \"groot\" is:",
+  "options": [
+   "groter",
+   "meer groot",
+   "grootste",
+   "die allergrootste"
+  ]
+ },
+ {
+  "id": "4809b138-db88-441b-ab06-dc60324b42cb",
+  "topic": "Trappe van Vergelyking",
+  "prompt": "Die oortreffende trap van \"goed\" is:",
+  "options": [
+   "goeder",
+   "beste",
+   "goedste",
+   "meer goed"
+  ]
+ },
+ {
+  "id": "3748cf1a-db7b-4904-9bc9-c1b5d54cffd5",
+  "topic": "Trappe van Vergelyking",
+  "prompt": "Die vergrotende trap van \"min\" is:",
+  "options": [
+   "minste",
+   "minner",
+   "minder",
+   "meer min"
+  ]
+ },
+ {
+  "id": "6f2b582e-17af-4b08-a3d8-ea04a030b3eb",
+  "topic": "Trappe van Vergelyking",
+  "prompt": "Die vergrotende trap van \"baie\" is:",
+  "options": [
+   "baier",
+   "baiste",
+   "meeste",
+   "meer"
+  ]
+ },
+ {
+  "id": "94761c21-323e-41bc-b4b9-b1dab81ec657",
+  "topic": "Trappe van Vergelyking",
+  "prompt": "Kies die korrekte sin: \"Van die drie seuns is Pieter die ___.\"",
+  "options": [
+   "langste",
+   "langer",
+   "meer lank",
+   "mees lank"
+  ]
+ },
+ {
+  "id": "978c7cdd-b38a-4bf5-a188-d8a8c76c012f",
+  "topic": "Trappe van Vergelyking",
+  "prompt": "Die oortreffende trap van \"interessant\" is:",
+  "options": [
+   "interessanter",
+   "die interessantste / mees interessante",
+   "interessantts",
+   "meer interessant"
+  ]
+ },
+ {
+  "id": "6e484d4f-6d41-4879-a99c-4e13ec696091",
+  "topic": "Trappe van Vergelyking",
+  "prompt": "Kies die korrekte sin:",
+  "options": [
+   "My boek is goeder as joune.",
+   "My boek is meer goed as joune.",
+   "My boek is beter as joune.",
+   "My boek is die beterste as joune."
+  ]
+ },
+ {
+  "id": "5faac18e-88ed-4b43-8d3e-24d745dad3bd",
+  "topic": "Trappe van Vergelyking",
+  "prompt": "Die oortreffende trap van \"oud\" is:",
+  "options": [
+   "ouer",
+   "meer oud",
+   "die ouer",
+   "oudste"
+  ]
+ },
+ {
+  "id": "1354db60-aaa4-4de1-aabc-1a7496294de9",
+  "topic": "Tye (Teenwoordige, Verlede & Toekomende Tyd)",
+  "prompt": "\"Ek loop skool toe.\" In die VERLEDE TYD word dit:",
+  "options": [
+   "Ek het skool toe geloop.",
+   "Ek sal skool toe loop.",
+   "Ek loop nou skool toe.",
+   "Ek geloop skool toe."
+  ]
+ },
+ {
+  "id": "602f1db0-b73e-4ea1-93f9-2a9e97f8e34f",
+  "topic": "Tye (Teenwoordige, Verlede & Toekomende Tyd)",
+  "prompt": "\"Sy speel klavier.\" In die TOEKOMENDE TYD word dit:",
+  "options": [
+   "Sy het klavier gespeel.",
+   "Sy sal klavier speel.",
+   "Sy speel nou klavier.",
+   "Sy speel gister klavier."
+  ]
+ },
+ {
+  "id": "892f130b-045e-4522-9f46-84cef127e6fc",
+  "topic": "Tye (Teenwoordige, Verlede & Toekomende Tyd)",
+  "prompt": "\"Hy het die wedstryd gewen.\" Hierdie sin is in die:",
+  "options": [
+   "teenwoordige tyd",
+   "toekomende tyd",
+   "verlede tyd",
+   "bevelsvorm"
+  ]
+ },
+ {
+  "id": "a284f457-0c6b-43f9-8674-4024df1a787a",
+  "topic": "Tye (Teenwoordige, Verlede & Toekomende Tyd)",
+  "prompt": "\"Ons sal môre swem.\" Hierdie sin is in die:",
+  "options": [
+   "verlede tyd",
+   "teenwoordige tyd",
+   "bevelsvorm",
+   "toekomende tyd"
+  ]
+ },
+ {
+  "id": "2ad96cad-7e99-491e-a9b0-b247382c25c8",
+  "topic": "Tye (Teenwoordige, Verlede & Toekomende Tyd)",
+  "prompt": "\"Die kinders eet kos.\" In die VERLEDE TYD word dit:",
+  "options": [
+   "Die kinders het kos geëet.",
+   "Die kinders sal kos eet.",
+   "Die kinders eet nou kos.",
+   "Die kinders eet kos geword."
+  ]
+ },
+ {
+  "id": "75fad409-c2a1-4193-bdac-f73e50dd7b61",
+  "topic": "Tye (Teenwoordige, Verlede & Toekomende Tyd)",
+  "prompt": "Watter sin is in die TEENWOORDIGE TYD?",
+  "options": [
+   "Ek het gewerk.",
+   "Ek werk hard.",
+   "Ek sal werk.",
+   "Ek het gaan werk."
+  ]
+ },
+ {
+  "id": "35e0d054-5631-479b-8249-1836f6785217",
+  "topic": "Tye (Teenwoordige, Verlede & Toekomende Tyd)",
+  "prompt": "\"Ma maak die kos.\" In die VERLEDE TYD word dit:",
+  "options": [
+   "Ma sal die kos maak.",
+   "Ma maak nou die kos.",
+   "Ma het die kos gemaak.",
+   "Ma maak die kos gewees."
+  ]
+ },
+ {
+  "id": "dd540a92-7623-4840-8e08-755a3a17da4d",
+  "topic": "Tye (Teenwoordige, Verlede & Toekomende Tyd)",
+  "prompt": "\"Hy het 'n boek gekoop.\" In die TOEKOMENDE TYD word dit:",
+  "options": [
+   "Hy koop 'n boek.",
+   "Hy het gister 'n boek gekoop.",
+   "Hy koop nou 'n boek.",
+   "Hy sal 'n boek koop."
+  ]
+ }
+]
