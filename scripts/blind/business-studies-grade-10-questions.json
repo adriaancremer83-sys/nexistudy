@@ -1,0 +1,530 @@
+[
+ {
+  "id": "df8b5499-9f67-425c-9375-1e2123dbb0f2",
+  "topic": "Creative Thinking & Problem-Solving",
+  "prompt": "Creative thinking is the ability to:",
+  "options": [
+   "generate new and original ideas to solve problems",
+   "copy a competitor exactly",
+   "do the same thing repeatedly",
+   "avoid all new ideas"
+  ]
+ },
+ {
+  "id": "64cbf2c3-1cbf-47ab-aae6-b72f242a7df5",
+  "topic": "Creative Thinking & Problem-Solving",
+  "prompt": "A group technique in which members freely call out as many ideas as possible without judging them is called:",
+  "options": [
+   "a SWOT analysis",
+   "brainstorming",
+   "an audit",
+   "a budget"
+  ]
+ },
+ {
+  "id": "46d48792-cd0b-4717-8aaf-61cc26d6e7ad",
+  "topic": "Creative Thinking & Problem-Solving",
+  "prompt": "A diagram that starts with a central idea and branches outwards to show related ideas is called a:",
+  "options": [
+   "balance sheet",
+   "pie chart",
+   "mind map",
+   "flow chart"
+  ]
+ },
+ {
+  "id": "bd349c63-12ac-4f10-b4f3-6e7f6b9dae8a",
+  "topic": "Creative Thinking & Problem-Solving",
+  "prompt": "A 'non-conventional' (unconventional) solution to a problem is one that:",
+  "options": [
+   "has been used many times before",
+   "follows the usual rules exactly",
+   "is always wrong",
+   "is new and original, and not the usual way of doing things"
+  ]
+ },
+ {
+  "id": "d5dc24e4-2fbe-4e06-9ec7-5893909f40ed",
+  "topic": "Creative Thinking & Problem-Solving",
+  "prompt": "The FIRST step in solving a problem is usually to:",
+  "options": [
+   "identify and define the problem clearly",
+   "celebrate the result",
+   "spend the profit",
+   "ignore the problem"
+  ]
+ },
+ {
+  "id": "b31c9120-5a26-4299-a46b-cd1ce6c55de0",
+  "topic": "Creative Thinking & Problem-Solving",
+  "prompt": "Choosing the best solution from several options and then putting it into action is part of:",
+  "options": [
+   "ignoring the problem",
+   "the problem-solving process",
+   "doing nothing",
+   "closing the business"
+  ]
+ },
+ {
+  "id": "682d3ac9-1730-4f01-bbfe-8e0a5aa3bbe8",
+  "topic": "Creative Thinking & Problem-Solving",
+  "prompt": "A benefit of using creative thinking in a business is that it:",
+  "options": [
+   "wastes time and money",
+   "reduces the number of customers",
+   "helps the business find new products and a competitive advantage",
+   "stops all innovation"
+  ]
+ },
+ {
+  "id": "d790aec8-407f-4e94-8d37-a042a288c577",
+  "topic": "Creative Thinking & Problem-Solving",
+  "prompt": "The 'Delphi technique' for solving problems involves:",
+  "options": [
+   "guessing randomly",
+   "copying rivals",
+   "asking only the owner",
+   "gathering the opinions of a panel of experts, usually in writing"
+  ]
+ },
+ {
+  "id": "3b041865-2ccf-4bfa-b137-ecb11cde11a8",
+  "topic": "Self-Management & Professionalism",
+  "prompt": "'Time management' means:",
+  "options": [
+   "planning and using your time effectively to get tasks done",
+   "always working as slowly as possible",
+   "ignoring all deadlines",
+   "doing everything at the last minute"
+  ]
+ },
+ {
+  "id": "17c028b6-33c7-4619-b1eb-d5c3f9898199",
+  "topic": "Self-Management & Professionalism",
+  "prompt": "Setting clear goals helps a person to:",
+  "options": [
+   "waste resources",
+   "stay focused and measure their progress",
+   "avoid all work",
+   "lose direction"
+  ]
+ },
+ {
+  "id": "58ae49e2-81cb-48d8-becf-1bc135124189",
+  "topic": "Self-Management & Professionalism",
+  "prompt": "'Self-motivation' is the ability to:",
+  "options": [
+   "depend on others for every decision",
+   "give up easily",
+   "drive yourself to achieve goals without being pushed by others",
+   "avoid all responsibility"
+  ]
+ },
+ {
+  "id": "249cc463-955d-4c9e-9d03-05a2a650c034",
+  "topic": "Self-Management & Professionalism",
+  "prompt": "Maintaining a professional image in the workplace includes:",
+  "options": [
+   "arriving late every day",
+   "dressing untidily",
+   "being rude to clients",
+   "dressing appropriately and behaving politely and responsibly"
+  ]
+ },
+ {
+  "id": "f467d723-2238-4e98-a112-5905beb457e1",
+  "topic": "Self-Management & Professionalism",
+  "prompt": "A good way to manage work-related stress is to:",
+  "options": [
+   "plan ahead, prioritise tasks and take regular breaks",
+   "ignore the problem completely",
+   "work without any rest",
+   "blame other people"
+  ]
+ },
+ {
+  "id": "5d923725-8323-4a4b-bcf4-da5925d238d0",
+  "topic": "Self-Management & Professionalism",
+  "prompt": "'Prioritising' tasks means:",
+  "options": [
+   "doing the easiest task first, always",
+   "doing the most important and urgent tasks first",
+   "doing tasks in a random order",
+   "never finishing any task"
+  ]
+ },
+ {
+  "id": "2a07e4fc-00b3-41fb-8461-5563355dd904",
+  "topic": "Self-Management & Professionalism",
+  "prompt": "A person who takes responsibility for their own actions and decisions is showing:",
+  "options": [
+   "poor self-management",
+   "dishonesty",
+   "accountability",
+   "laziness"
+  ]
+ },
+ {
+  "id": "42e03929-9788-4530-b8ff-a08b84374dac",
+  "topic": "Self-Management & Professionalism",
+  "prompt": "'Work-life balance' refers to:",
+  "options": [
+   "working every hour of the day",
+   "never working at all",
+   "spending no time with family",
+   "dividing your time well between work and personal life"
+  ]
+ },
+ {
+  "id": "0c662f64-e93e-40c0-b3f3-e56ac368f8e8",
+  "topic": "Stakeholders",
+  "prompt": "A 'stakeholder' is:",
+  "options": [
+   "any person or group with an interest in the business",
+   "only the owner of the business",
+   "only the government",
+   "a competitor only"
+  ]
+ },
+ {
+  "id": "91fcc330-2f92-4750-a96a-44521b179233",
+  "topic": "Stakeholders",
+  "prompt": "Which of the following is an INTERNAL stakeholder of a business?",
+  "options": [
+   "a customer",
+   "an employee",
+   "the government",
+   "a supplier"
+  ]
+ },
+ {
+  "id": "144319ac-b8a7-471a-81ff-f0701f39ae06",
+  "topic": "Stakeholders",
+  "prompt": "Which of the following is an EXTERNAL stakeholder of a business?",
+  "options": [
+   "a manager",
+   "the owner",
+   "a customer",
+   "an employee"
+  ]
+ },
+ {
+  "id": "13b6e22a-2a94-4204-b54e-01ed8ed09c9d",
+  "topic": "Stakeholders",
+  "prompt": "The main interest that shareholders (owners) have in a business is to:",
+  "options": [
+   "pay more tax",
+   "increase pollution",
+   "reduce their own income",
+   "earn a profit or return on their investment"
+  ]
+ },
+ {
+  "id": "69d30a50-5940-4e70-bf7c-2947ed241704",
+  "topic": "Stakeholders",
+  "prompt": "Employees are stakeholders who expect the business to provide:",
+  "options": [
+   "fair wages, good working conditions and job security",
+   "no pay at all",
+   "unsafe working conditions",
+   "no work to do"
+  ]
+ },
+ {
+  "id": "184a59a7-23cc-4aef-b191-827422686df7",
+  "topic": "Stakeholders",
+  "prompt": "The government, as a stakeholder, is mainly interested in a business:",
+  "options": [
+   "making losses",
+   "paying its taxes and obeying the law",
+   "polluting freely",
+   "avoiding all employment"
+  ]
+ },
+ {
+  "id": "08dbc17b-eb7e-4dc7-b9d5-5ed0297c30b5",
+  "topic": "Stakeholders",
+  "prompt": "The local community is a stakeholder that expects a business to:",
+  "options": [
+   "pollute the area",
+   "ignore local people",
+   "act responsibly, create jobs and protect the environment",
+   "avoid all social projects"
+  ]
+ },
+ {
+  "id": "83fac8a3-b67d-45ae-adb7-cffa1cb999e6",
+  "topic": "Stakeholders",
+  "prompt": "Customers, as stakeholders, mainly expect a business to provide:",
+  "options": [
+   "faulty goods",
+   "poor service",
+   "high prices and no value",
+   "good-quality products and services at fair prices"
+  ]
+ },
+ {
+  "id": "181388e4-3063-4da4-9f85-ed25e2383dc5",
+  "topic": "Generating Business Ideas & SWOT Analysis",
+  "prompt": "A 'business opportunity' is best described as:",
+  "options": [
+   "a gap or need in the market that a business can fill to make a profit",
+   "a guaranteed loss",
+   "a tax form",
+   "a competitor's advertisement"
+  ]
+ },
+ {
+  "id": "154b9e65-89de-41a1-ad5c-637eaab4370f",
+  "topic": "Generating Business Ideas & SWOT Analysis",
+  "prompt": "In a SWOT analysis, the 'S' stands for:",
+  "options": [
+   "Sales",
+   "Strengths",
+   "Salaries",
+   "Stock"
+  ]
+ },
+ {
+  "id": "0e7c99f0-2a31-4e7a-ae2e-301ce81fa323",
+  "topic": "Generating Business Ideas & SWOT Analysis",
+  "prompt": "In a SWOT analysis, 'Opportunities' and 'Threats' are factors that come from the:",
+  "options": [
+   "business's own staff",
+   "owner's personal savings",
+   "external environment outside the business",
+   "internal budget only"
+  ]
+ },
+ {
+  "id": "17f35a8f-908f-4800-afb9-8da015ea2c99",
+  "topic": "Generating Business Ideas & SWOT Analysis",
+  "prompt": "Conducting 'market research' before starting a business helps the entrepreneur to:",
+  "options": [
+   "avoid paying tax",
+   "guarantee failure",
+   "ignore customers",
+   "find out what customers want and how strong the competition is"
+  ]
+ },
+ {
+  "id": "ecff034a-ca47-4ede-a7e1-9584be64bea1",
+  "topic": "Generating Business Ideas & SWOT Analysis",
+  "prompt": "A business 'strength' in a SWOT analysis could be:",
+  "options": [
+   "a skilled and experienced workforce",
+   "a new competitor opening nearby",
+   "rising fuel prices",
+   "a change in the law"
+  ]
+ },
+ {
+  "id": "548a933e-351c-4ba7-88cd-a8959d0b7cf7",
+  "topic": "Generating Business Ideas & SWOT Analysis",
+  "prompt": "A business 'weakness' in a SWOT analysis could be:",
+  "options": [
+   "a loyal customer base",
+   "outdated equipment and a shortage of skills",
+   "a strong brand name",
+   "healthy cash flow"
+  ]
+ },
+ {
+  "id": "e48820fd-1b7b-47eb-96e4-a124d5294884",
+  "topic": "Generating Business Ideas & SWOT Analysis",
+  "prompt": "New business ideas can be generated by:",
+  "options": [
+   "ignoring customers' needs",
+   "never observing the market",
+   "identifying problems people have and finding ways to solve them",
+   "doing nothing at all"
+  ]
+ },
+ {
+  "id": "1d3c30b2-0a58-42cb-9348-376e8307e21d",
+  "topic": "Generating Business Ideas & SWOT Analysis",
+  "prompt": "A rise in unemployment and a new tax on businesses would be classified in a SWOT analysis as:",
+  "options": [
+   "strengths",
+   "weaknesses",
+   "internal factors",
+   "threats"
+  ]
+ },
+ {
+  "id": "3d13abdc-f549-48db-9e45-e7b9d5cd07ed",
+  "topic": "The Business Plan & Business Location",
+  "prompt": "A 'business plan' is a document that:",
+  "options": [
+   "describes the business idea, goals and how they will be achieved",
+   "lists only the owner's salary",
+   "is a tax return",
+   "records daily attendance"
+  ]
+ },
+ {
+  "id": "d31d9c6f-c1ec-4a48-940e-93a305cd5ba6",
+  "topic": "The Business Plan & Business Location",
+  "prompt": "The part of a business plan that gives a short overview of the whole plan is the:",
+  "options": [
+   "balance sheet",
+   "executive summary",
+   "delivery note",
+   "staff roster"
+  ]
+ },
+ {
+  "id": "1bceee93-40e3-4bdb-b173-382ff0695b09",
+  "topic": "The Business Plan & Business Location",
+  "prompt": "The financial plan in a business plan mainly shows:",
+  "options": [
+   "the company logo",
+   "the staff dress code",
+   "the expected income, expenses and how much funding is needed",
+   "the office layout"
+  ]
+ },
+ {
+  "id": "18047f9a-7bb5-4558-ba64-59c9df49b9e1",
+  "topic": "The Business Plan & Business Location",
+  "prompt": "One important purpose of a business plan is to:",
+  "options": [
+   "replace the need for any customers",
+   "guarantee instant profit",
+   "avoid having any goals",
+   "help attract investors or obtain a loan from a bank"
+  ]
+ },
+ {
+  "id": "85ca73b2-e078-415b-ae9f-db5a69921502",
+  "topic": "The Business Plan & Business Location",
+  "prompt": "When choosing a location for a retail shop, an important factor to consider is:",
+  "options": [
+   "how close it is to its customers and how easy it is to reach",
+   "the colour of the walls inside",
+   "the owner's favourite colour",
+   "the name of the street only"
+  ]
+ },
+ {
+  "id": "170ae5c7-7f12-46fc-9534-5ec0224b4ba3",
+  "topic": "The Business Plan & Business Location",
+  "prompt": "A factory is often located near its raw materials or transport routes mainly to:",
+  "options": [
+   "increase costs",
+   "reduce transport costs and operate more efficiently",
+   "make deliveries harder",
+   "avoid all customers"
+  ]
+ },
+ {
+  "id": "31c6d3f9-2c8e-4a97-9616-e0e0c21260c6",
+  "topic": "The Business Plan & Business Location",
+  "prompt": "The marketing section of a business plan describes:",
+  "options": [
+   "how staff will be paid",
+   "the company's bank balance only",
+   "how the product will be priced, promoted and sold to customers",
+   "the office cleaning schedule"
+  ]
+ },
+ {
+  "id": "0288d837-9291-40da-91e4-0681855de8c4",
+  "topic": "The Business Plan & Business Location",
+  "prompt": "Before opening a business in a particular area, an entrepreneur should check:",
+  "options": [
+   "nothing at all",
+   "only the weather",
+   "only the building's colour",
+   "the level of competition and the needs of customers in that area"
+  ]
+ },
+ {
+  "id": "d14e463f-2765-4dc6-8040-f542ebc1316d",
+  "topic": "Business Ethics & Code of Conduct",
+  "prompt": "'Business ethics' refers to:",
+  "options": [
+   "the moral principles and standards that guide behaviour in business",
+   "the total profit of a business",
+   "the number of employees",
+   "the price of shares"
+  ]
+ },
+ {
+  "id": "07b3395d-97e8-4640-91e9-68ffdf1aab64",
+  "topic": "Business Ethics & Code of Conduct",
+  "prompt": "Which of the following is an example of UNETHICAL business behaviour?",
+  "options": [
+   "paying fair wages",
+   "accepting a bribe in exchange for a contract",
+   "obeying the law",
+   "treating customers honestly"
+  ]
+ },
+ {
+  "id": "15fddf33-2119-414a-b111-69beeda0d067",
+  "topic": "Business Ethics & Code of Conduct",
+  "prompt": "A 'code of conduct' is:",
+  "options": [
+   "a list of the company's products",
+   "the company's bank statement",
+   "a set of rules that guides how employees should behave",
+   "the daily sales total"
+  ]
+ },
+ {
+  "id": "3cede1c6-02f1-4f65-a4f2-b2c0efe34065",
+  "topic": "Business Ethics & Code of Conduct",
+  "prompt": "'Corporate social responsibility' (CSR) means that a business:",
+  "options": [
+   "focuses only on profit and ignores society",
+   "pollutes to save money",
+   "exploits its workers",
+   "takes responsibility for its impact on society and the environment"
+  ]
+ },
+ {
+  "id": "8f6b4e03-dffd-406e-b7f8-d7b097a9d72d",
+  "topic": "Business Ethics & Code of Conduct",
+  "prompt": "Using a company's money for personal expenses without permission is an example of:",
+  "options": [
+   "fraud and dishonesty",
+   "good ethics",
+   "social responsibility",
+   "fair trade"
+  ]
+ },
+ {
+  "id": "a075dfe3-5eea-494e-b7b9-5587d486a7fe",
+  "topic": "Business Ethics & Code of Conduct",
+  "prompt": "A 'conflict of interest' occurs when an employee:",
+  "options": [
+   "always acts in the business's best interest",
+   "has a personal interest that clashes with their duty to the business",
+   "follows the code of conduct",
+   "works extra hours willingly"
+  ]
+ },
+ {
+  "id": "b6ffb95f-8054-45a0-a3d5-a3b32bb33c8c",
+  "topic": "Business Ethics & Code of Conduct",
+  "prompt": "Acting ethically can benefit a business by:",
+  "options": [
+   "destroying its reputation",
+   "losing customers",
+   "building trust and a good reputation with customers and the public",
+   "increasing fraud"
+  ]
+ },
+ {
+  "id": "5b6c8a76-6739-407f-8b42-3e08204f4626",
+  "topic": "Business Ethics & Code of Conduct",
+  "prompt": "An example of ethical behaviour towards the environment is:",
+  "options": [
+   "dumping waste in a river",
+   "ignoring pollution laws",
+   "wasting resources",
+   "recycling waste and reducing pollution"
+  ]
+ }
+]
