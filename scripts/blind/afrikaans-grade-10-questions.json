@@ -1,0 +1,530 @@
+[
+ {
+  "id": "46083cba-2639-4039-853c-310fed9afa15",
+  "topic": "Voorsetsels",
+  "prompt": "Kies die korrekte voorsetsel: \"Die kinders speel ___ die park.\"",
+  "options": [
+   "op",
+   "aan",
+   "in",
+   "onder"
+  ]
+ },
+ {
+  "id": "6cf39ee5-7ba2-410b-806b-ab6547fd6537",
+  "topic": "Lidwoorde & Voornaamwoorde",
+  "prompt": "Die ONBEPAALDE lidwoord in Afrikaans is:",
+  "options": [
+   "'n",
+   "die",
+   "hierdie",
+   "daardie"
+  ]
+ },
+ {
+  "id": "1388a984-52ec-4cae-bb91-e12921bb11c4",
+  "topic": "Lidwoorde & Voornaamwoorde",
+  "prompt": "Die BEPAALDE lidwoord in Afrikaans is:",
+  "options": [
+   "'n",
+   "die",
+   "een",
+   "geen"
+  ]
+ },
+ {
+  "id": "5859a348-79eb-4c1b-901b-8ea915b4a957",
+  "topic": "Lidwoorde & Voornaamwoorde",
+  "prompt": "Kies die korrekte persoonlike voornaamwoord: \"___ is my beste vriend.\" (verwys na een seun, onderwerp)",
+  "options": [
+   "Hom",
+   "Sy",
+   "Hy",
+   "Hulle"
+  ]
+ },
+ {
+  "id": "3f23cf70-b017-462c-9cb2-c078d832b84c",
+  "topic": "Lidwoorde & Voornaamwoorde",
+  "prompt": "Kies die korrekte besitlike voornaamwoord: \"Hierdie boek is ___.\" (dit behoort aan my)",
+  "options": [
+   "ek",
+   "my",
+   "ekke",
+   "myne"
+  ]
+ },
+ {
+  "id": "8786e876-17f5-4b56-8f78-6c53ef4721d4",
+  "topic": "Lidwoorde & Voornaamwoorde",
+  "prompt": "Kies die korrekte voornaamwoord: \"Ma roep ___.\" (verwys na my, voorwerp van die sin)",
+  "options": [
+   "my",
+   "ek",
+   "myne",
+   "ons"
+  ]
+ },
+ {
+  "id": "e69dd5c9-03db-4570-aada-918bfa25dbeb",
+  "topic": "Lidwoorde & Voornaamwoorde",
+  "prompt": "Kies die korrekte besitlike voornaamwoord: \"Die seuns speel met ___ bal.\" (die bal behoort aan die seuns)",
+  "options": [
+   "sy",
+   "hulle",
+   "hom",
+   "haar"
+  ]
+ },
+ {
+  "id": "dccaa59b-2605-43d7-af7c-b8b1e18853e4",
+  "topic": "Lidwoorde & Voornaamwoorde",
+  "prompt": "Kies die korrekte voornaamwoord: \"Sara hou van haar werk. ___ is baie hardwerkend.\"",
+  "options": [
+   "Hy",
+   "Hom",
+   "Sy",
+   "Haar"
+  ]
+ },
+ {
+  "id": "0f8d9983-6858-4c5b-8e61-6b8f42c6d571",
+  "topic": "Lidwoorde & Voornaamwoorde",
+  "prompt": "Die woord \"hierdie\" in \"hierdie boek\" is 'n:",
+  "options": [
+   "persoonlike voornaamwoord",
+   "besitlike voornaamwoord",
+   "voorsetsel",
+   "aanwysende voornaamwoord"
+  ]
+ },
+ {
+  "id": "498c9b23-5147-4296-a8af-3919fbf3b55a",
+  "topic": "Voorsetsels",
+  "prompt": "Kies die korrekte voorsetsel: \"Die kat sit ___ die tafel.\" (bo-op die oppervlak)",
+  "options": [
+   "onder",
+   "op",
+   "tussen",
+   "in"
+  ]
+ },
+ {
+  "id": "e4affa79-0325-43e5-86e9-cdf55fe65420",
+  "topic": "Voorsetsels",
+  "prompt": "Kies die korrekte voorsetsel: \"Die bal rol ___ die bed.\" (daaronder in)",
+  "options": [
+   "op",
+   "bo",
+   "onder",
+   "langs"
+  ]
+ },
+ {
+  "id": "17956a6d-0978-44e5-b41b-a50d393aea49",
+  "topic": "Voorsetsels",
+  "prompt": "Kies die korrekte voorsetsel: \"Sy sit ___ haar twee vriende.\" (een aan elke kant)",
+  "options": [
+   "onder",
+   "op",
+   "in",
+   "tussen"
+  ]
+ },
+ {
+  "id": "5f886165-a00a-44b0-9a07-ad1b0358fe83",
+  "topic": "Voorsetsels",
+  "prompt": "Kies die korrekte voorsetsel: \"Sy gooi die bal ___ die lug.\"",
+  "options": [
+   "in",
+   "onder",
+   "tussen",
+   "agter"
+  ]
+ },
+ {
+  "id": "e6f6cf98-fd9e-4603-8deb-34c9b9f14e79",
+  "topic": "Voorsetsels",
+  "prompt": "Kies die korrekte voorsetsel: \"Die boek lê ___ die laai.\" (binne-in)",
+  "options": [
+   "op",
+   "in",
+   "onder",
+   "oor"
+  ]
+ },
+ {
+  "id": "64bece5d-68d2-441d-a8b9-e72fa115f6d8",
+  "topic": "Voorsetsels",
+  "prompt": "Kies die korrekte voorsetsel van tyd: \"Die vergadering begin ___ nege-uur.\"",
+  "options": [
+   "in",
+   "op",
+   "van",
+   "om"
+  ]
+ },
+ {
+  "id": "66195439-60cc-43c3-a8c6-d924bd558775",
+  "topic": "Voorsetsels",
+  "prompt": "Kies die korrekte voorsetsel: \"Sy stap ___ die winkel toe.\" (rigting)",
+  "options": [
+   "na",
+   "in",
+   "op",
+   "tussen"
+  ]
+ },
+ {
+  "id": "28246de9-3c23-41c4-8539-1af3b684a20b",
+  "topic": "Voegwoorde",
+  "prompt": "Kies die korrekte voegwoord: \"Sy is slim ___ hardwerkend.\" (voeg twee soortgelyke idees saam)",
+  "options": [
+   "maar",
+   "of",
+   "en",
+   "want"
+  ]
+ },
+ {
+  "id": "57c9b940-d5f4-4271-9292-867cae9401e9",
+  "topic": "Voegwoorde",
+  "prompt": "Kies die korrekte voegwoord: \"Hy wou speel, ___ dit het gereën.\" (teenstelling)",
+  "options": [
+   "en",
+   "of",
+   "want",
+   "maar"
+  ]
+ },
+ {
+  "id": "d37298d1-f471-4386-a950-70053242c6ef",
+  "topic": "Voegwoorde",
+  "prompt": "Kies die korrekte voegwoord: \"Wil jy tee ___ koffie hê?\" (keuse)",
+  "options": [
+   "of",
+   "en",
+   "maar",
+   "want"
+  ]
+ },
+ {
+  "id": "eb6ac06e-2c79-4943-af45-7278cb70b446",
+  "topic": "Voegwoorde",
+  "prompt": "Kies die korrekte voegwoord: \"Ek het by die huis gebly, ___ ek was siek.\" (rede)",
+  "options": [
+   "maar",
+   "want",
+   "of",
+   "en"
+  ]
+ },
+ {
+  "id": "9924bd98-71a1-404a-a049-10087fdf19db",
+  "topic": "Voegwoorde",
+  "prompt": "'n Voegwoord is 'n woord wat:",
+  "options": [
+   "'n selfstandige naamwoord beskryf",
+   "wys aan wie iets behoort",
+   "woorde, frases of sinne met mekaar verbind",
+   "'n naamwoord vervang"
+  ]
+ },
+ {
+  "id": "0a163600-9ce7-486b-8774-135f7ab99406",
+  "topic": "Voegwoorde",
+  "prompt": "Kies die korrekte voegwoord: \"Die wedstryd was spannend, ___ ons span het verloor.\" (teenstelling)",
+  "options": [
+   "en",
+   "of",
+   "want",
+   "maar"
+  ]
+ },
+ {
+  "id": "bc40026f-c118-4205-a13e-5128a9f6f406",
+  "topic": "Voegwoorde",
+  "prompt": "Kies die korrekte voegwoord: \"My ma kook die kos ___ my pa was die skottelgoed.\" (saamvoeg)",
+  "options": [
+   "en",
+   "of",
+   "want",
+   "maar"
+  ]
+ },
+ {
+  "id": "afb09a72-cdd3-45ce-9d97-2661ffafab4c",
+  "topic": "Voegwoorde",
+  "prompt": "Kies die korrekte voegwoord: \"Ons kan fliek toe gaan ___ by die huis bly.\" (keuse)",
+  "options": [
+   "en",
+   "of",
+   "want",
+   "maar"
+  ]
+ },
+ {
+  "id": "71db8124-e96a-4aa3-a8bf-cf4abddb9b2f",
+  "topic": "Spelling, Hoofletters & Afkortings",
+  "prompt": "Watter woord is KORREK gespel?",
+  "options": [
+   "geluk-kig",
+   "gelukig",
+   "gellukkig",
+   "gelukkig"
+  ]
+ },
+ {
+  "id": "0ff2cf5c-c954-4f87-ab56-e7c07c80f8df",
+  "topic": "Spelling, Hoofletters & Afkortings",
+  "prompt": "Watter woord is KORREK gespel?",
+  "options": [
+   "asseblief",
+   "aseblief",
+   "assblief",
+   "asebliyf"
+  ]
+ },
+ {
+  "id": "a6369629-e10c-4507-9f9b-d24329ee62d4",
+  "topic": "Spelling, Hoofletters & Afkortings",
+  "prompt": "Watter woord is KORREK gespel?",
+  "options": [
+   "onmiddelik",
+   "onmiddellik",
+   "onmidellik",
+   "onmiddelllik"
+  ]
+ },
+ {
+  "id": "161bb627-6fc2-4fcf-b140-a7e492eabc28",
+  "topic": "Spelling, Hoofletters & Afkortings",
+  "prompt": "In die sin \"ons woon in pretoria\" watter woorde het hoofletters nodig?",
+  "options": [
+   "net 'woon'",
+   "net 'in'",
+   "'Ons' en 'Pretoria'",
+   "geen woord nie"
+  ]
+ },
+ {
+  "id": "6e0685d0-0793-4626-8c6c-4b3e3230d509",
+  "topic": "Spelling, Hoofletters & Afkortings",
+  "prompt": "Die name van dae en maande, soos \"Maandag\" en \"April\":",
+  "options": [
+   "kry nooit 'n hoofletter nie",
+   "kry net aan die einde van 'n sin 'n hoofletter",
+   "word altyd in volle hoofletters geskryf",
+   "begin altyd met 'n hoofletter"
+  ]
+ },
+ {
+  "id": "ca175a20-d964-4b61-b9a9-337bf91c73bc",
+  "topic": "Spelling, Hoofletters & Afkortings",
+  "prompt": "Die afkorting \"ens.\" staan vir:",
+  "options": [
+   "ensovoorts",
+   "ensiklopedie",
+   "enkelvoud",
+   "ensemble"
+  ]
+ },
+ {
+  "id": "09975a63-4f69-488a-805b-c4187d2d8ab4",
+  "topic": "Spelling, Hoofletters & Afkortings",
+  "prompt": "Die afkorting \"dr.\" staan vir:",
+  "options": [
+   "drukker",
+   "dokter",
+   "drie",
+   "drama"
+  ]
+ },
+ {
+  "id": "2370dcc3-57a0-48c4-bae0-c82a4e758448",
+  "topic": "Spelling, Hoofletters & Afkortings",
+  "prompt": "Watter woord begin met 'n hoofletter omdat dit 'n eienaam is?",
+  "options": [
+   "hond",
+   "stad",
+   "Tafelberg",
+   "berg"
+  ]
+ },
+ {
+  "id": "04d79f48-194a-4cae-88be-f2293658bfd4",
+  "topic": "Sinsoorte: Stel-, Vraag-, Bevel- & Uitroepsin",
+  "prompt": "'n Sin wat 'n stelling maak en met 'n punt eindig, word 'n ___ genoem.",
+  "options": [
+   "vraagsin",
+   "stelsin",
+   "bevelsin",
+   "uitroepsin"
+  ]
+ },
+ {
+  "id": "c5068cf6-3106-4ec3-b16e-186871a4d587",
+  "topic": "Sinsoorte: Stel-, Vraag-, Bevel- & Uitroepsin",
+  "prompt": "'n Sin wat iets vra en met 'n vraagteken eindig, word 'n ___ genoem.",
+  "options": [
+   "stelsin",
+   "bevelsin",
+   "vraagsin",
+   "uitroepsin"
+  ]
+ },
+ {
+  "id": "8f25f397-73b3-43ee-a36f-7f9826c1904e",
+  "topic": "Sinsoorte: Stel-, Vraag-, Bevel- & Uitroepsin",
+  "prompt": "\"Maak die deur toe, asseblief.\" Hierdie sin is 'n:",
+  "options": [
+   "vraagsin",
+   "stelsin",
+   "uitroepsin",
+   "bevelsin"
+  ]
+ },
+ {
+  "id": "eb960020-9201-45d8-a2bc-ac2029dd78f6",
+  "topic": "Sinsoorte: Stel-, Vraag-, Bevel- & Uitroepsin",
+  "prompt": "\"Wat 'n pragtige dag is dit!\" Hierdie sin is 'n:",
+  "options": [
+   "uitroepsin",
+   "vraagsin",
+   "stelsin",
+   "bevelsin"
+  ]
+ },
+ {
+  "id": "f787e004-a7a8-4793-bcac-ea582a12322f",
+  "topic": "Sinsoorte: Stel-, Vraag-, Bevel- & Uitroepsin",
+  "prompt": "Watter leesteken hoort aan die einde van die sin \"Waarheen gaan jy\"?",
+  "options": [
+   "'n punt",
+   "'n vraagteken",
+   "'n komma",
+   "geen leesteken nie"
+  ]
+ },
+ {
+  "id": "e17161ac-ae93-4e9d-a14a-6b00bd54afff",
+  "topic": "Sinsoorte: Stel-, Vraag-, Bevel- & Uitroepsin",
+  "prompt": "Watter sin is 'n BEVELSIN?",
+  "options": [
+   "Die son skyn helder.",
+   "Skyn die son vandag?",
+   "Sit stil en luister.",
+   "Wat 'n mooi tuin!"
+  ]
+ },
+ {
+  "id": "7c72ce0e-79c1-4cff-94c2-7b6373a043d4",
+  "topic": "Sinsoorte: Stel-, Vraag-, Bevel- & Uitroepsin",
+  "prompt": "'n Uitroepsin eindig gewoonlik met:",
+  "options": [
+   "'n punt",
+   "'n vraagteken",
+   "'n komma",
+   "'n uitroepteken"
+  ]
+ },
+ {
+  "id": "784e221a-af51-4e5b-a887-9dd1e0ed3fa2",
+  "topic": "Sinsoorte: Stel-, Vraag-, Bevel- & Uitroepsin",
+  "prompt": "\"Die leerders skryf hul eksamen in November.\" Hierdie sin is 'n:",
+  "options": [
+   "stelsin",
+   "vraagsin",
+   "bevelsin",
+   "uitroepsin"
+  ]
+ },
+ {
+  "id": "63689560-3525-47df-9796-55fb0efabe59",
+  "topic": "Byvoeglike Naamwoorde & Bywoorde",
+  "prompt": "'n Byvoeglike naamwoord is 'n woord wat:",
+  "options": [
+   "'n werkwoord beskryf",
+   "twee sinne verbind",
+   "'n selfstandige naamwoord beskryf",
+   "aandui waar iets is"
+  ]
+ },
+ {
+  "id": "2efc3bb3-8353-4a50-b3e2-64af55f11df3",
+  "topic": "Byvoeglike Naamwoorde & Bywoorde",
+  "prompt": "In die sin \"Die vinnige seun hardloop\" is die byvoeglike naamwoord:",
+  "options": [
+   "Die",
+   "seun",
+   "hardloop",
+   "vinnige"
+  ]
+ },
+ {
+  "id": "b980866c-d82e-4965-bde9-b64a685cf21a",
+  "topic": "Byvoeglike Naamwoorde & Bywoorde",
+  "prompt": "Kies die korrekte vorm: \"Dit is 'n ___ boek.\" (van die woord \"goed\")",
+  "options": [
+   "goeie",
+   "goed",
+   "goeder",
+   "goedste"
+  ]
+ },
+ {
+  "id": "912c0457-2a04-4c77-9324-6940788f6f9d",
+  "topic": "Byvoeglike Naamwoorde & Bywoorde",
+  "prompt": "'n Bywoord is 'n woord wat gewoonlik:",
+  "options": [
+   "'n selfstandige naamwoord beskryf",
+   "die werkwoord beskryf (hóé, wanneer of waar iets gebeur)",
+   "aan iemand behoort",
+   "twee sinne verbind"
+  ]
+ },
+ {
+  "id": "ec671019-965c-48da-9efa-67f5e1fb9fa8",
+  "topic": "Byvoeglike Naamwoorde & Bywoorde",
+  "prompt": "In die sin \"Sy sing mooi\" sê die woord \"mooi\" vir ons:",
+  "options": [
+   "wie sing",
+   "wat sy sing",
+   "hóé sy sing (dit is 'n bywoord)",
+   "wanneer sy sing"
+  ]
+ },
+ {
+  "id": "012f2a47-8e9b-4f07-8702-fcef93f25e9f",
+  "topic": "Byvoeglike Naamwoorde & Bywoorde",
+  "prompt": "Kies die korrekte vorm: \"Hulle bly in 'n ___ huis.\" (van die woord \"nuut\")",
+  "options": [
+   "nuut",
+   "nuter",
+   "nuutste",
+   "nuwe"
+  ]
+ },
+ {
+  "id": "2ce9480d-8c32-4d9e-b3a9-38d6894e672c",
+  "topic": "Byvoeglike Naamwoorde & Bywoorde",
+  "prompt": "Kies die korrekte vorm: \"Dit is 'n ___ berg.\" (van die woord \"hoog\")",
+  "options": [
+   "hoë",
+   "hoog",
+   "hoogte",
+   "hoogste"
+  ]
+ },
+ {
+  "id": "0f68b967-1ac0-407b-86a8-a618a4ecb6c3",
+  "topic": "Byvoeglike Naamwoorde & Bywoorde",
+  "prompt": "In die sin \"Die ou man loop stadig\" is \"stadig\" 'n:",
+  "options": [
+   "byvoeglike naamwoord",
+   "bywoord",
+   "selfstandige naamwoord",
+   "voegwoord"
+  ]
+ }
+]
