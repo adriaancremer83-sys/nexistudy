@@ -1,0 +1,530 @@
+[
+ {
+  "id": "aeff9f01-e185-4f30-b409-90d7439bb8d4",
+  "topic": "Classification of Matter",
+  "prompt": "A pure substance made up of only ONE type of atom is called a(n):",
+  "options": [
+   "element",
+   "compound",
+   "mixture",
+   "solution"
+  ]
+ },
+ {
+  "id": "cbbefe62-fae4-4b61-9884-e4c2f5679565",
+  "topic": "Classification of Matter",
+  "prompt": "A pure substance formed when two or more elements are chemically bonded in a fixed ratio is a(n):",
+  "options": [
+   "element",
+   "compound",
+   "mixture",
+   "alloy"
+  ]
+ },
+ {
+  "id": "cabda9e5-4936-45c5-9024-305706ee1234",
+  "topic": "Classification of Matter",
+  "prompt": "Which of the following is a MIXTURE?",
+  "options": [
+   "pure water",
+   "oxygen gas",
+   "sand and salt stirred together",
+   "carbon dioxide"
+  ]
+ },
+ {
+  "id": "c1f9d200-0247-4a42-b4ce-856690db791c",
+  "topic": "Classification of Matter",
+  "prompt": "A mixture that looks the same throughout, such as salt dissolved in water, is called a:",
+  "options": [
+   "heterogeneous mixture",
+   "suspension",
+   "compound",
+   "homogeneous mixture"
+  ]
+ },
+ {
+  "id": "91dfc4d2-52b9-44f0-bcc4-a5f308df38a8",
+  "topic": "Classification of Matter",
+  "prompt": "The method used to recover dissolved salt from salt water, by removing the water, is:",
+  "options": [
+   "evaporation",
+   "filtration",
+   "magnetism",
+   "chromatography"
+  ]
+ },
+ {
+  "id": "3a011f40-b9cd-476c-a819-919505e1b9be",
+  "topic": "Classification of Matter",
+  "prompt": "The method used to separate sand from water is:",
+  "options": [
+   "distillation",
+   "filtration",
+   "evaporation",
+   "chromatography"
+  ]
+ },
+ {
+  "id": "bfbb6b0c-5e8d-4d25-9ec7-b233f3dd29f0",
+  "topic": "Classification of Matter",
+  "prompt": "A mixture in which the different parts can clearly be seen, such as a salad or granite, is called a:",
+  "options": [
+   "homogeneous mixture",
+   "pure substance",
+   "heterogeneous mixture",
+   "compound"
+  ]
+ },
+ {
+  "id": "c1deed1f-09b0-4b75-9866-60164b80af5c",
+  "topic": "Classification of Matter",
+  "prompt": "Which separation method uses a magnet to remove iron filings from a mixture?",
+  "options": [
+   "filtration",
+   "distillation",
+   "evaporation",
+   "magnetic separation"
+  ]
+ },
+ {
+  "id": "26701367-d104-4442-b522-27bfb4b94138",
+  "topic": "Atomic Structure & the Periodic Table",
+  "prompt": "The three subatomic particles that make up an atom are:",
+  "options": [
+   "protons, neutrons and electrons",
+   "ions, atoms and molecules",
+   "solids, liquids and gases",
+   "acids, bases and salts"
+  ]
+ },
+ {
+  "id": "3a8383d6-fa70-4bf5-8303-266791c2e4f1",
+  "topic": "Atomic Structure & the Periodic Table",
+  "prompt": "The particle in the atom that carries a NEGATIVE charge is the:",
+  "options": [
+   "proton",
+   "electron",
+   "neutron",
+   "nucleus"
+  ]
+ },
+ {
+  "id": "6aa52105-ba64-4824-8cd6-3b8c508ffb31",
+  "topic": "Atomic Structure & the Periodic Table",
+  "prompt": "The number of protons in an atom is called its:",
+  "options": [
+   "mass number",
+   "neutron number",
+   "atomic number",
+   "valency"
+  ]
+ },
+ {
+  "id": "7544f1dd-9bcf-49ab-bd97-a3c626118374",
+  "topic": "Atomic Structure & the Periodic Table",
+  "prompt": "The particle found in the nucleus that has NO electric charge is the:",
+  "options": [
+   "proton",
+   "electron",
+   "ion",
+   "neutron"
+  ]
+ },
+ {
+  "id": "0dfcf4f3-8aaa-4079-9aa4-35179b59f295",
+  "topic": "Atomic Structure & the Periodic Table",
+  "prompt": "An atom has 11 protons and 12 neutrons. Its mass number is:",
+  "options": [
+   "23",
+   "11",
+   "12",
+   "1"
+  ]
+ },
+ {
+  "id": "4ef43ee8-3848-4ea8-8ddc-8cb6810001dd",
+  "topic": "Atomic Structure & the Periodic Table",
+  "prompt": "In the Periodic Table, the vertical columns are called:",
+  "options": [
+   "periods",
+   "groups",
+   "diagonals",
+   "shells"
+  ]
+ },
+ {
+  "id": "281dd3af-e73b-499a-9fff-8d08ceb0ba3b",
+  "topic": "Atomic Structure & the Periodic Table",
+  "prompt": "An atom that has lost or gained electrons and now carries an electric charge is called a(n):",
+  "options": [
+   "isotope",
+   "molecule",
+   "ion",
+   "compound"
+  ]
+ },
+ {
+  "id": "b3e5e25d-c3bb-4684-9808-0630d142f933",
+  "topic": "Atomic Structure & the Periodic Table",
+  "prompt": "The horizontal rows of the Periodic Table are called:",
+  "options": [
+   "groups",
+   "families",
+   "columns",
+   "periods"
+  ]
+ },
+ {
+  "id": "250e8a5d-1bd4-434e-82c2-656e38b5c8e0",
+  "topic": "Physical & Chemical Change",
+  "prompt": "Melting ice into liquid water is an example of a:",
+  "options": [
+   "physical change",
+   "chemical change",
+   "nuclear reaction",
+   "combustion reaction"
+  ]
+ },
+ {
+  "id": "f2c452fe-4398-46e7-97ed-64a1542031b8",
+  "topic": "Physical & Chemical Change",
+  "prompt": "The burning of wood is an example of a:",
+  "options": [
+   "physical change",
+   "chemical change",
+   "change of state only",
+   "dissolving"
+  ]
+ },
+ {
+  "id": "348cd3b1-b147-4777-b527-cf102d71d31b",
+  "topic": "Physical & Chemical Change",
+  "prompt": "During a chemical reaction, the substances you start with are called the:",
+  "options": [
+   "products",
+   "catalysts",
+   "reactants",
+   "solvents"
+  ]
+ },
+ {
+  "id": "47644af1-dac7-4733-8b1f-777a59a2d0d4",
+  "topic": "Physical & Chemical Change",
+  "prompt": "The Law of Conservation of Mass states that in a chemical reaction the total mass of the products is ___ the total mass of the reactants.",
+  "options": [
+   "always greater than",
+   "always less than",
+   "unrelated to",
+   "equal to"
+  ]
+ },
+ {
+  "id": "0e1d24b5-52e3-48e9-be22-df9dc9ab88b3",
+  "topic": "Physical & Chemical Change",
+  "prompt": "In the equation 2H₂ + O₂ → 2H₂O, the substance on the RIGHT of the arrow (H₂O) is the:",
+  "options": [
+   "product",
+   "reactant",
+   "catalyst",
+   "element"
+  ]
+ },
+ {
+  "id": "0d4200ee-fbc7-4698-923f-bd539cb319a9",
+  "topic": "Physical & Chemical Change",
+  "prompt": "Which of the following is a sign that a CHEMICAL change has taken place?",
+  "options": [
+   "ice melting",
+   "a colour change and a new gas forming",
+   "water boiling",
+   "sugar dissolving"
+  ]
+ },
+ {
+  "id": "76f043c9-da56-4afa-8da6-a09b9dede82d",
+  "topic": "Physical & Chemical Change",
+  "prompt": "How many oxygen atoms are shown on the LEFT-hand side of the equation 2H₂ + O₂ → 2H₂O?",
+  "options": [
+   "1",
+   "3",
+   "2",
+   "4"
+  ]
+ },
+ {
+  "id": "22155780-6efa-4258-96ab-9a993b14f3a4",
+  "topic": "Physical & Chemical Change",
+  "prompt": "Dissolving salt in water is regarded as a physical change mainly because:",
+  "options": [
+   "a new substance is formed",
+   "it gives off light",
+   "it can never be reversed",
+   "no new substance forms and the salt can be recovered by evaporation"
+  ]
+ },
+ {
+  "id": "309fe5c6-9cec-41fd-ba33-1fb2a51ff842",
+  "topic": "Motion in One Dimension",
+  "prompt": "Speed is calculated using the formula:",
+  "options": [
+   "speed = distance ÷ time",
+   "speed = distance × time",
+   "speed = time ÷ distance",
+   "speed = mass × distance"
+  ]
+ },
+ {
+  "id": "67cd87fd-c7b1-40d2-ad80-2a98d224611c",
+  "topic": "Motion in One Dimension",
+  "prompt": "A car travels 100 m in 5 s. Its average speed is:",
+  "options": [
+   "500 m/s",
+   "20 m/s",
+   "0.05 m/s",
+   "105 m/s"
+  ]
+ },
+ {
+  "id": "56305bd8-88cf-4fde-82d1-183f1f4e4b13",
+  "topic": "Motion in One Dimension",
+  "prompt": "The SI unit of speed is:",
+  "options": [
+   "metres (m)",
+   "seconds (s)",
+   "metres per second (m/s)",
+   "newtons (N)"
+  ]
+ },
+ {
+  "id": "45c32b58-12e9-43f5-8f5a-254c8d588b41",
+  "topic": "Motion in One Dimension",
+  "prompt": "A quantity that has both magnitude AND direction, such as velocity, is a:",
+  "options": [
+   "scalar",
+   "speed",
+   "distance",
+   "vector"
+  ]
+ },
+ {
+  "id": "646f070e-e053-4642-b001-db8684229620",
+  "topic": "Motion in One Dimension",
+  "prompt": "The rate at which an object's velocity changes is called its:",
+  "options": [
+   "acceleration",
+   "distance",
+   "mass",
+   "weight"
+  ]
+ },
+ {
+  "id": "24a51593-62b4-4025-b998-953b6201ccf1",
+  "topic": "Motion in One Dimension",
+  "prompt": "A runner covers 400 m in 50 s. The average speed is:",
+  "options": [
+   "0.125 m/s",
+   "8 m/s",
+   "20 000 m/s",
+   "450 m/s"
+  ]
+ },
+ {
+  "id": "442171d6-6612-493b-8422-18deee3757f6",
+  "topic": "Motion in One Dimension",
+  "prompt": "Which of the following is a SCALAR quantity (magnitude only)?",
+  "options": [
+   "velocity",
+   "displacement",
+   "distance",
+   "acceleration"
+  ]
+ },
+ {
+  "id": "9312be1a-1b0d-47c1-af17-85e81d56e57d",
+  "topic": "Motion in One Dimension",
+  "prompt": "A cyclist travels at 6 m/s for 10 s. The distance covered is:",
+  "options": [
+   "0.6 m",
+   "16 m",
+   "1.67 m",
+   "60 m"
+  ]
+ },
+ {
+  "id": "413b2dbd-ba87-41e8-bff3-bcfaa24849d6",
+  "topic": "Waves, Sound & Light",
+  "prompt": "A wave in which the particles vibrate at right angles (perpendicular) to the direction the wave travels is a:",
+  "options": [
+   "transverse wave",
+   "longitudinal wave",
+   "sound wave",
+   "shock wave"
+  ]
+ },
+ {
+  "id": "d0387f9e-668d-4e86-a383-d2c68052ee7c",
+  "topic": "Waves, Sound & Light",
+  "prompt": "A wave in which the particles vibrate parallel to the direction the wave travels, such as sound, is a:",
+  "options": [
+   "transverse wave",
+   "longitudinal wave",
+   "light wave",
+   "radio wave"
+  ]
+ },
+ {
+  "id": "09b4f6bb-0b3a-458f-86fd-4cbfe03f9655",
+  "topic": "Waves, Sound & Light",
+  "prompt": "The number of complete waves passing a point per second is called the:",
+  "options": [
+   "wavelength",
+   "amplitude",
+   "frequency",
+   "period"
+  ]
+ },
+ {
+  "id": "5460506f-7c86-4a04-befe-9f2b97611482",
+  "topic": "Waves, Sound & Light",
+  "prompt": "The wave equation relating speed (v), frequency (f) and wavelength (λ) is:",
+  "options": [
+   "v = f ÷ λ",
+   "v = λ ÷ f",
+   "v = f − λ",
+   "v = f × λ"
+  ]
+ },
+ {
+  "id": "108a6757-c317-47f1-b699-e42262e315b7",
+  "topic": "Waves, Sound & Light",
+  "prompt": "A wave has a frequency of 5 Hz and a wavelength of 2 m. Its speed is:",
+  "options": [
+   "10 m/s",
+   "2.5 m/s",
+   "7 m/s",
+   "3 m/s"
+  ]
+ },
+ {
+  "id": "eb4db9cf-9cdc-4071-b359-0c38c9936731",
+  "topic": "Waves, Sound & Light",
+  "prompt": "The distance from one crest of a wave to the next crest is the:",
+  "options": [
+   "amplitude",
+   "wavelength",
+   "frequency",
+   "period"
+  ]
+ },
+ {
+  "id": "dfa7ae7e-6132-4cc9-ac1c-b6671127a3ba",
+  "topic": "Waves, Sound & Light",
+  "prompt": "Visible light is part of the ___ spectrum, which also includes radio waves, X-rays and microwaves.",
+  "options": [
+   "sound",
+   "longitudinal",
+   "electromagnetic",
+   "seismic"
+  ]
+ },
+ {
+  "id": "bc5144d0-4729-4376-9c27-f99d9129aed8",
+  "topic": "Waves, Sound & Light",
+  "prompt": "The maximum distance a wave moves from its rest position, which is related to its energy, is the:",
+  "options": [
+   "wavelength",
+   "frequency",
+   "period",
+   "amplitude"
+  ]
+ },
+ {
+  "id": "7f33a920-3776-4a71-ae4e-c731b6870c65",
+  "topic": "Energy (Mechanical Energy)",
+  "prompt": "Energy that an object has because of its motion is called:",
+  "options": [
+   "kinetic energy",
+   "potential energy",
+   "chemical energy",
+   "nuclear energy"
+  ]
+ },
+ {
+  "id": "da34c2c9-9a41-4d71-8425-1ece5f1d8183",
+  "topic": "Energy (Mechanical Energy)",
+  "prompt": "Energy that an object has because of its position or height above the ground is called gravitational ___ energy.",
+  "options": [
+   "kinetic",
+   "potential",
+   "sound",
+   "electrical"
+  ]
+ },
+ {
+  "id": "7762e91d-1ecd-4e86-bd3e-0b6e3c340c7a",
+  "topic": "Energy (Mechanical Energy)",
+  "prompt": "Gravitational potential energy is calculated using the formula:",
+  "options": [
+   "EP = ½mv²",
+   "EP = m ÷ g",
+   "EP = mgh",
+   "EP = Fd"
+  ]
+ },
+ {
+  "id": "130c095c-169a-4778-a04b-88bf3a44e212",
+  "topic": "Energy (Mechanical Energy)",
+  "prompt": "Kinetic energy is calculated using the formula:",
+  "options": [
+   "EK = mgh",
+   "EK = mg",
+   "EK = Fd",
+   "EK = ½mv²"
+  ]
+ },
+ {
+  "id": "59ceaef9-1566-42fe-b46b-400aec1e7a66",
+  "topic": "Energy (Mechanical Energy)",
+  "prompt": "The SI unit of energy is the:",
+  "options": [
+   "joule (J)",
+   "newton (N)",
+   "watt (W)",
+   "metre (m)"
+  ]
+ },
+ {
+  "id": "66266123-f08c-4a1c-9e9b-aa3134f62417",
+  "topic": "Energy (Mechanical Energy)",
+  "prompt": "An object of mass 2 kg is held 5 m above the ground (g = 10 m/s²). Its gravitational potential energy is:",
+  "options": [
+   "10 J",
+   "100 J",
+   "25 J",
+   "1 J"
+  ]
+ },
+ {
+  "id": "8e84343f-6289-4a52-8a86-d8c0abb23005",
+  "topic": "Energy (Mechanical Energy)",
+  "prompt": "The total mechanical energy of an object is the sum of its:",
+  "options": [
+   "mass and weight",
+   "speed and height",
+   "kinetic and potential energy",
+   "force and distance"
+  ]
+ },
+ {
+  "id": "6770be26-9084-4ec5-b80c-52bd35477876",
+  "topic": "Energy (Mechanical Energy)",
+  "prompt": "A 2 kg object moves at 3 m/s. Its kinetic energy is:",
+  "options": [
+   "6 J",
+   "18 J",
+   "3 J",
+   "9 J"
+  ]
+ }
+]
