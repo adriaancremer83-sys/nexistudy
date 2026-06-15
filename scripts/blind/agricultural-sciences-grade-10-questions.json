@@ -1,0 +1,530 @@
+[
+ {
+  "id": "6c03b71f-b67d-418d-8559-5fa2d8d9bcbd",
+  "topic": "Introduction to Agriculture & Its Branches",
+  "prompt": "'Agriculture' is best defined as:",
+  "options": [
+   "the science and practice of cultivating crops and raising animals for food and other products",
+   "the buying and selling of cars",
+   "the study of the weather only",
+   "the building of houses in cities"
+  ]
+ },
+ {
+  "id": "bac47b3d-770c-4b10-b5cd-f994a7ff7bb9",
+  "topic": "Introduction to Agriculture & Its Branches",
+  "prompt": "A farmer who grows maize, wheat and vegetables practises:",
+  "options": [
+   "animal husbandry",
+   "crop production (agronomy)",
+   "mining",
+   "deep-sea fishing"
+  ]
+ },
+ {
+  "id": "78f01d47-f0d7-4990-b7d5-38f4d9d4c257",
+  "topic": "Introduction to Agriculture & Its Branches",
+  "prompt": "A farmer who keeps cattle, sheep and goats for meat, milk or wool practises:",
+  "options": [
+   "crop farming",
+   "flower growing",
+   "animal production (livestock farming)",
+   "forestry"
+  ]
+ },
+ {
+  "id": "42b7a8e8-2928-40a0-8e7d-a828b3dcadb6",
+  "topic": "Introduction to Agriculture & Its Branches",
+  "prompt": "'Subsistence farming' is best described as farming that:",
+  "options": [
+   "produces huge surpluses mainly for export",
+   "uses only the latest expensive machines",
+   "is done only inside large cities",
+   "produces mainly enough food for the farmer's own family, with little left to sell"
+  ]
+ },
+ {
+  "id": "fb7a2388-99dd-4723-8210-e330d20cc884",
+  "topic": "Introduction to Agriculture & Its Branches",
+  "prompt": "'Commercial farming' is farming that:",
+  "options": [
+   "produces crops and animals mainly to sell for a profit",
+   "produces food only for the farmer's own family",
+   "never sells any of its produce",
+   "does not use any land at all"
+  ]
+ },
+ {
+  "id": "29607e27-04dd-46b5-9335-0da7f312a858",
+  "topic": "Introduction to Agriculture & Its Branches",
+  "prompt": "'Horticulture' is the branch of agriculture that deals with the growing of:",
+  "options": [
+   "cattle and sheep",
+   "fruit, vegetables and flowers",
+   "fish in dams",
+   "trees for timber only"
+  ]
+ },
+ {
+  "id": "ab6086fc-6e4c-474b-b0be-e50de78e3611",
+  "topic": "Introduction to Agriculture & Its Branches",
+  "prompt": "A farm that produces BOTH crops and livestock together is called a:",
+  "options": [
+   "subsistence-only farm",
+   "fish farm",
+   "mixed farming enterprise",
+   "single-crop plantation"
+  ]
+ },
+ {
+  "id": "1c045f62-18f5-46a1-9b54-ecf0729eb231",
+  "topic": "Introduction to Agriculture & Its Branches",
+  "prompt": "One important reason agriculture is important to South Africa is that it:",
+  "options": [
+   "uses up all the country's water for no reason",
+   "produces no jobs at all",
+   "has nothing to do with the economy",
+   "provides food, creates jobs and earns export income"
+  ]
+ },
+ {
+  "id": "6b4181ee-abaa-4e8c-9f31-c5688cdc58f4",
+  "topic": "Climate & Weather in Agriculture",
+  "prompt": "The difference between 'weather' and 'climate' is that climate is:",
+  "options": [
+   "the weather at this exact moment",
+   "the average weather conditions of an area over many years",
+   "only the temperature recorded today",
+   "the same as a single thunderstorm"
+  ]
+ },
+ {
+  "id": "1d85b1dd-022f-4dee-b1b1-9dffba05dfa2",
+  "topic": "Climate & Weather in Agriculture",
+  "prompt": "The instrument used to measure the amount of rainfall is a:",
+  "options": [
+   "thermometer",
+   "barometer",
+   "rain gauge",
+   "wind vane"
+  ]
+ },
+ {
+  "id": "a7c8ee8c-efab-418b-ad8e-7e47d7a7dc30",
+  "topic": "Climate & Weather in Agriculture",
+  "prompt": "The instrument used to measure temperature is a:",
+  "options": [
+   "rain gauge",
+   "wind vane",
+   "barometer",
+   "thermometer"
+  ]
+ },
+ {
+  "id": "482c5ab9-b381-41b8-9ffc-a8fb286828e9",
+  "topic": "Climate & Weather in Agriculture",
+  "prompt": "'Frost' can damage crops because it:",
+  "options": [
+   "freezes the water inside plant cells, killing the plant tissue",
+   "adds extra nutrients to the leaves",
+   "helps seeds to germinate faster",
+   "raises the temperature of the soil"
+  ]
+ },
+ {
+  "id": "3f75aeb4-df73-4875-9600-8b84d14a54ce",
+  "topic": "Climate & Weather in Agriculture",
+  "prompt": "A long period with little or no rain, which can cause crops to fail, is called a:",
+  "options": [
+   "flood",
+   "drought",
+   "frost",
+   "hailstorm"
+  ]
+ },
+ {
+  "id": "88fe4a0b-74b8-4274-9fbb-92ba0a31096f",
+  "topic": "Climate & Weather in Agriculture",
+  "prompt": "The instrument that shows the DIRECTION from which the wind is blowing is a:",
+  "options": [
+   "thermometer",
+   "rain gauge",
+   "wind vane",
+   "barometer"
+  ]
+ },
+ {
+  "id": "78661609-f341-440f-aac8-2a70d58a0cf6",
+  "topic": "Climate & Weather in Agriculture",
+  "prompt": "Rainfall is very important to a crop farmer because water is needed for:",
+  "options": [
+   "nothing in particular",
+   "making the soil colder only",
+   "blowing the seeds away",
+   "plant growth, germination and the uptake of nutrients"
+  ]
+ },
+ {
+  "id": "4121f632-e0a1-48cc-b04e-02b0a5e805c0",
+  "topic": "Climate & Weather in Agriculture",
+  "prompt": "Climate is an important factor when deciding which crops to plant because:",
+  "options": [
+   "different crops grow best in different temperature and rainfall conditions",
+   "climate has no effect on plants at all",
+   "all crops grow equally well everywhere",
+   "crops do not need any water or warmth"
+  ]
+ },
+ {
+  "id": "af9042ff-2743-40d9-b3da-56ca934e6395",
+  "topic": "Classification of Farm Animals",
+  "prompt": "Animals such as cattle, sheep and goats that have a stomach with four compartments and chew the cud are called:",
+  "options": [
+   "non-ruminants",
+   "poultry",
+   "ruminants",
+   "carnivores"
+  ]
+ },
+ {
+  "id": "8b0a771b-3917-42aa-98ca-e7f249ad6c61",
+  "topic": "Classification of Farm Animals",
+  "prompt": "Animals such as pigs and poultry that have a simple, single-chambered stomach are called:",
+  "options": [
+   "ruminants",
+   "cud-chewers",
+   "grass-eaters only",
+   "non-ruminants (monogastric animals)"
+  ]
+ },
+ {
+  "id": "4f7a0796-7410-48e0-b4da-a5b6e42f8e0b",
+  "topic": "Classification of Farm Animals",
+  "prompt": "An adult female of cattle that has had a calf is called a:",
+  "options": [
+   "cow",
+   "bull",
+   "ewe",
+   "sow"
+  ]
+ },
+ {
+  "id": "f771cd46-7efd-4675-a687-f7ce687d6531",
+  "topic": "Classification of Farm Animals",
+  "prompt": "An adult male sheep is called a:",
+  "options": [
+   "bull",
+   "ram",
+   "boar",
+   "rooster"
+  ]
+ },
+ {
+  "id": "0020e82f-4c61-48bf-9400-d354de6b88da",
+  "topic": "Classification of Farm Animals",
+  "prompt": "The young of a pig is called a:",
+  "options": [
+   "calf",
+   "lamb",
+   "piglet",
+   "chick"
+  ]
+ },
+ {
+  "id": "85e61b25-557a-4e95-947e-defe2ae58036",
+  "topic": "Classification of Farm Animals",
+  "prompt": "Chickens, ducks and turkeys kept on a farm are together known as:",
+  "options": [
+   "ruminants",
+   "cattle",
+   "swine",
+   "poultry"
+  ]
+ },
+ {
+  "id": "20fb39ab-be15-498d-bd09-6f06602f67b5",
+  "topic": "Classification of Farm Animals",
+  "prompt": "An adult female pig is called a:",
+  "options": [
+   "sow",
+   "cow",
+   "ewe",
+   "hen"
+  ]
+ },
+ {
+  "id": "97e9f0ef-c027-424c-bafd-e05b3ab71c29",
+  "topic": "Classification of Farm Animals",
+  "prompt": "A 'herbivore' is an animal that eats mainly:",
+  "options": [
+   "other animals (meat)",
+   "plants",
+   "soil",
+   "metal"
+  ]
+ },
+ {
+  "id": "ea3a1ca9-3a96-4fac-921b-f9f4404118e1",
+  "topic": "Crop Types & Basic Plant Classification",
+  "prompt": "Maize, wheat, sorghum and rice are examples of:",
+  "options": [
+   "fruit trees",
+   "leafy vegetables",
+   "garden flowers",
+   "cereal (grain) crops"
+  ]
+ },
+ {
+  "id": "64742cd4-4269-4824-aad8-f7a82f08298e",
+  "topic": "Crop Types & Basic Plant Classification",
+  "prompt": "Beans, peas, lucerne and groundnuts belong to the group of plants called:",
+  "options": [
+   "legumes",
+   "cereals",
+   "root vegetables",
+   "grasses"
+  ]
+ },
+ {
+  "id": "087e8e35-4472-4369-966d-07a857d76b2a",
+  "topic": "Crop Types & Basic Plant Classification",
+  "prompt": "A 'perennial' crop is one that:",
+  "options": [
+   "lives for only one season and then dies",
+   "lives and produces for several years",
+   "never produces any harvest",
+   "grows only during winter nights"
+  ]
+ },
+ {
+  "id": "31e43304-0928-4e89-a525-b3cab4c42d0f",
+  "topic": "Crop Types & Basic Plant Classification",
+  "prompt": "An 'annual' crop, such as maize, is one that:",
+  "options": [
+   "lives for many years",
+   "is grown only for its flowers",
+   "completes its life cycle (grows, produces seed and dies) within one season or year",
+   "is actually a kind of tree"
+  ]
+ },
+ {
+  "id": "f7e0a21c-11b7-452e-ad48-d56684012c4b",
+  "topic": "Crop Types & Basic Plant Classification",
+  "prompt": "Carrots, potatoes and beetroot are crops grown mainly for their:",
+  "options": [
+   "flowers",
+   "leaves only",
+   "wood",
+   "edible roots or tubers"
+  ]
+ },
+ {
+  "id": "e7040fbe-b56e-4945-80f9-87b4ff14b94f",
+  "topic": "Crop Types & Basic Plant Classification",
+  "prompt": "A 'fodder' (forage) crop, such as lucerne or oats, is grown mainly to:",
+  "options": [
+   "provide feed for farm animals",
+   "be sold as fresh-cut flowers",
+   "be used to build houses",
+   "be made into clothing"
+  ]
+ },
+ {
+  "id": "64a5b025-5d6a-48b9-81f6-7a1a4c564723",
+  "topic": "Crop Types & Basic Plant Classification",
+  "prompt": "Plants are divided into monocotyledons and dicotyledons according to the number of:",
+  "options": [
+   "roots they have",
+   "seed leaves (cotyledons) in the seed",
+   "flowers they produce",
+   "years they live"
+  ]
+ },
+ {
+  "id": "b287df13-b20a-4f8c-aaf1-3c811cce203d",
+  "topic": "Crop Types & Basic Plant Classification",
+  "prompt": "Maize is an example of a monocotyledon because its seed has:",
+  "options": [
+   "two seed leaves",
+   "no seed leaves at all",
+   "one seed leaf (cotyledon)",
+   "three seed leaves"
+  ]
+ },
+ {
+  "id": "4f3aab5f-217e-4b56-9fed-a557349f551d",
+  "topic": "Water & Irrigation in Agriculture",
+  "prompt": "The artificial supply of water to crops when rainfall is not enough is called:",
+  "options": [
+   "irrigation",
+   "leaching",
+   "erosion",
+   "germination"
+  ]
+ },
+ {
+  "id": "61759c51-2bd0-4a59-853f-02079df11415",
+  "topic": "Water & Irrigation in Agriculture",
+  "prompt": "An irrigation method in which water drips slowly onto the soil near the plant roots through small holes in pipes is called:",
+  "options": [
+   "flood irrigation",
+   "drip irrigation",
+   "sprinkler irrigation",
+   "natural rainfall"
+  ]
+ },
+ {
+  "id": "aa975406-b115-4ca5-b9a3-a9ab03a5e30f",
+  "topic": "Water & Irrigation in Agriculture",
+  "prompt": "An irrigation method that sprays water over the crop like artificial rain is called:",
+  "options": [
+   "drip irrigation",
+   "flood irrigation",
+   "sprinkler irrigation",
+   "furrow flooding"
+  ]
+ },
+ {
+  "id": "2dacf8fa-5718-42f1-8de1-60381376852c",
+  "topic": "Water & Irrigation in Agriculture",
+  "prompt": "Which irrigation method generally WASTES the most water through evaporation and run-off?",
+  "options": [
+   "drip irrigation",
+   "micro-irrigation",
+   "a sealed underground pipe",
+   "flood irrigation"
+  ]
+ },
+ {
+  "id": "692fd581-4d8c-49db-8f3a-f3939d016b79",
+  "topic": "Water & Irrigation in Agriculture",
+  "prompt": "An important reason to use water carefully in farming in South Africa is that:",
+  "options": [
+   "South Africa is a water-scarce country and fresh water is limited",
+   "there is unlimited fresh water everywhere",
+   "plants do not actually need any water",
+   "water is free and can never run out"
+  ]
+ },
+ {
+  "id": "723a08bc-5883-4400-8fe9-218b9f15ba70",
+  "topic": "Water & Irrigation in Agriculture",
+  "prompt": "'Drip irrigation' is considered water-wise because it:",
+  "options": [
+   "sprays water high into the air",
+   "delivers water directly to the roots with little evaporation or waste",
+   "floods the whole field at once",
+   "uses no pipes at all"
+  ]
+ },
+ {
+  "id": "6d3924cc-f19f-481d-80d4-f1cce26a773f",
+  "topic": "Water & Irrigation in Agriculture",
+  "prompt": "Besides being needed by plants, water on a farm is also essential for:",
+  "options": [
+   "nothing else on the farm",
+   "making the soil permanently infertile",
+   "providing drinking water for farm animals",
+   "stopping all plant growth"
+  ]
+ },
+ {
+  "id": "66573417-c4e1-4d8d-940c-301f6fd13027",
+  "topic": "Water & Irrigation in Agriculture",
+  "prompt": "Collecting and storing rainwater in dams or tanks for use during dry periods is an example of:",
+  "options": [
+   "wasting water",
+   "soil erosion",
+   "overgrazing",
+   "water conservation (harvesting)"
+  ]
+ },
+ {
+  "id": "11a1ee54-7a68-4049-bcbc-8dc618a1d083",
+  "topic": "Basic Agricultural Economics & Record-Keeping",
+  "prompt": "Keeping written records of a farm's income, expenses and production helps a farmer to:",
+  "options": [
+   "use up more fuel",
+   "make better decisions and see whether the farm is making a profit",
+   "lose track of the money",
+   "avoid all planning"
+  ]
+ },
+ {
+  "id": "01a42d11-bfae-4118-8e64-2de543362e67",
+  "topic": "Basic Agricultural Economics & Record-Keeping",
+  "prompt": "A 'financial record' on a farm keeps track of:",
+  "options": [
+   "the weather each day",
+   "the names of the workers' children",
+   "the money the farm earns and spends",
+   "the colour of the tractor"
+  ]
+ },
+ {
+  "id": "d9c8f2fb-c3df-4160-a3b9-c853495e2463",
+  "topic": "Basic Agricultural Economics & Record-Keeping",
+  "prompt": "'Capital' in farming refers to:",
+  "options": [
+   "the daily weather",
+   "the farm's pet animals",
+   "the weeds in the field",
+   "the money and assets (such as machinery and buildings) used to run the farm"
+  ]
+ },
+ {
+  "id": "b18b4e41-d6d0-49cb-af7e-80144648b236",
+  "topic": "Basic Agricultural Economics & Record-Keeping",
+  "prompt": "A farmer sells 150 bags of potatoes at R80 per bag. The total income from the potatoes is:",
+  "options": [
+   "R12 000",
+   "R230",
+   "R1 200",
+   "R120 000"
+  ]
+ },
+ {
+  "id": "41e39927-ccba-44d8-8c6c-68a14144c84a",
+  "topic": "Basic Agricultural Economics & Record-Keeping",
+  "prompt": "'Profit' is the money a farmer has left after:",
+  "options": [
+   "adding all the income together only",
+   "subtracting the total costs from the total income",
+   "borrowing money from the bank",
+   "buying new machinery"
+  ]
+ },
+ {
+  "id": "c99d6097-842c-4755-9156-8798597bf2e6",
+  "topic": "Basic Agricultural Economics & Record-Keeping",
+  "prompt": "A farm's income for a month is R20 000 and its total costs are R14 000. The profit is:",
+  "options": [
+   "R34 000",
+   "R14 000",
+   "R6 000",
+   "R20 000"
+  ]
+ },
+ {
+  "id": "7074185d-553c-4d05-bc4e-4928b3b45cda",
+  "topic": "Basic Agricultural Economics & Record-Keeping",
+  "prompt": "A 'budget' for a farm is:",
+  "options": [
+   "a record of yesterday's weather",
+   "a type of tractor",
+   "a list of all the farm animals' names",
+   "a plan of the expected income and expenses for a period"
+  ]
+ },
+ {
+  "id": "f06c841f-8a94-4263-894b-25100b949fb4",
+  "topic": "Basic Agricultural Economics & Record-Keeping",
+  "prompt": "The place where a farmer sells produce, such as a fresh-produce market or to a cooperative, is called the:",
+  "options": [
+   "market",
+   "weather station",
+   "classroom",
+   "river"
+  ]
+ }
+]
