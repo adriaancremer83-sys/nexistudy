@@ -1,0 +1,530 @@
+[
+ {
+  "id": "74345a38-ec61-4b7c-97ea-f2a5e929565d",
+  "topic": "Map Skills & Mapwork",
+  "prompt": "On most maps, the direction at the top of the map is:",
+  "options": [
+   "north",
+   "south",
+   "east",
+   "west"
+  ]
+ },
+ {
+  "id": "8ff647ba-010e-47c3-b1ed-0fb5ba66f985",
+  "topic": "Map Skills & Mapwork",
+  "prompt": "A line on a topographic map that joins all points of equal height above sea level is a:",
+  "options": [
+   "river",
+   "contour line",
+   "road",
+   "latitude line"
+  ]
+ },
+ {
+  "id": "30f2bc60-5f84-4241-88d4-d244f1385377",
+  "topic": "Map Skills & Mapwork",
+  "prompt": "The four main (cardinal) compass directions are:",
+  "options": [
+   "north-east, south-east, south-west and north-west",
+   "up, down, left and right",
+   "north, east, south and west",
+   "x, y, latitude and longitude"
+  ]
+ },
+ {
+  "id": "a5c9902a-38f7-412f-a209-bde1a5bf2a06",
+  "topic": "Map Skills & Mapwork",
+  "prompt": "Lines that run east to west around the globe and measure distance north or south of the equator are lines of:",
+  "options": [
+   "longitude",
+   "elevation",
+   "the prime meridian",
+   "latitude"
+  ]
+ },
+ {
+  "id": "31d71b2c-8f68-4efc-bf39-9cc0d3d61600",
+  "topic": "Map Skills & Mapwork",
+  "prompt": "When contour lines on a map are very close together, the slope of the land is:",
+  "options": [
+   "steep",
+   "gentle",
+   "flat",
+   "below sea level"
+  ]
+ },
+ {
+  "id": "bd9ea2f2-cefb-4374-812a-3b4caa3c9acc",
+  "topic": "Map Skills & Mapwork",
+  "prompt": "On a map with a scale of 1 : 50 000, 1 cm on the map represents an actual distance of:",
+  "options": [
+   "50 m",
+   "500 m (0.5 km)",
+   "5 km",
+   "50 km"
+  ]
+ },
+ {
+  "id": "be4e010c-47da-4a11-b002-5934af1f9d96",
+  "topic": "Map Skills & Mapwork",
+  "prompt": "A system that captures, stores and analyses spatial (geographic) data on a computer is known as:",
+  "options": [
+   "GPS only",
+   "a contour map",
+   "a Geographic Information System (GIS)",
+   "a weather station"
+  ]
+ },
+ {
+  "id": "97bd8661-3afc-4a67-beb1-d71f23b35a7c",
+  "topic": "Map Skills & Mapwork",
+  "prompt": "Lines that run from the North Pole to the South Pole and measure distance east or west of the prime meridian are lines of:",
+  "options": [
+   "latitude",
+   "the equator",
+   "contour",
+   "longitude"
+  ]
+ },
+ {
+  "id": "d6c7ecfc-9c18-494e-a381-aef015dd56de",
+  "topic": "The Structure of the Earth & Plate Tectonics",
+  "prompt": "The three main layers of the Earth, from the outside inwards, are the:",
+  "options": [
+   "crust, mantle and core",
+   "core, mantle and crust",
+   "mantle, crust and core",
+   "atmosphere, crust and mantle"
+  ]
+ },
+ {
+  "id": "c784986e-2824-4277-8f09-b7b01dfae468",
+  "topic": "The Structure of the Earth & Plate Tectonics",
+  "prompt": "The thin, solid, outermost layer of the Earth, on which we live, is the:",
+  "options": [
+   "mantle",
+   "crust",
+   "outer core",
+   "inner core"
+  ]
+ },
+ {
+  "id": "1512def6-f4b2-4ab7-be0f-d0bf6ae4b9d1",
+  "topic": "The Structure of the Earth & Plate Tectonics",
+  "prompt": "The theory that the Earth's outer shell is divided into large plates that move slowly over time is called:",
+  "options": [
+   "the water cycle",
+   "the greenhouse effect",
+   "plate tectonics",
+   "the rock cycle"
+  ]
+ },
+ {
+  "id": "6fffe5d3-4b63-458e-8e0e-dc5cdc86bc85",
+  "topic": "The Structure of the Earth & Plate Tectonics",
+  "prompt": "The idea that the continents were once joined in a single supercontinent that later broke apart is called:",
+  "options": [
+   "plate tectonics",
+   "the rock cycle",
+   "the water cycle",
+   "continental drift"
+  ]
+ },
+ {
+  "id": "182e595e-4d1a-4519-8e57-61705128225a",
+  "topic": "The Structure of the Earth & Plate Tectonics",
+  "prompt": "The single supercontinent that is believed to have existed before the continents drifted apart is called:",
+  "options": [
+   "Pangaea",
+   "Africa",
+   "Antarctica",
+   "Eurasia"
+  ]
+ },
+ {
+  "id": "d732ac8f-2a64-453c-9470-a9334f774d81",
+  "topic": "The Structure of the Earth & Plate Tectonics",
+  "prompt": "The very hot, thick layer between the crust and the core, which makes up most of the Earth's volume, is the:",
+  "options": [
+   "crust",
+   "mantle",
+   "outer core",
+   "atmosphere"
+  ]
+ },
+ {
+  "id": "3fab8a96-43a9-4185-ae72-e2f286fd600f",
+  "topic": "The Structure of the Earth & Plate Tectonics",
+  "prompt": "Most earthquakes and volcanoes occur:",
+  "options": [
+   "in the middle of continents",
+   "only at the equator",
+   "along the boundaries where tectonic plates meet",
+   "only in the oceans far from any plate"
+  ]
+ },
+ {
+  "id": "4fd7aea5-ce73-4f84-a6ac-7a5afd4ba81a",
+  "topic": "The Structure of the Earth & Plate Tectonics",
+  "prompt": "The slow movement of the tectonic plates is mainly driven by:",
+  "options": [
+   "the rotation of the Moon",
+   "ocean tides",
+   "the wind",
+   "convection currents in the mantle"
+  ]
+ },
+ {
+  "id": "22e185ee-5403-471a-b8fb-6d355f9cc62f",
+  "topic": "Folding, Faulting, Earthquakes & Volcanoes",
+  "prompt": "When layers of rock are squeezed and bent by compression forces, the process is called:",
+  "options": [
+   "folding",
+   "faulting",
+   "erosion",
+   "weathering"
+  ]
+ },
+ {
+  "id": "781e5ddf-6879-4ab0-968e-b8c6e02c9b9d",
+  "topic": "Folding, Faulting, Earthquakes & Volcanoes",
+  "prompt": "When rocks crack and the blocks move along the crack because of tension or pressure, the process is called:",
+  "options": [
+   "folding",
+   "faulting",
+   "condensation",
+   "deposition"
+  ]
+ },
+ {
+  "id": "e9cd2edb-085d-4d77-ad7b-5e02976f8468",
+  "topic": "Folding, Faulting, Earthquakes & Volcanoes",
+  "prompt": "The point inside the Earth where an earthquake originates is called the:",
+  "options": [
+   "epicentre",
+   "crater",
+   "focus",
+   "vent"
+  ]
+ },
+ {
+  "id": "0143970a-0404-46d5-9731-2439b0105c45",
+  "topic": "Folding, Faulting, Earthquakes & Volcanoes",
+  "prompt": "The point on the Earth's SURFACE directly above where an earthquake starts is called the:",
+  "options": [
+   "focus",
+   "magma chamber",
+   "crater",
+   "epicentre"
+  ]
+ },
+ {
+  "id": "cb040946-ea09-4e2e-a393-561e955bcadd",
+  "topic": "Folding, Faulting, Earthquakes & Volcanoes",
+  "prompt": "The molten rock found BELOW the Earth's surface is called:",
+  "options": [
+   "magma",
+   "lava",
+   "ash",
+   "pumice"
+  ]
+ },
+ {
+  "id": "ec680602-418b-43ea-9ee2-72dcfb47706e",
+  "topic": "Folding, Faulting, Earthquakes & Volcanoes",
+  "prompt": "Molten rock that has erupted onto the Earth's surface from a volcano is called:",
+  "options": [
+   "magma",
+   "lava",
+   "the mantle",
+   "sediment"
+  ]
+ },
+ {
+  "id": "bc8691f7-ca0c-4124-a9ee-4317633f6e66",
+  "topic": "Folding, Faulting, Earthquakes & Volcanoes",
+  "prompt": "The instrument used to measure and record the strength of earthquakes is the:",
+  "options": [
+   "barometer",
+   "thermometer",
+   "seismograph",
+   "anemometer"
+  ]
+ },
+ {
+  "id": "d78cf269-21ff-4927-b2d4-91fe8d559e9c",
+  "topic": "Folding, Faulting, Earthquakes & Volcanoes",
+  "prompt": "An upfold (arch shape) in folded rock layers is called an:",
+  "options": [
+   "fault",
+   "epicentre",
+   "syncline",
+   "anticline"
+  ]
+ },
+ {
+  "id": "fbbbd684-df31-4812-a459-22c5b7803451",
+  "topic": "Population Geography",
+  "prompt": "The number of live births per 1 000 people per year is called the:",
+  "options": [
+   "birth rate",
+   "death rate",
+   "literacy rate",
+   "migration rate"
+  ]
+ },
+ {
+  "id": "693d0985-3822-4dff-b8f0-9273cea20eb9",
+  "topic": "Population Geography",
+  "prompt": "The number of deaths per 1 000 people per year is called the:",
+  "options": [
+   "birth rate",
+   "death rate",
+   "growth rate",
+   "fertility rate"
+  ]
+ },
+ {
+  "id": "8e4385f4-caf2-462a-9e1e-c71abdc8711c",
+  "topic": "Population Geography",
+  "prompt": "The natural increase of a population is calculated as:",
+  "options": [
+   "death rate + birth rate",
+   "death rate × birth rate",
+   "birth rate − death rate",
+   "births + deaths"
+  ]
+ },
+ {
+  "id": "02c79c02-2403-40d1-88c7-7fcfe4912079",
+  "topic": "Population Geography",
+  "prompt": "The number of people living per square kilometre is called population:",
+  "options": [
+   "growth",
+   "migration",
+   "structure",
+   "density"
+  ]
+ },
+ {
+  "id": "6be866d7-a868-4010-adbd-9889f6c8a6c1",
+  "topic": "Population Geography",
+  "prompt": "A graph that shows the age and sex (gender) structure of a population is called a:",
+  "options": [
+   "population pyramid",
+   "pie chart",
+   "contour map",
+   "weather chart"
+  ]
+ },
+ {
+  "id": "170910b8-113b-4d70-8b2e-bc3c0bb9cae2",
+  "topic": "Population Geography",
+  "prompt": "The movement of people from rural areas to towns and cities is called:",
+  "options": [
+   "emigration abroad",
+   "urbanisation",
+   "natural increase",
+   "commuting only"
+  ]
+ },
+ {
+  "id": "4e328ba8-776d-48a4-a7ff-6cadfe528431",
+  "topic": "Population Geography",
+  "prompt": "When people move permanently OUT of a country to live in another, it is called:",
+  "options": [
+   "immigration",
+   "natural increase",
+   "emigration",
+   "urbanisation"
+  ]
+ },
+ {
+  "id": "29c914fe-7910-4ba2-9eb0-6b2047100a9e",
+  "topic": "Population Geography",
+  "prompt": "A 'push factor' that causes people to leave an area could be:",
+  "options": [
+   "good job opportunities",
+   "excellent schools",
+   "a safe environment",
+   "unemployment and a lack of services"
+  ]
+ },
+ {
+  "id": "08fb41cf-f41d-4dde-afc9-6bf8cd8ac56d",
+  "topic": "Water Resources & the Water Cycle",
+  "prompt": "The process by which the Sun's heat changes liquid water into water vapour is called:",
+  "options": [
+   "evaporation",
+   "condensation",
+   "precipitation",
+   "infiltration"
+  ]
+ },
+ {
+  "id": "0d2e6b6f-5aea-45ad-9a36-4956682d9a1c",
+  "topic": "Water Resources & the Water Cycle",
+  "prompt": "The process by which water vapour cools and changes back into tiny water droplets, forming clouds, is called:",
+  "options": [
+   "evaporation",
+   "condensation",
+   "runoff",
+   "transpiration"
+  ]
+ },
+ {
+  "id": "61730dcd-9976-4d8d-b2ec-a1368e3aa6cd",
+  "topic": "Water Resources & the Water Cycle",
+  "prompt": "Water that falls from clouds as rain, snow, sleet or hail is called:",
+  "options": [
+   "evaporation",
+   "infiltration",
+   "precipitation",
+   "runoff"
+  ]
+ },
+ {
+  "id": "02c9ae84-4f2f-40d2-852f-38b6862ab956",
+  "topic": "Water Resources & the Water Cycle",
+  "prompt": "The total area of land drained by a river and all its tributaries is called the:",
+  "options": [
+   "watershed",
+   "confluence",
+   "estuary",
+   "drainage basin (catchment area)"
+  ]
+ },
+ {
+  "id": "42e2ae65-ab47-45b3-854f-9cedf7690884",
+  "topic": "Water Resources & the Water Cycle",
+  "prompt": "The point where two rivers (or a tributary and the main river) join is called the:",
+  "options": [
+   "confluence",
+   "source",
+   "mouth",
+   "watershed"
+  ]
+ },
+ {
+  "id": "01b4b08a-d935-433f-899f-316ecbb64588",
+  "topic": "Water Resources & the Water Cycle",
+  "prompt": "The place where a river begins, often in the mountains, is called its:",
+  "options": [
+   "mouth",
+   "source",
+   "confluence",
+   "delta"
+  ]
+ },
+ {
+  "id": "bce5f51f-c204-4fd9-bd4a-8f4af1a7869f",
+  "topic": "Water Resources & the Water Cycle",
+  "prompt": "A smaller river or stream that flows into a larger main river is called a:",
+  "options": [
+   "mouth",
+   "delta",
+   "tributary",
+   "watershed"
+  ]
+ },
+ {
+  "id": "245287d3-6070-48aa-b1ee-390b5e32df84",
+  "topic": "Water Resources & the Water Cycle",
+  "prompt": "The high ground (dividing line) that separates one drainage basin from another is called the:",
+  "options": [
+   "confluence",
+   "tributary",
+   "source",
+   "watershed"
+  ]
+ },
+ {
+  "id": "77561455-9cd1-4f65-b495-e5b6a656ae06",
+  "topic": "Settlement Geography",
+  "prompt": "A settlement in the countryside, often based on farming and with a small population, is a ___ settlement.",
+  "options": [
+   "rural",
+   "urban",
+   "industrial",
+   "central"
+  ]
+ },
+ {
+  "id": "b10bc280-544c-4a5e-814f-a6f32840dca0",
+  "topic": "Settlement Geography",
+  "prompt": "A large settlement such as a city or town, with many people, services and industries, is an ___ settlement.",
+  "options": [
+   "rural",
+   "urban",
+   "isolated",
+   "dispersed"
+  ]
+ },
+ {
+  "id": "8dd8e277-c6b7-4687-a30c-a3d57330963d",
+  "topic": "Settlement Geography",
+  "prompt": "A settlement pattern in which buildings are clustered closely together around a central point is described as:",
+  "options": [
+   "dispersed",
+   "linear",
+   "nucleated",
+   "random"
+  ]
+ },
+ {
+  "id": "2cfd4e27-249b-4c26-949d-3d3c6afeee1b",
+  "topic": "Settlement Geography",
+  "prompt": "A settlement that is spread out along a road, river or valley in a line is described as a ___ pattern.",
+  "options": [
+   "nucleated",
+   "dispersed",
+   "circular",
+   "linear"
+  ]
+ },
+ {
+  "id": "168c2630-9034-49f0-accf-f5ec8d2aef4e",
+  "topic": "Settlement Geography",
+  "prompt": "A settlement pattern in which buildings are spread far apart, common on farmland, is described as:",
+  "options": [
+   "dispersed",
+   "nucleated",
+   "linear",
+   "clustered"
+  ]
+ },
+ {
+  "id": "b3637f7d-89ca-48c8-a441-ed43d684f0bc",
+  "topic": "Settlement Geography",
+  "prompt": "The range of goods, services and activities that a settlement provides is known as its:",
+  "options": [
+   "population pyramid",
+   "function",
+   "latitude",
+   "contour"
+  ]
+ },
+ {
+  "id": "576485a0-2caa-414a-b313-b2fed838809f",
+  "topic": "Settlement Geography",
+  "prompt": "The growth in the proportion of people living in towns and cities is called:",
+  "options": [
+   "emigration",
+   "deforestation",
+   "urbanisation",
+   "evaporation"
+  ]
+ },
+ {
+  "id": "973b3819-9ca1-4d45-b896-9c1a8cde1c4f",
+  "topic": "Settlement Geography",
+  "prompt": "Which of the following is usually a feature of a RURAL area rather than an urban area?",
+  "options": [
+   "many tall office buildings",
+   "heavy traffic and large shopping malls",
+   "a very high population density",
+   "large open spaces and farmland"
+  ]
+ }
+]
