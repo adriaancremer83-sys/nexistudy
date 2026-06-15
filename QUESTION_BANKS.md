@@ -34,6 +34,7 @@ Any mismatch: fix or discard. A bank is not announced/marketed until LIVE-OK.
 | Geography | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-14, 48/48 fresh-context subagent solve; Gr11 topics distinct from Gr12 Geography) |
 | Economics | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-14, 48/48 fresh-context subagent solve; Gr11 framing distinct from Gr12 Economics) |
 | Tourism | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-14, 48/48 fresh-context subagent solve incl. computed time-zone & forex; distinct from Gr12 Tourism) |
+| Consumer Studies | 11 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; topics distinct from Gr12 Consumer Studies) |
 
 ## Report-a-question safety net (built 2026-06-12)
 `supabase-reports-setup.sql` adds `questions.flagged` + `question_reports` table.

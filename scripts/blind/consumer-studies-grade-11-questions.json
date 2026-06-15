@@ -1,0 +1,530 @@
+[
+ {
+  "id": "be552ad0-8350-4e3d-96f3-41d9e7e1008a",
+  "topic": "Budgeting & Personal Finance",
+  "prompt": "Which of the following is a NEED rather than a want?",
+  "options": [
+   "basic food",
+   "a smartphone",
+   "a games console",
+   "designer sneakers"
+  ]
+ },
+ {
+  "id": "5e60f96a-615f-4d58-8b4a-080b3ee99dfd",
+  "topic": "Fibres & Fabrics",
+  "prompt": "Compared with cotton, a synthetic fibre such as polyester generally:",
+  "options": [
+   "absorbs much more moisture",
+   "creases very easily",
+   "shrinks badly when washed",
+   "dries quickly and resists creasing"
+  ]
+ },
+ {
+  "id": "bf11cf04-9b75-405a-855d-4a51d5ba7760",
+  "topic": "Budgeting & Personal Finance",
+  "prompt": "A personal budget is best described as:",
+  "options": [
+   "a loan from a bank",
+   "a plan that compares expected income with expected expenses",
+   "a list of luxury items",
+   "the interest charged on credit"
+  ]
+ },
+ {
+  "id": "83a5fe4e-425c-46f7-8cb7-087912efd278",
+  "topic": "Budgeting & Personal Finance",
+  "prompt": "Which of the following is a FIXED monthly expense in a household budget?",
+  "options": [
+   "airtime",
+   "groceries",
+   "rent",
+   "entertainment"
+  ]
+ },
+ {
+  "id": "0453f7c5-1018-4cf9-8e07-268417a4e8b6",
+  "topic": "Budgeting & Personal Finance",
+  "prompt": "A household has a monthly income of R15 000 and total expenses of R12 500. The budget surplus is:",
+  "options": [
+   "R27 500",
+   "R12 500",
+   "R1 250",
+   "R2 500"
+  ]
+ },
+ {
+  "id": "0fa9c1bd-0926-4f21-bcb1-75b3c0c49b34",
+  "topic": "Budgeting & Personal Finance",
+  "prompt": "When a household's expenses are greater than its income, the budget shows a:",
+  "options": [
+   "deficit",
+   "surplus",
+   "profit",
+   "savings"
+  ]
+ },
+ {
+  "id": "1030babb-5b96-4b43-aa37-01be68225fd8",
+  "topic": "Budgeting & Personal Finance",
+  "prompt": "R2 000 is invested at 8% simple interest per year. The interest earned after one year is:",
+  "options": [
+   "R80",
+   "R160",
+   "R2 160",
+   "R16"
+  ]
+ },
+ {
+  "id": "c138c1e0-9b15-43ae-a186-4332609b7831",
+  "topic": "Budgeting & Personal Finance",
+  "prompt": "The main reason for keeping an emergency fund is to:",
+  "options": [
+   "buy luxury goods",
+   "earn a salary",
+   "cover unexpected expenses such as a medical bill or car repair",
+   "pay income tax"
+  ]
+ },
+ {
+  "id": "214dfe38-d531-43bd-b2b1-52fbe1107314",
+  "topic": "Budgeting & Personal Finance",
+  "prompt": "Which type of bank account is designed mainly for everyday transactions such as receiving a salary and paying bills?",
+  "options": [
+   "a fixed deposit account",
+   "a savings account",
+   "a retirement annuity",
+   "a cheque (current) account"
+  ]
+ },
+ {
+  "id": "11042287-146c-45d4-aef2-20b71282c941",
+  "topic": "Food Preservation & Spoilage",
+  "prompt": "Food spoilage is mainly caused by:",
+  "options": [
+   "the growth of micro-organisms such as bacteria, yeasts and moulds",
+   "adding too much salt",
+   "keeping food in the freezer",
+   "cooking food thoroughly"
+  ]
+ },
+ {
+  "id": "63e2010d-7cae-4c20-a402-ebcb4729165a",
+  "topic": "Food Preservation & Spoilage",
+  "prompt": "Freezing preserves food because the low temperature:",
+  "options": [
+   "adds nutrients to the food",
+   "slows down the growth of micro-organisms and enzyme activity",
+   "kills all bacteria permanently",
+   "increases the moisture content"
+  ]
+ },
+ {
+  "id": "8eb1b065-521e-40d2-88f6-a4dcca8fb125",
+  "topic": "Food Preservation & Spoilage",
+  "prompt": "Drying (dehydration) preserves food such as biltong and dried fruit by:",
+  "options": [
+   "adding sugar",
+   "freezing the water in the food",
+   "removing the moisture that micro-organisms need to grow",
+   "sealing it from the air"
+  ]
+ },
+ {
+  "id": "1eeaac6b-62f5-48ef-ab6c-ad93c61dc77b",
+  "topic": "Food Preservation & Spoilage",
+  "prompt": "Pickling preserves food such as onions and gherkins by storing them in:",
+  "options": [
+   "sugar syrup",
+   "plain water",
+   "oil",
+   "vinegar (an acid)"
+  ]
+ },
+ {
+  "id": "aee2ce92-2d32-4f00-8739-65e72d13525d",
+  "topic": "Food Preservation & Spoilage",
+  "prompt": "A high concentration of sugar preserves jam because it:",
+  "options": [
+   "draws moisture out of micro-organisms, stopping their growth",
+   "adds vitamins to the fruit",
+   "lowers the temperature of the jam",
+   "removes the colour"
+  ]
+ },
+ {
+  "id": "35047eb9-0e31-4fc4-befa-958d0bfc5c6a",
+  "topic": "Food Preservation & Spoilage",
+  "prompt": "Commercial canning preserves food mainly by:",
+  "options": [
+   "adding artificial colour",
+   "heating the food to destroy micro-organisms and sealing it airtight",
+   "freezing it before sealing",
+   "drying it out completely"
+  ]
+ },
+ {
+  "id": "1acc3718-755c-4faa-aa38-4cbc911a7320",
+  "topic": "Food Preservation & Spoilage",
+  "prompt": "When a cut apple turns brown after a while, this browning is caused by:",
+  "options": [
+   "bacteria",
+   "added sugar",
+   "enzymes reacting with oxygen in the air",
+   "freezing"
+  ]
+ },
+ {
+  "id": "40a58840-cfd4-4abd-b18e-ad13c7be1485",
+  "topic": "Food Preservation & Spoilage",
+  "prompt": "Adding a lot of salt to preserve food, such as salted fish, works because the salt:",
+  "options": [
+   "adds protein",
+   "makes the food sweeter",
+   "raises the temperature",
+   "draws out moisture so micro-organisms cannot grow"
+  ]
+ },
+ {
+  "id": "48b81440-9d79-4216-a43c-a7d9bf2605ce",
+  "topic": "Fibres & Fabrics",
+  "prompt": "Which of the following is a natural fibre obtained from a plant?",
+  "options": [
+   "cotton",
+   "polyester",
+   "nylon",
+   "acrylic"
+  ]
+ },
+ {
+  "id": "66233423-fd71-47f2-b087-f37504bea682",
+  "topic": "Fibres & Fabrics",
+  "prompt": "Wool is a natural fibre obtained from:",
+  "options": [
+   "the flax plant",
+   "the fleece of sheep",
+   "petroleum",
+   "wood pulp"
+  ]
+ },
+ {
+  "id": "185d7c30-d23c-4de6-ba15-28f5fbf63268",
+  "topic": "Fibres & Fabrics",
+  "prompt": "Which of the following is a synthetic (man-made) fibre?",
+  "options": [
+   "cotton",
+   "wool",
+   "polyester",
+   "linen"
+  ]
+ },
+ {
+  "id": "280554e4-5b93-4154-974a-dfbd089fc12a",
+  "topic": "Fibres & Fabrics",
+  "prompt": "An important property of cotton that makes it comfortable for summer clothing and underwear is that it is:",
+  "options": [
+   "waterproof",
+   "non-absorbent",
+   "elastic like rubber",
+   "absorbent and cool to wear"
+  ]
+ },
+ {
+  "id": "7e0443a3-11bb-485f-994b-a113fb731a21",
+  "topic": "Fibres & Fabrics",
+  "prompt": "Linen is a natural fibre made from the:",
+  "options": [
+   "stem of the flax plant",
+   "fleece of a goat",
+   "cocoon of the silkworm",
+   "leaves of the sisal plant"
+  ]
+ },
+ {
+  "id": "a2ae3b69-c7be-41a3-b6bb-850a913f7a3f",
+  "topic": "Fibres & Fabrics",
+  "prompt": "The main purpose of a care label sewn into a garment is to:",
+  "options": [
+   "show the price of the garment",
+   "tell the consumer how to wash, dry and iron the garment correctly",
+   "advertise the brand",
+   "show the date of manufacture"
+  ]
+ },
+ {
+  "id": "3679851e-77f3-4315-b3f8-702bb968ee02",
+  "topic": "Fibres & Fabrics",
+  "prompt": "Silk is a natural fibre produced by:",
+  "options": [
+   "the cotton plant",
+   "sheep",
+   "the silkworm",
+   "a purely chemical process"
+  ]
+ },
+ {
+  "id": "1c637562-7782-4053-843f-5c523a86a1cf",
+  "topic": "Marketing, Advertising & Buying Skills",
+  "prompt": "Impulse buying means:",
+  "options": [
+   "making an unplanned purchase on the spur of the moment",
+   "comparing prices in several shops first",
+   "buying only items on a shopping list",
+   "saving up before buying"
+  ]
+ },
+ {
+  "id": "0fb81df0-6fd9-4f92-9168-b4aec3ff5166",
+  "topic": "Marketing, Advertising & Buying Skills",
+  "prompt": "An advertisement that mainly gives facts such as the price, ingredients and where to buy a product is an example of:",
+  "options": [
+   "persuasive advertising",
+   "informative advertising",
+   "a guarantee",
+   "a care label"
+  ]
+ },
+ {
+  "id": "115b61fe-02eb-42c0-8a74-717ba4ffff9f",
+  "topic": "Marketing, Advertising & Buying Skills",
+  "prompt": "An advert that says 'Everyone is switching to this brand — don't be left out!' uses which persuasion technique?",
+  "options": [
+   "factual comparison",
+   "a printed price list",
+   "the bandwagon technique",
+   "a care instruction"
+  ]
+ },
+ {
+  "id": "0017f025-df58-4347-ae49-39ec2e31bef9",
+  "topic": "Marketing, Advertising & Buying Skills",
+  "prompt": "Comparing prices and quality at different shops before buying helps the consumer to:",
+  "options": [
+   "spend more money",
+   "buy on impulse",
+   "ignore product information",
+   "get the best value for money"
+  ]
+ },
+ {
+  "id": "f64a141f-0370-41c8-abbd-edfab2d406a5",
+  "topic": "Marketing, Advertising & Buying Skills",
+  "prompt": "The unit price shown on a shelf label helps a consumer to:",
+  "options": [
+   "compare the cost per kilogram or litre between different package sizes",
+   "see the date the product was made",
+   "read the washing instructions",
+   "find the bar code"
+  ]
+ },
+ {
+  "id": "b7e7eea3-f3d2-4f7d-a1df-5b15fa659602",
+  "topic": "Marketing, Advertising & Buying Skills",
+  "prompt": "A shop sells milk very cheaply to draw customers into the store, hoping they will buy other items too. This technique is called a:",
+  "options": [
+   "unit price",
+   "loss leader",
+   "care label",
+   "cooling-off period"
+  ]
+ },
+ {
+  "id": "b33bd3dc-27a3-45e3-9d8c-33dd18435029",
+  "topic": "Marketing, Advertising & Buying Skills",
+  "prompt": "A guarantee (warranty) on a product is:",
+  "options": [
+   "the price of the product",
+   "an advertisement for the product",
+   "a promise by the manufacturer to repair or replace the product if it is faulty within a stated period",
+   "a list of the ingredients"
+  ]
+ },
+ {
+  "id": "eb05ee05-44a3-48a3-872d-d76a09f3f025",
+  "topic": "Marketing, Advertising & Buying Skills",
+  "prompt": "Placing sweets and magazines next to the till (point of sale) is a marketing strategy designed to encourage:",
+  "options": [
+   "comparison shopping",
+   "saving money",
+   "reading the label",
+   "impulse buying while waiting to pay"
+  ]
+ },
+ {
+  "id": "65f45e99-d681-465b-93c7-ecc6ee1b06ba",
+  "topic": "Sustainable Living & Resource Management",
+  "prompt": "The 'three Rs' of waste management are:",
+  "options": [
+   "reduce, reuse, recycle",
+   "rinse, rub, repeat",
+   "read, record, report",
+   "rent, return, replace"
+  ]
+ },
+ {
+  "id": "2587400d-d0f9-45e9-841a-5de8ec6672a7",
+  "topic": "Sustainable Living & Resource Management",
+  "prompt": "Which of the following is an example of recycling?",
+  "options": [
+   "throwing glass bottles in the general bin",
+   "turning used paper into new paper products",
+   "leaving a tap running",
+   "burning plastic in the yard"
+  ]
+ },
+ {
+  "id": "636ebd04-a8f2-44f0-a0f6-007c18f89274",
+  "topic": "Sustainable Living & Resource Management",
+  "prompt": "Which action saves water in the home?",
+  "options": [
+   "leaving the tap running while brushing teeth",
+   "watering the garden at midday",
+   "fixing a dripping tap and taking shorter showers",
+   "hosing down the driveway every day"
+  ]
+ },
+ {
+  "id": "5006cc25-f00f-4122-9f2e-e5514122649e",
+  "topic": "Sustainable Living & Resource Management",
+  "prompt": "Which of the following saves electricity at home?",
+  "options": [
+   "leaving lights on all day",
+   "using an electric geyser without a timer",
+   "running the oven while it is empty",
+   "switching appliances off at the wall and using LED globes"
+  ]
+ },
+ {
+  "id": "a24ba080-ee2c-4a7a-bb89-4283af59e9d9",
+  "topic": "Sustainable Living & Resource Management",
+  "prompt": "A material that is 'biodegradable' is one that:",
+  "options": [
+   "breaks down naturally through the action of micro-organisms",
+   "lasts forever in landfill",
+   "cannot be composted",
+   "is always made of plastic"
+  ]
+ },
+ {
+  "id": "e9f5b294-472d-447c-9d75-f82a12a51a31",
+  "topic": "Sustainable Living & Resource Management",
+  "prompt": "Composting is the process of:",
+  "options": [
+   "burning garden waste",
+   "turning organic kitchen and garden waste into a natural fertiliser",
+   "recycling glass bottles",
+   "purifying drinking water"
+  ]
+ },
+ {
+  "id": "a0d5e0d3-d3bc-4fe1-a632-7515b0391556",
+  "topic": "Sustainable Living & Resource Management",
+  "prompt": "Sustainable consumption means using resources in a way that:",
+  "options": [
+   "uses as much as possible right now",
+   "ignores future generations",
+   "meets present needs without harming the ability of future generations to meet theirs",
+   "wastes water and electricity"
+  ]
+ },
+ {
+  "id": "c947e41b-6b23-4569-be1e-2f90696a8b2a",
+  "topic": "Sustainable Living & Resource Management",
+  "prompt": "Which choice best reduces single-use plastic waste when shopping?",
+  "options": [
+   "asking for extra plastic bags",
+   "buying more bottled water",
+   "double-bagging every item",
+   "taking your own reusable shopping bags"
+  ]
+ },
+ {
+  "id": "65f222e0-7915-40f4-9318-430974f7e3c2",
+  "topic": "Consumer Information, Rights & Redress",
+  "prompt": "To return a faulty product to a shop, the most important document a consumer should keep is the:",
+  "options": [
+   "till slip (receipt) as proof of purchase",
+   "shopping list",
+   "advertisement for the product",
+   "delivery van's number plate"
+  ]
+ },
+ {
+  "id": "6447ff72-4313-4e08-8d77-632fefae98cd",
+  "topic": "Consumer Information, Rights & Redress",
+  "prompt": "The 'best before' date on a food product indicates:",
+  "options": [
+   "the date the product was manufactured",
+   "the date until which the food is at its best quality, though it may still be safe to eat afterwards",
+   "the date the food becomes poisonous",
+   "the date it was delivered to the shop"
+  ]
+ },
+ {
+  "id": "62ffb730-959b-4010-8e57-bbe11553a0a5",
+  "topic": "Consumer Information, Rights & Redress",
+  "prompt": "If a consumer buys a faulty appliance, the first place to seek redress is usually:",
+  "options": [
+   "the national newspaper",
+   "Parliament",
+   "the shop or supplier where it was bought",
+   "the consumer's bank"
+  ]
+ },
+ {
+  "id": "eafb2ba2-80b4-4c11-94ba-491cfadf0ca8",
+  "topic": "Consumer Information, Rights & Redress",
+  "prompt": "On a food label, the ingredient present in the largest amount is:",
+  "options": [
+   "always sugar",
+   "listed last",
+   "shown only on the back",
+   "listed first, because ingredients appear in order of quantity"
+  ]
+ },
+ {
+  "id": "9e0ff90c-ee86-4260-a1f9-9695c9526312",
+  "topic": "Consumer Information, Rights & Redress",
+  "prompt": "The bar code printed on a product is used to:",
+  "options": [
+   "identify the product and call up its price at the till scanner",
+   "show the consumer how to recycle it",
+   "give cooking instructions",
+   "list the allergens"
+  ]
+ },
+ {
+  "id": "49c0372c-9e85-4c14-946b-c4bb85d7be04",
+  "topic": "Consumer Information, Rights & Redress",
+  "prompt": "Which of the following is an example of responsible consumer behaviour?",
+  "options": [
+   "buying more than you can afford on credit",
+   "reading the label and checking the expiry date before buying",
+   "ignoring all product information",
+   "always buying the most expensive brand"
+  ]
+ },
+ {
+  "id": "2028fe1e-b32f-4dd4-84df-846bbde4c2a9",
+  "topic": "Consumer Information, Rights & Redress",
+  "prompt": "A consumer who is sold food that is already past its expiry date has the right to:",
+  "options": [
+   "keep quiet about it",
+   "pay extra for it",
+   "complain and ask for a refund or replacement",
+   "throw it away without telling anyone"
+  ]
+ },
+ {
+  "id": "fe66f590-9a24-4d78-9d3f-e5eb733302be",
+  "topic": "Consumer Information, Rights & Redress",
+  "prompt": "Which is the most reliable source of information when deciding which product to buy?",
+  "options": [
+   "only the product's own advertisement",
+   "the brightest packaging on the shelf",
+   "a celebrity endorsement",
+   "independent product reviews and comparing the labels yourself"
+  ]
+ }
+]
