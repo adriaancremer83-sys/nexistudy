@@ -43,6 +43,7 @@ Any mismatch: fix or discard. A bank is not announced/marketed until LIVE-OK.
 | Mathematics | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context computational re-solve; first Gr10 bank, includes Stats & Probability, numbers distinct from Gr11) |
 | Mathematical Literacy | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context computational re-solve; same 6 topics as Gr11 Maths Lit, distinct simpler questions/numbers) |
 | Physical Sciences | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context computational re-solve; topics fully distinct from Gr11 — matter, atomic structure, change, kinematics, waves, energy) |
+| Life Sciences | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; topics fully distinct from Gr11 — chemistry of life, cells, mitosis, tissues, plant transport, circulatory system) |
 
 ## Report-a-question safety net (built 2026-06-12)
 `supabase-reports-setup.sql` adds `questions.flagged` + `question_reports` table.

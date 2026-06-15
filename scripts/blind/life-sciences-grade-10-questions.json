@@ -1,0 +1,530 @@
+[
+ {
+  "id": "1d37edbb-e8bd-458a-812a-86af1e943a8f",
+  "topic": "Cell Structure & Organelles",
+  "prompt": "Photosynthesis takes place in the organelle called the:",
+  "options": [
+   "mitochondrion",
+   "nucleus",
+   "ribosome",
+   "chloroplast"
+  ]
+ },
+ {
+  "id": "f043699f-8b21-48cf-b52b-589b4358d622",
+  "topic": "The Chemistry of Life",
+  "prompt": "Compounds that contain carbon and are found in living organisms, such as carbohydrates and proteins, are called:",
+  "options": [
+   "organic compounds",
+   "inorganic compounds",
+   "minerals",
+   "pure elements"
+  ]
+ },
+ {
+  "id": "11c179b8-0aba-4e0d-9e03-c0e7b5a7057a",
+  "topic": "The Chemistry of Life",
+  "prompt": "The building blocks (monomers) of proteins are:",
+  "options": [
+   "glucose molecules",
+   "amino acids",
+   "fatty acids",
+   "nucleotides"
+  ]
+ },
+ {
+  "id": "2a50f540-e459-4950-abb5-187d5dee88f0",
+  "topic": "The Chemistry of Life",
+  "prompt": "Carbohydrates are made up of the elements carbon, hydrogen and:",
+  "options": [
+   "nitrogen",
+   "sulphur",
+   "oxygen",
+   "phosphorus"
+  ]
+ },
+ {
+  "id": "e2cf486a-3950-4abf-9179-0e0b54923273",
+  "topic": "The Chemistry of Life",
+  "prompt": "The most abundant inorganic compound in living cells, making up most of their mass, is:",
+  "options": [
+   "glucose",
+   "protein",
+   "fat",
+   "water"
+  ]
+ },
+ {
+  "id": "1beef2e7-27cf-4567-bf8a-13d3120a9d62",
+  "topic": "The Chemistry of Life",
+  "prompt": "Biological catalysts that speed up reactions in cells, and which are made of protein, are:",
+  "options": [
+   "enzymes",
+   "vitamins",
+   "lipids",
+   "minerals"
+  ]
+ },
+ {
+  "id": "abf579ef-82c5-4f23-9ff2-0a0d079c340e",
+  "topic": "The Chemistry of Life",
+  "prompt": "Which of the following is a lipid (fat)?",
+  "options": [
+   "starch",
+   "cooking oil",
+   "an amino acid",
+   "table salt"
+  ]
+ },
+ {
+  "id": "88c7c363-1304-4adf-8c34-2e81c36625d7",
+  "topic": "The Chemistry of Life",
+  "prompt": "A food test using iodine solution, which turns blue-black, tests for the presence of:",
+  "options": [
+   "protein",
+   "fat",
+   "starch",
+   "glucose"
+  ]
+ },
+ {
+  "id": "3745fdae-c99b-4ade-a15b-e5b1641f1d8c",
+  "topic": "The Chemistry of Life",
+  "prompt": "The element found in proteins but NOT in carbohydrates or lipids is:",
+  "options": [
+   "carbon",
+   "hydrogen",
+   "oxygen",
+   "nitrogen"
+  ]
+ },
+ {
+  "id": "243f2a4e-f608-4b1f-83f7-5e96f55682b3",
+  "topic": "Cell Structure & Organelles",
+  "prompt": "The structure that controls the activities of the cell and contains the DNA is the:",
+  "options": [
+   "nucleus",
+   "cell membrane",
+   "vacuole",
+   "ribosome"
+  ]
+ },
+ {
+  "id": "c6903660-c87c-4f14-ba29-cd46da610a8a",
+  "topic": "Cell Structure & Organelles",
+  "prompt": "The organelle known as the 'powerhouse' of the cell, where respiration releases energy, is the:",
+  "options": [
+   "nucleus",
+   "mitochondrion",
+   "chloroplast",
+   "cell wall"
+  ]
+ },
+ {
+  "id": "a4b2145d-961a-48a1-9a7e-8197f3ce0cb1",
+  "topic": "Cell Structure & Organelles",
+  "prompt": "The thin layer that surrounds the cell and controls what enters and leaves it is the:",
+  "options": [
+   "cell wall",
+   "nucleus",
+   "cell membrane",
+   "cytoplasm"
+  ]
+ },
+ {
+  "id": "b1980d3e-272c-4dc5-ac00-0cfcfd4dd5ca",
+  "topic": "Cell Structure & Organelles",
+  "prompt": "Which structure is found in PLANT cells but NOT in animal cells?",
+  "options": [
+   "a rigid cell wall",
+   "a nucleus",
+   "a cell membrane",
+   "mitochondria"
+  ]
+ },
+ {
+  "id": "0675a525-732d-4864-a32f-92f6a085916c",
+  "topic": "Cell Structure & Organelles",
+  "prompt": "The jelly-like fluid inside the cell, in which the organelles are suspended, is the:",
+  "options": [
+   "nucleus",
+   "cytoplasm",
+   "cell wall",
+   "membrane"
+  ]
+ },
+ {
+  "id": "3e5b6b5d-1abc-4109-8128-444f73660ff4",
+  "topic": "Cell Structure & Organelles",
+  "prompt": "The large fluid-filled space that stores cell sap and helps support a plant cell is the:",
+  "options": [
+   "nucleus",
+   "mitochondrion",
+   "vacuole",
+   "ribosome"
+  ]
+ },
+ {
+  "id": "421b6d60-23f8-4c6b-a025-5f96c5a6549f",
+  "topic": "Cell Structure & Organelles",
+  "prompt": "The idea that all living things are made of cells, and that all cells come from existing cells, is known as:",
+  "options": [
+   "the theory of evolution",
+   "natural selection",
+   "binomial nomenclature",
+   "cell theory"
+  ]
+ },
+ {
+  "id": "b5866b44-4d7e-46bc-91f7-d7a3c735a9d7",
+  "topic": "Cell Division (Mitosis)",
+  "prompt": "The thread-like structures in the nucleus that carry the genetic information (DNA) are called:",
+  "options": [
+   "chromosomes",
+   "ribosomes",
+   "vacuoles",
+   "membranes"
+  ]
+ },
+ {
+  "id": "59f1f464-05fe-4f59-b4b5-dd2c2b9db2b6",
+  "topic": "Cell Division (Mitosis)",
+  "prompt": "The type of cell division that produces two identical daughter cells for growth and repair is:",
+  "options": [
+   "meiosis",
+   "mitosis",
+   "fertilisation",
+   "digestion"
+  ]
+ },
+ {
+  "id": "b78ca79d-d3d6-42c5-b508-a94711feaace",
+  "topic": "Cell Division (Mitosis)",
+  "prompt": "The two cells produced by mitosis are:",
+  "options": [
+   "genetically different from each other",
+   "always larger than the parent",
+   "genetically identical to the parent cell",
+   "missing a nucleus"
+  ]
+ },
+ {
+  "id": "c9811fa1-3a29-455d-8f1a-7611cdbbd9a6",
+  "topic": "Cell Division (Mitosis)",
+  "prompt": "One important role of mitosis in a multicellular organism is:",
+  "options": [
+   "producing gametes (sex cells)",
+   "digesting food",
+   "making hormones",
+   "growth and the repair of damaged tissue"
+  ]
+ },
+ {
+  "id": "464840b4-e6f7-4b50-b035-1255adcdaede",
+  "topic": "Cell Division (Mitosis)",
+  "prompt": "Before a cell divides, its DNA must first be:",
+  "options": [
+   "copied (replicated)",
+   "destroyed",
+   "turned into protein",
+   "removed from the cell"
+  ]
+ },
+ {
+  "id": "0ebba438-8973-457e-84cf-111f4a7f0565",
+  "topic": "Cell Division (Mitosis)",
+  "prompt": "The period of growth and DNA replication between cell divisions is called:",
+  "options": [
+   "mitosis",
+   "interphase",
+   "fertilisation",
+   "cytokinesis"
+  ]
+ },
+ {
+  "id": "292d09ea-478e-43f1-b012-55761196e907",
+  "topic": "Cell Division (Mitosis)",
+  "prompt": "If a parent cell has 46 chromosomes, each daughter cell produced by mitosis will have:",
+  "options": [
+   "23 chromosomes",
+   "92 chromosomes",
+   "46 chromosomes",
+   "0 chromosomes"
+  ]
+ },
+ {
+  "id": "3c7d1c00-fb5a-4d32-85ce-65d78770278c",
+  "topic": "Cell Division (Mitosis)",
+  "prompt": "Uncontrolled cell division can lead to the formation of a:",
+  "options": [
+   "gamete",
+   "tissue fluid",
+   "hormone",
+   "tumour (cancer)"
+  ]
+ },
+ {
+  "id": "c149a70c-a060-477e-a584-295740e0e16e",
+  "topic": "Plant & Animal Tissues",
+  "prompt": "A group of similar cells that work together to perform a particular function is called a:",
+  "options": [
+   "tissue",
+   "organ",
+   "organ system",
+   "organism"
+  ]
+ },
+ {
+  "id": "b9fdedf2-a7b7-4c05-89ad-d94f5d00fd9a",
+  "topic": "Plant & Animal Tissues",
+  "prompt": "The animal tissue that covers and lines body surfaces and organs is ___ tissue.",
+  "options": [
+   "muscle",
+   "epithelial",
+   "nervous",
+   "bone"
+  ]
+ },
+ {
+  "id": "39f84ae6-7b22-4c25-8bcc-74843f21c061",
+  "topic": "Plant & Animal Tissues",
+  "prompt": "The animal tissue specialised to contract and bring about movement is ___ tissue.",
+  "options": [
+   "epithelial",
+   "nervous",
+   "muscle",
+   "connective"
+  ]
+ },
+ {
+  "id": "ea425fbf-d907-453b-8a75-1892f0c120d1",
+  "topic": "Plant & Animal Tissues",
+  "prompt": "The animal tissue that carries electrical messages (impulses) around the body is ___ tissue.",
+  "options": [
+   "muscle",
+   "epithelial",
+   "bone",
+   "nervous"
+  ]
+ },
+ {
+  "id": "c77e20ce-4b2e-45c9-a7b5-d8d2482cd8b3",
+  "topic": "Plant & Animal Tissues",
+  "prompt": "The plant tissue that transports water and dissolved minerals upward from the roots is:",
+  "options": [
+   "xylem",
+   "phloem",
+   "epidermis",
+   "cambium"
+  ]
+ },
+ {
+  "id": "d1e28763-9c4d-436c-a3f0-2d3e81d756db",
+  "topic": "Plant & Animal Tissues",
+  "prompt": "The plant tissue that transports manufactured food (sugars) around the plant is:",
+  "options": [
+   "xylem",
+   "phloem",
+   "epidermis",
+   "cortex"
+  ]
+ },
+ {
+  "id": "5863f260-2b28-4569-8a4e-96bec247feb6",
+  "topic": "Plant & Animal Tissues",
+  "prompt": "The protective outer layer of cells covering a leaf or young stem is the:",
+  "options": [
+   "xylem",
+   "phloem",
+   "epidermis",
+   "pith"
+  ]
+ },
+ {
+  "id": "7a0acb61-a737-4161-96f8-60b8320d6ac1",
+  "topic": "Plant & Animal Tissues",
+  "prompt": "Several different tissues working together to perform a function form a(n):",
+  "options": [
+   "cell",
+   "single tissue",
+   "atom",
+   "organ"
+  ]
+ },
+ {
+  "id": "7ba745bd-eac5-4c3d-8215-281a8ad1595d",
+  "topic": "Transport Systems in Plants",
+  "prompt": "Water enters a plant mainly through its:",
+  "options": [
+   "roots (root hairs)",
+   "leaves",
+   "flowers",
+   "stem tip only"
+  ]
+ },
+ {
+  "id": "1a350b23-6f67-4cc6-8c65-00896bce5152",
+  "topic": "Transport Systems in Plants",
+  "prompt": "The loss of water vapour from the leaves of a plant, mostly through the stomata, is called:",
+  "options": [
+   "respiration",
+   "transpiration",
+   "photosynthesis",
+   "germination"
+  ]
+ },
+ {
+  "id": "e8104954-6d09-48c3-9023-efa004e2e3f3",
+  "topic": "Transport Systems in Plants",
+  "prompt": "Water and dissolved minerals are transported in the:",
+  "options": [
+   "phloem",
+   "epidermis",
+   "xylem",
+   "cuticle"
+  ]
+ },
+ {
+  "id": "ce452a82-c19c-42aa-a377-bb191662d8df",
+  "topic": "Transport Systems in Plants",
+  "prompt": "Which conditions would INCREASE the rate of transpiration?",
+  "options": [
+   "cold and still air",
+   "high humidity",
+   "darkness",
+   "hot, dry and windy weather"
+  ]
+ },
+ {
+  "id": "03d7268b-1dcd-4f02-bde0-7a7025345bdc",
+  "topic": "Transport Systems in Plants",
+  "prompt": "The sugars made during photosynthesis are transported around the plant by the:",
+  "options": [
+   "phloem",
+   "xylem",
+   "root hairs",
+   "cuticle"
+  ]
+ },
+ {
+  "id": "8e20d6d1-233a-4767-9f0b-a3405997f8a2",
+  "topic": "Transport Systems in Plants",
+  "prompt": "The tiny pores in a leaf through which water vapour and gases pass are the:",
+  "options": [
+   "root hairs",
+   "stomata",
+   "veins",
+   "petals"
+  ]
+ },
+ {
+  "id": "a7325c55-c383-439d-82b1-def83b9972cc",
+  "topic": "Transport Systems in Plants",
+  "prompt": "The main function of a plant's roots, besides absorbing water, is to:",
+  "options": [
+   "make food",
+   "carry out photosynthesis",
+   "anchor the plant in the soil",
+   "produce flowers"
+  ]
+ },
+ {
+  "id": "d512ec30-1bb6-4760-a604-f600b4432f0b",
+  "topic": "Transport Systems in Plants",
+  "prompt": "The waxy layer on the surface of a leaf that reduces water loss is the:",
+  "options": [
+   "xylem",
+   "phloem",
+   "stoma",
+   "cuticle"
+  ]
+ },
+ {
+  "id": "db3e3f19-2fad-42f1-a8d6-485c217c3ccb",
+  "topic": "The Human Heart & Circulatory System",
+  "prompt": "The muscular organ that pumps blood around the body is the:",
+  "options": [
+   "heart",
+   "lung",
+   "liver",
+   "kidney"
+  ]
+ },
+ {
+  "id": "7089f177-89af-46cb-9aec-7544a0213233",
+  "topic": "The Human Heart & Circulatory System",
+  "prompt": "Blood vessels that carry blood AWAY from the heart are called:",
+  "options": [
+   "veins",
+   "arteries",
+   "capillaries",
+   "nerves"
+  ]
+ },
+ {
+  "id": "026f2a5b-80b3-4215-bd73-2c2bc4c31fac",
+  "topic": "The Human Heart & Circulatory System",
+  "prompt": "The blood vessels that carry blood back TO the heart are called:",
+  "options": [
+   "arteries",
+   "capillaries",
+   "veins",
+   "tendons"
+  ]
+ },
+ {
+  "id": "6f5f1067-14aa-48e6-86f1-77b9a7544649",
+  "topic": "The Human Heart & Circulatory System",
+  "prompt": "The tiny, thin-walled blood vessels where materials are exchanged between the blood and the body cells are the:",
+  "options": [
+   "arteries",
+   "veins",
+   "valves",
+   "capillaries"
+  ]
+ },
+ {
+  "id": "4dba62f6-9c35-4c05-b7e9-a8b136fbe213",
+  "topic": "The Human Heart & Circulatory System",
+  "prompt": "The component of blood that carries oxygen is the:",
+  "options": [
+   "red blood cells",
+   "white blood cells",
+   "platelets",
+   "plasma only"
+  ]
+ },
+ {
+  "id": "1a448742-68f1-4390-a3d9-0746a3d529a6",
+  "topic": "The Human Heart & Circulatory System",
+  "prompt": "The main role of white blood cells is to:",
+  "options": [
+   "carry oxygen",
+   "fight infection and disease",
+   "help the blood to clot",
+   "transport carbon dioxide"
+  ]
+ },
+ {
+  "id": "8e647549-4883-41e6-be87-0815e3f23dcc",
+  "topic": "The Human Heart & Circulatory System",
+  "prompt": "The cell fragments that help the blood to clot are the:",
+  "options": [
+   "red blood cells",
+   "white blood cells",
+   "platelets",
+   "nerve cells"
+  ]
+ },
+ {
+  "id": "e2e641ab-13e8-40bf-8800-1e17c517c14b",
+  "topic": "The Human Heart & Circulatory System",
+  "prompt": "The liquid part of the blood, which carries dissolved substances such as nutrients and wastes, is the:",
+  "options": [
+   "haemoglobin",
+   "platelets",
+   "red blood cells",
+   "plasma"
+  ]
+ }
+]
