@@ -1,0 +1,530 @@
+[
+ {
+  "id": "22a0effb-c27d-4a29-9f1f-0d62fd18ea62",
+  "topic": "Soil Formation & Properties",
+  "prompt": "The breaking down of rock into smaller particles to form soil is called:",
+  "options": [
+   "weathering",
+   "leaching",
+   "erosion",
+   "evaporation"
+  ]
+ },
+ {
+  "id": "4ba6a8e5-f887-408e-b089-0da2c6b5fa07",
+  "topic": "Soil Formation & Properties",
+  "prompt": "Which soil mineral particle (separate) is the LARGEST?",
+  "options": [
+   "clay",
+   "sand",
+   "silt",
+   "humus"
+  ]
+ },
+ {
+  "id": "df6e61d4-696a-48dc-915e-e16a3cefb5d6",
+  "topic": "Soil Formation & Properties",
+  "prompt": "A soil that contains a balanced mixture of sand, silt and clay and is ideal for most crops is called a:",
+  "options": [
+   "pure clay soil",
+   "pure sandy soil",
+   "loam soil",
+   "gravel bed"
+  ]
+ },
+ {
+  "id": "1bbb1915-4e02-458e-8a39-44b59ea3f095",
+  "topic": "Soil Formation & Properties",
+  "prompt": "The dark, decomposed organic matter in soil that improves fertility and water-holding capacity is called:",
+  "options": [
+   "clay",
+   "sand",
+   "gravel",
+   "humus"
+  ]
+ },
+ {
+  "id": "6f59e1bc-029c-412c-852a-7573a79e85a2",
+  "topic": "Soil Formation & Properties",
+  "prompt": "The different horizontal layers seen in a vertical cut through the soil are together called the soil:",
+  "options": [
+   "profile",
+   "texture",
+   "structure",
+   "pH"
+  ]
+ },
+ {
+  "id": "3ed4fd34-2352-468f-8ea9-7228add7ced4",
+  "topic": "Soil Formation & Properties",
+  "prompt": "The topsoil (A horizon) is usually the most important layer for plant growth because it:",
+  "options": [
+   "is made of solid rock",
+   "contains the most humus, nutrients and plant roots",
+   "has no living organisms in it",
+   "is always made of pure clay"
+  ]
+ },
+ {
+  "id": "a7e5968f-c5d1-43c5-844e-ad2930d61a7c",
+  "topic": "Soil Formation & Properties",
+  "prompt": "Compared with a sandy soil, a clay soil generally:",
+  "options": [
+   "drains very quickly and holds little water",
+   "contains the largest particles",
+   "holds more water but drains slowly",
+   "has no nutrients at all"
+  ]
+ },
+ {
+  "id": "a7480311-18ba-4e65-9d77-602459b4a8c3",
+  "topic": "Soil Formation & Properties",
+  "prompt": "Soil texture refers to:",
+  "options": [
+   "the colour of the soil",
+   "the way crumbs of soil stick together",
+   "the amount of water in the soil",
+   "the proportion of sand, silt and clay particles in the soil"
+  ]
+ },
+ {
+  "id": "12552eaf-8b50-433b-880d-fe6866e2b0ce",
+  "topic": "Soil Fertility & Fertilisers",
+  "prompt": "Which three elements are the main macronutrients supplied by most fertilisers?",
+  "options": [
+   "nitrogen, phosphorus and potassium (N, P, K)",
+   "iron, zinc and copper",
+   "sodium, chlorine and iodine",
+   "carbon, hydrogen and oxygen"
+  ]
+ },
+ {
+  "id": "a86ef87f-6e5b-4d7e-b251-ec0e07005b25",
+  "topic": "Soil Fertility & Fertilisers",
+  "prompt": "The plant nutrient mainly responsible for healthy leaf and stem growth and a deep green colour is:",
+  "options": [
+   "phosphorus",
+   "nitrogen",
+   "potassium",
+   "calcium"
+  ]
+ },
+ {
+  "id": "479430f3-6c32-4f67-879c-12e96e9a7b20",
+  "topic": "Soil Fertility & Fertilisers",
+  "prompt": "On a fertiliser bag the figures 2:3:2 (22) mainly refer to the:",
+  "options": [
+   "mass of the bag in kilograms",
+   "price of the fertiliser",
+   "ratio of nitrogen, phosphorus and potassium it contains",
+   "number of bags needed per hectare"
+  ]
+ },
+ {
+  "id": "0e6bf864-eb14-4ac9-ae11-601eeb3d2442",
+  "topic": "Soil Fertility & Fertilisers",
+  "prompt": "Phosphorus (P) is especially important in plants for:",
+  "options": [
+   "leaf colour only",
+   "making the soil acidic",
+   "increasing the soil water content",
+   "strong root development, flowering and seed formation"
+  ]
+ },
+ {
+  "id": "d45cb534-8b0d-4f5b-bde5-db4a0e0da075",
+  "topic": "Soil Fertility & Fertilisers",
+  "prompt": "A fertiliser made from natural materials such as kraal manure or compost is called:",
+  "options": [
+   "an organic fertiliser",
+   "an inorganic fertiliser",
+   "a chemical fertiliser",
+   "agricultural lime"
+  ]
+ },
+ {
+  "id": "3ea67e6c-202a-4539-810b-aee8c2d49878",
+  "topic": "Soil Fertility & Fertilisers",
+  "prompt": "Adding agricultural lime to soil is done mainly to:",
+  "options": [
+   "make the soil more acidic",
+   "raise the pH of acidic soil (make it less acidic)",
+   "add nitrogen to the soil",
+   "kill all the organisms in the soil"
+  ]
+ },
+ {
+  "id": "c8519684-39cd-4cf6-a150-966817efb77c",
+  "topic": "Soil Fertility & Fertilisers",
+  "prompt": "A bag of fertiliser contains 22% of its mass as N, P and K nutrients. How many kilograms of these nutrients are in a 50 kg bag?",
+  "options": [
+   "22 kg",
+   "5 kg",
+   "11 kg",
+   "44 kg"
+  ]
+ },
+ {
+  "id": "48809093-1460-41fb-9c96-5f6a0ebe95a9",
+  "topic": "Soil Fertility & Fertilisers",
+  "prompt": "The loss of soluble nutrients when they are washed down out of the topsoil by water is called:",
+  "options": [
+   "weathering",
+   "evaporation",
+   "photosynthesis",
+   "leaching"
+  ]
+ },
+ {
+  "id": "931c7f39-5406-4cd2-ae57-d58734d5a50b",
+  "topic": "Plant Structure & Photosynthesis",
+  "prompt": "The process by which green plants use sunlight to make food (glucose) is called:",
+  "options": [
+   "photosynthesis",
+   "respiration",
+   "transpiration",
+   "germination"
+  ]
+ },
+ {
+  "id": "6df9ad69-b576-46f6-969c-289401a03292",
+  "topic": "Plant Structure & Photosynthesis",
+  "prompt": "The green pigment in leaves that absorbs light energy for photosynthesis is:",
+  "options": [
+   "glucose",
+   "chlorophyll",
+   "starch",
+   "cellulose"
+  ]
+ },
+ {
+  "id": "cd2c168a-570d-4c51-a647-79823e90ba54",
+  "topic": "Plant Structure & Photosynthesis",
+  "prompt": "During photosynthesis, the gas taken IN by the plant and the gas released are, respectively:",
+  "options": [
+   "oxygen in, nitrogen out",
+   "nitrogen in, oxygen out",
+   "carbon dioxide in, oxygen out",
+   "oxygen in, carbon dioxide out"
+  ]
+ },
+ {
+  "id": "61f080fe-1252-4783-a180-942473c34dad",
+  "topic": "Plant Structure & Photosynthesis",
+  "prompt": "The part of the plant that anchors it in the soil and absorbs water and mineral nutrients is the:",
+  "options": [
+   "leaf",
+   "flower",
+   "stem",
+   "root"
+  ]
+ },
+ {
+  "id": "bc49a10e-ebcc-4aa8-853a-ddef0f672928",
+  "topic": "Plant Structure & Photosynthesis",
+  "prompt": "Water and dissolved minerals are transported upward from the roots to the leaves through the:",
+  "options": [
+   "xylem",
+   "phloem",
+   "stomata",
+   "cuticle"
+  ]
+ },
+ {
+  "id": "889f0cd1-9d73-4566-be14-bc64a252dd75",
+  "topic": "Plant Structure & Photosynthesis",
+  "prompt": "The loss of water vapour from the leaves of a plant, mainly through the stomata, is called:",
+  "options": [
+   "photosynthesis",
+   "transpiration",
+   "respiration",
+   "translocation"
+  ]
+ },
+ {
+  "id": "b3803740-9c66-4c2e-b603-c5f5abd12905",
+  "topic": "Plant Structure & Photosynthesis",
+  "prompt": "The small pores, mostly on the underside of a leaf, that allow gas exchange are the:",
+  "options": [
+   "roots",
+   "veins",
+   "stomata",
+   "petals"
+  ]
+ },
+ {
+  "id": "99ed5148-fe12-48a1-9468-a4511456c19e",
+  "topic": "Plant Structure & Photosynthesis",
+  "prompt": "The food made during photosynthesis is stored in many plants in the form of:",
+  "options": [
+   "protein",
+   "fat",
+   "chlorophyll",
+   "starch"
+  ]
+ },
+ {
+  "id": "7ef8d060-9b92-46d5-a8b8-a6b6d49453be",
+  "topic": "Plant Production & Propagation",
+  "prompt": "Growing a new plant from a seed is an example of:",
+  "options": [
+   "sexual propagation",
+   "asexual (vegetative) propagation",
+   "grafting",
+   "layering"
+  ]
+ },
+ {
+  "id": "d75d8684-11cd-4506-8429-09481fcfbcf2",
+  "topic": "Plant Production & Propagation",
+  "prompt": "Growing a new plant from a cutting, runner or tuber is an example of:",
+  "options": [
+   "sexual propagation",
+   "asexual (vegetative) propagation",
+   "pollination",
+   "fertilisation"
+  ]
+ },
+ {
+  "id": "7bec116d-be3b-4cca-895c-0afa01917139",
+  "topic": "Plant Production & Propagation",
+  "prompt": "An ADVANTAGE of propagating plants asexually (e.g. from cuttings) is that the new plants:",
+  "options": [
+   "always show more genetic variation",
+   "take much longer to mature than seedlings",
+   "are genetically identical to the parent, keeping its desirable traits",
+   "never need any water"
+  ]
+ },
+ {
+  "id": "c0f27b59-55de-4626-8438-be2316d5b6a2",
+  "topic": "Plant Production & Propagation",
+  "prompt": "The beginning of growth of a seed into a young seedling is called:",
+  "options": [
+   "pollination",
+   "transpiration",
+   "photosynthesis",
+   "germination"
+  ]
+ },
+ {
+  "id": "8716658c-00a7-47c9-b5b8-fa45d3de8d15",
+  "topic": "Plant Production & Propagation",
+  "prompt": "Which of the following conditions is essential for MOST seeds to germinate?",
+  "options": [
+   "water, warmth and oxygen",
+   "bright light only",
+   "fertiliser only",
+   "complete darkness and frost"
+  ]
+ },
+ {
+  "id": "a4d5e308-1e6f-485c-9d76-1832f10aec81",
+  "topic": "Plant Production & Propagation",
+  "prompt": "Unwanted plants that compete with crops for water, light and nutrients are called:",
+  "options": [
+   "legumes",
+   "weeds",
+   "cover crops",
+   "seedlings"
+  ]
+ },
+ {
+  "id": "753b25e1-1d42-4ee4-b973-b1006615ef2c",
+  "topic": "Plant Production & Propagation",
+  "prompt": "Planting different crops on the same land in a planned sequence over the seasons, instead of the same crop every time, is called:",
+  "options": [
+   "monoculture",
+   "irrigation",
+   "crop rotation",
+   "grafting"
+  ]
+ },
+ {
+  "id": "fd7c1bfb-1272-404c-87c3-87a9c4bc7a26",
+  "topic": "Plant Production & Propagation",
+  "prompt": "Leguminous crops such as beans and lucerne improve soil fertility because they:",
+  "options": [
+   "use up all the nitrogen in the soil",
+   "make the soil very acidic",
+   "remove humus from the soil",
+   "fix nitrogen from the air into the soil through bacteria in their roots"
+  ]
+ },
+ {
+  "id": "9d7a8bc6-1fc0-4a20-bbbb-eb0c5ad49e1e",
+  "topic": "Agro-ecology & Sustainable Resource Use",
+  "prompt": "In a food chain, green plants that make their own food are called:",
+  "options": [
+   "producers",
+   "consumers",
+   "decomposers",
+   "predators"
+  ]
+ },
+ {
+  "id": "f2c9df0f-4b88-4869-89fb-4322f136b4e1",
+  "topic": "Agro-ecology & Sustainable Resource Use",
+  "prompt": "Animals that cannot make their own food and must eat plants or other animals are called:",
+  "options": [
+   "producers",
+   "consumers",
+   "decomposers",
+   "minerals"
+  ]
+ },
+ {
+  "id": "08e67efc-886d-45b2-b722-bb5fec91b05b",
+  "topic": "Agro-ecology & Sustainable Resource Use",
+  "prompt": "Bacteria and fungi that break down dead plants and animals, returning nutrients to the soil, are called:",
+  "options": [
+   "producers",
+   "predators",
+   "decomposers",
+   "parasites"
+  ]
+ },
+ {
+  "id": "70310e7c-5128-4ec8-b24c-5a63d4bb3c56",
+  "topic": "Agro-ecology & Sustainable Resource Use",
+  "prompt": "The original source of energy for almost all ecosystems is the:",
+  "options": [
+   "soil",
+   "wind",
+   "rain",
+   "sun"
+  ]
+ },
+ {
+  "id": "eeab6f61-71b9-48ec-b9ea-35ac79646170",
+  "topic": "Agro-ecology & Sustainable Resource Use",
+  "prompt": "The wearing away and removal of fertile topsoil by wind or water is called:",
+  "options": [
+   "soil erosion",
+   "leaching",
+   "germination",
+   "transpiration"
+  ]
+ },
+ {
+  "id": "63dc39ae-996f-43f7-9be1-bd5c825706c3",
+  "topic": "Agro-ecology & Sustainable Resource Use",
+  "prompt": "Allowing too many animals to graze a piece of veld until the plant cover is destroyed is called:",
+  "options": [
+   "crop rotation",
+   "overgrazing",
+   "contour ploughing",
+   "mulching"
+  ]
+ },
+ {
+  "id": "ed814e9f-cad9-427f-9f40-9c3f5f034745",
+  "topic": "Agro-ecology & Sustainable Resource Use",
+  "prompt": "Ploughing across a slope, along its contours, is a conservation practice that helps to:",
+  "options": [
+   "increase soil erosion",
+   "remove all the topsoil",
+   "slow run-off water and reduce soil erosion",
+   "stop plants from growing"
+  ]
+ },
+ {
+  "id": "4cbd240c-2e93-4b43-a88a-3743f063ab30",
+  "topic": "Agro-ecology & Sustainable Resource Use",
+  "prompt": "Sustainable farming means using natural resources in a way that:",
+  "options": [
+   "uses up the soil as fast as possible",
+   "ignores future production",
+   "removes all the vegetation",
+   "conserves the soil and water so the land stays productive for future generations"
+  ]
+ },
+ {
+  "id": "708b20af-0793-4919-9786-e3ac57c5566d",
+  "topic": "Farm Management & Production Economics",
+  "prompt": "The things a farmer puts into the production process, such as seed, fertiliser, feed and fuel, are called:",
+  "options": [
+   "inputs",
+   "outputs",
+   "profits",
+   "assets"
+  ]
+ },
+ {
+  "id": "3ccf93b3-d8fd-4b74-928f-5ac653d9b268",
+  "topic": "Farm Management & Production Economics",
+  "prompt": "A farmer who produces several different products (e.g. maize, cattle and vegetables) instead of only one is practising:",
+  "options": [
+   "monoculture",
+   "diversification",
+   "specialisation",
+   "leaching"
+  ]
+ },
+ {
+  "id": "5aaedb6a-7c70-4499-bfe4-19a50bd5ab7d",
+  "topic": "Farm Management & Production Economics",
+  "prompt": "A farmer sells 200 bags of maize at R250 per bag. The gross income from the maize is:",
+  "options": [
+   "R450",
+   "R5 000",
+   "R50 000",
+   "R500"
+  ]
+ },
+ {
+  "id": "f0d2b5ab-40f3-47d9-b1f8-06fb6d5012a5",
+  "topic": "Farm Management & Production Economics",
+  "prompt": "If a farm enterprise has a gross income of R80 000 and total costs of R55 000, the net profit is:",
+  "options": [
+   "R135 000",
+   "R55 000",
+   "R80 000",
+   "R25 000"
+  ]
+ },
+ {
+  "id": "edaa998d-77b7-47c8-a824-75bfaa270a6f",
+  "topic": "Farm Management & Production Economics",
+  "prompt": "Processing raw farm produce into a product worth more — for example turning milk into cheese — is known as:",
+  "options": [
+   "value-adding",
+   "leaching",
+   "soil erosion",
+   "germination"
+  ]
+ },
+ {
+  "id": "55a96283-8823-4fad-820b-4cfabfb87b75",
+  "topic": "Farm Management & Production Economics",
+  "prompt": "An organisation formed when farmers join together to buy inputs and market their produce more cheaply and effectively is a:",
+  "options": [
+   "bank",
+   "cooperative",
+   "auction",
+   "monopoly"
+  ]
+ },
+ {
+  "id": "2601c153-462a-48bf-98c1-e8527a1b2fb2",
+  "topic": "Farm Management & Production Economics",
+  "prompt": "Keeping a record of all the animals on a farm, including their births, deaths and sales, is an example of a:",
+  "options": [
+   "weather record",
+   "soil record",
+   "production (livestock) record",
+   "title deed"
+  ]
+ },
+ {
+  "id": "a47a9c1e-b731-47f9-891b-7c1fae421717",
+  "topic": "Farm Management & Production Economics",
+  "prompt": "The market principle that, as the price of a product rises, producers are usually willing to supply more of it, describes the law of:",
+  "options": [
+   "demand only",
+   "diminishing returns",
+   "gravity",
+   "supply"
+  ]
+ }
+]
