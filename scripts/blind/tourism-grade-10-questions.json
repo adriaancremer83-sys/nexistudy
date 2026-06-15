@@ -1,0 +1,530 @@
+[
+ {
+  "id": "5d8d0e9f-168f-47ca-9578-f02b851c8d5b",
+  "topic": "Tourism Concepts & Reasons for Travel",
+  "prompt": "'Tourism' involves people travelling to and staying in places:",
+  "options": [
+   "outside their usual environment, for leisure, business or other purposes",
+   "only within their own home",
+   "only for work each day in their home town",
+   "without ever leaving home"
+  ]
+ },
+ {
+  "id": "2d4ed977-358d-4880-9881-281ebf99877b",
+  "topic": "Tourism Concepts & Reasons for Travel",
+  "prompt": "A person who travels for tourism within their OWN country is taking part in:",
+  "options": [
+   "inbound tourism",
+   "domestic tourism",
+   "outbound tourism",
+   "international tourism"
+  ]
+ },
+ {
+  "id": "64a3f8cd-c813-44c7-8f99-b56716485e4c",
+  "topic": "Tourism Concepts & Reasons for Travel",
+  "prompt": "A South African who travels overseas to another country is an example of:",
+  "options": [
+   "domestic tourism",
+   "inbound tourism",
+   "outbound tourism",
+   "local tourism"
+  ]
+ },
+ {
+  "id": "01e5db70-3f8a-4f42-988a-6cef5fcd7b9e",
+  "topic": "Tourism Concepts & Reasons for Travel",
+  "prompt": "A person who travels to attend a wedding and stay with family is travelling mainly for the purpose of:",
+  "options": [
+   "business",
+   "attending a conference",
+   "medical treatment",
+   "visiting friends and relatives (VFR)"
+  ]
+ },
+ {
+  "id": "cb5171ec-1c8a-4376-8613-a8c38a55c7f0",
+  "topic": "Tourism Concepts & Reasons for Travel",
+  "prompt": "The letters 'MICE' in tourism stand for Meetings, Incentives, Conferences and:",
+  "options": [
+   "Events/Exhibitions",
+   "Eating",
+   "Emigration",
+   "Entertainment only"
+  ]
+ },
+ {
+  "id": "7fe0eb84-b53c-418e-aee3-4b0abbdfa519",
+  "topic": "Tourism Concepts & Reasons for Travel",
+  "prompt": "A visitor who travels to a place and returns home on the SAME day, without staying overnight, is called a(n):",
+  "options": [
+   "overnight tourist",
+   "excursionist (day visitor)",
+   "outbound tourist",
+   "business tourist"
+  ]
+ },
+ {
+  "id": "7dc3e31f-500f-4468-93a3-7c782ec0355a",
+  "topic": "Tourism Concepts & Reasons for Travel",
+  "prompt": "A person travelling to another country mainly to receive a medical operation is an example of:",
+  "options": [
+   "sport tourism",
+   "religious tourism",
+   "medical tourism",
+   "cultural tourism"
+  ]
+ },
+ {
+  "id": "6d36134d-ff19-46d0-8e5f-464c345fccc8",
+  "topic": "Tourism Concepts & Reasons for Travel",
+  "prompt": "The place that a tourist travels to and visits is called the:",
+  "options": [
+   "source area",
+   "home town",
+   "departure point",
+   "destination"
+  ]
+ },
+ {
+  "id": "02472a88-5f80-4132-89b3-eedb76c8072a",
+  "topic": "Domestic Tourism & SA Provinces",
+  "prompt": "South Africa is made up of how many provinces?",
+  "options": [
+   "nine",
+   "five",
+   "eleven",
+   "four"
+  ]
+ },
+ {
+  "id": "7f35ad60-f64e-49bb-97a8-8a58777bc094",
+  "topic": "Domestic Tourism & SA Provinces",
+  "prompt": "Table Mountain and the V&A Waterfront are major tourist attractions in which province?",
+  "options": [
+   "Gauteng",
+   "Western Cape",
+   "Limpopo",
+   "Free State"
+  ]
+ },
+ {
+  "id": "b3ad2c03-ca8f-458a-b105-a890cf8e6a4b",
+  "topic": "Domestic Tourism & SA Provinces",
+  "prompt": "The Kruger National Park, a top wildlife destination, lies mainly in Mpumalanga and which other province?",
+  "options": [
+   "Western Cape",
+   "Northern Cape",
+   "Limpopo",
+   "Free State"
+  ]
+ },
+ {
+  "id": "6ccc20d9-82cb-418d-8445-3544807c562f",
+  "topic": "Domestic Tourism & SA Provinces",
+  "prompt": "The popular beaches and warm Indian Ocean coastline around Durban are found in which province?",
+  "options": [
+   "Gauteng",
+   "Western Cape",
+   "Free State",
+   "KwaZulu-Natal"
+  ]
+ },
+ {
+  "id": "6ec23ef2-b893-480c-8796-8f0f382f1b62",
+  "topic": "Domestic Tourism & SA Provinces",
+  "prompt": "Domestic tourism is important for South Africa because it:",
+  "options": [
+   "keeps tourism money circulating within the country and supports local jobs",
+   "only benefits foreign countries",
+   "reduces all local income",
+   "discourages people from travelling"
+  ]
+ },
+ {
+  "id": "8a7d9ee7-785c-4f26-a414-f49da8cf5fe6",
+  "topic": "Domestic Tourism & SA Provinces",
+  "prompt": "South Africa's domestic tourism campaign that encourages locals to travel and explore their own country is called:",
+  "options": [
+   "Visit Britain",
+   "Sho't Left",
+   "Incredible India",
+   "Australia Uncovered"
+  ]
+ },
+ {
+  "id": "2b183682-96be-411b-8385-943f1501dd05",
+  "topic": "Domestic Tourism & SA Provinces",
+  "prompt": "Gauteng is South Africa's smallest province by area, but is very important for tourism because it:",
+  "options": [
+   "has the longest coastline",
+   "is mostly desert with no cities",
+   "contains Johannesburg and Pretoria and is the main business and gateway hub",
+   "has no airports"
+  ]
+ },
+ {
+  "id": "4a3568f5-0169-431f-b18c-a34c07ce8431",
+  "topic": "Domestic Tourism & SA Provinces",
+  "prompt": "A family from Johannesburg taking a holiday to the Drakensberg mountains is an example of:",
+  "options": [
+   "outbound tourism",
+   "inbound tourism",
+   "international tourism",
+   "domestic tourism"
+  ]
+ },
+ {
+  "id": "5dcc2ffc-44bd-4963-8e66-d2b5f3ccdee4",
+  "topic": "South African Heritage & Culture",
+  "prompt": "A 'World Heritage Site' is a place that:",
+  "options": [
+   "has special cultural or natural value and is protected internationally by UNESCO",
+   "is only open to local residents",
+   "has no historical importance",
+   "is a private shopping mall"
+  ]
+ },
+ {
+  "id": "645632b3-5796-42bb-b977-956451d8ed94",
+  "topic": "South African Heritage & Culture",
+  "prompt": "'Heritage tourism' (cultural tourism) means travelling to experience:",
+  "options": [
+   "only the beach",
+   "the history, culture and traditions of a place or people",
+   "only sports events",
+   "only shopping centres"
+  ]
+ },
+ {
+  "id": "06c135f5-ceca-4bf7-b84e-8ded6f6b4760",
+  "topic": "South African Heritage & Culture",
+  "prompt": "The 'Cradle of Humankind', a World Heritage Site near Johannesburg, is famous for:",
+  "options": [
+   "beach holidays",
+   "snow skiing",
+   "important fossils of early human ancestors",
+   "a large shopping centre"
+  ]
+ },
+ {
+  "id": "2c850c4b-974a-49d5-ac74-2fd9313e0ee0",
+  "topic": "South African Heritage & Culture",
+  "prompt": "South Africa is often called the 'Rainbow Nation' because it has:",
+  "options": [
+   "only one culture",
+   "no official languages",
+   "no cultural diversity at all",
+   "many different cultures, languages and traditions"
+  ]
+ },
+ {
+  "id": "2955945f-4547-4fcb-9537-48ec72046875",
+  "topic": "South African Heritage & Culture",
+  "prompt": "Heritage Day, a public holiday on which South Africans celebrate their cultural heritage, is on:",
+  "options": [
+   "24 September",
+   "1 January",
+   "25 December",
+   "16 June"
+  ]
+ },
+ {
+  "id": "ba00e53a-726f-4a90-9180-2d235913d360",
+  "topic": "South African Heritage & Culture",
+  "prompt": "The Voortrekker Monument and the Union Buildings, important heritage sites, are located in:",
+  "options": [
+   "Cape Town",
+   "Pretoria (Tshwane)",
+   "Durban",
+   "Bloemfontein"
+  ]
+ },
+ {
+  "id": "1e076c36-510d-48c7-a408-fa8601845144",
+  "topic": "South African Heritage & Culture",
+  "prompt": "Visiting a battlefield, museum or monument to learn about past events is a form of:",
+  "options": [
+   "beach tourism",
+   "adventure tourism",
+   "heritage (cultural) tourism",
+   "sport tourism"
+  ]
+ },
+ {
+  "id": "8edf1830-cecc-4257-9f9c-be975aeb617c",
+  "topic": "South African Heritage & Culture",
+  "prompt": "iSimangaliso Wetland Park, a World Heritage Site with lakes, beaches and wildlife, is located in which province?",
+  "options": [
+   "Gauteng",
+   "Western Cape",
+   "Free State",
+   "KwaZulu-Natal"
+  ]
+ },
+ {
+  "id": "b4e4de0f-1c70-4c8c-9577-9934079bb3ee",
+  "topic": "Travel Documents & Traveller Health & Safety",
+  "prompt": "An official government booklet that proves your identity and nationality when travelling internationally is a:",
+  "options": [
+   "passport",
+   "boarding pass",
+   "hotel voucher",
+   "shopping receipt"
+  ]
+ },
+ {
+  "id": "1f1f7d84-415f-40d6-90c0-c78278e4fb9e",
+  "topic": "Travel Documents & Traveller Health & Safety",
+  "prompt": "An official permission (often a stamp or sticker in a passport) that allows you to enter a particular foreign country is a:",
+  "options": [
+   "boarding pass",
+   "visa",
+   "loyalty card",
+   "luggage tag"
+  ]
+ },
+ {
+  "id": "c46675d7-4d61-43f2-af11-03c01a670b68",
+  "topic": "Travel Documents & Traveller Health & Safety",
+  "prompt": "Cover that pays for unexpected costs such as medical emergencies, cancellations or lost luggage while travelling is called:",
+  "options": [
+   "a passport",
+   "a visa",
+   "travel insurance",
+   "a boarding pass"
+  ]
+ },
+ {
+  "id": "6ad85f5f-0129-4e56-9457-2d6812bd4a13",
+  "topic": "Travel Documents & Traveller Health & Safety",
+  "prompt": "A document proving a traveller has been vaccinated against certain diseases (such as yellow fever), required for entry to some countries, is a:",
+  "options": [
+   "boarding pass",
+   "visa",
+   "luggage tag",
+   "health (vaccination) certificate"
+  ]
+ },
+ {
+  "id": "68232b22-bb00-4ffd-8f20-045b0585eac0",
+  "topic": "Travel Documents & Traveller Health & Safety",
+  "prompt": "The document issued at check-in that allows a passenger to board a specific flight is the:",
+  "options": [
+   "boarding pass",
+   "passport",
+   "visa",
+   "travel insurance policy"
+  ]
+ },
+ {
+  "id": "7fca98d9-c634-479f-a6de-e90bfc86e2ba",
+  "topic": "Travel Documents & Traveller Health & Safety",
+  "prompt": "To stay healthy while travelling to a region with malaria, a tourist should:",
+  "options": [
+   "drink unclean water",
+   "take anti-malaria precautions such as medication and insect repellent",
+   "ignore all health advice",
+   "never wash their hands"
+  ]
+ },
+ {
+  "id": "85e785a0-9159-49a6-9a7a-930ac123cb19",
+  "topic": "Travel Documents & Traveller Health & Safety",
+  "prompt": "To keep their valuables safe while travelling, a tourist should:",
+  "options": [
+   "leave their passport lying in public places",
+   "show large amounts of cash openly",
+   "use a hotel safe and keep documents secure",
+   "tell strangers their room number"
+  ]
+ },
+ {
+  "id": "347de206-d3d8-46b9-8a71-e1b439065cfd",
+  "topic": "Travel Documents & Traveller Health & Safety",
+  "prompt": "Before travelling to a foreign country, a tourist should check whether they need a visa, because:",
+  "options": [
+   "a visa is never required anywhere",
+   "passports are not needed for travel",
+   "visas are only for local citizens",
+   "some countries require a visa for entry, and a traveller can be refused entry without one"
+  ]
+ },
+ {
+  "id": "bb1499c1-72c4-42f9-915d-cd0a2e0b1467",
+  "topic": "Marketing & Promotion in Tourism",
+  "prompt": "'Marketing' in tourism mainly involves:",
+  "options": [
+   "promoting and selling tourism products to attract customers",
+   "cleaning hotel rooms",
+   "flying the aircraft",
+   "only cooking food"
+  ]
+ },
+ {
+  "id": "d0b4792e-b587-4f1f-9914-b2d38e659189",
+  "topic": "Marketing & Promotion in Tourism",
+  "prompt": "The specific group of customers that a tourism business aims its products at is called the:",
+  "options": [
+   "competitors",
+   "target market",
+   "suppliers",
+   "shareholders"
+  ]
+ },
+ {
+  "id": "11a44cdc-fe98-495f-8317-dff22e7571dd",
+  "topic": "Marketing & Promotion in Tourism",
+  "prompt": "The four elements of the marketing mix (the '4 Ps') are product, price, place and:",
+  "options": [
+   "passport",
+   "profit",
+   "promotion",
+   "petrol"
+  ]
+ },
+ {
+  "id": "110ac44f-6469-4005-b6fb-a7ca0d19cae2",
+  "topic": "Marketing & Promotion in Tourism",
+  "prompt": "The 'brand' of a tourism business or destination is:",
+  "options": [
+   "the price of a ticket",
+   "the number of staff it employs",
+   "the size of its building",
+   "its name, logo and image that make it recognisable"
+  ]
+ },
+ {
+  "id": "04de8f21-7a90-49ce-9b33-41da86ed52b0",
+  "topic": "Marketing & Promotion in Tourism",
+  "prompt": "The national organisation responsible for marketing South Africa as a tourism destination is:",
+  "options": [
+   "South African Tourism (SA Tourism)",
+   "the Reserve Bank",
+   "SARS",
+   "Eskom"
+  ]
+ },
+ {
+  "id": "a8201c50-2ee9-40dd-b509-d9a7a0ff6aa7",
+  "topic": "Marketing & Promotion in Tourism",
+  "prompt": "Advertising a destination on social media, television and websites is part of which element of the marketing mix?",
+  "options": [
+   "price",
+   "promotion",
+   "place",
+   "product"
+  ]
+ },
+ {
+  "id": "5bfb968b-c455-40ab-81b1-c34dfdf04883",
+  "topic": "Marketing & Promotion in Tourism",
+  "prompt": "'Place' in the tourism marketing mix refers to:",
+  "options": [
+   "the price charged",
+   "the advertising used",
+   "where and how the product is made available to customers",
+   "the staff uniform"
+  ]
+ },
+ {
+  "id": "9e9201af-f8fd-4afb-8c44-7d994f2ff586",
+  "topic": "Marketing & Promotion in Tourism",
+  "prompt": "The main aim of tourism marketing is to:",
+  "options": [
+   "reduce the number of visitors",
+   "make the destination unknown",
+   "discourage people from travelling",
+   "attract more visitors and increase tourism income"
+  ]
+ },
+ {
+  "id": "248e9d4d-456b-49c2-bfd7-6ae488b5b4b5",
+  "topic": "The Economic Importance of Tourism",
+  "prompt": "One major economic benefit of tourism for a country is that it:",
+  "options": [
+   "creates jobs and earns foreign exchange",
+   "destroys all businesses",
+   "removes income from the country",
+   "reduces employment"
+  ]
+ },
+ {
+  "id": "1c4252d5-9920-4728-a579-541be79a96ae",
+  "topic": "The Economic Importance of Tourism",
+  "prompt": "'Foreign exchange' earned through tourism refers to:",
+  "options": [
+   "local coins only",
+   "the foreign currency that overseas tourists spend in the country",
+   "free travel for locals",
+   "tourists' luggage"
+  ]
+ },
+ {
+  "id": "57d30171-f291-4271-a818-873b5aa8093a",
+  "topic": "The Economic Importance of Tourism",
+  "prompt": "The way tourist spending passes from one business to another, spreading benefits through the economy, is known as the:",
+  "options": [
+   "exchange rate",
+   "carrying capacity",
+   "multiplier effect",
+   "balance of trade"
+  ]
+ },
+ {
+  "id": "0e388a7d-7443-4356-afe4-9a308f066f16",
+  "topic": "The Economic Importance of Tourism",
+  "prompt": "Tourism helps to reduce unemployment because it:",
+  "options": [
+   "replaces all workers with machines",
+   "needs no staff at all",
+   "closes hotels and restaurants",
+   "creates many jobs in hotels, transport, restaurants and attractions"
+  ]
+ },
+ {
+  "id": "e5998ee6-de51-4914-969d-96ec358509a9",
+  "topic": "The Economic Importance of Tourism",
+  "prompt": "Many small businesses (SMMEs) benefit from tourism — for example:",
+  "options": [
+   "local craft sellers and tour guides",
+   "large foreign banks only",
+   "overseas factories",
+   "international oil companies"
+  ]
+ },
+ {
+  "id": "fef186cc-188e-49a7-984b-4ba17cf9813c",
+  "topic": "The Economic Importance of Tourism",
+  "prompt": "A negative economic effect that can happen in a very popular tourist area is:",
+  "options": [
+   "lower prices for everything",
+   "higher prices for goods, services and property for local residents",
+   "no change at all",
+   "free housing for everyone"
+  ]
+ },
+ {
+  "id": "dd93266f-6da2-4248-a314-8265564cfdd6",
+  "topic": "The Economic Importance of Tourism",
+  "prompt": "Tourism contributes to a country's economy by adding to its:",
+  "options": [
+   "rainfall",
+   "population pyramid",
+   "Gross Domestic Product (GDP)",
+   "time zone"
+  ]
+ },
+ {
+  "id": "7080aced-7a9e-43c5-8a31-7b65827a6415",
+  "topic": "The Economic Importance of Tourism",
+  "prompt": "The government can benefit economically from tourism by collecting:",
+  "options": [
+   "nothing at all",
+   "only complaints",
+   "fewer visitors",
+   "taxes such as VAT on the money tourists spend"
+  ]
+ }
+]
