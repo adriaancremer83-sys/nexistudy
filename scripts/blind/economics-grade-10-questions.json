@@ -1,0 +1,530 @@
+[
+ {
+  "id": "236eb909-7cd9-4cc5-ad12-123ac2a787fe",
+  "topic": "Basic Economic Concepts",
+  "prompt": "The basic economic problem is best described as:",
+  "options": [
+   "unlimited needs and wants but limited (scarce) resources",
+   "too much money in the economy",
+   "too many factories producing goods",
+   "having more resources than people could ever need"
+  ]
+ },
+ {
+  "id": "7cc1ad3a-7c06-4c8c-8241-384db93af3aa",
+  "topic": "Basic Economic Concepts",
+  "prompt": "'Scarcity' means that:",
+  "options": [
+   "there is more than enough of everything for everyone",
+   "resources are limited relative to people's unlimited wants",
+   "money in the economy is unlimited",
+   "only wealthy people have wants"
+  ]
+ },
+ {
+  "id": "1e5c583b-8668-49b9-b20b-99e9c6a6588a",
+  "topic": "Basic Economic Concepts",
+  "prompt": "'Opportunity cost' is best defined as:",
+  "options": [
+   "the money price printed on a product",
+   "the total cost of running a business for a year",
+   "the value of the next best alternative given up when a choice is made",
+   "a cost that is always equal to zero"
+  ]
+ },
+ {
+  "id": "85c084a4-5454-4108-b32a-6bd5fd9378ba",
+  "topic": "Basic Economic Concepts",
+  "prompt": "A learner has R50 and chooses to buy a book instead of a movie ticket. The opportunity cost of the book is:",
+  "options": [
+   "the R50 spent",
+   "the book itself",
+   "nothing at all",
+   "the movie ticket that was given up"
+  ]
+ },
+ {
+  "id": "efd61c2e-c1d9-4612-96cd-317c5fcdbba6",
+  "topic": "Basic Economic Concepts",
+  "prompt": "A 'free good' differs from an 'economic good' in that a free good:",
+  "options": [
+   "is not scarce and has no opportunity cost, such as air",
+   "is always the most expensive item in a shop",
+   "can only be obtained by paying cash",
+   "is produced only by the government"
+  ]
+ },
+ {
+  "id": "1be0c632-9ce8-4cee-99db-846b6a2f8250",
+  "topic": "Basic Economic Concepts",
+  "prompt": "'Needs' are best described as:",
+  "options": [
+   "luxuries that people would simply like to have",
+   "things essential for survival, such as food, water and shelter",
+   "items bought only by wealthy people",
+   "things that are never important to anyone"
+  ]
+ },
+ {
+  "id": "11bae555-9288-45f4-9f74-e0d432843142",
+  "topic": "Basic Economic Concepts",
+  "prompt": "Because resources are scarce, every society is forced to:",
+  "options": [
+   "stop producing goods altogether",
+   "give everyone everything they want",
+   "make choices about what to produce and how to use its resources",
+   "abolish the use of money"
+  ]
+ },
+ {
+  "id": "ee63d0c1-57a9-4b15-b060-51f458253370",
+  "topic": "Basic Economic Concepts",
+  "prompt": "A 'want' differs from a 'need' in that a want is:",
+  "options": [
+   "always essential for survival",
+   "always available free of charge",
+   "exactly the same thing as a need",
+   "something desired to improve comfort or enjoyment, but not essential for survival"
+  ]
+ },
+ {
+  "id": "a1b832d6-0f94-49d8-b2ef-7b453fe0878f",
+  "topic": "Factors of Production",
+  "prompt": "The four factors of production are:",
+  "options": [
+   "money, gold, shares and bonds",
+   "land, labour, capital and entrepreneurship",
+   "buyers, sellers, banks and government",
+   "imports, exports, taxes and savings"
+  ]
+ },
+ {
+  "id": "fcc4aaae-e479-4d23-aa1e-9b2b22de6739",
+  "topic": "Factors of Production",
+  "prompt": "'Land' as a factor of production includes:",
+  "options": [
+   "factory machines and tools",
+   "the skills and effort of workers",
+   "natural resources such as soil, minerals, water and forests",
+   "money kept in the bank"
+  ]
+ },
+ {
+  "id": "464332c7-73cf-47b9-98cc-a7ed2d1d94cb",
+  "topic": "Factors of Production",
+  "prompt": "'Labour' as a factor of production refers to:",
+  "options": [
+   "machines and equipment used in a factory",
+   "natural resources from the earth",
+   "money invested in a business",
+   "the human effort, both physical and mental, used in production"
+  ]
+ },
+ {
+  "id": "20af20f6-28e3-49fb-a042-0908f9b5c6c9",
+  "topic": "Factors of Production",
+  "prompt": "'Capital' as a factor of production means:",
+  "options": [
+   "manufactured goods used to produce other goods, such as machinery, tools and equipment",
+   "natural resources such as land and minerals",
+   "the salary paid to the business owner",
+   "undeveloped raw land"
+  ]
+ },
+ {
+  "id": "0454ec22-5c2e-4d83-b00c-0b63080a3354",
+  "topic": "Factors of Production",
+  "prompt": "The 'entrepreneur' is the factor of production that:",
+  "options": [
+   "only supplies physical labour",
+   "organises the other factors of production and takes the risk of running a business",
+   "owns the land but does nothing else",
+   "lends money to commercial banks"
+  ]
+ },
+ {
+  "id": "3579033d-39dd-4aa8-a570-234434f74a7b",
+  "topic": "Factors of Production",
+  "prompt": "The reward (income) earned by the owners of land is:",
+  "options": [
+   "wages",
+   "interest",
+   "rent",
+   "profit"
+  ]
+ },
+ {
+  "id": "99f5890c-9dc6-40a3-a0d7-88a08c5c58fd",
+  "topic": "Factors of Production",
+  "prompt": "The reward earned by labour for its effort is:",
+  "options": [
+   "rent",
+   "interest",
+   "profit",
+   "wages (or salaries)"
+  ]
+ },
+ {
+  "id": "49a48c6f-48c7-4e50-b059-1024a1665cb0",
+  "topic": "Factors of Production",
+  "prompt": "The reward earned by the entrepreneur for organising production and taking risk is:",
+  "options": [
+   "profit",
+   "rent",
+   "wages",
+   "interest"
+  ]
+ },
+ {
+  "id": "9bc02942-3183-4585-bf4b-439f60ab09a7",
+  "topic": "Economic Systems",
+  "prompt": "Every economic system must answer three central questions: what to produce, how to produce, and:",
+  "options": [
+   "when to close the business",
+   "where to keep the money",
+   "for whom to produce",
+   "who to tax the most"
+  ]
+ },
+ {
+  "id": "d7ae76a1-9c1b-4cd6-8f28-18b6363ba0ce",
+  "topic": "Economic Systems",
+  "prompt": "In a 'command' (centrally planned) economy, the main economic decisions are made by:",
+  "options": [
+   "private businesses",
+   "individual consumers",
+   "foreign companies",
+   "the government (the state)"
+  ]
+ },
+ {
+  "id": "7099a1b7-1741-4cd3-bdaa-75f39425ae72",
+  "topic": "Economic Systems",
+  "prompt": "In a 'market' (free-market) economy, economic decisions are made mainly by:",
+  "options": [
+   "private individuals and businesses through the price mechanism",
+   "the government acting alone",
+   "other countries",
+   "trade unions only"
+  ]
+ },
+ {
+  "id": "05f0e754-f145-426d-b9a0-bd323ef51bc6",
+  "topic": "Economic Systems",
+  "prompt": "A 'mixed economy', such as South Africa's, is one in which:",
+  "options": [
+   "only the government produces everything",
+   "both the private sector and the government play a role in the economy",
+   "there is no government involvement at all",
+   "no goods or services are produced"
+  ]
+ },
+ {
+  "id": "30a08206-2d0b-4a16-bea8-5dd2ad766d5e",
+  "topic": "Economic Systems",
+  "prompt": "In a 'traditional' economy, decisions about production are based mainly on:",
+  "options": [
+   "computer algorithms",
+   "stock-exchange prices",
+   "customs, habits and traditions passed down over generations",
+   "five-year government plans"
+  ]
+ },
+ {
+  "id": "4c08e3f7-2b25-4743-b2d2-d94d2e2d864a",
+  "topic": "Economic Systems",
+  "prompt": "A key feature of a market economy is:",
+  "options": [
+   "state ownership of all firms",
+   "central planning of all production",
+   "the absence of private property",
+   "private ownership of the factors of production"
+  ]
+ },
+ {
+  "id": "ac0c297b-7fa7-4e59-aded-06436a68a63f",
+  "topic": "Economic Systems",
+  "prompt": "One disadvantage of a command economy is that:",
+  "options": [
+   "there is often little consumer choice and weak incentives to work hard",
+   "there is too much competition between firms",
+   "prices are set only by supply and demand",
+   "businesses are allowed to make very large profits"
+  ]
+ },
+ {
+  "id": "d1f77056-41f4-4c01-93f4-ee1d99bf807b",
+  "topic": "Economic Systems",
+  "prompt": "A possible disadvantage of a pure market economy is that:",
+  "options": [
+   "the government controls all prices",
+   "the gap between rich and poor can widen, and some people may be left without basic services",
+   "private property is not allowed",
+   "there is no competition between firms"
+  ]
+ },
+ {
+  "id": "6c2bb6ed-296d-461e-bfed-e1d1224bf984",
+  "topic": "The Production Possibility Curve",
+  "prompt": "A production possibility curve (PPC) shows:",
+  "options": [
+   "the prices of two different goods",
+   "a country's population growth over time",
+   "the inflation rate from year to year",
+   "the maximum combinations of two goods an economy can produce when its resources are fully employed"
+  ]
+ },
+ {
+  "id": "f6d34951-bfd9-4492-a612-d1b0c59d0f33",
+  "topic": "The Production Possibility Curve",
+  "prompt": "A point INSIDE (below) the PPC represents a situation where:",
+  "options": [
+   "resources are underutilised — the economy is not producing at full capacity",
+   "the combination is impossible to reach",
+   "the economy is at maximum efficiency",
+   "prices are rising rapidly"
+  ]
+ },
+ {
+  "id": "6806dbb9-88cb-4765-844d-3a234d6748b0",
+  "topic": "The Production Possibility Curve",
+  "prompt": "A point OUTSIDE (beyond) the PPC represents a combination of goods that is:",
+  "options": [
+   "easily achievable right now",
+   "currently unattainable with the existing resources and technology",
+   "located inside the economy",
+   "the most efficient point of all"
+  ]
+ },
+ {
+  "id": "2f419082-6ec2-4500-ba14-158a241ed590",
+  "topic": "The Production Possibility Curve",
+  "prompt": "A point lying exactly ON the PPC shows that the economy is:",
+  "options": [
+   "wasting most of its resources",
+   "producing nothing at all",
+   "using all its resources fully and efficiently",
+   "definitely in a recession"
+  ]
+ },
+ {
+  "id": "ef5265b6-208c-4d78-9166-7d1fb892b177",
+  "topic": "The Production Possibility Curve",
+  "prompt": "Moving along the PPC to produce more of one good and less of another best illustrates the concept of:",
+  "options": [
+   "inflation",
+   "unemployment",
+   "population growth",
+   "opportunity cost"
+  ]
+ },
+ {
+  "id": "5a607345-dcdf-44c8-b146-08356265f792",
+  "topic": "The Production Possibility Curve",
+  "prompt": "An economy produces only tractors and wheat. On its PPC, producing more tractors means:",
+  "options": [
+   "producing less wheat (a trade-off)",
+   "automatically producing more wheat too",
+   "no change in the amount of wheat",
+   "leaving the curve completely"
+  ]
+ },
+ {
+  "id": "2ef91673-c830-46aa-b55b-9fb31b696f1e",
+  "topic": "The Production Possibility Curve",
+  "prompt": "Economic growth is shown on a PPC diagram by:",
+  "options": [
+   "a movement to a point inside the curve",
+   "the whole curve shifting outward to the right",
+   "the curve shifting inward to the left",
+   "the curve shrinking to a single point"
+  ]
+ },
+ {
+  "id": "bd0641f8-9da0-4870-aebc-4964d2c925fb",
+  "topic": "The Production Possibility Curve",
+  "prompt": "The PPC is usually drawn curving outward (bowed away from the origin) because of:",
+  "options": [
+   "a constant population",
+   "continually falling prices",
+   "increasing opportunity cost, since resources are not equally suited to producing both goods",
+   "a rising inflation rate"
+  ]
+ },
+ {
+  "id": "8c1a4a28-4d87-4935-b5ce-cbff0b6f308e",
+  "topic": "Population & Demographics",
+  "prompt": "A country's 'population' refers to:",
+  "options": [
+   "the total number of people living in the country",
+   "only the people who are employed",
+   "the number of businesses in the country",
+   "the total amount of money in the economy"
+  ]
+ },
+ {
+  "id": "f3d6c9e7-1cf1-476b-bbc7-a921694140ed",
+  "topic": "Population & Demographics",
+  "prompt": "The 'birth rate' is usually measured as the number of live births per:",
+  "options": [
+   "100 people per year",
+   "1 000 people of the population per year",
+   "family per month",
+   "10 people per decade"
+  ]
+ },
+ {
+  "id": "0d5f6393-108f-42d8-9dab-faa88f885899",
+  "topic": "Population & Demographics",
+  "prompt": "A 'census' is:",
+  "options": [
+   "a tax charged on people's income",
+   "a type of private business",
+   "an official count of a country's population, usually carried out every few years",
+   "a list of a country's imports"
+  ]
+ },
+ {
+  "id": "e296bb1c-22a1-4ac7-a82d-0e13610e285a",
+  "topic": "Population & Demographics",
+  "prompt": "The official body responsible for collecting population and economic statistics in South Africa is:",
+  "options": [
+   "the South African Reserve Bank",
+   "SARS",
+   "the JSE",
+   "Statistics South Africa (Stats SA)"
+  ]
+ },
+ {
+  "id": "c6b7782e-f447-4f83-a243-95a0745224ae",
+  "topic": "Population & Demographics",
+  "prompt": "If a country's birth rate is higher than its death rate, its population will generally:",
+  "options": [
+   "increase (grow)",
+   "decrease",
+   "stay exactly the same",
+   "fall to zero"
+  ]
+ },
+ {
+  "id": "180f220c-38a7-46c6-8cc5-8d04cd26ad8a",
+  "topic": "Population & Demographics",
+  "prompt": "'Net migration' refers to:",
+  "options": [
+   "the total number of births in a year",
+   "the difference between the number of people moving into a country and the number moving out",
+   "the death rate of a country",
+   "the unemployment rate"
+  ]
+ },
+ {
+  "id": "04724f15-2dc1-4262-9921-e6e1b2d83a55",
+  "topic": "Population & Demographics",
+  "prompt": "A 'population pyramid' is a diagram that shows:",
+  "options": [
+   "the prices of goods and services",
+   "a country's imports and exports",
+   "the age and gender distribution of a population",
+   "the national budget"
+  ]
+ },
+ {
+  "id": "48562d2b-9f2b-4b2d-8997-b0c05dcdf4a4",
+  "topic": "Population & Demographics",
+  "prompt": "A rapidly growing population can place pressure on a country by:",
+  "options": [
+   "reducing the need for schools",
+   "lowering the demand for food",
+   "removing the need for jobs",
+   "increasing the demand for services such as housing, schools and healthcare"
+  ]
+ },
+ {
+  "id": "d014a83e-3777-4b5e-8690-0f86183c48e7",
+  "topic": "Labour & Trade Unions",
+  "prompt": "The 'labour force' (economically active population) consists of:",
+  "options": [
+   "every single person living in the country",
+   "people who are able and willing to work, whether they are employed or unemployed",
+   "only school children",
+   "only retired pensioners"
+  ]
+ },
+ {
+  "id": "ed15f15a-c4d8-429d-ba51-63305a33288d",
+  "topic": "Labour & Trade Unions",
+  "prompt": "A 'trade union' is:",
+  "options": [
+   "a government department",
+   "a type of commercial bank",
+   "an organisation that represents workers and protects their interests",
+   "a group made up only of business owners"
+  ]
+ },
+ {
+  "id": "6c5a9561-ecb6-4cea-acd2-d41134b9cec0",
+  "topic": "Labour & Trade Unions",
+  "prompt": "'Collective bargaining' is the process in which:",
+  "options": [
+   "workers go shopping together",
+   "the government sets every wage on its own",
+   "each worker negotiates separately with the boss",
+   "a trade union negotiates with employers on behalf of workers over wages and conditions"
+  ]
+ },
+ {
+  "id": "6fcf082a-63df-425c-b92f-a53786c8f933",
+  "topic": "Labour & Trade Unions",
+  "prompt": "A 'strike' is:",
+  "options": [
+   "a refusal by workers to work in order to press their demands",
+   "a bonus paid to workers at year-end",
+   "a type of tax on wages",
+   "a promotion to a higher position"
+  ]
+ },
+ {
+  "id": "23d13151-9374-4bde-bdeb-6cf0e12cbb60",
+  "topic": "Labour & Trade Unions",
+  "prompt": "The 'productivity' of labour refers to:",
+  "options": [
+   "the total number of workers in a country",
+   "the amount of output produced per worker (or per hour worked)",
+   "the total wages paid to all workers",
+   "the number of trade unions in a country"
+  ]
+ },
+ {
+  "id": "7f45bc1e-e8a9-48ab-9af6-f691476c9d2e",
+  "topic": "Labour & Trade Unions",
+  "prompt": "In South Africa, the law that sets the lowest wage an employer may legally pay a worker is the:",
+  "options": [
+   "Income Tax Act",
+   "Companies Act",
+   "national minimum wage",
+   "exchange-rate policy"
+  ]
+ },
+ {
+  "id": "e5811bec-da50-47c1-b860-be21e04973b8",
+  "topic": "Labour & Trade Unions",
+  "prompt": "One effective way for a worker to increase their productivity and earning potential is to:",
+  "options": [
+   "work fewer hours for no particular reason",
+   "avoid all forms of training",
+   "ignore any new technology",
+   "gain more education, training and skills"
+  ]
+ },
+ {
+  "id": "5c1dfbba-7e5a-409a-86a9-ff4e965c0581",
+  "topic": "Labour & Trade Unions",
+  "prompt": "'Unemployment' occurs when people who are:",
+  "options": [
+   "able and willing to work cannot find jobs",
+   "retired and no longer want to work",
+   "still attending school full-time",
+   "choosing not to work at all"
+  ]
+ }
+]
