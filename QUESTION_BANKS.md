@@ -55,6 +55,7 @@ Any mismatch: fix or discard. A bank is not announced/marketed until LIVE-OK.
 | Afrikaans (taalstrukture) | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context Afrikaans subagent solve; topics distinct from BOTH Gr11 & Gr12 — lidwoorde & voornaamwoorde, voorsetsels, voegwoorde, spelling/hoofletters/afkortings, sinsoorte, byvoeglike naamwoorde & bywoorde) |
 | Agricultural Sciences | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; intro topics distinct from BOTH Gr11 & Gr12 — branches of agriculture, climate & weather, classification of farm animals, crop types & plant classification, water & irrigation, basic agri-economics & record-keeping) |
 | Hospitality Studies | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve; intro topics distinct from BOTH Gr11 & Gr12 — intro to industry, kitchen equipment & utensils, personal hygiene & kitchen safety, mise en place & basic prep, basic cooking methods, table setting & service basics) |
+| Information Technology | 10 | 6 | 48 | **LIVE-OK** ✓ (verified 2026-06-15, 48/48 fresh-context subagent solve incl. binary conversions; same CAPS areas as Gr11/Gr12 but basic Gr10 facts, no reuse — number systems, hardware I/O/storage, system & application software, networks, database concepts, algorithms & programming basics) |
 
 ## Report-a-question safety net (built 2026-06-12)
 `supabase-reports-setup.sql` adds `questions.flagged` + `question_reports` table.

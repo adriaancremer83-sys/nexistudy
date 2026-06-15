@@ -1,0 +1,530 @@
+[
+ {
+  "id": "44367e5b-97ce-4844-a3c9-704e008d0c38",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "The binary number system uses only which two digits?",
+  "options": [
+   "0 and 1",
+   "1 and 2",
+   "0 to 9",
+   "A and B"
+  ]
+ },
+ {
+  "id": "01e92385-eb2f-4e95-ba5a-91997894d2a4",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "What is the denary (decimal) value of the binary number 0011?",
+  "options": [
+   "1",
+   "3",
+   "5",
+   "11"
+  ]
+ },
+ {
+  "id": "d5c15892-0382-46c1-8290-071af0e5b898",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "The denary number 5 is written in binary as:",
+  "options": [
+   "0011",
+   "0100",
+   "0101",
+   "1010"
+  ]
+ },
+ {
+  "id": "f5274a88-2308-49ea-b09f-f157cbd1e15a",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "Approximately how many bytes are there in one kilobyte (KB)?",
+  "options": [
+   "10",
+   "100",
+   "8",
+   "about 1 000 (1 024)"
+  ]
+ },
+ {
+  "id": "23e534a7-6688-4075-8589-82c905da3991",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "Why do computers use the binary system to represent data?",
+  "options": [
+   "because their electronic circuits have two states: on (1) and off (0)",
+   "because people have ten fingers",
+   "because it is exactly the same as the decimal system",
+   "because it uses the letters A to F"
+  ]
+ },
+ {
+  "id": "10f37ee0-992d-4a36-bb3e-0ed1734c757d",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "What is the denary value of the binary number 1001?",
+  "options": [
+   "5",
+   "9",
+   "11",
+   "100"
+  ]
+ },
+ {
+  "id": "509e8faf-d357-40d8-82c1-1911cc215bb3",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "A 'kilobyte' is approximately one thousand:",
+  "options": [
+   "bits",
+   "gigabytes",
+   "bytes",
+   "megabytes"
+  ]
+ },
+ {
+  "id": "0132e4df-6683-4069-a0b2-0eacf324e0fc",
+  "topic": "Number Systems & Data Representation",
+  "prompt": "The denary number 4 is written in binary as:",
+  "options": [
+   "0001",
+   "0010",
+   "1000",
+   "0100"
+  ]
+ },
+ {
+  "id": "735adea7-e572-4325-a5fa-1816284c6613",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "Which of the following is an INPUT device?",
+  "options": [
+   "a monitor",
+   "a mouse",
+   "a printer",
+   "a speaker"
+  ]
+ },
+ {
+  "id": "9963ea7e-8c19-4cc0-b874-7bc25edc5dd7",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "Which of the following is an OUTPUT device?",
+  "options": [
+   "a scanner",
+   "a keyboard",
+   "a monitor (screen)",
+   "a microphone"
+  ]
+ },
+ {
+  "id": "ae93fe7d-55c2-4cd0-b146-cfa2c4769b7e",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "The 'brain' of the computer, which carries out instructions and processes data, is the:",
+  "options": [
+   "monitor",
+   "printer",
+   "hard drive",
+   "CPU (central processing unit)"
+  ]
+ },
+ {
+  "id": "f18552b8-fb69-406b-8ca1-a52bbc6ba438",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "A 'scanner' is an input device used to:",
+  "options": [
+   "convert a printed document or photo into a digital image",
+   "print documents onto paper",
+   "display pictures on a screen",
+   "play sound through the speakers"
+  ]
+ },
+ {
+  "id": "42a60eab-859f-4aa3-a2a8-affdf2fbc25f",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "A USB flash drive is an example of a:",
+  "options": [
+   "processing device",
+   "storage device",
+   "output device",
+   "display device"
+  ]
+ },
+ {
+  "id": "f915c24e-b456-43cc-938e-028c73b2675a",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "Which device produces 'hard copy' — a printout on paper?",
+  "options": [
+   "a monitor",
+   "a speaker",
+   "a printer",
+   "a microphone"
+  ]
+ },
+ {
+  "id": "5b288ee7-b9bd-468c-ae77-4e28f0d000d6",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "A webcam and a microphone are both examples of ___ devices.",
+  "options": [
+   "output",
+   "storage",
+   "processing",
+   "input"
+  ]
+ },
+ {
+  "id": "7c3e3ffb-d0d1-4fa9-a394-2e4f1f10bdce",
+  "topic": "Hardware: Input, Output & Storage Devices",
+  "prompt": "The monitor, the speakers and the printer are all examples of ___ devices.",
+  "options": [
+   "output",
+   "input",
+   "storage",
+   "processing"
+  ]
+ },
+ {
+  "id": "a087dcb7-9e9f-44a6-9a82-3333305c8248",
+  "topic": "System & Application Software",
+  "prompt": "Which of the following is an example of an operating system?",
+  "options": [
+   "Microsoft Word",
+   "Google Chrome",
+   "Windows",
+   "a USB cable"
+  ]
+ },
+ {
+  "id": "fb8a681e-d893-4475-93a2-20dde13f5534",
+  "topic": "System & Application Software",
+  "prompt": "'Application software' is software designed to:",
+  "options": [
+   "control the computer's hardware",
+   "boot up the computer",
+   "manage the computer's memory",
+   "help the user do a specific task, such as writing a letter or editing a photo"
+  ]
+ },
+ {
+  "id": "2e969a57-f4eb-467b-a0e5-0c2c656b37a2",
+  "topic": "System & Application Software",
+  "prompt": "Which of the following is an example of application software?",
+  "options": [
+   "a web browser like Google Chrome",
+   "the Windows operating system",
+   "a device driver",
+   "the computer's BIOS"
+  ]
+ },
+ {
+  "id": "f9f4f088-07ab-43e7-bfb2-744290d6490b",
+  "topic": "System & Application Software",
+  "prompt": "The two main categories of software are:",
+  "options": [
+   "input software and output software",
+   "system software and application software",
+   "hard software and soft software",
+   "free software and paid software"
+  ]
+ },
+ {
+  "id": "538f36c2-330e-45b5-b1d6-112075cc7e7e",
+  "topic": "System & Application Software",
+  "prompt": "'Antivirus' is an example of ___ software, which helps to protect and maintain the computer.",
+  "options": [
+   "word-processing",
+   "operating-system",
+   "utility",
+   "gaming"
+  ]
+ },
+ {
+  "id": "a73050da-2d79-4bf5-98f6-69d33ae5ba4e",
+  "topic": "System & Application Software",
+  "prompt": "A program that lets you create and edit documents containing text is a:",
+  "options": [
+   "spreadsheet",
+   "web browser",
+   "database",
+   "word processor"
+  ]
+ },
+ {
+  "id": "94799479-150e-477d-a26f-e5e38e989ae8",
+  "topic": "System & Application Software",
+  "prompt": "A 'spreadsheet' program is used mainly to:",
+  "options": [
+   "work with numbers, calculations and tables of data",
+   "edit videos",
+   "control the computer's hardware",
+   "connect the computer to Wi-Fi"
+  ]
+ },
+ {
+  "id": "0c372b69-56f5-4a2a-92d3-5ac5002f9445",
+  "topic": "System & Application Software",
+  "prompt": "A 'web browser' such as Chrome or Edge is application software used to:",
+  "options": [
+   "boot up the computer",
+   "view web pages on the internet",
+   "manage the computer's memory",
+   "print documents"
+  ]
+ },
+ {
+  "id": "0ef3404c-c57c-45a8-ab51-e2c1cf889dbd",
+  "topic": "Computer Networks & Communications",
+  "prompt": "A 'computer network' is:",
+  "options": [
+   "a single computer used by one person",
+   "a type of printer",
+   "a word-processing program",
+   "two or more computers connected together to share data and resources"
+  ]
+ },
+ {
+  "id": "10c9bef6-3b84-4a55-a7ab-6267cc3d32ad",
+  "topic": "Computer Networks & Communications",
+  "prompt": "A network that covers a large geographical area, such as a whole country, is a:",
+  "options": [
+   "WAN (Wide Area Network)",
+   "LAN (Local Area Network)",
+   "single PC",
+   "printer"
+  ]
+ },
+ {
+  "id": "b1cd08c9-78d4-45f7-9990-30120c306d77",
+  "topic": "Computer Networks & Communications",
+  "prompt": "The largest WAN in the world, connecting millions of computers globally, is the:",
+  "options": [
+   "school computer lab",
+   "internet",
+   "office printer",
+   "single keyboard"
+  ]
+ },
+ {
+  "id": "1e3f095b-23d9-4950-a5d5-a9565371e291",
+  "topic": "Computer Networks & Communications",
+  "prompt": "The device that joins a home network together and connects it to the internet is a:",
+  "options": [
+   "scanner",
+   "monitor",
+   "router",
+   "webcam"
+  ]
+ },
+ {
+  "id": "5f24ef10-15c4-42dc-952b-cc3fb24ab53b",
+  "topic": "Computer Networks & Communications",
+  "prompt": "Network cabling (such as fibre or UTP) and Wi-Fi are two ways of providing a network's:",
+  "options": [
+   "software",
+   "printer",
+   "monitor",
+   "communication medium (the connection between devices)"
+  ]
+ },
+ {
+  "id": "a426ce0e-1208-4df6-b33f-fd0d0efc6342",
+  "topic": "Computer Networks & Communications",
+  "prompt": "One advantage of using a network is that users can:",
+  "options": [
+   "share a single printer among many computers",
+   "never communicate with each other",
+   "lose all their files automatically",
+   "stop the computers from working"
+  ]
+ },
+ {
+  "id": "0d2b5919-5268-4cab-bb41-e5d10cd7a635",
+  "topic": "Computer Networks & Communications",
+  "prompt": "'Email' is a network service used to:",
+  "options": [
+   "print photographs",
+   "send electronic messages between people",
+   "cool down the CPU",
+   "store files permanently"
+  ]
+ },
+ {
+  "id": "74998e58-46df-48f8-a8ad-04e8e731f657",
+  "topic": "Computer Networks & Communications",
+  "prompt": "When you connect your phone to the school's Wi-Fi, you are joining a:",
+  "options": [
+   "printer",
+   "single offline computer",
+   "wireless network",
+   "spreadsheet"
+  ]
+ },
+ {
+  "id": "0f42d2c0-802a-4187-af71-db106a43cdb3",
+  "topic": "Database Concepts",
+  "prompt": "A 'database' is best described as:",
+  "options": [
+   "an organised collection of related data, stored so it can be searched and used easily",
+   "a single photograph",
+   "a type of printer",
+   "a programming language"
+  ]
+ },
+ {
+  "id": "d75e1c63-4e58-47b5-a95f-7a1893605482",
+  "topic": "Database Concepts",
+  "prompt": "Which of these is an everyday example of a database?",
+  "options": [
+   "a single song playing",
+   "a school's list of all its learners and their details",
+   "a light switch",
+   "a paperclip"
+  ]
+ },
+ {
+  "id": "89b61ca2-6f33-43bc-829e-216b3a107923",
+  "topic": "Database Concepts",
+  "prompt": "In a database table, the data is arranged in:",
+  "options": [
+   "circles and triangles",
+   "one single long line",
+   "rows and columns",
+   "random piles"
+  ]
+ },
+ {
+  "id": "28011667-b66a-46df-829e-f32913a746ef",
+  "topic": "Database Concepts",
+  "prompt": "The main purpose of 'sorting' a database is to:",
+  "options": [
+   "delete all the data",
+   "change the data into pictures",
+   "make the computer slower",
+   "arrange the records in a particular order, such as alphabetically"
+  ]
+ },
+ {
+  "id": "77ac122e-4d26-4994-a34e-7c7ea2c947c6",
+  "topic": "Database Concepts",
+  "prompt": "A 'query' (search) in a database is used to:",
+  "options": [
+   "find and display only the records that match certain conditions",
+   "switch off the computer",
+   "print the keyboard",
+   "delete the operating system"
+  ]
+ },
+ {
+  "id": "e7d02edb-b1ad-4995-97c5-9b1241b9d775",
+  "topic": "Database Concepts",
+  "prompt": "One advantage of storing information in a computer database instead of on paper is that:",
+  "options": [
+   "it can never be changed",
+   "data can be searched and sorted quickly and easily",
+   "it always gets lost",
+   "it uses far more paper"
+  ]
+ },
+ {
+  "id": "260793fc-9b04-4a9f-a0a1-f9a860898f5e",
+  "topic": "Database Concepts",
+  "prompt": "Which data type would best store a learner's age, which is a whole number?",
+  "options": [
+   "text",
+   "picture",
+   "number (integer)",
+   "sound"
+  ]
+ },
+ {
+  "id": "85d9e562-3c98-4c6c-986a-52dbc39f89e1",
+  "topic": "Database Concepts",
+  "prompt": "Which data type would best store a learner's first name?",
+  "options": [
+   "number",
+   "date",
+   "yes/no",
+   "text (string)"
+  ]
+ },
+ {
+  "id": "889f3981-be71-485a-9ec5-dae48a1dff79",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "An 'algorithm' is best described as:",
+  "options": [
+   "a type of computer virus",
+   "a step-by-step set of instructions to solve a problem or complete a task",
+   "a piece of computer hardware",
+   "a network cable"
+  ]
+ },
+ {
+  "id": "0dd793dd-0cd8-4a43-9a7d-cd24041c4f5b",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "A 'variable' in a program is:",
+  "options": [
+   "a fixed number that can never change",
+   "a type of printer",
+   "a named storage location whose value can change while the program runs",
+   "a network device"
+  ]
+ },
+ {
+  "id": "e81154ac-2c7f-4494-9873-d6ab4fdaaca0",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "A 'loop' (iteration) in a program is used to:",
+  "options": [
+   "store a single value",
+   "connect to the internet",
+   "give a file a name",
+   "repeat a set of instructions a number of times"
+  ]
+ },
+ {
+  "id": "90addefd-b338-4e1f-8b51-e0f930e3f3a0",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "Finding and fixing errors in a program is called:",
+  "options": [
+   "debugging",
+   "booting",
+   "printing",
+   "saving"
+  ]
+ },
+ {
+  "id": "8923dbcb-f9d4-4ca2-b2fe-87ba9fd6648b",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "In programming, the symbols >, < and = are examples of:",
+  "options": [
+   "arithmetic operators",
+   "comparison (relational) operators",
+   "data types",
+   "loops"
+  ]
+ },
+ {
+  "id": "bc2f8261-d23f-49e2-b87e-7c1a69f0b073",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "A 'boolean' data type can store only one of two values, namely:",
+  "options": [
+   "any whole number",
+   "any piece of text",
+   "true or false",
+   "a date"
+  ]
+ },
+ {
+  "id": "a1982151-6687-4a4d-b97f-19488a80f207",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "If a program runs without crashing but gives the WRONG answer, this is most likely a:",
+  "options": [
+   "syntax error",
+   "power failure",
+   "broken keyboard",
+   "logic error"
+  ]
+ },
+ {
+  "id": "4bc35b57-c291-4871-ab38-a1d7a884b7ca",
+  "topic": "Algorithms & Programming Basics",
+  "prompt": "The first step when solving a problem with a program is usually to:",
+  "options": [
+   "understand the problem and plan the solution before writing any code",
+   "switch off the computer",
+   "delete all the files",
+   "print the screen"
+  ]
+ }
+]
