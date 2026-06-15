@@ -1,0 +1,530 @@
+[
+ {
+  "id": "6c1994c3-c4fa-4c77-8c76-9759e73eb12a",
+  "topic": "Spelling & Plurals",
+  "prompt": "The correct plural of \"child\" is:",
+  "options": [
+   "childs",
+   "childes",
+   "children",
+   "childrens"
+  ]
+ },
+ {
+  "id": "4a6c9c32-4ade-4376-a743-96bb5ab79bde",
+  "topic": "Spelling & Plurals",
+  "prompt": "The correct plural of \"knife\" is:",
+  "options": [
+   "knifes",
+   "knifs",
+   "knifves",
+   "knives"
+  ]
+ },
+ {
+  "id": "68a7af35-6275-4244-9224-9f1fa68d4e20",
+  "topic": "Spelling & Plurals",
+  "prompt": "Which word is spelled correctly?",
+  "options": [
+   "necessary",
+   "neccessary",
+   "necesary",
+   "neccesary"
+  ]
+ },
+ {
+  "id": "ca161213-44e2-4089-9245-af7148c42d26",
+  "topic": "Spelling & Plurals",
+  "prompt": "The correct plural of \"box\" is:",
+  "options": [
+   "boxes",
+   "boxs",
+   "boxies",
+   "boxen"
+  ]
+ },
+ {
+  "id": "f2a57a23-7510-480c-b726-1e4d36647f4d",
+  "topic": "Spelling & Plurals",
+  "prompt": "The correct plural of \"baby\" is:",
+  "options": [
+   "babys",
+   "babies",
+   "babyes",
+   "babi"
+  ]
+ },
+ {
+  "id": "c08942b6-b4ab-4356-ada5-af178e2f11cb",
+  "topic": "Spelling & Plurals",
+  "prompt": "The correct plural of \"tomato\" is:",
+  "options": [
+   "tomatos",
+   "tomatoes",
+   "tomatto",
+   "tomatoies"
+  ]
+ },
+ {
+  "id": "8fa791b8-2413-4258-a743-1e06846a9fe4",
+  "topic": "Spelling & Plurals",
+  "prompt": "Following the rule \"i before e except after c\", which spelling is correct?",
+  "options": [
+   "recieve",
+   "receeve",
+   "receive",
+   "receve"
+  ]
+ },
+ {
+  "id": "6f71153d-57fd-4974-96e6-299c2fafb083",
+  "topic": "Spelling & Plurals",
+  "prompt": "The correct plural of \"man\" is:",
+  "options": [
+   "mans",
+   "manes",
+   "mens",
+   "men"
+  ]
+ },
+ {
+  "id": "f020b6ef-e8b8-4e49-a81d-f6e594e339c3",
+  "topic": "Articles & Determiners",
+  "prompt": "Choose the correct article: \"She ate ___ apple.\"",
+  "options": [
+   "a",
+   "an",
+   "this kind of",
+   "no word"
+  ]
+ },
+ {
+  "id": "295ecc40-44ef-4337-8245-c52004b2920d",
+  "topic": "Articles & Determiners",
+  "prompt": "Choose the correct article: \"He is ___ honest man.\"",
+  "options": [
+   "a",
+   "the most",
+   "an",
+   "those"
+  ]
+ },
+ {
+  "id": "85db24a7-4794-4090-b96b-fd538cd34d1d",
+  "topic": "Articles & Determiners",
+  "prompt": "Choose the correct article: \"Please pass me ___ salt on the table.\"",
+  "options": [
+   "an",
+   "a",
+   "those",
+   "the"
+  ]
+ },
+ {
+  "id": "19d5b5df-e2dc-4e7f-86ac-3c5830f9e590",
+  "topic": "Articles & Determiners",
+  "prompt": "Choose the correct word: \"There are too ___ people in this room.\"",
+  "options": [
+   "many",
+   "much",
+   "little",
+   "amount of"
+  ]
+ },
+ {
+  "id": "262aaa6f-4f90-4973-8a8c-a9cefc9435da",
+  "topic": "Articles & Determiners",
+  "prompt": "Choose the correct word: \"I don't have ___ money left.\"",
+  "options": [
+   "many",
+   "much",
+   "few",
+   "number of"
+  ]
+ },
+ {
+  "id": "c52c53c3-bcdc-4dfc-8225-08c5dbe09600",
+  "topic": "Articles & Determiners",
+  "prompt": "Choose the correct determiner for something near you: \"___ book in my hand is mine.\"",
+  "options": [
+   "These",
+   "Those",
+   "This",
+   "Them"
+  ]
+ },
+ {
+  "id": "28866b16-7946-46fd-b555-33e0f7eee91c",
+  "topic": "Articles & Determiners",
+  "prompt": "Choose the correct determiner: \"___ shoes over there are dirty.\"",
+  "options": [
+   "This",
+   "That",
+   "Them",
+   "Those"
+  ]
+ },
+ {
+  "id": "3eec5830-db73-4616-b858-ec14a51c8ebf",
+  "topic": "Articles & Determiners",
+  "prompt": "Choose the correct word when offering a drink: \"Would you like ___ tea?\"",
+  "options": [
+   "some",
+   "many",
+   "an",
+   "few"
+  ]
+ },
+ {
+  "id": "6efd53a9-33f3-412c-b78e-916bd849b116",
+  "topic": "Prepositions",
+  "prompt": "Choose the correct preposition: \"The cat is hiding ___ the bed.\" (beneath it)",
+  "options": [
+   "on",
+   "in",
+   "under",
+   "between"
+  ]
+ },
+ {
+  "id": "087e845e-1a81-4a0f-bd87-d51db9a9c048",
+  "topic": "Prepositions",
+  "prompt": "Choose the correct preposition of time: \"The meeting starts ___ 9 o'clock.\"",
+  "options": [
+   "in",
+   "on",
+   "since",
+   "at"
+  ]
+ },
+ {
+  "id": "ce887fd9-148d-4bbc-a92a-8039796fa2e2",
+  "topic": "Prepositions",
+  "prompt": "Choose the correct preposition of time: \"My birthday is ___ June.\"",
+  "options": [
+   "in",
+   "at",
+   "on",
+   "since"
+  ]
+ },
+ {
+  "id": "9cbec727-2007-4f2a-a278-9e830ddf10b0",
+  "topic": "Prepositions",
+  "prompt": "Choose the correct preposition of time: \"We are meeting ___ Monday.\"",
+  "options": [
+   "in",
+   "on",
+   "at",
+   "since"
+  ]
+ },
+ {
+  "id": "be026bdd-743a-4b6c-a5a9-a0a298ebe439",
+  "topic": "Prepositions",
+  "prompt": "Choose the correct preposition: \"She walked ___ the room and sat down.\" (entered it)",
+  "options": [
+   "on",
+   "at",
+   "into",
+   "between"
+  ]
+ },
+ {
+  "id": "758d6816-c12c-4940-894d-5065d256b8e8",
+  "topic": "Prepositions",
+  "prompt": "Choose the correct preposition: \"The picture is hanging ___ the wall.\"",
+  "options": [
+   "in",
+   "at",
+   "under",
+   "on"
+  ]
+ },
+ {
+  "id": "f95d14fc-8c19-472a-9480-6b4fda7edebe",
+  "topic": "Prepositions",
+  "prompt": "Choose the correct preposition: \"He sat ___ his two friends, with one on each side.\"",
+  "options": [
+   "between",
+   "among",
+   "in",
+   "onto"
+  ]
+ },
+ {
+  "id": "b9abc438-a886-48ca-a71d-ff3420fd898b",
+  "topic": "Prepositions",
+  "prompt": "Choose the correct preposition: \"We have been waiting ___ two hours.\" (a length of time)",
+  "options": [
+   "since",
+   "for",
+   "at",
+   "onto"
+  ]
+ },
+ {
+  "id": "88dc699e-754f-41e4-b706-793523d9a64c",
+  "topic": "Conjunctions & Connectors",
+  "prompt": "Choose the correct conjunction: \"I was tired, ___ I went to bed early.\" (result)",
+  "options": [
+   "but",
+   "or",
+   "although",
+   "so"
+  ]
+ },
+ {
+  "id": "804e9400-bf7a-4214-b282-f579a45c71f4",
+  "topic": "Conjunctions & Connectors",
+  "prompt": "Choose the correct conjunction: \"She is clever ___ hard-working.\" (adding a similar idea)",
+  "options": [
+   "and",
+   "but",
+   "or",
+   "because"
+  ]
+ },
+ {
+  "id": "d74b6f47-5e71-40c8-9061-0689282ba0db",
+  "topic": "Conjunctions & Connectors",
+  "prompt": "Choose the correct conjunction: \"He wanted to play, ___ it was raining.\" (contrast)",
+  "options": [
+   "and",
+   "but",
+   "so",
+   "because"
+  ]
+ },
+ {
+  "id": "dccade34-0a2d-40f1-8168-9798c74bd77d",
+  "topic": "Conjunctions & Connectors",
+  "prompt": "Choose the correct conjunction: \"Would you like tea ___ coffee?\" (a choice)",
+  "options": [
+   "and",
+   "but",
+   "or",
+   "so"
+  ]
+ },
+ {
+  "id": "7ed63027-604f-40d5-84d5-68047ae2a9fa",
+  "topic": "Conjunctions & Connectors",
+  "prompt": "Choose the correct conjunction: \"I stayed at home ___ I was sick.\" (reason)",
+  "options": [
+   "but",
+   "or",
+   "so",
+   "because"
+  ]
+ },
+ {
+  "id": "7ce9d8b9-2f23-4679-a7c4-84d55021b917",
+  "topic": "Conjunctions & Connectors",
+  "prompt": "Choose the correct connector: \"___ it was late, we decided to continue.\" (concession)",
+  "options": [
+   "Although",
+   "Because",
+   "So that",
+   "And then"
+  ]
+ },
+ {
+  "id": "185825df-54b1-4240-bc73-6a73211a9a48",
+  "topic": "Conjunctions & Connectors",
+  "prompt": "A conjunction is a word that:",
+  "options": [
+   "describes a noun",
+   "joins words, phrases or clauses together",
+   "shows who owns something",
+   "replaces a noun"
+  ]
+ },
+ {
+  "id": "4bb4e6ba-f70b-4d06-84b0-a3d3f8db645d",
+  "topic": "Conjunctions & Connectors",
+  "prompt": "Choose the correct connector: \"Study hard ___ you will pass the exam.\"",
+  "options": [
+   "because",
+   "although",
+   "and",
+   "or else not"
+  ]
+ },
+ {
+  "id": "a70c8922-9fa7-47a4-ad03-f424955c28af",
+  "topic": "Capital Letters & Abbreviations",
+  "prompt": "In the sentence \"my friend lives in durban\", which words need capital letters?",
+  "options": [
+   "\"My\" and \"Durban\"",
+   "only \"friend\"",
+   "only \"lives\"",
+   "none of the words"
+  ]
+ },
+ {
+  "id": "13c31b27-ea7b-48a5-a15e-93798269f1a9",
+  "topic": "Capital Letters & Abbreviations",
+  "prompt": "The first word of every sentence and the pronoun \"I\" should always be:",
+  "options": [
+   "written in lowercase",
+   "written with a capital letter",
+   "left out",
+   "underlined"
+  ]
+ },
+ {
+  "id": "d3530065-cbb5-423b-8f51-45fc6756ba04",
+  "topic": "Capital Letters & Abbreviations",
+  "prompt": "Which of the following must begin with a capital letter?",
+  "options": [
+   "a common noun such as \"dog\"",
+   "a verb such as \"run\"",
+   "a person's name such as \"Thabo\"",
+   "an adjective such as \"happy\""
+  ]
+ },
+ {
+  "id": "673f6aaf-4711-4bbe-9f54-ea4a0412f6cd",
+  "topic": "Capital Letters & Abbreviations",
+  "prompt": "The abbreviation \"Dr.\" stands for:",
+  "options": [
+   "Drive",
+   "Dear",
+   "Drama",
+   "Doctor"
+  ]
+ },
+ {
+  "id": "723cff8c-ec3f-4d6e-9c53-f4860a6f8452",
+  "topic": "Capital Letters & Abbreviations",
+  "prompt": "The abbreviation \"etc.\" stands for the Latin phrase meaning:",
+  "options": [
+   "and so on (et cetera)",
+   "for example",
+   "that is",
+   "the very end"
+  ]
+ },
+ {
+  "id": "cf5cbe77-f89d-4e92-a1ad-f4054904cc9b",
+  "topic": "Capital Letters & Abbreviations",
+  "prompt": "An 'acronym' is a word formed from:",
+  "options": [
+   "the last letters of a long sentence",
+   "the first letters of a series of words, such as NASA",
+   "two whole words joined together",
+   "a word that has been misspelled"
+  ]
+ },
+ {
+  "id": "4783fb46-b0b5-42aa-be70-867ef05afc78",
+  "topic": "Capital Letters & Abbreviations",
+  "prompt": "Which is the correct way to write the abbreviation for \"South Africa\"?",
+  "options": [
+   "s.a.",
+   "s-a",
+   "SA",
+   "s/a"
+  ]
+ },
+ {
+  "id": "17de176d-58b6-4d7e-bfb1-4f240219da0e",
+  "topic": "Capital Letters & Abbreviations",
+  "prompt": "The names of days and months, such as \"Monday\" and \"April\":",
+  "options": [
+   "never take a capital letter",
+   "only take a capital letter at the end of a sentence",
+   "are always written in full capitals",
+   "always begin with a capital letter"
+  ]
+ },
+ {
+  "id": "2a510edb-fe50-423b-a432-ef4defd6b886",
+  "topic": "Sentence Types",
+  "prompt": "A sentence that makes a statement and ends with a full stop is called a:",
+  "options": [
+   "question (interrogative) sentence",
+   "statement (declarative) sentence",
+   "command (imperative) sentence",
+   "exclamation"
+  ]
+ },
+ {
+  "id": "4c8021b4-dfe4-4de3-9f37-c7af3c5f8c77",
+  "topic": "Sentence Types",
+  "prompt": "A sentence that asks something and ends with a question mark is called a(n):",
+  "options": [
+   "statement",
+   "command",
+   "question (interrogative) sentence",
+   "exclamation"
+  ]
+ },
+ {
+  "id": "0b71b9a2-0afe-4d6b-a904-2957528a8394",
+  "topic": "Sentence Types",
+  "prompt": "\"Close the door, please.\" This sentence is a:",
+  "options": [
+   "question",
+   "statement",
+   "exclamation",
+   "command (imperative) sentence"
+  ]
+ },
+ {
+  "id": "ff7024d9-eb07-4089-8a04-0dbad0b45433",
+  "topic": "Sentence Types",
+  "prompt": "\"What a beautiful day it is!\" This sentence is an:",
+  "options": [
+   "exclamation (exclamatory sentence)",
+   "ordinary question",
+   "plain statement",
+   "imperative command"
+  ]
+ },
+ {
+  "id": "3845148e-8a4d-4413-abfb-3546e4da96e7",
+  "topic": "Sentence Types",
+  "prompt": "Which punctuation mark should end the sentence \"Where are you going\"?",
+  "options": [
+   "a full stop",
+   "a question mark",
+   "a comma",
+   "no punctuation at all"
+  ]
+ },
+ {
+  "id": "0dea3bdd-fa9e-4970-a746-7c52a7673ceb",
+  "topic": "Sentence Types",
+  "prompt": "Which of the following sentences is a command (imperative)?",
+  "options": [
+   "The sun is shining brightly today.",
+   "Is the sun shining today?",
+   "Sit down and open your books.",
+   "What a lovely garden this is!"
+  ]
+ },
+ {
+  "id": "1a6feb94-debc-4e65-8f79-d6c173aa1f54",
+  "topic": "Sentence Types",
+  "prompt": "An exclamatory sentence usually ends with:",
+  "options": [
+   "a full stop",
+   "a question mark",
+   "a comma",
+   "an exclamation mark"
+  ]
+ },
+ {
+  "id": "9537fe88-2b22-467b-8c6a-92405567c2d7",
+  "topic": "Sentence Types",
+  "prompt": "\"The learners wrote their exams in November.\" This sentence is a:",
+  "options": [
+   "statement (declarative sentence)",
+   "question",
+   "command",
+   "exclamation"
+  ]
+ }
+]
