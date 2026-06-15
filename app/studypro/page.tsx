@@ -449,29 +449,72 @@ export default function StudyProPage() {
       .slice(0, 3);
   }, [calc.rows]);
 
-  // ── Explore options: smart mix of qualifying + close aspirational ──────────
+  // ── Explore options: everything they qualify for + the closest aspirational ─
   const exploreOptions = useMemo(() => {
-    if (calc.totalAPS === 0) return [];
-
-    const withGap = ALL_PROGRAMMES.map((p) => ({
-      ...p,
-      gap: p.minAPS - calc.totalAPS,
-    }));
-
-    // Best 3 they already qualify for (highest min APS = most prestigious)
+    if (calc.totalAPS === 0) {
+      return { qualifying: [] as ProgrammeEntry[], aspirational: [] as ProgrammeEntry[], qualifyingCount: 0 };
+    }
+    const withGap = ALL_PROGRAMMES.map((p) => ({ ...p, gap: p.minAPS - calc.totalAPS }));
+    // Everything they already qualify for — most prestigious (highest APS) first.
     const qualifying = withGap
       .filter((p) => p.gap <= 0)
-      .sort((a, b) => b.minAPS - a.minAPS)
-      .slice(0, 3);
-
-    // 3 closest they don't yet qualify for
+      .sort((a, b) => b.minAPS - a.minAPS);
+    // The three closest programmes they don't yet qualify for.
     const aspirational = withGap
       .filter((p) => p.gap > 0)
       .sort((a, b) => a.gap - b.gap)
       .slice(0, 3);
-
-    return [...qualifying, ...aspirational].slice(0, 6);
+    return { qualifying, aspirational, qualifyingCount: qualifying.length };
   }, [calc.totalAPS]);
+
+  // Renders one programme card — shared by the qualifying and aspirational lists.
+  function programmeCard(option: ProgrammeEntry, idx: number) {
+    const gap = option.minAPS - calc.totalAPS;
+    const qualifiesForThis = gap <= 0;
+    return (
+      <Reveal key={`${option.programme}-${option.university}`} delay={(idx % 3) * 100} className="h-full">
+        <div className={`glass-card p-5 flex flex-col h-full ${qualifiesForThis ? "!border-emerald-400/40" : ""}`}>
+          <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
+            <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${TYPE_COLORS[option.type]}`}>
+              {option.type}
+            </span>
+            {qualifiesForThis ? (
+              <span className="text-[10px] font-bold text-emerald-300 bg-emerald-400/15 border border-emerald-400/30 px-2 py-0.5 rounded-full">
+                ✓ You qualify
+              </span>
+            ) : (
+              <span className="text-[10px] font-bold text-amber-300 bg-amber-400/15 border border-amber-400/30 px-2 py-0.5 rounded-full">
+                {gap} pt{gap !== 1 ? "s" : ""} away
+              </span>
+            )}
+          </div>
+          <h3 className="text-white font-bold text-base leading-snug mb-1">{option.programme}</h3>
+          <p className="text-white/40 text-xs mb-4 leading-relaxed">{option.university}</p>
+          <div className="mt-auto">
+            <div className="flex items-center justify-between text-xs text-white/40 mb-1.5">
+              <span>Min APS: <span className="text-white font-semibold">{option.minAPS}</span></span>
+              <span>Yours: <span className={`font-semibold ${qualifiesForThis ? "text-emerald-300" : "text-[#00D4FF]"}`}>{calc.totalAPS}</span></span>
+            </div>
+            <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
+              <div
+                className={`h-full rounded-full transition-all duration-700 ${qualifiesForThis ? "bg-emerald-400" : "bg-gradient-to-r from-[#2D6BE4] to-[#00D4FF]"}`}
+                style={{ width: `${Math.min((calc.totalAPS / option.minAPS) * 100, 100)}%` }}
+              />
+            </div>
+            <p className="text-xs mt-2.5">
+              {qualifiesForThis ? (
+                <span className="text-emerald-300 font-medium">You meet the minimum requirement.</span>
+              ) : (
+                <span className="text-white/40">
+                  You&apos;re <span className="text-amber-300 font-semibold">{gap} point{gap !== 1 ? "s" : ""}</span> away from qualifying.
+                </span>
+              )}
+            </p>
+          </div>
+        </div>
+      </Reveal>
+    );
+  }
 
   // ── University match ──────────────────────────────────────────────────────
   const programmes = selectedUniversity
@@ -1151,7 +1194,7 @@ export default function StudyProPage() {
             </p>
           </Reveal>
 
-          {exploreOptions.length === 0 ? (
+          {calc.totalAPS === 0 ? (
             <Reveal>
               <div className="glass rounded-2xl p-10 text-center">
                 <IconAcademicCap className="w-10 h-10 text-[#00D4FF] mx-auto mb-3" />
@@ -1160,72 +1203,59 @@ export default function StudyProPage() {
               </div>
             </Reveal>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {exploreOptions.map((option, idx) => {
-                const gap = option.minAPS - calc.totalAPS;
-                const qualifiesForThis = gap <= 0;
-                return (
-                  <Reveal key={idx} delay={(idx % 3) * 100} className="h-full">
-                    <div
-                      className={`glass-card p-5 flex flex-col h-full ${
-                        qualifiesForThis ? "!border-emerald-400/40" : ""
-                      }`}
-                    >
-                      {/* Type + qualify badge */}
-                      <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
-                        <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${TYPE_COLORS[option.type]}`}>
-                          {option.type}
-                        </span>
-                        {qualifiesForThis ? (
-                          <span className="text-[10px] font-bold text-emerald-300 bg-emerald-400/15 border border-emerald-400/30 px-2 py-0.5 rounded-full">
-                            ✓ You qualify
-                          </span>
-                        ) : (
-                          <span className="text-[10px] font-bold text-amber-300 bg-amber-400/15 border border-amber-400/30 px-2 py-0.5 rounded-full">
-                            {gap} pt{gap !== 1 ? "s" : ""} away
-                          </span>
-                        )}
-                      </div>
+            <>
+              {/* Headline: how many programmes they qualify for */}
+              <Reveal className="mb-8">
+                <div className="glass rounded-2xl px-6 py-5 flex items-center justify-center gap-3 text-center">
+                  <IconAcademicCap className="w-7 h-7 text-emerald-300 flex-shrink-0" />
+                  <p className="text-white/80 text-sm leading-relaxed">
+                    With an APS of <span className="text-white font-bold">{calc.totalAPS}</span>, you qualify for{" "}
+                    <span className="text-emerald-300 font-bold">{exploreOptions.qualifyingCount}</span>{" "}
+                    of <span className="text-white font-semibold">{ALL_PROGRAMMES.length}</span> programmes in our list.
+                  </p>
+                </div>
+              </Reveal>
 
-                      {/* Programme & university */}
-                      <h3 className="text-white font-bold text-base leading-snug mb-1">{option.programme}</h3>
-                      <p className="text-white/40 text-xs mb-4 leading-relaxed">{option.university}</p>
+              {/* Courses you qualify for — the full list, not just a sample */}
+              {exploreOptions.qualifying.length > 0 && (
+                <div className="mb-10">
+                  <h3 className="text-sm font-bold uppercase tracking-widest text-emerald-300 mb-4 flex items-center gap-2">
+                    <span className="text-base leading-none">✓</span> Courses you qualify for
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    {exploreOptions.qualifying.map((option, idx) => programmeCard(option, idx))}
+                  </div>
+                </div>
+              )}
 
-                      {/* APS info */}
-                      <div className="mt-auto">
-                        <div className="flex items-center justify-between text-xs text-white/40 mb-1.5">
-                          <span>Min APS: <span className="text-white font-semibold">{option.minAPS}</span></span>
-                          <span>Yours: <span className={`font-semibold ${qualifiesForThis ? "text-emerald-300" : "text-[#00D4FF]"}`}>{calc.totalAPS}</span></span>
-                        </div>
-                        <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
-                          <div
-                            className={`h-full rounded-full transition-all duration-700 ${qualifiesForThis ? "bg-emerald-400" : "bg-gradient-to-r from-[#2D6BE4] to-[#00D4FF]"}`}
-                            style={{ width: `${Math.min((calc.totalAPS / option.minAPS) * 100, 100)}%` }}
-                          />
-                        </div>
+              {exploreOptions.qualifying.length === 0 && (
+                <Reveal className="mb-10">
+                  <div className="glass rounded-2xl p-8 text-center">
+                    <p className="text-white font-semibold mb-1">You&apos;re almost there</p>
+                    <p className="text-white/40 text-sm max-w-md mx-auto">
+                      You don&apos;t yet meet the minimum APS for the programmes in our list — but the
+                      closest ones are below. Small mark improvements can change this fast.
+                    </p>
+                  </div>
+                </Reveal>
+              )}
 
-                        {/* Status line */}
-                        <p className="text-xs mt-2.5">
-                          {qualifiesForThis ? (
-                            <span className="text-emerald-300 font-medium">You meet the minimum requirement.</span>
-                          ) : (
-                            <span className="text-white/40">
-                              You&apos;re <span className="text-amber-300 font-semibold">{gap} point{gap !== 1 ? "s" : ""}</span> away from qualifying.
-                            </span>
-                          )}
-                        </p>
-                      </div>
-                    </div>
-                  </Reveal>
-                );
-              })}
-            </div>
-          )}
+              {/* The closest programmes just out of reach */}
+              {exploreOptions.aspirational.length > 0 && (
+                <div>
+                  <h3 className="text-sm font-bold uppercase tracking-widest text-amber-300 mb-4 flex items-center gap-2">
+                    <IconTrendingUp className="w-4 h-4" /> Just within reach
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    {exploreOptions.aspirational.map((option, idx) => programmeCard(option, idx))}
+                  </div>
+                </div>
+              )}
 
-          {exploreOptions.length > 0 && (
-            <p className="text-center text-white/30 text-xs mt-8">
-              APS requirements are indicative. Always confirm with the institution directly.
-            </p>
+              <p className="text-center text-white/30 text-xs mt-8">
+                APS requirements are indicative. Always confirm with the institution directly.
+              </p>
+            </>
           )}
         </div>
       </section>
