@@ -1,0 +1,530 @@
+[
+ {
+  "id": "5afc8a1b-0dee-47eb-9336-9e8600182640",
+  "topic": "Sectors & Careers in Hospitality",
+  "prompt": "A bed-and-breakfast (B&B) is an example of which sector of the hospitality industry?",
+  "options": [
+   "accommodation",
+   "transport",
+   "manufacturing",
+   "mining"
+  ]
+ },
+ {
+  "id": "075fab12-2d03-439b-8525-9c0b9962c1b0",
+  "topic": "Sectors & Careers in Hospitality",
+  "prompt": "In the classic kitchen brigade, the head of the entire kitchen, in charge of all the staff and the menu, is the:",
+  "options": [
+   "commis chef",
+   "executive chef (chef de cuisine)",
+   "dishwasher",
+   "waiter"
+  ]
+ },
+ {
+  "id": "444b091e-fd82-48a4-b31e-1c8a850122c9",
+  "topic": "Sectors & Careers in Hospitality",
+  "prompt": "A 'chef de partie' in the kitchen brigade is a:",
+  "options": [
+   "trainee who has only just started",
+   "person who washes the dishes",
+   "station chef in charge of a particular section, such as sauces or pastry",
+   "waiter who serves the food"
+  ]
+ },
+ {
+  "id": "1ea95714-5fd8-4143-b1c0-ee292d3e8233",
+  "topic": "Sectors & Careers in Hospitality",
+  "prompt": "Which of the following is an example of the FOOD-AND-BEVERAGE sector rather than the accommodation sector?",
+  "options": [
+   "a guesthouse",
+   "a city hotel",
+   "a game lodge",
+   "a restaurant"
+  ]
+ },
+ {
+  "id": "781e6e2c-3c10-4c4a-a636-66b9c4f92e26",
+  "topic": "Sectors & Careers in Hospitality",
+  "prompt": "The star-grading system used for South African accommodation establishments mainly indicates the:",
+  "options": [
+   "level of quality and the range of facilities offered",
+   "number of rooms only",
+   "price of the cheapest meal",
+   "age of the building"
+  ]
+ },
+ {
+  "id": "77f1da20-a618-4952-8df6-7a55bc6bff56",
+  "topic": "Sectors & Careers in Hospitality",
+  "prompt": "A 'commis chef' is best described as a:",
+  "options": [
+   "head of the whole kitchen",
+   "junior chef who assists a chef de partie and is still learning",
+   "restaurant manager",
+   "wine waiter"
+  ]
+ },
+ {
+  "id": "d3fb4726-c8da-4d33-bd8c-ca2e9ce4c509",
+  "topic": "Sectors & Careers in Hospitality",
+  "prompt": "Providing food services to a separate organisation, such as a school, hospital or company canteen, is known as:",
+  "options": [
+   "fine dining",
+   "self-catering",
+   "contract catering",
+   "room service"
+  ]
+ },
+ {
+  "id": "595e763e-c1a8-4a69-a725-7fe6023800a1",
+  "topic": "Sectors & Careers in Hospitality",
+  "prompt": "Which personal quality is MOST important for someone working in hospitality and dealing with guests?",
+  "options": [
+   "being rude to guests",
+   "ignoring complaints",
+   "arriving late for shifts",
+   "good communication and a friendly, helpful attitude"
+  ]
+ },
+ {
+  "id": "9a9db592-87fa-4d96-b3dc-25c6b8fd1725",
+  "topic": "Kitchen & Restaurant Hygiene",
+  "prompt": "The difference between cleaning and sanitising is that sanitising:",
+  "options": [
+   "reduces bacteria to a safe level, while cleaning only removes visible dirt",
+   "is exactly the same thing as cleaning",
+   "only removes visible dirt",
+   "makes surfaces dirty again"
+  ]
+ },
+ {
+  "id": "3d8da4f4-a78d-43f7-80ed-f4ed5f7c019f",
+  "topic": "Kitchen & Restaurant Hygiene",
+  "prompt": "Colour-coded chopping boards are used in professional kitchens mainly to:",
+  "options": [
+   "make the kitchen look colourful",
+   "prevent cross-contamination between different food types",
+   "show which board is the newest",
+   "match the staff uniforms"
+  ]
+ },
+ {
+  "id": "975db648-d885-4a9d-8dbf-af474b3df1bc",
+  "topic": "Kitchen & Restaurant Hygiene",
+  "prompt": "Salmonella food poisoning is most commonly linked to:",
+  "options": [
+   "fresh bread",
+   "boiled water",
+   "raw or undercooked chicken and eggs",
+   "tinned vegetables"
+  ]
+ },
+ {
+  "id": "73cd4213-ccc5-4f11-b748-5f71e82b22ff",
+  "topic": "Kitchen & Restaurant Hygiene",
+  "prompt": "A refrigerator used to store fresh food should be kept at a temperature of about:",
+  "options": [
+   "25 °C",
+   "15 °C",
+   "−18 °C",
+   "below 5 °C"
+  ]
+ },
+ {
+  "id": "bc8ebdc4-71aa-4533-bd2f-f77bf4443349",
+  "topic": "Kitchen & Restaurant Hygiene",
+  "prompt": "Why should kitchen staff wear a clean apron and hair covering and remove jewellery before working with food?",
+  "options": [
+   "to prevent dirt, hair and bacteria from contaminating the food",
+   "to look fashionable",
+   "to keep warm in the kitchen",
+   "because it makes cooking faster"
+  ]
+ },
+ {
+  "id": "eb9888a2-e63a-42a8-beca-e4b54ed1171d",
+  "topic": "Kitchen & Restaurant Hygiene",
+  "prompt": "The main reason for controlling pests such as flies, cockroaches and rodents in a kitchen is that they:",
+  "options": [
+   "eat too much food",
+   "carry and spread harmful bacteria and disease",
+   "make a noise",
+   "use up electricity"
+  ]
+ },
+ {
+  "id": "6f98d472-460c-404d-ba17-0e28edb5b180",
+  "topic": "Kitchen & Restaurant Hygiene",
+  "prompt": "Kitchen waste and rubbish bins should be:",
+  "options": [
+   "left open next to the food",
+   "emptied only once a week",
+   "covered with a lid and emptied regularly",
+   "stored on the food-preparation table"
+  ]
+ },
+ {
+  "id": "da583645-d6eb-4af9-9a44-d23117599175",
+  "topic": "Kitchen & Restaurant Hygiene",
+  "prompt": "After handling raw meat, and before touching ready-to-eat food, a food handler must FIRST:",
+  "options": [
+   "carry on without washing",
+   "wipe their hands on the apron",
+   "rinse their hands in cold water only",
+   "wash their hands thoroughly with soap and warm water"
+  ]
+ },
+ {
+  "id": "447e64ac-7c41-4e49-b766-12431c97b949",
+  "topic": "Nutrition & Healthy Eating",
+  "prompt": "Which vitamin is made by the body when the skin is exposed to sunlight and helps the body absorb calcium for strong bones?",
+  "options": [
+   "vitamin D",
+   "vitamin C",
+   "vitamin A",
+   "vitamin B12"
+  ]
+ },
+ {
+  "id": "b1d27e63-44e6-49ba-be59-58cc4b7071f3",
+  "topic": "Nutrition & Healthy Eating",
+  "prompt": "A deficiency of vitamin C in the diet causes:",
+  "options": [
+   "night blindness",
+   "scurvy (bleeding gums and poor wound healing)",
+   "rickets",
+   "goitre"
+  ]
+ },
+ {
+  "id": "e7d97cfc-bf0d-4d7d-8176-b2a6873cb744",
+  "topic": "Nutrition & Healthy Eating",
+  "prompt": "Which mineral is needed to make haemoglobin, so that a shortage of it leads to anaemia?",
+  "options": [
+   "calcium",
+   "iodine",
+   "iron",
+   "sodium"
+  ]
+ },
+ {
+  "id": "ab6a4919-be84-4b88-adff-3c31559923a5",
+  "topic": "Nutrition & Healthy Eating",
+  "prompt": "Dietary fibre (roughage) is important in the diet because it:",
+  "options": [
+   "provides most of the body's energy",
+   "builds muscle tissue",
+   "is digested and absorbed for growth",
+   "adds bulk and helps prevent constipation"
+  ]
+ },
+ {
+  "id": "6bb495ab-53a3-4e44-adf5-106ec62a9200",
+  "topic": "Nutrition & Healthy Eating",
+  "prompt": "Which of the following is a source of unsaturated ('healthier') fat?",
+  "options": [
+   "olive oil and avocado",
+   "fatty red meat",
+   "butter",
+   "lard"
+  ]
+ },
+ {
+  "id": "f367c97a-a34a-4077-b6a7-7771cea15815",
+  "topic": "Nutrition & Healthy Eating",
+  "prompt": "Roughly what proportion of the human body is made up of water?",
+  "options": [
+   "about 10%",
+   "about two-thirds (around 60–70%)",
+   "about 5%",
+   "almost 100%"
+  ]
+ },
+ {
+  "id": "b1097e70-c377-453d-ba5e-a568208600dc",
+  "topic": "Nutrition & Healthy Eating",
+  "prompt": "The main function of carbohydrates in the diet is to:",
+  "options": [
+   "build and repair body tissue",
+   "absorb vitamins",
+   "supply the body with energy",
+   "make bones strong"
+  ]
+ },
+ {
+  "id": "20faa65c-285c-4bf7-9900-560e977454f7",
+  "topic": "Nutrition & Healthy Eating",
+  "prompt": "A balanced diet is best described as one that:",
+  "options": [
+   "contains only protein",
+   "is made up entirely of carbohydrates",
+   "avoids all fats completely",
+   "provides all the nutrients the body needs in the correct proportions"
+  ]
+ },
+ {
+  "id": "648b715d-07f0-4a4c-8b3b-4782dfd4ba41",
+  "topic": "Food Commodities: Fruit, Vegetables & Cereals",
+  "prompt": "Overcooking green vegetables in a lot of water for a long time mainly causes the loss of:",
+  "options": [
+   "vitamin C and the bright green colour",
+   "all their fibre",
+   "their water content only",
+   "their fat content"
+  ]
+ },
+ {
+  "id": "0bea519c-3025-4418-9ded-35afd184d131",
+  "topic": "Food Commodities: Fruit, Vegetables & Cereals",
+  "prompt": "To prevent a peeled apple or potato from going brown before cooking, you can:",
+  "options": [
+   "leave it in direct sunlight",
+   "place it in water (or water with a little lemon juice)",
+   "sprinkle it with sugar",
+   "store it next to raw meat"
+  ]
+ },
+ {
+  "id": "727b2c38-f3ff-4a67-bf91-b1b202ae26c9",
+  "topic": "Food Commodities: Fruit, Vegetables & Cereals",
+  "prompt": "Rice, maize, wheat and oats are all examples of:",
+  "options": [
+   "dairy products",
+   "fruits",
+   "cereals (grain staples)",
+   "legumes"
+  ]
+ },
+ {
+  "id": "faa410eb-d92e-44f9-aec2-fae846ac9126",
+  "topic": "Food Commodities: Fruit, Vegetables & Cereals",
+  "prompt": "When starch (such as maize flour) is heated with liquid and swells to thicken a sauce, the process is called:",
+  "options": [
+   "caramelisation",
+   "fermentation",
+   "coagulation",
+   "gelatinisation"
+  ]
+ },
+ {
+  "id": "407a3c0c-6f56-4ce7-9d01-dd6e54cf6c28",
+  "topic": "Food Commodities: Fruit, Vegetables & Cereals",
+  "prompt": "Which of the following is classified as a legume?",
+  "options": [
+   "lentils",
+   "spinach",
+   "an apple",
+   "rice"
+  ]
+ },
+ {
+  "id": "7a519ac0-15c7-4b75-b3ee-156c8c066a2a",
+  "topic": "Food Commodities: Fruit, Vegetables & Cereals",
+  "prompt": "Fresh fruit and vegetables are best stored:",
+  "options": [
+   "in a warm, sunny spot",
+   "in a cool place, many of them in the refrigerator",
+   "sealed in plastic at room temperature for weeks",
+   "right next to the hot stove"
+  ]
+ },
+ {
+  "id": "21d4b5fd-6611-45c3-8695-35071df55663",
+  "topic": "Food Commodities: Fruit, Vegetables & Cereals",
+  "prompt": "Steaming vegetables rather than boiling them is recommended because it:",
+  "options": [
+   "adds more fat to them",
+   "makes them lose all their colour",
+   "retains more of their vitamins and nutrients",
+   "always takes much longer"
+  ]
+ },
+ {
+  "id": "fb2ae4c8-b890-471a-98ef-f83512f34fa1",
+  "topic": "Food Commodities: Fruit, Vegetables & Cereals",
+  "prompt": "Which of the following is a good plant source of vitamin A (as beta-carotene)?",
+  "options": [
+   "white bread",
+   "white rice",
+   "plain sugar",
+   "carrots and orange sweet potato"
+  ]
+ },
+ {
+  "id": "c8fcc487-1faa-41c4-bda2-82b477258f59",
+  "topic": "Cooking Methods & Heat Transfer",
+  "prompt": "Heat passing directly through a metal pot from the stove plate into the food touching it is an example of heat transfer by:",
+  "options": [
+   "conduction",
+   "convection",
+   "radiation",
+   "evaporation"
+  ]
+ },
+ {
+  "id": "504e6b86-4365-49d0-908c-d76935bbb60d",
+  "topic": "Cooking Methods & Heat Transfer",
+  "prompt": "In an oven, hot air rises and circulates to cook the food. This method of heat transfer is called:",
+  "options": [
+   "conduction",
+   "convection",
+   "radiation",
+   "condensation"
+  ]
+ },
+ {
+  "id": "4ead03c2-a711-4b35-a63d-035e24fe0dec",
+  "topic": "Cooking Methods & Heat Transfer",
+  "prompt": "Cooking food under a hot grill, where heat travels directly from the element to the food as infrared waves, is an example of:",
+  "options": [
+   "conduction",
+   "convection",
+   "radiation",
+   "fermentation"
+  ]
+ },
+ {
+  "id": "71cee78b-055a-447b-9a31-828b8b49123a",
+  "topic": "Cooking Methods & Heat Transfer",
+  "prompt": "Stewing and braising are slow, moist cooking methods that are especially suitable for:",
+  "options": [
+   "very tender, expensive steak",
+   "delicate fish fillets",
+   "fresh salad leaves",
+   "tough, cheaper cuts of meat"
+  ]
+ },
+ {
+  "id": "b5ef99f9-8557-4a43-bccd-a54275a8aa09",
+  "topic": "Cooking Methods & Heat Transfer",
+  "prompt": "The main difference between shallow frying and deep frying is that in deep frying the food is:",
+  "options": [
+   "completely covered (submerged) in hot oil",
+   "cooked in a dry pan with no oil",
+   "cooked in boiling water",
+   "baked in the oven"
+  ]
+ },
+ {
+  "id": "dc0d7f8e-9306-4757-9090-c108ff345a97",
+  "topic": "Cooking Methods & Heat Transfer",
+  "prompt": "One important reason we cook food is to:",
+  "options": [
+   "reduce its flavour",
+   "make it safe to eat by destroying harmful micro-organisms",
+   "remove all of its nutrients",
+   "make it harder to digest"
+  ]
+ },
+ {
+  "id": "fa8c7c2d-fcb0-4d6f-abe2-34f9a4481e53",
+  "topic": "Cooking Methods & Heat Transfer",
+  "prompt": "When following a recipe, dry ingredients such as flour should be measured:",
+  "options": [
+   "by guessing the amount",
+   "in a measuring jug meant for liquids",
+   "accurately, using a scale or measuring cups levelled off",
+   "in rough handfuls"
+  ]
+ },
+ {
+  "id": "47aa800f-76bf-409c-bb05-2ded1c0e9107",
+  "topic": "Cooking Methods & Heat Transfer",
+  "prompt": "A garnish is mainly added to a dish to:",
+  "options": [
+   "increase the cooking time",
+   "make the food unsafe",
+   "replace the main ingredient",
+   "improve its appearance and appeal"
+  ]
+ },
+ {
+  "id": "c7749369-95e7-45d3-bc1c-a993c66d910b",
+  "topic": "Menu Planning & Food Costing",
+  "prompt": "A recipe costs R60 in total ingredients and makes 4 portions. The ingredient cost per portion is:",
+  "options": [
+   "R15",
+   "R64",
+   "R240",
+   "R56"
+  ]
+ },
+ {
+  "id": "743a1ae0-b786-4032-8d5c-f1a874edb5c3",
+  "topic": "Menu Planning & Food Costing",
+  "prompt": "A dish costs R20 in ingredients and the restaurant adds a 150% mark-up. The selling price is:",
+  "options": [
+   "R23",
+   "R50",
+   "R30",
+   "R170"
+  ]
+ },
+ {
+  "id": "cf8cb89e-fa40-4da6-9ec7-014904c80c21",
+  "topic": "Menu Planning & Food Costing",
+  "prompt": "'Portion control' in a kitchen means:",
+  "options": [
+   "serving as much as possible to every guest",
+   "letting each chef decide the size",
+   "serving a standard, measured amount of food for each dish",
+   "never weighing any food"
+  ]
+ },
+ {
+  "id": "81d7096d-7bf8-4bbe-9518-ad4c1fd76803",
+  "topic": "Menu Planning & Food Costing",
+  "prompt": "Which menu offers the SAME planned set of dishes repeated on a fixed cycle, for example over a two-week period in a hospital or hostel?",
+  "options": [
+   "an à la carte menu",
+   "a wedding menu",
+   "a banquet menu",
+   "a cyclical menu"
+  ]
+ },
+ {
+  "id": "456ae21a-dab8-46e7-b497-6592548a271a",
+  "topic": "Menu Planning & Food Costing",
+  "prompt": "When planning a menu, an important factor to consider is:",
+  "options": [
+   "the guests' needs, the budget, and the season/availability of ingredients",
+   "only the chef's favourite foods",
+   "always using the most expensive ingredients",
+   "ignoring how much the guests can pay"
+  ]
+ },
+ {
+  "id": "88920b6c-2b93-4091-bfbd-b607eda4a1d1",
+  "topic": "Menu Planning & Food Costing",
+  "prompt": "If a starter, a main course and a dessert are served, the menu has:",
+  "options": [
+   "one course",
+   "three courses",
+   "five courses",
+   "no courses"
+  ]
+ },
+ {
+  "id": "de8d9ab5-a58f-4d3f-83e1-99b1b48a3aec",
+  "topic": "Menu Planning & Food Costing",
+  "prompt": "Ingredients for a recipe cost R80, and the food-cost percentage is set at 40% of the selling price. The selling price should be:",
+  "options": [
+   "R32",
+   "R120",
+   "R200",
+   "R48"
+  ]
+ },
+ {
+  "id": "da6dc8b7-fce7-440c-814d-2aca3cf34704",
+  "topic": "Menu Planning & Food Costing",
+  "prompt": "A breakfast menu in a hotel would typically include:",
+  "options": [
+   "a three-course dinner with wine",
+   "only desserts",
+   "a formal banquet",
+   "items such as cereal, eggs, toast and coffee"
+  ]
+ }
+]
