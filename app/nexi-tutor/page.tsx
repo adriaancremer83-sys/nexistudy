@@ -4,6 +4,7 @@ import Image from "next/image";
 import Nexi from "@/components/Nexi";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import { useSession } from "next-auth/react";
 import Reveal from "@/components/Reveal";
 import { IconUser, IconBookOpen, IconCpuChip } from "@/components/icons";
 
@@ -305,6 +306,10 @@ const SELECT_CLS =
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function NexiTutorPage() {
+  const { data: session, status } = useSession();
+  const authed = status === "authenticated";
+  const plan: "free" | "premium" = session?.user?.plan ?? "free";
+
   // Profile
   const [profile, setProfile] = useState<Profile>({
     curriculum: "CAPS",
@@ -327,8 +332,24 @@ export default function NexiTutorPage() {
   const [messages, setMessages] = useState<Message[]>([WELCOME_MSG]);
   const [input, setInput] = useState("");
   const [chatsLeft, setChatsLeft] = useState(FREE_CHAT_LIMIT);
+  const [chatLimit, setChatLimit] = useState(FREE_CHAT_LIMIT);
+  const [sending, setSending] = useState(false);
   const chatEndRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  // Seed the real remaining count from the server once signed in.
+  useEffect(() => {
+    if (status !== "authenticated") return;
+    fetch("/api/tutor")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (d) {
+          setChatsLeft(d.remaining);
+          setChatLimit(d.limit);
+        }
+      })
+      .catch(() => {});
+  }, [status]);
 
   const currentSubjects = subjectsFor(curriculum, grade);
   const currentTopics = topicsFor(subject, grade);
@@ -365,16 +386,65 @@ export default function NexiTutorPage() {
     setTopic("");
   }
 
-  function handleSend() {
-    if (!input.trim() || chatsLeft <= 0) return;
-    const studentMsg: Message = { role: "student", text: input.trim() };
-    const nexiReply: Message = {
-      role: "nexi",
-      text: `Great question about "${topic || subject}"! Let me break that down step by step for you. [Demo mode — real AI responses coming soon.]`,
-    };
-    setMessages((prev) => [...prev, studentMsg, nexiReply]);
-    setChatsLeft((n) => n - 1);
+  function setLastNexi(text: string) {
+    setMessages((prev) => {
+      const next = [...prev];
+      next[next.length - 1] = { role: "nexi", text };
+      return next;
+    });
+  }
+
+  async function handleSend() {
+    if (!input.trim() || sending || !authed || chatsLeft <= 0) return;
+    const text = input.trim();
+    const studentMsg: Message = { role: "student", text };
+    const history = [...messages, studentMsg];
+    setMessages([...history, { role: "nexi", text: "" }]);
     setInput("");
+    setSending(true);
+
+    try {
+      const res = await fetch("/api/tutor", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          messages: history.map((m) => ({ role: m.role, text: m.text })),
+          curriculum,
+          grade,
+          subject,
+          topic,
+          language,
+        }),
+      });
+
+      if (res.status === 429) {
+        setChatsLeft(0);
+        setLastNexi("You've used your tutor messages for today. Come back tomorrow, or go Premium for more.");
+        return;
+      }
+      if (!res.ok || !res.body) {
+        const data = await res.json().catch(() => null);
+        setLastNexi(data?.error ?? "Sorry — something went wrong. Please try again.");
+        return;
+      }
+
+      const remaining = res.headers.get("X-Chats-Remaining");
+      if (remaining !== null) setChatsLeft(Number(remaining));
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let acc = "";
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        acc += decoder.decode(value, { stream: true });
+        setLastNexi(acc);
+      }
+    } catch {
+      setLastNexi("Connection problem — please try again.");
+    } finally {
+      setSending(false);
+    }
   }
 
   function handleKeyDown(e: React.KeyboardEvent<HTMLTextAreaElement>) {
@@ -619,9 +689,15 @@ export default function NexiTutorPage() {
                 <IconCpuChip className="w-4 h-4" />
                 <h2 className="text-xs font-semibold text-white uppercase tracking-widest">Chat with Nexi</h2>
               </div>
-              <span className={`text-xs font-semibold px-3 py-1.5 rounded-full border ${counterColor(chatsLeft)}`}>
-                {chatsLeft} / {FREE_CHAT_LIMIT} free chats remaining
-              </span>
+              {authed ? (
+                <span className={`text-xs font-semibold px-3 py-1.5 rounded-full border ${counterColor(chatsLeft)}`}>
+                  {chatsLeft} / {chatLimit} messages today
+                </span>
+              ) : (
+                <span className="text-xs font-semibold px-3 py-1.5 rounded-full border glass text-white/60">
+                  Sign in to chat
+                </span>
+              )}
             </div>
 
             {/* Messages */}
@@ -656,7 +732,9 @@ export default function NexiTutorPage() {
                         : "bg-gradient-to-br from-[#2D6BE4] to-[#1E4FB8] text-white rounded-br-sm shadow-lg shadow-[#2D6BE4]/25"
                     }`}
                   >
-                    {msg.text}
+                    {msg.text || (msg.role === "nexi" ? (
+                      <span className="text-white/50 italic">Nexi is thinking…</span>
+                    ) : "")}
                   </div>
                 </div>
               ))}
@@ -665,16 +743,28 @@ export default function NexiTutorPage() {
 
             {/* Input */}
             <div className="border-t border-white/10 px-4 py-4">
-              {chatsLeft <= 0 ? (
+              {!authed ? (
                 <div className="text-center py-2">
                   <p className="text-sm text-white/50 mb-2">
-                    You&apos;ve used all your free chats for today.
+                    Sign in to chat with Nexi and get step-by-step help.
+                  </p>
+                  <Link
+                    href="/login"
+                    className="text-sm font-semibold text-[#00D4FF] hover:text-white transition-colors"
+                  >
+                    Sign in or create a free account →
+                  </Link>
+                </div>
+              ) : chatsLeft <= 0 ? (
+                <div className="text-center py-2">
+                  <p className="text-sm text-white/50 mb-2">
+                    You&apos;ve used your tutor messages for today.
                   </p>
                   <Link
                     href="/pricing"
                     className="text-sm font-semibold text-[#00D4FF] hover:text-white transition-colors"
                   >
-                    Upgrade to Student plan for unlimited access →
+                    Go Premium for more daily messages →
                   </Link>
                 </div>
               ) : (
@@ -687,15 +777,16 @@ export default function NexiTutorPage() {
                       onKeyDown={handleKeyDown}
                       placeholder={`Ask Nexi about ${topic || subject}...`}
                       rows={1}
-                      className="flex-1 resize-none bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#00D4FF]/40 focus:border-[#00D4FF] placeholder:text-white/25 leading-relaxed overflow-hidden transition-colors"
+                      disabled={sending}
+                      className="flex-1 resize-none bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#00D4FF]/40 focus:border-[#00D4FF] placeholder:text-white/25 leading-relaxed overflow-hidden transition-colors disabled:opacity-60"
                       style={{ minHeight: "44px", maxHeight: "120px" }}
                     />
                     <button
                       onClick={handleSend}
-                      disabled={!input.trim()}
+                      disabled={!input.trim() || sending}
                       className="flex-shrink-0 px-5 py-3 bg-[#2D6BE4] hover:bg-[#4A82F0] disabled:opacity-40 disabled:cursor-not-allowed text-white font-semibold text-sm rounded-xl transition-all shadow-lg shadow-[#2D6BE4]/30 hover:shadow-[#00D4FF]/30 cursor-pointer"
                     >
-                      Ask Nexi
+                      {sending ? "Thinking…" : "Ask Nexi"}
                     </button>
                   </div>
                   <p className="text-[10px] text-white/30 mt-2 text-center">
