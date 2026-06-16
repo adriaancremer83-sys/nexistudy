@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
 import BackgroundFX from "@/components/BackgroundFX";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const nunito = Nunito({
   variable: "--font-app",
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <BackgroundFX />
         <Providers>
+          <ScrollToTop />
           <Navbar />
           <main className="flex-1 relative z-10">{children}</main>
           <Footer />

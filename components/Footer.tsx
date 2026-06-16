@@ -23,7 +23,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <p className="text-xl font-extrabold text-white mb-3">
-            Nexi<span className="text-[#00D4AA]">Study</span>
+            Nexi<span className="text-[#00D4FF]">Study</span>
           </p>
           <p className="text-sm text-white/50 leading-relaxed max-w-xs">
             The study buddy built for South African learners — CAPS, IEB and

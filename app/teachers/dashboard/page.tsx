@@ -39,7 +39,7 @@ export default async function TeacherDashboardPage() {
       {/* ── WELCOME ── */}
       <section className="page-hero py-12 px-4">
         <div className="max-w-5xl mx-auto">
-          <p className="text-[#00D4AA] text-sm font-medium mb-1">Teacher Dashboard</p>
+          <p className="text-[#FFB454] text-sm font-medium mb-1">Teacher Dashboard</p>
           <h1 className="text-3xl sm:text-4xl font-bold text-white">{user.name}</h1>
           <p className="text-white/40 text-sm mt-1">{user.school}</p>
         </div>
@@ -53,7 +53,7 @@ export default async function TeacherDashboardPage() {
         <Reveal>
           <div className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-7 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
             <div>
-              <div className="flex items-center gap-2.5 text-[#00D4AA] mb-2">
+              <div className="flex items-center gap-2.5 text-[#FFB454] mb-2">
                 <IconUsers className="w-4 h-4" />
                 <h2 className="text-xs font-semibold text-white uppercase tracking-widest">
                   Share with your class
@@ -72,7 +72,7 @@ export default async function TeacherDashboardPage() {
         <Reveal delay={100}>
           <div className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] overflow-hidden">
             <div className="px-6 py-4 border-b border-white/10 bg-white/5 flex items-center justify-between">
-              <div className="flex items-center gap-2.5 text-[#00D4AA]">
+              <div className="flex items-center gap-2.5 text-[#FFB454]">
                 <IconChartBar className="w-4 h-4" />
                 <h2 className="text-xs font-semibold text-white uppercase tracking-widest">
                   Class Weak-Spots Heatmap
@@ -89,7 +89,7 @@ export default async function TeacherDashboardPage() {
                     <span className="w-48 text-sm text-white/60 truncate">{row.topic}</span>
                     <div className="flex-1 h-2.5 bg-white/10 rounded-full overflow-hidden">
                       <div
-                        className="h-full rounded-full bg-gradient-to-r from-[#2D6BE4] to-[#00D4AA]"
+                        className="h-full rounded-full bg-gradient-to-r from-[#2D6BE4] to-[#FFB454]"
                         style={{ width: `${row.intensity}%` }}
                       />
                     </div>
@@ -114,7 +114,7 @@ export default async function TeacherDashboardPage() {
         {/* ── WHAT'S COMING ── */}
         <Reveal delay={200}>
           <div className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-7">
-            <div className="flex items-center gap-2.5 text-[#00D4AA] mb-4">
+            <div className="flex items-center gap-2.5 text-[#FFB454] mb-4">
               <IconSparkles className="w-4 h-4" />
               <h2 className="text-xs font-semibold text-white uppercase tracking-widest">
                 Coming to your dashboard
@@ -123,7 +123,7 @@ export default async function TeacherDashboardPage() {
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
               {COMING_SOON.map((item) => (
                 <li key={item} className="flex items-start gap-2.5 text-sm text-white/60 leading-relaxed">
-                  <span className="text-[#00D4AA] mt-0.5">·</span>
+                  <span className="text-[#FFB454] mt-0.5">·</span>
                   {item}
                 </li>
               ))}

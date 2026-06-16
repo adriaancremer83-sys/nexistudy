@@ -171,8 +171,8 @@ export default function ContactPage() {
 
             <Reveal delay={100} className="h-full">
               <div className="glass-card p-6 text-center h-full">
-                <div className="w-11 h-11 rounded-xl bg-[#2D6BE4]/20 border border-[#00D4FF]/20 flex items-center justify-center mx-auto mb-3 text-[#00D4FF]">
-                  <IconEnvelope className="w-5 h-5" />
+                <div className="flex justify-center mb-3 text-[#00D4FF]">
+                  <IconEnvelope className="w-7 h-7" />
                 </div>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-1">Email</p>
                 <a
@@ -186,8 +186,8 @@ export default function ContactPage() {
 
             <Reveal delay={200} className="h-full">
               <div className="glass-card p-6 text-center h-full">
-                <div className="w-11 h-11 rounded-xl bg-emerald-400/15 border border-emerald-400/25 flex items-center justify-center mx-auto mb-3 text-emerald-300">
-                  <IconChatBubble className="w-5 h-5" />
+                <div className="flex justify-center mb-3 text-emerald-300">
+                  <IconChatBubble className="w-7 h-7" />
                 </div>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-1">WhatsApp</p>
                 <a
@@ -203,8 +203,8 @@ export default function ContactPage() {
 
             <Reveal delay={300} className="h-full">
               <div className="glass-card p-6 text-center h-full">
-                <div className="w-11 h-11 rounded-xl bg-amber-400/15 border border-amber-400/25 flex items-center justify-center mx-auto mb-3 text-amber-300">
-                  <IconClock className="w-5 h-5" />
+                <div className="flex justify-center mb-3 text-amber-300">
+                  <IconClock className="w-7 h-7" />
                 </div>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-1">Response Time</p>
                 <p className="text-sm font-semibold text-white">Within 24 hours</p>

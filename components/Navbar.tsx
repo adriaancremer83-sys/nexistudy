@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSession, signOut } from "next-auth/react";
 
 const navLinks = [
@@ -18,11 +18,32 @@ const navLinks = [
 export default function Navbar() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const { data: session, status } = useSession();
   const loading = status === "loading";
 
+  // Solid navy bar once the page moves; transparent over the dark hero at the
+  // top. No backdrop-filter (too costly on low-spec GPUs), so we swap to an
+  // opaque background instead of relying on blur.
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // The bar is opaque when scrolled OR when the mobile menu is open, so page
+  // content never shows through.
+  const solid = scrolled || menuOpen;
+
   return (
-    <nav className="glass-strong sticky top-0 z-50 border-x-0 border-t-0">
+    <nav
+      className={`sticky top-0 z-50 border-x-0 border-t-0 transition-[background-color,border-color,box-shadow] duration-300 ${
+        solid
+          ? "bg-[#0A1628] border-b border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
+          : "bg-[#050D1A] border-b border-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
 
@@ -108,7 +129,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden glass border-x-0 border-b-0 px-4 pb-4">
+        <div className="md:hidden bg-[#0A1628] border-t border-white/10 px-4 pb-4">
           <div className="flex flex-col gap-1 pt-2">
             {navLinks.map((link) => (
               <Link

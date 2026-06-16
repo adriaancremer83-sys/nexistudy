@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Nexi from "@/components/Nexi";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import {
@@ -13,18 +13,21 @@ import {
 const VALUE_PILLARS = [
   {
     icon: IconTarget,
-    title: "Pinpoint Weaknesses",
-    desc: "Focus on the subjects and topics that matter most. No more guessing — Nexi shows you exactly where to improve.",
+    accent: "#00D4FF",
+    title: "See exactly where you're losing marks",
+    desc: "Every quiz quietly maps the topics you keep getting wrong, so revision goes straight to what's actually costing you — not what you already know.",
   },
   {
     icon: IconBookOpen,
-    title: "Learn Smarter",
-    desc: "Structured study plans make revision stress-free. Work through content step by step, at your own pace.",
+    accent: "#FFB454",
+    title: "Understand it, don't just memorise it",
+    desc: "Nexi works through problems one step at a time, in plain language, until the method clicks — the way a patient teacher would.",
   },
   {
     icon: IconTrendingUp,
-    title: "Grow Confident",
-    desc: "Every step builds independence and exam readiness. Watch your marks — and your self-belief — rise.",
+    accent: "#4A82F0",
+    title: "Walk into the exam calm",
+    desc: "Steady practice against real CAPS, IEB and Cambridge questions turns exam season from a panic into something you've already rehearsed.",
   },
 ];
 
@@ -45,8 +48,9 @@ export default function AboutUsPage() {
               About <span className="text-gradient">NexiStudy</span>
             </h1>
             <p className="text-lg text-white/60 leading-relaxed max-w-xl">
-              Built in South Africa. For South African learners.
-              Powered by AI, guided by heart.
+              Built in South Africa, for South African learners — patient,
+              step-by-step help for every grade, subject and curriculum, in all
+              11 official languages.
             </p>
           </div>
 
@@ -57,9 +61,8 @@ export default function AboutUsPage() {
                 aria-hidden
                 className="glow-ring absolute inset-0 m-auto w-[105%] h-[105%] -translate-y-1 rounded-full"
               />
-              <Image
-                src="/nexi.png"
-                alt="Nexi mascot"
+              <Nexi
+                pose="idle"
                 width={300}
                 height={300}
                 className="relative w-40 sm:w-52 md:w-auto md:h-64 object-contain drop-shadow-2xl"
@@ -79,28 +82,35 @@ export default function AboutUsPage() {
 
           <Reveal className="h-full">
             <div className="glass-card p-8 h-full">
-              <div className="w-10 h-10 rounded-xl bg-[#2D6BE4]/20 border border-[#00D4FF]/20 flex items-center justify-center mb-5 text-[#00D4FF]">
-                <IconRocket className="w-5 h-5" />
+              <div className="flex items-center gap-4 mb-5">
+                <span className="flex-shrink-0 text-[#00D4FF]">
+                  <IconRocket className="w-8 h-8" />
+                </span>
+                <span className="h-px flex-1 bg-gradient-to-r from-[#00D4FF]/40 to-transparent" />
               </div>
               <h2 className="text-xl font-bold text-white mb-4">Our Mission</h2>
               <p className="text-white/50 text-sm leading-relaxed">
-                At NexiStudy, our mission is simple: to help South African learners unlock their full
-                potential. We provide smart, personalised tools that make studying clearer, easier,
-                and more motivating.
+                Good tutoring shouldn&apos;t only be for families who can afford extra
+                lessons. We give every South African learner a patient tutor on call —
+                pinned to their exact grade and curriculum — at a price that doesn&apos;t
+                lock anyone out.
               </p>
             </div>
           </Reveal>
 
           <Reveal delay={120} className="h-full">
             <div className="glass-card p-8 h-full">
-              <div className="w-10 h-10 rounded-xl bg-[#00D4FF]/15 border border-[#00D4FF]/25 flex items-center justify-center mb-5 text-[#00D4FF]">
-                <IconSparkles className="w-5 h-5" />
+              <div className="flex items-center gap-4 mb-5">
+                <span className="flex-shrink-0 text-[#FFB454]">
+                  <IconSparkles className="w-8 h-8" />
+                </span>
+                <span className="h-px flex-1 bg-gradient-to-r from-[#FFB454]/40 to-transparent" />
               </div>
               <h2 className="text-xl font-bold text-white mb-4">Our Vision</h2>
               <p className="text-white/50 text-sm leading-relaxed">
-                Our vision is bold: to redefine how students learn in South Africa. By combining local
-                curriculum expertise with cutting-edge AI, we aim to make quality education accessible,
-                engaging, and future-ready for every learner.
+                A South Africa where the Grade 11 learner in a township classroom and
+                the one in a city private school open the same patient, accurate tutor
+                at 9pm — each in the language they think in.
               </p>
             </div>
           </Reveal>
@@ -136,8 +146,8 @@ export default function AboutUsPage() {
           <Reveal>
             <div className="glass-strong rounded-2xl p-10 md:p-14 flex flex-col md:flex-row items-center gap-10">
 
-              <div className="flex-shrink-0 w-20 h-20 rounded-2xl bg-[#2D6BE4]/20 border border-[#00D4FF]/25 flex items-center justify-center text-[#00D4FF]">
-                <IconUsers className="w-10 h-10" />
+              <div className="flex-shrink-0 text-[#00D4FF]">
+                <IconUsers className="w-16 h-16" />
               </div>
 
               <div>
@@ -177,9 +187,15 @@ export default function AboutUsPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {VALUE_PILLARS.map((pillar, i) => (
               <Reveal key={pillar.title} delay={i * 120} className="h-full">
-                <div className="glass-card p-8 h-full">
-                  <div className="w-12 h-12 rounded-xl bg-[#2D6BE4]/20 border border-[#00D4FF]/20 flex items-center justify-center mb-5 text-[#00D4FF]">
-                    <pillar.icon className="w-6 h-6" />
+                <div className="group glass-card p-8 h-full">
+                  <div className="flex items-center gap-4 mb-5">
+                    <span className="flex-shrink-0" style={{ color: pillar.accent }}>
+                      <pillar.icon className="w-8 h-8" />
+                    </span>
+                    <span
+                      className="h-px flex-1 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"
+                      style={{ background: `linear-gradient(90deg, ${pillar.accent}66, transparent)` }}
+                    />
                   </div>
                   <h3 className="text-lg font-bold text-white mb-3">{pillar.title}</h3>
                   <p className="text-white/50 text-sm leading-relaxed">{pillar.desc}</p>

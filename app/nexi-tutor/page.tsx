@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Nexi from "@/components/Nexi";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import Reveal from "@/components/Reveal";
@@ -429,9 +430,8 @@ export default function NexiTutorPage() {
                 aria-hidden
                 className="glow-ring absolute inset-0 m-auto w-[105%] h-[105%] -translate-y-1 rounded-full"
               />
-              <Image
-                src="/nexi.png"
-                alt="Nexi mascot"
+              <Nexi
+                pose="idle"
                 width={320}
                 height={320}
                 className="relative w-40 sm:w-56 md:w-auto md:h-72 object-contain drop-shadow-2xl"
@@ -635,7 +635,7 @@ export default function NexiTutorPage() {
                   {msg.role === "nexi" ? (
                     <div className="animate-avatar-glow flex-shrink-0 w-9 h-9 rounded-full overflow-hidden bg-[#0E1F3D] ring-2 ring-[#00D4FF]/40">
                       <Image
-                        src="/nexi.png"
+                        src="/images/nexi-idle.webp"
                         alt="Nexi"
                         width={36}
                         height={36}

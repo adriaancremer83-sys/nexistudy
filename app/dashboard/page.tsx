@@ -2,7 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
+import Nexi from "@/components/Nexi";
 import type { Session } from "next-auth";
 import Reveal from "@/components/Reveal";
 import ProgressRing from "@/components/ProgressRing";
@@ -100,9 +100,8 @@ export default async function DashboardPage() {
 
             {/* Nexi mascot with the gentle float */}
             <div className="animate-float">
-              <Image
-                src="/nexi.png"
-                alt="Nexi, your study buddy"
+              <Nexi
+                pose="wave"
                 width={150}
                 height={150}
                 className="h-[150px] w-auto object-contain"

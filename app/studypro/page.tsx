@@ -700,9 +700,12 @@ export default function StudyProPage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
               {SENIOR_CARDS.map((card, i) => (
                 <Reveal key={card.title} delay={i * 100} className="h-full">
-                  <div className="rounded-2xl border border-[#FFB454]/20 bg-[#0E1F3D] p-7 h-full transition-colors hover:border-[#FFB454]/45">
-                    <div className="w-11 h-11 rounded-xl bg-[#FFB454]/15 flex items-center justify-center mb-5 text-[#FFB454]">
-                      <card.icon className="w-6 h-6" />
+                  <div className="group rounded-2xl border border-[#FFB454]/20 bg-[#0E1F3D] p-7 h-full transition-colors hover:border-[#FFB454]/45">
+                    <div className="flex items-center gap-4 mb-5">
+                      <span className="flex-shrink-0 text-[#FFB454]">
+                        <card.icon className="w-7 h-7" />
+                      </span>
+                      <span className="h-px flex-1 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 bg-gradient-to-r from-[#FFB454]/40 to-transparent" />
                     </div>
                     <h3 className="text-white font-bold text-base mb-2.5 leading-snug">{card.title}</h3>
                     <p className="text-white/50 text-sm leading-relaxed">{card.desc}</p>
@@ -731,8 +734,8 @@ export default function StudyProPage() {
                   <span className="absolute top-0 right-0 bg-white/10 text-white/60 text-[10px] font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-bl-xl flex items-center gap-1.5">
                     <IconLock className="w-3 h-3" /> Premium · Coming Soon
                   </span>
-                  <div className="w-11 h-11 rounded-xl bg-[#FFB454]/15 flex items-center justify-center mb-5 text-[#FFB454]">
-                    <IconSparkles className="w-6 h-6" />
+                  <div className="mb-5 text-[#FFB454]">
+                    <IconSparkles className="w-8 h-8" />
                   </div>
                   <h3 className="text-white font-bold text-lg mb-2.5">Foundation Gap Finder</h3>
                   <p className="text-white/50 text-sm leading-relaxed mb-5">
@@ -755,8 +758,8 @@ export default function StudyProPage() {
                   <span className="absolute top-0 right-0 bg-white/10 text-white/60 text-[10px] font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-bl-xl flex items-center gap-1.5">
                     <IconLock className="w-3 h-3" /> Premium · Coming Soon
                   </span>
-                  <div className="w-11 h-11 rounded-xl bg-[#FFB454]/15 flex items-center justify-center mb-5 text-[#FFB454]">
-                    <IconDocumentText className="w-6 h-6" />
+                  <div className="mb-5 text-[#FFB454]">
+                    <IconDocumentText className="w-8 h-8" />
                   </div>
                   <h3 className="text-white font-bold text-lg mb-2.5">Termly Parent Report</h3>
                   <p className="text-white/50 text-sm leading-relaxed mb-5">

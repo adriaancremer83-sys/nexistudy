@@ -130,6 +130,20 @@ body {
   animation: none;
 }
 
+/* ── Mascot pop-in ───────────────────────────────────────────── */
+/* One-shot bounce for Nexi when results land. Finite, so it sits still
+   afterwards; reduced-motion mode collapses it to a static appearance. */
+
+@keyframes nexi-pop {
+  0%   { opacity: 0; transform: scale(0.6) translateY(8px); }
+  60%  { opacity: 1; transform: scale(1.08) translateY(0); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.animate-pop {
+  animation: nexi-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
 /* ── Scroll reveal ───────────────────────────────────────────── */
 
 .reveal {
@@ -202,6 +216,22 @@ body {
 select option {
   background-color: #0E1F3D;
   color: #ffffff;
+}
+
+/* ── Keyboard focus ──────────────────────────────────────────── */
+/* Visible ring for keyboard users only (:focus-visible), so mouse clicks
+   stay clean. Cyan to match the brand accent. */
+
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid rgba(0, 212, 255, 0.75);
+  outline-offset: 2px;
+  border-radius: 6px;
 }
 
 /* ── Reduced motion ──────────────────────────────────────────── */

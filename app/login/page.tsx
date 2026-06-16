@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Nexi from "@/components/Nexi";
 import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
@@ -122,9 +122,8 @@ export default function LoginPage() {
             aria-hidden
             className="glow-ring absolute inset-0 m-auto w-[105%] h-[105%] rounded-full"
           />
-          <Image
-            src="/nexi.png"
-            alt="Nexi mascot"
+          <Nexi
+            pose="wave"
             width={260}
             height={260}
             className="relative object-contain drop-shadow-2xl"

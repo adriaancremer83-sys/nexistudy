@@ -15,7 +15,7 @@ export default function ShareToClassroom() {
   return (
     <button
       onClick={handleShare}
-      className="px-5 py-2.5 bg-[#00D4AA] hover:bg-[#1FE5BE] text-[#050D1A] text-sm font-extrabold rounded-xl transition-colors cursor-pointer"
+      className="px-5 py-2.5 bg-[#FFB454] hover:bg-[#FFC678] text-[#050D1A] text-sm font-extrabold rounded-xl transition-colors cursor-pointer"
     >
       Share to Google Classroom →
     </button>

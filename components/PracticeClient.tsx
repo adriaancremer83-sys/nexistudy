@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Nexi from "@/components/Nexi";
 import { IconCheck, IconLock, IconTarget, IconArrowRight, IconChevronDown } from "@/components/icons";
 
 interface Topic {
@@ -288,7 +289,17 @@ export default function PracticeClient({ topics, plan, quizzesLeft }: Props) {
           </div>
         </div>
 
-        {loading && <p className="text-white/40 text-sm text-center">Marking your quiz…</p>}
+        {loading && (
+          <div className="flex flex-col items-center gap-2">
+            <Nexi
+              pose="thinking"
+              width={90}
+              height={90}
+              className="animate-float h-20 w-auto object-contain"
+            />
+            <p className="text-white/40 text-sm text-center">Marking your quiz…</p>
+          </div>
+        )}
         {error && (
           <div className="bg-amber-400/10 border border-amber-400/25 rounded-xl px-4 py-3 text-sm text-amber-300">
             {error}
@@ -304,11 +315,24 @@ export default function PracticeClient({ topics, plan, quizzesLeft }: Props) {
     return (
       <div className="max-w-2xl mx-auto space-y-6">
         <div className="glass rounded-2xl p-8 text-center">
+          <Nexi
+            pose={pct >= 60 ? "celebrate" : "thinking"}
+            width={120}
+            height={120}
+            className="animate-pop mx-auto mb-3 h-28 w-auto object-contain"
+          />
           <p className="text-[#00D4FF] text-xs font-bold uppercase tracking-widest mb-2">
             {activeTopic.name}
           </p>
           <p className="text-5xl font-extrabold text-white mb-1">
             {result.correct}/{result.total}
+          </p>
+          <p className="text-white/70 text-sm font-medium mb-1">
+            {pct >= 80
+              ? "Outstanding! Nexi is proud of you 🎉"
+              : pct >= 60
+                ? "Nice work — you're getting there!"
+                : "Let's review these together — you've got this."}
           </p>
           <p className="text-white/50 text-sm mb-4">{pct}% correct</p>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm">

@@ -79,8 +79,8 @@ export default function PastPapersPage() {
         <Reveal delay={420}>
           <div className="glass-strong rounded-2xl p-7 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 !border-[#00D4FF]/25">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-[#2D6BE4]/20 border border-[#00D4FF]/20 flex items-center justify-center flex-shrink-0 text-[#00D4FF]">
-                <IconSparkles className="w-6 h-6" />
+              <div className="flex-shrink-0 text-[#00D4FF]">
+                <IconSparkles className="w-8 h-8" />
               </div>
               <div>
                 <h3 className="text-white font-bold text-lg mb-1">
