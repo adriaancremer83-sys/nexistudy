@@ -9,6 +9,9 @@ declare module "next-auth" {
     curriculum: string;
     role: "learner" | "teacher";
     school: string;
+    language: string;
+    subjects: string[];
+    onboarded: boolean;
   }
 
   interface Session {
@@ -23,6 +26,9 @@ declare module "next-auth" {
       curriculum: string;
       role: "learner" | "teacher";
       school: string;
+      language: string;
+      subjects: string[];
+      onboarded: boolean;
     };
   }
 }
@@ -35,5 +41,8 @@ declare module "next-auth/jwt" {
     curriculum: string;
     role: "learner" | "teacher";
     school: string;
+    language: string;
+    subjects: string[];
+    onboarded: boolean;
   }
 }

@@ -29,13 +29,16 @@ export const authOptions: NextAuthOptions = {
           curriculum: user.curriculum,
           role: user.role ?? "learner",
           school: user.school ?? "",
+          language: user.language ?? "English",
+          subjects: user.subjects ?? [],
+          onboarded: user.onboarded ?? true,
         };
       },
     }),
   ],
   session: { strategy: "jwt" },
   callbacks: {
-    async jwt({ token, user }) {
+    async jwt({ token, user, trigger, session }) {
       if (user) {
         token.plan = user.plan;
         token.apsScore = user.apsScore;
@@ -43,6 +46,18 @@ export const authOptions: NextAuthOptions = {
         token.curriculum = user.curriculum;
         token.role = user.role;
         token.school = user.school;
+        token.language = user.language;
+        token.subjects = user.subjects;
+        token.onboarded = user.onboarded;
+      }
+      // Client calls update(...) after onboarding saves; merge the new values
+      // into the token so the session reflects them without a re-login.
+      if (trigger === "update" && session) {
+        if (session.grade !== undefined) token.grade = session.grade;
+        if (session.school !== undefined) token.school = session.school;
+        if (session.language !== undefined) token.language = session.language;
+        if (session.subjects !== undefined) token.subjects = session.subjects;
+        if (session.onboarded !== undefined) token.onboarded = session.onboarded;
       }
       return token;
     },
@@ -55,6 +70,9 @@ export const authOptions: NextAuthOptions = {
         session.user.curriculum = token.curriculum;
         session.user.role = token.role;
         session.user.school = token.school;
+        session.user.language = token.language;
+        session.user.subjects = token.subjects;
+        session.user.onboarded = token.onboarded;
       }
       return session;
     },

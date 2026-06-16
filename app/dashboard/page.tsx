@@ -35,6 +35,9 @@ export default async function DashboardPage() {
 
   const user = session.user as ExtendedUser;
   if (user.role === "teacher") redirect("/teachers/dashboard");
+  // First-time learners pick their language, grade, school & subjects before
+  // landing on the dashboard.
+  if (!user.onboarded) redirect("/onboarding");
   const apsScore = user.apsScore ?? 0;
   const apsPct = Math.round((apsScore / 42) * 100);
   const status = apsStatus(apsScore);
