@@ -8,7 +8,7 @@ const FREE_INCLUDED = [
   "5 Nexi Tutor chats per day",
   "3 photo uploads per month",
   "APS Calculator — know your score",
-  "All 11 official SA languages",
+  "Tutor in English, Afrikaans & isiZulu",
   "Study streaks & daily motivation",
   "1 personal goal",
 ];
@@ -22,6 +22,7 @@ const FREE_LOCKED = [
 
 const PREMIUM_INCLUDED = [
   "Unlimited Nexi Tutor chats",
+  "Tutor in all 11 official SA languages",
   "Unlimited photo uploads",
   "Nexi's Exam Plan — a day-by-day route to exam day",
   "Weak-spots map + practice that targets them",
@@ -48,7 +49,7 @@ const FAQS = [
   },
   {
     q: "Which languages does Nexi speak?",
-    a: "All 11 official South African languages — isiZulu, isiXhosa, Afrikaans, English, Sepedi, Setswana, Sesotho, Xitsonga, siSwati, Tshivenda, and isiNdebele. Language support is free for everyone, on every plan.",
+    a: "All 11 official South African languages — isiZulu, isiXhosa, Afrikaans, English, Sepedi, Setswana, Sesotho, Xitsonga, siSwati, Tshivenda, and isiNdebele. English, Afrikaans and isiZulu are available free; Premium unlocks reliable tutoring in the full set of 11.",
   },
   {
     q: "Can I cancel anytime?",

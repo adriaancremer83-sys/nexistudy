@@ -14,7 +14,7 @@ import {
 const stats = [
   { value: "CAPS", label: "Live now · IEB & Cambridge coming soon" },
   { value: "Grade 8 – Matric", label: "Every subject, every grade" },
-  { value: "11 languages", label: "Help in every official SA language" },
+  { value: "11 languages", label: "English, Afrikaans & isiZulu free · all 11 on Premium" },
   { value: "24/7", label: "Help whenever you sit down to study" },
 ];
 
@@ -48,7 +48,7 @@ const steps = [
   {
     number: "2",
     title: "Learn it properly",
-    desc: "Nexi walks you through it step by step until it clicks — in any of South Africa's 11 official languages.",
+    desc: "Nexi walks you through it step by step until it clicks — in English, Afrikaans or isiZulu free, or any of all 11 official languages on Premium.",
   },
   {
     number: "3",
@@ -78,7 +78,7 @@ const toolkitCards = [
     icon: IconGlobe,
     tag: "Multilingual",
     title: "Help in your language",
-    desc: "From isiZulu to Xitsonga — Nexi helps in all 11 official languages, because learning is easier in the language you think in.",
+    desc: "English, Afrikaans and isiZulu free; all 11 official languages on Premium — because learning is easier in the language you think in.",
     href: "/nexi-tutor",
     cta: "Try it now",
   },
@@ -266,8 +266,8 @@ export default function HomePage() {
             </h2>
             <p className="text-white/55 text-lg leading-relaxed mb-8">
               Nexi works the way a good teacher does: one clear step at a time, in
-              plain language, until it actually clicks. Ask in any of South Africa&apos;s
-              11 official languages — Nexi answers in the one you think in.
+              plain language, until it actually clicks. Ask in English, Afrikaans or
+              isiZulu free — or any of all 11 official languages on Premium.
             </p>
             <ul className="space-y-4">
               {[
@@ -444,7 +444,7 @@ export default function HomePage() {
               { value: "2,448", label: "Practice questions, every one blind-verified" },
               { value: "16", label: "Subjects, Grade 8 to matric" },
               { value: "CAPS", label: "Curriculum live now — IEB & Cambridge coming soon" },
-              { value: "11", label: "Official SA languages supported" },
+              { value: "11", label: "Official SA languages (full set on Premium)" },
             ].map((s) => (
               <div key={s.label}>
                 <p className="text-3xl sm:text-4xl font-extrabold text-white mb-2">{s.value}</p>

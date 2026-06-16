@@ -61,7 +61,7 @@ export default async function TeacherDashboardPage() {
               </div>
               <p className="text-white/50 text-sm leading-relaxed max-w-md">
                 Post NexiStudy to your Google Classroom stream so your learners can
-                get step-by-step help tonight — in any of the 11 official languages.
+                get step-by-step help tonight — in 11 official languages (full set on Premium).
               </p>
             </div>
             <ShareToClassroom />

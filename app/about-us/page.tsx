@@ -49,8 +49,8 @@ export default function AboutUsPage() {
             </h1>
             <p className="text-lg text-white/60 leading-relaxed max-w-xl">
               Built in South Africa, for South African learners — patient,
-              step-by-step help for every grade, subject and curriculum, in all
-              11 official languages.
+              step-by-step help for every grade, subject and curriculum, in 11
+              official languages (full set on Premium).
             </p>
           </div>
 

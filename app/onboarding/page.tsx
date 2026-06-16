@@ -3,8 +3,10 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
+import Link from "next/link";
 import Nexi from "@/components/Nexi";
 import { IconWarning } from "@/components/icons";
+import { languageAllowed } from "@/lib/languages";
 
 const LANGUAGES = [
   "English",
@@ -128,6 +130,7 @@ export default function OnboardingPage() {
   }
 
   const firstName = (session.user.name ?? "there").split(" ")[0];
+  const plan = session.user.plan;
 
   return (
     <div className="min-h-screen page-hero py-14 px-4">
@@ -158,8 +161,23 @@ export default function OnboardingPage() {
                 I learn best in
               </label>
               <select value={language} onChange={(e) => setLanguage(e.target.value)} className={SELECT_CLS}>
-                {LANGUAGES.map((l) => <option key={l}>{l}</option>)}
+                {LANGUAGES.map((l) => {
+                  const locked = !languageAllowed(plan, l);
+                  return (
+                    <option key={l} value={l} disabled={locked}>
+                      {locked ? `${l} · 🔒 Premium` : l}
+                    </option>
+                  );
+                })}
               </select>
+              {plan !== "premium" && (
+                <p className="text-[10px] text-white/40 mt-1.5 leading-relaxed">
+                  English, Afrikaans &amp; isiZulu free ·{" "}
+                  <Link href="/pricing" className="text-[#00D4FF] hover:text-white transition-colors">
+                    all 11 with Premium
+                  </Link>
+                </p>
+              )}
             </div>
 
             {/* Grade */}

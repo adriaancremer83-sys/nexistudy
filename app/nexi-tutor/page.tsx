@@ -7,6 +7,7 @@ import { useState, useRef, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import ReactMarkdown from "react-markdown";
 import Reveal from "@/components/Reveal";
+import { languageAllowed } from "@/lib/languages";
 import { IconUser, IconBookOpen, IconCpuChip } from "@/components/icons";
 
 // ── Data ─────────────────────────────────────────────────────────────────────
@@ -365,6 +366,12 @@ export default function NexiTutorPage() {
       .catch(() => {});
   }, [status]);
 
+  // Free tier is limited to English / Afrikaans / isiZulu — if a locked language
+  // is somehow selected, fall back to English.
+  useEffect(() => {
+    if (!languageAllowed(plan, language)) setLanguage("English");
+  }, [plan, language]);
+
   const currentSubjects = subjectsFor(curriculum, grade);
   const currentTopics = topicsFor(subject, grade);
 
@@ -691,8 +698,23 @@ export default function NexiTutorPage() {
               <div>
                 <label className="block text-[10px] font-semibold uppercase tracking-widest text-white/40 mb-1.5">Language</label>
                 <select value={language} onChange={(e) => setLanguage(e.target.value)} className={SELECT_CLS}>
-                  {SA_LANGUAGES.map((l) => <option key={l}>{l}</option>)}
+                  {SA_LANGUAGES.map((l) => {
+                    const locked = !languageAllowed(plan, l);
+                    return (
+                      <option key={l} value={l} disabled={locked}>
+                        {locked ? `${l} · 🔒 Premium` : l}
+                      </option>
+                    );
+                  })}
                 </select>
+                {plan !== "premium" && (
+                  <p className="text-[10px] text-white/40 mt-1.5 leading-relaxed">
+                    English, Afrikaans &amp; isiZulu free ·{" "}
+                    <Link href="/pricing" className="text-[#00D4FF] hover:text-white transition-colors">
+                      unlock all 11 with Premium
+                    </Link>
+                  </p>
+                )}
               </div>
             </div>
           </div>

@@ -299,7 +299,7 @@ const SENIOR_CARDS = [
   {
     icon: IconBookOpen,
     title: "Master the basics with Nexi",
-    desc: "Nexi Tutor covers every Senior Phase subject — Maths, Natural Sciences, EMS, Technology and more — in all 11 official languages. Stuck on homework? Just ask.",
+    desc: "Nexi Tutor covers every Senior Phase subject — Maths, Natural Sciences, EMS, Technology and more — in English, Afrikaans & isiZulu free (all 11 on Premium). Stuck on homework? Just ask.",
   },
   {
     icon: IconBolt,

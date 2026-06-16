@@ -27,7 +27,8 @@ export default function Footer() {
           </p>
           <p className="text-sm text-white/50 leading-relaxed max-w-xs">
             The study buddy built for South African learners — CAPS now (IEB &
-            Cambridge coming soon), Grade 8 to matric, in all 11 official languages.
+            Cambridge coming soon), Grade 8 to matric, in 11 official languages
+            (full set on Premium).
           </p>
           <p className="text-xs text-white/35 mt-4">Proudly South African</p>
         </div>

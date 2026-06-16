@@ -3,6 +3,7 @@ import { getServerSession } from "next-auth/next";
 import Anthropic from "@anthropic-ai/sdk";
 import { authOptions } from "@/lib/auth";
 import { consume, getRemaining, dailyLimit } from "@/lib/tutorUsage";
+import { languageAllowed } from "@/lib/languages";
 
 // Cost controls live here:
 //  - model per plan (Haiku free / Sonnet premium)
@@ -97,12 +98,18 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  // Free tier is restricted to English / Afrikaans / isiZulu (the languages
+  // Haiku handles reliably). Premium is unrestricted. Clamp defensively so a
+  // crafted request can't bypass the dropdown gating.
+  const requestedLanguage = String(body.language ?? "English");
+  const language = languageAllowed(plan, requestedLanguage) ? requestedLanguage : "English";
+
   const system = buildSystem({
     curriculum: String(body.curriculum ?? "CAPS"),
     grade: String(body.grade ?? "Grade 12"),
     subject: String(body.subject ?? "Mathematics"),
     topic: String(body.topic ?? ""),
-    language: String(body.language ?? "English"),
+    language,
   });
 
   const messages = incoming
