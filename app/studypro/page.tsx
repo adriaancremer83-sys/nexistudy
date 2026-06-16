@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { useSession } from "next-auth/react";
 import Reveal from "@/components/Reveal";
 import ProgressRing from "@/components/ProgressRing";
 import { IconAcademicCap, IconDocumentText, IconRocket, IconTrendingUp, IconBookOpen, IconBolt, IconTarget, IconSparkles, IconLock, IconChartBar } from "@/components/icons";
@@ -351,10 +352,28 @@ const READINESS_HINTS: Record<string, string> = {
 };
 
 export default function StudyProPage() {
+  const { data: session, status } = useSession();
   const [phase, setPhase] = useState<"fet" | "senior">("fet");
   const [subjects, setSubjects] = useState<SubjectRow[]>(
     DEFAULT_SUBJECTS.map((name) => ({ name, percentage: "" }))
   );
+
+  // Once, on first authenticated load, seed the calculator from the subjects
+  // the learner picked during onboarding (falls back to DEFAULT_SUBJECTS for
+  // signed-out visitors or accounts with none saved). Guarded so it never wipes
+  // marks the learner has started entering.
+  const seededFromUser = useRef(false);
+  useEffect(() => {
+    if (seededFromUser.current || status !== "authenticated") return;
+    seededFromUser.current = true;
+    const userSubjects = session.user.subjects;
+    if (Array.isArray(userSubjects) && userSubjects.length > 0) {
+      setSubjects(userSubjects.map((name) => ({ name, percentage: "" })));
+    }
+    if (session.user.grade === "Grade 8" || session.user.grade === "Grade 9") {
+      setPhase("senior");
+    }
+  }, [status, session]);
   const [selectedUniversity, setSelectedUniversity] = useState("");
   const [selectedProgramme, setSelectedProgramme] = useState("");
   const [readinessMarks, setReadinessMarks] = useState<Record<string, string>>({});
@@ -811,7 +830,7 @@ export default function StudyProPage() {
           <Reveal className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-2">APS Calculator</h2>
             <p className="text-white/50 text-sm max-w-lg mx-auto">
-              Enter your marks for all 7 subjects. We use your best 6 (excluding
+              Enter your marks for each subject. We use your best 6 (excluding
               Life Orientation) to calculate your university APS score.
             </p>
           </Reveal>
