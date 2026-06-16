@@ -5,6 +5,7 @@ import Nexi from "@/components/Nexi";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { useSession } from "next-auth/react";
+import ReactMarkdown from "react-markdown";
 import Reveal from "@/components/Reveal";
 import { IconUser, IconBookOpen, IconCpuChip } from "@/components/icons";
 
@@ -334,8 +335,20 @@ export default function NexiTutorPage() {
   const [chatsLeft, setChatsLeft] = useState(FREE_CHAT_LIMIT);
   const [chatLimit, setChatLimit] = useState(FREE_CHAT_LIMIT);
   const [sending, setSending] = useState(false);
-  const chatEndRef = useRef<HTMLDivElement>(null);
+  const [showJump, setShowJump] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  function isNearBottom() {
+    const el = scrollRef.current;
+    if (!el) return true;
+    return el.scrollHeight - el.scrollTop - el.clientHeight < 80;
+  }
+  function scrollToBottom() {
+    const el = scrollRef.current;
+    if (el) el.scrollTop = el.scrollHeight;
+    setShowJump(false);
+  }
 
   // Seed the real remaining count from the server once signed in.
   useEffect(() => {
@@ -362,9 +375,14 @@ export default function NexiTutorPage() {
     el.style.height = `${Math.min(el.scrollHeight, 120)}px`;
   }, [input]);
 
-  // Scroll to latest message
+  // Only follow the stream to the bottom if the learner is already there. If
+  // they've scrolled up to reread, leave them be and surface a jump button.
   useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (isNearBottom()) {
+      scrollToBottom();
+    } else {
+      setShowJump(true);
+    }
   }, [messages]);
 
   function handleCurriculumChange(val: string) {
@@ -701,7 +719,12 @@ export default function NexiTutorPage() {
             </div>
 
             {/* Messages */}
-            <div className="h-96 overflow-y-auto p-5 space-y-5 bg-[#0A1628]/40">
+            <div className="relative">
+            <div
+              ref={scrollRef}
+              onScroll={() => { if (isNearBottom()) setShowJump(false); }}
+              className="h-96 overflow-y-auto p-5 space-y-5 bg-[#0A1628]/40"
+            >
               {messages.map((msg, i) => (
                 <div
                   key={i}
@@ -732,13 +755,29 @@ export default function NexiTutorPage() {
                         : "bg-gradient-to-br from-[#2D6BE4] to-[#1E4FB8] text-white rounded-br-sm shadow-lg shadow-[#2D6BE4]/25"
                     }`}
                   >
-                    {msg.text || (msg.role === "nexi" ? (
-                      <span className="text-white/50 italic">Nexi is thinking…</span>
-                    ) : "")}
+                    {msg.role === "nexi" ? (
+                      msg.text ? (
+                        <div className="nexi-md">
+                          <ReactMarkdown>{msg.text}</ReactMarkdown>
+                        </div>
+                      ) : (
+                        <span className="text-white/50 italic">Nexi is thinking…</span>
+                      )
+                    ) : (
+                      msg.text
+                    )}
                   </div>
                 </div>
               ))}
-              <div ref={chatEndRef} />
+            </div>
+            {showJump && (
+              <button
+                onClick={scrollToBottom}
+                className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3.5 py-1.5 rounded-full bg-[#2D6BE4] hover:bg-[#4A82F0] text-white text-xs font-semibold shadow-lg shadow-black/30 transition-colors"
+              >
+                ↓ New message
+              </button>
+            )}
             </div>
 
             {/* Input */}
