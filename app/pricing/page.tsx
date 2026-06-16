@@ -26,7 +26,7 @@ const PREMIUM_INCLUDED = [
   "Nexi's Exam Plan — a day-by-day route to exam day",
   "Weak-spots map + practice that targets them",
   "Career Roadmap — what your APS unlocks & the gap to close",
-  "Past-paper walkthroughs (CAPS, IEB & Cambridge)",
+  "Past-paper walkthroughs (CAPS / NSC)",
   "Weekly parent progress report",
   "Grade 8–9: Foundation Gap Finder + termly reports",
   "Ad-free + priority support",
@@ -60,7 +60,7 @@ const FAQS = [
   },
   {
     q: "Which grades does NexiStudy support?",
-    a: "NexiStudy supports Grade 8 to 12 across CAPS, IEB, and Cambridge. Nexi Tutor covers Senior Phase (Grade 8–9) subjects like Natural Sciences, EMS, and Technology, plus the full FET curriculum. A Subject Choice Advisor — helping families pick the right subjects at the end of Grade 9 — is in development.",
+    a: "NexiStudy supports Grade 8 to 12. CAPS is fully live now, and IEB & Cambridge support is coming soon. Nexi Tutor covers Senior Phase (Grade 8–9) subjects like Natural Sciences, EMS, and Technology, plus the full FET curriculum. A Subject Choice Advisor — helping families pick the right subjects at the end of Grade 9 — is in development.",
   },
   {
     q: "Is there a cheaper option than R199 per month?",

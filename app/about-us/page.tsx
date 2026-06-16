@@ -27,7 +27,7 @@ const VALUE_PILLARS = [
     icon: IconTrendingUp,
     accent: "#4A82F0",
     title: "Walk into the exam calm",
-    desc: "Steady practice against real CAPS, IEB and Cambridge questions turns exam season from a panic into something you've already rehearsed.",
+    desc: "Steady practice against real CAPS exam questions turns exam season from a panic into something you've already rehearsed.",
   },
 ];
 

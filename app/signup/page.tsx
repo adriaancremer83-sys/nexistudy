@@ -94,7 +94,7 @@ export default function SignUpPage() {
           Start free — no credit card needed.
         </p>
         <div className="mt-8 flex flex-col gap-3 w-full max-w-xs">
-          {["CAPS, IEB & Cambridge aligned", "AI Tutor available 24/7", "APS Calculator + Career Roadmap"].map((f) => (
+          {["CAPS aligned (IEB & Cambridge coming soon)", "AI Tutor available 24/7", "APS Calculator + Career Roadmap"].map((f) => (
             <div key={f} className="flex items-center gap-2.5 text-sm text-white/70">
               <IconCheck className="w-4 h-4 text-[#00D4FF] flex-shrink-0" />
               {f}

@@ -12,7 +12,7 @@ import {
 } from "@/components/icons";
 
 const stats = [
-  { value: "CAPS · IEB · Cambridge", label: "Aligned to all three SA curricula" },
+  { value: "CAPS", label: "Live now · IEB & Cambridge coming soon" },
   { value: "Grade 8 – Matric", label: "Every subject, every grade" },
   { value: "11 languages", label: "Help in every official SA language" },
   { value: "24/7", label: "Help whenever you sit down to study" },
@@ -23,7 +23,7 @@ const differenceCards = [
     icon: IconTarget,
     accent: "#00D4FF",
     title: "Built around your syllabus",
-    desc: "Fully aligned to CAPS, IEB & Cambridge. Whether it's Maths, Life Sciences, or History — Nexi knows exactly what your exam will ask.",
+    desc: "Fully aligned to CAPS — live now, with IEB & Cambridge coming soon. Whether it's Maths, Life Sciences, or History, Nexi knows exactly what your exam will ask.",
   },
   {
     icon: IconAcademicCap,
@@ -182,9 +182,9 @@ export default function HomePage() {
               <span className="italic text-[#00D4FF]">your syllabus</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/65 mb-10 max-w-xl mx-auto md:mx-0 leading-relaxed">
-              Nexi is built for South African learners — CAPS, IEB and Cambridge,
-              Grade 8 to matric, in the language you think in. Sit down stressed,
-              stand up ready.
+              Nexi is built for South African learners — CAPS now, with IEB and
+              Cambridge coming soon — Grade 8 to matric, in the language you think
+              in. Sit down stressed, stand up ready.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Link
@@ -443,7 +443,7 @@ export default function HomePage() {
             {[
               { value: "2,448", label: "Practice questions, every one blind-verified" },
               { value: "16", label: "Subjects, Grade 8 to matric" },
-              { value: "3", label: "Curricula — CAPS, IEB & Cambridge" },
+              { value: "CAPS", label: "Curriculum live now — IEB & Cambridge coming soon" },
               { value: "11", label: "Official SA languages supported" },
             ].map((s) => (
               <div key={s.label}>
