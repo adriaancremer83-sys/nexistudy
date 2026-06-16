@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
-import { IconDocumentText, IconSparkles, IconTarget, IconChevronDown } from "@/components/icons";
+import { IconDocumentText, IconSparkles, IconChevronDown } from "@/components/icons";
 import { getSubjects, GROUP_ORDER } from "@/lib/pastPapers";
 
 export const metadata: Metadata = {
@@ -19,33 +19,45 @@ const GROUP_BLURBS: Record<string, string> = {
   Languages: "All 11 official languages — HL and FAL",
 };
 
-// Grade 10 & 11 have no national past papers (the NSC is a Grade 12 exam), so
-// those dropdowns route to Nexi's CAPS-aligned practice banks instead.
-function PracticePanel({ grade }: { grade: number }) {
+// The national NSC exam is Grade 12 only, so rather than host a back-catalogue
+// for Grade 10 & 11 we add papers on request — the panel emails the team — and
+// point learners at Nexi's practice quizzes in the meantime.
+function RequestPanel({ grade }: { grade: number }) {
+  const subject = `Grade ${grade} past paper request`;
+  const body =
+    `Hi NexiStudy team,\n\nPlease could you add Grade ${grade} past papers for:\n\n` +
+    `Subject(s): \nYear(s): \n\nThanks!`;
+  const mailto = `mailto:info@nexistudy.co.za?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   return (
     <div className="px-6 pb-6 pt-2">
       <div className="rounded-xl border border-white/[0.06] bg-[#0A1730] p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
         <div className="flex items-start gap-4">
           <span className="text-[#00D4FF] flex-shrink-0">
-            <IconTarget className="w-8 h-8" />
+            <IconDocumentText className="w-8 h-8" />
           </span>
           <div>
-            <h3 className="text-white font-bold mb-1">
-              Practise Grade {grade} exam-style questions
-            </h3>
+            <h3 className="text-white font-bold mb-1">Need a Grade {grade} paper?</h3>
             <p className="text-white/50 text-sm leading-relaxed max-w-lg">
-              National past papers are only set for Grade 12 (the NSC exam). For
-              Grade {grade}, sharpen up with Nexi&apos;s CAPS-aligned, blind-verified
-              practice quizzes — marked instantly, with an explanation for every answer.
+              We add Grade {grade} past papers on request. Tell us the subject and
+              year you need and we&apos;ll sort it out — or sharpen up right now with
+              Nexi&apos;s CAPS-aligned, blind-verified practice quizzes.
             </p>
           </div>
         </div>
-        <Link
-          href="/practice"
-          className="flex-shrink-0 px-6 py-3 bg-[#2D6BE4] hover:bg-[#4A82F0] text-white font-bold text-sm rounded-xl transition-colors whitespace-nowrap"
-        >
-          Start practising →
-        </Link>
+        <div className="flex flex-col items-stretch gap-2 flex-shrink-0">
+          <a
+            href={mailto}
+            className="text-center px-6 py-3 bg-[#2D6BE4] hover:bg-[#4A82F0] text-white font-bold text-sm rounded-xl transition-colors whitespace-nowrap"
+          >
+            Request papers →
+          </a>
+          <Link
+            href="/practice"
+            className="text-center text-xs text-white/50 hover:text-white transition-colors"
+          >
+            Practise instead →
+          </Link>
+        </div>
       </div>
     </div>
   );
@@ -132,14 +144,14 @@ export default function PastPapersPage() {
 
         {/* ── GRADE 11 ── */}
         <details className="group rounded-2xl border border-white/[0.08] bg-[#0E1F3D]/60 overflow-hidden">
-          <GradeSummary grade={11} sub="Exam-style practice quizzes" />
-          <PracticePanel grade={11} />
+          <GradeSummary grade={11} sub="Papers on request" />
+          <RequestPanel grade={11} />
         </details>
 
         {/* ── GRADE 10 ── */}
         <details className="group rounded-2xl border border-white/[0.08] bg-[#0E1F3D]/60 overflow-hidden">
-          <GradeSummary grade={10} sub="Exam-style practice quizzes" />
-          <PracticePanel grade={10} />
+          <GradeSummary grade={10} sub="Papers on request" />
+          <RequestPanel grade={10} />
         </details>
 
         <Reveal delay={120}>
@@ -167,6 +179,16 @@ export default function PastPapersPage() {
             </Link>
           </div>
         </Reveal>
+
+        <p className="text-white/35 text-xs leading-relaxed">
+          Can&apos;t find a paper, subject or year?{" "}
+          <a
+            href={`mailto:info@nexistudy.co.za?subject=${encodeURIComponent("Past paper request")}&body=${encodeURIComponent("Hi NexiStudy team,\n\nPlease could you add the following past paper(s):\n\nGrade: \nSubject(s): \nYear(s): \n\nThanks!")}`}
+            className="text-[#00D4FF] hover:text-white transition-colors font-semibold"
+          >
+            Request it &rarr;
+          </a>
+        </p>
 
         <p className="text-white/25 text-xs leading-relaxed">
           Papers and memoranda are published by the Department of Basic Education
