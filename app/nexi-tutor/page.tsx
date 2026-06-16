@@ -11,7 +11,8 @@ import { IconUser, IconBookOpen, IconCpuChip } from "@/components/icons";
 
 // ── Data ─────────────────────────────────────────────────────────────────────
 
-const CURRICULA = ["CAPS", "IEB", "Cambridge"];
+// Only CAPS is live; IEB & Cambridge are coming soon, so they're not offered yet.
+const CURRICULA = ["CAPS"];
 const GRADES = ["Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"];
 const SENIOR_GRADES = new Set(["Grade 8", "Grade 9"]);
 

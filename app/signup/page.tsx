@@ -11,7 +11,8 @@ const INPUT_CLS =
   "w-full px-4 py-3 bg-white/5 border border-white/15 rounded-xl text-sm text-white placeholder:text-white/25 focus:outline-none focus:ring-2 focus:ring-[#00D4FF]/40 focus:border-[#00D4FF] transition-colors";
 
 const GRADES = ["Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"];
-const CURRICULA = ["CAPS", "IEB", "Cambridge"];
+// Only CAPS is live; IEB & Cambridge are coming soon, so they're not offered yet.
+const CURRICULA = ["CAPS"];
 
 export default function SignUpPage() {
   const router = useRouter();

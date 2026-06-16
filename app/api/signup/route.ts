@@ -3,7 +3,8 @@ import bcrypt from "bcryptjs";
 import { findUser, createUser } from "@/lib/users";
 
 const VALID_GRADES = ["Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"];
-const VALID_CURRICULA = ["CAPS", "IEB", "Cambridge"];
+// Only CAPS is live yet (IEB & Cambridge coming soon).
+const VALID_CURRICULA = ["CAPS"];
 
 export async function POST(req: NextRequest) {
   const { name, email, password, grade, curriculum } = await req.json();
