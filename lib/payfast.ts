@@ -66,10 +66,17 @@ function pfEncode(value: string): string {
 // Exposed so we can log it for debugging signature mismatches.
 export function signatureBaseString(
   pairs: [string, string][],
-  passphrase: string
+  passphrase: string,
+  opts: { keepEmpty?: boolean } = {}
 ): string {
   const parts = pairs
-    .filter(([, v]) => v !== "" && v !== undefined && v !== null)
+    // Outgoing checkout (keepEmpty=false): drop blank fields — PayFast's
+    // documented outgoing rule, and we never send blanks anyway.
+    // Incoming ITN (keepEmpty=true): PayFast signs EVERY posted field including
+    // the empty ones it echoes back (item_description, unused custom_str2..5,
+    // etc.). Dropping those makes our hash diverge from PayFast's and rejects
+    // every valid ITN — the cause of "signature mismatch" on the notify route.
+    .filter(([, v]) => opts.keepEmpty || (v !== "" && v !== undefined && v !== null))
     .map(([k, v]) => `${k}=${pfEncode(String(v))}`);
   let str = parts.join("&");
   // A blank/whitespace passphrase must be treated as "no passphrase" — appending
@@ -87,11 +94,12 @@ export function signatureBaseString(
 // for an incoming ITN it's the order PayFast posted them.
 export function signature(
   pairs: [string, string][],
-  passphrase: string
+  passphrase: string,
+  opts: { keepEmpty?: boolean } = {}
 ): string {
   return crypto
     .createHash("md5")
-    .update(signatureBaseString(pairs, passphrase))
+    .update(signatureBaseString(pairs, passphrase, opts))
     .digest("hex");
 }
 
@@ -182,7 +190,9 @@ export function parseItn(rawBody: string): { data: ItnData; ordered: [string, st
 export function itnSignatureValid(ordered: [string, string][], data: ItnData): boolean {
   const cfg = payfastConfig();
   const pairs = ordered.filter(([k]) => k !== "signature");
-  const expected = signature(pairs, cfg.passphrase);
+  // keepEmpty: PayFast's ITN signature includes the empty fields it posts, so we
+  // must too — otherwise every valid ITN is rejected as a signature mismatch.
+  const expected = signature(pairs, cfg.passphrase, { keepEmpty: true });
   return expected === (data.signature ?? "").toLowerCase();
 }
 
