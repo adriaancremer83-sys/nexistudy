@@ -118,8 +118,11 @@ export function buildCheckout(user: CheckoutUser): CheckoutPayload {
   const base = siteUrl();
   const mPaymentId = `${user.id}-${Date.now()}`;
 
-  // Order here is the order the fields are signed AND submitted — keep them in
-  // sync. (The <form> we render iterates this same object.)
+  // Field order MUST follow PayFast's documented signature order — PayFast
+  // reconstructs the hash in that order, not the order we post. The custom_*
+  // fields come BEFORE the recurring-billing block (subscription_type ... cycles);
+  // putting custom_str1 after them yields "Generated signature does not match".
+  // Ref: PayFast custom-integration signature field order.
   const fields: Record<string, string> = {
     merchant_id: cfg.merchantId,
     merchant_key: cfg.merchantKey,
@@ -132,13 +135,14 @@ export function buildCheckout(user: CheckoutUser): CheckoutPayload {
     m_payment_id: mPaymentId,
     amount: PREMIUM_AMOUNT,
     item_name: PREMIUM_ITEM_NAME,
+    // Map the payment back to the learner on the ITN — must precede the
+    // subscription block per PayFast's documented order.
+    custom_str1: user.id,
     // Recurring subscription config: monthly, indefinite.
     subscription_type: "1",
     recurring_amount: PREMIUM_AMOUNT,
     frequency: "3", // 3 = monthly
     cycles: "0", // 0 = until cancelled
-    // Map the payment back to the learner on the ITN.
-    custom_str1: user.id,
   };
 
   const sigPairs = Object.entries(fields) as [string, string][];
