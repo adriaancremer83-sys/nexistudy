@@ -124,3 +124,102 @@ export async function createUser(
 export function verifyPassword(plain: string, hash: string): boolean {
   return bcrypt.compareSync(plain, hash);
 }
+
+export async function findUserById(userId: string): Promise<AppUser | null> {
+  const { data, error } = await supabaseAdmin
+    .from("users")
+    .select("*")
+    .eq("id", userId)
+    .maybeSingle();
+
+  if (error) {
+    console.error("findUserById failed:", error.message);
+    return null;
+  }
+  return data ? rowToUser(data as UserRow) : null;
+}
+
+// Subscription state read by the account page (the PayFast token lives here too,
+// so cancel can reach the right subscription). Defaulted defensively in case the
+// migration hasn't run yet.
+export interface SubscriptionInfo {
+  plan: "free" | "premium";
+  status: "none" | "active" | "cancelled";
+  startedAt: string | null;
+  token: string | null;
+}
+
+export async function getSubscription(userId: string): Promise<SubscriptionInfo> {
+  const { data } = await supabaseAdmin
+    .from("users")
+    .select("plan, subscription_status, subscription_started_at, payfast_token")
+    .eq("id", userId)
+    .maybeSingle();
+
+  return {
+    plan: (data?.plan as "free" | "premium") ?? "free",
+    status: (data?.subscription_status as SubscriptionInfo["status"]) ?? "none",
+    startedAt: data?.subscription_started_at ?? null,
+    token: data?.payfast_token ?? null,
+  };
+}
+
+// Promote a learner to premium after a verified, successful PayFast payment.
+// Only overwrites the token/start date when we actually have them (the first
+// recurring ITN carries the token; renewals may not).
+export async function markPremium(
+  userId: string,
+  opts: { token?: string | null; mPaymentId?: string | null }
+): Promise<boolean> {
+  const update: Record<string, unknown> = {
+    plan: "premium",
+    subscription_status: "active",
+  };
+  if (opts.token) update.payfast_token = opts.token;
+  if (opts.mPaymentId) update.payfast_m_payment_id = opts.mPaymentId;
+
+  // Set the start date only if it isn't already set (don't reset it on renewal).
+  const { data: existing } = await supabaseAdmin
+    .from("users")
+    .select("subscription_started_at")
+    .eq("id", userId)
+    .maybeSingle();
+  if (!existing?.subscription_started_at) {
+    update.subscription_started_at = new Date().toISOString();
+  }
+
+  const { error } = await supabaseAdmin.from("users").update(update).eq("id", userId);
+  if (error) {
+    console.error("markPremium failed:", error.message);
+    return false;
+  }
+  return true;
+}
+
+// Drop a learner back to free — on a failed renewal or a cancellation.
+export async function markFree(userId: string): Promise<boolean> {
+  const { error } = await supabaseAdmin
+    .from("users")
+    .update({ plan: "free", subscription_status: "cancelled" })
+    .eq("id", userId);
+  if (error) {
+    console.error("markFree failed:", error.message);
+    return false;
+  }
+  return true;
+}
+
+// Mark the subscription cancelled but keep premium until the period lapses (the
+// learner already paid for the current month). A future failed/cancelled ITN
+// downgrades the plan itself.
+export async function markCancelled(userId: string): Promise<boolean> {
+  const { error } = await supabaseAdmin
+    .from("users")
+    .update({ subscription_status: "cancelled" })
+    .eq("id", userId);
+  if (error) {
+    console.error("markCancelled failed:", error.message);
+    return false;
+  }
+  return true;
+}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import SubscribeButton from "@/components/SubscribeButton";
 import { IconCheck, IconLock } from "@/components/icons";
 
 // ── Feature lists ─────────────────────────────────────────────────────────────
@@ -157,12 +158,12 @@ export default function PricingPage() {
                 ))}
               </ul>
 
-              <Link
-                href="/signup"
-                className="animate-pulse-glow text-center py-3.5 rounded-xl font-bold text-sm bg-[#2D6BE4] hover:bg-[#4A82F0] text-white transition-colors"
+              <SubscribeButton
+                callbackUrl="/pricing"
+                className="animate-pulse-glow w-full text-center py-3.5 rounded-xl font-bold text-sm bg-[#2D6BE4] hover:bg-[#4A82F0] text-white transition-colors cursor-pointer disabled:opacity-70 disabled:cursor-wait"
               >
-                Upgrade to Premium
-              </Link>
+                Upgrade to Premium — R199/mo
+              </SubscribeButton>
             </div>
           </Reveal>
 

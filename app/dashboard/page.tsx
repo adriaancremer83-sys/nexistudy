@@ -8,6 +8,7 @@ import Reveal from "@/components/Reveal";
 import ProgressRing from "@/components/ProgressRing";
 import { IconAcademicCap, IconCpuChip, IconChartBar, IconStar, IconLock, IconTarget, IconDocumentText } from "@/components/icons";
 import { getWeakSpots } from "@/lib/practice";
+import SubscribeButton from "@/components/SubscribeButton";
 
 type ExtendedUser = NonNullable<Session["user"]>;
 
@@ -92,12 +93,12 @@ export default async function DashboardPage() {
                 {user.plan === "premium" ? "Premium" : "Free Plan"}
               </span>
               {user.plan === "free" && (
-                <Link
-                  href="/pricing"
-                  className="px-4 py-2 text-sm font-bold text-white bg-[#2D6BE4] hover:bg-[#4A82F0] rounded-full transition-colors"
+                <SubscribeButton
+                  callbackUrl="/dashboard"
+                  className="px-4 py-2 text-sm font-bold text-white bg-[#2D6BE4] hover:bg-[#4A82F0] rounded-full transition-colors cursor-pointer disabled:opacity-70 disabled:cursor-wait"
                 >
                   Upgrade
-                </Link>
+                </SubscribeButton>
               )}
             </div>
 

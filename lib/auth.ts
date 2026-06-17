@@ -1,6 +1,6 @@
 import type { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import { findUser, verifyPassword } from "./users";
+import { findUser, findUserById, verifyPassword } from "./users";
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -58,6 +58,12 @@ export const authOptions: NextAuthOptions = {
         if (session.language !== undefined) token.language = session.language;
         if (session.subjects !== undefined) token.subjects = session.subjects;
         if (session.onboarded !== undefined) token.onboarded = session.onboarded;
+        // After a PayFast upgrade the client asks us to re-sync the plan. Read it
+        // straight from the DB rather than trusting the client-supplied value.
+        if (session.refreshSubscription && token.sub) {
+          const fresh = await findUserById(token.sub);
+          if (fresh) token.plan = fresh.plan;
+        }
       }
       return token;
     },

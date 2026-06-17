@@ -4,6 +4,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { authOptions } from "@/lib/auth";
 import { consume, getRemaining, dailyLimit } from "@/lib/tutorUsage";
 import { languageAllowed } from "@/lib/languages";
+import { logApiUsage } from "@/lib/apiUsage";
 
 // Cost controls live here:
 //  - model per plan (Haiku free / Sonnet premium)
@@ -124,14 +125,22 @@ export async function POST(req: NextRequest) {
     async start(controller) {
       try {
         const anthropic = new Anthropic();
+        const model = MODEL[plan];
         const claude = anthropic.messages.stream({
-          model: MODEL[plan],
+          model,
           max_tokens: MAX_OUTPUT_TOKENS,
           system,
           messages,
         });
         claude.on("text", (delta) => controller.enqueue(encoder.encode(delta)));
-        await claude.finalMessage();
+        const finalMessage = await claude.finalMessage();
+        // Log tokens + computed cost for the admin spend view (best-effort).
+        await logApiUsage({
+          userId: session.user.id,
+          feature: "tutor",
+          model,
+          usage: finalMessage.usage,
+        });
       } catch (err) {
         console.error("tutor stream failed:", err);
         controller.enqueue(

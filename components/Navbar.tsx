@@ -85,6 +85,16 @@ export default function Navbar() {
                 >
                   Dashboard
                 </Link>
+                <Link
+                  href="/account"
+                  className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+                    pathname === "/account"
+                      ? "text-white bg-[#2D6BE4]/25"
+                      : "text-white/70 hover:text-white hover:bg-white/10"
+                  }`}
+                >
+                  Account
+                </Link>
                 <button
                   onClick={() => signOut({ callbackUrl: "/" })}
                   className="px-4 py-2 text-sm font-medium text-white/70 hover:text-white border border-white/15 hover:border-[#00D4FF]/50 rounded-lg transition-colors cursor-pointer"
@@ -149,6 +159,7 @@ export default function Navbar() {
             {session ? (
               <>
                 <Link href="/dashboard" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-white/70 hover:text-white">Dashboard</Link>
+                <Link href="/account" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-white/70 hover:text-white">Account</Link>
                 <button onClick={() => signOut({ callbackUrl: "/" })} className="px-3 py-2 text-sm text-left text-white/70 hover:text-white cursor-pointer">Log Out</button>
               </>
             ) : (
