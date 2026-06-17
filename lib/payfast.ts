@@ -28,9 +28,11 @@ export function payfastConfig() {
   const sandbox = isSandbox();
   return {
     sandbox,
-    merchantId: process.env.PAYFAST_MERCHANT_ID ?? "",
-    merchantKey: process.env.PAYFAST_MERCHANT_KEY ?? "",
-    passphrase: process.env.PAYFAST_PASSPHRASE ?? "",
+    merchantId: (process.env.PAYFAST_MERCHANT_ID ?? "").trim(),
+    merchantKey: (process.env.PAYFAST_MERCHANT_KEY ?? "").trim(),
+    // Trim so a stray space in the env var becomes "" (= no passphrase) instead
+    // of a truthy whitespace value that would corrupt every signature.
+    passphrase: (process.env.PAYFAST_PASSPHRASE ?? "").trim(),
     // Where the learner is sent to pay.
     processUrl: sandbox
       ? "https://sandbox.payfast.co.za/eng/process"
@@ -59,10 +61,10 @@ function pfEncode(value: string): string {
   return encodeURIComponent(value.trim()).replace(/%20/g, "+");
 }
 
-// Build the MD5 signature over an ordered list of [key, value] pairs.
-// Order matters: for an outgoing request it's the order we submit the fields;
-// for an incoming ITN it's the order PayFast posted them.
-export function signature(
+// The exact string PayFast hashes: ordered key=urlencode(value) pairs, blank
+// values dropped, with &passphrase=... appended ONLY when a passphrase is set.
+// Exposed so we can log it for debugging signature mismatches.
+export function signatureBaseString(
   pairs: [string, string][],
   passphrase: string
 ): string {
@@ -70,10 +72,27 @@ export function signature(
     .filter(([, v]) => v !== "" && v !== undefined && v !== null)
     .map(([k, v]) => `${k}=${pfEncode(String(v))}`);
   let str = parts.join("&");
-  if (passphrase) {
-    str += `&passphrase=${pfEncode(passphrase)}`;
+  // A blank/whitespace passphrase must be treated as "no passphrase" — appending
+  // "&passphrase=" would make our hash diverge from PayFast's. This is the most
+  // common cause of "Generated signature does not match submitted signature".
+  const pass = (passphrase ?? "").trim();
+  if (pass) {
+    str += `&passphrase=${pfEncode(pass)}`;
   }
-  return crypto.createHash("md5").update(str).digest("hex");
+  return str;
+}
+
+// Build the MD5 signature over an ordered list of [key, value] pairs.
+// Order matters: for an outgoing request it's the order we submit the fields;
+// for an incoming ITN it's the order PayFast posted them.
+export function signature(
+  pairs: [string, string][],
+  passphrase: string
+): string {
+  return crypto
+    .createHash("md5")
+    .update(signatureBaseString(pairs, passphrase))
+    .digest("hex");
 }
 
 // ── Outgoing: build the signed checkout payload ─────────────────────────────
@@ -122,10 +141,16 @@ export function buildCheckout(user: CheckoutUser): CheckoutPayload {
     custom_str1: user.id,
   };
 
-  fields.signature = signature(
-    Object.entries(fields) as [string, string][],
-    cfg.passphrase
-  );
+  const sigPairs = Object.entries(fields) as [string, string][];
+  // Set PAYFAST_DEBUG=true to print the exact string being hashed. Compare it
+  // against what PayFast expects to pinpoint a signature mismatch. (Sandbox
+  // merchant_key is public, so this is safe to log in sandbox only.)
+  if (process.env.PAYFAST_DEBUG === "true") {
+    console.log(
+      "[PayFast] signature base string:\n" + signatureBaseString(sigPairs, cfg.passphrase)
+    );
+  }
+  fields.signature = signature(sigPairs, cfg.passphrase);
 
   return { processUrl: cfg.processUrl, fields };
 }
