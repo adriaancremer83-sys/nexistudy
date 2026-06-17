@@ -8,9 +8,6 @@ import {
   itnServerConfirm,
   itnAmountValid,
   isSandbox,
-  signature,
-  signatureBaseString,
-  payfastConfig,
 } from "@/lib/payfast";
 
 // ITN is a server-to-server POST from PayFast — Node runtime (crypto + dns).
@@ -42,26 +39,7 @@ export async function POST(req: NextRequest) {
   }
 
   // 3) Validate the signature against our passphrase.
-  const sigOk = itnSignatureValid(ordered, data);
-
-  // ── TEMPORARY sandbox-only diagnostic — REMOVE once the ITN loop is verified.
-  // Dumps the literal side-by-side (raw body vs our base string + computed sig
-  // vs PayFast's) so we can confirm the fix against PayFast's real payload.
-  // Never runs in live mode: the raw body carries the subscription token.
-  if (isSandbox()) {
-    const cfg = payfastConfig();
-    const dbgPairs = ordered.filter(([k]) => k !== "signature");
-    console.log(
-      "[PayFast ITN debug]\n" +
-        `  raw body: ${rawBody}\n` +
-        `  our base: ${signatureBaseString(dbgPairs, cfg.passphrase, { keepEmpty: true })}\n` +
-        `  our sig:  ${signature(dbgPairs, cfg.passphrase, { keepEmpty: true })}\n` +
-        `  pf  sig:  ${data.signature ?? "(none)"}\n` +
-        `  match:    ${sigOk}`
-    );
-  }
-
-  if (!sigOk) {
+  if (!itnSignatureValid(ordered, data)) {
     console.warn("PayFast ITN rejected: signature mismatch", data.m_payment_id);
     return new NextResponse("Invalid signature", { status: 400 });
   }
