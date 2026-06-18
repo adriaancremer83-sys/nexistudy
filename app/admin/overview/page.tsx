@@ -3,6 +3,7 @@ import { authOptions } from "@/lib/auth";
 import { notFound } from "next/navigation";
 import { supabaseAdmin } from "@/lib/supabase";
 import { todaysSpendUsd } from "@/lib/apiUsage";
+import { getViewStats } from "@/lib/analytics";
 import AdminReviews from "@/components/AdminReviews";
 
 export const dynamic = "force-dynamic";
@@ -67,10 +68,11 @@ export default async function AdminOverviewPage() {
   startOfDay.setUTCHours(0, 0, 0, 0);
   const weekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
 
-  const [today, week, spend] = await Promise.all([
+  const [today, week, spend, views] = await Promise.all([
     signupsSince(startOfDay.toISOString()),
     signupsSince(weekAgo.toISOString()),
     todaysSpendUsd(),
+    getViewStats(),
   ]);
 
   return (
@@ -88,6 +90,43 @@ export default async function AdminOverviewPage() {
       <div className="section-divider" />
 
       <div className="max-w-4xl mx-auto px-4 py-10 space-y-8">
+        <div>
+          <h2 className="text-xs font-semibold text-white/50 uppercase tracking-widest mb-3">
+            Website views
+          </h2>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <Stat label="Today" value={views.today.toLocaleString("en-ZA")} />
+            <Stat label="Last 7 days" value={views.week.toLocaleString("en-ZA")} />
+            <Stat
+              label="Unique visitors"
+              value={views.uniqueWeek.toLocaleString("en-ZA")}
+              sub="last 7 days"
+            />
+            <Stat label="All time" value={views.total.toLocaleString("en-ZA")} />
+          </div>
+          {views.topPages.length > 0 && (
+            <div className="mt-4 rounded-xl border border-white/[0.08] bg-[#0E1F3D] px-5 py-4">
+              <p className="text-xs font-semibold uppercase tracking-widest text-white/40 mb-3">
+                Top pages — last 7 days
+              </p>
+              <ul className="space-y-2">
+                {views.topPages.map((p) => (
+                  <li key={p.path} className="flex items-center justify-between text-sm">
+                    <span className="text-white/70 truncate mr-4">{p.path}</span>
+                    <span className="text-white font-bold tabular-nums flex-shrink-0">
+                      {p.views.toLocaleString("en-ZA")}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          <p className="text-[11px] text-white/30 mt-2">
+            Counts public page views (excludes /admin and local dev). Bot traffic
+            isn&apos;t filtered, so treat as a trend, not a billing-grade figure.
+          </p>
+        </div>
+
         <div>
           <h2 className="text-xs font-semibold text-white/50 uppercase tracking-widest mb-3">
             Signups — Today

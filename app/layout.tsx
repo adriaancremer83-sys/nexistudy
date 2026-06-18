@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
 import BackgroundFX from "@/components/BackgroundFX";
 import ScrollToTop from "@/components/ScrollToTop";
+import PageViewTracker from "@/components/PageViewTracker";
 import { SITE_URL, SITE_NAME } from "@/lib/seo";
 
 const nunito = Nunito({
@@ -64,6 +65,7 @@ export default function RootLayout({
         <BackgroundFX />
         <Providers>
           <ScrollToTop />
+          <PageViewTracker />
           <Navbar />
           <main className="flex-1 relative z-10">{children}</main>
           <Footer />
