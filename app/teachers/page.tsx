@@ -371,6 +371,106 @@ export default function TeachersPage() {
         </div>
       </section>
 
+      {/* ── WORKS WITH GOOGLE CLASSROOM ── */}
+      <section className="py-16 px-4 border-t border-white/[0.06]">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <p className="text-sm font-bold uppercase tracking-widest text-[#FFB454] mb-3">
+              Works alongside Google Classroom
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4 leading-snug">
+              We don&apos;t replace your classroom — we cover the gaps
+            </h2>
+            <p className="text-white/60 text-lg leading-relaxed">
+              Keep doing exactly what you do in Google Classroom. NexiStudy picks up where it
+              can&apos;t reach: the learner stuck on homework at 9pm, and the question you never
+              get a straight answer to — <em>what is my class actually battling with?</em>
+            </p>
+          </div>
+
+          {/* Two jobs, side by side */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-7">
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-white/35 mb-3">
+                Google Classroom
+              </p>
+              <h3 className="text-white font-bold text-xl mb-5">Assign &amp; collect the work</h3>
+              <ul className="space-y-3">
+                {[
+                  "Set homework, share resources, post announcements",
+                  "Collect submissions and record marks",
+                  "Your system of record — nothing changes",
+                ].map((t) => (
+                  <li key={t} className="flex items-start gap-3 text-sm text-white/60 leading-relaxed">
+                    <IconCheck className="w-4 h-4 text-white/40 flex-shrink-0 mt-0.5" />
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="rounded-2xl border border-[#FFB454]/30 bg-[#FFB454]/[0.04] p-7">
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-[#FFB454] mb-3">
+                NexiStudy
+              </p>
+              <h3 className="text-white font-bold text-xl mb-5">Help when they&apos;re stuck — and show you the gaps</h3>
+              <ul className="space-y-3">
+                {[
+                  "Step-by-step tutoring 24/7, in 11 official languages",
+                  "Topic practice that learners can do on their own",
+                  "A live heatmap of what your class is collectively battling",
+                ].map((t) => (
+                  <li key={t} className="flex items-start gap-3 text-sm text-white/70 leading-relaxed">
+                    <IconCheck className="w-4 h-4 text-[#FFB454] flex-shrink-0 mt-0.5" />
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* The everyday flow */}
+          <div className="mt-6 rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-7">
+            <div className="flex items-center gap-2.5 text-[#FFB454] mb-5">
+              <IconTarget className="w-4 h-4" />
+              <h3 className="text-xs font-semibold text-white uppercase tracking-widest">
+                A normal week
+              </h3>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+              {[
+                {
+                  t: "You post homework in Classroom",
+                  d: "Same as always. Once, you also drop your NexiStudy class code in the stream.",
+                },
+                {
+                  t: "A learner gets stuck at 9pm",
+                  d: "Instead of giving up, they open NexiStudy and get unstuck — no answer copied, the concept actually explained.",
+                },
+                {
+                  t: "You check the heatmap",
+                  d: "You see the class is weak on, say, Trigonometry — so your next lesson and assignment hit the real gap.",
+                },
+              ].map((s, i) => (
+                <div key={s.t} className="flex items-start gap-3.5">
+                  <span className="flex-shrink-0 w-7 h-7 rounded-lg bg-[#FFB454]/15 border border-[#FFB454]/25 text-[#FFB454] font-extrabold text-xs flex items-center justify-center">
+                    {i + 1}
+                  </span>
+                  <div>
+                    <h4 className="text-white font-bold text-sm mb-1">{s.t}</h4>
+                    <p className="text-white/50 text-sm leading-relaxed">{s.d}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-white/35 text-xs mt-6 leading-relaxed">
+              NexiStudy doesn&apos;t read your Classroom assignments or sync marks — it runs
+              alongside as the after-hours help desk and the X-ray of your class.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ── LEARNER REDIRECT + WHATSAPP ── */}
       <section className="py-12 px-4 text-center space-y-4">
         <WhatsAppHelp variant="inline" />
