@@ -1,14 +1,23 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import Reveal from "@/components/Reveal";
-import { IconCheck, IconEnvelope, IconChatBubble, IconClock } from "@/components/icons";
+import { IconCheck, IconEnvelope, IconChatBubble, IconCpuChip } from "@/components/icons";
+
+// Support routes. The number is never shown as text — only used inside the
+// WhatsApp link — so it stays slightly out of reach of scrapers and casual view.
+const SUPPORT_EMAIL = "nexi@forgesystems.co.za";
+const WHATSAPP_URL =
+  "https://wa.me/27734231097?text=" +
+  encodeURIComponent("Hi, I'm using NexiStudy and I'd like to report:");
 
 const SUBJECTS = [
-  "General Enquiry",
-  "Technical Support",
-  "School Partnership",
-  "Press",
+  "Bug — something isn't working",
+  "Feedback or suggestion",
+  "Billing or subscription",
+  "Partnership",
+  "Press / media",
 ];
 
 const INPUT_CLS =
@@ -26,6 +35,11 @@ export default function ContactPage() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!form.name || !form.email || !form.subject || !form.message) return;
+    // No backend mailbox — open the visitor's email app with everything filled
+    // in, addressed to support. Honest and reliable, nothing pretends to send.
+    const subject = encodeURIComponent(`[NexiStudy] ${form.subject}`);
+    const body = encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`);
+    window.location.href = `mailto:${SUPPORT_EMAIL}?subject=${subject}&body=${body}`;
     setSubmitted(true);
   }
 
@@ -45,11 +59,11 @@ export default function ContactPage() {
             Contact Us
           </span>
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-white">
-            Get in <span className="text-gradient">Touch</span>
+            Bugs &amp; <span className="text-gradient">feedback</span>
           </h1>
           <p className="text-white/60 text-lg leading-relaxed">
-            Have a question, partnership idea, or just want to say hello?
-            We&apos;d love to hear from you.
+            NexiStudy is built by a small team. If something&apos;s broken, not working as
+            expected, or you&apos;ve got an idea to make it better, we want to hear it.
           </p>
         </div>
       </section>
@@ -60,11 +74,64 @@ export default function ContactPage() {
       <section className="py-16 px-4">
         <div className="max-w-2xl mx-auto">
 
-          {/* ── CONTACT FORM ── */}
+          {/* ── SCHOOLWORK DISCLAIMER ── */}
           <Reveal>
-            <div className="glass rounded-2xl overflow-hidden mb-6">
+            <div className="rounded-2xl border border-[#00D4FF]/25 bg-[#00D4FF]/[0.04] p-6 mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="flex items-start gap-3.5">
+                <span className="flex-shrink-0 text-[#00D4FF] mt-0.5">
+                  <IconCpuChip className="w-6 h-6" />
+                </span>
+                <div>
+                  <h2 className="text-white font-bold text-base mb-1">
+                    Stuck on schoolwork? That&apos;s Nexi&apos;s job
+                  </h2>
+                  <p className="text-white/55 text-sm leading-relaxed">
+                    We can&apos;t help with homework or subject questions here — your AI tutor
+                    Nexi can, any time of day, in your language.
+                  </p>
+                </div>
+              </div>
+              <Link
+                href="/nexi-tutor"
+                className="flex-shrink-0 px-5 py-2.5 bg-[#2D6BE4] hover:bg-[#4A82F0] text-white text-sm font-bold rounded-xl transition-colors whitespace-nowrap"
+              >
+                Ask Nexi →
+              </Link>
+            </div>
+          </Reveal>
+
+          {/* ── REACH US — EMAIL + WHATSAPP BUTTONS ── */}
+          <Reveal delay={80}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+              <a
+                href={`mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent("[NexiStudy] Bug / feedback")}`}
+                className="glass-card p-6 flex flex-col items-center text-center gap-2 transition-colors hover:border-[#00D4FF]/40"
+              >
+                <span className="text-[#00D4FF]"><IconEnvelope className="w-7 h-7" /></span>
+                <span className="text-white font-bold text-sm">Email us</span>
+                <span className="text-white/45 text-xs">Best for bug reports &amp; detail</span>
+              </a>
+
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card p-6 flex flex-col items-center text-center gap-2 transition-colors hover:border-emerald-400/40"
+              >
+                <span className="text-emerald-300"><IconChatBubble className="w-7 h-7" /></span>
+                <span className="text-white font-bold text-sm">WhatsApp us</span>
+                <span className="text-white/45 text-xs">For a quick message</span>
+              </a>
+            </div>
+          </Reveal>
+
+          {/* ── CONTACT FORM (opens your email app) ── */}
+          <Reveal delay={160}>
+            <div className="glass rounded-2xl overflow-hidden">
               <div className="px-8 py-5 border-b border-white/10 bg-white/5">
-                <h2 className="text-sm font-semibold text-white uppercase tracking-widest">Send us a message</h2>
+                <h2 className="text-sm font-semibold text-white uppercase tracking-widest">
+                  Prefer to type it out?
+                </h2>
               </div>
 
               <div className="p-8">
@@ -73,16 +140,17 @@ export default function ContactPage() {
                     <div className="w-16 h-16 rounded-full bg-emerald-400/15 border border-emerald-400/30 flex items-center justify-center mx-auto mb-5 text-emerald-300">
                       <IconCheck className="w-8 h-8" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-2">Message Sent!</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Almost there</h3>
                     <p className="text-white/50 text-sm leading-relaxed max-w-sm mx-auto">
-                      Thanks for reaching out, <span className="font-semibold text-white">{form.name.split(" ")[0]}</span>.
-                      We&apos;ll get back to you within 24 hours.
+                      Your email app should have opened with your message ready to send,{" "}
+                      <span className="font-semibold text-white">{form.name.split(" ")[0]}</span>.
+                      If it didn&apos;t, use the <span className="text-white">Email us</span> button above.
                     </p>
                     <button
                       onClick={() => { setSubmitted(false); setForm({ name: "", email: "", subject: "", message: "" }); }}
                       className="mt-6 text-sm font-semibold text-[#00D4FF] hover:text-white transition-colors cursor-pointer"
                     >
-                      Send another message
+                      Write another
                     </button>
                   </div>
                 ) : (
@@ -106,7 +174,7 @@ export default function ContactPage() {
                     {/* Email */}
                     <div>
                       <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
-                        Email Address
+                        Your Email Address
                       </label>
                       <input
                         type="email"
@@ -122,7 +190,7 @@ export default function ContactPage() {
                     {/* Subject */}
                     <div>
                       <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
-                        Subject
+                        What&apos;s it about?
                       </label>
                       <select
                         name="subject"
@@ -131,7 +199,7 @@ export default function ContactPage() {
                         required
                         className={INPUT_CLS + " cursor-pointer"}
                       >
-                        <option value="">— Select a subject —</option>
+                        <option value="">— Select —</option>
                         {SUBJECTS.map((s) => (
                           <option key={s} value={s}>{s}</option>
                         ))}
@@ -148,7 +216,7 @@ export default function ContactPage() {
                         value={form.message}
                         onChange={handleChange}
                         rows={5}
-                        placeholder="Tell us how we can help..."
+                        placeholder="If it's a bug: what were you doing, and what went wrong? Screenshots help if you can send them by email."
                         required
                         className={INPUT_CLS + " resize-none leading-relaxed"}
                       />
@@ -158,61 +226,17 @@ export default function ContactPage() {
                       type="submit"
                       className="w-full py-3.5 bg-[#2D6BE4] hover:bg-[#4A82F0] text-white font-bold rounded-xl transition-all text-sm shadow-lg shadow-[#2D6BE4]/30 hover:shadow-[#00D4FF]/30 cursor-pointer"
                     >
-                      Send Message
+                      Send via Email
                     </button>
+                    <p className="text-center text-[11px] text-white/35">
+                      This opens your email app with the details filled in.
+                    </p>
                   </form>
                 )}
               </div>
             </div>
           </Reveal>
 
-          {/* ── CONTACT INFO CARDS ── */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-
-            <Reveal delay={100} className="h-full">
-              <div className="glass-card p-6 text-center h-full">
-                <div className="flex justify-center mb-3 text-[#00D4FF]">
-                  <IconEnvelope className="w-7 h-7" />
-                </div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-1">Email</p>
-                <a
-                  href="mailto:hello@nexistudy.co.za"
-                  className="text-sm font-semibold text-[#00D4FF] hover:text-white transition-colors break-all"
-                >
-                  hello@nexistudy.co.za
-                </a>
-              </div>
-            </Reveal>
-
-            <Reveal delay={200} className="h-full">
-              <div className="glass-card p-6 text-center h-full">
-                <div className="flex justify-center mb-3 text-emerald-300">
-                  <IconChatBubble className="w-7 h-7" />
-                </div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-1">WhatsApp</p>
-                <a
-                  href="https://wa.me/27600000000"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-semibold text-emerald-300 hover:text-white transition-colors"
-                >
-                  +27 60 000 0000
-                </a>
-              </div>
-            </Reveal>
-
-            <Reveal delay={300} className="h-full">
-              <div className="glass-card p-6 text-center h-full">
-                <div className="flex justify-center mb-3 text-amber-300">
-                  <IconClock className="w-7 h-7" />
-                </div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-1">Response Time</p>
-                <p className="text-sm font-semibold text-white">Within 24 hours</p>
-                <p className="text-[10px] text-white/40 mt-0.5">Mon – Fri, 8am – 6pm SAST</p>
-              </div>
-            </Reveal>
-
-          </div>
         </div>
       </section>
 

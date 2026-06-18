@@ -2,9 +2,9 @@ import { pageMeta } from "@/lib/seo";
 
 // Metadata wrapper for the client-component Contact page.
 export const metadata = pageMeta({
-  title: "Contact NexiStudy",
+  title: "Contact NexiStudy — Bugs & Feedback",
   description:
-    "Questions, feedback or partnership ideas? Get in touch with the NexiStudy team — we'd love to hear from learners, parents and teachers.",
+    "Found a bug or have feedback on NexiStudy? Reach the team by email or WhatsApp. (For schoolwork help, ask your AI tutor Nexi.)",
   path: "/contact",
 });
 
