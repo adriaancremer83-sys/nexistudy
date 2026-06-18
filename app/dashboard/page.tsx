@@ -8,7 +8,10 @@ import Reveal from "@/components/Reveal";
 import ProgressRing from "@/components/ProgressRing";
 import { IconAcademicCap, IconCpuChip, IconChartBar, IconStar, IconLock, IconTarget, IconDocumentText } from "@/components/icons";
 import { getWeakSpots } from "@/lib/practice";
+import { getSubscription } from "@/lib/users";
 import SubscribeButton from "@/components/SubscribeButton";
+
+export const dynamic = "force-dynamic";
 
 type ExtendedUser = NonNullable<Session["user"]>;
 
@@ -39,6 +42,12 @@ export default async function DashboardPage() {
   // First-time learners pick their language, grade, school & subjects before
   // landing on the dashboard.
   if (!user.onboarded) redirect("/onboarding");
+
+  // Read the LIVE plan from the DB — the session JWT can lag right after an
+  // upgrade (same source /account uses), so a learner who just paid doesn't get
+  // shown "Free Plan" until their token happens to refresh.
+  const { plan } = await getSubscription(user.id);
+
   const apsScore = user.apsScore ?? 0;
   const apsPct = Math.round((apsScore / 42) * 100);
   const status = apsStatus(apsScore);
@@ -46,7 +55,7 @@ export default async function DashboardPage() {
 
   const statCards = [
     { label: "APS Score", value: String(apsScore) },
-    { label: "Chats Today", value: user.plan === "premium" ? "Unlimited" : "5/5" },
+    { label: "Chats Today", value: plan === "premium" ? "Unlimited" : "5/5" },
     { label: "Study Streak", value: "🔥 1 day" },
   ];
 
@@ -84,15 +93,15 @@ export default async function DashboardPage() {
             <div className="flex flex-col items-start gap-3">
               <span
                 className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold border ${
-                  user.plan === "premium"
+                  plan === "premium"
                     ? "bg-[#2D6BE4]/20 text-[#00D4FF] border-[#00D4FF]/40"
                     : "glass text-white/70"
                 }`}
               >
-                {user.plan === "premium" && <IconStar className="w-4 h-4" />}
-                {user.plan === "premium" ? "Premium" : "Free Plan"}
+                {plan === "premium" && <IconStar className="w-4 h-4" />}
+                {plan === "premium" ? "Premium" : "Free Plan"}
               </span>
-              {user.plan === "free" && (
+              {plan === "free" && (
                 <SubscribeButton
                   callbackUrl="/dashboard"
                   className="px-4 py-2 text-sm font-bold text-white bg-[#2D6BE4] hover:bg-[#4A82F0] rounded-full transition-colors cursor-pointer disabled:opacity-70 disabled:cursor-wait"
@@ -143,8 +152,8 @@ export default async function DashboardPage() {
                 Plan
               </p>
               <p className="text-xl font-extrabold text-white flex items-center gap-2">
-                {user.plan === "premium" ? "Premium" : "Free"}
-                {user.plan === "free" && (
+                {plan === "premium" ? "Premium" : "Free"}
+                {plan === "free" && (
                   <span className="text-[#00D4FF] text-base group-hover:translate-x-0.5 transition-transform">
                     →
                   </span>
@@ -284,7 +293,7 @@ export default async function DashboardPage() {
         </div>
 
         {/* ── WEAK SPOTS (premium: real data) ── */}
-        {user.plan === "premium" && (
+        {plan === "premium" && (
           <Reveal delay={320}>
             <div className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] overflow-hidden">
               <div className="px-6 py-4 border-b border-white/10 bg-white/5 flex items-center gap-2.5 text-[#00D4FF]">
@@ -343,7 +352,7 @@ export default async function DashboardPage() {
         )}
 
         {/* ── WEAK SPOTS TEASE (free plan) ── */}
-        {user.plan === "free" && (
+        {plan === "free" && (
           <Reveal delay={320}>
             <div className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] overflow-hidden">
               <div className="px-6 py-4 border-b border-white/10 bg-white/5 flex items-center justify-between">
@@ -387,7 +396,7 @@ export default async function DashboardPage() {
         )}
 
         {/* ── FREE PLAN NUDGE ── */}
-        {user.plan === "free" && (
+        {plan === "free" && (
           <Reveal delay={400}>
             <div className="glass-strong rounded-2xl p-7 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 !border-[#00D4FF]/25">
               <div>

@@ -45,11 +45,6 @@ function LoginForm() {
     }
   }
 
-  function fillDemo() {
-    setForm({ email: "demo@nexistudy.co.za", password: "password123" });
-    setError("");
-  }
-
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
@@ -69,18 +64,9 @@ function LoginForm() {
       </div>
 
       <div>
-        <div className="flex items-center justify-between mb-1.5">
-          <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider">
-            Password
-          </label>
-          <button
-            type="button"
-            onClick={fillDemo}
-            className="text-[10px] font-semibold text-[#00D4FF] hover:text-white transition-colors cursor-pointer"
-          >
-            Use demo account
-          </button>
-        </div>
+        <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
+          Password
+        </label>
         <input
           type="password"
           name="password"
@@ -163,15 +149,6 @@ export default function LoginPage() {
           <Suspense fallback={<div className="h-40" />}>
             <LoginForm />
           </Suspense>
-
-          <div className="mt-5 p-4 bg-white/5 rounded-xl border border-white/10">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-1.5">Demo account</p>
-            <p className="text-xs text-white/50">
-              Email: <span className="font-mono text-white">demo@nexistudy.co.za</span>
-              <br />
-              Password: <span className="font-mono text-white">password123</span>
-            </p>
-          </div>
         </div>
       </div>
 
