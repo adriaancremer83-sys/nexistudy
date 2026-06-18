@@ -177,6 +177,9 @@ export default function HomePage() {
             <p className="mb-5 text-sm font-semibold tracking-wide text-white/60">
               Sawubona · Hallo · Molo · Welcome
             </p>
+            <div className="mb-5">
+              <ExamCountdown variant="inline" />
+            </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.12] mb-6 text-white">
               The study buddy
               <br className="hidden sm:block" /> who knows{" "}
@@ -469,9 +472,6 @@ export default function HomePage() {
             </span>
             .
           </h2>
-          <div className="mb-8">
-            <ExamCountdown variant="inline" />
-          </div>
           <p className="text-white/60 mb-10 text-lg leading-relaxed">
             Create a free account and start with your first subject today.
             No credit card needed — just bring your questions.

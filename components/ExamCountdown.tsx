@@ -2,20 +2,20 @@
 
 import { useEffect, useState } from "react";
 
-// Main NSC (Matric) final exams for the class of 2026 begin Monday 12 Oct 2026
-// (Week 1 — practicals + language papers), per the DBE Oct/Nov 2026 NSC
-// timetable (education.gov.za; mirrored on the Western Cape Govt site).
-// Update this single date when the 2027 timetable is published.
-const MATRIC_FINALS = new Date("2026-10-12T00:00:00+02:00");
+// 2026 Grade 12 CAPS preliminary exams ("prelims"). Prelims are set per
+// province/school, NOT nationally — this targets the Gauteng prelim start
+// (29 Aug 2026), since NexiStudy is CAPS/Gauteng-focused for now. Change this
+// single date to track another province or year.
+const PRELIMS = new Date("2026-08-29T00:00:00+02:00");
 
 function daysUntil(target: Date): number {
   const ms = target.getTime() - Date.now();
   return Math.max(0, Math.ceil(ms / 86_400_000));
 }
 
-// A small, self-contained "days to Matric Finals" widget.
+// A small, self-contained "days to Prelims" widget.
 //  - variant="card"   slim card for the dashboard
-//  - variant="inline" pill for inline use (e.g. the homepage CTA)
+//  - variant="inline" pill for inline use (e.g. the homepage hero)
 // Computes the day count on the client after mount so a statically-rendered
 // page never ships a stale number, and there's no hydration mismatch.
 export default function ExamCountdown({
@@ -27,7 +27,7 @@ export default function ExamCountdown({
 }) {
   const [days, setDays] = useState<number | null>(null);
   useEffect(() => {
-    setDays(daysUntil(MATRIC_FINALS));
+    setDays(daysUntil(PRELIMS));
   }, []);
 
   if (days === null) return null;
@@ -40,10 +40,10 @@ export default function ExamCountdown({
         className={`inline-flex items-center gap-2 rounded-full border border-[#FFB454]/30 bg-[#FFB454]/[0.08] px-4 py-1.5 text-sm font-semibold text-[#FFB454] ${className}`}
       >
         {here ? (
-          "Matric Finals are here — go get them 🍀"
+          "Prelims are here — go get them 🍀"
         ) : (
           <>
-            <span className="font-extrabold">{days}</span> days to Matric Finals
+            <span className="font-extrabold">{days}</span> days to Prelims
           </>
         )}
       </p>
@@ -56,15 +56,15 @@ export default function ExamCountdown({
     >
       {here ? (
         <p className="text-sm font-bold text-[#FFB454]">
-          Matric Finals are here — go get them 🍀
+          Prelims are here — go get them 🍀
         </p>
       ) : (
         <div className="flex items-baseline gap-2.5">
           <span className="text-3xl font-extrabold text-[#FFB454] leading-none">{days}</span>
-          <span className="text-sm font-semibold text-white/80">days to Matric Finals</span>
+          <span className="text-sm font-semibold text-white/80">days to Prelims</span>
         </div>
       )}
-      <span className="text-[11px] text-white/40 hidden sm:block">12 Oct 2026 · NSC exams</span>
+      <span className="text-[11px] text-white/40 hidden sm:block">29 Aug 2026 · Gauteng prelims</span>
     </div>
   );
 }
