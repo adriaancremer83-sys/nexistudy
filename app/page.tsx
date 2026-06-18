@@ -434,23 +434,23 @@ export default function HomePage() {
                   {/* connector: horizontal on desktop, vertical on mobile — sits behind the nodes */}
                   {!last && (
                     <>
-                      <span className="hidden sm:block absolute top-5 left-1/2 w-full h-px bg-[#FFB454]/25 z-0" />
-                      <span className="sm:hidden absolute left-5 top-11 -translate-x-1/2 h-[calc(100%-2.25rem)] w-px bg-[#FFB454]/25 z-0" />
+                      <span className="hidden sm:block absolute top-7 left-1/2 w-full h-0.5 bg-[#FFB454]/25 z-0" />
+                      <span className="sm:hidden absolute left-7 top-14 -translate-x-1/2 h-[calc(100%-2.75rem)] w-0.5 bg-[#FFB454]/25 z-0" />
                     </>
                   )}
 
                   {/* node */}
                   <div
-                    className={`relative z-10 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-extrabold border transition-colors ${
+                    className={`relative z-10 w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 text-lg font-extrabold border transition-colors ${
                       step.highlight
-                        ? "bg-[#FFB454] border-[#FFB454] text-[#050D1A] shadow-[0_0_20px_rgba(255,180,84,0.35)]"
+                        ? "bg-[#FFB454] border-[#FFB454] text-[#050D1A] shadow-[0_0_26px_rgba(255,180,84,0.4)]"
                         : step.done
                           ? "bg-[#0E1F3D] border-[#FFB454]/60 text-[#FFB454]"
                           : "bg-[#0E1F3D] border-white/15 text-white/60"
                     }`}
                   >
                     {step.done ? (
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     ) : (
@@ -459,15 +459,15 @@ export default function HomePage() {
                   </div>
 
                   {/* label + note */}
-                  <div className="sm:mt-4 sm:px-2">
+                  <div className="sm:mt-5 sm:px-2">
                     <p
-                      className={`text-sm font-bold leading-tight ${
+                      className={`text-base font-bold leading-tight ${
                         step.highlight ? "text-[#FFB454]" : "text-white"
                       }`}
                     >
                       {step.label}
                     </p>
-                    <p className="text-[11px] text-white/45 mt-1 leading-snug">{step.note}</p>
+                    <p className="text-xs text-white/45 mt-1.5 leading-snug">{step.note}</p>
                   </div>
                 </li>
               );
@@ -476,7 +476,7 @@ export default function HomePage() {
 
           {/* Honest, verifiable numbers — no invented social proof. Presented as
               confident highlight cards to carry the weight of the trust signal. */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 max-w-4xl">
             {[
               { value: "2,448", label: "Practice questions, every one blind-verified" },
               { value: "16", label: "Subjects, Grade 8 to matric" },
@@ -485,13 +485,13 @@ export default function HomePage() {
             ].map((s) => (
               <div
                 key={s.label}
-                className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-6 sm:p-7 transition-colors hover:border-[#FFB454]/40"
+                className="rounded-xl border border-white/[0.08] bg-[#0E1F3D] p-4 sm:p-5 transition-colors hover:border-[#FFB454]/40"
               >
-                <span className="block w-9 h-1 rounded-full bg-[#FFB454]/70 mb-4" />
-                <p className="text-4xl sm:text-5xl font-extrabold text-[#FFB454] mb-2.5 leading-none tracking-tight tabular-nums">
+                <span className="block w-7 h-0.5 rounded-full bg-[#FFB454]/70 mb-3" />
+                <p className="text-2xl sm:text-3xl font-extrabold text-[#FFB454] mb-1.5 leading-none tracking-tight tabular-nums">
                   {s.value}
                 </p>
-                <p className="text-sm text-white/55 leading-relaxed">{s.label}</p>
+                <p className="text-xs text-white/55 leading-relaxed">{s.label}</p>
               </div>
             ))}
           </div>
