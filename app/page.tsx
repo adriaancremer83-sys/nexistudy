@@ -415,50 +415,83 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* The real verification pipeline (from how the banks are actually built) */}
-          <div className="flex flex-wrap items-center gap-3 mb-16">
+          {/* The real verification pipeline (from how the banks are actually built),
+              shown as a connected timeline so the five steps read as one flow. */}
+          <ol className="relative flex flex-col sm:flex-row mb-20">
             {[
-              { label: "Drafted", note: "to CAPS & past papers" },
-              { label: "Linted", note: "one correct option, no dupes" },
-              { label: "Seeded", note: "loaded live" },
-              { label: "Blind-verified", note: "solved cold vs the memo", highlight: true },
+              { label: "Drafted", note: "from CAPS & past papers" },
+              { label: "Checked", note: "one correct option, no duplicates" },
+              { label: "Added to bank", note: "loaded into the live bank" },
+              { label: "Blind-verified", note: "solved cold against the memo", highlight: true },
               { label: "Live", note: "learners see it", done: true },
-            ].map((step, i, arr) => (
-              <div key={step.label} className="flex items-center gap-3">
-                <div
-                  className={`rounded-xl border px-4 py-3 ${
-                    step.highlight
-                      ? "border-[#00D4FF]/50 bg-[#00D4FF]/[0.06]"
-                      : step.done
-                        ? "border-emerald-400/40 bg-emerald-400/[0.05]"
-                        : "border-white/[0.08] bg-[#0E1F3D]"
-                  }`}
+            ].map((step, i, arr) => {
+              const last = i === arr.length - 1;
+              return (
+                <li
+                  key={step.label}
+                  className="relative flex sm:flex-1 sm:flex-col items-start sm:items-center text-left sm:text-center gap-4 sm:gap-0 pb-9 sm:pb-0 last:pb-0"
                 >
-                  <p
-                    className={`text-sm font-bold leading-tight ${
-                      step.highlight ? "text-[#00D4FF]" : step.done ? "text-emerald-300" : "text-white"
+                  {/* connector: horizontal on desktop, vertical on mobile — sits behind the nodes */}
+                  {!last && (
+                    <>
+                      <span className="hidden sm:block absolute top-5 left-1/2 w-full h-px bg-[#FFB454]/25 z-0" />
+                      <span className="sm:hidden absolute left-5 top-11 -translate-x-1/2 h-[calc(100%-2.25rem)] w-px bg-[#FFB454]/25 z-0" />
+                    </>
+                  )}
+
+                  {/* node */}
+                  <div
+                    className={`relative z-10 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-extrabold border transition-colors ${
+                      step.highlight
+                        ? "bg-[#FFB454] border-[#FFB454] text-[#050D1A] shadow-[0_0_20px_rgba(255,180,84,0.35)]"
+                        : step.done
+                          ? "bg-[#0E1F3D] border-[#FFB454]/60 text-[#FFB454]"
+                          : "bg-[#0E1F3D] border-white/15 text-white/60"
                     }`}
                   >
-                    {step.label}
-                  </p>
-                  <p className="text-[11px] text-white/45 mt-0.5">{step.note}</p>
-                </div>
-                {i < arr.length - 1 && <span className="text-white/25 text-lg leading-none">→</span>}
-              </div>
-            ))}
-          </div>
+                    {step.done ? (
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                      </svg>
+                    ) : (
+                      i + 1
+                    )}
+                  </div>
 
-          {/* Honest, verifiable numbers — no invented social proof */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
+                  {/* label + note */}
+                  <div className="sm:mt-4 sm:px-2">
+                    <p
+                      className={`text-sm font-bold leading-tight ${
+                        step.highlight ? "text-[#FFB454]" : "text-white"
+                      }`}
+                    >
+                      {step.label}
+                    </p>
+                    <p className="text-[11px] text-white/45 mt-1 leading-snug">{step.note}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ol>
+
+          {/* Honest, verifiable numbers — no invented social proof. Presented as
+              confident highlight cards to carry the weight of the trust signal. */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
             {[
               { value: "2,448", label: "Practice questions, every one blind-verified" },
               { value: "16", label: "Subjects, Grade 8 to matric" },
               { value: "CAPS", label: "Curriculum live now — IEB & Cambridge coming soon" },
               { value: "11", label: "Official SA languages (full set on Premium)" },
             ].map((s) => (
-              <div key={s.label}>
-                <p className="text-3xl sm:text-4xl font-extrabold text-white mb-2">{s.value}</p>
-                <p className="text-sm text-white/50 leading-relaxed">{s.label}</p>
+              <div
+                key={s.label}
+                className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-6 sm:p-7 transition-colors hover:border-[#FFB454]/40"
+              >
+                <span className="block w-9 h-1 rounded-full bg-[#FFB454]/70 mb-4" />
+                <p className="text-4xl sm:text-5xl font-extrabold text-[#FFB454] mb-2.5 leading-none tracking-tight tabular-nums">
+                  {s.value}
+                </p>
+                <p className="text-sm text-white/55 leading-relaxed">{s.label}</p>
               </div>
             ))}
           </div>
