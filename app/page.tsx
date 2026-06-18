@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Nexi from "@/components/Nexi";
 import ExamCountdown from "@/components/ExamCountdown";
 import {
   IconTarget,
@@ -217,14 +216,21 @@ export default function HomePage() {
               style={{ background: "radial-gradient(ellipse closest-side, rgba(0, 212, 255, 0.28), transparent)" }}
             />
             <div className="animate-float relative">
-              <Nexi
-                pose="wave"
-                alt="Nexi, the NexiStudy mascot, waving hello"
-                width={400}
-                height={400}
+              {/* Transparent VP9-alpha WebM (Chrome/Edge/Firefox). Safari lacks
+                  VP9-alpha support, so it falls back to the still wave poster.
+                  No MP4 source on purpose — the H.264 export has no alpha and
+                  would show a black box. */}
+              <video
+                poster="/images/nexi-wave.webp"
+                autoPlay
+                loop
+                muted
+                playsInline
+                aria-label="Nexi, the NexiStudy meerkat mascot, running around"
                 className="w-48 sm:w-60 h-auto md:w-auto md:h-[400px] object-contain"
-                priority
-              />
+              >
+                <source src="/video/nexi_hero_new.webm" type="video/webm" />
+              </video>
             </div>
 
             {/* Frosted stat cards */}
