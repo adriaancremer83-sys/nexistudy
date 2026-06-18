@@ -17,7 +17,7 @@ import dns from "dns/promises";
 //   NEXT_PUBLIC_SITE_URL  public base url for return/cancel/notify callbacks
 // ─────────────────────────────────────────────────────────────────────────────
 
-export const PREMIUM_AMOUNT = "199.00";
+export const PREMIUM_AMOUNT = "5.00"; // TEMP: R5 for live PayFast test — REVERT to "199.00"
 export const PREMIUM_ITEM_NAME = "NexiStudy Premium — Monthly";
 
 export function isSandbox(): boolean {
