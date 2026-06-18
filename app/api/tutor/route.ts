@@ -5,6 +5,7 @@ import { authOptions } from "@/lib/auth";
 import { consume, getRemaining, dailyLimit } from "@/lib/tutorUsage";
 import { languageAllowed } from "@/lib/languages";
 import { logApiUsage } from "@/lib/apiUsage";
+import { getSubscription } from "@/lib/users";
 
 // Cost controls live here:
 //  - model per plan (Haiku free / Sonnet premium)
@@ -58,7 +59,9 @@ export async function GET() {
   if (!session?.user?.id) {
     return NextResponse.json({ error: "Not signed in." }, { status: 401 });
   }
-  const plan = session.user.plan;
+  // Live plan from the DB, not the session JWT — a just-upgraded learner must
+  // get premium (Sonnet, unlimited chats, all languages) immediately.
+  const { plan } = await getSubscription(session.user.id);
   const remaining = await getRemaining(session.user.id, plan);
   return NextResponse.json({ remaining, limit: dailyLimit(plan), plan });
 }
@@ -68,7 +71,9 @@ export async function POST(req: NextRequest) {
   if (!session?.user?.id) {
     return NextResponse.json({ error: "Please sign in to chat with Nexi." }, { status: 401 });
   }
-  const plan = session.user.plan;
+  // Live plan from the DB, not the session JWT — a just-upgraded learner must
+  // get premium (Sonnet, unlimited chats, all languages) immediately.
+  const { plan } = await getSubscription(session.user.id);
 
   const body = await req.json();
   const incoming: IncomingMsg[] = Array.isArray(body?.messages) ? body.messages : [];

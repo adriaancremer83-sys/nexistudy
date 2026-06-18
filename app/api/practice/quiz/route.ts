@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { countQuizzesToday, getQuizQuestions, FREE_QUIZZES_PER_DAY } from "@/lib/practice";
+import { getSubscription } from "@/lib/users";
 
 export async function GET(req: NextRequest) {
   const session = await getServerSession(authOptions);
@@ -14,7 +15,10 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Missing topic." }, { status: 400 });
   }
 
-  if (session.user.plan === "free") {
+  // Live plan from the DB, not the session JWT, so a just-upgraded learner
+  // isn't still capped at the free quiz limit.
+  const { plan } = await getSubscription(session.user.id);
+  if (plan === "free") {
     const used = await countQuizzesToday(session.user.id);
     if (used >= FREE_QUIZZES_PER_DAY) {
       return NextResponse.json(

@@ -4,7 +4,10 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import type { Session } from "next-auth";
 import { getTopicsWithMastery, countQuizzesToday, FREE_QUIZZES_PER_DAY } from "@/lib/practice";
+import { getSubscription } from "@/lib/users";
 import PracticeClient from "@/components/PracticeClient";
+
+export const dynamic = "force-dynamic";
 
 type ExtendedUser = NonNullable<Session["user"]>;
 
@@ -20,9 +23,12 @@ export default async function PracticePage() {
   // "coming soon" state below.
   const topics = await getTopicsWithMastery(user.id, user.grade);
 
-  const used = user.plan === "free" ? await countQuizzesToday(user.id) : 0;
+  // Live plan from the DB, not the session JWT, so a just-upgraded learner sees
+  // unlimited quizzes immediately (matches /account and the practice API gates).
+  const { plan } = await getSubscription(user.id);
+  const used = plan === "free" ? await countQuizzesToday(user.id) : 0;
   const quizzesLeft =
-    user.plan === "premium" ? null : Math.max(0, FREE_QUIZZES_PER_DAY - used);
+    plan === "premium" ? null : Math.max(0, FREE_QUIZZES_PER_DAY - used);
 
   return (
     <div className="min-h-screen">
@@ -70,7 +76,7 @@ export default async function PracticePage() {
         ) : (
           <PracticeClient
             topics={topics}
-            plan={user.plan}
+            plan={plan}
             quizzesLeft={quizzesLeft}
           />
         )}

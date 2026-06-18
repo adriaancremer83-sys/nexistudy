@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { countQuizzesToday, submitQuiz, FREE_QUIZZES_PER_DAY } from "@/lib/practice";
+import { getSubscription } from "@/lib/users";
 
 export async function POST(req: NextRequest) {
   const session = await getServerSession(authOptions);
@@ -16,7 +17,9 @@ export async function POST(req: NextRequest) {
 
   // The fetch already checked the limit; allow one extra so an in-progress
   // quiz can still be handed in, but block anything beyond that.
-  if (session.user.plan === "free") {
+  // Live plan from the DB, not the session JWT (matches the quiz fetch gate).
+  const { plan } = await getSubscription(session.user.id);
+  if (plan === "free") {
     const used = await countQuizzesToday(session.user.id);
     if (used > FREE_QUIZZES_PER_DAY) {
       return NextResponse.json(
