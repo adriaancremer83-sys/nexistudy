@@ -75,6 +75,19 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-2">
             {!loading && session ? (
               <>
+                {/* Who's signed in */}
+                <Link
+                  href="/account"
+                  className="hidden lg:flex flex-col items-end leading-tight mr-2 group"
+                  title="Account"
+                >
+                  <span className="text-sm font-semibold text-white truncate max-w-[180px] group-hover:text-[#00D4FF] transition-colors">
+                    {session.user?.name}
+                  </span>
+                  <span className="text-xs text-white/45 truncate max-w-[180px]">
+                    {session.user?.email}
+                  </span>
+                </Link>
                 <Link
                   href="/dashboard"
                   className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
@@ -158,6 +171,12 @@ export default function Navbar() {
             <hr className="border-white/10 my-2" />
             {session ? (
               <>
+                {/* Who's signed in */}
+                <div className="px-3 py-2">
+                  <p className="text-sm font-semibold text-white truncate">{session.user?.name}</p>
+                  <p className="text-xs text-white/45 truncate">{session.user?.email}</p>
+                </div>
+                <hr className="border-white/10 my-1" />
                 <Link href="/dashboard" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-white/70 hover:text-white">Dashboard</Link>
                 <Link href="/account" onClick={() => setMenuOpen(false)} className="px-3 py-2 text-sm text-white/70 hover:text-white">Account</Link>
                 <button onClick={() => signOut({ callbackUrl: "/" })} className="px-3 py-2 text-sm text-left text-white/70 hover:text-white cursor-pointer">Log Out</button>
