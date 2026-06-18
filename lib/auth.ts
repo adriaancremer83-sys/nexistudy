@@ -1,9 +1,24 @@
 import type { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import { findUser, findUserById, verifyPassword } from "./users";
+import GoogleProvider from "next-auth/providers/google";
+import { cookies } from "next/headers";
+import { findUser, findUserById, findOrCreateOAuthUser, verifyPassword } from "./users";
+
+// Only mount Google SSO once OAuth credentials are configured, so the app still
+// runs (with password login) before they're set up. Set GOOGLE_CLIENT_ID and
+// GOOGLE_CLIENT_SECRET in the environment to enable it.
+const googleConfigured = !!(process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET);
 
 export const authOptions: NextAuthOptions = {
   providers: [
+    ...(googleConfigured
+      ? [
+          GoogleProvider({
+            clientId: process.env.GOOGLE_CLIENT_ID!,
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
+          }),
+        ]
+      : []),
     CredentialsProvider({
       name: "credentials",
       credentials: {
@@ -38,8 +53,53 @@ export const authOptions: NextAuthOptions = {
   ],
   session: { strategy: "jwt" },
   callbacks: {
-    async jwt({ token, user, trigger, session }) {
-      if (user) {
+    // For Google sign-ins, link/create the account in our users table here so a
+    // DB row always exists by the time the jwt callback runs. The intended role
+    // (teacher vs learner) is carried in a short-lived cookie set by the button
+    // that started the flow; default to learner if it's missing.
+    async signIn({ user, account, profile }) {
+      if (account?.provider !== "google") return true;
+
+      const email = user.email ?? (profile as { email?: string } | null)?.email;
+      if (!email) return false;
+
+      let role: "learner" | "teacher" = "learner";
+      try {
+        const jar = await cookies();
+        if (jar.get("nexi_oauth_role")?.value === "teacher") role = "teacher";
+      } catch {
+        /* no cookie context — fall back to learner */
+      }
+
+      const dbUser = await findOrCreateOAuthUser({
+        email,
+        name: user.name ?? (profile as { name?: string } | null)?.name ?? "",
+        role,
+      });
+      return !!dbUser;
+    },
+    async jwt({ token, user, account, trigger, session }) {
+      // Google sign-in: the `user`/`profile` here is the Google identity, not our
+      // record, so load the linked DB user and — critically — set token.sub to
+      // OUR user id, since the whole app reads session.user.id from token.sub.
+      if (account?.provider === "google") {
+        const email = token.email ?? user?.email;
+        if (email) {
+          const dbUser = await findUser(email);
+          if (dbUser) {
+            token.sub = dbUser.id;
+            token.plan = dbUser.plan;
+            token.apsScore = dbUser.apsScore;
+            token.grade = dbUser.grade;
+            token.curriculum = dbUser.curriculum;
+            token.role = dbUser.role;
+            token.school = dbUser.school;
+            token.language = dbUser.language;
+            token.subjects = dbUser.subjects;
+            token.onboarded = dbUser.onboarded;
+          }
+        }
+      } else if (user) {
         token.plan = user.plan;
         token.apsScore = user.apsScore;
         token.grade = user.grade;

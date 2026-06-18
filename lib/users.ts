@@ -1,4 +1,5 @@
 import bcrypt from "bcryptjs";
+import { randomBytes } from "crypto";
 import { supabaseAdmin } from "./supabase";
 
 export interface AppUser {
@@ -123,6 +124,33 @@ export async function createUser(
 
 export function verifyPassword(plain: string, hash: string): boolean {
   return bcrypt.compareSync(plain, hash);
+}
+
+// Google sign-in: link by email into the same users table (no next-auth adapter).
+// Returns the existing account if the email is already known — we never change a
+// known user's role — otherwise creates one. OAuth accounts have no password, so
+// we store an unguessable random hash to satisfy the NOT NULL column and ensure
+// the credentials path can never match.
+export async function findOrCreateOAuthUser(params: {
+  email: string;
+  name: string;
+  role: "learner" | "teacher";
+}): Promise<AppUser | null> {
+  const existing = await findUser(params.email);
+  if (existing) return existing;
+
+  const randomHash = bcrypt.hashSync(randomBytes(32).toString("hex"), 10);
+  return createUser({
+    name: params.name.trim() || params.email.split("@")[0],
+    email: params.email,
+    password: randomHash,
+    plan: "free",
+    apsScore: 0,
+    grade: "",
+    curriculum: "CAPS",
+    role: params.role,
+    school: "",
+  });
 }
 
 export async function findUserById(userId: string): Promise<AppUser | null> {

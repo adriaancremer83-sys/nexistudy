@@ -2,14 +2,17 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import Link from "next/link";
+import { Suspense } from "react";
 import Nexi from "@/components/Nexi";
 import type { Session } from "next-auth";
 import Reveal from "@/components/Reveal";
 import ProgressRing from "@/components/ProgressRing";
 import { IconAcademicCap, IconCpuChip, IconChartBar, IconStar, IconLock, IconTarget, IconDocumentText } from "@/components/icons";
 import { getWeakSpots } from "@/lib/practice";
+import { getLearnerClasses } from "@/lib/classes";
 import { getSubscription } from "@/lib/users";
 import SubscribeButton from "@/components/SubscribeButton";
+import JoinClassCard from "@/components/JoinClassCard";
 import ExamCountdown from "@/components/ExamCountdown";
 
 export const dynamic = "force-dynamic";
@@ -63,6 +66,7 @@ export default async function DashboardPage() {
   // Real weak spots from quiz history; falls back to example topics for the
   // free-plan blurred preview when the learner hasn't practised yet.
   const weakSpots = await getWeakSpots(user.id);
+  const learnerClasses = await getLearnerClasses(user.id);
   const weakSpotPreview =
     weakSpots.length > 0
       ? weakSpots.map((w) => w.name)
@@ -295,6 +299,13 @@ export default async function DashboardPage() {
           </Reveal>
 
         </div>
+
+        {/* ── JOIN A CLASS ── */}
+        <Reveal delay={300}>
+          <Suspense fallback={null}>
+            <JoinClassCard initialClasses={learnerClasses} />
+          </Suspense>
+        </Reveal>
 
         {/* ── WEAK SPOTS (premium: real data) ── */}
         {plan === "premium" && (

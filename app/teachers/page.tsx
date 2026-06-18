@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { IconChartBar, IconUsers, IconTarget, IconWarning, IconCheck } from "@/components/icons";
+import WhatsAppHelp from "@/components/WhatsAppHelp";
+import GoogleSignInButton, { AuthDivider } from "@/components/GoogleSignInButton";
 
 const INPUT_CLS =
   "w-full px-4 py-3 bg-white/5 border border-white/15 rounded-xl text-sm text-white placeholder:text-white/25 focus:outline-none focus:ring-2 focus:ring-[#FFB454]/40 focus:border-[#FFB454] transition-colors";
@@ -140,6 +142,13 @@ export default function TeachersPage() {
               </p>
             </div>
 
+            <GoogleSignInButton
+              role="teacher"
+              callbackUrl="/teachers/dashboard"
+              label={mode === "signup" ? "Sign up with Google" : "Sign in with Google"}
+            />
+            <AuthDivider />
+
             <form onSubmit={handleSubmit} className="space-y-4">
               {mode === "signup" && (
                 <>
@@ -237,8 +246,134 @@ export default function TeachersPage() {
         </div>
       </section>
 
-      {/* ── LEARNER REDIRECT NOTE ── */}
-      <section className="py-12 px-4 text-center">
+      {/* ── HOW IT WORKS ── */}
+      <section className="py-16 px-4 border-t border-white/[0.06]">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-sm font-bold uppercase tracking-widest text-[#FFB454] mb-3">
+              Up and running in minutes
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
+              How it works
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {[
+              {
+                n: "1",
+                icon: IconUsers,
+                t: "Create a class",
+                d: "Pick the subject and grade. You get a short join code — no setup, no admin.",
+              },
+              {
+                n: "2",
+                icon: IconCheck,
+                t: "Share the code",
+                d: "Post it to Google Classroom in one click, or read it out in class. Learners join in seconds.",
+              },
+              {
+                n: "3",
+                icon: IconChartBar,
+                t: "See the heatmap",
+                d: "As your class practises on NexiStudy, the weak-spots heatmap fills with what they're really stuck on.",
+              },
+            ].map((s) => (
+              <div
+                key={s.n}
+                className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-7 text-center"
+              >
+                <div className="w-12 h-12 rounded-xl bg-[#FFB454]/15 border border-[#FFB454]/25 text-[#FFB454] flex items-center justify-center mx-auto mb-4">
+                  <s.icon className="w-6 h-6" />
+                </div>
+                <div className="text-[#FFB454] font-extrabold text-sm mb-1">Step {s.n}</div>
+                <h3 className="text-white font-bold text-lg mb-2">{s.t}</h3>
+                <p className="text-white/50 text-sm leading-relaxed">{s.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── SAMPLE HEATMAP ── */}
+      <section className="py-16 px-4 border-t border-white/[0.06]">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-widest text-[#FFB454] mb-3">
+              The picture you&apos;ve never had
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-5 leading-tight">
+              See exactly what your class is stuck on
+            </h2>
+            <p className="text-white/60 text-base leading-relaxed mb-6">
+              No more guessing which topics to re-teach. NexiStudy turns your learners&apos;
+              practice into one clear view — weakest topics first — so Monday&apos;s lesson
+              hits the real gaps, not the ones you assume.
+            </p>
+            <ul className="space-y-3">
+              {[
+                "Built from real questions your learners answer",
+                "Updates automatically as they practise",
+                "One heatmap per class — Grade 10, 11 & 12",
+              ].map((f) => (
+                <li key={f} className="flex items-start gap-3 text-sm text-white/70">
+                  <IconCheck className="w-4 h-4 text-[#FFB454] flex-shrink-0 mt-0.5" />
+                  {f}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Illustrative heatmap — real component lives on the teacher dashboard */}
+          <div className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] overflow-hidden">
+            <div className="px-6 py-4 border-b border-white/10 bg-white/[0.03] flex items-center justify-between">
+              <div className="flex items-center gap-2.5 text-[#FFB454]">
+                <IconChartBar className="w-4 h-4" />
+                <h3 className="text-xs font-semibold text-white uppercase tracking-widest">
+                  12A Mathematics
+                </h3>
+              </div>
+              <span className="text-[10px] font-semibold uppercase tracking-widest text-white/30">
+                Example
+              </span>
+            </div>
+            <ul className="p-6 space-y-3.5">
+              {[
+                { topic: "Trigonometry", mastery: 38, color: "bg-red-400" },
+                { topic: "Euclidean Geometry", mastery: 46, color: "bg-red-400" },
+                { topic: "Calculus", mastery: 58, color: "bg-amber-300" },
+                { topic: "Functions & Graphs", mastery: 67, color: "bg-amber-300" },
+                { topic: "Algebra & Equations", mastery: 81, color: "bg-emerald-400" },
+                { topic: "Statistics", mastery: 88, color: "bg-emerald-400" },
+              ].map((row) => (
+                <li key={row.topic} className="flex items-center gap-4">
+                  <span className="w-36 sm:w-44 text-sm text-white/70 truncate flex-shrink-0">
+                    {row.topic}
+                  </span>
+                  <div className="flex-1 h-2.5 bg-white/10 rounded-full overflow-hidden">
+                    <div
+                      className={`h-full rounded-full ${row.color}`}
+                      style={{ width: `${row.mastery}%` }}
+                    />
+                  </div>
+                  <span className="w-10 text-right text-sm font-bold text-white flex-shrink-0">
+                    {row.mastery}%
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <div className="flex items-center gap-4 px-6 pb-5 text-[10px] text-white/40">
+              <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-red-400" /> Needs work</span>
+              <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-amber-300" /> Getting there</span>
+              <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-emerald-400" /> Strong</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── LEARNER REDIRECT + WHATSAPP ── */}
+      <section className="py-12 px-4 text-center space-y-4">
+        <WhatsAppHelp variant="inline" />
         <p className="text-white/40 text-sm">
           Looking for the learner experience?{" "}
           <Link href="/signup" className="text-[#00D4FF] font-semibold hover:text-white transition-colors">

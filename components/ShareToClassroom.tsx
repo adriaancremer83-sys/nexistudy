@@ -1,10 +1,20 @@
 "use client";
 
-// Opens Google Classroom's native share dialog for the current site.
-// Built client-side because the share URL needs the deployed origin.
-export default function ShareToClassroom() {
+// Opens Google Classroom's native share dialog. By default it shares the site
+// homepage; pass `path` (e.g. "/dashboard?join=ABC123") to deep-link learners
+// straight to a class-join link instead.
+export default function ShareToClassroom({
+  path = "",
+  label = "Share to Google Classroom →",
+  className = "px-5 py-2.5 bg-[#FFB454] hover:bg-[#FFC678] text-[#050D1A] text-sm font-extrabold rounded-xl transition-colors cursor-pointer whitespace-nowrap",
+}: {
+  path?: string;
+  label?: string;
+  className?: string;
+}) {
   function handleShare() {
-    const url = encodeURIComponent(window.location.origin);
+    const target = `${window.location.origin}${path}`;
+    const url = encodeURIComponent(target);
     window.open(
       `https://classroom.google.com/share?url=${url}`,
       "_blank",
@@ -13,11 +23,8 @@ export default function ShareToClassroom() {
   }
 
   return (
-    <button
-      onClick={handleShare}
-      className="px-5 py-2.5 bg-[#FFB454] hover:bg-[#FFC678] text-[#050D1A] text-sm font-extrabold rounded-xl transition-colors cursor-pointer"
-    >
-      Share to Google Classroom →
+    <button onClick={handleShare} className={className}>
+      {label}
     </button>
   );
 }

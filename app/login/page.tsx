@@ -7,6 +7,7 @@ import { signIn } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { IconWarning } from "@/components/icons";
+import GoogleSignInButton, { AuthDivider } from "@/components/GoogleSignInButton";
 
 const INPUT_CLS =
   "w-full px-4 py-3 bg-white/5 border border-white/15 rounded-xl text-sm text-white placeholder:text-white/25 focus:outline-none focus:ring-2 focus:ring-[#00D4FF]/40 focus:border-[#00D4FF] transition-colors";
@@ -145,6 +146,9 @@ export default function LoginPage() {
               </Link>
             </p>
           </div>
+
+          <GoogleSignInButton role="learner" callbackUrl="/dashboard" label="Sign in with Google" />
+          <AuthDivider />
 
           <Suspense fallback={<div className="h-40" />}>
             <LoginForm />
