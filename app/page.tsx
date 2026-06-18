@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Nexi from "@/components/Nexi";
+import ExamCountdown from "@/components/ExamCountdown";
 import {
   IconTarget,
   IconAcademicCap,
@@ -468,6 +469,9 @@ export default function HomePage() {
             </span>
             .
           </h2>
+          <div className="mb-8">
+            <ExamCountdown variant="inline" />
+          </div>
           <p className="text-white/60 mb-10 text-lg leading-relaxed">
             Create a free account and start with your first subject today.
             No credit card needed — just bring your questions.

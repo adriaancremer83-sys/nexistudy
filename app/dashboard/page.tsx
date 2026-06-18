@@ -10,6 +10,7 @@ import { IconAcademicCap, IconCpuChip, IconChartBar, IconStar, IconLock, IconTar
 import { getWeakSpots } from "@/lib/practice";
 import { getSubscription } from "@/lib/users";
 import SubscribeButton from "@/components/SubscribeButton";
+import ExamCountdown from "@/components/ExamCountdown";
 
 export const dynamic = "force-dynamic";
 
@@ -129,6 +130,9 @@ export default async function DashboardPage() {
 
       {/* ── DASHBOARD CONTENT ── */}
       <div className="max-w-5xl mx-auto px-4 py-10 space-y-6">
+
+        {/* ── EXAM COUNTDOWN ── */}
+        <ExamCountdown />
 
         {/* ── STATS ROW ── */}
         <Reveal>

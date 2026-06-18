@@ -280,6 +280,8 @@ const FREE_CHAT_LIMIT = 5;
 interface Message {
   role: "nexi" | "student";
   text: string;
+  detailed?: boolean; // an escalated, more-detailed (Sonnet) explanation
+  feedback?: "yes" | "no"; // the learner's "did this make sense?" answer
 }
 
 interface Profile {
@@ -337,6 +339,7 @@ export default function NexiTutorPage() {
   const [chatsLeft, setChatsLeft] = useState(FREE_CHAT_LIMIT);
   const [chatLimit, setChatLimit] = useState(FREE_CHAT_LIMIT);
   const [sending, setSending] = useState(false);
+  const [escalating, setEscalating] = useState(false);
   const [showJump, setShowJump] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -415,13 +418,88 @@ export default function NexiTutorPage() {
   function setLastNexi(text: string) {
     setMessages((prev) => {
       const next = [...prev];
+      // Preserve flags (e.g. `detailed`) while streaming text into the bubble.
+      next[next.length - 1] = { ...next[next.length - 1], role: "nexi", text };
+      return next;
+    });
+  }
+
+  // Overwrite the last bubble with a plain Nexi message (drops `detailed`, so an
+  // error during escalation doesn't render the "more detailed" label/upsell).
+  function replaceLastWithPlain(text: string) {
+    setMessages((prev) => {
+      const next = [...prev];
       next[next.length - 1] = { role: "nexi", text };
       return next;
     });
   }
 
+  // "Did this make sense?" → Yes records it; No escalates the same question to
+  // the smarter model and streams a fresh, more-detailed explanation below.
+  async function handleFeedback(index: number, helpful: boolean) {
+    setMessages((prev) =>
+      prev.map((m, i) => (i === index ? { ...m, feedback: helpful ? "yes" : "no" } : m))
+    );
+    if (helpful || escalating) return;
+
+    // Re-answer the question this message responded to: take the conversation up
+    // to (and including) the student question, dropping this answer itself.
+    const context = messages.slice(0, index).map((m) => ({ role: m.role, text: m.text }));
+    if (!context.some((m) => m.role === "student")) return;
+
+    setEscalating(true);
+    setMessages((prev) => [...prev, { role: "nexi", text: "", detailed: true }]);
+    try {
+      const res = await fetch("/api/tutor", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          messages: context,
+          curriculum,
+          grade,
+          subject,
+          topic,
+          language,
+          escalate: true,
+        }),
+      });
+
+      if (res.status === 429) {
+        setChatsLeft(0);
+        replaceLastWithPlain(
+          "You've used your tutor messages for today. Premium gives you more — and answers like this by default."
+        );
+        return;
+      }
+      if (!res.ok || !res.body) {
+        const data = await res.json().catch(() => null);
+        replaceLastWithPlain(
+          data?.error ?? "Sorry — couldn't load a more detailed explanation. Please try again."
+        );
+        return;
+      }
+
+      const remaining = res.headers.get("X-Chats-Remaining");
+      if (remaining !== null) setChatsLeft(Number(remaining));
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let acc = "";
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        acc += decoder.decode(value, { stream: true });
+        setLastNexi(acc);
+      }
+    } catch {
+      replaceLastWithPlain("Connection problem — please try again.");
+    } finally {
+      setEscalating(false);
+    }
+  }
+
   async function handleSend() {
-    if (!input.trim() || sending || !authed || chatsLeft <= 0) return;
+    if (!input.trim() || sending || escalating || !authed || chatsLeft <= 0) return;
     const text = input.trim();
     const studentMsg: Message = { role: "student", text };
     const history = [...messages, studentMsg];
@@ -748,9 +826,16 @@ export default function NexiTutorPage() {
               onScroll={() => { if (isNearBottom()) setShowJump(false); }}
               className="h-96 overflow-y-auto p-5 space-y-5 bg-[#0A1628]/40"
             >
-              {messages.map((msg, i) => (
+              {messages.map((msg, i) => {
+                const isLast = i === messages.length - 1;
+                const streaming = isLast && (sending || escalating);
+                // Show the "did this make sense?" prompt under every answered,
+                // non-welcome Nexi message that isn't itself an escalation.
+                const showFeedback =
+                  msg.role === "nexi" && i > 0 && !msg.detailed && msg.text !== "" && !streaming;
+                return (
+                <div key={i}>
                 <div
-                  key={i}
                   className={`animate-msg-in flex items-end gap-3 ${msg.role === "student" ? "flex-row-reverse" : "flex-row"}`}
                 >
                   {/* Avatar */}
@@ -776,11 +861,16 @@ export default function NexiTutorPage() {
                       msg.role === "nexi"
                         ? "glass text-white rounded-bl-sm"
                         : "bg-gradient-to-br from-[#2D6BE4] to-[#1E4FB8] text-white rounded-br-sm shadow-lg shadow-[#2D6BE4]/25"
-                    }`}
+                    } ${msg.detailed ? "ring-1 ring-[#FFB454]/40" : ""}`}
                   >
                     {msg.role === "nexi" ? (
                       msg.text ? (
                         <div className="nexi-md">
+                          {msg.detailed && (
+                            <p className="text-[10px] font-bold uppercase tracking-widest text-[#FFB454] mb-2">
+                              ✨ More detailed explanation
+                            </p>
+                          )}
                           <ReactMarkdown>{msg.text}</ReactMarkdown>
                         </div>
                       ) : (
@@ -791,7 +881,55 @@ export default function NexiTutorPage() {
                     )}
                   </div>
                 </div>
-              ))}
+
+                {/* "Did this make sense?" — No escalates to the smarter model */}
+                {showFeedback && (
+                  <div className="pl-12 mt-1.5">
+                    {!msg.feedback ? (
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="text-[11px] text-white/40">Did this make sense?</span>
+                        <button
+                          onClick={() => handleFeedback(i, true)}
+                          className="text-[11px] font-semibold text-white/60 hover:text-white border border-white/15 hover:border-white/30 rounded-full px-2.5 py-0.5 transition-colors cursor-pointer"
+                        >
+                          Yes
+                        </button>
+                        <button
+                          onClick={() => handleFeedback(i, false)}
+                          disabled={escalating}
+                          className="text-[11px] font-semibold text-[#00D4FF] hover:text-white border border-[#00D4FF]/30 hover:border-[#00D4FF] rounded-full px-2.5 py-0.5 transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-wait"
+                        >
+                          No, explain more
+                        </button>
+                      </div>
+                    ) : msg.feedback === "yes" ? (
+                      <span className="text-[11px] text-white/30">Glad it helped 💙</span>
+                    ) : (
+                      <span className="text-[11px] text-white/40">
+                        Got Nexi to break it down further below ↓
+                      </span>
+                    )}
+                  </div>
+                )}
+
+                {/* Free-tier upsell under an escalated explanation */}
+                {msg.detailed && !streaming && msg.text !== "" && plan === "free" && (
+                  <div className="pl-12 mt-2">
+                    <p className="text-[11px] text-white/45 leading-relaxed">
+                      ✨ That was Nexi&apos;s smarter Premium model.{" "}
+                      <Link
+                        href="/pricing"
+                        className="text-[#00D4FF] hover:text-white transition-colors font-semibold"
+                      >
+                        Upgrade
+                      </Link>{" "}
+                      to get this depth on every answer.
+                    </p>
+                  </div>
+                )}
+                </div>
+                );
+              })}
             </div>
             {showJump && (
               <button

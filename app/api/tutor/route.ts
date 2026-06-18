@@ -76,6 +76,10 @@ export async function POST(req: NextRequest) {
   const { plan } = await getSubscription(session.user.id);
 
   const body = await req.json();
+  // Escalation: the learner tapped "No — didn't make sense" on an answer. Re-run
+  // the same question on the smarter (Sonnet) model regardless of plan, and tag
+  // the usage log so we can see how often free users hit this — a Premium signal.
+  const escalate = body?.escalate === true;
   const incoming: IncomingMsg[] = Array.isArray(body?.messages) ? body.messages : [];
   const latest = incoming[incoming.length - 1];
   if (!latest || latest.role !== "student" || !latest.text?.trim()) {
@@ -110,13 +114,17 @@ export async function POST(req: NextRequest) {
   const requestedLanguage = String(body.language ?? "English");
   const language = languageAllowed(plan, requestedLanguage) ? requestedLanguage : "English";
 
-  const system = buildSystem({
-    curriculum: String(body.curriculum ?? "CAPS"),
-    grade: String(body.grade ?? "Grade 12"),
-    subject: String(body.subject ?? "Mathematics"),
-    topic: String(body.topic ?? ""),
-    language,
-  });
+  const system =
+    buildSystem({
+      curriculum: String(body.curriculum ?? "CAPS"),
+      grade: String(body.grade ?? "Grade 12"),
+      subject: String(body.subject ?? "Mathematics"),
+      topic: String(body.topic ?? ""),
+      language,
+    }) +
+    (escalate
+      ? "\n\nThe learner did NOT understand your previous explanation. Try again from scratch, even more slowly and simply: break it into smaller steps, define any tricky terms, and walk through a concrete worked example. Do not just repeat the same wording — find a clearer way in."
+      : "");
 
   const messages = incoming
     .slice(-MAX_HISTORY_TURNS)
@@ -130,7 +138,8 @@ export async function POST(req: NextRequest) {
     async start(controller) {
       try {
         const anthropic = new Anthropic();
-        const model = MODEL[plan];
+        // Escalation always uses the smarter model; normal turns follow the plan.
+        const model = escalate ? MODEL.premium : MODEL[plan];
         const claude = anthropic.messages.stream({
           model,
           max_tokens: MAX_OUTPUT_TOKENS,
@@ -142,7 +151,9 @@ export async function POST(req: NextRequest) {
         // Log tokens + computed cost for the admin spend view (best-effort).
         await logApiUsage({
           userId: session.user.id,
-          feature: "tutor",
+          // Tag escalations (with the learner's plan) so they're countable:
+          //   select count(*) from api_usage where feature = 'tutor_escalation_free'
+          feature: escalate ? `tutor_escalation_${plan}` : "tutor",
           model,
           usage: finalMessage.usage,
         });
