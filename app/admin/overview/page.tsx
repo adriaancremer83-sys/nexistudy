@@ -3,6 +3,7 @@ import { authOptions } from "@/lib/auth";
 import { notFound } from "next/navigation";
 import { supabaseAdmin } from "@/lib/supabase";
 import { todaysSpendUsd } from "@/lib/apiUsage";
+import AdminReviews from "@/components/AdminReviews";
 
 export const dynamic = "force-dynamic";
 
@@ -133,6 +134,13 @@ export default async function AdminOverviewPage() {
           <code className="text-white/50">api_usage</code> and is indicative, not a
           billing figure.
         </p>
+
+        <div>
+          <h2 className="text-xs font-semibold text-white/50 uppercase tracking-widest mb-3">
+            Student reviews — moderation
+          </h2>
+          <AdminReviews />
+        </div>
       </div>
     </div>
   );

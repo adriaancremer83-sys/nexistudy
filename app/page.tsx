@@ -9,7 +9,9 @@ import {
   IconCpuChip,
   IconGlobe,
   IconCheck,
+  IconStar,
 } from "@/components/icons";
+import { getApprovedTestimonials, getReviewStats } from "@/lib/reviews";
 
 const stats = [
   { value: "CAPS", label: "Live now · IEB & Cambridge coming soon" },
@@ -175,7 +177,16 @@ const organizationSchema = {
   audience: { "@type": "EducationalAudience", educationalRole: "student" },
 };
 
-export default function HomePage() {
+// Reviews are moderated and change rarely, so ISR keeps the homepage fast while
+// picking up newly approved testimonials within a few minutes.
+export const revalidate = 600;
+
+export default async function HomePage() {
+  const [testimonials, reviewStats] = await Promise.all([
+    getApprovedTestimonials(6),
+    getReviewStats(),
+  ]);
+
   return (
     <div>
       {/* Structured data so Google understands what NexiStudy is */}
@@ -514,6 +525,58 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── 6b. WHAT STUDENTS SAY (moderated reviews) ── */}
+      {testimonials.length > 0 && (
+        <section className="py-24 px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="max-w-2xl mb-12">
+              <p className="text-sm font-bold uppercase tracking-widest text-[#FFB454] mb-3">
+                What students say
+              </p>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4 leading-snug">
+                Real reviews from real learners
+              </h2>
+              {reviewStats.count >= 3 && (
+                <div className="flex items-center gap-3">
+                  <div className="flex gap-0.5">
+                    {[1, 2, 3, 4, 5].map((n) => (
+                      <IconStar
+                        key={n}
+                        className={`w-5 h-5 ${n <= Math.round(reviewStats.average) ? "text-[#FFB454]" : "text-white/15"}`}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-white font-extrabold text-lg">{reviewStats.average.toFixed(1)}</span>
+                  <span className="text-white/45 text-sm">
+                    from {reviewStats.count} student {reviewStats.count === 1 ? "review" : "reviews"}
+                  </span>
+                </div>
+              )}
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {testimonials.map((t) => (
+                <div
+                  key={t.id}
+                  className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-6 flex flex-col"
+                >
+                  <div className="flex gap-0.5 text-[#FFB454] mb-3">
+                    {Array.from({ length: t.rating }).map((_, i) => (
+                      <IconStar key={i} className="w-4 h-4" />
+                    ))}
+                  </div>
+                  <p className="text-white/75 text-sm leading-relaxed flex-1">&ldquo;{t.comment}&rdquo;</p>
+                  <p className="text-white/45 text-xs mt-4 font-semibold">
+                    {t.name}
+                    {t.grade ? ` · ${t.grade}` : ""}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── 7. FINAL CTA ── */}
       <section className="py-28 px-4">

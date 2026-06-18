@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import ReviewForm from "@/components/ReviewForm";
 import { IconCheck, IconEnvelope, IconChatBubble, IconCpuChip } from "@/components/icons";
 
 // Support routes. The number is never shown as text — only used inside the
@@ -73,6 +74,13 @@ export default function ContactPage() {
       {/* ── MAIN ── */}
       <section className="py-16 px-4">
         <div className="max-w-2xl mx-auto">
+
+          {/* ── LEAVE A REVIEW ── */}
+          <Reveal>
+            <div className="mb-6">
+              <ReviewForm />
+            </div>
+          </Reveal>
 
           {/* ── SCHOOLWORK DISCLAIMER ── */}
           <Reveal>
