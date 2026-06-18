@@ -1,11 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
 import { recordPageView } from "@/lib/analytics";
+import { rateLimit, clientIp } from "@/lib/rateLimit";
 
 export const dynamic = "force-dynamic";
 
 // Fire-and-forget page-view beacon from the client. No auth — anyone browsing
 // the public site is counted. Stores only an anonymous visitor id + path.
 export async function POST(req: NextRequest) {
+  // Cap how fast one IP can log views, so the table can't be flooded.
+  if (!rateLimit(`track:${clientIp(req)}`, 60, 60 * 1000)) {
+    return NextResponse.json({ ok: false }, { status: 429 });
+  }
+
   try {
     const { path, visitor } = await req.json();
     if (typeof path !== "string" || !path) {

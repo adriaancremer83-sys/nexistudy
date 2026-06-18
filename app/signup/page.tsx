@@ -207,9 +207,9 @@ export default function SignUpPage() {
                 name="password"
                 value={form.password}
                 onChange={handleChange}
-                placeholder="At least 6 characters"
+                placeholder="At least 8 characters"
                 required
-                minLength={6}
+                minLength={8}
                 autoComplete="new-password"
                 className={INPUT_CLS}
               />
@@ -232,8 +232,11 @@ export default function SignUpPage() {
           </form>
 
           <p className="text-[10px] text-white/40 text-center mt-5 leading-relaxed">
-            By signing up you agree to our Terms of Service and Privacy Policy.
-            Your data is protected under POPIA.
+            By signing up you agree to our{" "}
+            <Link href="/privacy" className="text-[#00D4FF] hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            . Your data is protected under POPIA.
           </p>
         </div>
       </div>

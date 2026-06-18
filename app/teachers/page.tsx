@@ -209,9 +209,9 @@ export default function TeachersPage() {
                   name="password"
                   value={form.password}
                   onChange={handleChange}
-                  placeholder={mode === "signup" ? "At least 6 characters" : "Your password"}
+                  placeholder={mode === "signup" ? "At least 8 characters" : "Your password"}
                   required
-                  minLength={6}
+                  minLength={mode === "signup" ? 8 : undefined}
                   autoComplete={mode === "signup" ? "new-password" : "current-password"}
                   className={INPUT_CLS}
                 />

@@ -1,12 +1,20 @@
 import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 import { findUser, createUser } from "@/lib/users";
+import { rateLimit, clientIp } from "@/lib/rateLimit";
 
 const VALID_GRADES = ["Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"];
 // Only CAPS is live yet (IEB & Cambridge coming soon).
 const VALID_CURRICULA = ["CAPS"];
 
 export async function POST(req: NextRequest) {
+  if (!rateLimit(`signup:${clientIp(req)}`, 5, 60 * 60 * 1000)) {
+    return NextResponse.json(
+      { error: "Too many signup attempts. Please try again later." },
+      { status: 429 }
+    );
+  }
+
   const { name, email, password, grade, curriculum } = await req.json();
 
   if (!name?.trim() || !email?.trim() || !password?.trim()) {
@@ -21,8 +29,8 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Please select your curriculum." }, { status: 400 });
   }
 
-  if (password.length < 6) {
-    return NextResponse.json({ error: "Password must be at least 6 characters." }, { status: 400 });
+  if (password.length < 8) {
+    return NextResponse.json({ error: "Password must be at least 8 characters." }, { status: 400 });
   }
 
   if (await findUser(email)) {

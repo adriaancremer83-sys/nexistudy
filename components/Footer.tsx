@@ -74,7 +74,11 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/[0.06] py-5 px-4 text-center text-xs text-white/35">
-        © 2026 NexiStudy · Your data is protected under POPIA · Made for SA learners
+        © 2026 NexiStudy ·{" "}
+        <Link href="/privacy" className="hover:text-white transition-colors underline-offset-2 hover:underline">
+          Privacy &amp; POPIA
+        </Link>{" "}
+        · Made for SA learners
       </div>
     </footer>
   );

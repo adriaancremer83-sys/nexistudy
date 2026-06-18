@@ -2,12 +2,17 @@ import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { upsertReview } from "@/lib/reviews";
+import { rateLimit, clientIp } from "@/lib/rateLimit";
 
 export const dynamic = "force-dynamic";
 
 // Logged-in learners only — keeps spam down and lets us tie a review to a real
 // account (one per user). The review is held for admin approval.
 export async function POST(req: NextRequest) {
+  if (!rateLimit(`reviews:${clientIp(req)}`, 10, 60 * 60 * 1000)) {
+    return NextResponse.json({ error: "Too many requests. Please try again later." }, { status: 429 });
+  }
+
   const session = await getServerSession(authOptions);
   if (!session?.user?.id) {
     return NextResponse.json({ error: "Please log in to leave a review." }, { status: 401 });
