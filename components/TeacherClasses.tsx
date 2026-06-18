@@ -257,37 +257,73 @@ export default function TeacherClasses() {
             </button>
           </div>
 
-          {/* Join code + share */}
-          <div className="px-6 py-5 border-b border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div>
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-white/35 mb-1.5">
-                Class join code
-              </p>
-              <div className="flex items-center gap-3">
-                <span className="font-mono text-2xl font-extrabold text-[#FFB454] tracking-[0.2em]">
-                  {cls.joinCode}
-                </span>
-                <button
-                  onClick={() => copyCode(cls.id, cls.joinCode)}
-                  className="px-3 py-1.5 rounded-lg border border-white/15 hover:border-[#FFB454]/50 text-white/70 hover:text-white text-xs font-semibold transition-colors cursor-pointer"
-                >
-                  {copiedId === cls.id ? (
-                    <span className="flex items-center gap-1 text-emerald-300">
-                      <IconCheck className="w-3.5 h-3.5" /> Copied
-                    </span>
-                  ) : (
-                    "Copy"
-                  )}
-                </button>
+          {/* Invite your learners — two clearly labelled options */}
+          <div className="px-6 py-5 border-b border-white/10">
+            <h4 className="text-xs font-semibold text-white uppercase tracking-widest mb-1">
+              Invite your learners
+            </h4>
+            <p className="text-white/45 text-sm mb-4">
+              Two ways to get your class in — use whichever is easier.
+            </p>
+
+            <div className="grid sm:grid-cols-2 gap-4">
+
+              {/* Option 1 — the join code (always works) */}
+              <div className="rounded-xl border border-[#FFB454]/25 bg-[#FFB454]/[0.04] p-4">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="w-5 h-5 rounded-full bg-[#FFB454] text-[#050D1A] text-[11px] font-extrabold flex items-center justify-center flex-shrink-0">
+                    1
+                  </span>
+                  <span className="text-white font-semibold text-sm">Give them this code</span>
+                </div>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="font-mono text-2xl font-extrabold text-[#FFB454] tracking-[0.2em]">
+                    {cls.joinCode}
+                  </span>
+                  <button
+                    onClick={() => copyCode(cls.id, cls.joinCode)}
+                    className="px-3 py-1.5 rounded-lg border border-white/15 hover:border-[#FFB454]/50 text-white/70 hover:text-white text-xs font-semibold transition-colors cursor-pointer"
+                  >
+                    {copiedId === cls.id ? (
+                      <span className="flex items-center gap-1 text-emerald-300">
+                        <IconCheck className="w-3.5 h-3.5" /> Copied
+                      </span>
+                    ) : (
+                      "Copy"
+                    )}
+                  </button>
+                </div>
+                <p className="text-white/45 text-xs leading-relaxed">
+                  Learners log into NexiStudy, open their dashboard, and type this code into
+                  the <span className="text-white/70 font-medium">&ldquo;Join a class&rdquo;</span> box.
+                  Works for everyone — no Google needed.
+                </p>
               </div>
-              <p className="text-white/35 text-xs mt-2 leading-relaxed max-w-xs">
-                Learners enter this on their dashboard under &ldquo;Join a class&rdquo;.
-              </p>
+
+              {/* Option 2 — Google Classroom (optional) */}
+              <div className="rounded-xl border border-white/[0.08] bg-[#0B1A33] p-4">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="w-5 h-5 rounded-full border border-white/25 text-white/60 text-[11px] font-extrabold flex items-center justify-center flex-shrink-0">
+                    2
+                  </span>
+                  <span className="text-white font-semibold text-sm">Or post it to Google Classroom</span>
+                  <span className="ml-auto text-[10px] font-semibold uppercase tracking-widest text-white/30">
+                    Optional
+                  </span>
+                </div>
+                <ShareToClassroom
+                  path={`/dashboard?join=${cls.joinCode}`}
+                  label="Post join link to Classroom"
+                  className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-white/15 hover:border-[#FFB454]/50 text-white/80 hover:text-white text-sm font-semibold transition-colors cursor-pointer"
+                />
+                <p className="text-white/45 text-xs leading-relaxed mt-3">
+                  Opens <span className="text-white/70 font-medium">your own</span> Google Classroom and
+                  posts a clickable join link to a class you pick. Only handy if you already use
+                  Google Classroom with these students — otherwise just share the code.
+                </p>
+              </div>
+
             </div>
-            <ShareToClassroom
-              path={`/dashboard?join=${cls.joinCode}`}
-              label="Invite via Google Classroom →"
-            />
           </div>
 
           {/* Heatmap */}
