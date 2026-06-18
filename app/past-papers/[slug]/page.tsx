@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
+import { pageMeta } from "@/lib/seo";
 import { IconDocumentText, IconTarget } from "@/components/icons";
 import { getSubjects, getSubjectPapers, type PastPaper } from "@/lib/pastPapers";
 
@@ -18,10 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const papers = getSubjectPapers(slug);
   if (papers.length === 0) return {};
   const subject = papers[0].subject;
-  return {
-    title: `${subject} Past Exam Papers & Memos — Free Download | NexiStudy`,
+  return pageMeta({
+    title: `${subject} Past Exam Papers & Memos — Free Download`,
     description: `Official Grade 12 NSC ${subject} past exam papers with memos from the Department of Basic Education. Free downloads, organised by year.`,
-  };
+    path: `/past-papers/${slug}`,
+  });
 }
 
 const LEVEL_LABELS: Record<string, string> = {

@@ -1,6 +1,7 @@
 import Nexi from "@/components/Nexi";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import { pageMeta } from "@/lib/seo";
 import {
   IconTarget,
   IconBookOpen,
@@ -9,6 +10,13 @@ import {
   IconSparkles,
   IconUsers,
 } from "@/components/icons";
+
+export const metadata = pageMeta({
+  title: "About NexiStudy",
+  description:
+    "Why NexiStudy exists: affordable, CAPS-aligned study help for every South African student — an AI tutor, free past papers and topic practice that meet you where you are.",
+  path: "/about-us",
+});
 
 const VALUE_PILLARS = [
   {

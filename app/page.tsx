@@ -163,9 +163,26 @@ function ChatPreview() {
   );
 }
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  name: "NexiStudy",
+  url: "https://www.nexistudy.co.za",
+  logo: "https://www.nexistudy.co.za/images/nexi-wave.png",
+  description:
+    "NexiStudy is a South African study platform offering a CAPS-aligned AI tutor in 11 official languages, free NSC past papers, topic practice and an APS calculator for Grade 8–12 students.",
+  areaServed: { "@type": "Country", name: "South Africa" },
+  audience: { "@type": "EducationalAudience", educationalRole: "student" },
+};
+
 export default function HomePage() {
   return (
     <div>
+      {/* Structured data so Google understands what NexiStudy is */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
 
       {/* ── 1. HERO ── */}
       <section className="page-hero relative overflow-hidden px-4 py-24 md:py-20">

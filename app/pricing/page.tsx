@@ -1,7 +1,15 @@
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import SubscribeButton from "@/components/SubscribeButton";
+import { pageMeta } from "@/lib/seo";
 import { IconCheck, IconLock } from "@/components/icons";
+
+export const metadata = pageMeta({
+  title: "Pricing — Free Plan & Premium",
+  description:
+    "Start free: AI tutor, APS calculator and NSC past papers. Go Premium (R199/month) for unlimited tutoring, Nexi's Exam Plan, past-paper walkthroughs and all 11 languages.",
+  path: "/pricing",
+});
 
 // ── Feature lists ─────────────────────────────────────────────────────────────
 
