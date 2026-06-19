@@ -758,6 +758,42 @@ export default function StudyProPage() {
               </div>
             </Reveal>
 
+            {/* Subject Choice Advisor — the flagship Grade 9 → 10 feature (right
+                under the calculator, since it uses those marks) */}
+            <Reveal>
+              <div id="subject-advisor" className="scroll-mt-24">
+                <div className="mb-4 text-center">
+                  <p className="text-sm font-bold uppercase tracking-widest text-[#FFB454] mb-2">
+                    The big decision
+                  </p>
+                  <h2 className="text-2xl font-bold text-white mb-2">Subject Choice Advisor</h2>
+                  <p className="text-white/55 text-sm max-w-xl mx-auto leading-relaxed">
+                    At the end of Grade 9 you choose the subjects that shape your matric and your
+                    options after school. Let Nexi help you and your family choose with confidence.
+                  </p>
+                </div>
+                <SubjectAdvisor
+                  marks={READINESS_SUBJECTS.filter(
+                    (n) => (readinessMarks[n] ?? "").trim() !== ""
+                  )
+                    .map((n) => ({ name: n, percent: Number(readinessMarks[n]) }))
+                    .filter((s) => Number.isFinite(s.percent))}
+                />
+              </div>
+            </Reveal>
+
+            {/* First-run nudge: once Readiness marks are in, point them at the advisor */}
+            <NudgeHint
+              show={readiness.filledCount >= 3}
+              storageKey="nexi-nudge-subject-advisor"
+              message="Now get your subject-choice advice"
+              onAction={() =>
+                document
+                  .getElementById("subject-advisor")
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" })
+              }
+            />
+
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
               {SENIOR_CARDS.map((card, i) => (
                 <Reveal key={card.title} delay={i * 100} className="h-full">
@@ -837,41 +873,6 @@ export default function StudyProPage() {
                 </div>
               </Reveal>
             </div>
-
-            {/* Subject Choice Advisor — the flagship Grade 9 → 10 feature */}
-            <Reveal>
-              <div id="subject-advisor" className="scroll-mt-24">
-                <div className="mb-4 text-center">
-                  <p className="text-sm font-bold uppercase tracking-widest text-[#FFB454] mb-2">
-                    The big decision
-                  </p>
-                  <h2 className="text-2xl font-bold text-white mb-2">Subject Choice Advisor</h2>
-                  <p className="text-white/55 text-sm max-w-xl mx-auto leading-relaxed">
-                    At the end of Grade 9 you choose the subjects that shape your matric and your
-                    options after school. Let Nexi help you and your family choose with confidence.
-                  </p>
-                </div>
-                <SubjectAdvisor
-                  marks={READINESS_SUBJECTS.filter(
-                    (n) => (readinessMarks[n] ?? "").trim() !== ""
-                  )
-                    .map((n) => ({ name: n, percent: Number(readinessMarks[n]) }))
-                    .filter((s) => Number.isFinite(s.percent))}
-                />
-              </div>
-            </Reveal>
-
-            {/* First-run nudge: once Readiness marks are in, point them at the advisor */}
-            <NudgeHint
-              show={readiness.filledCount >= 3}
-              storageKey="nexi-nudge-subject-advisor"
-              message="Now get your subject-choice advice"
-              onAction={() =>
-                document
-                  .getElementById("subject-advisor")
-                  ?.scrollIntoView({ behavior: "smooth", block: "start" })
-              }
-            />
           </div>
         </section>
       )}
