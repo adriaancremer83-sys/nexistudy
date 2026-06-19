@@ -55,7 +55,7 @@ const ANNUAL_INCLUDED = [
 const FAQS = [
   {
     q: "Why is there a daily chat limit on the Free plan?",
-    a: "Every answer Nexi gives is powered by advanced AI that costs us real money per question. The Free plan gives you a genuine daily study session at no cost — and Premium members make unlimited help possible. No tricks, just honest maths.",
+    a: "Every answer Nexi gives uses advanced AI that costs us real money. Free gives you a genuine daily study session at no cost; Premium members make unlimited help possible. No tricks.",
   },
   {
     q: "Which languages does Nexi speak?",
@@ -63,7 +63,7 @@ const FAQS = [
   },
   {
     q: "What are Mark My Answer and the funding & career advice?",
-    a: "Mark My Answer lets you photograph a handwritten answer and have Nexi mark it like an NSC examiner — method marks and where you lost marks. Inside Study Pro, after the APS calculator and university matcher, Nexi adds funding & career advice — how to pay for study with NSFAS and bursaries, plus a career direction matched to your marks and interests. Both are free to try once a day. Premium unlocks 15 markings a day with a full mark-by-mark breakdown and model answer, and 20 advice reports a day with a complete plan. The APS calculator and university matcher are always free.",
+    a: "Mark My Answer marks a photo of your handwritten answer like an NSC examiner — method marks and where you lost marks. In Study Pro, Nexi also gives funding & career advice (NSFAS, bursaries and a direction for your marks). Both are free once a day; Premium unlocks 15 markings and 20 advice reports a day, in full detail. The APS calculator and university matcher are always free.",
   },
   {
     q: "Can I cancel anytime?",
@@ -75,7 +75,7 @@ const FAQS = [
   },
   {
     q: "Which grades does NexiStudy support?",
-    a: "NexiStudy supports Grade 8 to 12. CAPS is fully live now, and IEB & Cambridge support is coming soon. Nexi Tutor covers Senior Phase (Grade 8–9) subjects like Natural Sciences, EMS, and Technology, plus the full FET curriculum. A Subject Choice Advisor — helping families pick the right subjects at the end of Grade 9 — is in development.",
+    a: "Grade 8 to 12. CAPS is fully live; IEB & Cambridge are coming. Nexi covers Senior Phase (Grade 8–9) and the full FET curriculum — including a Subject Choice Advisor that helps Grade 9s pick the right Grade 10 subjects.",
   },
   {
     q: "Is there a cheaper option than R199 per month?",
@@ -90,12 +90,12 @@ export default function PricingPage() {
     <div className="min-h-screen">
 
       {/* ── HERO ── */}
-      <section className="page-hero py-20 px-4 text-center">
+      <section className="page-hero py-14 px-4 text-center">
         <div className="max-w-2xl mx-auto">
-          <span className="inline-block mb-4 px-4 py-1 rounded-full glass text-[#00D4FF] text-sm font-medium tracking-wide uppercase">
+          <span className="inline-block mb-3 px-4 py-1 rounded-full glass text-[#00D4FF] text-sm font-medium tracking-wide uppercase">
             Pricing
           </span>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight text-white">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-3 leading-tight text-white">
             Choose the plan that fits{" "}
             <span className="text-gradient">your journey</span>
           </h1>
@@ -108,7 +108,7 @@ export default function PricingPage() {
       <div className="section-divider" />
 
       {/* ── PLANS ── */}
-      <section className="py-16 px-4">
+      <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
 
           {/* ── 1. FREE ── */}
@@ -262,7 +262,7 @@ export default function PricingPage() {
       <div className="section-divider" />
 
       {/* ── FAQ ── */}
-      <section className="py-16 px-4">
+      <section className="py-12 px-4">
         <div className="max-w-2xl mx-auto">
           <Reveal className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-2">
@@ -294,7 +294,7 @@ export default function PricingPage() {
       <div className="section-divider" />
 
       {/* ── FINAL CTA ── */}
-      <section className="py-20 px-4 text-center relative overflow-hidden">
+      <section className="py-14 px-4 text-center relative overflow-hidden">
         <div
           aria-hidden
           className="absolute inset-0 bg-gradient-to-b from-transparent to-[#2D6BE4]/15 pointer-events-none"
@@ -303,9 +303,8 @@ export default function PricingPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
             Ready to unlock your <span className="text-gradient">full potential?</span>
           </h2>
-          <p className="text-white/50 mb-8 text-sm leading-relaxed">
-            Start free — no credit card, no catch. Upgrade only when you&apos;re ready
-            for the full plan.
+          <p className="text-white/50 mb-6 text-sm leading-relaxed">
+            Start free — no credit card. Upgrade when you&apos;re ready.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link

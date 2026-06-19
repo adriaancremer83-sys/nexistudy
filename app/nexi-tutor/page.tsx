@@ -297,7 +297,7 @@ interface Profile {
 
 const WELCOME_MSG: Message = {
   role: "nexi",
-  text: "Hi! I'm Nexi, your personal study buddy. Select your subject and topic above and I'll help you understand anything — step by step!",
+  text: "Hi! I'm Nexi. Pick your subject and topic above, and I'll explain anything — step by step.",
 };
 
 function counterColor(n: number): string {
@@ -582,15 +582,15 @@ export default function NexiTutorPage() {
     <div className="min-h-screen">
 
       {/* ── 1. HERO ── */}
-      <section className="page-hero py-16 px-4">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-14">
+      <section className="page-hero py-10 px-4">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-10">
 
           {/* Text */}
           <div className="flex-1 text-center md:text-left order-2 md:order-1">
             <h1 className="text-4xl sm:text-5xl font-bold mb-3 text-white">
               Nexi <span className="text-gradient">Tutor</span>
             </h1>
-            <p className="text-xl text-white/70 mb-7 leading-snug">
+            <p className="text-lg text-white/70 mb-5 leading-snug">
               Smarter, Faster — Always Here for You
             </p>
             <div className="flex flex-wrap gap-2 justify-center md:justify-start">

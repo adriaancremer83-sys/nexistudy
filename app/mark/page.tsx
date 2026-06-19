@@ -146,17 +146,17 @@ export default function MarkPage() {
   return (
     <div className="min-h-screen">
       {/* HERO */}
-      <section className="page-hero py-14 px-4">
+      <section className="page-hero py-10 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#00D4FF] text-sm font-semibold mb-2 uppercase tracking-widest">
             New
           </p>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-3 text-white">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-white">
             Mark My <span className="text-gradient">Answer</span>
           </h1>
-          <p className="text-lg text-white/70 leading-snug max-w-2xl mx-auto">
-            Photograph your handwritten answer and Nexi marks it like an NSC examiner —
-            method marks, where you lost marks, and exactly how to earn them next time.
+          <p className="text-base text-white/70 leading-snug max-w-xl mx-auto">
+            Snap your handwritten answer — Nexi marks it like an NSC examiner: method
+            marks, where you lost them, and how to earn more.
           </p>
         </div>
       </section>
