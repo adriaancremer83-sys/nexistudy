@@ -11,7 +11,6 @@ const navLinks = [
   { label: "Nexi Tutor", href: "/nexi-tutor" },
   { label: "Mark Answer", href: "/mark" },
   { label: "Past Papers", href: "/past-papers" },
-  { label: "Career Guide", href: "/guidance" },
   { label: "Pricing", href: "/pricing" },
   { label: "About Us", href: "/about-us" },
   { label: "Contact", href: "/contact" },

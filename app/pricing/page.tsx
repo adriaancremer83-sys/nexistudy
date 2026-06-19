@@ -16,8 +16,8 @@ export const metadata = pageMeta({
 const FREE_INCLUDED = [
   "5 Nexi Tutor chats per day",
   "Mark My Answer — 1 answer marked per day",
-  "APS Calculator — know your score",
-  "Career Guide — 1 guidance report per day",
+  "APS Calculator & university matcher",
+  "Funding & career advice — 1 report per day",
   "Tutor in English, Afrikaans & isiZulu",
   "Study streaks & daily motivation",
   "1 personal goal",
@@ -34,7 +34,7 @@ const PREMIUM_INCLUDED = [
   "Unlimited Nexi Tutor chats",
   "Tutor in all 11 official SA languages",
   "Mark My Answer — 15 a day, full mark-by-mark breakdown + model answer",
-  "Career Guide — 20 a day: full course, university, NSFAS & bursary plan",
+  "Funding & career advice in Study Pro — 20 a day: NSFAS, bursaries & a personalised plan",
   "Nexi's Exam Plan — a day-by-day route to exam day",
   "Weak-spots map + practice that targets them",
   "Past-paper walkthroughs (CAPS / NSC)",
@@ -62,8 +62,8 @@ const FAQS = [
     a: "All 11 official South African languages — isiZulu, isiXhosa, Afrikaans, English, Sepedi, Setswana, Sesotho, Xitsonga, siSwati, Tshivenda, and isiNdebele. English, Afrikaans and isiZulu are available free; Premium unlocks reliable tutoring in the full set of 11.",
   },
   {
-    q: "What are Mark My Answer and the Career Guide?",
-    a: "Mark My Answer lets you photograph a handwritten answer and have Nexi mark it like an NSC examiner — method marks and where you lost marks. The Career Guide works out your APS and suggests courses, universities, NSFAS options and bursaries that fit you. Both are free to try once a day. Premium unlocks 15 markings a day with a full mark-by-mark breakdown and model answer, and 20 career reports a day with a complete study-and-funding plan. The APS calculator itself is always free.",
+    q: "What are Mark My Answer and the funding & career advice?",
+    a: "Mark My Answer lets you photograph a handwritten answer and have Nexi mark it like an NSC examiner — method marks and where you lost marks. Inside Study Pro, after the APS calculator and university matcher, Nexi adds funding & career advice — how to pay for study with NSFAS and bursaries, plus a career direction matched to your marks and interests. Both are free to try once a day. Premium unlocks 15 markings a day with a full mark-by-mark breakdown and model answer, and 20 advice reports a day with a complete plan. The APS calculator and university matcher are always free.",
   },
   {
     q: "Can I cancel anytime?",

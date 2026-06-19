@@ -5,6 +5,7 @@ import { useState, useMemo, useEffect, useRef } from "react";
 import { useSession } from "next-auth/react";
 import Reveal from "@/components/Reveal";
 import ProgressRing from "@/components/ProgressRing";
+import CareerAdvice from "@/components/CareerAdvice";
 import { IconAcademicCap, IconDocumentText, IconRocket, IconTrendingUp, IconBookOpen, IconBolt, IconTarget, IconSparkles, IconLock, IconChartBar } from "@/components/icons";
 
 // ── APS conversion ──────────────────────────────────────────────────────────
@@ -1279,6 +1280,30 @@ export default function StudyProPage() {
               </p>
             </>
           )}
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* ── 6. FUNDING & CAREER ADVICE (premium, free taste) ── */}
+      <section className="py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <Reveal className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-white mb-2">
+              Funding &amp; <span className="text-gradient">Career Advice</span>
+            </h2>
+            <p className="text-white/50 text-sm max-w-lg mx-auto">
+              You know your APS and what you qualify for. Now let Nexi help with the
+              rest — how to fund it and which direction fits you.
+            </p>
+          </Reveal>
+          <Reveal>
+            <CareerAdvice
+              subjects={subjects
+                .filter((s) => s.percentage !== "")
+                .map((s) => ({ name: s.name, percent: Number(s.percentage) }))}
+            />
+          </Reveal>
         </div>
       </section>
         </>
