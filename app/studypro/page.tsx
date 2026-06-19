@@ -7,6 +7,7 @@ import Reveal from "@/components/Reveal";
 import ProgressRing from "@/components/ProgressRing";
 import CareerAdvice from "@/components/CareerAdvice";
 import SubjectAdvisor from "@/components/SubjectAdvisor";
+import NudgeHint from "@/components/NudgeHint";
 import { IconAcademicCap, IconDocumentText, IconRocket, IconTrendingUp, IconBookOpen, IconBolt, IconTarget, IconSparkles, IconLock, IconChartBar } from "@/components/icons";
 
 // ── APS conversion ──────────────────────────────────────────────────────────
@@ -839,24 +840,38 @@ export default function StudyProPage() {
 
             {/* Subject Choice Advisor — the flagship Grade 9 → 10 feature */}
             <Reveal>
-              <div className="mb-4 text-center">
-                <p className="text-sm font-bold uppercase tracking-widest text-[#FFB454] mb-2">
-                  The big decision
-                </p>
-                <h2 className="text-2xl font-bold text-white mb-2">Subject Choice Advisor</h2>
-                <p className="text-white/55 text-sm max-w-xl mx-auto leading-relaxed">
-                  At the end of Grade 9 you choose the subjects that shape your matric and your
-                  options after school. Let Nexi help you and your family choose with confidence.
-                </p>
+              <div id="subject-advisor" className="scroll-mt-24">
+                <div className="mb-4 text-center">
+                  <p className="text-sm font-bold uppercase tracking-widest text-[#FFB454] mb-2">
+                    The big decision
+                  </p>
+                  <h2 className="text-2xl font-bold text-white mb-2">Subject Choice Advisor</h2>
+                  <p className="text-white/55 text-sm max-w-xl mx-auto leading-relaxed">
+                    At the end of Grade 9 you choose the subjects that shape your matric and your
+                    options after school. Let Nexi help you and your family choose with confidence.
+                  </p>
+                </div>
+                <SubjectAdvisor
+                  marks={READINESS_SUBJECTS.filter(
+                    (n) => (readinessMarks[n] ?? "").trim() !== ""
+                  )
+                    .map((n) => ({ name: n, percent: Number(readinessMarks[n]) }))
+                    .filter((s) => Number.isFinite(s.percent))}
+                />
               </div>
-              <SubjectAdvisor
-                marks={READINESS_SUBJECTS.filter(
-                  (n) => (readinessMarks[n] ?? "").trim() !== ""
-                )
-                  .map((n) => ({ name: n, percent: Number(readinessMarks[n]) }))
-                  .filter((s) => Number.isFinite(s.percent))}
-              />
             </Reveal>
+
+            {/* First-run nudge: once Readiness marks are in, point them at the advisor */}
+            <NudgeHint
+              show={readiness.filledCount >= 3}
+              storageKey="nexi-nudge-subject-advisor"
+              message="Now get your subject-choice advice"
+              onAction={() =>
+                document
+                  .getElementById("subject-advisor")
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" })
+              }
+            />
           </div>
         </section>
       )}
