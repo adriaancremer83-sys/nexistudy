@@ -7,7 +7,7 @@ import Nexi from "@/components/Nexi";
 import type { Session } from "next-auth";
 import Reveal from "@/components/Reveal";
 import ProgressRing from "@/components/ProgressRing";
-import { IconAcademicCap, IconCpuChip, IconChartBar, IconStar, IconLock, IconTarget, IconDocumentText } from "@/components/icons";
+import { IconAcademicCap, IconCpuChip, IconChartBar, IconStar, IconLock, IconTarget, IconDocumentText, IconSparkles } from "@/components/icons";
 import { getWeakSpots } from "@/lib/practice";
 import { getLearnerClasses } from "@/lib/classes";
 import { getSubscription } from "@/lib/users";
@@ -293,6 +293,48 @@ export default async function DashboardPage() {
                 </p>
                 <span className="inline-block mt-4 text-sm font-semibold text-[#00D4FF] group-hover:text-white transition-colors">
                   Open Study Pro →
+                </span>
+              </div>
+            </Link>
+          </Reveal>
+
+          <Reveal delay={260} className="h-full">
+            <Link
+              href="/mark"
+              className="group rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-9 flex items-start gap-5 h-full transition-[border-color,box-shadow] duration-300 hover:border-[#00D4FF]/40 hover:shadow-[0_0_24px_rgba(0,212,255,0.12)]"
+            >
+              <div className="w-14 h-14 rounded-xl bg-[#2D6BE4]/20 border border-[#00D4FF]/20 flex items-center justify-center flex-shrink-0 text-[#00D4FF] group-hover:bg-[#2D6BE4]/30 transition-colors">
+                <IconSparkles className="w-7 h-7" />
+              </div>
+              <div>
+                <h3 className="text-white font-bold text-xl mb-1.5">Mark My Answer</h3>
+                <p className="text-white/50 text-sm leading-relaxed">
+                  Snap a photo of your written answer and Nexi marks it like an NSC examiner —
+                  method marks and where you lost marks.
+                </p>
+                <span className="inline-block mt-4 text-sm font-semibold text-[#00D4FF] group-hover:text-white transition-colors">
+                  Mark an answer →
+                </span>
+              </div>
+            </Link>
+          </Reveal>
+
+          <Reveal delay={280} className="h-full">
+            <Link
+              href="/guidance"
+              className="group rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-9 flex items-start gap-5 h-full transition-[border-color,box-shadow] duration-300 hover:border-[#00D4FF]/40 hover:shadow-[0_0_24px_rgba(0,212,255,0.12)]"
+            >
+              <div className="w-14 h-14 rounded-xl bg-[#2D6BE4]/20 border border-[#00D4FF]/20 flex items-center justify-center flex-shrink-0 text-[#00D4FF] group-hover:bg-[#2D6BE4]/30 transition-colors">
+                <IconAcademicCap className="w-7 h-7" />
+              </div>
+              <div>
+                <h3 className="text-white font-bold text-xl mb-1.5">Career Guide</h3>
+                <p className="text-white/50 text-sm leading-relaxed">
+                  Work out your APS and get real guidance on courses, universities, NSFAS
+                  and bursaries that fit you.
+                </p>
+                <span className="inline-block mt-4 text-sm font-semibold text-[#00D4FF] group-hover:text-white transition-colors">
+                  Plan my future →
                 </span>
               </div>
             </Link>

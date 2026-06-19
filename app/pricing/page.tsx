@@ -7,7 +7,7 @@ import { IconCheck, IconLock } from "@/components/icons";
 export const metadata = pageMeta({
   title: "Pricing — Free Plan & Premium",
   description:
-    "Start free: AI tutor, APS calculator and NSC past papers. Go Premium (R199/month) for unlimited tutoring, Nexi's Exam Plan, past-paper walkthroughs and all 11 languages.",
+    "Start free: AI tutor, APS calculator, NSC past papers, plus a daily taste of AI answer-marking and career guidance. Go Premium (R199/month) for unlimited tutoring, full examiner marking, career & NSFAS guidance, and all 11 languages.",
   path: "/pricing",
 });
 
@@ -15,8 +15,9 @@ export const metadata = pageMeta({
 
 const FREE_INCLUDED = [
   "5 Nexi Tutor chats per day",
-  "3 photo uploads per month",
+  "Mark My Answer — 1 answer marked per day",
   "APS Calculator — know your score",
+  "Career Guide — 1 guidance report per day",
   "Tutor in English, Afrikaans & isiZulu",
   "Study streaks & daily motivation",
   "1 personal goal",
@@ -25,17 +26,17 @@ const FREE_INCLUDED = [
 const FREE_LOCKED = [
   "Nexi's Exam Plan",
   "Weak-spots map & targeted practice",
-  "Career Roadmap",
+  "Full examiner marking + model answers",
   "Past-paper walkthroughs",
 ];
 
 const PREMIUM_INCLUDED = [
   "Unlimited Nexi Tutor chats",
   "Tutor in all 11 official SA languages",
-  "Unlimited photo uploads",
+  "Mark My Answer — 15 a day, full mark-by-mark breakdown + model answer",
+  "Career Guide — 20 a day: full course, university, NSFAS & bursary plan",
   "Nexi's Exam Plan — a day-by-day route to exam day",
   "Weak-spots map + practice that targets them",
-  "Career Roadmap — what your APS unlocks & the gap to close",
   "Past-paper walkthroughs (CAPS / NSC)",
   "Weekly parent progress report",
   "Grade 8–9: Foundation Gap Finder + termly reports",
@@ -59,6 +60,10 @@ const FAQS = [
   {
     q: "Which languages does Nexi speak?",
     a: "All 11 official South African languages — isiZulu, isiXhosa, Afrikaans, English, Sepedi, Setswana, Sesotho, Xitsonga, siSwati, Tshivenda, and isiNdebele. English, Afrikaans and isiZulu are available free; Premium unlocks reliable tutoring in the full set of 11.",
+  },
+  {
+    q: "What are Mark My Answer and the Career Guide?",
+    a: "Mark My Answer lets you photograph a handwritten answer and have Nexi mark it like an NSC examiner — method marks and where you lost marks. The Career Guide works out your APS and suggests courses, universities, NSFAS options and bursaries that fit you. Both are free to try once a day. Premium unlocks 15 markings a day with a full mark-by-mark breakdown and model answer, and 20 career reports a day with a complete study-and-funding plan. The APS calculator itself is always free.",
   },
   {
     q: "Can I cancel anytime?",
