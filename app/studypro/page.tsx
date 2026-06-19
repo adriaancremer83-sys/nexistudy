@@ -367,6 +367,30 @@ export default function StudyProPage() {
   const { data: session, status } = useSession();
   const [phase, setPhase] = useState<"fet" | "senior">("fet");
   const [fetTab, setFetTab] = useState<FetTab>("aps");
+  // First-time nudge: once APS marks are in, point the learner at the
+  // Universities tab. Dismisses permanently once acted on (localStorage). Starts
+  // dismissed so returning users never see a flash before the read below.
+  const [nudgeDismissed, setNudgeDismissed] = useState(true);
+  useEffect(() => {
+    try {
+      setNudgeDismissed(!!localStorage.getItem("nexi-studypro-nudge"));
+    } catch {
+      setNudgeDismissed(false);
+    }
+  }, []);
+  function dismissNudge() {
+    setNudgeDismissed(true);
+    try {
+      localStorage.setItem("nexi-studypro-nudge", "1");
+    } catch {
+      /* ignore */
+    }
+  }
+  function goToUniversities() {
+    setFetTab("match");
+    dismissNudge();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
   const [subjects, setSubjects] = useState<SubjectRow[]>(
     DEFAULT_SUBJECTS.map((name) => ({ name, percentage: "" }))
   );
@@ -472,6 +496,11 @@ export default function StudyProPage() {
 
     return { rows, totalAPS, best6Names, filledCount: filled.length };
   }, [subjects]);
+
+  // Show the "go to Universities" nudge once the learner has an APS and is still
+  // sitting on the APS tab.
+  const showNudge =
+    phase === "fet" && fetTab === "aps" && calc.totalAPS > 0 && !nudgeDismissed;
 
   // ── Focus areas: weakest filled non-LO subjects ───────────────────────────
   const focusAreas = useMemo(() => {
@@ -847,12 +876,15 @@ export default function StudyProPage() {
               key={t.id}
               role="tab"
               aria-selected={fetTab === t.id}
-              onClick={() => setFetTab(t.id)}
+              onClick={() => {
+                setFetTab(t.id);
+                if (t.id === "match") dismissNudge();
+              }}
               className={`flex-shrink-0 px-4 py-2.5 rounded-full text-sm font-semibold transition-colors cursor-pointer whitespace-nowrap ${
                 fetTab === t.id
                   ? "bg-[#2D6BE4] text-white"
                   : "border border-white/15 text-white/60 hover:text-white hover:border-white/35"
-              }`}
+              }${showNudge && t.id === "match" ? " ring-2 ring-[#00D4FF] guide-pulse" : ""}`}
             >
               {t.label}
             </button>
@@ -1352,6 +1384,34 @@ export default function StudyProPage() {
         </div>
       </section>
       </>
+      )}
+
+      {/* Floating "next step" hint — appears once APS is filled, on the APS tab */}
+      {showNudge && (
+        <div className="fixed inset-x-0 bottom-5 z-40 flex justify-center px-4 pointer-events-none">
+          <div className="guide-hint-in pointer-events-auto flex items-center gap-1 rounded-full bg-[#2D6BE4] text-white shadow-[0_8px_30px_rgba(0,0,0,0.45)] pl-5 pr-2 py-2">
+            <button
+              onClick={goToUniversities}
+              className="flex items-center gap-2 text-sm font-semibold cursor-pointer"
+            >
+              Next: see what you qualify for
+              <span className="grid place-items-center w-8 h-8 rounded-full bg-white/20">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                </svg>
+              </span>
+            </button>
+            <button
+              onClick={dismissNudge}
+              aria-label="Dismiss hint"
+              className="grid place-items-center w-8 h-8 rounded-full text-white/70 hover:text-white hover:bg-white/10 cursor-pointer"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
       )}
         </>
       )}

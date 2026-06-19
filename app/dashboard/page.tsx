@@ -14,8 +14,37 @@ import { getSubscription } from "@/lib/users";
 import SubscribeButton from "@/components/SubscribeButton";
 import JoinClassCard from "@/components/JoinClassCard";
 import ExamCountdown from "@/components/ExamCountdown";
+import GuideTour, { type TourStep } from "@/components/GuideTour";
 
 export const dynamic = "force-dynamic";
+
+// First-login orientation tour. Runs once (see GuideTour storageKey).
+const DASHBOARD_TOUR: TourStep[] = [
+  {
+    title: "Welcome to NexiStudy",
+    body: "Here's a 20-second tour of what you can do. You can skip any time.",
+  },
+  {
+    selector: '[data-tour="practice"]',
+    title: "Practice quizzes",
+    body: "Short quizzes, marked instantly — they quietly build your personal weak-spots map.",
+  },
+  {
+    selector: '[data-tour="tutor"]',
+    title: "Nexi Tutor",
+    body: "Stuck on anything? Ask Nexi for step-by-step help, any time, in your language.",
+  },
+  {
+    selector: '[data-tour="mark"]',
+    title: "Mark My Answer",
+    body: "Snap a photo of your written answer and Nexi marks it like an NSC examiner.",
+  },
+  {
+    selector: '[data-tour="studypro"]',
+    title: "Study Pro",
+    body: "Work out your APS and see exactly which courses you can study — start here.",
+  },
+];
 
 type ExtendedUser = NonNullable<Session["user"]>;
 
@@ -219,6 +248,7 @@ export default async function DashboardPage() {
           <Reveal delay={120} className="h-full">
             <Link
               href="/practice"
+              data-tour="practice"
               className="group rounded-2xl border border-[#00D4FF]/25 bg-[#0E1F3D] p-9 flex items-start gap-5 h-full transition-[border-color,box-shadow] duration-300 hover:border-[#00D4FF]/50 hover:shadow-[0_0_24px_rgba(0,212,255,0.12)]"
             >
               <div className="w-14 h-14 rounded-xl bg-[#2D6BE4]/20 border border-[#00D4FF]/20 flex items-center justify-center flex-shrink-0 text-[#00D4FF] group-hover:bg-[#2D6BE4]/30 transition-colors">
@@ -261,6 +291,7 @@ export default async function DashboardPage() {
           <Reveal delay={160} className="h-full">
             <Link
               href="/nexi-tutor"
+              data-tour="tutor"
               className="group rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-9 flex items-start gap-5 h-full transition-[border-color,box-shadow] duration-300 hover:border-[#00D4FF]/40 hover:shadow-[0_0_24px_rgba(0,212,255,0.12)]"
             >
               <div className="w-14 h-14 rounded-xl bg-[#2D6BE4]/20 border border-[#00D4FF]/20 flex items-center justify-center flex-shrink-0 text-[#00D4FF] group-hover:bg-[#2D6BE4]/30 transition-colors">
@@ -281,6 +312,7 @@ export default async function DashboardPage() {
           <Reveal delay={240} className="h-full">
             <Link
               href="/studypro"
+              data-tour="studypro"
               className="group rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-9 flex items-start gap-5 h-full transition-[border-color,box-shadow] duration-300 hover:border-[#00D4FF]/40 hover:shadow-[0_0_24px_rgba(0,212,255,0.12)]"
             >
               <div className="w-14 h-14 rounded-xl bg-[#2D6BE4]/20 border border-[#00D4FF]/20 flex items-center justify-center flex-shrink-0 text-[#00D4FF] group-hover:bg-[#2D6BE4]/30 transition-colors">
@@ -301,6 +333,7 @@ export default async function DashboardPage() {
           <Reveal delay={260} className="h-full">
             <Link
               href="/mark"
+              data-tour="mark"
               className="group rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-9 flex items-start gap-5 h-full transition-[border-color,box-shadow] duration-300 hover:border-[#00D4FF]/40 hover:shadow-[0_0_24px_rgba(0,212,255,0.12)]"
             >
               <div className="w-14 h-14 rounded-xl bg-[#2D6BE4]/20 border border-[#00D4FF]/20 flex items-center justify-center flex-shrink-0 text-[#00D4FF] group-hover:bg-[#2D6BE4]/30 transition-colors">
@@ -454,6 +487,8 @@ export default async function DashboardPage() {
         )}
 
       </div>
+
+      <GuideTour steps={DASHBOARD_TOUR} storageKey="nexi-tour-dashboard-v1" />
     </div>
   );
 }
