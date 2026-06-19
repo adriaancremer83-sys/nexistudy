@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Nexi from "@/components/Nexi";
+import NudgeHint from "@/components/NudgeHint";
 import { IconCheck, IconLock, IconTarget, IconArrowRight, IconChevronDown } from "@/components/icons";
 
 interface Topic {
@@ -403,6 +404,14 @@ export default function PracticeClient({ topics, plan, quizzesLeft }: Props) {
             </Link>
           </p>
         )}
+
+        {/* First-time nudge: point the learner to their growing weak-spots map */}
+        <NudgeHint
+          show
+          storageKey="nexi-nudge-quiz"
+          message="See your weak spots on your dashboard"
+          href="/dashboard"
+        />
       </div>
     );
   }

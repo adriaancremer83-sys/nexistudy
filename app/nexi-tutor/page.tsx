@@ -7,6 +7,7 @@ import { useState, useRef, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import ReactMarkdown from "react-markdown";
 import Reveal from "@/components/Reveal";
+import NudgeHint from "@/components/NudgeHint";
 import { languageAllowed } from "@/lib/languages";
 import { IconUser, IconBookOpen, IconCpuChip } from "@/components/icons";
 
@@ -568,6 +569,13 @@ export default function NexiTutorPage() {
     setEditing(false);
   }
 
+  // Once Nexi has actually answered something, nudge the learner to lock it in
+  // with a quick quiz (and stop nudging once they've seen it).
+  const answeredOnce =
+    !sending &&
+    !escalating &&
+    messages.some((m, i) => i > 0 && m.role === "nexi" && m.text.trim() !== "");
+
   // ── Render ────────────────────────────────────────────────────────────────
 
   return (
@@ -999,6 +1007,14 @@ export default function NexiTutorPage() {
         </Reveal>
 
       </div>
+
+      {/* First-time nudge: turn an explanation into practice */}
+      <NudgeHint
+        show={answeredOnce}
+        storageKey="nexi-nudge-tutor"
+        message="Lock it in — take a quick quiz"
+        href="/practice"
+      />
     </div>
   );
 }
