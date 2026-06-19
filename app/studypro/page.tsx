@@ -283,6 +283,17 @@ const TYPE_COLORS: Record<ProgrammeEntry["type"], string> = {
 const SELECT_DARK =
   "w-full bg-white/5 text-white border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#00D4FF]/40 focus:border-[#00D4FF] transition-colors cursor-pointer";
 
+// Grade 10–12 view is split into tabs so only one section shows at a time —
+// no more endless scrolling, especially on mobile.
+const FET_TABS = [
+  { id: "aps", label: "APS Score" },
+  { id: "match", label: "Universities" },
+  { id: "focus", label: "Focus Areas" },
+  { id: "explore", label: "Explore" },
+  { id: "advice", label: "Funding & Career" },
+] as const;
+type FetTab = (typeof FET_TABS)[number]["id"];
+
 // ── Component ───────────────────────────────────────────────────────────────
 // ── Grade 8–9 (Senior Phase) content ────────────────────────────────────────
 const SENIOR_SUBJECT_CHIPS = [
@@ -355,6 +366,7 @@ const READINESS_HINTS: Record<string, string> = {
 export default function StudyProPage() {
   const { data: session, status } = useSession();
   const [phase, setPhase] = useState<"fet" | "senior">("fet");
+  const [fetTab, setFetTab] = useState<FetTab>("aps");
   const [subjects, setSubjects] = useState<SubjectRow[]>(
     DEFAULT_SUBJECTS.map((name) => ({ name, percentage: "" }))
   );
@@ -574,15 +586,13 @@ export default function StudyProPage() {
     <div className="min-h-screen">
 
       {/* ── 1. HERO ── */}
-      <section className="page-hero py-20 px-4">
+      <section className="page-hero py-12 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-white">
-            Study<span className="text-gradient">Pro</span> — Your Personalised
-            Roadmap to Success
+          <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-white">
+            Study<span className="text-gradient">Pro</span>
           </h1>
-          <p className="text-white/60 text-lg mb-8 max-w-xl mx-auto">
-            Know where you stand, set your target, and build a clear path to
-            university admission.
+          <p className="text-white/60 text-base mb-6 max-w-xl mx-auto">
+            Know where you stand, set your target, and build a path to university.
           </p>
           <div className="flex items-center justify-center gap-3 flex-wrap">
             <button
@@ -825,8 +835,35 @@ export default function StudyProPage() {
 
       {phase === "fet" && (
         <>
-      {/* ── 2. APS CALCULATOR ── */}
-      <section className="py-16 px-4">
+      {/* Tab strip — one section at a time (horizontally scrollable on mobile) */}
+      <div className="max-w-3xl mx-auto px-4 pt-8">
+        <div
+          role="tablist"
+          aria-label="Study Pro sections"
+          className="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        >
+          {FET_TABS.map((t) => (
+            <button
+              key={t.id}
+              role="tab"
+              aria-selected={fetTab === t.id}
+              onClick={() => setFetTab(t.id)}
+              className={`flex-shrink-0 px-4 py-2.5 rounded-full text-sm font-semibold transition-colors cursor-pointer whitespace-nowrap ${
+                fetTab === t.id
+                  ? "bg-[#2D6BE4] text-white"
+                  : "border border-white/15 text-white/60 hover:text-white hover:border-white/35"
+              }`}
+            >
+              {t.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {fetTab === "aps" && (
+      <>
+      {/* ── APS CALCULATOR ── */}
+      <section className="py-10 px-4">
         <div className="max-w-3xl mx-auto">
           <Reveal className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-2">APS Calculator</h2>
@@ -958,11 +995,13 @@ export default function StudyProPage() {
           </Reveal>
         </div>
       </section>
+      </>
+      )}
 
-      <div className="section-divider" />
-
-      {/* ── 3. UNIVERSITY & PROGRAMME MATCH ── */}
-      <section className="py-16 px-4">
+      {fetTab === "match" && (
+      <>
+      {/* ── UNIVERSITY & PROGRAMME MATCH ── */}
+      <section className="py-10 px-4">
         <div className="max-w-3xl mx-auto">
           <Reveal className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-2">
@@ -1131,11 +1170,13 @@ export default function StudyProPage() {
           </Reveal>
         </div>
       </section>
+      </>
+      )}
 
-      <div className="section-divider" />
-
-      {/* ── 4. YOUR FOCUS AREAS ── */}
-      <section className="py-16 px-4">
+      {fetTab === "focus" && (
+      <>
+      {/* ── YOUR FOCUS AREAS ── */}
+      <section className="py-10 px-4">
         <div className="max-w-3xl mx-auto">
           <Reveal className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-2">Your <span className="text-gradient">Focus Areas</span></h2>
@@ -1200,11 +1241,13 @@ export default function StudyProPage() {
           )}
         </div>
       </section>
+      </>
+      )}
 
-      <div className="section-divider" />
-
-      {/* ── 5. EXPLORE YOUR OPTIONS ── */}
-      <section className="py-16 px-4">
+      {fetTab === "explore" && (
+      <>
+      {/* ── EXPLORE YOUR OPTIONS ── */}
+      <section className="py-10 px-4">
         <div className="max-w-4xl mx-auto">
           <Reveal className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-2">Explore Your <span className="text-gradient">Options</span></h2>
@@ -1282,11 +1325,13 @@ export default function StudyProPage() {
           )}
         </div>
       </section>
+      </>
+      )}
 
-      <div className="section-divider" />
-
-      {/* ── 6. FUNDING & CAREER ADVICE (premium, free taste) ── */}
-      <section className="py-16 px-4">
+      {fetTab === "advice" && (
+      <>
+      {/* ── FUNDING & CAREER ADVICE (premium, free taste) ── */}
+      <section className="py-10 px-4">
         <div className="max-w-3xl mx-auto">
           <Reveal className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-2">
@@ -1306,6 +1351,8 @@ export default function StudyProPage() {
           </Reveal>
         </div>
       </section>
+      </>
+      )}
         </>
       )}
 
