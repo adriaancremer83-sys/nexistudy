@@ -39,7 +39,7 @@ const PREMIUM_INCLUDED = [
   "Weak-spots map + practice that targets them",
   "Past-paper walkthroughs (CAPS / NSC)",
   "Weekly parent progress report",
-  "Grade 8–9: Foundation Gap Finder + termly reports",
+  "Grade 8–9: full Subject Choice Advisor, Foundation Gap Finder + termly reports",
   "Ad-free + priority support",
 ];
 

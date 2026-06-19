@@ -6,6 +6,7 @@ import { useSession } from "next-auth/react";
 import Reveal from "@/components/Reveal";
 import ProgressRing from "@/components/ProgressRing";
 import CareerAdvice from "@/components/CareerAdvice";
+import SubjectAdvisor from "@/components/SubjectAdvisor";
 import { IconAcademicCap, IconDocumentText, IconRocket, IconTrendingUp, IconBookOpen, IconBolt, IconTarget, IconSparkles, IconLock, IconChartBar } from "@/components/icons";
 
 // ── APS conversion ──────────────────────────────────────────────────────────
@@ -836,27 +837,25 @@ export default function StudyProPage() {
               </Reveal>
             </div>
 
-            {/* Subject Choice Advisor — flagship, coming soon */}
+            {/* Subject Choice Advisor — the flagship Grade 9 → 10 feature */}
             <Reveal>
-              <div className="rounded-2xl border border-[#FFB454]/30 bg-[#FFB454]/[0.06] p-8 relative overflow-hidden">
-                <span className="absolute top-0 right-0 bg-[#FFB454]/15 text-[#FFB454] text-[10px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">
-                  Coming Soon
-                </span>
-                <h3 className="text-white font-bold text-xl mb-2.5 pr-24">Subject Choice Advisor</h3>
-                <p className="text-white/55 text-sm leading-relaxed max-w-2xl mb-6">
-                  At the end of Grade 9 you choose the subjects that decide your matric —
-                  and your university options. Nexi is learning how you work across your
-                  Grade 8 and 9 subjects, so when the moment comes she can help you and
-                  your family choose with confidence: Maths or Maths Lit, the science
-                  stream, EMS — with your future options mapped out clearly.
+              <div className="mb-4 text-center">
+                <p className="text-sm font-bold uppercase tracking-widest text-[#FFB454] mb-2">
+                  The big decision
                 </p>
-                <Link
-                  href="/nexi-tutor"
-                  className="inline-block px-6 py-3 bg-[#FFB454] hover:bg-[#FFC474] text-[#0A1628] font-bold text-sm rounded-xl transition-colors"
-                >
-                  Get homework help now →
-                </Link>
+                <h2 className="text-2xl font-bold text-white mb-2">Subject Choice Advisor</h2>
+                <p className="text-white/55 text-sm max-w-xl mx-auto leading-relaxed">
+                  At the end of Grade 9 you choose the subjects that shape your matric and your
+                  options after school. Let Nexi help you and your family choose with confidence.
+                </p>
               </div>
+              <SubjectAdvisor
+                marks={READINESS_SUBJECTS.filter(
+                  (n) => (readinessMarks[n] ?? "").trim() !== ""
+                )
+                  .map((n) => ({ name: n, percent: Number(readinessMarks[n]) }))
+                  .filter((s) => Number.isFinite(s.percent))}
+              />
             </Reveal>
           </div>
         </section>
