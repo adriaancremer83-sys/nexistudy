@@ -1,0 +1,530 @@
+[
+ {
+  "id": "8f6b251e-5537-4ca8-b0d2-2237744a9762",
+  "topic": "Integers & Exponents",
+  "prompt": "Calculate: −6 × −4.",
+  "options": [
+   "−24",
+   "24",
+   "−10",
+   "10"
+  ]
+ },
+ {
+  "id": "523d4232-8477-4b9b-931d-467af0b76f12",
+  "topic": "Integers & Exponents",
+  "prompt": "Calculate: −15 ÷ 3.",
+  "options": [
+   "5",
+   "−45",
+   "−5",
+   "45"
+  ]
+ },
+ {
+  "id": "3e9be29b-5589-4e93-93fa-b05a905b4a6e",
+  "topic": "Integers & Exponents",
+  "prompt": "Calculate: −8 + 5.",
+  "options": [
+   "−3",
+   "−13",
+   "3",
+   "13"
+  ]
+ },
+ {
+  "id": "1a354362-242a-4d74-9ffd-029d88d56766",
+  "topic": "Integers & Exponents",
+  "prompt": "Calculate: −7 − (−10).",
+  "options": [
+   "−17",
+   "−3",
+   "17",
+   "3"
+  ]
+ },
+ {
+  "id": "b6ffbf5e-2ca6-4773-ae6f-32692139158d",
+  "topic": "Integers & Exponents",
+  "prompt": "Write 2⁵ as an ordinary number.",
+  "options": [
+   "32",
+   "10",
+   "25",
+   "16"
+  ]
+ },
+ {
+  "id": "18c767df-9eb6-450d-a777-29b28cf946bf",
+  "topic": "Integers & Exponents",
+  "prompt": "Simplify: 3² + 4².",
+  "options": [
+   "49",
+   "25",
+   "14",
+   "7"
+  ]
+ },
+ {
+  "id": "344b3e9f-53f3-4fd5-bac7-000837ac3b71",
+  "topic": "Integers & Exponents",
+  "prompt": "Simplify and leave in exponent form: 2³ × 2².",
+  "options": [
+   "2⁶",
+   "4⁵",
+   "2⁵",
+   "2¹"
+  ]
+ },
+ {
+  "id": "59e329c0-7c52-4fc1-a495-2a03a302182b",
+  "topic": "Integers & Exponents",
+  "prompt": "What is the value of 10³?",
+  "options": [
+   "30",
+   "100",
+   "300",
+   "1000"
+  ]
+ },
+ {
+  "id": "a8dd874f-0c2f-4709-9baa-2b581e47f47e",
+  "topic": "Algebraic Expressions & Equations",
+  "prompt": "Simplify: 7a + 2a − 4a.",
+  "options": [
+   "5a",
+   "13a",
+   "9a",
+   "3a"
+  ]
+ },
+ {
+  "id": "fbc13ccd-2186-4e22-b58f-ef9be7a95ac2",
+  "topic": "Algebraic Expressions & Equations",
+  "prompt": "Expand: 3(x + 5).",
+  "options": [
+   "3x + 5",
+   "3x + 15",
+   "x + 15",
+   "8x"
+  ]
+ },
+ {
+  "id": "bafb4b37-6072-4204-a23a-91fd76840b38",
+  "topic": "Algebraic Expressions & Equations",
+  "prompt": "Simplify: 4x + 3y + 2x − y.",
+  "options": [
+   "8xy",
+   "6x + 4y",
+   "6x + 2y",
+   "4x + 2y"
+  ]
+ },
+ {
+  "id": "c7dee945-415e-4e1c-a92a-d3050478152c",
+  "topic": "Algebraic Expressions & Equations",
+  "prompt": "Solve for x: x − 6 = 10.",
+  "options": [
+   "x = 4",
+   "x = −16",
+   "x = 60",
+   "x = 16"
+  ]
+ },
+ {
+  "id": "e552c2ac-c8a4-452c-8324-748a9545f38c",
+  "topic": "Algebraic Expressions & Equations",
+  "prompt": "Solve for x: 5x = 35.",
+  "options": [
+   "x = 7",
+   "x = 30",
+   "x = 40",
+   "x = 175"
+  ]
+ },
+ {
+  "id": "d4037424-a6cc-4c3d-a3c4-ce5d23b91144",
+  "topic": "Algebraic Expressions & Equations",
+  "prompt": "Solve for x: 2x + 3 = 11.",
+  "options": [
+   "x = 7",
+   "x = 4",
+   "x = 5.5",
+   "x = 14"
+  ]
+ },
+ {
+  "id": "22de22ad-49da-4628-a3f4-76217f4e1d1c",
+  "topic": "Algebraic Expressions & Equations",
+  "prompt": "Factorise: 8x + 12.",
+  "options": [
+   "8(x + 12)",
+   "x(8 + 12)",
+   "4(2x + 3)",
+   "2(4x + 12)"
+  ]
+ },
+ {
+  "id": "ee29ac83-7939-488a-9221-303e1569e5eb",
+  "topic": "Algebraic Expressions & Equations",
+  "prompt": "If x = 3, what is the value of 2x²?",
+  "options": [
+   "12",
+   "36",
+   "6",
+   "18"
+  ]
+ },
+ {
+  "id": "7dd68fe3-1083-46d2-ba9a-1dd7eb2588a7",
+  "topic": "Number Patterns & Relationships",
+  "prompt": "Find the next term: 3, 7, 11, 15, …",
+  "options": [
+   "19",
+   "20",
+   "18",
+   "23"
+  ]
+ },
+ {
+  "id": "76594d10-9871-4024-ad0e-a635f789d8e5",
+  "topic": "Number Patterns & Relationships",
+  "prompt": "Find the next term: 2, 4, 8, 16, …",
+  "options": [
+   "24",
+   "32",
+   "20",
+   "64"
+  ]
+ },
+ {
+  "id": "adcb30c9-fd7a-4683-9cac-3cdba2fca684",
+  "topic": "Number Patterns & Relationships",
+  "prompt": "A pattern follows the rule “multiply the position number by 3”. The 5th term is:",
+  "options": [
+   "8",
+   "35",
+   "15",
+   "12"
+  ]
+ },
+ {
+  "id": "d6e6b54d-8a0d-4dfe-bcdd-03f63b93311e",
+  "topic": "Number Patterns & Relationships",
+  "prompt": "Find the missing term: 5, 10, __, 20, 25.",
+  "options": [
+   "12",
+   "11",
+   "30",
+   "15"
+  ]
+ },
+ {
+  "id": "8f6ff063-c4e9-4e30-aba1-253f857b7985",
+  "topic": "Number Patterns & Relationships",
+  "prompt": "What is the constant difference in the sequence 6, 10, 14, 18, …?",
+  "options": [
+   "4",
+   "6",
+   "2",
+   "8"
+  ]
+ },
+ {
+  "id": "8ddb9f7d-6201-4897-876b-cf2d4ff8b5dd",
+  "topic": "Number Patterns & Relationships",
+  "prompt": "Find the next term: 1, 4, 9, 16, …",
+  "options": [
+   "20",
+   "25",
+   "24",
+   "36"
+  ]
+ },
+ {
+  "id": "d24ee5b6-c6a2-4aa4-8ea6-c0bf6bf14fd6",
+  "topic": "Number Patterns & Relationships",
+  "prompt": "A pattern follows the rule “term = 2n + 1”, where n is the position. The 4th term is:",
+  "options": [
+   "7",
+   "8",
+   "9",
+   "11"
+  ]
+ },
+ {
+  "id": "b20fe841-d006-4874-b88e-aa987e3edef0",
+  "topic": "Number Patterns & Relationships",
+  "prompt": "Find the next term: 100, 90, 80, 70, …",
+  "options": [
+   "50",
+   "65",
+   "75",
+   "60"
+  ]
+ },
+ {
+  "id": "2d082880-d564-4c60-9119-28eb5dda798b",
+  "topic": "Geometry: Lines, Angles & Triangles",
+  "prompt": "Two angles that add up to 90° are called:",
+  "options": [
+   "complementary angles",
+   "supplementary angles",
+   "vertically opposite angles",
+   "co-interior angles"
+  ]
+ },
+ {
+  "id": "a29bd8e2-5021-48e2-beca-6fbb92d1bc14",
+  "topic": "Geometry: Lines, Angles & Triangles",
+  "prompt": "Angles on a straight line add up to:",
+  "options": [
+   "90°",
+   "180°",
+   "360°",
+   "270°"
+  ]
+ },
+ {
+  "id": "3cf28293-b7c5-49a7-b312-2c28c7005019",
+  "topic": "Geometry: Lines, Angles & Triangles",
+  "prompt": "The interior angles of a triangle add up to:",
+  "options": [
+   "90°",
+   "270°",
+   "180°",
+   "360°"
+  ]
+ },
+ {
+  "id": "68689d27-fee0-4cb9-8003-6c2e044d2f25",
+  "topic": "Geometry: Lines, Angles & Triangles",
+  "prompt": "A triangle with all three sides equal is called:",
+  "options": [
+   "scalene",
+   "isosceles",
+   "right-angled",
+   "equilateral"
+  ]
+ },
+ {
+  "id": "cc31ec30-5a97-4fb0-9bf4-3f4da7085f50",
+  "topic": "Geometry: Lines, Angles & Triangles",
+  "prompt": "In a right-angled triangle, one of the angles is exactly:",
+  "options": [
+   "90°",
+   "45°",
+   "60°",
+   "180°"
+  ]
+ },
+ {
+  "id": "fe9bc675-7b30-498b-9c0f-4a24b9be8221",
+  "topic": "Geometry: Lines, Angles & Triangles",
+  "prompt": "Two angles that add up to 180° are called:",
+  "options": [
+   "complementary angles",
+   "supplementary angles",
+   "acute angles",
+   "reflex angles"
+  ]
+ },
+ {
+  "id": "2bea6100-f1df-42c5-968a-0860ffc1804b",
+  "topic": "Geometry: Lines, Angles & Triangles",
+  "prompt": "An angle measuring more than 90° but less than 180° is called:",
+  "options": [
+   "acute",
+   "right",
+   "obtuse",
+   "reflex"
+  ]
+ },
+ {
+  "id": "3fa5abbf-40c7-464c-af49-2a0e3dbc5b8e",
+  "topic": "Geometry: Lines, Angles & Triangles",
+  "prompt": "Two angles in a triangle are 50° and 60°. The third angle is:",
+  "options": [
+   "40°",
+   "80°",
+   "110°",
+   "70°"
+  ]
+ },
+ {
+  "id": "f912062c-52a7-454a-a099-f8d09c7b520f",
+  "topic": "Measurement: Perimeter, Area & Volume",
+  "prompt": "The perimeter of a square with side 6 cm is:",
+  "options": [
+   "24 cm",
+   "36 cm",
+   "12 cm",
+   "30 cm"
+  ]
+ },
+ {
+  "id": "1bf674ae-d737-41d7-b7d2-325ed8d895ca",
+  "topic": "Measurement: Perimeter, Area & Volume",
+  "prompt": "The area of a rectangle 8 cm long and 5 cm wide is:",
+  "options": [
+   "26 cm²",
+   "40 cm²",
+   "13 cm²",
+   "80 cm²"
+  ]
+ },
+ {
+  "id": "e87f0c2a-83ae-49cf-a432-4ed82ba76173",
+  "topic": "Measurement: Perimeter, Area & Volume",
+  "prompt": "The area of a square with side 7 cm is:",
+  "options": [
+   "28 cm²",
+   "14 cm²",
+   "49 cm²",
+   "21 cm²"
+  ]
+ },
+ {
+  "id": "33a66ad7-858d-4438-b726-816e9c65324e",
+  "topic": "Measurement: Perimeter, Area & Volume",
+  "prompt": "The volume of a cube with side 3 cm is:",
+  "options": [
+   "9 cm³",
+   "18 cm³",
+   "12 cm³",
+   "27 cm³"
+  ]
+ },
+ {
+  "id": "47ca441f-4e1d-4bda-8d09-2e230d529555",
+  "topic": "Measurement: Perimeter, Area & Volume",
+  "prompt": "The perimeter of a rectangle 10 cm by 4 cm is:",
+  "options": [
+   "28 cm",
+   "40 cm",
+   "14 cm",
+   "24 cm"
+  ]
+ },
+ {
+  "id": "7f075c6c-9bd7-4d7d-8a0b-1335901207d5",
+  "topic": "Measurement: Perimeter, Area & Volume",
+  "prompt": "The area of a triangle with base 10 cm and height 6 cm is:",
+  "options": [
+   "60 cm²",
+   "30 cm²",
+   "16 cm²",
+   "32 cm²"
+  ]
+ },
+ {
+  "id": "81bb86ba-7e25-4c88-af41-10ac63bbd6b1",
+  "topic": "Measurement: Perimeter, Area & Volume",
+  "prompt": "The volume of a rectangular box 5 cm × 2 cm × 3 cm is:",
+  "options": [
+   "10 cm³",
+   "25 cm³",
+   "30 cm³",
+   "60 cm³"
+  ]
+ },
+ {
+  "id": "298de81f-197b-456a-91a0-7b5361e0ace3",
+  "topic": "Measurement: Perimeter, Area & Volume",
+  "prompt": "How many centimetres are there in 1 metre?",
+  "options": [
+   "10",
+   "1000",
+   "10 000",
+   "100"
+  ]
+ },
+ {
+  "id": "4432a562-4ddf-48d0-b822-aa7125541e04",
+  "topic": "Data Handling & Probability",
+  "prompt": "The mean (average) of 2, 4, 6 is:",
+  "options": [
+   "4",
+   "6",
+   "12",
+   "3"
+  ]
+ },
+ {
+  "id": "d4831a06-4997-4849-aa3a-011a75f8719c",
+  "topic": "Data Handling & Probability",
+  "prompt": "The mode of the data set 5, 7, 7, 9, 10 is:",
+  "options": [
+   "5",
+   "7",
+   "9",
+   "10"
+  ]
+ },
+ {
+  "id": "169b0aeb-c5d1-4a5f-9451-2ad81bbc3a43",
+  "topic": "Data Handling & Probability",
+  "prompt": "The median of the data set 2, 4, 6, 8, 10 is:",
+  "options": [
+   "4",
+   "8",
+   "6",
+   "5"
+  ]
+ },
+ {
+  "id": "05cd9df0-5d8a-4c8f-85c5-11f0f2a966b0",
+  "topic": "Data Handling & Probability",
+  "prompt": "The range of the data set 4, 9, 2, 15, 6 is:",
+  "options": [
+   "9",
+   "15",
+   "11",
+   "13"
+  ]
+ },
+ {
+  "id": "67c480ab-4a19-4ef9-aa91-a7438b007f8e",
+  "topic": "Data Handling & Probability",
+  "prompt": "When rolling a normal six-sided die once, the probability of rolling an even number is:",
+  "options": [
+   "1/2",
+   "1/6",
+   "1/3",
+   "2/3"
+  ]
+ },
+ {
+  "id": "0a17f211-192e-4053-94e7-a981db897a69",
+  "topic": "Data Handling & Probability",
+  "prompt": "A bag holds 3 red and 2 blue balls. The probability of drawing a red ball is:",
+  "options": [
+   "2/5",
+   "3/5",
+   "1/2",
+   "3/2"
+  ]
+ },
+ {
+  "id": "c0eecb09-d5bb-4603-a877-0b676e7f75ac",
+  "topic": "Data Handling & Probability",
+  "prompt": "The probability of an impossible event is:",
+  "options": [
+   "1",
+   "½",
+   "0",
+   "100"
+  ]
+ },
+ {
+  "id": "93eede8f-bfe6-4101-acc8-ed3df6755510",
+  "topic": "Data Handling & Probability",
+  "prompt": "The mean (average) of 10, 12, 14, 16 is:",
+  "options": [
+   "14",
+   "12",
+   "15",
+   "13"
+  ]
+ }
+]
