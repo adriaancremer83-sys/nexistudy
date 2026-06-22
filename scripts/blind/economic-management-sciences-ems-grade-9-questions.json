@@ -1,0 +1,530 @@
+[
+ {
+  "id": "894532f6-f850-4340-a200-f48f9f9a33b7",
+  "topic": "The Economy & Circular Flow",
+  "prompt": "In the circular flow, households supply factors of production to businesses in exchange for:",
+  "options": [
+   "income",
+   "goods only",
+   "taxes",
+   "imports"
+  ]
+ },
+ {
+  "id": "031602bd-c012-4287-bf4e-f3855ab1d9ff",
+  "topic": "The Economy & Circular Flow",
+  "prompt": "The two main participants in the simple circular flow are households and:",
+  "options": [
+   "foreigners",
+   "businesses",
+   "banks",
+   "trade unions"
+  ]
+ },
+ {
+  "id": "daec534f-ba7d-4351-8102-a032274d171e",
+  "topic": "The Economy & Circular Flow",
+  "prompt": "Money that the government collects from people and businesses to pay for public services is called:",
+  "options": [
+   "profit",
+   "wages",
+   "tax",
+   "interest"
+  ]
+ },
+ {
+  "id": "4f8125e4-4da8-4adf-858a-b6bb771b12ae",
+  "topic": "The Economy & Circular Flow",
+  "prompt": "Which of the following is a public service usually provided by the government?",
+  "options": [
+   "a private spaza shop",
+   "a private bank",
+   "a clothing factory",
+   "public hospitals"
+  ]
+ },
+ {
+  "id": "8f4be6ee-8438-4e2a-884f-db6ecb3470ca",
+  "topic": "The Economy & Circular Flow",
+  "prompt": "In the circular flow, businesses use the factors of production to produce:",
+  "options": [
+   "goods and services",
+   "taxes",
+   "savings",
+   "wages"
+  ]
+ },
+ {
+  "id": "dd82d5d1-dda6-41d9-b140-605237ba09cb",
+  "topic": "The Economy & Circular Flow",
+  "prompt": "The price paid for using a person's labour is called:",
+  "options": [
+   "rent",
+   "wages",
+   "interest",
+   "profit"
+  ]
+ },
+ {
+  "id": "a8bf7b25-a45e-4ff7-a2dd-1b7a6195cb88",
+  "topic": "The Economy & Circular Flow",
+  "prompt": "Money flows from households to businesses when households:",
+  "options": [
+   "pay taxes",
+   "earn wages",
+   "buy goods and services",
+   "save money"
+  ]
+ },
+ {
+  "id": "287fd60f-5176-410d-9ce1-037e5eb6355c",
+  "topic": "The Economy & Circular Flow",
+  "prompt": "The third participant added to the simple circular flow to make it more realistic is the:",
+  "options": [
+   "spaza shop",
+   "household",
+   "business",
+   "government"
+  ]
+ },
+ {
+  "id": "eb56f747-868f-4bd6-9e5c-8547e2cf0b86",
+  "topic": "Needs, Wants & Factors of Production",
+  "prompt": "Something a person must have to survive, such as food and water, is called a:",
+  "options": [
+   "need",
+   "want",
+   "luxury",
+   "service"
+  ]
+ },
+ {
+  "id": "ac771131-e004-4c06-82c1-710ed1f00387",
+  "topic": "Needs, Wants & Factors of Production",
+  "prompt": "Something a person would like to have but can live without, such as a games console, is a:",
+  "options": [
+   "need",
+   "want",
+   "necessity",
+   "right"
+  ]
+ },
+ {
+  "id": "e2cc5554-6b09-4a62-9510-554e4bcfb2d8",
+  "topic": "Needs, Wants & Factors of Production",
+  "prompt": "The factor of production that refers to natural resources like land, water and minerals is called:",
+  "options": [
+   "labour",
+   "capital",
+   "natural resources",
+   "entrepreneurship"
+  ]
+ },
+ {
+  "id": "478fffa4-481b-4e91-ab8e-0ff953cd6e68",
+  "topic": "Needs, Wants & Factors of Production",
+  "prompt": "The human effort, both physical and mental, used in production is the factor called:",
+  "options": [
+   "capital",
+   "natural resources",
+   "entrepreneurship",
+   "labour"
+  ]
+ },
+ {
+  "id": "7df04a3a-ab17-4d99-aa96-31d4831b0054",
+  "topic": "Needs, Wants & Factors of Production",
+  "prompt": "Machines, tools, equipment and money used to produce goods are the factor of production called:",
+  "options": [
+   "capital",
+   "labour",
+   "land",
+   "entrepreneurship"
+  ]
+ },
+ {
+  "id": "acfeb24a-a0dc-4d2a-aea0-7f15dacad37c",
+  "topic": "Needs, Wants & Factors of Production",
+  "prompt": "The person who combines the other factors of production and takes the risk of starting a business is the:",
+  "options": [
+   "labourer",
+   "entrepreneur",
+   "consumer",
+   "landlord"
+  ]
+ },
+ {
+  "id": "dac8521e-5ff0-47a9-859c-7d4f29bd9a92",
+  "topic": "Needs, Wants & Factors of Production",
+  "prompt": "Because our needs and wants are unlimited but resources are limited, we face the basic economic problem of:",
+  "options": [
+   "inflation",
+   "profit",
+   "scarcity",
+   "interest"
+  ]
+ },
+ {
+  "id": "834df573-0c82-43af-b8f6-be7bdda677b4",
+  "topic": "Needs, Wants & Factors of Production",
+  "prompt": "When you choose one thing, the next best thing you give up is called the:",
+  "options": [
+   "fixed cost",
+   "selling price",
+   "profit margin",
+   "opportunity cost"
+  ]
+ },
+ {
+  "id": "500b5c65-26ea-4598-8744-45f565b37b08",
+  "topic": "Markets, Trade & the Government",
+  "prompt": "A place or system where buyers and sellers meet to trade goods and services is a:",
+  "options": [
+   "market",
+   "factory",
+   "warehouse",
+   "bank"
+  ]
+ },
+ {
+  "id": "bd70fadb-27e7-4a21-8bba-a0e44179e730",
+  "topic": "Markets, Trade & the Government",
+  "prompt": "When a country sells goods to other countries, this is called:",
+  "options": [
+   "importing",
+   "exporting",
+   "saving",
+   "budgeting"
+  ]
+ },
+ {
+  "id": "57b4cd79-0e31-4689-8796-dcdf381380d8",
+  "topic": "Markets, Trade & the Government",
+  "prompt": "When a country buys goods from other countries, this is called:",
+  "options": [
+   "exporting",
+   "lending",
+   "importing",
+   "taxing"
+  ]
+ },
+ {
+  "id": "eb5f8d3c-a489-4160-9f14-e2ba946307e7",
+  "topic": "Markets, Trade & the Government",
+  "prompt": "An organisation that represents workers and negotiates for better wages and working conditions is a:",
+  "options": [
+   "bank",
+   "spaza shop",
+   "stock exchange",
+   "trade union"
+  ]
+ },
+ {
+  "id": "baf8d4e7-0b2f-4382-bb4a-9dfef4e31228",
+  "topic": "Markets, Trade & the Government",
+  "prompt": "A general rise in the prices of goods and services over time is called:",
+  "options": [
+   "inflation",
+   "profit",
+   "a discount",
+   "a surplus"
+  ]
+ },
+ {
+  "id": "447f0ebf-082f-410c-8ae9-23f0000e5e58",
+  "topic": "Markets, Trade & the Government",
+  "prompt": "South Africa's tax on most goods and services, currently 15%, is called:",
+  "options": [
+   "income tax",
+   "VAT (Value-Added Tax)",
+   "customs duty",
+   "interest"
+  ]
+ },
+ {
+  "id": "527eff4f-a211-4a7e-a552-8a3c6e87f9ac",
+  "topic": "Markets, Trade & the Government",
+  "prompt": "The unequal distribution of income and wealth in a society is known as economic:",
+  "options": [
+   "growth",
+   "savings",
+   "inequality",
+   "trade"
+  ]
+ },
+ {
+  "id": "f193c159-7f1d-461f-8ff9-6e5e80be33eb",
+  "topic": "Markets, Trade & the Government",
+  "prompt": "When many people who are able and willing to work cannot find jobs, the economy has a high level of:",
+  "options": [
+   "inflation",
+   "profit",
+   "exports",
+   "unemployment"
+  ]
+ },
+ {
+  "id": "f2d0261e-6f7d-406f-86ee-dfa5b8c0acce",
+  "topic": "Financial Literacy & Budgets",
+  "prompt": "A plan that shows expected income and planned spending over a period is called a:",
+  "options": [
+   "budget",
+   "receipt",
+   "profit",
+   "loan"
+  ]
+ },
+ {
+  "id": "ef02d749-3468-4dd4-a065-41bb4cc66969",
+  "topic": "Financial Literacy & Budgets",
+  "prompt": "If income is greater than expenses in a budget, the result is a:",
+  "options": [
+   "deficit",
+   "surplus",
+   "loss",
+   "loan"
+  ]
+ },
+ {
+  "id": "dbea69be-fe6b-4b4f-a1d8-181498abe281",
+  "topic": "Financial Literacy & Budgets",
+  "prompt": "If expenses are greater than income in a budget, the result is a:",
+  "options": [
+   "surplus",
+   "profit",
+   "deficit",
+   "saving"
+  ]
+ },
+ {
+  "id": "ac96831c-6004-45f6-a4ca-b4813d855129",
+  "topic": "Financial Literacy & Budgets",
+  "prompt": "Thandi earns R500 and spends R350. How much does she save?",
+  "options": [
+   "R850",
+   "R350",
+   "R500",
+   "R150"
+  ]
+ },
+ {
+  "id": "fc20377d-1175-4684-abd9-3b83efd8f637",
+  "topic": "Financial Literacy & Budgets",
+  "prompt": "Money set aside now to use in the future, instead of spending it, is called:",
+  "options": [
+   "savings",
+   "income",
+   "tax",
+   "debt"
+  ]
+ },
+ {
+  "id": "8646f728-b546-4f4d-9118-9956bad74826",
+  "topic": "Financial Literacy & Budgets",
+  "prompt": "Sipho's monthly income is R2 000 and his expenses are R2 300. His budget shows a deficit of:",
+  "options": [
+   "R200",
+   "R300",
+   "R4 300",
+   "R300 surplus"
+  ]
+ },
+ {
+  "id": "5bb33c50-9925-43c5-b59a-eec4acb5a1e7",
+  "topic": "Financial Literacy & Budgets",
+  "prompt": "Money that is borrowed and must be paid back, often with interest, is called:",
+  "options": [
+   "savings",
+   "income",
+   "debt",
+   "profit"
+  ]
+ },
+ {
+  "id": "6f894c6d-8b7e-4a8d-bce8-524dce79b160",
+  "topic": "Financial Literacy & Budgets",
+  "prompt": "A budget surplus of R450 means income exceeded expenses by:",
+  "options": [
+   "R0",
+   "R900",
+   "R45",
+   "R450"
+  ]
+ },
+ {
+  "id": "2af81608-4a04-48d5-9b57-80aebd825dc3",
+  "topic": "Basic Accounting Concepts",
+  "prompt": "In a business, the money earned from selling goods or services is called:",
+  "options": [
+   "income",
+   "expenses",
+   "debt",
+   "tax"
+  ]
+ },
+ {
+  "id": "c24a1c4e-6a78-46f7-9c5c-37d5d2aca263",
+  "topic": "Basic Accounting Concepts",
+  "prompt": "The costs a business pays to operate, such as rent and wages, are called:",
+  "options": [
+   "income",
+   "expenses",
+   "profit",
+   "assets"
+  ]
+ },
+ {
+  "id": "9b82bc86-2bec-4094-88a1-324c11bdbb21",
+  "topic": "Basic Accounting Concepts",
+  "prompt": "A business earns R8 000 income and has R5 000 in expenses. Its profit is:",
+  "options": [
+   "R13 000",
+   "R5 000",
+   "R3 000",
+   "R8 000"
+  ]
+ },
+ {
+  "id": "2d40a904-7f72-4f71-ae25-1c593ab54d6e",
+  "topic": "Basic Accounting Concepts",
+  "prompt": "A document given to a customer as proof of payment received is a:",
+  "options": [
+   "budget",
+   "cheque",
+   "price tag",
+   "receipt"
+  ]
+ },
+ {
+  "id": "b0964e5a-3e94-4cfc-9202-b3525df88c0c",
+  "topic": "Basic Accounting Concepts",
+  "prompt": "If a business's expenses are greater than its income, it makes a:",
+  "options": [
+   "loss",
+   "profit",
+   "surplus",
+   "deposit"
+  ]
+ },
+ {
+  "id": "f760baa0-7071-4f84-b5bb-873b5bbeb72d",
+  "topic": "Basic Accounting Concepts",
+  "prompt": "Items of value that a business owns, such as equipment and vehicles, are called:",
+  "options": [
+   "expenses",
+   "assets",
+   "incomes",
+   "debts"
+  ]
+ },
+ {
+  "id": "1cc0049d-3a50-43b9-bcc5-bd05de975ca6",
+  "topic": "Basic Accounting Concepts",
+  "prompt": "A business earns R12 000 and spends R12 000. Its profit is:",
+  "options": [
+   "R24 000",
+   "R12 000",
+   "R0",
+   "R6 000"
+  ]
+ },
+ {
+  "id": "13881d79-18c0-4214-bfe2-12d6940430f4",
+  "topic": "Basic Accounting Concepts",
+  "prompt": "A written document that records the details of a transaction as proof is called a:",
+  "options": [
+   "budget",
+   "logo",
+   "slogan",
+   "source document"
+  ]
+ },
+ {
+  "id": "1f598f60-fdc4-45e5-9c6b-066dd329286f",
+  "topic": "Entrepreneurship & Forms of Business",
+  "prompt": "A person who starts and runs their own business, taking the risks, is called an:",
+  "options": [
+   "entrepreneur",
+   "employee",
+   "accountant",
+   "inspector"
+  ]
+ },
+ {
+  "id": "2b088f85-49b6-4907-9ccc-0540135750b7",
+  "topic": "Entrepreneurship & Forms of Business",
+  "prompt": "A business owned and run by one person is called a:",
+  "options": [
+   "partnership",
+   "sole trader (sole proprietor)",
+   "company",
+   "close corporation"
+  ]
+ },
+ {
+  "id": "d25516f0-b594-4ec6-8a22-1a7d97a03c74",
+  "topic": "Entrepreneurship & Forms of Business",
+  "prompt": "A business owned by two or more people who share the profits and responsibilities is a:",
+  "options": [
+   "sole trader",
+   "company",
+   "partnership",
+   "spaza shop"
+  ]
+ },
+ {
+  "id": "b60bac5f-11d0-49fe-a369-9c23c84a937f",
+  "topic": "Entrepreneurship & Forms of Business",
+  "prompt": "The money an entrepreneur uses to start a business is called start-up:",
+  "options": [
+   "profit",
+   "income",
+   "wages",
+   "capital"
+  ]
+ },
+ {
+  "id": "543bf61e-6871-4681-a211-78f7e0698779",
+  "topic": "Entrepreneurship & Forms of Business",
+  "prompt": "A new and original idea, or a better way of doing something, is called:",
+  "options": [
+   "innovation",
+   "inflation",
+   "a deficit",
+   "a receipt"
+  ]
+ },
+ {
+  "id": "f80e522d-980a-444b-8a9e-0e6e277c0515",
+  "topic": "Entrepreneurship & Forms of Business",
+  "prompt": "A spaza shop that sells goods directly to the public is an example of which business sector?",
+  "options": [
+   "primary sector",
+   "tertiary (services) sector",
+   "secondary sector",
+   "mining sector"
+  ]
+ },
+ {
+  "id": "5514a1f0-836b-4e57-a2a0-c6b110a6c68f",
+  "topic": "Entrepreneurship & Forms of Business",
+  "prompt": "Farming, fishing and mining, which extract raw materials from nature, belong to the:",
+  "options": [
+   "tertiary sector",
+   "services sector",
+   "primary sector",
+   "retail sector"
+  ]
+ },
+ {
+  "id": "68489aa0-05a5-4b8b-aeb6-eff8cf20e747",
+  "topic": "Entrepreneurship & Forms of Business",
+  "prompt": "A factory that turns raw materials into finished products belongs to the:",
+  "options": [
+   "primary sector",
+   "tertiary sector",
+   "services sector",
+   "secondary sector"
+  ]
+ }
+]
