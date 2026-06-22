@@ -1,0 +1,530 @@
+[
+ {
+  "id": "a21061ce-6100-4f03-b736-0e218951888d",
+  "topic": "Cells & the Human Body",
+  "prompt": "The basic structural and functional unit of all living things is the:",
+  "options": [
+   "cell",
+   "organ",
+   "tissue",
+   "molecule"
+  ]
+ },
+ {
+  "id": "328b8f28-c064-4882-94a3-f41f958d879a",
+  "topic": "Cells & the Human Body",
+  "prompt": "The part of the cell that controls its activities and contains genetic material is the:",
+  "options": [
+   "cell wall",
+   "nucleus",
+   "cytoplasm",
+   "ribosome"
+  ]
+ },
+ {
+  "id": "ccf4d1a3-2eb0-421e-9b45-0273c66f4eb6",
+  "topic": "Cells & the Human Body",
+  "prompt": "Which structure is found in plant cells but NOT in animal cells?",
+  "options": [
+   "nucleus",
+   "cell membrane",
+   "cell wall",
+   "cytoplasm"
+  ]
+ },
+ {
+  "id": "90e82939-bc47-4909-843c-d87331e13515",
+  "topic": "Cells & the Human Body",
+  "prompt": "The human body system responsible for transporting blood around the body is the:",
+  "options": [
+   "digestive system",
+   "respiratory system",
+   "nervous system",
+   "circulatory system"
+  ]
+ },
+ {
+  "id": "3ffd6659-ef44-4409-a20c-79991a28bfc7",
+  "topic": "Cells & the Human Body",
+  "prompt": "The body system that breaks down food so the body can absorb nutrients is the:",
+  "options": [
+   "digestive system",
+   "skeletal system",
+   "respiratory system",
+   "excretory system"
+  ]
+ },
+ {
+  "id": "ac326426-68ea-44f6-a66c-b1a87ecc6013",
+  "topic": "Cells & the Human Body",
+  "prompt": "The gas we breathe in and that the body needs for respiration is:",
+  "options": [
+   "carbon dioxide",
+   "oxygen",
+   "nitrogen",
+   "hydrogen"
+  ]
+ },
+ {
+  "id": "1993b015-a8d3-43c8-bdfa-85fd93ef750e",
+  "topic": "Cells & the Human Body",
+  "prompt": "Which organ pumps blood around the body?",
+  "options": [
+   "lungs",
+   "liver",
+   "heart",
+   "kidneys"
+  ]
+ },
+ {
+  "id": "0864c0cf-a281-423c-84ef-f0aca7983c10",
+  "topic": "Cells & the Human Body",
+  "prompt": "A group of similar cells working together to perform a function is called a:",
+  "options": [
+   "organ",
+   "system",
+   "organism",
+   "tissue"
+  ]
+ },
+ {
+  "id": "dc05d8dd-7beb-4bea-b48b-94bde6fc7a38",
+  "topic": "Atoms, Elements & Compounds",
+  "prompt": "The smallest particle of an element that still has the properties of that element is an:",
+  "options": [
+   "atom",
+   "organ",
+   "cell",
+   "mixture"
+  ]
+ },
+ {
+  "id": "1f42aee4-ba0c-4a70-b921-e0067d6207a4",
+  "topic": "Atoms, Elements & Compounds",
+  "prompt": "The central part of an atom, containing protons and neutrons, is the:",
+  "options": [
+   "electron",
+   "nucleus",
+   "shell",
+   "ion"
+  ]
+ },
+ {
+  "id": "81c9c812-c35e-485d-b65f-dc18af956f0b",
+  "topic": "Atoms, Elements & Compounds",
+  "prompt": "Which particle in an atom carries a negative charge?",
+  "options": [
+   "proton",
+   "neutron",
+   "electron",
+   "nucleus"
+  ]
+ },
+ {
+  "id": "b0faad5e-875d-4628-ada9-5d529291a0bc",
+  "topic": "Atoms, Elements & Compounds",
+  "prompt": "A pure substance made of two or more elements chemically bonded together is a:",
+  "options": [
+   "mixture",
+   "atom",
+   "element",
+   "compound"
+  ]
+ },
+ {
+  "id": "8a440a51-5b00-4482-9e39-a44e4c4bea0e",
+  "topic": "Atoms, Elements & Compounds",
+  "prompt": "Water has the chemical formula:",
+  "options": [
+   "H₂O",
+   "CO₂",
+   "O₂",
+   "NaCl"
+  ]
+ },
+ {
+  "id": "c0d4065e-9d1c-453d-8573-00aa896d38b6",
+  "topic": "Atoms, Elements & Compounds",
+  "prompt": "The chemical symbol for oxygen is:",
+  "options": [
+   "Os",
+   "O",
+   "Ox",
+   "On"
+  ]
+ },
+ {
+  "id": "f197d298-e7db-4343-a653-db537393ae09",
+  "topic": "Atoms, Elements & Compounds",
+  "prompt": "The table that organises all the known elements in rows and columns is the:",
+  "options": [
+   "food chain",
+   "data table",
+   "Periodic Table",
+   "circuit diagram"
+  ]
+ },
+ {
+  "id": "d6184dd7-dad5-47fd-b710-c066eff23054",
+  "topic": "Atoms, Elements & Compounds",
+  "prompt": "Which of the following is a mixture, not a pure substance?",
+  "options": [
+   "oxygen gas",
+   "pure gold",
+   "distilled water",
+   "sand mixed with salt"
+  ]
+ },
+ {
+  "id": "8a5734f7-91ec-42ce-80ab-d7b3dc5fff86",
+  "topic": "Chemical Reactions, Acids & Bases",
+  "prompt": "In a chemical reaction, the starting substances are called the:",
+  "options": [
+   "reactants",
+   "products",
+   "mixtures",
+   "elements"
+  ]
+ },
+ {
+  "id": "050aab15-4e03-401d-b011-3efc976bef31",
+  "topic": "Chemical Reactions, Acids & Bases",
+  "prompt": "The new substances formed during a chemical reaction are called the:",
+  "options": [
+   "reactants",
+   "products",
+   "atoms",
+   "solvents"
+  ]
+ },
+ {
+  "id": "1f17c384-b61a-41b8-b39f-b18c4087391e",
+  "topic": "Chemical Reactions, Acids & Bases",
+  "prompt": "On the pH scale, a substance with a pH of 2 is:",
+  "options": [
+   "neutral",
+   "a base",
+   "an acid",
+   "a salt"
+  ]
+ },
+ {
+  "id": "416b1495-fdd1-43cb-87f0-ca353629bd0d",
+  "topic": "Chemical Reactions, Acids & Bases",
+  "prompt": "Pure water is neutral, with a pH of:",
+  "options": [
+   "1",
+   "4",
+   "10",
+   "7"
+  ]
+ },
+ {
+  "id": "fbbdf8ad-e86f-42bc-aea5-4f4ef857422f",
+  "topic": "Chemical Reactions, Acids & Bases",
+  "prompt": "Blue litmus paper turns which colour when placed in an acid?",
+  "options": [
+   "red",
+   "blue",
+   "green",
+   "yellow"
+  ]
+ },
+ {
+  "id": "b8a44448-ef01-4c0b-8c7e-871bc19b0bd9",
+  "topic": "Chemical Reactions, Acids & Bases",
+  "prompt": "A substance with a pH of 12 is:",
+  "options": [
+   "an acid",
+   "a base",
+   "neutral",
+   "a gas"
+  ]
+ },
+ {
+  "id": "3c25ed8e-8ac7-4f5e-b9b7-0cde05780db3",
+  "topic": "Chemical Reactions, Acids & Bases",
+  "prompt": "When an acid reacts with a base, the reaction is called:",
+  "options": [
+   "combustion",
+   "evaporation",
+   "neutralisation",
+   "condensation"
+  ]
+ },
+ {
+  "id": "0d59156c-4b42-4943-9f44-29d601937ddc",
+  "topic": "Chemical Reactions, Acids & Bases",
+  "prompt": "Which of these is a sign that a chemical reaction has taken place?",
+  "options": [
+   "the substance is cut into smaller pieces",
+   "the substance is poured into a new container",
+   "the substance melts and can be refrozen",
+   "a new gas is given off"
+  ]
+ },
+ {
+  "id": "dbf301cf-05d7-4f4d-b831-50fcac18a000",
+  "topic": "Forces & Motion",
+  "prompt": "A push or a pull acting on an object is called a:",
+  "options": [
+   "force",
+   "mass",
+   "speed",
+   "volume"
+  ]
+ },
+ {
+  "id": "5a5ff6ae-c18d-471d-b1e4-9517cb5d19e9",
+  "topic": "Forces & Motion",
+  "prompt": "The force that pulls objects towards the centre of the Earth is:",
+  "options": [
+   "friction",
+   "gravity",
+   "magnetism",
+   "tension"
+  ]
+ },
+ {
+  "id": "878f18d9-67a5-42bf-bca0-5da0c262730c",
+  "topic": "Forces & Motion",
+  "prompt": "The force that opposes motion between two surfaces in contact is:",
+  "options": [
+   "gravity",
+   "upthrust",
+   "friction",
+   "weight"
+  ]
+ },
+ {
+  "id": "5884fac2-6508-4a30-91b2-1246ae41a52e",
+  "topic": "Forces & Motion",
+  "prompt": "The SI unit used to measure force is the:",
+  "options": [
+   "kilogram",
+   "metre",
+   "second",
+   "newton"
+  ]
+ },
+ {
+  "id": "72dbedaa-3866-4cb7-830e-08692d9c0e0f",
+  "topic": "Forces & Motion",
+  "prompt": "A car travels 100 km in 2 hours. Its average speed is:",
+  "options": [
+   "50 km/h",
+   "200 km/h",
+   "102 km/h",
+   "98 km/h"
+  ]
+ },
+ {
+  "id": "38133467-d27f-4b66-bfd9-a6eb3f01b0df",
+  "topic": "Forces & Motion",
+  "prompt": "The amount of matter in an object is its:",
+  "options": [
+   "weight",
+   "mass",
+   "force",
+   "speed"
+  ]
+ },
+ {
+  "id": "d8522892-b584-4842-a4be-6f4820fb7083",
+  "topic": "Forces & Motion",
+  "prompt": "An object moving at a steady speed in a straight line has forces that are:",
+  "options": [
+   "only gravity",
+   "unbalanced",
+   "balanced",
+   "absent"
+  ]
+ },
+ {
+  "id": "7139da4c-79bb-41a6-9261-6291a39cde2a",
+  "topic": "Forces & Motion",
+  "prompt": "A runner covers 60 metres in 10 seconds. The average speed is:",
+  "options": [
+   "600 m/s",
+   "10 m/s",
+   "50 m/s",
+   "6 m/s"
+  ]
+ },
+ {
+  "id": "d2e66c8d-ac59-4993-a21c-1b67a9e0bad4",
+  "topic": "Electricity & Energy",
+  "prompt": "A complete path that allows electric current to flow is called an electric:",
+  "options": [
+   "circuit",
+   "force",
+   "field",
+   "charge"
+  ]
+ },
+ {
+  "id": "e2fa78c6-fadc-497d-bdc9-99b4c50c51bc",
+  "topic": "Electricity & Energy",
+  "prompt": "Electric current is measured using an instrument called an:",
+  "options": [
+   "thermometer",
+   "ammeter",
+   "barometer",
+   "ruler"
+  ]
+ },
+ {
+  "id": "885263bc-16e5-42e5-abe2-35a99c4a8b78",
+  "topic": "Electricity & Energy",
+  "prompt": "Which of these materials is a good conductor of electricity?",
+  "options": [
+   "plastic",
+   "rubber",
+   "copper",
+   "wood"
+  ]
+ },
+ {
+  "id": "33971248-1681-4854-afa2-e0051c4b9399",
+  "topic": "Electricity & Energy",
+  "prompt": "A material that does NOT allow electricity to flow through it easily is called an:",
+  "options": [
+   "conductor",
+   "ammeter",
+   "battery",
+   "insulator"
+  ]
+ },
+ {
+  "id": "c0d55626-b3cd-4b6e-aac0-e7d333bde830",
+  "topic": "Electricity & Energy",
+  "prompt": "The energy stored in a battery is a form of:",
+  "options": [
+   "chemical potential energy",
+   "sound energy",
+   "light energy",
+   "wind energy"
+  ]
+ },
+ {
+  "id": "325835a0-73ee-4cc8-bb44-4b72ee9f6b2e",
+  "topic": "Electricity & Energy",
+  "prompt": "A device that opens or closes a circuit to turn it on or off is a:",
+  "options": [
+   "resistor",
+   "switch",
+   "wire",
+   "cell"
+  ]
+ },
+ {
+  "id": "7b1401c6-f26c-4300-b8f2-a36d2e065f11",
+  "topic": "Electricity & Energy",
+  "prompt": "Energy that comes from the Sun is known as:",
+  "options": [
+   "nuclear energy",
+   "kinetic energy",
+   "solar energy",
+   "elastic energy"
+  ]
+ },
+ {
+  "id": "e73a35de-5851-4306-a4eb-3064117c171f",
+  "topic": "Electricity & Energy",
+  "prompt": "According to the law of conservation of energy, energy cannot be:",
+  "options": [
+   "transferred",
+   "stored",
+   "used",
+   "created or destroyed"
+  ]
+ },
+ {
+  "id": "99905c06-2dc7-46f8-b8c9-2ea0daf63d8a",
+  "topic": "Planet Earth & Beyond",
+  "prompt": "The star at the centre of our Solar System is the:",
+  "options": [
+   "Sun",
+   "Moon",
+   "Earth",
+   "Mars"
+  ]
+ },
+ {
+  "id": "6d6aacf8-4c9a-4c69-8407-ea55d5869f71",
+  "topic": "Planet Earth & Beyond",
+  "prompt": "The natural satellite that orbits the Earth is the:",
+  "options": [
+   "Sun",
+   "Mars",
+   "Moon",
+   "Venus"
+  ]
+ },
+ {
+  "id": "e8bce86b-78e3-4279-bd67-3c6585a48c40",
+  "topic": "Planet Earth & Beyond",
+  "prompt": "How many planets are there in our Solar System?",
+  "options": [
+   "5",
+   "6",
+   "7",
+   "8"
+  ]
+ },
+ {
+  "id": "f72b58da-819a-46b6-8f14-860551f7c915",
+  "topic": "Planet Earth & Beyond",
+  "prompt": "The solid, rocky outer layer of the Earth is called the:",
+  "options": [
+   "crust",
+   "core",
+   "mantle",
+   "atmosphere"
+  ]
+ },
+ {
+  "id": "e166552b-007c-4dd7-bab6-2f39ca090b13",
+  "topic": "Planet Earth & Beyond",
+  "prompt": "The very hot centre of the Earth is called the:",
+  "options": [
+   "crust",
+   "core",
+   "mantle",
+   "lithosphere"
+  ]
+ },
+ {
+  "id": "6888d294-e479-4b07-b506-eba3ca1d7b9d",
+  "topic": "Planet Earth & Beyond",
+  "prompt": "The layer of gases surrounding the Earth is called the:",
+  "options": [
+   "lithosphere",
+   "hydrosphere",
+   "atmosphere",
+   "biosphere"
+  ]
+ },
+ {
+  "id": "40c1701f-9227-4427-b7d1-1ad326f7af35",
+  "topic": "Planet Earth & Beyond",
+  "prompt": "Earth takes approximately how long to make one full orbit around the Sun?",
+  "options": [
+   "one day",
+   "one week",
+   "one month",
+   "one year"
+  ]
+ },
+ {
+  "id": "33464aaf-1dc5-4118-a2e2-fb1e9d9ad38f",
+  "topic": "Planet Earth & Beyond",
+  "prompt": "The spinning of the Earth on its axis, which causes day and night, is called:",
+  "options": [
+   "revolution",
+   "rotation",
+   "orbit",
+   "gravity"
+  ]
+ }
+]
