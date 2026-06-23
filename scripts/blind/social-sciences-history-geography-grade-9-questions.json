@@ -1,0 +1,530 @@
+[
+ {
+  "id": "f6bf465f-bed8-47ec-92cb-2a2b9f616849",
+  "topic": "Map Skills & GIS",
+  "prompt": "The ratio that shows how distance on a map relates to the real distance on the ground is the map's:",
+  "options": [
+   "scale",
+   "key",
+   "compass",
+   "title"
+  ]
+ },
+ {
+  "id": "ba80379b-3f9d-4c60-bc0f-a57ae8eb2fd2",
+  "topic": "Map Skills & GIS",
+  "prompt": "On a standard map, which direction is found at the top?",
+  "options": [
+   "south",
+   "north",
+   "east",
+   "west"
+  ]
+ },
+ {
+  "id": "1ccfb0d0-70a4-486c-867e-84a0cd7e286d",
+  "topic": "Map Skills & GIS",
+  "prompt": "The set of symbols that explains what the features on a map represent is the map's:",
+  "options": [
+   "scale",
+   "grid",
+   "key (legend)",
+   "border"
+  ]
+ },
+ {
+  "id": "6a6ca301-a803-428b-bb8d-a32d05f5292f",
+  "topic": "Map Skills & GIS",
+  "prompt": "In geography, the letters GIS stand for:",
+  "options": [
+   "Global Internet System",
+   "Geographic Imaging Software",
+   "Ground Information Survey",
+   "Geographic Information System"
+  ]
+ },
+ {
+  "id": "6bac05d5-54f6-4b60-9a55-054b314cc41a",
+  "topic": "Map Skills & GIS",
+  "prompt": "Lines on a map that join places of equal height above sea level are called:",
+  "options": [
+   "contour lines",
+   "lines of latitude",
+   "grid lines",
+   "scale lines"
+  ]
+ },
+ {
+  "id": "46dffcb4-19c0-4599-a7c6-3ae5f41fbed6",
+  "topic": "Map Skills & GIS",
+  "prompt": "On a compass, the direction exactly between north and east is:",
+  "options": [
+   "north-west",
+   "north-east",
+   "south-east",
+   "south-west"
+  ]
+ },
+ {
+  "id": "1d2ec0e7-de12-4e72-a500-e413ddf47e42",
+  "topic": "Map Skills & GIS",
+  "prompt": "A map drawn to a scale of 1 : 50 000 means that 1 cm on the map represents how much on the ground?",
+  "options": [
+   "50 metres",
+   "5 kilometres",
+   "500 metres",
+   "5 metres"
+  ]
+ },
+ {
+  "id": "02512414-3196-48a8-859c-887fd7db63d5",
+  "topic": "Map Skills & GIS",
+  "prompt": "The imaginary line of latitude numbered 0°, which divides the Earth into the Northern and Southern Hemispheres, is the:",
+  "options": [
+   "Prime Meridian",
+   "Tropic of Cancer",
+   "Greenwich line",
+   "Equator"
+  ]
+ },
+ {
+  "id": "8f64a0cc-d9a8-4e56-9eca-8dad4240a88a",
+  "topic": "Climate & Weather",
+  "prompt": "The day-to-day condition of the atmosphere in a place (sunny, rainy, windy) is called the:",
+  "options": [
+   "weather",
+   "climate",
+   "season",
+   "altitude"
+  ]
+ },
+ {
+  "id": "87284fb6-e1fb-4627-ae15-ebc8f872ef54",
+  "topic": "Climate & Weather",
+  "prompt": "The average weather conditions of a place measured over many years is called its:",
+  "options": [
+   "weather",
+   "climate",
+   "forecast",
+   "temperature"
+  ]
+ },
+ {
+  "id": "2be79a20-d87a-41e7-8d61-575d978f7055",
+  "topic": "Climate & Weather",
+  "prompt": "Which instrument is used to measure temperature?",
+  "options": [
+   "barometer",
+   "anemometer",
+   "thermometer",
+   "rain gauge"
+  ]
+ },
+ {
+  "id": "eee9ab10-4c9b-4940-86a6-701c00d4bf92",
+  "topic": "Climate & Weather",
+  "prompt": "Which instrument is used to measure how much rain has fallen?",
+  "options": [
+   "thermometer",
+   "anemometer",
+   "barometer",
+   "rain gauge"
+  ]
+ },
+ {
+  "id": "62cb5af2-92e3-4799-aee9-6e8f3e2bcf94",
+  "topic": "Climate & Weather",
+  "prompt": "As you climb higher up a mountain (as altitude increases), the temperature usually:",
+  "options": [
+   "decreases",
+   "increases",
+   "stays exactly the same",
+   "doubles"
+  ]
+ },
+ {
+  "id": "4e464a91-3bf7-48d7-a85f-49087bcbe68c",
+  "topic": "Climate & Weather",
+  "prompt": "The line of latitude that passes through the northern part of South Africa (Limpopo) is the:",
+  "options": [
+   "Equator",
+   "Tropic of Capricorn",
+   "Tropic of Cancer",
+   "Arctic Circle"
+  ]
+ },
+ {
+  "id": "8b6a3901-0f0a-454c-99ec-7320a312e8de",
+  "topic": "Climate & Weather",
+  "prompt": "Which instrument is used to measure wind speed?",
+  "options": [
+   "thermometer",
+   "rain gauge",
+   "anemometer",
+   "barometer"
+  ]
+ },
+ {
+  "id": "16f6ae8d-234d-49b4-9949-c203e07a389c",
+  "topic": "Climate & Weather",
+  "prompt": "Which of the following does NOT affect the climate of a place?",
+  "options": [
+   "distance from the sea",
+   "altitude",
+   "latitude",
+   "the day of the week"
+  ]
+ },
+ {
+  "id": "e8ec527b-34e3-465c-94ec-c865b735f9c7",
+  "topic": "Development: Rich & Poor Countries",
+  "prompt": "A country with a high income, advanced industry and good services is described as a:",
+  "options": [
+   "developed country",
+   "developing country",
+   "rural country",
+   "small country"
+  ]
+ },
+ {
+  "id": "2e91ab32-166d-4548-b304-901326ab2e4e",
+  "topic": "Development: Rich & Poor Countries",
+  "prompt": "A country that is still building up its industry and services and has a lower average income is called a:",
+  "options": [
+   "developed country",
+   "developing country",
+   "wealthy country",
+   "first-world country"
+  ]
+ },
+ {
+  "id": "2cb091d2-c9a5-41b0-8231-c58dbae602aa",
+  "topic": "Development: Rich & Poor Countries",
+  "prompt": "The letters GDP stand for:",
+  "options": [
+   "Gross Domestic Population",
+   "General Development Plan",
+   "Gross Domestic Product",
+   "Global Development Programme"
+  ]
+ },
+ {
+  "id": "4165b2f2-2f2d-49a8-ac8c-57430abc30fa",
+  "topic": "Development: Rich & Poor Countries",
+  "prompt": "Which of the following is an indicator used to measure a country's level of development?",
+  "options": [
+   "its favourite sport",
+   "the colour of its flag",
+   "the name of its capital city",
+   "life expectancy"
+  ]
+ },
+ {
+  "id": "c940ff56-ffec-4bba-b45c-b95786b1fdd3",
+  "topic": "Development: Rich & Poor Countries",
+  "prompt": "The number of babies who die before their first birthday, per 1 000 live births, is the:",
+  "options": [
+   "infant mortality rate",
+   "birth rate",
+   "literacy rate",
+   "growth rate"
+  ]
+ },
+ {
+  "id": "36031bf0-fcfc-4e90-92bb-1f81547777ee",
+  "topic": "Development: Rich & Poor Countries",
+  "prompt": "The percentage of adults in a country who can read and write is called the:",
+  "options": [
+   "employment rate",
+   "literacy rate",
+   "mortality rate",
+   "exchange rate"
+  ]
+ },
+ {
+  "id": "3a571a69-0e41-47d1-9c20-7235a6a64532",
+  "topic": "Development: Rich & Poor Countries",
+  "prompt": "Most of the world's developed countries are found in which part of the world, often called the global ___?",
+  "options": [
+   "global South",
+   "global East",
+   "global North",
+   "global West"
+  ]
+ },
+ {
+  "id": "8b491360-e982-48c2-b0d8-c3ed31305426",
+  "topic": "Development: Rich & Poor Countries",
+  "prompt": "Compared with a developed country, a developing country usually has a:",
+  "options": [
+   "higher average income",
+   "greater number of doctors per person",
+   "lower population growth rate",
+   "lower average income"
+  ]
+ },
+ {
+  "id": "b6e6b20b-b7bf-4bd7-a505-86f4173f7569",
+  "topic": "Surface Forces Shaping the Earth",
+  "prompt": "The breaking down of rocks into smaller pieces where they lie, without being moved away, is called:",
+  "options": [
+   "weathering",
+   "erosion",
+   "deposition",
+   "transportation"
+  ]
+ },
+ {
+  "id": "c8ddb836-c03f-4e6e-b455-df810bf189f2",
+  "topic": "Surface Forces Shaping the Earth",
+  "prompt": "The wearing away and carrying off of soil and rock by water, wind or ice is called:",
+  "options": [
+   "weathering",
+   "erosion",
+   "deposition",
+   "condensation"
+  ]
+ },
+ {
+  "id": "1898d224-583d-4be1-91bc-75c1fde2c987",
+  "topic": "Surface Forces Shaping the Earth",
+  "prompt": "The dropping of sand, soil and stones that a river or the wind has been carrying, in a new place, is called:",
+  "options": [
+   "weathering",
+   "erosion",
+   "deposition",
+   "evaporation"
+  ]
+ },
+ {
+  "id": "19017c21-4693-4a7e-b8ee-0800eef322d8",
+  "topic": "Surface Forces Shaping the Earth",
+  "prompt": "The place high up where a river begins is called its:",
+  "options": [
+   "mouth",
+   "delta",
+   "channel",
+   "source"
+  ]
+ },
+ {
+  "id": "530ff5f4-1bf0-4738-b65c-9f8ea072cb8e",
+  "topic": "Surface Forces Shaping the Earth",
+  "prompt": "The place where a river finally flows into the sea is called its:",
+  "options": [
+   "mouth",
+   "source",
+   "bank",
+   "bed"
+  ]
+ },
+ {
+  "id": "dc74b1dc-7c9c-4797-a688-97df4c5e23dc",
+  "topic": "Surface Forces Shaping the Earth",
+  "prompt": "When tree roots grow into cracks in a rock and slowly break it apart, this is an example of ___ weathering:",
+  "options": [
+   "chemical",
+   "biological",
+   "frost",
+   "wind"
+  ]
+ },
+ {
+  "id": "f78237b7-b827-46e1-9827-dd8ad249ab23",
+  "topic": "Surface Forces Shaping the Earth",
+  "prompt": "The flat, often fan-shaped area of deposited sediment formed where a river enters the sea is called a:",
+  "options": [
+   "meander",
+   "waterfall",
+   "delta",
+   "gorge"
+  ]
+ },
+ {
+  "id": "93f0137a-8990-401b-989b-7695fee03fce",
+  "topic": "Surface Forces Shaping the Earth",
+  "prompt": "A large bend or loop in the course of a river is called a:",
+  "options": [
+   "delta",
+   "source",
+   "tributary",
+   "meander"
+  ]
+ },
+ {
+  "id": "9e470963-945d-4d6a-b17f-67a6e210c9a0",
+  "topic": "Population & Settlement",
+  "prompt": "The total number of people living in a particular area is called its:",
+  "options": [
+   "population",
+   "density",
+   "migration",
+   "fertility"
+  ]
+ },
+ {
+  "id": "816369d1-e5a8-4a6b-951f-21aeb95bf927",
+  "topic": "Population & Settlement",
+  "prompt": "The number of people living in each square kilometre of land is called population:",
+  "options": [
+   "growth",
+   "density",
+   "total",
+   "decline"
+  ]
+ },
+ {
+  "id": "6088973d-030d-40ad-9fb7-b082b5941f31",
+  "topic": "Population & Settlement",
+  "prompt": "The movement of people from one place to another in order to live there is called:",
+  "options": [
+   "tourism",
+   "commuting",
+   "migration",
+   "harvesting"
+  ]
+ },
+ {
+  "id": "caae8f10-4007-4d9d-8ad3-312c49cfcbdd",
+  "topic": "Population & Settlement",
+  "prompt": "The movement of people from rural areas (the countryside) into towns and cities is called:",
+  "options": [
+   "migration",
+   "emigration",
+   "immigration",
+   "urbanisation"
+  ]
+ },
+ {
+  "id": "d095073f-35d3-4e4b-9256-886b7e0c615d",
+  "topic": "Population & Settlement",
+  "prompt": "A small settlement in the countryside, often based on farming, is best described as a:",
+  "options": [
+   "rural settlement",
+   "metropolis",
+   "city centre",
+   "industrial zone"
+  ]
+ },
+ {
+  "id": "bd0652ad-6142-4c67-926c-97474aebcab9",
+  "topic": "Population & Settlement",
+  "prompt": "Reasons that attract people TO a city, such as jobs and better schools, are called:",
+  "options": [
+   "push factors",
+   "pull factors",
+   "birth factors",
+   "death factors"
+  ]
+ },
+ {
+  "id": "5a11003f-0e21-493b-be4e-0170eec0f51e",
+  "topic": "Population & Settlement",
+  "prompt": "Reasons that drive people AWAY from an area, such as drought or a lack of jobs, are called:",
+  "options": [
+   "pull factors",
+   "growth factors",
+   "push factors",
+   "trade factors"
+  ]
+ },
+ {
+  "id": "608bca9d-de7a-4a80-a703-e61e2b2d255c",
+  "topic": "Population & Settlement",
+  "prompt": "A diagram that shows the age and sex (male/female) structure of a population is called a population:",
+  "options": [
+   "circle",
+   "map",
+   "table",
+   "pyramid"
+  ]
+ },
+ {
+  "id": "b55064bd-b4a5-4603-bf33-741a7bf1d29b",
+  "topic": "Resource Use & Sustainability",
+  "prompt": "A resource that is replaced naturally within a short time, such as sunlight or wind, is called a:",
+  "options": [
+   "renewable resource",
+   "non-renewable resource",
+   "fossil resource",
+   "mineral resource"
+  ]
+ },
+ {
+  "id": "7c05951c-614b-4ea7-a28e-ee33f477dddf",
+  "topic": "Resource Use & Sustainability",
+  "prompt": "A resource that takes millions of years to form and can run out, such as coal or oil, is called a:",
+  "options": [
+   "renewable resource",
+   "non-renewable resource",
+   "recyclable resource",
+   "endless resource"
+  ]
+ },
+ {
+  "id": "0294ce99-069c-4302-afb1-bc20d8a030f3",
+  "topic": "Resource Use & Sustainability",
+  "prompt": "Using resources carefully now so that they are still available for future generations is called ___ development:",
+  "options": [
+   "rapid",
+   "industrial",
+   "sustainable",
+   "unequal"
+  ]
+ },
+ {
+  "id": "ab6d3be7-be3b-4665-9cd0-417bae8a81d2",
+  "topic": "Resource Use & Sustainability",
+  "prompt": "Which of the following is a renewable source of energy?",
+  "options": [
+   "coal",
+   "oil",
+   "natural gas",
+   "solar power"
+  ]
+ },
+ {
+  "id": "ef6445bd-0368-4973-8dfe-db18f3812deb",
+  "topic": "Resource Use & Sustainability",
+  "prompt": "Coal, oil and natural gas are together known as:",
+  "options": [
+   "fossil fuels",
+   "renewable fuels",
+   "biofuels",
+   "nuclear fuels"
+  ]
+ },
+ {
+  "id": "42545acc-a1e7-4915-9184-ebe5c3723013",
+  "topic": "Resource Use & Sustainability",
+  "prompt": "Reusing items and recycling materials such as paper and glass helps to:",
+  "options": [
+   "use up resources faster",
+   "reduce waste and save resources",
+   "increase pollution",
+   "waste more water"
+  ]
+ },
+ {
+  "id": "65109f12-62d9-4529-9061-c24ded9254dd",
+  "topic": "Resource Use & Sustainability",
+  "prompt": "South Africa often faces shortages of which essential resource, especially during droughts?",
+  "options": [
+   "sunlight",
+   "sand",
+   "water",
+   "air"
+  ]
+ },
+ {
+  "id": "44f309d6-fc54-4139-aaed-37a68a09f43c",
+  "topic": "Resource Use & Sustainability",
+  "prompt": "The cutting down of large areas of forest, which damages the environment, is called:",
+  "options": [
+   "afforestation",
+   "irrigation",
+   "urbanisation",
+   "deforestation"
+  ]
+ }
+]
