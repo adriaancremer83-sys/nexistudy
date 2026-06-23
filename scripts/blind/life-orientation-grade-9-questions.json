@@ -1,0 +1,530 @@
+[
+ {
+  "id": "155edbce-dca7-4c3f-9b4c-79df3db8dcfb",
+  "topic": "Disease & Substance Abuse",
+  "prompt": "The harmful and addictive drug found in cigarettes is:",
+  "options": [
+   "vitamin C",
+   "oxygen",
+   "nicotine",
+   "water"
+  ]
+ },
+ {
+  "id": "2a2258ee-7514-4a5b-a28e-1bacf222afe0",
+  "topic": "The Constitution & Bill of Rights",
+  "prompt": "The highest law in South Africa, which all other laws must obey, is the:",
+  "options": [
+   "Constitution",
+   "school rules",
+   "by-laws",
+   "newspaper"
+  ]
+ },
+ {
+  "id": "646bfab9-91b3-402f-9e3f-76bd01f7e97f",
+  "topic": "The Constitution & Bill of Rights",
+  "prompt": "The part of the Constitution that lists the basic rights of everyone in South Africa is called the:",
+  "options": [
+   "preamble",
+   "Bill of Rights",
+   "national anthem",
+   "pledge"
+  ]
+ },
+ {
+  "id": "52937def-6749-43c9-9a00-62a04721357a",
+  "topic": "The Constitution & Bill of Rights",
+  "prompt": "The right to be treated the same no matter your race, gender or religion is the right to:",
+  "options": [
+   "privacy",
+   "movement",
+   "equality",
+   "property"
+  ]
+ },
+ {
+  "id": "9aa967b2-db1a-4e98-a229-e7d3a2d888f4",
+  "topic": "Disease & Substance Abuse",
+  "prompt": "Which organ is most damaged by smoking tobacco?",
+  "options": [
+   "the eyes",
+   "the lungs",
+   "the feet",
+   "the hair"
+  ]
+ },
+ {
+  "id": "9f78f9be-c68a-4787-bf32-cc3405c5f9d1",
+  "topic": "The Constitution & Bill of Rights",
+  "prompt": "Along with rights, every citizen also has ___, such as obeying the law and respecting others:",
+  "options": [
+   "holidays",
+   "salaries",
+   "votes",
+   "responsibilities"
+  ]
+ },
+ {
+  "id": "88d3ed2e-7f79-42ae-9f22-7152f9b11890",
+  "topic": "The Constitution & Bill of Rights",
+  "prompt": "Which of these is a basic human right protected in the Bill of Rights?",
+  "options": [
+   "the right to basic education",
+   "the right to break the law",
+   "the right to avoid paying tax",
+   "the right to harm others"
+  ]
+ },
+ {
+  "id": "5f037120-d4e5-43bd-96b4-3727381a5075",
+  "topic": "The Constitution & Bill of Rights",
+  "prompt": "South Africa is divided into how many provinces?",
+  "options": [
+   "6",
+   "9",
+   "11",
+   "4"
+  ]
+ },
+ {
+  "id": "cb3cc93f-fa2e-4f72-873f-766e6005e80c",
+  "topic": "The Constitution & Bill of Rights",
+  "prompt": "Government in South Africa has three spheres: national, provincial and ___:",
+  "options": [
+   "foreign",
+   "royal",
+   "local",
+   "private"
+  ]
+ },
+ {
+  "id": "f7f645b5-79e7-493e-b9bd-20e005f014ae",
+  "topic": "The Constitution & Bill of Rights",
+  "prompt": "Human Rights Day in South Africa is celebrated on:",
+  "options": [
+   "16 June",
+   "27 April",
+   "25 December",
+   "21 March"
+  ]
+ },
+ {
+  "id": "89241a8b-986a-4921-a3e7-b64d4688e0d0",
+  "topic": "Democracy & Active Citizenship",
+  "prompt": "A system of government in which the people choose their leaders by voting is called a:",
+  "options": [
+   "democracy",
+   "dictatorship",
+   "monarchy",
+   "anarchy"
+  ]
+ },
+ {
+  "id": "033e86d3-0d14-46f7-a0c4-1ac4ffe6cc64",
+  "topic": "Democracy & Active Citizenship",
+  "prompt": "In South Africa, the minimum age at which a citizen may vote is:",
+  "options": [
+   "16",
+   "18",
+   "21",
+   "25"
+  ]
+ },
+ {
+  "id": "ee11b7d4-0b5b-4491-8a95-a04ed3138ab1",
+  "topic": "Democracy & Active Citizenship",
+  "prompt": "The process by which citizens choose their government representatives is called an:",
+  "options": [
+   "auction",
+   "census",
+   "election",
+   "audit"
+  ]
+ },
+ {
+  "id": "363b6048-93c7-4acd-84d7-d3b74ef14c2f",
+  "topic": "Democracy & Active Citizenship",
+  "prompt": "South Africa's first democratic election, in which all adults could vote, took place in:",
+  "options": [
+   "1976",
+   "1990",
+   "1986",
+   "1994"
+  ]
+ },
+ {
+  "id": "609f1fca-69da-4154-8b8f-5bb8af5dcb34",
+  "topic": "Democracy & Active Citizenship",
+  "prompt": "Treating someone unfairly because of their race is called:",
+  "options": [
+   "racism",
+   "patriotism",
+   "citizenship",
+   "leadership"
+  ]
+ },
+ {
+  "id": "db136299-35e3-497f-bfde-b6e289e2e2d8",
+  "topic": "Democracy & Active Citizenship",
+  "prompt": "Treating someone unfairly because of their gender (being male or female) is called:",
+  "options": [
+   "racism",
+   "sexism",
+   "ageism",
+   "patriotism"
+  ]
+ },
+ {
+  "id": "7d7eb10a-79d5-403b-b766-f40bcc154234",
+  "topic": "Democracy & Active Citizenship",
+  "prompt": "The unfair dislike or fear of people from other countries is called:",
+  "options": [
+   "racism",
+   "sexism",
+   "xenophobia",
+   "nationalism"
+  ]
+ },
+ {
+  "id": "97c622df-6f0d-4487-b48e-22d61700481e",
+  "topic": "Democracy & Active Citizenship",
+  "prompt": "The African idea that 'a person is a person through other people', encouraging kindness and community, is called:",
+  "options": [
+   "apartheid",
+   "capitalism",
+   "tourism",
+   "ubuntu"
+  ]
+ },
+ {
+  "id": "7056c31a-2672-4c59-a91f-ac0475f792a9",
+  "topic": "Healthy Lifestyle & Nutrition",
+  "prompt": "A diet that contains the correct amounts of all the food groups the body needs is called a ___ diet:",
+  "options": [
+   "balanced",
+   "fast-food",
+   "sugary",
+   "single-food"
+  ]
+ },
+ {
+  "id": "ccc02df0-ea14-4f23-b202-1c8e6a0ddda1",
+  "topic": "Healthy Lifestyle & Nutrition",
+  "prompt": "Which nutrient is the body's main source of energy?",
+  "options": [
+   "vitamins",
+   "carbohydrates",
+   "minerals",
+   "water"
+  ]
+ },
+ {
+  "id": "a85886b5-4511-430a-86b8-d0a266dcfcc3",
+  "topic": "Healthy Lifestyle & Nutrition",
+  "prompt": "Which nutrient is needed mainly for the growth and repair of body tissues such as muscle?",
+  "options": [
+   "fats",
+   "sugar",
+   "proteins",
+   "fibre"
+  ]
+ },
+ {
+  "id": "c0c0d133-5154-4093-94b8-942c389fe373",
+  "topic": "Healthy Lifestyle & Nutrition",
+  "prompt": "Oranges and other citrus fruits are a good source of which vitamin?",
+  "options": [
+   "vitamin D",
+   "vitamin K",
+   "vitamin B12",
+   "vitamin C"
+  ]
+ },
+ {
+  "id": "261e0dde-5523-489e-a197-ee70c5afac63",
+  "topic": "Healthy Lifestyle & Nutrition",
+  "prompt": "Regular physical exercise helps to:",
+  "options": [
+   "keep the heart and body healthy",
+   "weaken the muscles",
+   "cause heart disease",
+   "reduce overall fitness"
+  ]
+ },
+ {
+  "id": "44a84bd6-a51e-42a5-8469-b5c03df75511",
+  "topic": "Healthy Lifestyle & Nutrition",
+  "prompt": "Drinking enough of which substance every day is essential for the body to work properly?",
+  "options": [
+   "cooldrink",
+   "water",
+   "coffee",
+   "alcohol"
+  ]
+ },
+ {
+  "id": "18c0bfcb-48c2-4ebd-b9e6-d23f36a581f4",
+  "topic": "Healthy Lifestyle & Nutrition",
+  "prompt": "Regularly eating too much sugary and fatty food, with little exercise, can lead to:",
+  "options": [
+   "stronger bones",
+   "better eyesight",
+   "obesity",
+   "faster running"
+  ]
+ },
+ {
+  "id": "6cf39be6-9312-47e8-8daf-5f9434a63ff5",
+  "topic": "Healthy Lifestyle & Nutrition",
+  "prompt": "Which of these is the healthiest snack choice?",
+  "options": [
+   "a chocolate bar",
+   "a packet of chips",
+   "a fizzy cooldrink",
+   "a piece of fresh fruit"
+  ]
+ },
+ {
+  "id": "777ccb46-04e5-4f9a-a703-490b7d9d227b",
+  "topic": "Disease & Substance Abuse",
+  "prompt": "A disease that can spread from one person to another, such as flu or TB, is called a ___ disease:",
+  "options": [
+   "communicable",
+   "inherited",
+   "lifestyle",
+   "imaginary"
+  ]
+ },
+ {
+  "id": "679deae1-d560-447e-9697-af829d82ac47",
+  "topic": "Disease & Substance Abuse",
+  "prompt": "A disease that is NOT spread from person to person, such as diabetes or heart disease, is called a ___ disease:",
+  "options": [
+   "communicable",
+   "non-communicable",
+   "contagious",
+   "infectious"
+  ]
+ },
+ {
+  "id": "5088662a-6203-447f-af5e-1f569ba8ee06",
+  "topic": "Disease & Substance Abuse",
+  "prompt": "HIV, the virus that can lead to AIDS, is mainly spread through:",
+  "options": [
+   "shaking hands",
+   "sharing food",
+   "unprotected sex and infected blood",
+   "breathing the same air"
+  ]
+ },
+ {
+  "id": "e2a2fe4f-3dcb-487b-93ed-f659570029be",
+  "topic": "Disease & Substance Abuse",
+  "prompt": "Alcohol and tobacco are examples of substances that are harmful but ___ for adults:",
+  "options": [
+   "illegal",
+   "imaginary",
+   "banned",
+   "legal"
+  ]
+ },
+ {
+  "id": "056414b9-f0ce-4f23-8137-903d6a923cbc",
+  "topic": "Disease & Substance Abuse",
+  "prompt": "Pressure from friends to do something you may not want to do, such as smoking, is called:",
+  "options": [
+   "peer pressure",
+   "blood pressure",
+   "air pressure",
+   "water pressure"
+  ]
+ },
+ {
+  "id": "23595186-4b8d-4731-b7fa-9c82eb769733",
+  "topic": "Disease & Substance Abuse",
+  "prompt": "The healthiest way to respond to peer pressure to use drugs is to:",
+  "options": [
+   "give in immediately",
+   "keep it a secret from everyone",
+   "always say yes",
+   "confidently say no and walk away"
+  ]
+ },
+ {
+  "id": "359a4f60-b856-48ee-9122-85b289065be9",
+  "topic": "Goal-Setting & Study Skills",
+  "prompt": "A clear aim that you plan and work towards achieving is called a:",
+  "options": [
+   "goal",
+   "habit",
+   "hobby",
+   "mistake"
+  ]
+ },
+ {
+  "id": "2bd3ebc0-30b0-4a84-afb9-9657ecaf5b56",
+  "topic": "Goal-Setting & Study Skills",
+  "prompt": "In the SMART method of goal-setting, the 'M' stands for:",
+  "options": [
+   "Magic",
+   "Measurable",
+   "Massive",
+   "Maybe"
+  ]
+ },
+ {
+  "id": "0283edd3-9e92-4fda-aeb5-8de0a0131408",
+  "topic": "Goal-Setting & Study Skills",
+  "prompt": "A short-term goal is one that you aim to achieve:",
+  "options": [
+   "over many years",
+   "never",
+   "in the near future",
+   "only after school"
+  ]
+ },
+ {
+  "id": "32ef5804-a09d-4d49-9597-0240298619f7",
+  "topic": "Goal-Setting & Study Skills",
+  "prompt": "Planning how you use your hours so that you finish your work on time is called ___ management:",
+  "options": [
+   "money",
+   "anger",
+   "stress",
+   "time"
+  ]
+ },
+ {
+  "id": "5e2b363b-5937-4bdf-b733-f055d6d7055a",
+  "topic": "Goal-Setting & Study Skills",
+  "prompt": "A diagram with a central idea and branches, used to organise information for studying, is called a:",
+  "options": [
+   "mind map",
+   "time sheet",
+   "bar graph",
+   "menu"
+  ]
+ },
+ {
+  "id": "18ad65a7-ceb0-43ad-9732-5a77c0a81abc",
+  "topic": "Goal-Setting & Study Skills",
+  "prompt": "Which is the best study habit before an exam?",
+  "options": [
+   "never sleeping the night before",
+   "studying a little, regularly, over time",
+   "copying from a friend",
+   "skipping all your classes"
+  ]
+ },
+ {
+  "id": "9f4f3fb2-f2b3-4ad2-8459-320ec1635a1a",
+  "topic": "Goal-Setting & Study Skills",
+  "prompt": "In SMART goals, the 'T' stands for:",
+  "options": [
+   "Tiny",
+   "Tough",
+   "Time-bound",
+   "Tired"
+  ]
+ },
+ {
+  "id": "836ffb1a-c3b6-465f-afcb-8c4a83c0d4ea",
+  "topic": "Goal-Setting & Study Skills",
+  "prompt": "A goal that you aim to achieve over a long period, such as becoming a doctor, is a ___ goal:",
+  "options": [
+   "short-term",
+   "daily",
+   "weekly",
+   "long-term"
+  ]
+ },
+ {
+  "id": "2dbf122c-8561-4133-ae80-8c4fb6886e79",
+  "topic": "The World of Work & Careers",
+  "prompt": "A job or profession that a person trains for and does over a long period is called a:",
+  "options": [
+   "career",
+   "holiday",
+   "hobby",
+   "weekend"
+  ]
+ },
+ {
+  "id": "52d8f1ac-fbaa-45cc-9877-1c260e83ec31",
+  "topic": "The World of Work & Careers",
+  "prompt": "A document that lists your personal details, education and skills when you apply for a job is called a:",
+  "options": [
+   "passport",
+   "CV (curriculum vitae)",
+   "receipt",
+   "timetable"
+  ]
+ },
+ {
+  "id": "2b51b81d-2ee7-46fd-8f4d-88139ab87fe8",
+  "topic": "The World of Work & Careers",
+  "prompt": "Workers who are registered, pay tax and have job protection work in the ___ sector:",
+  "options": [
+   "hidden",
+   "illegal",
+   "formal",
+   "secret"
+  ]
+ },
+ {
+  "id": "cf2fa9b7-4933-4ec2-819e-1ba6afda1f13",
+  "topic": "The World of Work & Careers",
+  "prompt": "Someone who starts and runs their own business, taking on its risks, is called an:",
+  "options": [
+   "employee",
+   "customer",
+   "manager",
+   "entrepreneur"
+  ]
+ },
+ {
+  "id": "6626cabc-399b-43d7-afaa-5ff5357637e8",
+  "topic": "The World of Work & Careers",
+  "prompt": "A person who studies and treats sick people works in which career field?",
+  "options": [
+   "the health/medical field",
+   "engineering",
+   "farming",
+   "law"
+  ]
+ },
+ {
+  "id": "8ed6dacd-cb6f-4316-b130-34203357f7d7",
+  "topic": "The World of Work & Careers",
+  "prompt": "Subjects like Mathematics and Physical Sciences are usually required to become an:",
+  "options": [
+   "artist",
+   "engineer",
+   "chef",
+   "musician"
+  ]
+ },
+ {
+  "id": "64144d6c-abf9-4fe0-a057-d86df1631df0",
+  "topic": "The World of Work & Careers",
+  "prompt": "Money earned from doing work, usually paid each month, is called a:",
+  "options": [
+   "fine",
+   "debt",
+   "salary",
+   "loan"
+  ]
+ },
+ {
+  "id": "59a88fcf-27c8-43ee-8d35-4ddde38cc3ab",
+  "topic": "The World of Work & Careers",
+  "prompt": "The main reason it is important to choose your school subjects carefully in Grade 9 is that:",
+  "options": [
+   "subjects have interesting names",
+   "teachers prefer it",
+   "it fills up the timetable",
+   "they affect the careers you can follow later"
+  ]
+ }
+]
