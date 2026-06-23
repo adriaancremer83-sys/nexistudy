@@ -1,5 +1,16 @@
 [
  {
+  "id": "d302aa9e-8693-4ca4-a504-4d3b978dbec8",
+  "topic": "World War II",
+  "prompt": "World War II began in 1939 and ended in:",
+  "options": [
+   "1945",
+   "1918",
+   "1960",
+   "1939"
+  ]
+ },
+ {
   "id": "f6bf465f-bed8-47ec-92cb-2a2b9f616849",
   "topic": "Map Skills & GIS",
   "prompt": "The ratio that shows how distance on a map relates to the real distance on the ground is the map's:",
@@ -525,6 +536,523 @@
    "irrigation",
    "urbanisation",
    "deforestation"
+  ]
+ },
+ {
+  "id": "672bd209-9de9-4974-938b-5d6895840efa",
+  "topic": "World War II",
+  "prompt": "The leader of Nazi Germany during World War II was:",
+  "options": [
+   "Winston Churchill",
+   "Adolf Hitler",
+   "Joseph Stalin",
+   "Franklin Roosevelt"
+  ]
+ },
+ {
+  "id": "3e1d3aca-6c19-431d-b1b9-48c3cfabca47",
+  "topic": "World War II",
+  "prompt": "World War II in Europe began when Germany invaded which country in 1939?",
+  "options": [
+   "France",
+   "Britain",
+   "Poland",
+   "Russia"
+  ]
+ },
+ {
+  "id": "c064edff-a5d1-4b16-9d5e-adae935d08b7",
+  "topic": "World War II",
+  "prompt": "The group of countries led by Germany, Italy and Japan in World War II were called the:",
+  "options": [
+   "Allies",
+   "Union",
+   "League",
+   "Axis powers"
+  ]
+ },
+ {
+  "id": "0652ea55-4b6b-4a24-9ce2-495b75ab4a35",
+  "topic": "World War II",
+  "prompt": "Britain, the USA and the Soviet Union fought on which side in World War II?",
+  "options": [
+   "the Allies",
+   "the Axis",
+   "the Nazis",
+   "the neutral nations"
+  ]
+ },
+ {
+  "id": "78e3f884-5f8d-41c1-9520-ade7a57f8322",
+  "topic": "World War II",
+  "prompt": "The British Prime Minister who led Britain through most of World War II was:",
+  "options": [
+   "Neville Chamberlain",
+   "Winston Churchill",
+   "Tony Blair",
+   "Margaret Thatcher"
+  ]
+ },
+ {
+  "id": "c7572b74-1dcc-4d08-b27a-f884d671c7fc",
+  "topic": "World War II",
+  "prompt": "World War II in the Pacific ended after the USA dropped atomic bombs on which country?",
+  "options": [
+   "Germany",
+   "Italy",
+   "Japan",
+   "China"
+  ]
+ },
+ {
+  "id": "da212b82-4475-40f8-b2b6-f145bcc0502d",
+  "topic": "World War II",
+  "prompt": "The two Japanese cities destroyed by atomic bombs in 1945 were Hiroshima and:",
+  "options": [
+   "Tokyo",
+   "Kyoto",
+   "Osaka",
+   "Nagasaki"
+  ]
+ },
+ {
+  "id": "1fb0c6d7-1a29-45dc-97fb-ef18d95f5ddd",
+  "topic": "The Holocaust & the Nuremberg Trials",
+  "prompt": "The Holocaust was the mass murder by Nazi Germany of about six million:",
+  "options": [
+   "Jewish people",
+   "soldiers",
+   "Americans",
+   "farmers"
+  ]
+ },
+ {
+  "id": "3c6dc3ae-0874-45a2-9a68-75f39adfc0d1",
+  "topic": "The Holocaust & the Nuremberg Trials",
+  "prompt": "Nazi racism was based on a false belief in their own racial:",
+  "options": [
+   "equality",
+   "superiority",
+   "weakness",
+   "kindness"
+  ]
+ },
+ {
+  "id": "0b7d621f-35b5-4e42-9f16-ba1b999f3eaf",
+  "topic": "The Holocaust & the Nuremberg Trials",
+  "prompt": "Jewish people and others were imprisoned and killed in Nazi camps known as ___ camps:",
+  "options": [
+   "holiday",
+   "training",
+   "concentration",
+   "refugee"
+  ]
+ },
+ {
+  "id": "fa791205-028a-42a8-8735-95db5719c775",
+  "topic": "The Holocaust & the Nuremberg Trials",
+  "prompt": "After the war, surviving Nazi leaders were put on trial in the German city of:",
+  "options": [
+   "Berlin",
+   "Munich",
+   "Hamburg",
+   "Nuremberg"
+  ]
+ },
+ {
+  "id": "299cd222-c614-4390-a252-cdfddfc5924c",
+  "topic": "The Holocaust & the Nuremberg Trials",
+  "prompt": "The Nuremberg Trials were held mainly to punish Nazi leaders for their:",
+  "options": [
+   "war crimes",
+   "victory in the war",
+   "help to refugees",
+   "building of roads"
+  ]
+ },
+ {
+  "id": "de162cc5-3984-4529-9ba1-d7eb7a81892e",
+  "topic": "The Holocaust & the Nuremberg Trials",
+  "prompt": "The young Jewish girl whose famous diary describes hiding from the Nazis was:",
+  "options": [
+   "Rosa Parks",
+   "Anne Frank",
+   "Florence Nightingale",
+   "Marie Curie"
+  ]
+ },
+ {
+  "id": "b767def0-f4d3-4c7f-84fa-1982d0c2ad2d",
+  "topic": "The Holocaust & the Nuremberg Trials",
+  "prompt": "The Nazi party that carried out the Holocaust was led by:",
+  "options": [
+   "Joseph Stalin",
+   "Benito Mussolini",
+   "Adolf Hitler",
+   "Winston Churchill"
+  ]
+ },
+ {
+  "id": "365824c7-6b3a-4ada-891e-a27bce920c5d",
+  "topic": "The Holocaust & the Nuremberg Trials",
+  "prompt": "The Nuremberg Trials helped establish the idea that people can be held responsible for ___ against humanity:",
+  "options": [
+   "holidays",
+   "sports",
+   "festivals",
+   "crimes"
+  ]
+ },
+ {
+  "id": "08fbc439-e93a-4df3-ad6f-a774d9f8ee36",
+  "topic": "The Cold War & the Nuclear Age",
+  "prompt": "The Cold War was a period of tension after 1945 between the United States and the:",
+  "options": [
+   "Soviet Union (USSR)",
+   "United Kingdom",
+   "France",
+   "Japan"
+  ]
+ },
+ {
+  "id": "e2ed45cf-2b5b-4dda-9ff8-120aa879cca7",
+  "topic": "The Cold War & the Nuclear Age",
+  "prompt": "The Cold War was called 'cold' because the two superpowers:",
+  "options": [
+   "lived in very cold countries",
+   "never fought each other directly in a full war",
+   "used weapons made of ice",
+   "stopped all forms of trade"
+  ]
+ },
+ {
+  "id": "363fab93-bfcf-4310-aa06-38dd5d26c176",
+  "topic": "The Cold War & the Nuclear Age",
+  "prompt": "The USA followed capitalism, while the Soviet Union followed which economic system?",
+  "options": [
+   "capitalism",
+   "tourism",
+   "communism",
+   "feudalism"
+  ]
+ },
+ {
+  "id": "adea80d4-830c-4eeb-9a46-133c1a1f8ac1",
+  "topic": "The Cold War & the Nuclear Age",
+  "prompt": "The competition between the USA and USSR to build more powerful nuclear weapons was called the arms:",
+  "options": [
+   "trade",
+   "sale",
+   "show",
+   "race"
+  ]
+ },
+ {
+  "id": "2684c0e9-e7cf-4200-98c2-be00b9eaecbe",
+  "topic": "The Cold War & the Nuclear Age",
+  "prompt": "The city in Germany that was divided by a famous wall during the Cold War was:",
+  "options": [
+   "Berlin",
+   "Paris",
+   "London",
+   "Rome"
+  ]
+ },
+ {
+  "id": "75110443-307b-494a-bb94-83182608f32b",
+  "topic": "The Cold War & the Nuclear Age",
+  "prompt": "The competition between the USA and USSR to explore space, including reaching the Moon, was called the ___ race:",
+  "options": [
+   "arms",
+   "space",
+   "car",
+   "horse"
+  ]
+ },
+ {
+  "id": "89191558-4ccb-49ed-961c-3b493fcb888e",
+  "topic": "The Cold War & the Nuclear Age",
+  "prompt": "The Cold War carried a constant threat of war using which type of powerful weapons?",
+  "options": [
+   "bows and arrows",
+   "swords",
+   "nuclear weapons",
+   "water cannons"
+  ]
+ },
+ {
+  "id": "2aca7b4c-dfce-4ab3-8915-7e30e1987033",
+  "topic": "The Cold War & the Nuclear Age",
+  "prompt": "The Berlin Wall, a symbol of the Cold War, fell (was opened) in:",
+  "options": [
+   "1945",
+   "1960",
+   "1976",
+   "1989"
+  ]
+ },
+ {
+  "id": "9fc3af25-019f-4fcf-8edd-098c862ccf5b",
+  "topic": "Apartheid in South Africa",
+  "prompt": "Apartheid became the official government policy in South Africa in:",
+  "options": [
+   "1948",
+   "1994",
+   "1910",
+   "1976"
+  ]
+ },
+ {
+  "id": "618a2d96-c497-45ff-a39e-a29b85220ff9",
+  "topic": "Apartheid in South Africa",
+  "prompt": "The political party that introduced apartheid in 1948 was the:",
+  "options": [
+   "African National Congress",
+   "National Party",
+   "Democratic Party",
+   "Communist Party"
+  ]
+ },
+ {
+  "id": "7fbc356a-c9ad-415a-8aea-f98073069460",
+  "topic": "Apartheid in South Africa",
+  "prompt": "The Afrikaans word 'apartheid' means:",
+  "options": [
+   "freedom",
+   "unity",
+   "apartness / separateness",
+   "equality"
+  ]
+ },
+ {
+  "id": "35ed078d-6da3-4a0a-bd99-61f45db0c594",
+  "topic": "Apartheid in South Africa",
+  "prompt": "Under apartheid, the law that forced people of different races to live in separate areas was the Group ___ Act:",
+  "options": [
+   "Holiday",
+   "Money",
+   "Sports",
+   "Areas"
+  ]
+ },
+ {
+  "id": "37834ed2-ca96-4952-a291-d2ae16f3eb03",
+  "topic": "Apartheid in South Africa",
+  "prompt": "Under apartheid, black South Africans were forced to carry an identity document called a:",
+  "options": [
+   "passbook (dompas)",
+   "passport",
+   "diary",
+   "driver's licence"
+  ]
+ },
+ {
+  "id": "50332971-2a6f-4f3e-8d11-b9da74a20381",
+  "topic": "Apartheid in South Africa",
+  "prompt": "Apartheid laws classified people into groups based on their:",
+  "options": [
+   "height",
+   "race",
+   "age",
+   "weight"
+  ]
+ },
+ {
+  "id": "b0cc115d-f05f-44ec-b8f4-da50d49ad3ec",
+  "topic": "Apartheid in South Africa",
+  "prompt": "The law that created separate and inferior schooling for black children was the Bantu ___ Act:",
+  "options": [
+   "Health",
+   "Sports",
+   "Education",
+   "Travel"
+  ]
+ },
+ {
+  "id": "aa64e075-e111-4654-bd09-3fb08e65ed18",
+  "topic": "Apartheid in South Africa",
+  "prompt": "Apartheid denied the majority of South Africans the right to:",
+  "options": [
+   "breathe",
+   "sleep",
+   "eat",
+   "vote"
+  ]
+ },
+ {
+  "id": "0408ff5f-b695-48e6-a97a-8c74cd141002",
+  "topic": "Resistance to Apartheid",
+  "prompt": "The main organisation that led the struggle against apartheid was the African National Congress, also known as the:",
+  "options": [
+   "ANC",
+   "NP",
+   "USA",
+   "UN"
+  ]
+ },
+ {
+  "id": "bc0c6aec-d83f-4ebb-b6e2-63aac32db3e4",
+  "topic": "Resistance to Apartheid",
+  "prompt": "On 21 March 1960, police killed 69 anti-pass-law protesters in the township of:",
+  "options": [
+   "Soweto",
+   "Sharpeville",
+   "Langa",
+   "Alexandra"
+  ]
+ },
+ {
+  "id": "2d28c5ae-d02f-46d6-b41e-c2646eae03cd",
+  "topic": "Resistance to Apartheid",
+  "prompt": "The 1976 uprising in which students protested against being taught in Afrikaans took place in:",
+  "options": [
+   "Sharpeville",
+   "Langa",
+   "Soweto",
+   "Cape Town"
+  ]
+ },
+ {
+  "id": "89b692b2-bec0-459a-8f45-b83dd9589b6d",
+  "topic": "Resistance to Apartheid",
+  "prompt": "The leader who was imprisoned for 27 years and later became South Africa's first democratic president was:",
+  "options": [
+   "Desmond Tutu",
+   "FW de Klerk",
+   "Steve Biko",
+   "Nelson Mandela"
+  ]
+ },
+ {
+  "id": "6d4baf90-d163-4a74-8776-b2053a771acc",
+  "topic": "Resistance to Apartheid",
+  "prompt": "Nelson Mandela was a leader of which organisation?",
+  "options": [
+   "the ANC",
+   "the National Party",
+   "the police",
+   "the army"
+  ]
+ },
+ {
+  "id": "df5a0b6e-d91f-4214-bfb5-ed5761327384",
+  "topic": "Resistance to Apartheid",
+  "prompt": "The Black Consciousness Movement leader who died in police custody in 1977 was:",
+  "options": [
+   "Nelson Mandela",
+   "Steve Biko",
+   "Walter Sisulu",
+   "Oliver Tambo"
+  ]
+ },
+ {
+  "id": "4a1334b9-e9da-46df-b58b-904902a049a9",
+  "topic": "Resistance to Apartheid",
+  "prompt": "The Soweto Uprising began on 16 June, which South Africa now commemorates as ___ Day:",
+  "options": [
+   "Workers'",
+   "Freedom",
+   "Youth",
+   "Heritage"
+  ]
+ },
+ {
+  "id": "ac9f49f3-baff-499a-983a-103e82862db9",
+  "topic": "Resistance to Apartheid",
+  "prompt": "Mandela and other leaders were sentenced to life imprisonment in 1964 at the ___ Trial:",
+  "options": [
+   "Nuremberg",
+   "Sharpeville",
+   "Soweto",
+   "Rivonia"
+  ]
+ },
+ {
+  "id": "d83ab981-4ab6-47ee-a160-62e60c808eb0",
+  "topic": "The End of Apartheid & Democracy",
+  "prompt": "Nelson Mandela was released from prison in:",
+  "options": [
+   "1990",
+   "1976",
+   "1948",
+   "1960"
+  ]
+ },
+ {
+  "id": "7eaacabc-5efe-4903-9891-004c04519347",
+  "topic": "The End of Apartheid & Democracy",
+  "prompt": "The South African president who began negotiations to end apartheid and freed Mandela was:",
+  "options": [
+   "PW Botha",
+   "FW de Klerk",
+   "Jacob Zuma",
+   "Thabo Mbeki"
+  ]
+ },
+ {
+  "id": "1e688ece-b8cb-4dc9-bea0-21696f9b0a0d",
+  "topic": "The End of Apartheid & Democracy",
+  "prompt": "South Africa's first democratic election, in which all races could vote, was held in:",
+  "options": [
+   "1990",
+   "1992",
+   "1994",
+   "1996"
+  ]
+ },
+ {
+  "id": "7f5cb8a1-69d2-4357-a9f2-8b113c2ed835",
+  "topic": "The End of Apartheid & Democracy",
+  "prompt": "South Africa's first democratically elected president, in 1994, was:",
+  "options": [
+   "FW de Klerk",
+   "Thabo Mbeki",
+   "Jacob Zuma",
+   "Nelson Mandela"
+  ]
+ },
+ {
+  "id": "5ff75cd5-8bf8-419e-afcf-ce060be825a0",
+  "topic": "The End of Apartheid & Democracy",
+  "prompt": "The commission led by Archbishop Desmond Tutu, where people confessed apartheid-era crimes, was the Truth and ___ Commission:",
+  "options": [
+   "Reconciliation",
+   "Money",
+   "Sports",
+   "Building"
+  ]
+ },
+ {
+  "id": "0ef0e0f6-4a0b-4239-93c8-9a69cde70617",
+  "topic": "The End of Apartheid & Democracy",
+  "prompt": "Nelson Mandela and FW de Klerk jointly won which prize in 1993?",
+  "options": [
+   "the World Cup",
+   "the Nobel Peace Prize",
+   "an Oscar",
+   "an Olympic gold medal"
+  ]
+ },
+ {
+  "id": "572ab2d7-65fe-4404-94b9-1664f9630adc",
+  "topic": "The End of Apartheid & Democracy",
+  "prompt": "South Africa's admired new democratic Constitution was adopted in:",
+  "options": [
+   "1990",
+   "1994",
+   "1996",
+   "2000"
+  ]
+ },
+ {
+  "id": "c8929160-6c93-4f49-9c7c-1fdd0ebb1cc3",
+  "topic": "The End of Apartheid & Democracy",
+  "prompt": "Freedom Day in South Africa, marking the 1994 election, is commemorated on:",
+  "options": [
+   "16 June",
+   "21 March",
+   "25 December",
+   "27 April"
   ]
  }
 ]
