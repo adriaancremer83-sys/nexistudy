@@ -1,0 +1,530 @@
+[
+ {
+  "id": "9340cc40-4f08-4fde-994c-6fd1ddc2278f",
+  "topic": "Elements of Art",
+  "prompt": "The basic visual building blocks of art — line, shape, colour and texture — are called the ___ of art:",
+  "options": [
+   "elements",
+   "prices",
+   "frames",
+   "titles"
+  ]
+ },
+ {
+  "id": "bffe5a5f-0bec-418d-9d46-3660bc418dba",
+  "topic": "Elements of Art",
+  "prompt": "A mark made by a moving point, which can be straight, curved, thick or thin, is called a:",
+  "options": [
+   "shape",
+   "line",
+   "dot",
+   "colour"
+  ]
+ },
+ {
+  "id": "9fbd25a3-d136-4b63-a653-6d200e3775dd",
+  "topic": "Elements of Art",
+  "prompt": "A flat, enclosed area such as a circle, square or triangle is called a:",
+  "options": [
+   "line",
+   "texture",
+   "shape",
+   "tone"
+  ]
+ },
+ {
+  "id": "2bc05637-35d6-4ca3-b1fb-e0602beea6e0",
+  "topic": "Elements of Art",
+  "prompt": "The element of art that describes how a surface feels, or looks like it would feel (rough or smooth), is:",
+  "options": [
+   "colour",
+   "line",
+   "shape",
+   "texture"
+  ]
+ },
+ {
+  "id": "9120ffd0-48f4-4f51-b7be-eab0678d60d1",
+  "topic": "Elements of Art",
+  "prompt": "A three-dimensional object that has height, width and depth, such as a sculpture, shows the element called:",
+  "options": [
+   "form",
+   "line",
+   "colour",
+   "dot"
+  ]
+ },
+ {
+  "id": "65573891-bacd-4c0d-a610-58b3a974562e",
+  "topic": "Elements of Art",
+  "prompt": "The lightness or darkness of a colour or area in an artwork is called its:",
+  "options": [
+   "shape",
+   "tone (value)",
+   "line",
+   "texture"
+  ]
+ },
+ {
+  "id": "d32a7f6c-fffb-437b-bdeb-3b6fe16c688c",
+  "topic": "Elements of Art",
+  "prompt": "The empty areas around and between the objects in an artwork are called:",
+  "options": [
+   "colour",
+   "line",
+   "space",
+   "texture"
+  ]
+ },
+ {
+  "id": "80b29ef1-301c-40c9-bb64-7a6b2d12ad86",
+  "topic": "Elements of Art",
+  "prompt": "Which of the following is an element of art?",
+  "options": [
+   "a paintbrush",
+   "an easel",
+   "a canvas",
+   "colour"
+  ]
+ },
+ {
+  "id": "d209093c-d05d-4da0-b5e8-bc96ba2b0f99",
+  "topic": "Colour Theory",
+  "prompt": "The three primary colours are:",
+  "options": [
+   "red, yellow and blue",
+   "green, orange and purple",
+   "black, white and grey",
+   "pink, brown and gold"
+  ]
+ },
+ {
+  "id": "f54e9386-d64b-4940-afe0-4412498e19ed",
+  "topic": "Colour Theory",
+  "prompt": "Mixing two primary colours together makes a ___ colour:",
+  "options": [
+   "primary",
+   "secondary",
+   "black",
+   "white"
+  ]
+ },
+ {
+  "id": "6a2cef56-6f7e-440f-bf96-245db51dae87",
+  "topic": "Colour Theory",
+  "prompt": "Which of these is a secondary colour?",
+  "options": [
+   "red",
+   "blue",
+   "green",
+   "yellow"
+  ]
+ },
+ {
+  "id": "a328af4f-c082-47f4-8c4b-400d00fce7cd",
+  "topic": "Colour Theory",
+  "prompt": "Colours such as red, orange and yellow, which remind us of fire and the sun, are called ___ colours:",
+  "options": [
+   "cool",
+   "dull",
+   "dark",
+   "warm"
+  ]
+ },
+ {
+  "id": "888a15bb-5dc4-45c0-9090-262b16118fdd",
+  "topic": "Colour Theory",
+  "prompt": "Colours such as blue, green and purple, which remind us of water and ice, are called ___ colours:",
+  "options": [
+   "cool",
+   "warm",
+   "bright",
+   "hot"
+  ]
+ },
+ {
+  "id": "3ae06677-55f5-47fa-a2b8-1ae0094a2686",
+  "topic": "Colour Theory",
+  "prompt": "Mixing blue and yellow paint makes:",
+  "options": [
+   "purple",
+   "green",
+   "orange",
+   "brown"
+  ]
+ },
+ {
+  "id": "c9ed5d61-199a-411f-a888-c31d5751b649",
+  "topic": "Colour Theory",
+  "prompt": "Mixing red and yellow paint makes:",
+  "options": [
+   "green",
+   "purple",
+   "orange",
+   "blue"
+  ]
+ },
+ {
+  "id": "60d75c21-5337-4972-88f9-e04fbe3a7fdc",
+  "topic": "Colour Theory",
+  "prompt": "Black, white and grey are known as ___ colours:",
+  "options": [
+   "primary",
+   "secondary",
+   "warm",
+   "neutral"
+  ]
+ },
+ {
+  "id": "a2ec3690-3ec1-4f44-9005-63817a3870d8",
+  "topic": "Music Notation Basics",
+  "prompt": "The set of five horizontal lines on which music is written is called the:",
+  "options": [
+   "staff (stave)",
+   "scale",
+   "bar",
+   "beat"
+  ]
+ },
+ {
+  "id": "a6abf60a-0795-4a9c-b020-23eb02fb8ec1",
+  "topic": "Music Notation Basics",
+  "prompt": "The symbol placed at the start of the staff that fixes the pitch of the notes is the:",
+  "options": [
+   "bar line",
+   "clef",
+   "rest",
+   "slur"
+  ]
+ },
+ {
+  "id": "5e5a546a-fdc4-4f59-b6e5-05029f244e0f",
+  "topic": "Music Notation Basics",
+  "prompt": "A note shaped as a hollow oval with a stem, lasting two beats, is a ___ note:",
+  "options": [
+   "crotchet",
+   "quaver",
+   "minim",
+   "semibreve"
+  ]
+ },
+ {
+  "id": "74b34ab1-1fb1-4114-8f3e-0c7cad7ad164",
+  "topic": "Music Notation Basics",
+  "prompt": "A note that lasts four beats (a whole note), drawn as a hollow oval with no stem, is a:",
+  "options": [
+   "crotchet",
+   "minim",
+   "quaver",
+   "semibreve"
+  ]
+ },
+ {
+  "id": "04f2b617-8ae3-45dc-bffb-eb0768e51196",
+  "topic": "Music Notation Basics",
+  "prompt": "A crotchet (a filled note head with a stem) lasts how many beats?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ]
+ },
+ {
+  "id": "d82a47a8-c6d8-494b-8a9b-070ec40dd592",
+  "topic": "Music Notation Basics",
+  "prompt": "The vertical lines that divide the staff into equal sections (bars) are called:",
+  "options": [
+   "clefs",
+   "bar lines",
+   "rests",
+   "notes"
+  ]
+ },
+ {
+  "id": "aa5c057e-3942-44b0-b6b3-709997ecd920",
+  "topic": "Music Notation Basics",
+  "prompt": "A symbol that shows a period of silence in music is called a:",
+  "options": [
+   "note",
+   "clef",
+   "rest",
+   "bar"
+  ]
+ },
+ {
+  "id": "37c26352-b2e0-4549-ab29-ee61610d0335",
+  "topic": "Music Notation Basics",
+  "prompt": "How many beats does a minim last?",
+  "options": [
+   "1",
+   "4",
+   "3",
+   "2"
+  ]
+ },
+ {
+  "id": "9777a8e0-68c4-4b89-b1b7-a9f30158ad12",
+  "topic": "Music Terms",
+  "prompt": "In music, the word 'dynamics' refers to:",
+  "options": [
+   "how loud or soft the music is",
+   "the song's title",
+   "the colour of the notes",
+   "the price of a ticket"
+  ]
+ },
+ {
+  "id": "c919e800-793f-400e-9b6c-9ce8bb4c86fe",
+  "topic": "Music Terms",
+  "prompt": "The Italian musical term 'forte' tells a musician to play:",
+  "options": [
+   "softly",
+   "loudly",
+   "slowly",
+   "backwards"
+  ]
+ },
+ {
+  "id": "9ee60a15-d66a-442a-98a8-9298b2b08650",
+  "topic": "Music Terms",
+  "prompt": "The Italian musical term 'piano' (p) tells a musician to play:",
+  "options": [
+   "loudly",
+   "very fast",
+   "softly",
+   "very high"
+  ]
+ },
+ {
+  "id": "d5e972eb-02fd-4c65-a8a7-36d835051651",
+  "topic": "Music Terms",
+  "prompt": "The speed of a piece of music — how fast or slow it is played — is called the:",
+  "options": [
+   "pitch",
+   "dynamics",
+   "melody",
+   "tempo"
+  ]
+ },
+ {
+  "id": "e6ef9433-463b-4c5d-af2b-c19e840a429d",
+  "topic": "Music Terms",
+  "prompt": "How high or low a musical sound is, is called its:",
+  "options": [
+   "pitch",
+   "volume",
+   "tempo",
+   "rhythm"
+  ]
+ },
+ {
+  "id": "3086d83b-cc37-43ee-b61e-ecf84adb1fc3",
+  "topic": "Music Terms",
+  "prompt": "A regular, repeated pattern of beats in music is called the:",
+  "options": [
+   "pitch",
+   "rhythm",
+   "colour",
+   "clef"
+  ]
+ },
+ {
+  "id": "8cf1700a-cf5a-4993-a11b-5e703a38777c",
+  "topic": "Music Terms",
+  "prompt": "The term 'allegro' tells a musician to play at a tempo that is:",
+  "options": [
+   "very slow",
+   "sad and heavy",
+   "fast and lively",
+   "completely silent"
+  ]
+ },
+ {
+  "id": "0d409f0f-7f95-45ec-a879-b09a25858664",
+  "topic": "Music Terms",
+  "prompt": "A tune made of a series of musical notes played one after another is called a:",
+  "options": [
+   "rest",
+   "bar",
+   "dynamic",
+   "melody"
+  ]
+ },
+ {
+  "id": "b95082c7-c4d0-43fa-a009-ad66874bdde9",
+  "topic": "Drama Terms",
+  "prompt": "The written text of a play, containing the words the actors say, is called the:",
+  "options": [
+   "script",
+   "prop",
+   "stage",
+   "curtain"
+  ]
+ },
+ {
+  "id": "9b36c933-7ab2-4a4f-b39e-aae79fc288dd",
+  "topic": "Drama Terms",
+  "prompt": "The objects an actor handles on stage, such as a sword or a cup, are called:",
+  "options": [
+   "costumes",
+   "props",
+   "lights",
+   "seats"
+  ]
+ },
+ {
+  "id": "7c0a5fa3-f152-4092-af22-c302c4231ca8",
+  "topic": "Drama Terms",
+  "prompt": "Acting out a story using only movements and gestures, with no words, is called:",
+  "options": [
+   "singing",
+   "narrating",
+   "mime",
+   "reading"
+  ]
+ },
+ {
+  "id": "67f62bbd-2426-4bc9-99a6-96270253af7f",
+  "topic": "Drama Terms",
+  "prompt": "The people who watch a play or performance are called the:",
+  "options": [
+   "actors",
+   "directors",
+   "crew",
+   "audience"
+  ]
+ },
+ {
+  "id": "d8a5ca4f-3988-49de-ad8a-f7d926273006",
+  "topic": "Drama Terms",
+  "prompt": "The person who guides the actors and is in charge of how a play is performed is the:",
+  "options": [
+   "director",
+   "audience",
+   "usher",
+   "cleaner"
+  ]
+ },
+ {
+  "id": "38ba8024-4cdb-4c0a-991c-f9bb7ad5cb00",
+  "topic": "Drama Terms",
+  "prompt": "The clothes an actor wears to look like their character are called the:",
+  "options": [
+   "props",
+   "costume",
+   "script",
+   "set"
+  ]
+ },
+ {
+  "id": "31c1a513-851a-4f7e-a12a-dfc0e35b2729",
+  "topic": "Drama Terms",
+  "prompt": "The area where the actors perform in front of the audience is called the:",
+  "options": [
+   "foyer",
+   "parking lot",
+   "stage",
+   "kitchen"
+  ]
+ },
+ {
+  "id": "82ed681e-fe20-495b-a4ba-bbb95b5722cf",
+  "topic": "Drama Terms",
+  "prompt": "The person an actor pretends to be in a play is called the:",
+  "options": [
+   "director",
+   "writer",
+   "usher",
+   "character"
+  ]
+ },
+ {
+  "id": "852fac54-26fa-4c37-afa6-1fd7a9a74d30",
+  "topic": "Dance Terms",
+  "prompt": "The art of creating and arranging the steps and movements of a dance is called:",
+  "options": [
+   "choreography",
+   "photography",
+   "geography",
+   "biography"
+  ]
+ },
+ {
+  "id": "b90a20e8-f652-4fc1-b0ea-61e762684e69",
+  "topic": "Dance Terms",
+  "prompt": "A person who creates the dance steps and movements is called a:",
+  "options": [
+   "dancer",
+   "choreographer",
+   "singer",
+   "painter"
+  ]
+ },
+ {
+  "id": "8160c7fa-8381-4bfc-bb53-4903e843bb05",
+  "topic": "Dance Terms",
+  "prompt": "In dance, moving your body low to the floor, in the middle, or up high makes use of different:",
+  "options": [
+   "colours",
+   "words",
+   "levels",
+   "prices"
+  ]
+ },
+ {
+  "id": "219c6f96-fe6e-4720-ade5-c7b33a637d10",
+  "topic": "Dance Terms",
+  "prompt": "The way dancers are arranged or positioned in the space, such as a line or a circle, is called the:",
+  "options": [
+   "costume",
+   "music",
+   "lighting",
+   "formation"
+  ]
+ },
+ {
+  "id": "707da68a-0651-4181-b1ad-5ee61a88c4bf",
+  "topic": "Dance Terms",
+  "prompt": "A steady, repeated pattern of beats that dancers move to is called the:",
+  "options": [
+   "rhythm",
+   "painting",
+   "script",
+   "prop"
+  ]
+ },
+ {
+  "id": "bb352eec-66f1-4bc0-bca5-e69dc91d5fe9",
+  "topic": "Dance Terms",
+  "prompt": "Warming up before dancing is important mainly because it:",
+  "options": [
+   "wastes time",
+   "helps prevent injury",
+   "makes you too tired",
+   "is only for fun"
+  ]
+ },
+ {
+  "id": "cc419825-1369-4a98-8cf1-be0fd476154d",
+  "topic": "Dance Terms",
+  "prompt": "A dance performed by a single dancer alone is called a:",
+  "options": [
+   "duet",
+   "group dance",
+   "solo",
+   "choir"
+  ]
+ },
+ {
+  "id": "0ac0605d-b3a7-4175-b4a2-d3ad0918e178",
+  "topic": "Dance Terms",
+  "prompt": "A dance performed by exactly two dancers together is called a:",
+  "options": [
+   "solo",
+   "trio",
+   "group dance",
+   "duet"
+  ]
+ }
+]
