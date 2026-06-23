@@ -1,0 +1,530 @@
+[
+ {
+  "id": "465177f1-dbe6-41ab-b3c0-d2c8693d63cb",
+  "topic": "Common, Proper & Collective Nouns",
+  "prompt": "A word that names a person, place, thing or idea is called a:",
+  "options": [
+   "noun",
+   "verb",
+   "adjective",
+   "adverb"
+  ]
+ },
+ {
+  "id": "1b56bf6c-fe86-41fd-abaa-7c65ffdb5edc",
+  "topic": "Common, Proper & Collective Nouns",
+  "prompt": "Which of the following is a common noun?",
+  "options": [
+   "Sipho",
+   "dog",
+   "Durban",
+   "Monday"
+  ]
+ },
+ {
+  "id": "ec08905b-c868-462b-92f6-6e6ff4e9fdf2",
+  "topic": "Common, Proper & Collective Nouns",
+  "prompt": "Which of the following is a proper noun (and must start with a capital letter)?",
+  "options": [
+   "city",
+   "river",
+   "Johannesburg",
+   "mountain"
+  ]
+ },
+ {
+  "id": "86953c31-6078-4a2f-8a10-6e3cfa949023",
+  "topic": "Common, Proper & Collective Nouns",
+  "prompt": "Which of the following is a collective noun?",
+  "options": [
+   "player",
+   "ball",
+   "field",
+   "team"
+  ]
+ },
+ {
+  "id": "1dccd2c8-ddac-4565-90ce-9ce3b3d7e96f",
+  "topic": "Common, Proper & Collective Nouns",
+  "prompt": "The correct collective noun for a group of lions is a:",
+  "options": [
+   "pride",
+   "flock",
+   "swarm",
+   "herd"
+  ]
+ },
+ {
+  "id": "85026ff2-73dc-42d5-8d6a-b58611d6df27",
+  "topic": "Common, Proper & Collective Nouns",
+  "prompt": "The correct collective noun for a group of sheep is a:",
+  "options": [
+   "pride",
+   "flock",
+   "school",
+   "pack"
+  ]
+ },
+ {
+  "id": "df2fe4b2-44ad-462c-a1b8-2dd2d3420d0f",
+  "topic": "Common, Proper & Collective Nouns",
+  "prompt": "Which word is a proper noun?",
+  "options": [
+   "teacher",
+   "country",
+   "Africa",
+   "school"
+  ]
+ },
+ {
+  "id": "b9f85e92-1f5c-432f-8dca-7e712081d2a7",
+  "topic": "Common, Proper & Collective Nouns",
+  "prompt": "An abstract noun names something you cannot touch or see, such as a feeling. Which word is an abstract noun?",
+  "options": [
+   "table",
+   "chair",
+   "dog",
+   "happiness"
+  ]
+ },
+ {
+  "id": "d8c02699-f9da-45a2-9944-932c0dec7f1f",
+  "topic": "Pronouns",
+  "prompt": "A word that takes the place of a noun is called a:",
+  "options": [
+   "pronoun",
+   "preposition",
+   "conjunction",
+   "interjection"
+  ]
+ },
+ {
+  "id": "b2c064cc-14d7-4c74-bbe0-b74841e6b732",
+  "topic": "Pronouns",
+  "prompt": "Choose the correct pronoun: 'Thabo is tired, so ___ wants to rest.'",
+  "options": [
+   "him",
+   "he",
+   "his",
+   "them"
+  ]
+ },
+ {
+  "id": "780bc3b0-d814-4c59-9cfc-968e82cc5b67",
+  "topic": "Pronouns",
+  "prompt": "Choose the correct word: 'The book is ___.' (it belongs to me)",
+  "options": [
+   "my",
+   "me",
+   "mine",
+   "I"
+  ]
+ },
+ {
+  "id": "0f8db17f-10e8-42fd-93e6-c877ba50e096",
+  "topic": "Pronouns",
+  "prompt": "Which word is a possessive pronoun (showing ownership)?",
+  "options": [
+   "they",
+   "who",
+   "this",
+   "theirs"
+  ]
+ },
+ {
+  "id": "59518f7e-00c7-4da5-abd8-5915bad869ff",
+  "topic": "Pronouns",
+  "prompt": "Choose the correct pronoun: 'Nomsa and ___ went to the shop.'",
+  "options": [
+   "I",
+   "me",
+   "mine",
+   "my"
+  ]
+ },
+ {
+  "id": "2a2c4942-75d6-45aa-a57e-e8fd368fc5f1",
+  "topic": "Pronouns",
+  "prompt": "A reflexive pronoun ends in -self or -selves. Which word is a reflexive pronoun?",
+  "options": [
+   "him",
+   "himself",
+   "his",
+   "he"
+  ]
+ },
+ {
+  "id": "9092d9bd-50f4-45c6-8fa9-5619524fab02",
+  "topic": "Pronouns",
+  "prompt": "Choose the correct word: 'The girls packed ___ bags.'",
+  "options": [
+   "there",
+   "they're",
+   "their",
+   "them"
+  ]
+ },
+ {
+  "id": "e87b9170-1402-448a-8bf9-435046b89fb6",
+  "topic": "Pronouns",
+  "prompt": "Which word is a personal pronoun?",
+  "options": [
+   "happy",
+   "quickly",
+   "blue",
+   "she"
+  ]
+ },
+ {
+  "id": "b1b06782-ecd5-449e-80bf-1637b892faa1",
+  "topic": "Verb Tenses (Present, Past & Future)",
+  "prompt": "A word that shows an action or a state of being is a:",
+  "options": [
+   "verb",
+   "noun",
+   "adjective",
+   "pronoun"
+  ]
+ },
+ {
+  "id": "eed43fda-40fa-47fc-8556-6d5ee7a2b0dc",
+  "topic": "Verb Tenses (Present, Past & Future)",
+  "prompt": "Which sentence is written in the past tense?",
+  "options": [
+   "She walks to school.",
+   "She walked to school.",
+   "She will walk to school.",
+   "She is walking to school."
+  ]
+ },
+ {
+  "id": "b164c4ae-f6e7-4b1a-866c-651594e1a10b",
+  "topic": "Verb Tenses (Present, Past & Future)",
+  "prompt": "The future tense of 'I play' is:",
+  "options": [
+   "I played",
+   "I am playing",
+   "I will play",
+   "I play"
+  ]
+ },
+ {
+  "id": "fc8e7dd7-ce5c-4d36-bcd0-e97aee52a73d",
+  "topic": "Verb Tenses (Present, Past & Future)",
+  "prompt": "The past tense of the irregular verb 'go' is:",
+  "options": [
+   "goed",
+   "gone",
+   "going",
+   "went"
+  ]
+ },
+ {
+  "id": "69ff304b-5cf5-40e5-80ac-4e362197d644",
+  "topic": "Verb Tenses (Present, Past & Future)",
+  "prompt": "Which sentence is in the present continuous tense?",
+  "options": [
+   "The dog is barking.",
+   "The dog barked.",
+   "The dog will bark.",
+   "The dog barks."
+  ]
+ },
+ {
+  "id": "89248844-13cc-4222-b3c0-959c0c82e044",
+  "topic": "Verb Tenses (Present, Past & Future)",
+  "prompt": "The past tense of the verb 'eat' is:",
+  "options": [
+   "eated",
+   "ate",
+   "eaten",
+   "eating"
+  ]
+ },
+ {
+  "id": "d1817877-6c47-46a8-a57e-a1092339e852",
+  "topic": "Verb Tenses (Present, Past & Future)",
+  "prompt": "Choose the correct verb: 'Yesterday we ___ a movie.'",
+  "options": [
+   "watch",
+   "watches",
+   "watched",
+   "will watch"
+  ]
+ },
+ {
+  "id": "dee0a8b3-1823-432d-a85a-0619873aafe5",
+  "topic": "Verb Tenses (Present, Past & Future)",
+  "prompt": "The past tense of most regular verbs is formed by adding:",
+  "options": [
+   "-ing",
+   "-s",
+   "-en",
+   "-ed"
+  ]
+ },
+ {
+  "id": "48fbd27d-b820-4809-ac76-3408fae94f57",
+  "topic": "Modal Verbs",
+  "prompt": "Helping words like 'can', 'must' and 'should', which show ability, obligation or possibility, are called:",
+  "options": [
+   "modal verbs",
+   "nouns",
+   "adverbs",
+   "prepositions"
+  ]
+ },
+ {
+  "id": "1ef0cc61-f766-4360-9821-4b687d8ca43e",
+  "topic": "Modal Verbs",
+  "prompt": "Choose the best modal verb: 'You ___ wear a seatbelt; it is the law.'",
+  "options": [
+   "may",
+   "must",
+   "might",
+   "could"
+  ]
+ },
+ {
+  "id": "b6547926-1006-4049-8968-82458bb98dd9",
+  "topic": "Modal Verbs",
+  "prompt": "Which modal verb best shows ability? 'She ___ swim very well.'",
+  "options": [
+   "should",
+   "must",
+   "can",
+   "may"
+  ]
+ },
+ {
+  "id": "fecef6d2-0601-4b30-b4bb-fb15f03d2a29",
+  "topic": "Modal Verbs",
+  "prompt": "Choose the best modal verb to ask politely: '___ I please borrow your pen?'",
+  "options": [
+   "Must",
+   "Shall",
+   "Will",
+   "May"
+  ]
+ },
+ {
+  "id": "4050c646-ab22-4d26-a3f5-046baace25df",
+  "topic": "Modal Verbs",
+  "prompt": "Choose the best modal verb to give advice: 'You ___ see a doctor about that cough.'",
+  "options": [
+   "should",
+   "can",
+   "will",
+   "must"
+  ]
+ },
+ {
+  "id": "aec7d394-98fc-44a8-989d-e143abaa0745",
+  "topic": "Modal Verbs",
+  "prompt": "Which modal verb shows that something is possible? 'It ___ rain later.'",
+  "options": [
+   "must",
+   "might",
+   "shall",
+   "would"
+  ]
+ },
+ {
+  "id": "99e5ea59-d489-4dbc-b983-eba6080b0c3b",
+  "topic": "Modal Verbs",
+  "prompt": "Identify the modal verb in this sentence: 'Learners must wear their uniforms.'",
+  "options": [
+   "Learners",
+   "wear",
+   "must",
+   "uniforms"
+  ]
+ },
+ {
+  "id": "070628e9-ca8a-4e57-a761-09d0a1492497",
+  "topic": "Modal Verbs",
+  "prompt": "Choose the best modal verb to offer help: 'I ___ help you carry those bags if you like.'",
+  "options": [
+   "must",
+   "should",
+   "might",
+   "will"
+  ]
+ },
+ {
+  "id": "058340ec-2725-4f91-9d59-62b8d0d9b94d",
+  "topic": "Question Tags",
+  "prompt": "Add the correct question tag: 'You are coming to the party, ___'",
+  "options": [
+   "aren't you?",
+   "are you?",
+   "isn't it?",
+   "don't you?"
+  ]
+ },
+ {
+  "id": "12cb449d-21b6-4276-a8af-ef7f82168a2b",
+  "topic": "Question Tags",
+  "prompt": "Add the correct question tag: 'She doesn't like tea, ___'",
+  "options": [
+   "doesn't she?",
+   "does she?",
+   "is she?",
+   "do she?"
+  ]
+ },
+ {
+  "id": "853ca8cd-0203-4804-8846-06afa0792552",
+  "topic": "Question Tags",
+  "prompt": "Add the correct question tag: 'They live in Cape Town, ___'",
+  "options": [
+   "aren't they?",
+   "doesn't they?",
+   "don't they?",
+   "do they?"
+  ]
+ },
+ {
+  "id": "39b07f9c-f8cf-4328-81c9-2d91b55ddbcb",
+  "topic": "Question Tags",
+  "prompt": "Add the correct question tag: 'He can swim, ___'",
+  "options": [
+   "can he?",
+   "couldn't he?",
+   "doesn't he?",
+   "can't he?"
+  ]
+ },
+ {
+  "id": "c61826d8-17b3-4948-9577-5c57964eb890",
+  "topic": "Question Tags",
+  "prompt": "Add the correct question tag: 'We have finished the work, ___'",
+  "options": [
+   "haven't we?",
+   "have we?",
+   "didn't we?",
+   "don't we?"
+  ]
+ },
+ {
+  "id": "47ea3dac-8e9a-4f8d-b147-a9422bacb345",
+  "topic": "Question Tags",
+  "prompt": "Add the correct question tag: 'It isn't raining, ___'",
+  "options": [
+   "isn't it?",
+   "is it?",
+   "does it?",
+   "it is?"
+  ]
+ },
+ {
+  "id": "9ab716bb-1449-4e42-a999-d59ea6bbe55d",
+  "topic": "Question Tags",
+  "prompt": "Add the correct question tag: 'You didn't see the message, ___'",
+  "options": [
+   "did you not?",
+   "didn't you?",
+   "did you?",
+   "do you?"
+  ]
+ },
+ {
+  "id": "0ff73aca-4418-4678-adfc-e3e88507a88d",
+  "topic": "Question Tags",
+  "prompt": "A question tag is separated from the main statement by which punctuation mark?",
+  "options": [
+   "a full stop",
+   "a question mark",
+   "a colon",
+   "a comma"
+  ]
+ },
+ {
+  "id": "065e82f7-2a0b-42c8-80dd-82c6c3771dcb",
+  "topic": "Contractions & the Possessive Apostrophe",
+  "prompt": "The contraction (short form) of 'do not' is:",
+  "options": [
+   "don't",
+   "dont",
+   "do'nt",
+   "doesn't"
+  ]
+ },
+ {
+  "id": "72a90f76-0fdf-4b40-be02-e357fde2b5a9",
+  "topic": "Contractions & the Possessive Apostrophe",
+  "prompt": "The contraction of 'I am' is:",
+  "options": [
+   "Im",
+   "I'm",
+   "I'am",
+   "am I"
+  ]
+ },
+ {
+  "id": "246e23bd-038f-46e9-a963-2629e1442a41",
+  "topic": "Contractions & the Possessive Apostrophe",
+  "prompt": "In a contraction, the apostrophe is used to show that:",
+  "options": [
+   "a word is plural",
+   "a word is a name",
+   "one or more letters have been left out",
+   "a sentence has ended"
+  ]
+ },
+ {
+  "id": "b9afaa38-185f-4766-b76a-361f89f6969c",
+  "topic": "Contractions & the Possessive Apostrophe",
+  "prompt": "The contraction of 'they are' is:",
+  "options": [
+   "theyre",
+   "their",
+   "there",
+   "they're"
+  ]
+ },
+ {
+  "id": "4be025e9-114c-463a-8379-df6829b20fea",
+  "topic": "Contractions & the Possessive Apostrophe",
+  "prompt": "To show that the book belongs to one boy, you write:",
+  "options": [
+   "the boy's book",
+   "the boys book",
+   "the boys' book",
+   "the book boy"
+  ]
+ },
+ {
+  "id": "5a36fd06-f64d-4f59-be04-f61299f444f7",
+  "topic": "Contractions & the Possessive Apostrophe",
+  "prompt": "To show that the bags belong to more than one girl, you write:",
+  "options": [
+   "the girl's bags",
+   "the girls' bags",
+   "the girls bags",
+   "the girlses bags"
+  ]
+ },
+ {
+  "id": "4805adad-51ed-494e-b046-403586152e99",
+  "topic": "Contractions & the Possessive Apostrophe",
+  "prompt": "Which sentence uses the apostrophe correctly?",
+  "options": [
+   "The dog wagged it's tail.",
+   "Thats my pencil.",
+   "That is Sara's pencil.",
+   "The cat licked its' paw."
+  ]
+ },
+ {
+  "id": "bae1a93f-c4c5-4075-b46e-7ff0c6fdc944",
+  "topic": "Contractions & the Possessive Apostrophe",
+  "prompt": "The contraction of 'cannot' is:",
+  "options": [
+   "cant",
+   "ca'nt",
+   "cann't",
+   "can't"
+  ]
+ }
+]
