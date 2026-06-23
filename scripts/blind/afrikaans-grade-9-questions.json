@@ -1,0 +1,530 @@
+[
+ {
+  "id": "7d0872eb-0d2a-4272-8b73-f58ead38e95d",
+  "topic": "Soorte Selfstandige Naamwoorde",
+  "prompt": "'n Woord wat 'n mens, dier, plek of ding benoem, is 'n:",
+  "options": [
+   "selfstandige naamwoord",
+   "werkwoord",
+   "byvoeglike naamwoord",
+   "bywoord"
+  ]
+ },
+ {
+  "id": "919b178c-f620-401c-893d-344af0e6dbdd",
+  "topic": "Soorte Selfstandige Naamwoorde",
+  "prompt": "Watter woord is 'n soortnaam (gewone naam)?",
+  "options": [
+   "Pretoria",
+   "hond",
+   "Piet",
+   "Maandag"
+  ]
+ },
+ {
+  "id": "a5db4cb0-5d93-47e6-a159-0ed6bc9cffcd",
+  "topic": "Soorte Selfstandige Naamwoorde",
+  "prompt": "Watter woord is 'n eienaam en begin altyd met 'n hoofletter?",
+  "options": [
+   "stad",
+   "rivier",
+   "Kaapstad",
+   "berg"
+  ]
+ },
+ {
+  "id": "d0cdf868-dcac-4f79-9d5f-21ea1dab4cac",
+  "topic": "Soorte Selfstandige Naamwoorde",
+  "prompt": "Watter woord is 'n versamelnaam?",
+  "options": [
+   "speler",
+   "bal",
+   "veld",
+   "span"
+  ]
+ },
+ {
+  "id": "12ea1878-ce3d-401b-b5d3-5a39901a4066",
+  "topic": "Soorte Selfstandige Naamwoorde",
+  "prompt": "Die versamelnaam vir 'n groep skape is 'n:",
+  "options": [
+   "trop",
+   "swerm",
+   "vlug",
+   "skool"
+  ]
+ },
+ {
+  "id": "d1c5b66f-ef36-435e-8652-7f3a1b113bc1",
+  "topic": "Soorte Selfstandige Naamwoorde",
+  "prompt": "Die versamelnaam vir 'n groep bye is 'n:",
+  "options": [
+   "trop",
+   "swerm",
+   "kudde",
+   "vlug"
+  ]
+ },
+ {
+  "id": "cc21986e-4685-4720-8092-a701c7779dca",
+  "topic": "Soorte Selfstandige Naamwoorde",
+  "prompt": "Watter woord is 'n eienaam?",
+  "options": [
+   "onderwyser",
+   "land",
+   "Afrika",
+   "skool"
+  ]
+ },
+ {
+  "id": "8f17254b-6033-4c86-bff8-5184eb0f3aa9",
+  "topic": "Soorte Selfstandige Naamwoorde",
+  "prompt": "'n Abstrakte naamwoord benoem iets wat 'n mens nie kan sien of aanraak nie, soos 'n gevoel. Watter woord is 'n abstrakte naamwoord?",
+  "options": [
+   "tafel",
+   "stoel",
+   "hond",
+   "liefde"
+  ]
+ },
+ {
+  "id": "79c9c0e9-5453-4c0a-9e5a-7b1eb52254b6",
+  "topic": "Telwoorde",
+  "prompt": "Woorde wat getalle of hoeveelheid aandui, soos 'drie' en 'tweede', word ___ genoem:",
+  "options": [
+   "telwoorde",
+   "werkwoorde",
+   "voorsetsels",
+   "lidwoorde"
+  ]
+ },
+ {
+  "id": "6a61d1fb-7312-4a96-b3d9-4b22353d508b",
+  "topic": "Telwoorde",
+  "prompt": "'n Hooftelwoord dui 'n hoeveelheid aan. Watter een is 'n hooftelwoord?",
+  "options": [
+   "eerste",
+   "vyf",
+   "tweede",
+   "laaste"
+  ]
+ },
+ {
+  "id": "623adc68-f87c-4cff-b674-4faacf1a549d",
+  "topic": "Telwoorde",
+  "prompt": "'n Rangtelwoord dui orde of volgorde aan. Watter een is 'n rangtelwoord?",
+  "options": [
+   "tien",
+   "sewe",
+   "derde",
+   "baie"
+  ]
+ },
+ {
+  "id": "057bfeca-fd93-49f3-8c10-ef1b9574a056",
+  "topic": "Telwoorde",
+  "prompt": "Die rangtelwoord vir die getal 3 is:",
+  "options": [
+   "drie",
+   "drietal",
+   "derduisend",
+   "derde"
+  ]
+ },
+ {
+  "id": "4bcc4f5a-c83d-4401-9723-d7d2bfe4faf2",
+  "topic": "Telwoorde",
+  "prompt": "Skryf die hooftelwoord vir die syfer 7:",
+  "options": [
+   "sewe",
+   "sewende",
+   "sewental",
+   "sewes"
+  ]
+ },
+ {
+  "id": "54f6b627-2bcd-4b38-bf4d-eaa828ffe091",
+  "topic": "Telwoorde",
+  "prompt": "Skryf die rangtelwoord vir die syfer 2:",
+  "options": [
+   "twee",
+   "tweede",
+   "tweetal",
+   "twees"
+  ]
+ },
+ {
+  "id": "da995851-b0a4-4f79-890a-e5ebefc6e8a2",
+  "topic": "Telwoorde",
+  "prompt": "Hoe skryf 'n mens die getal 12 in woorde?",
+  "options": [
+   "tien",
+   "elf",
+   "twaalf",
+   "dertien"
+  ]
+ },
+ {
+  "id": "7440b6f4-412c-4d1d-bdf1-62601e37cc58",
+  "topic": "Telwoorde",
+  "prompt": "Watter een van die volgende is 'n rangtelwoord?",
+  "options": [
+   "agt",
+   "ses",
+   "nege",
+   "vierde"
+  ]
+ },
+ {
+  "id": "571d1208-99dd-4c15-908c-bf6c02a1d976",
+  "topic": "Geslag (Manlik & Vroulik)",
+  "prompt": "Die vroulike vorm van 'koning' is:",
+  "options": [
+   "koningin",
+   "prinses",
+   "hertogin",
+   "keiserin"
+  ]
+ },
+ {
+  "id": "79a8055d-a66f-417b-bcec-bff6e1925ad6",
+  "topic": "Geslag (Manlik & Vroulik)",
+  "prompt": "Die vroulike vorm van 'man' is:",
+  "options": [
+   "tannie",
+   "vrou",
+   "meisie",
+   "dame"
+  ]
+ },
+ {
+  "id": "9d550949-13a9-4c8c-94e5-cab24c216e98",
+  "topic": "Geslag (Manlik & Vroulik)",
+  "prompt": "Die manlike vorm van 'koei' is:",
+  "options": [
+   "kalf",
+   "os",
+   "bul",
+   "perd"
+  ]
+ },
+ {
+  "id": "1fea25d3-08bb-4ce5-843c-91a279ca1267",
+  "topic": "Geslag (Manlik & Vroulik)",
+  "prompt": "Die vroulike vorm van 'haan' is:",
+  "options": [
+   "eend",
+   "gans",
+   "kuiken",
+   "hen"
+  ]
+ },
+ {
+  "id": "df1eefc6-b921-46b0-be11-a28ea15fcb56",
+  "topic": "Geslag (Manlik & Vroulik)",
+  "prompt": "Die vroulike vorm van 'oom' is:",
+  "options": [
+   "tante",
+   "ouma",
+   "suster",
+   "niggie"
+  ]
+ },
+ {
+  "id": "9a6a81b3-1b06-403e-a6c9-fb659276afce",
+  "topic": "Geslag (Manlik & Vroulik)",
+  "prompt": "Die manlike vorm van 'merrie' is:",
+  "options": [
+   "vul",
+   "hings",
+   "esel",
+   "bul"
+  ]
+ },
+ {
+  "id": "0272bcac-6a07-4f8b-aa53-4350dba3b962",
+  "topic": "Geslag (Manlik & Vroulik)",
+  "prompt": "Die vroulike vorm van 'neef' is:",
+  "options": [
+   "tante",
+   "suster",
+   "niggie",
+   "dogter"
+  ]
+ },
+ {
+  "id": "d613598c-6358-48f7-ab65-8a0f79f55485",
+  "topic": "Geslag (Manlik & Vroulik)",
+  "prompt": "Die manlike vorm van 'ooi' is:",
+  "options": [
+   "lam",
+   "bok",
+   "kalf",
+   "ram"
+  ]
+ },
+ {
+  "id": "0f91a004-6be0-4d6d-bb7d-3289ddbc4eb0",
+  "topic": "Modale Hulpwerkwoorde",
+  "prompt": "Werkwoorde soos 'kan', 'moet' en 'mag', wat saam met 'n hoofwerkwoord gebruik word, word ___ genoem:",
+  "options": [
+   "modale hulpwerkwoorde",
+   "selfstandige naamwoorde",
+   "byvoeglike naamwoorde",
+   "voorsetsels"
+  ]
+ },
+ {
+  "id": "0f6e2b57-ef9e-41fa-85d3-b83c5b016d9b",
+  "topic": "Modale Hulpwerkwoorde",
+  "prompt": "Kies die beste modale werkwoord: 'Jy ___ jou gordel dra; dit is die wet.'",
+  "options": [
+   "mag",
+   "moet",
+   "kan",
+   "wil"
+  ]
+ },
+ {
+  "id": "a8728b8d-e775-43c2-857e-cf5aa10217b1",
+  "topic": "Modale Hulpwerkwoorde",
+  "prompt": "Watter modale werkwoord dui vermoë aan? 'Sy ___ baie goed swem.'",
+  "options": [
+   "moet",
+   "wil",
+   "kan",
+   "mag"
+  ]
+ },
+ {
+  "id": "c0e3c6a3-1bad-4462-b75f-aaf5fbbcb8ec",
+  "topic": "Modale Hulpwerkwoorde",
+  "prompt": "Kies die beste woord om beleefd toestemming te vra: '___ ek asseblief jou pen leen?'",
+  "options": [
+   "Moet",
+   "Sal",
+   "Wil",
+   "Mag"
+  ]
+ },
+ {
+  "id": "8052d4c4-198f-4830-a137-52c3b4bec824",
+  "topic": "Modale Hulpwerkwoorde",
+  "prompt": "Kies die beste modale werkwoord om 'n aanbod te maak: 'Ek ___ jou help dra as jy wil.'",
+  "options": [
+   "sal",
+   "moet",
+   "mag",
+   "kan"
+  ]
+ },
+ {
+  "id": "e5ba02e1-644d-425c-b52c-b34c5ed42c9e",
+  "topic": "Modale Hulpwerkwoorde",
+  "prompt": "Watter modale werkwoord dui 'n wens of begeerte aan? 'Ek ___ graag eendag 'n dokter word.'",
+  "options": [
+   "kan",
+   "wil",
+   "mag",
+   "moet"
+  ]
+ },
+ {
+  "id": "29cbb33c-c6b9-4e39-8755-dfcd49be552d",
+  "topic": "Modale Hulpwerkwoorde",
+  "prompt": "Identifiseer die modale hulpwerkwoord in die sin: 'Leerders moet hul skooldrag dra.'",
+  "options": [
+   "Leerders",
+   "dra",
+   "moet",
+   "skooldrag"
+  ]
+ },
+ {
+  "id": "ab69d624-bd17-4a72-9840-29912e10f0b1",
+  "topic": "Modale Hulpwerkwoorde",
+  "prompt": "Kies die beste modale werkwoord om moontlikheid aan te dui: 'Dit ___ later reën.'",
+  "options": [
+   "moet",
+   "wil",
+   "sal",
+   "kan"
+  ]
+ },
+ {
+  "id": "2f12d1f6-dbee-4b1a-a94a-6d464fb817b4",
+  "topic": "Vraagwoorde",
+  "prompt": "Woorde soos 'wie', 'wat' en 'waar' wat 'n vraag begin, word ___ genoem:",
+  "options": [
+   "vraagwoorde",
+   "voegwoorde",
+   "lidwoorde",
+   "telwoorde"
+  ]
+ },
+ {
+  "id": "03fde130-f520-46e7-8bf4-a2c894b64d72",
+  "topic": "Vraagwoorde",
+  "prompt": "Watter vraagwoord vra na 'n persoon? '___ het die venster gebreek?'",
+  "options": [
+   "Wat",
+   "Wie",
+   "Waar",
+   "Wanneer"
+  ]
+ },
+ {
+  "id": "3c4274e8-e6ea-4cd5-b2ad-e0e4bb1d2ced",
+  "topic": "Vraagwoorde",
+  "prompt": "Watter vraagwoord vra na 'n plek? '___ woon jy?'",
+  "options": [
+   "Wie",
+   "Wat",
+   "Waar",
+   "Hoekom"
+  ]
+ },
+ {
+  "id": "f440d6bc-6434-406e-92d6-c83848672481",
+  "topic": "Vraagwoorde",
+  "prompt": "Watter vraagwoord vra na 'n tyd? '___ begin die fliek?'",
+  "options": [
+   "Waar",
+   "Wie",
+   "Hoe",
+   "Wanneer"
+  ]
+ },
+ {
+  "id": "453a98a1-cefe-4429-b38b-5277c27996ae",
+  "topic": "Vraagwoorde",
+  "prompt": "Watter vraagwoord vra na 'n rede? '___ is jy laat?'",
+  "options": [
+   "Hoekom",
+   "Wat",
+   "Wie",
+   "Waar"
+  ]
+ },
+ {
+  "id": "c86e75c7-5b1d-46fe-a711-29ce43722b6e",
+  "topic": "Vraagwoorde",
+  "prompt": "Watter vraagwoord vra na 'n manier of wyse? '___ het jy dit reggekry?'",
+  "options": [
+   "Waar",
+   "Hoe",
+   "Wie",
+   "Wanneer"
+  ]
+ },
+ {
+  "id": "a0e95f3e-bd8b-4b4c-b686-11de2eeb99a8",
+  "topic": "Vraagwoorde",
+  "prompt": "Watter vraagwoord vra na 'n hoeveelheid? '___ koek het ons nog oor?'",
+  "options": [
+   "Wie",
+   "Wat",
+   "Hoeveel",
+   "Waar"
+  ]
+ },
+ {
+  "id": "6b8e169d-a406-4c6d-998b-c2414b63b2e7",
+  "topic": "Vraagwoorde",
+  "prompt": "'n Vraagsin eindig altyd met 'n:",
+  "options": [
+   "punt",
+   "komma",
+   "uitroepteken",
+   "vraagteken"
+  ]
+ },
+ {
+  "id": "0b97e2ce-4e73-4f38-abae-eb974955adf6",
+  "topic": "Die Afkappingsteken",
+  "prompt": "Die meervoud van 'ma' word geskryf as:",
+  "options": [
+   "ma's",
+   "mas",
+   "maas",
+   "ma'e"
+  ]
+ },
+ {
+  "id": "ac67ffa7-e45c-4743-8093-eaa125473fb8",
+  "topic": "Die Afkappingsteken",
+  "prompt": "Die meervoud van 'foto' word geskryf as:",
+  "options": [
+   "fotos",
+   "foto's",
+   "fotoe",
+   "foto'e"
+  ]
+ },
+ {
+  "id": "8ce89ae9-2d63-435e-bb4f-65a306a48c2b",
+  "topic": "Die Afkappingsteken",
+  "prompt": "Die afkappingsteken in 'ma's' wys dat:",
+  "options": [
+   "die woord 'n eienaam is",
+   "die woord 'n werkwoord is",
+   "dit die meervoud van 'n woord op 'n klinker is",
+   "die sin geëindig het"
+  ]
+ },
+ {
+  "id": "b5011148-4b53-48f0-83ed-0415a0b1f677",
+  "topic": "Die Afkappingsteken",
+  "prompt": "Die onbepaalde lidwoord wat met 'n afkappingsteken geskryf word, is:",
+  "options": [
+   "die",
+   "en",
+   "hy",
+   "'n"
+  ]
+ },
+ {
+  "id": "1500c9c0-1bd3-4bce-a5c0-af110b43659b",
+  "topic": "Die Afkappingsteken",
+  "prompt": "Die meervoud van 'baba' word geskryf as:",
+  "options": [
+   "baba's",
+   "babas",
+   "babaas",
+   "baba'e"
+  ]
+ },
+ {
+  "id": "738fb5c1-08b6-4ac6-bbcd-4077b2acd9ee",
+  "topic": "Die Afkappingsteken",
+  "prompt": "'Hy het' kan verkort word na:",
+  "options": [
+   "hyt",
+   "hy't",
+   "hy'et",
+   "het hy"
+  ]
+ },
+ {
+  "id": "57bad459-71d0-4202-995e-546be31e947a",
+  "topic": "Die Afkappingsteken",
+  "prompt": "Watter woord is korrek met die afkappingsteken geskryf?",
+  "options": [
+   "taxis",
+   "taxi'e",
+   "taxi's",
+   "taxiis"
+  ]
+ },
+ {
+  "id": "e1fafe11-e25b-4cb6-b130-4911676030e1",
+  "topic": "Die Afkappingsteken",
+  "prompt": "Die afkappingsteken word NIE gebruik om ___ aan te dui nie:",
+  "options": [
+   "die meervoud van 'ma'",
+   "die onbepaalde lidwoord ''n'",
+   "die weglating van letters",
+   "die einde van 'n sin"
+  ]
+ }
+]
