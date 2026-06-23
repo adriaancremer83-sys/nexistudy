@@ -1,0 +1,530 @@
+[
+ {
+  "id": "ccf4911a-a23c-4b45-8183-fe17f7bcf6d3",
+  "topic": "The Design Process",
+  "prompt": "The first stage of the design process, where you identify the problem and find out more about it, is to:",
+  "options": [
+   "investigate",
+   "make",
+   "evaluate",
+   "communicate"
+  ]
+ },
+ {
+  "id": "ccb59d57-e8ab-48ba-98d5-0d1c18dcbbae",
+  "topic": "The Design Process",
+  "prompt": "A short, clear statement that explains the problem to be solved is called the:",
+  "options": [
+   "evaluation",
+   "design brief",
+   "prototype",
+   "final product"
+  ]
+ },
+ {
+  "id": "2b777ba2-d2b4-41bc-bbe3-41d314fb639e",
+  "topic": "The Design Process",
+  "prompt": "The stage of the design process in which you actually build the product is the ___ stage:",
+  "options": [
+   "investigate",
+   "design",
+   "make",
+   "evaluate"
+  ]
+ },
+ {
+  "id": "329e6d38-d2cf-4862-af54-e58491dc1396",
+  "topic": "The Design Process",
+  "prompt": "The conditions a product must meet (for example 'must be waterproof' or 'must cost under R50') are called the design:",
+  "options": [
+   "sketches",
+   "materials",
+   "tools",
+   "specifications"
+  ]
+ },
+ {
+  "id": "20e3ed15-6739-4b32-81ec-81a6bcaf67d2",
+  "topic": "The Design Process",
+  "prompt": "A first working model of a product, built to test whether the design works, is called a:",
+  "options": [
+   "prototype",
+   "blueprint",
+   "brief",
+   "survey"
+  ]
+ },
+ {
+  "id": "adb0beae-d1de-43ef-96c8-4ff9503a99e8",
+  "topic": "The Design Process",
+  "prompt": "The stage in which you judge whether your product actually solved the problem well is the ___ stage:",
+  "options": [
+   "make",
+   "evaluate",
+   "investigate",
+   "design"
+  ]
+ },
+ {
+  "id": "344e0009-729b-4a16-b679-94f65ad4c2fa",
+  "topic": "The Design Process",
+  "prompt": "Drawing several quick, rough idea-sketches to explore possible solutions is called:",
+  "options": [
+   "evaluating",
+   "testing",
+   "brainstorming",
+   "manufacturing"
+  ]
+ },
+ {
+  "id": "2a976a75-bcba-4992-bbbd-f0d4cbb11ae2",
+  "topic": "The Design Process",
+  "prompt": "During which stage would you ask people what they need by using a survey or interview?",
+  "options": [
+   "make",
+   "evaluate",
+   "communicate",
+   "investigate"
+  ]
+ },
+ {
+  "id": "67c3961d-26ec-448b-a14e-6d7c9c99ac06",
+  "topic": "Structures",
+  "prompt": "A structure made of separate parts joined together to form a framework, such as an electricity pylon or a bridge, is a ___ structure:",
+  "options": [
+   "frame",
+   "shell",
+   "solid",
+   "liquid"
+  ]
+ },
+ {
+  "id": "975c1921-ca85-4628-970a-c4f7ff971671",
+  "topic": "Structures",
+  "prompt": "A hollow structure that gets its strength from its curved outer shape, such as an egg or a dome, is a ___ structure:",
+  "options": [
+   "frame",
+   "shell",
+   "solid",
+   "open"
+  ]
+ },
+ {
+  "id": "be7115f8-8e44-44d6-b80d-4cc65307ed9e",
+  "topic": "Structures",
+  "prompt": "A pushing or squashing force that tries to crush a structure is called:",
+  "options": [
+   "tension",
+   "bending",
+   "compression",
+   "torsion"
+  ]
+ },
+ {
+  "id": "c5b13b48-4b11-408e-9290-103d45e786c6",
+  "topic": "Structures",
+  "prompt": "A pulling or stretching force that tries to pull a structure apart is called:",
+  "options": [
+   "compression",
+   "shear",
+   "torsion",
+   "tension"
+  ]
+ },
+ {
+  "id": "4e14da44-9db6-4799-8835-90e94a875f34",
+  "topic": "Structures",
+  "prompt": "A part of a structure that is being squashed (in compression), such as a support column, is called a:",
+  "options": [
+   "strut",
+   "tie",
+   "rope",
+   "cable"
+  ]
+ },
+ {
+  "id": "2731495c-ec00-41fd-9b38-594d8377ed7f",
+  "topic": "Structures",
+  "prompt": "A part of a structure that is being stretched (in tension), such as a cable, is called a:",
+  "options": [
+   "strut",
+   "tie",
+   "column",
+   "wall"
+  ]
+ },
+ {
+  "id": "242a7e42-775c-4bde-b248-b2cc26de3f0e",
+  "topic": "Structures",
+  "prompt": "Adding diagonal pieces to make a frame structure stronger and stiffer is called:",
+  "options": [
+   "bending",
+   "folding",
+   "triangulation",
+   "melting"
+  ]
+ },
+ {
+  "id": "df558071-b4b9-48bb-a321-90a38557177e",
+  "topic": "Structures",
+  "prompt": "Which shape is the strongest and most stable for building rigid frame structures?",
+  "options": [
+   "circle",
+   "square",
+   "rectangle",
+   "triangle"
+  ]
+ },
+ {
+  "id": "ab4bb17f-f8d5-4801-bae9-6b77b81e1037",
+  "topic": "Mechanical Systems & Control",
+  "prompt": "A simple machine that turns on a pivot to make work easier, such as a seesaw or a crowbar, is a:",
+  "options": [
+   "lever",
+   "gear",
+   "pulley",
+   "cam"
+  ]
+ },
+ {
+  "id": "209e15ec-00b3-4b04-b182-c51a4bab8a5c",
+  "topic": "Mechanical Systems & Control",
+  "prompt": "The fixed point about which a lever turns is called the:",
+  "options": [
+   "load",
+   "fulcrum",
+   "effort",
+   "beam"
+  ]
+ },
+ {
+  "id": "6f39eac5-e4a9-42d1-9ef2-ed4e9aa9d435",
+  "topic": "Mechanical Systems & Control",
+  "prompt": "Two or more toothed wheels that mesh together to transfer movement are called:",
+  "options": [
+   "pulleys",
+   "levers",
+   "gears",
+   "axles"
+  ]
+ },
+ {
+  "id": "a9f20de1-748f-4ec3-b327-f28dde44e9db",
+  "topic": "Mechanical Systems & Control",
+  "prompt": "A driver gear has 10 teeth and the driven gear has 30 teeth. The gear ratio (driven : driver) is:",
+  "options": [
+   "1 : 3",
+   "10 : 1",
+   "1 : 30",
+   "3 : 1"
+  ]
+ },
+ {
+  "id": "66d662dd-5b5c-4670-93d6-fc43d3486812",
+  "topic": "Mechanical Systems & Control",
+  "prompt": "When a small driver gear turns a larger driven gear, the larger gear turns:",
+  "options": [
+   "slower, but with more turning force",
+   "faster, with less force",
+   "at exactly the same speed",
+   "backwards only"
+  ]
+ },
+ {
+  "id": "4ed8aceb-0cf3-42d4-bafd-f1452f60bf6a",
+  "topic": "Mechanical Systems & Control",
+  "prompt": "A wheel with a groove and a rope or belt around it, used to lift or move loads, is a:",
+  "options": [
+   "gear",
+   "pulley",
+   "cam",
+   "lever"
+  ]
+ },
+ {
+  "id": "10766fef-6dd2-47be-98a4-6359e706f569",
+  "topic": "Mechanical Systems & Control",
+  "prompt": "A specially shaped wheel that changes rotary (turning) motion into up-and-down (reciprocating) motion is a:",
+  "options": [
+   "gear",
+   "pulley",
+   "cam",
+   "axle"
+  ]
+ },
+ {
+  "id": "df4599f9-a59a-475d-a24b-4bacae3d3291",
+  "topic": "Mechanical Systems & Control",
+  "prompt": "A driver gear has 20 teeth and meshes with a driven gear of 40 teeth. If the driver turns 4 times, how many times does the driven gear turn?",
+  "options": [
+   "4",
+   "8",
+   "1",
+   "2"
+  ]
+ },
+ {
+  "id": "18aa449c-1681-42e0-a868-2d99bf74e3fc",
+  "topic": "Electrical Systems",
+  "prompt": "A complete path that allows electric current to flow is called a:",
+  "options": [
+   "circuit",
+   "switch",
+   "conductor",
+   "fuse"
+  ]
+ },
+ {
+  "id": "aea80841-ccf8-4eb9-ab8c-98decf878818",
+  "topic": "Electrical Systems",
+  "prompt": "A component that stores chemical energy and supplies electrical energy to a circuit is a:",
+  "options": [
+   "resistor",
+   "cell (battery)",
+   "switch",
+   "lamp"
+  ]
+ },
+ {
+  "id": "abc9fe02-ece6-42b0-bec5-4638eba94a76",
+  "topic": "Electrical Systems",
+  "prompt": "A material that allows electricity to flow through it easily, such as copper, is a:",
+  "options": [
+   "insulator",
+   "plastic",
+   "conductor",
+   "rubber"
+  ]
+ },
+ {
+  "id": "162829fb-5d01-4bec-8fb5-289da9fc3b35",
+  "topic": "Electrical Systems",
+  "prompt": "A component used to open or close a circuit, switching it off or on, is a:",
+  "options": [
+   "resistor",
+   "lamp",
+   "cell",
+   "switch"
+  ]
+ },
+ {
+  "id": "9df9fad4-e41a-49fb-8cc2-7a0a2e7313de",
+  "topic": "Electrical Systems",
+  "prompt": "In a ___ circuit, all the components are connected one after another in a single loop:",
+  "options": [
+   "series",
+   "parallel",
+   "broken",
+   "open"
+  ]
+ },
+ {
+  "id": "74fdefaa-9b9a-411b-a77c-c3ae55bd2322",
+  "topic": "Electrical Systems",
+  "prompt": "A component that resists or limits the flow of current in a circuit is a:",
+  "options": [
+   "cell",
+   "resistor",
+   "switch",
+   "wire"
+  ]
+ },
+ {
+  "id": "e89785d5-b505-486a-806d-5f4c009b3844",
+  "topic": "Electrical Systems",
+  "prompt": "A material that does NOT allow electricity to flow through it easily, such as rubber, is an:",
+  "options": [
+   "conductor",
+   "metal",
+   "insulator",
+   "battery"
+  ]
+ },
+ {
+  "id": "3d3793db-6044-44c7-9f7e-5c4d7184ed73",
+  "topic": "Electrical Systems",
+  "prompt": "The unit used to measure electric current is the:",
+  "options": [
+   "volt",
+   "watt",
+   "ohm",
+   "ampere"
+  ]
+ },
+ {
+  "id": "004e7b86-1371-459b-b3c4-500efab36099",
+  "topic": "Processing of Materials",
+  "prompt": "Changing a raw material into a useful product by cutting, shaping and joining it is called ___ the material:",
+  "options": [
+   "processing",
+   "recycling",
+   "melting",
+   "weighing"
+  ]
+ },
+ {
+  "id": "58478741-f48e-4337-badd-f8f01c826e01",
+  "topic": "Processing of Materials",
+  "prompt": "Wood, cotton and wool are examples of ___ materials:",
+  "options": [
+   "synthetic",
+   "natural",
+   "plastic",
+   "metal"
+  ]
+ },
+ {
+  "id": "d2113f7a-dcfb-417a-acfe-a7322fe6b44f",
+  "topic": "Processing of Materials",
+  "prompt": "Plastic and nylon, which people make from chemicals, are examples of ___ materials:",
+  "options": [
+   "natural",
+   "recycled",
+   "synthetic",
+   "wooden"
+  ]
+ },
+ {
+  "id": "15bee3a9-be35-4a1f-911c-88010dd11896",
+  "topic": "Processing of Materials",
+  "prompt": "Which tool is used to make holes in wood or metal?",
+  "options": [
+   "hammer",
+   "saw",
+   "file",
+   "drill"
+  ]
+ },
+ {
+  "id": "6c795628-46bb-4fc5-9f84-64c0cd1e7c7c",
+  "topic": "Processing of Materials",
+  "prompt": "Joining two pieces of metal by melting them together is called:",
+  "options": [
+   "welding",
+   "gluing",
+   "nailing",
+   "stapling"
+  ]
+ },
+ {
+  "id": "f3ebae16-1e4c-4aa2-8bfb-2a0b8feec551",
+  "topic": "Processing of Materials",
+  "prompt": "Joining electronic components or thin metal using a melted soft metal and a hot iron is called:",
+  "options": [
+   "welding",
+   "soldering",
+   "screwing",
+   "gluing"
+  ]
+ },
+ {
+  "id": "1950378c-cc93-4f52-a42c-1871ef0e49e8",
+  "topic": "Processing of Materials",
+  "prompt": "A saw is a tool used mainly to:",
+  "options": [
+   "join materials",
+   "paint materials",
+   "cut materials",
+   "measure materials"
+  ]
+ },
+ {
+  "id": "558f7f99-f7f5-4f59-8b05-1cb68a36e576",
+  "topic": "Processing of Materials",
+  "prompt": "Applying varnish or paint to protect a finished product and improve its appearance is called:",
+  "options": [
+   "shaping",
+   "joining",
+   "marking",
+   "finishing"
+  ]
+ },
+ {
+  "id": "a42a81f0-7958-49d4-840d-06cc159c3324",
+  "topic": "Graphics & Technical Drawing",
+  "prompt": "A quick drawing done by hand, without rulers or instruments, is called a ___ sketch:",
+  "options": [
+   "freehand",
+   "scale",
+   "isometric",
+   "working"
+  ]
+ },
+ {
+  "id": "81cb13e2-5ea0-4762-a17e-faf917299ad4",
+  "topic": "Graphics & Technical Drawing",
+  "prompt": "A 3D drawing in which the object is drawn on lines set at 30° to the horizontal is an ___ drawing:",
+  "options": [
+   "oblique",
+   "isometric",
+   "orthographic",
+   "freehand"
+  ]
+ },
+ {
+  "id": "187a7c48-89cd-4191-bbcc-288679ad4c10",
+  "topic": "Graphics & Technical Drawing",
+  "prompt": "A drawing that shows the front, top and side views of an object separately is called an ___ (working) drawing:",
+  "options": [
+   "isometric",
+   "oblique",
+   "orthographic",
+   "pictorial"
+  ]
+ },
+ {
+  "id": "2ff36d00-ca22-4637-b331-1ea08046e7cc",
+  "topic": "Graphics & Technical Drawing",
+  "prompt": "On a drawing, the measurements that show the real sizes of an object are called the:",
+  "options": [
+   "labels",
+   "colours",
+   "titles",
+   "dimensions"
+  ]
+ },
+ {
+  "id": "b8eb952c-5a2c-43e1-8aa5-65d15ceec729",
+  "topic": "Graphics & Technical Drawing",
+  "prompt": "A drawing made smaller or larger than the real object, in a fixed ratio, is called a ___ drawing:",
+  "options": [
+   "scale",
+   "freehand",
+   "rough",
+   "colour"
+  ]
+ },
+ {
+  "id": "423b53d4-b026-41de-95e1-3c60e0376e2c",
+  "topic": "Graphics & Technical Drawing",
+  "prompt": "A scale of 1 : 2 means the drawing is:",
+  "options": [
+   "twice the real size",
+   "half the real size",
+   "exactly the real size",
+   "ten times the real size"
+  ]
+ },
+ {
+  "id": "ba33f6e8-c377-4e14-be27-ae6193f5b0fd",
+  "topic": "Graphics & Technical Drawing",
+  "prompt": "Which instrument is used to draw accurate circles?",
+  "options": [
+   "ruler",
+   "pencil",
+   "compass",
+   "eraser"
+  ]
+ },
+ {
+  "id": "a9cc1618-d0a6-42a5-bb39-09229d01812d",
+  "topic": "Graphics & Technical Drawing",
+  "prompt": "An isometric drawing is used to show an object in:",
+  "options": [
+   "one view only",
+   "flat 2D outline",
+   "text form",
+   "three dimensions (3D)"
+  ]
+ }
+]
