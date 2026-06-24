@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "", priority: 1.0, freq: "weekly" },
     { path: "/studypro", priority: 0.8, freq: "monthly" },
     { path: "/subject-choice", priority: 0.8, freq: "monthly" },
+    { path: "/matric", priority: 0.8, freq: "monthly" },
     { path: "/nexi-tutor", priority: 0.8, freq: "monthly" },
     { path: "/past-papers", priority: 0.9, freq: "monthly" },
     { path: "/pricing", priority: 0.7, freq: "monthly" },

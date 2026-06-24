@@ -422,7 +422,13 @@ export default function StudyProPage() {
   // directly to avoid wrapping this big client page in a Suspense boundary.
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    if (params.get("phase") !== "senior") return;
+    const wanted = params.get("phase");
+    // ?phase=fet forces the matric view (used by the /matric landing page).
+    if (wanted === "fet") {
+      setPhase("fet");
+      return;
+    }
+    if (wanted !== "senior") return;
     setPhase("senior");
     if (window.location.hash === "#subject-advisor") {
       setTimeout(() => {
