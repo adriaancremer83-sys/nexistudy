@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 import { useSession, signOut } from "next-auth/react";
@@ -78,10 +79,15 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <span className="text-white font-bold text-xl tracking-tight">
-              Nexi<span className="text-[#00D4FF]">Study</span>
-            </span>
+          <Link href="/" className="flex items-center flex-shrink-0" aria-label="NexiStudy home">
+            <Image
+              src="/images/nexi-logo.png"
+              alt="NexiStudy"
+              width={150}
+              height={50}
+              priority
+              className="h-9 w-auto"
+            />
           </Link>
 
           {/* Desktop nav links */}

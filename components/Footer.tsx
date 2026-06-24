@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const EXPLORE_LINKS = [
   { label: "Nexi Tutor", href: "/nexi-tutor" },
@@ -24,9 +25,15 @@ export default function Footer() {
 
         {/* Brand */}
         <div>
-          <p className="text-xl font-extrabold text-white mb-3">
-            Nexi<span className="text-[#00D4FF]">Study</span>
-          </p>
+          <Link href="/" className="inline-flex mb-4" aria-label="NexiStudy home">
+            <Image
+              src="/images/nexi-logo.png"
+              alt="NexiStudy"
+              width={180}
+              height={60}
+              className="h-11 w-auto"
+            />
+          </Link>
           <p className="text-sm text-white/50 leading-relaxed max-w-xs">
             The study buddy built for South African learners — CAPS now (IEB &
             Cambridge coming soon), Grade 8 to matric, in 11 official languages
