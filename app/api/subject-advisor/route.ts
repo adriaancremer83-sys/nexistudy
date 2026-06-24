@@ -5,6 +5,39 @@ import { authOptions } from "@/lib/auth";
 import { subjectAdvisorUsage } from "@/lib/subjectAdvisorUsage";
 import { logApiUsage } from "@/lib/apiUsage";
 import { getSubscription } from "@/lib/users";
+import { getTopicsWithMastery } from "@/lib/practice";
+
+// Grade 9 feeder subjects whose real quiz mastery predicts a Grade 10 elective
+// stream. DB `topics.subject` strings (left) mapped to the friendly label the
+// learner sees in the Readiness Check (right) so the model can line them up.
+// `mastery` is stored as a 0–100 integer percent, so it's used as-is.
+const FEEDER_SUBJECTS: { db: string; label: string }[] = [
+  { db: "Mathematics", label: "Mathematics" },
+  { db: "Natural Sciences", label: "Natural Sciences" },
+  { db: "Economic & Management Sciences (EMS)", label: "EMS" },
+  { db: "Social Sciences (History & Geography)", label: "Social Sciences" },
+];
+
+// Pulls the learner's REAL Grade 9 quiz mastery for each feeder subject and
+// averages the practised topics (a topic is practised once it has a mastery
+// value). Subjects with no quiz attempts are dropped — the model falls back to
+// the self-reported Readiness marks for those.
+async function getQuizEvidence(
+  userId: string
+): Promise<{ label: string; percent: number; topics: number }[]> {
+  const rows = await Promise.all(
+    FEEDER_SUBJECTS.map(async (f) => {
+      const topics = await getTopicsWithMastery(userId, "Grade 9", f.db);
+      const practised = topics.filter((t) => t.mastery !== null);
+      if (practised.length === 0) return null;
+      const percent = Math.round(
+        practised.reduce((sum, t) => sum + (t.mastery ?? 0), 0) / practised.length
+      );
+      return { label: f.label, percent, topics: practised.length };
+    })
+  );
+  return rows.filter((r): r is NonNullable<typeof r> => r !== null);
+}
 
 // Grade 9 Subject Choice Advisor: helps a learner choosing their Grade 10
 // subjects at the end of Grade 9 — the highest-stakes decision in CAPS. Streams
@@ -28,6 +61,7 @@ function buildSystem(plan: "free" | "premium"): string {
     "- Rough streams: SCIENCES (Physical Sciences + Life Sciences, with pure Maths) → engineering/health/science; COMMERCE (Accounting, Business Studies, Economics, usually pure Maths) → business/finance; HUMANITIES (History, Geography, languages, arts) → law/social/creative.",
     "",
     "Use their Grade 9 marks as evidence: Grade 9 Mathematics predicts how they'll cope with pure Maths; Natural Sciences predicts Physical & Life Sciences; EMS predicts Accounting/Business/Economics; Social Sciences predicts History/Geography. Be honest about fit but never discouraging — there's a strong path for every learner.",
+    "You may get two kinds of marks. QUIZ-MEASURED mastery comes from real practice quizzes the learner actually did on NexiStudy — it's objective, so trust it. SELF-REPORTED marks are what the learner typed into their Readiness Check — useful but rougher. When BOTH exist for a subject, base your judgement on the quiz-measured mastery and briefly tell the learner you're going off their actual quiz results. When only self-reported marks exist, use them but treat them as an estimate. Where a subject has neither, gently suggest doing a few practice quizzes so the advice gets sharper.",
     "",
     "Ground rules:",
     "- Schools differ, so always tell them to confirm exactly which subjects and combinations their school offers.",
@@ -68,13 +102,24 @@ function buildSystem(plan: "free" | "premium"): string {
   ].join("\n");
 }
 
-function buildTask(ctx: { marksSummary: string; dreamCareer: string; interests: string }): string {
-  const lines = [
-    "Help this Grade 9 learner choose their Grade 10 subjects.",
-    ctx.marksSummary
-      ? `Their latest Grade 9 marks: ${ctx.marksSummary}.`
-      : "They haven't entered marks yet — give general guidance and ask them to add their Grade 9 marks (especially Mathematics) for a sharper recommendation.",
-  ];
+function buildTask(ctx: {
+  quizSummary: string;
+  marksSummary: string;
+  dreamCareer: string;
+  interests: string;
+}): string {
+  const lines = ["Help this Grade 9 learner choose their Grade 10 subjects."];
+  if (ctx.quizSummary) {
+    lines.push(`Quiz-measured Grade 9 mastery (real practice-quiz results — trust this): ${ctx.quizSummary}.`);
+  }
+  if (ctx.marksSummary) {
+    lines.push(`Self-reported Grade 9 marks (entered in the Readiness Check): ${ctx.marksSummary}.`);
+  }
+  if (!ctx.quizSummary && !ctx.marksSummary) {
+    lines.push(
+      "They haven't entered marks or done any practice quizzes yet — give general guidance and ask them to add their Grade 9 marks (especially Mathematics), or do a few practice quizzes, for a sharper recommendation."
+    );
+  }
   if (ctx.dreamCareer.trim()) lines.push(`Dream job / field: ${ctx.dreamCareer.trim()}`);
   if (ctx.interests.trim()) lines.push(`What they enjoy / are good at: ${ctx.interests.trim()}`);
   return lines.join("\n");
@@ -127,8 +172,16 @@ export async function POST(req: NextRequest) {
     .map((m: { name: string; percent: number }) => `${m.name} ${m.percent}%`)
     .join(", ");
 
+  // Real quiz mastery for the feeder subjects — evidence the model prefers over
+  // the self-reported marks. Failure here must never block advice, so swallow.
+  const quizEvidence = await getQuizEvidence(session.user.id).catch(() => []);
+  const quizSummary = quizEvidence
+    .map((e) => `${e.label} ${e.percent}%`)
+    .join(", ");
+
   const system = buildSystem(plan);
   const task = buildTask({
+    quizSummary,
     marksSummary,
     dreamCareer: String(body.dreamCareer ?? "").slice(0, MAX_TEXT),
     interests: String(body.interests ?? "").slice(0, MAX_TEXT),
