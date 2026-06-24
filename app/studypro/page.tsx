@@ -414,6 +414,23 @@ export default function StudyProPage() {
       setPhase("senior");
     }
   }, [status, session]);
+
+  // Deep-link support for the /subject-choice landing page: ?phase=senior forces
+  // the Senior Phase view (even for logged-out visitors) and, with the matching
+  // hash, scrolls straight to the Subject Choice Advisor. Read off the URL
+  // directly to avoid wrapping this big client page in a Suspense boundary.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("phase") !== "senior") return;
+    setPhase("senior");
+    if (window.location.hash === "#subject-advisor") {
+      setTimeout(() => {
+        document
+          .getElementById("subject-advisor")
+          ?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 150);
+    }
+  }, []);
   const [selectedUniversity, setSelectedUniversity] = useState("");
   const [selectedProgramme, setSelectedProgramme] = useState("");
   const [readinessMarks, setReadinessMarks] = useState<Record<string, string>>({});

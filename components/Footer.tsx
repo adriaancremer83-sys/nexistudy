@@ -4,6 +4,7 @@ const EXPLORE_LINKS = [
   { label: "Nexi Tutor", href: "/nexi-tutor" },
   { label: "Study Pro", href: "/studypro" },
   { label: "Mark Answer", href: "/mark" },
+  { label: "Grade 9 Subject Choice", href: "/subject-choice" },
   { label: "Past Papers", href: "/past-papers" },
   { label: "Pricing", href: "/pricing" },
   { label: "About Us", href: "/about-us" },
