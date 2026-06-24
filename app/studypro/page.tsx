@@ -8,8 +8,9 @@ import ProgressRing from "@/components/ProgressRing";
 import CareerAdvice from "@/components/CareerAdvice";
 import SubjectAdvisor from "@/components/SubjectAdvisor";
 import FoundationGapFinder from "@/components/FoundationGapFinder";
+import TermlyParentReport from "@/components/TermlyParentReport";
 import NudgeHint from "@/components/NudgeHint";
-import { IconAcademicCap, IconDocumentText, IconRocket, IconTrendingUp, IconBookOpen, IconBolt, IconTarget, IconLock, IconChartBar } from "@/components/icons";
+import { IconAcademicCap, IconDocumentText, IconRocket, IconTrendingUp, IconBookOpen, IconBolt, IconTarget, IconChartBar } from "@/components/icons";
 
 // ── APS conversion ──────────────────────────────────────────────────────────
 function toAPS(pct: number): number {
@@ -867,31 +868,23 @@ export default function StudyProPage() {
               </div>
             </Reveal>
 
-            {/* Termly Parent Report — still a teaser */}
-            <div className="mb-6">
-              <Reveal className="h-full">
-                <div className="rounded-2xl border border-white/[0.08] bg-[#0E1F3D] p-7 h-full relative overflow-hidden">
-                  <span className="absolute top-0 right-0 bg-white/10 text-white/60 text-[10px] font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-bl-xl flex items-center gap-1.5">
-                    <IconLock className="w-3 h-3" /> Premium · Coming Soon
-                  </span>
-                  <div className="mb-5 text-[#FFB454]">
-                    <IconDocumentText className="w-8 h-8" />
-                  </div>
-                  <h3 className="text-white font-bold text-lg mb-2.5">Termly Parent Report</h3>
-                  <p className="text-white/50 text-sm leading-relaxed mb-5 max-w-2xl">
-                    A plain-language report for parents every term: marks trend per subject,
-                    what improved, where the gaps are, and what Nexi is working on next.
-                    See the dip before the report card does.
+            {/* Termly Parent Report — reads this term's real practice activity
+                and writes a plain-language report for parents. */}
+            <Reveal>
+              <div id="parent-report" className="scroll-mt-24 mb-6">
+                <div className="mb-4 text-center">
+                  <p className="text-sm font-bold uppercase tracking-widest text-[#FFB454] mb-2">
+                    For your parents
                   </p>
-                  <Link
-                    href="/pricing"
-                    className="text-sm font-bold text-[#FFB454] hover:text-white transition-colors"
-                  >
-                    See Premium →
-                  </Link>
+                  <h2 className="text-2xl font-bold text-white mb-2">Termly Parent Report</h2>
+                  <p className="text-white/55 text-sm max-w-xl mx-auto leading-relaxed">
+                    A plain-language progress report your parents can read in a minute — built from
+                    your real practice this term. See the dip before the report card does.
+                  </p>
                 </div>
-              </Reveal>
-            </div>
+                <TermlyParentReport />
+              </div>
+            </Reveal>
           </div>
         </section>
       )}

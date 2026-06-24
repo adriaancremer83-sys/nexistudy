@@ -96,6 +96,44 @@ export async function getTopicsWithMastery(
   });
 }
 
+export interface QuizActivity {
+  createdAt: string;
+  total: number;
+  correct: number;
+  subject: string;
+  topic: string;
+}
+
+// Every quiz the learner took since `sinceISO`, with its subject/topic, oldest
+// first — the raw material for the Termly Parent Report's trend analysis.
+export async function getQuizActivitySince(
+  userId: string,
+  sinceISO: string
+): Promise<QuizActivity[]> {
+  const { data, error } = await supabaseAdmin
+    .from("quiz_attempts")
+    .select("created_at,total,correct,topics(subject,name)")
+    .eq("user_id", userId)
+    .gte("created_at", sinceISO)
+    .order("created_at", { ascending: true });
+
+  if (error) {
+    console.error("getQuizActivitySince failed:", error.message);
+    return [];
+  }
+
+  return (data ?? []).map((r) => {
+    const t = r.topics as unknown as { subject: string; name: string } | null;
+    return {
+      createdAt: r.created_at as string,
+      total: r.total as number,
+      correct: r.correct as number,
+      subject: t?.subject ?? "Unknown",
+      topic: t?.name ?? "Unknown",
+    };
+  });
+}
+
 // Weakest practised topics first, for the dashboard weak-spots card.
 export async function getWeakSpots(userId: string, limit = 4) {
   const { data, error } = await supabaseAdmin
