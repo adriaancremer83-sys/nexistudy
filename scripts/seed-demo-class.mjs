@@ -62,6 +62,17 @@ const TOPIC_PRACTISERS = {
   "Sequences & Series": 8,
 };
 
+// Sample practice assignment the teacher has set — targets the weakest topic so
+// the completion tracker tells a story (set 3 days ago, due in a week, 5 of the
+// 8 learners have attempted it so far). Scores are per-attempt percentages.
+const ASSIGNMENT = {
+  topicName: "Trigonometry",
+  numQuestions: 10,
+  setDaysAgo: 3,
+  dueInDays: 7,
+  attemptScores: [50, 60, 70, 60, 80], // first 5 learners; avg ~64%
+};
+
 const clamp = (n, lo, hi) => Math.max(lo, Math.min(hi, n));
 const jitter = (base) => clamp(base + Math.round((Math.random() - 0.5) * 12), 5, 99);
 
@@ -184,6 +195,59 @@ async function main() {
       .map(([topic, { sum, n }]) => ({ topic, avg: Math.round(sum / n), practised: `${n}/8` }))
       .sort((a, b) => a.avg - b.avg)
   );
+
+  // 7. Sample practice assignment + the quiz attempts that feed its completion
+  //    tracker. Needs the class_assignments table (supabase-assignments-setup.sql).
+  const assignTopic = topics.find((t) => t.name === ASSIGNMENT.topicName);
+  if (!assignTopic) {
+    console.warn(`\nSkipped assignment: topic "${ASSIGNMENT.topicName}" not found.`);
+  } else {
+    const setAt = new Date(now.getTime() - ASSIGNMENT.setDaysAgo * 86_400_000);
+    const dueDate = new Date(now.getTime() + ASSIGNMENT.dueInDays * 86_400_000)
+      .toISOString()
+      .slice(0, 10);
+
+    const { error: aErr } = await supabase.from("class_assignments").insert({
+      class_id: classId,
+      topic_id: assignTopic.id,
+      num_questions: ASSIGNMENT.numQuestions,
+      due_date: dueDate,
+      created_at: setAt.toISOString(),
+    });
+
+    if (aErr) {
+      if (/class_assignments/.test(aErr.message) && /schema cache|does not exist|find the table/i.test(aErr.message)) {
+        console.warn(
+          "\n⚠  Assignment NOT seeded — the class_assignments table is missing.\n" +
+            "   Run supabase-assignments-setup.sql in the Supabase SQL editor, then re-run this script."
+        );
+      } else {
+        throw new Error(`create assignment: ${aErr.message}`);
+      }
+    } else {
+      // Completion is read from quiz_attempts on the topic, dated after the
+      // assignment. Wipe the demo learners' prior attempts so re-runs stay clean.
+      await supabase.from("quiz_attempts").delete().in("user_id", learnerIds);
+      const attemptRows = ASSIGNMENT.attemptScores.map((score, i) => ({
+        user_id: learnerIds[i],
+        topic_id: assignTopic.id,
+        total: ASSIGNMENT.numQuestions,
+        correct: Math.round((score / 100) * ASSIGNMENT.numQuestions),
+        created_at: new Date(setAt.getTime() + (i + 1) * 3600_000).toISOString(),
+      }));
+      const { error: qaErr } = await supabase.from("quiz_attempts").insert(attemptRows);
+      if (qaErr) throw new Error(`seed quiz_attempts: ${qaErr.message}`);
+
+      const avg = Math.round(
+        ASSIGNMENT.attemptScores.reduce((s, n) => s + n, 0) / ASSIGNMENT.attemptScores.length
+      );
+      console.log(
+        `\nassignment seeded: ${ASSIGNMENT.topicName} (${ASSIGNMENT.numQuestions} questions, due ${dueDate})` +
+          ` — ${attemptRows.length}/${learnerIds.length} attempted, avg ${avg}%`
+      );
+    }
+  }
+
   console.log(`\nDone. Log in as ${TEACHER.email} / password123 -> Teacher Dashboard.`);
 }
 

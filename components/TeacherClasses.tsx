@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import ShareToClassroom from "@/components/ShareToClassroom";
-import { IconChartBar, IconUsers, IconTarget, IconWarning, IconCheck } from "@/components/icons";
+import { IconChartBar, IconUsers, IconTarget, IconWarning, IconCheck, IconClock, IconDocumentText, IconUser } from "@/components/icons";
 
 const SUBJECTS = [
   "Accounting",
@@ -35,6 +35,27 @@ interface Heatmap {
   rows: HeatmapRow[];
   practisedAny: boolean;
 }
+interface ClassTopic {
+  id: string;
+  name: string;
+}
+interface Assignment {
+  id: string;
+  topicId: string;
+  topicName: string;
+  numQuestions: number;
+  dueDate: string | null;
+  createdAt: string;
+  attemptedCount: number;
+  averageScore: number | null;
+}
+interface Learner {
+  userId: string;
+  name: string;
+  questionsAttempted: number;
+  weakestTopic: string | null;
+  weakestMastery: number | null;
+}
 interface TeacherClass {
   id: string;
   name: string;
@@ -43,6 +64,32 @@ interface TeacherClass {
   joinCode: string;
   memberCount: number;
   heatmap: Heatmap | null;
+  topics: ClassTopic[];
+  assignments: Assignment[];
+  learners: Learner[];
+}
+
+const QUESTION_CHOICES = [5, 8, 10, 15, 20];
+
+// Sample data for the zero-learners heatmap preview, so a teacher can see the
+// value before anyone has joined. Greyed out + clearly labelled "Example".
+const SAMPLE_HEATMAP: { name: string; mastery: number }[] = [
+  { name: "Trigonometry", mastery: 41 },
+  { name: "Financial Maths", mastery: 57 },
+  { name: "Functions & Graphs", mastery: 63 },
+  { name: "Euclidean Geometry", mastery: 70 },
+  { name: "Algebra & Equations", mastery: 78 },
+  { name: "Statistics", mastery: 88 },
+];
+
+function formatDue(iso: string): string {
+  const d = new Date(iso + "T00:00:00");
+  return d.toLocaleDateString("en-ZA", { day: "numeric", month: "short", year: "numeric" });
+}
+
+function isOverdue(iso: string): boolean {
+  const due = new Date(iso + "T23:59:59");
+  return due.getTime() < Date.now();
 }
 
 const INPUT_CLS =
@@ -64,6 +111,12 @@ export default function TeacherClasses() {
   const [form, setForm] = useState({ name: "", subject: "Mathematics", grade: "Grade 12" });
   const [error, setError] = useState("");
   const [copiedId, setCopiedId] = useState<string | null>(null);
+
+  // Per-class "Set Practice Assignment" form state. Only one open at a time.
+  const [assignClassId, setAssignClassId] = useState<string | null>(null);
+  const [assignForm, setAssignForm] = useState({ topicId: "", numQuestions: 8, dueDate: "" });
+  const [assigning, setAssigning] = useState(false);
+  const [assignError, setAssignError] = useState("");
 
   async function load() {
     try {
@@ -123,6 +176,53 @@ export default function TeacherClasses() {
       setCopiedId(id);
       setTimeout(() => setCopiedId((cur) => (cur === id ? null : cur)), 1800);
     });
+  }
+
+  function openAssignForm(cls: TeacherClass) {
+    setAssignClassId(cls.id);
+    setAssignError("");
+    setAssignForm({ topicId: cls.topics[0]?.id ?? "", numQuestions: 8, dueDate: "" });
+  }
+
+  async function handleAssign(e: React.FormEvent, classId: string) {
+    e.preventDefault();
+    if (!assignForm.topicId) return setAssignError("Pick a topic to assign.");
+    setAssigning(true);
+    setAssignError("");
+    try {
+      const res = await fetch("/api/teacher/assignments", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          classId,
+          topicId: assignForm.topicId,
+          numQuestions: assignForm.numQuestions,
+          dueDate: assignForm.dueDate || null,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setAssignError(data.error ?? "Could not set the assignment.");
+        setAssigning(false);
+        return;
+      }
+      setAssignClassId(null);
+      await load();
+    } catch {
+      setAssignError("Something went wrong. Please try again.");
+    } finally {
+      setAssigning(false);
+    }
+  }
+
+  async function handleDeleteAssignment(assignmentId: string, topicName: string) {
+    if (!confirm(`Remove the "${topicName}" assignment?`)) return;
+    await fetch("/api/teacher/assignments", {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ assignmentId }),
+    });
+    await load();
   }
 
   if (loading) {
@@ -326,6 +426,146 @@ export default function TeacherClasses() {
             </div>
           </div>
 
+          {/* Set Practice Assignment */}
+          <div className="px-6 py-5 border-b border-white/10">
+            <div className="flex items-center justify-between gap-4 mb-1">
+              <div className="flex items-center gap-2.5 text-[#FFB454]">
+                <IconDocumentText className="w-4 h-4" />
+                <h4 className="text-xs font-semibold text-white uppercase tracking-widest">
+                  Practice Assignments
+                </h4>
+              </div>
+              <button
+                onClick={() => (assignClassId === cls.id ? setAssignClassId(null) : openAssignForm(cls))}
+                className="px-3.5 py-1.5 bg-[#FFB454] hover:bg-[#FFC678] text-[#050D1A] text-xs font-extrabold rounded-lg transition-colors cursor-pointer"
+              >
+                {assignClassId === cls.id ? "Cancel" : "+ Set Assignment"}
+              </button>
+            </div>
+            <p className="text-white/45 text-sm mb-4">
+              Set a topic for the class to practise — you&apos;ll see how many have
+              attempted it and their average score.
+            </p>
+
+            {/* Assignment form */}
+            {assignClassId === cls.id && (
+              cls.topics.length === 0 ? (
+                <p className="text-white/45 text-sm mb-4">
+                  No topics are available for this subject and grade yet.
+                </p>
+              ) : (
+                <form
+                  onSubmit={(e) => handleAssign(e, cls.id)}
+                  className="rounded-xl border border-[#FFB454]/25 bg-[#FFB454]/[0.04] p-4 space-y-4 mb-4"
+                >
+                  <div>
+                    <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
+                      Topic
+                    </label>
+                    <select
+                      value={assignForm.topicId}
+                      onChange={(e) => setAssignForm({ ...assignForm, topicId: e.target.value })}
+                      className={SELECT_CLS}
+                    >
+                      {cls.topics.map((t) => (
+                        <option key={t.id} value={t.id} className="bg-[#0E1F3D]">{t.name}</option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
+                        Number of questions
+                      </label>
+                      <select
+                        value={assignForm.numQuestions}
+                        onChange={(e) => setAssignForm({ ...assignForm, numQuestions: Number(e.target.value) })}
+                        className={SELECT_CLS}
+                      >
+                        {QUESTION_CHOICES.map((n) => (
+                          <option key={n} value={n} className="bg-[#0E1F3D]">{n} questions</option>
+                        ))}
+                      </select>
+                    </div>
+                    <div>
+                      <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
+                        Due date <span className="text-white/30 normal-case font-normal">(optional)</span>
+                      </label>
+                      <input
+                        type="date"
+                        value={assignForm.dueDate}
+                        onChange={(e) => setAssignForm({ ...assignForm, dueDate: e.target.value })}
+                        className={INPUT_CLS + " [color-scheme:dark]"}
+                      />
+                    </div>
+                  </div>
+
+                  {assignError && (
+                    <div className="flex items-start gap-2.5 bg-red-400/10 border border-red-400/30 rounded-xl px-4 py-3">
+                      <IconWarning className="w-4 h-4 text-red-300 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-red-300">{assignError}</p>
+                    </div>
+                  )}
+
+                  <button
+                    type="submit"
+                    disabled={assigning}
+                    className="w-full py-3 bg-[#FFB454] hover:bg-[#FFC678] disabled:opacity-60 disabled:cursor-not-allowed text-[#050D1A] font-extrabold rounded-xl transition-colors text-sm cursor-pointer"
+                  >
+                    {assigning ? "Assigning…" : "Assign to class"}
+                  </button>
+                </form>
+              )
+            )}
+
+            {/* Existing assignments + completion tracker */}
+            {cls.assignments.length === 0 ? (
+              assignClassId !== cls.id && (
+                <p className="text-white/40 text-sm">No assignments set yet.</p>
+              )
+            ) : (
+              <ul className="space-y-3">
+                {cls.assignments.map((a) => (
+                  <li key={a.id} className="rounded-xl border border-white/[0.08] bg-[#0B1A33] p-4">
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="min-w-0">
+                        <p className="text-white font-semibold text-sm truncate">{a.topicName}</p>
+                        <p className="text-white/45 text-xs mt-0.5">
+                          {a.numQuestions} questions
+                          {a.dueDate && (
+                            <>
+                              {" · "}
+                              <span className={`inline-flex items-center gap-1 align-middle ${isOverdue(a.dueDate) ? "text-red-300" : "text-white/60"}`}>
+                                <IconClock className="w-3.5 h-3.5" />
+                                Due {formatDue(a.dueDate)}
+                              </span>
+                            </>
+                          )}
+                        </p>
+                      </div>
+                      <button
+                        onClick={() => handleDeleteAssignment(a.id, a.topicName)}
+                        className="text-white/30 hover:text-red-300 text-xs font-semibold transition-colors cursor-pointer flex-shrink-0"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                    <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 mt-3 pt-3 border-t border-white/10 text-xs">
+                      <span className="flex items-center gap-1.5 text-white/60">
+                        <IconUsers className="w-3.5 h-3.5 text-[#FFB454]" />
+                        {a.attemptedCount}/{cls.memberCount} attempted
+                      </span>
+                      <span className="flex items-center gap-1.5 text-white/60">
+                        <IconChartBar className="w-3.5 h-3.5 text-[#FFB454]" />
+                        {a.averageScore !== null ? `Average ${a.averageScore}%` : "No attempts yet"}
+                      </span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
           {/* Heatmap */}
           <div className="px-6 py-5">
             <div className="flex items-center gap-2.5 text-[#FFB454] mb-4">
@@ -336,10 +576,37 @@ export default function TeacherClasses() {
             </div>
 
             {cls.memberCount === 0 ? (
-              <p className="text-white/45 text-sm leading-relaxed">
-                No learners yet. Share the join code above — the heatmap fills in as
-                your class starts practising.
-              </p>
+              <div>
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#FFB454] bg-[#FFB454]/15 border border-[#FFB454]/25 rounded-md px-2 py-0.5">
+                    Example
+                  </span>
+                  <p className="text-white/45 text-xs">
+                    Your class heatmap will look like this as learners practise.
+                  </p>
+                </div>
+                <ul className="space-y-3.5 opacity-50 select-none pointer-events-none" aria-hidden>
+                  {SAMPLE_HEATMAP.map((s) => (
+                    <li key={s.name} className="flex items-center gap-4">
+                      <span className="w-44 sm:w-56 text-sm text-white/70 truncate flex-shrink-0">
+                        {s.name}
+                      </span>
+                      <div className="flex-1 h-2.5 bg-white/10 rounded-full overflow-hidden">
+                        <div
+                          className={`h-full rounded-full ${barColor(s.mastery)}`}
+                          style={{ width: `${s.mastery}%` }}
+                        />
+                      </div>
+                      <span className="w-28 text-right flex-shrink-0 text-sm font-bold text-white">
+                        {s.mastery}%
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-white/40 text-xs mt-4">
+                  Share the join code above and this fills with your class&apos;s real data.
+                </p>
+              </div>
             ) : !cls.heatmap?.practisedAny ? (
               <p className="text-white/45 text-sm leading-relaxed">
                 {cls.memberCount} {cls.memberCount === 1 ? "learner has" : "learners have"} joined,
@@ -389,6 +656,49 @@ export default function TeacherClasses() {
               </div>
             )}
           </div>
+
+          {/* Individual learners — see at a glance who needs help */}
+          {cls.memberCount > 0 && (
+            <div className="px-6 py-5 border-t border-white/10">
+              <div className="flex items-center gap-2.5 text-[#FFB454] mb-1">
+                <IconUser className="w-4 h-4" />
+                <h4 className="text-xs font-semibold text-white uppercase tracking-widest">
+                  Learners
+                </h4>
+              </div>
+              <p className="text-white/45 text-sm mb-4">
+                See at a glance who needs help before the exam.
+              </p>
+              <ul className="divide-y divide-white/[0.06]">
+                {cls.learners.map((lr) => (
+                  <li key={lr.userId} className="flex items-center justify-between gap-4 py-3">
+                    <div className="min-w-0">
+                      <p className="text-sm text-white/85 font-medium truncate">{lr.name}</p>
+                      <p className="text-white/40 text-xs mt-0.5">
+                        {lr.questionsAttempted}{" "}
+                        {lr.questionsAttempted === 1 ? "question" : "questions"} attempted
+                      </p>
+                    </div>
+                    <div className="text-right flex-shrink-0 max-w-[48%]">
+                      {lr.weakestTopic ? (
+                        <>
+                          <p className="text-[10px] uppercase tracking-wider text-white/30">
+                            Weakest topic
+                          </p>
+                          <p className="text-xs text-amber-300 font-medium truncate">
+                            {lr.weakestTopic}
+                            {lr.weakestMastery !== null ? ` · ${lr.weakestMastery}%` : ""}
+                          </p>
+                        </>
+                      ) : (
+                        <p className="text-xs text-white/30">Not practised yet</p>
+                      )}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       ))}
     </div>

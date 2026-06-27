@@ -6,6 +6,7 @@ import {
   deleteClass,
   getTeacherClasses,
   getClassHeatmap,
+  getClassExtras,
   CLASS_SUBJECTS,
   CLASS_GRADES,
 } from "@/lib/classes";
@@ -26,10 +27,19 @@ export async function GET() {
   if ("error" in auth) return NextResponse.json({ error: auth.error }, { status: auth.status });
 
   const classes = await getTeacherClasses(auth.userId);
-  const heatmaps = await Promise.all(classes.map((c) => getClassHeatmap(c.id)));
+  const [heatmaps, extras] = await Promise.all([
+    Promise.all(classes.map((c) => getClassHeatmap(c.id))),
+    Promise.all(classes.map((c) => getClassExtras(c.id))),
+  ]);
 
   return NextResponse.json({
-    classes: classes.map((c, i) => ({ ...c, heatmap: heatmaps[i] })),
+    classes: classes.map((c, i) => ({
+      ...c,
+      heatmap: heatmaps[i],
+      topics: extras[i].topics,
+      assignments: extras[i].assignments,
+      learners: extras[i].learners,
+    })),
   });
 }
 
