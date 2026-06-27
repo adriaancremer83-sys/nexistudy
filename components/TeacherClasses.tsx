@@ -56,6 +56,20 @@ interface Learner {
   weakestTopic: string | null;
   weakestMastery: number | null;
 }
+interface MissedQuestion {
+  prompt: string;
+  wrongCount: number;
+}
+interface Homework {
+  id: string;
+  title: string;
+  numQuestions: number;
+  dueDate: string | null;
+  createdAt: string;
+  completedCount: number;
+  averageScore: number | null;
+  mostMissed: MissedQuestion[];
+}
 interface TeacherClass {
   id: string;
   name: string;
@@ -67,6 +81,7 @@ interface TeacherClass {
   topics: ClassTopic[];
   assignments: Assignment[];
   learners: Learner[];
+  homework: Homework[];
 }
 
 const QUESTION_CHOICES = [5, 8, 10, 15, 20];
@@ -117,6 +132,14 @@ export default function TeacherClasses() {
   const [assignForm, setAssignForm] = useState({ topicId: "", numQuestions: 8, dueDate: "" });
   const [assigning, setAssigning] = useState(false);
   const [assignError, setAssignError] = useState("");
+
+  // Per-class "Create Homework" form state. Only one open at a time.
+  const [hwClassId, setHwClassId] = useState<string | null>(null);
+  const [hwForm, setHwForm] = useState<{ title: string; topicIds: string[]; numQuestions: number; dueDate: string }>(
+    { title: "", topicIds: [], numQuestions: 8, dueDate: "" }
+  );
+  const [creatingHw, setCreatingHw] = useState(false);
+  const [hwError, setHwError] = useState("");
 
   async function load() {
     try {
@@ -221,6 +244,64 @@ export default function TeacherClasses() {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ assignmentId }),
+    });
+    await load();
+  }
+
+  function openHomeworkForm(cls: TeacherClass) {
+    setHwClassId(cls.id);
+    setHwError("");
+    setHwForm({ title: "", topicIds: [], numQuestions: 8, dueDate: "" });
+  }
+
+  function toggleHwTopic(topicId: string) {
+    setHwForm((f) => ({
+      ...f,
+      topicIds: f.topicIds.includes(topicId)
+        ? f.topicIds.filter((t) => t !== topicId)
+        : [...f.topicIds, topicId],
+    }));
+    setHwError("");
+  }
+
+  async function handleCreateHomework(e: React.FormEvent, classId: string) {
+    e.preventDefault();
+    if (hwForm.topicIds.length === 0) return setHwError("Pick at least one topic.");
+    setCreatingHw(true);
+    setHwError("");
+    try {
+      const res = await fetch("/api/teacher/homework", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          classId,
+          title: hwForm.title,
+          topicIds: hwForm.topicIds,
+          numQuestions: hwForm.numQuestions,
+          dueDate: hwForm.dueDate || null,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setHwError(data.error ?? "Could not create the homework.");
+        setCreatingHw(false);
+        return;
+      }
+      setHwClassId(null);
+      await load();
+    } catch {
+      setHwError("Something went wrong. Please try again.");
+    } finally {
+      setCreatingHw(false);
+    }
+  }
+
+  async function handleDeleteHomework(homeworkId: string, title: string) {
+    if (!confirm(`Remove the "${title}" homework? Learners' completions will be lost.`)) return;
+    await fetch("/api/teacher/homework", {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ homeworkId }),
     });
     await load();
   }
@@ -560,6 +641,202 @@ export default function TeacherClasses() {
                         {a.averageScore !== null ? `Average ${a.averageScore}%` : "No attempts yet"}
                       </span>
                     </div>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          {/* Homework — a fixed, verified question set, auto-marked in-app */}
+          <div className="px-6 py-5 border-b border-white/10">
+            <div className="flex items-center justify-between gap-4 mb-1">
+              <div className="flex items-center gap-2.5 text-[#FFB454]">
+                <IconDocumentText className="w-4 h-4" />
+                <h4 className="text-xs font-semibold text-white uppercase tracking-widest">
+                  Homework
+                </h4>
+              </div>
+              <button
+                onClick={() => (hwClassId === cls.id ? setHwClassId(null) : openHomeworkForm(cls))}
+                className="px-3.5 py-1.5 bg-[#FFB454] hover:bg-[#FFC678] text-[#050D1A] text-xs font-extrabold rounded-lg transition-colors cursor-pointer"
+              >
+                {hwClassId === cls.id ? "Cancel" : "+ Create Homework"}
+              </button>
+            </div>
+            <p className="text-white/45 text-sm mb-4">
+              Build a set from your verified question bank. Learners answer it in NexiStudy and
+              it&apos;s marked instantly — or print it as a worksheet for learners without devices.
+            </p>
+
+            {/* Create form */}
+            {hwClassId === cls.id && (
+              cls.topics.length === 0 ? (
+                <p className="text-white/45 text-sm mb-4">
+                  No topics are available for this subject and grade yet.
+                </p>
+              ) : (
+                <form
+                  onSubmit={(e) => handleCreateHomework(e, cls.id)}
+                  className="rounded-xl border border-[#FFB454]/25 bg-[#FFB454]/[0.04] p-4 space-y-4 mb-4"
+                >
+                  <div>
+                    <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
+                      Title <span className="text-white/30 normal-case font-normal">(optional)</span>
+                    </label>
+                    <input
+                      type="text"
+                      value={hwForm.title}
+                      onChange={(e) => setHwForm({ ...hwForm, title: e.target.value })}
+                      placeholder="e.g. Week 3 Homework"
+                      maxLength={80}
+                      className={INPUT_CLS}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
+                      Topics <span className="text-white/30 normal-case font-normal">(pick one or more)</span>
+                    </label>
+                    <div className="flex flex-wrap gap-2">
+                      {cls.topics.map((t) => {
+                        const on = hwForm.topicIds.includes(t.id);
+                        return (
+                          <button
+                            type="button"
+                            key={t.id}
+                            onClick={() => toggleHwTopic(t.id)}
+                            className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-colors cursor-pointer ${
+                              on
+                                ? "bg-[#FFB454] border-[#FFB454] text-[#050D1A]"
+                                : "border-white/15 text-white/70 hover:border-[#FFB454]/50"
+                            }`}
+                          >
+                            {on && <span className="mr-1">✓</span>}
+                            {t.name}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
+                        Number of questions
+                      </label>
+                      <select
+                        value={hwForm.numQuestions}
+                        onChange={(e) => setHwForm({ ...hwForm, numQuestions: Number(e.target.value) })}
+                        className={SELECT_CLS}
+                      >
+                        {QUESTION_CHOICES.map((n) => (
+                          <option key={n} value={n} className="bg-[#0E1F3D]">{n} questions</option>
+                        ))}
+                      </select>
+                    </div>
+                    <div>
+                      <label className="block text-xs font-semibold text-white/50 uppercase tracking-wider mb-1.5">
+                        Due date <span className="text-white/30 normal-case font-normal">(optional)</span>
+                      </label>
+                      <input
+                        type="date"
+                        value={hwForm.dueDate}
+                        onChange={(e) => setHwForm({ ...hwForm, dueDate: e.target.value })}
+                        className={INPUT_CLS + " [color-scheme:dark]"}
+                      />
+                    </div>
+                  </div>
+
+                  {hwError && (
+                    <div className="flex items-start gap-2.5 bg-red-400/10 border border-red-400/30 rounded-xl px-4 py-3">
+                      <IconWarning className="w-4 h-4 text-red-300 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-red-300">{hwError}</p>
+                    </div>
+                  )}
+
+                  <button
+                    type="submit"
+                    disabled={creatingHw}
+                    className="w-full py-3 bg-[#FFB454] hover:bg-[#FFC678] disabled:opacity-60 disabled:cursor-not-allowed text-[#050D1A] font-extrabold rounded-xl transition-colors text-sm cursor-pointer"
+                  >
+                    {creatingHw ? "Building…" : "Create homework"}
+                  </button>
+                  <p className="text-white/35 text-xs">
+                    Only verified questions are used. If the bank doesn&apos;t have enough for your
+                    chosen topics, we&apos;ll tell you the number available instead of padding.
+                  </p>
+                </form>
+              )
+            )}
+
+            {/* Existing homework + completion report */}
+            {cls.homework.length === 0 ? (
+              hwClassId !== cls.id && (
+                <p className="text-white/40 text-sm">No homework set yet.</p>
+              )
+            ) : (
+              <ul className="space-y-3">
+                {cls.homework.map((hw) => (
+                  <li key={hw.id} className="rounded-xl border border-white/[0.08] bg-[#0B1A33] p-4">
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="min-w-0">
+                        <p className="text-white font-semibold text-sm truncate">{hw.title}</p>
+                        <p className="text-white/45 text-xs mt-0.5">
+                          {hw.numQuestions} questions
+                          {hw.dueDate && (
+                            <>
+                              {" · "}
+                              <span className={`inline-flex items-center gap-1 align-middle ${isOverdue(hw.dueDate) ? "text-red-300" : "text-white/60"}`}>
+                                <IconClock className="w-3.5 h-3.5" />
+                                Due {formatDue(hw.dueDate)}
+                              </span>
+                            </>
+                          )}
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-3 flex-shrink-0">
+                        <a
+                          href={`/teachers/homework/${hw.id}/print`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#FFB454] hover:text-[#FFC678] text-xs font-semibold transition-colors cursor-pointer whitespace-nowrap"
+                        >
+                          Worksheet PDF ↗
+                        </a>
+                        <button
+                          onClick={() => handleDeleteHomework(hw.id, hw.title)}
+                          className="text-white/30 hover:text-red-300 text-xs font-semibold transition-colors cursor-pointer"
+                        >
+                          Remove
+                        </button>
+                      </div>
+                    </div>
+                    <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 mt-3 pt-3 border-t border-white/10 text-xs">
+                      <span className="flex items-center gap-1.5 text-white/60">
+                        <IconCheck className="w-3.5 h-3.5 text-[#FFB454]" />
+                        {hw.completedCount}/{cls.memberCount} completed
+                      </span>
+                      <span className="flex items-center gap-1.5 text-white/60">
+                        <IconChartBar className="w-3.5 h-3.5 text-[#FFB454]" />
+                        {hw.averageScore !== null ? `Average ${hw.averageScore}%` : "No submissions yet"}
+                      </span>
+                    </div>
+                    {hw.mostMissed.length > 0 && (
+                      <div className="mt-3 pt-3 border-t border-white/10">
+                        <p className="text-[10px] uppercase tracking-wider text-white/30 mb-2 flex items-center gap-1.5">
+                          <IconTarget className="w-3.5 h-3.5 text-[#FFB454]" />
+                          Most-missed — worth re-teaching
+                        </p>
+                        <ul className="space-y-1.5">
+                          {hw.mostMissed.map((m, i) => (
+                            <li key={i} className="flex items-start justify-between gap-3 text-xs">
+                              <span className="text-white/70 min-w-0 line-clamp-2">{m.prompt}</span>
+                              <span className="text-red-300 font-semibold flex-shrink-0">
+                                {m.wrongCount} wrong
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </li>
                 ))}
               </ul>

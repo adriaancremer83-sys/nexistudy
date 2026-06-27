@@ -13,6 +13,7 @@ import { getLearnerClasses } from "@/lib/classes";
 import { getSubscription } from "@/lib/users";
 import SubscribeButton from "@/components/SubscribeButton";
 import JoinClassCard from "@/components/JoinClassCard";
+import HomeworkCard from "@/components/HomeworkCard";
 import ExamCountdown from "@/components/ExamCountdown";
 import GuideTour, { type TourStep } from "@/components/GuideTour";
 
@@ -166,6 +167,11 @@ export default async function DashboardPage() {
 
         {/* ── EXAM COUNTDOWN ── */}
         <ExamCountdown />
+
+        {/* ── HOMEWORK FROM TEACHER (renders only if any is set) ── */}
+        <Reveal>
+          <HomeworkCard />
+        </Reveal>
 
         {/* ── STATS ROW ── */}
         <Reveal>

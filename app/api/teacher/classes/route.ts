@@ -10,6 +10,7 @@ import {
   CLASS_SUBJECTS,
   CLASS_GRADES,
 } from "@/lib/classes";
+import { getClassHomework } from "@/lib/homework";
 
 export const dynamic = "force-dynamic";
 
@@ -27,9 +28,10 @@ export async function GET() {
   if ("error" in auth) return NextResponse.json({ error: auth.error }, { status: auth.status });
 
   const classes = await getTeacherClasses(auth.userId);
-  const [heatmaps, extras] = await Promise.all([
+  const [heatmaps, extras, homework] = await Promise.all([
     Promise.all(classes.map((c) => getClassHeatmap(c.id))),
     Promise.all(classes.map((c) => getClassExtras(c.id))),
+    Promise.all(classes.map((c) => getClassHomework(c.id))),
   ]);
 
   return NextResponse.json({
@@ -39,6 +41,7 @@ export async function GET() {
       topics: extras[i].topics,
       assignments: extras[i].assignments,
       learners: extras[i].learners,
+      homework: homework[i],
     })),
   });
 }
