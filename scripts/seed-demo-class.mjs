@@ -73,6 +73,29 @@ const ASSIGNMENT = {
   attemptScores: [50, 60, 70, 60, 80], // first 5 learners; avg ~64%
 };
 
+// Sample homework the teacher has set on the weakest topic — a FIXED set of 5
+// verified questions, auto-marked in-app. 6 of the 8 learners have handed it in,
+// with a deliberate spread so the completion + "most-missed" report tells a
+// story. Each inner array = the question indices (0-4) that learner got wrong;
+// everything else they answered correctly. Wrong counts land at Q1:5, Q2:4,
+// Q3:2, Q4:1, Q5:1 -> a clear top-3 to "re-teach". Class avg ~57%.
+const HOMEWORK = {
+  title: "Trigonometry Homework",
+  topicName: "Trigonometry",
+  numQuestions: 5,
+  setDaysAgo: 2,
+  dueInDays: 5,
+  wrongByLearner: [
+    [0, 1],    // Thabo  -> 3/5
+    [0, 1, 2], // Aisha  -> 2/5
+    [0, 1, 3], // Lerato -> 2/5
+    [0, 2],    // Johan  -> 3/5
+    [0, 4],    // Naledi -> 3/5
+    [1],       // Sipho  -> 4/5
+    // Chloé & Ayesha haven't done it yet -> 6/8 completed
+  ],
+};
+
 const clamp = (n, lo, hi) => Math.max(lo, Math.min(hi, n));
 const jitter = (base) => clamp(base + Math.round((Math.random() - 0.5) * 12), 5, 99);
 
@@ -245,6 +268,95 @@ async function main() {
         `\nassignment seeded: ${ASSIGNMENT.topicName} (${ASSIGNMENT.numQuestions} questions, due ${dueDate})` +
           ` — ${attemptRows.length}/${learnerIds.length} attempted, avg ${avg}%`
       );
+    }
+  }
+
+  // 8. Sample homework (a fixed verified question set) + the learner submissions
+  //    that feed its completion report + most-missed breakdown. Needs the
+  //    class_homework / homework_submissions tables (supabase-homework-setup.sql).
+  const hwTopic = topics.find((t) => t.name === HOMEWORK.topicName);
+  if (!hwTopic) {
+    console.warn(`\nSkipped homework: topic "${HOMEWORK.topicName}" not found.`);
+  } else {
+    const { data: hwQuestions, error: hqErr } = await supabase
+      .from("questions")
+      .select("id,correct_index")
+      .eq("topic_id", hwTopic.id)
+      .eq("flagged", false)
+      .order("id")
+      .limit(HOMEWORK.numQuestions);
+    if (hqErr) throw new Error(`load homework questions: ${hqErr.message}`);
+
+    if (!hwQuestions || hwQuestions.length < HOMEWORK.numQuestions) {
+      console.warn(
+        `\nSkipped homework: only ${hwQuestions?.length ?? 0} verified ${HOMEWORK.topicName} questions available.`
+      );
+    } else {
+      const setAt = new Date(now.getTime() - HOMEWORK.setDaysAgo * 86_400_000);
+      const dueDate = new Date(now.getTime() + HOMEWORK.dueInDays * 86_400_000)
+        .toISOString()
+        .slice(0, 10);
+      const questionIds = hwQuestions.map((q) => q.id);
+
+      const { data: hw, error: hwErr } = await supabase
+        .from("class_homework")
+        .insert({
+          class_id: classId,
+          title: HOMEWORK.title,
+          question_ids: questionIds,
+          due_date: dueDate,
+          created_at: setAt.toISOString(),
+        })
+        .select("id")
+        .single();
+
+      if (hwErr) {
+        if (/class_homework/.test(hwErr.message) && /schema cache|does not exist|find the table/i.test(hwErr.message)) {
+          console.warn(
+            "\n⚠  Homework NOT seeded — the class_homework table is missing.\n" +
+              "   Run supabase-homework-setup.sql in the Supabase SQL editor, then re-run this script."
+          );
+        } else {
+          throw new Error(`create homework: ${hwErr.message}`);
+        }
+      } else {
+        // Build each submission's answers map: correct index where the learner
+        // got it right, a different (wrong) index where they didn't.
+        const submissions = HOMEWORK.wrongByLearner.map((wrong, i) => {
+          const answers = {};
+          for (let j = 0; j < hwQuestions.length; j++) {
+            const correct = hwQuestions[j].correct_index;
+            answers[hwQuestions[j].id] = wrong.includes(j) ? (correct + 1) % 4 : correct;
+          }
+          return {
+            homework_id: hw.id,
+            user_id: learnerIds[i],
+            answers,
+            total: hwQuestions.length,
+            correct: hwQuestions.length - wrong.length,
+            created_at: new Date(setAt.getTime() + (i + 1) * 3600_000).toISOString(),
+          };
+        });
+        const { error: hsErr } = await supabase.from("homework_submissions").insert(submissions);
+        if (hsErr) throw new Error(`seed homework_submissions: ${hsErr.message}`);
+
+        const avgPct = Math.round(
+          (submissions.reduce((s, r) => s + r.correct, 0) / (submissions.length * hwQuestions.length)) * 100
+        );
+        console.log(
+          `\nhomework seeded: ${HOMEWORK.title} (${hwQuestions.length} questions, due ${dueDate})` +
+            ` — ${submissions.length}/${learnerIds.length} completed, avg ${avgPct}%`
+        );
+        console.log("Most-missed preview (the teacher's re-teach list):");
+        console.table(
+          hwQuestions
+            .map((_, j) => ({
+              question: `Q${j + 1}`,
+              wrong: `${HOMEWORK.wrongByLearner.filter((w) => w.includes(j)).length}/${submissions.length}`,
+            }))
+            .sort((a, b) => parseInt(b.wrong) - parseInt(a.wrong))
+        );
+      }
     }
   }
 
