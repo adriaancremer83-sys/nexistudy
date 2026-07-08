@@ -78,6 +78,7 @@ export default async function PracticePage() {
             topics={topics}
             plan={plan}
             quizzesLeft={quizzesLeft}
+            dailyLimit={FREE_QUIZZES_PER_DAY}
           />
         )}
       </div>

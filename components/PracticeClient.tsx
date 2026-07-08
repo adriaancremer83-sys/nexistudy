@@ -41,6 +41,7 @@ interface Props {
   topics: Topic[];
   plan: "free" | "premium";
   quizzesLeft: number | null; // null = unlimited (premium)
+  dailyLimit: number; // free quizzes allowed per day
 }
 
 function masteryColour(mastery: number): string {
@@ -49,7 +50,7 @@ function masteryColour(mastery: number): string {
   return "bg-emerald-400";
 }
 
-export default function PracticeClient({ topics, plan, quizzesLeft }: Props) {
+export default function PracticeClient({ topics, plan, quizzesLeft, dailyLimit }: Props) {
   const [view, setView] = useState<"list" | "quiz" | "results">("list");
   const [activeTopic, setActiveTopic] = useState<Topic | null>(null);
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
@@ -132,9 +133,9 @@ export default function PracticeClient({ topics, plan, quizzesLeft }: Props) {
           <div className="glass rounded-2xl px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-sm text-white/60">
               {left === 0 ? (
-                <>You&apos;ve used your <span className="text-white font-semibold">2 free quizzes</span> for today — back tomorrow, or go unlimited.</>
+                <>You&apos;ve used your <span className="text-white font-semibold">{dailyLimit} free quizzes</span> for today — back tomorrow, or go unlimited.</>
               ) : (
-                <><span className="text-white font-semibold">{left} of 2</span> free quizzes left today. Premium learners practise without limits.</>
+                <><span className="text-white font-semibold">{left} of {dailyLimit}</span> free quizzes left today. Premium learners practise without limits.</>
               )}
             </p>
             <Link

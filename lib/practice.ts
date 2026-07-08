@@ -1,7 +1,7 @@
 import { supabaseAdmin } from "./supabase";
 
 export const QUIZ_SIZE = 8;
-export const FREE_QUIZZES_PER_DAY = 2;
+export const FREE_QUIZZES_PER_DAY = 5;
 
 export interface TopicWithMastery {
   id: string;
