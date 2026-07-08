@@ -81,7 +81,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center flex-shrink-0" aria-label="NexiStudy home">
             <Image
-              src="/images/nexi-logo.png"
+              src="/images/nexi-logo-new.png"
               alt="NexiStudy"
               width={150}
               height={50}

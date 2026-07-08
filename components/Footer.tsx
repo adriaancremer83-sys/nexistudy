@@ -28,7 +28,7 @@ export default function Footer() {
         <div>
           <Link href="/" className="inline-flex mb-4" aria-label="NexiStudy home">
             <Image
-              src="/images/nexi-logo.png"
+              src="/images/nexi-logo-new.png"
               alt="NexiStudy"
               width={180}
               height={60}

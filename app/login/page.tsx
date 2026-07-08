@@ -1,6 +1,7 @@
 "use client";
 
 import Nexi from "@/components/Nexi";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
@@ -130,10 +131,15 @@ export default function LoginPage() {
       <div className="flex-1 flex flex-col justify-center items-center px-4 py-12">
 
         {/* Mobile logo */}
-        <Link href="/" className="lg:hidden mb-8">
-          <span className="text-2xl font-bold text-white">
-            Nexi<span className="text-[#00D4FF]">Study</span>
-          </span>
+        <Link href="/" className="lg:hidden mb-8" aria-label="NexiStudy home">
+          <Image
+            src="/images/nexi-logo-new.png"
+            alt="NexiStudy"
+            width={180}
+            height={60}
+            priority
+            className="h-10 w-auto"
+          />
         </Link>
 
         <div className="w-full max-w-md glass rounded-2xl p-8">
