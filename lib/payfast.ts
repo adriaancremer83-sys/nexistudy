@@ -167,6 +167,56 @@ export function buildCheckout(user: CheckoutUser): CheckoutPayload {
   return { processUrl: cfg.processUrl, fields };
 }
 
+// ── Outgoing: once-off Survival Pack checkout ───────────────────────────────
+
+export interface PackCheckoutInput {
+  purchaseId: string; // pack_purchases.id — becomes m_payment_id
+  email: string;
+  amountCents: number; // from pack_products.price_cents, never the client
+  itemName: string;
+  downloadToken: string; // for the return_url
+}
+
+// Once-off payment (no subscription block). Same field order rules as
+// buildCheckout: PayFast reconstructs the hash in its documented order.
+// m_payment_id carries the purchase id so the ITN maps straight back to the
+// pack_purchases row — no custom_str needed.
+export function buildPackCheckout(input: PackCheckoutInput): CheckoutPayload {
+  const cfg = payfastConfig();
+  const base = siteUrl();
+  const amount = (input.amountCents / 100).toFixed(2);
+
+  const fields: Record<string, string> = {
+    merchant_id: cfg.merchantId,
+    merchant_key: cfg.merchantKey,
+    return_url: `${base}/pack/success?token=${input.downloadToken}`,
+    cancel_url: `${base}/pack?cancelled=1`,
+    notify_url: `${base}/api/pack/payfast-itn`,
+    email_address: input.email,
+    m_payment_id: input.purchaseId,
+    amount,
+    item_name: input.itemName,
+  };
+
+  const sigPairs = Object.entries(fields) as [string, string][];
+  if (process.env.PAYFAST_DEBUG === "true") {
+    console.log(
+      "[PayFast] pack signature base string:\n" +
+        signatureBaseString(sigPairs, cfg.passphrase)
+    );
+  }
+  fields.signature = signature(sigPairs, cfg.passphrase);
+
+  return { processUrl: cfg.processUrl, fields };
+}
+
+// Amount check against a specific purchase (the pack ITN validates against the
+// row's amount_cents, not the subscription's fixed PREMIUM_AMOUNT).
+export function itnAmountMatchesCents(data: ItnData, amountCents: number): boolean {
+  const gross = parseFloat(data.amount_gross ?? "0");
+  return Math.abs(gross - amountCents / 100) < 0.01;
+}
+
 // ── Incoming: validate an ITN callback ──────────────────────────────────────
 
 export interface ItnData {
