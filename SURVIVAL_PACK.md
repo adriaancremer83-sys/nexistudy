@@ -341,3 +341,17 @@ full render, pack:upload, live purchase test.
    vars; push commit 9194c9b (+ this one) so the R5 live test can run.
 3. After sign-off: Phase 3 — /pack sales page, homepage strip, nav link,
    Premium dashboard card.
+
+### 2026-07-11 — Maths Lit EN SIGNED OFF
+Adriaan reviewed the PDF + verification report and supplied the verified
+final wording (`matric-2026/maths-lit-strategy-sheet-EN-FINAL.md`, kept as
+the approved source). Merged into `en/maths-lit.md` preserving the pipeline
+format (front-matter, pagebreaks, callouts) — **all ⚠ VERIFY flags removed**.
+Sign-off note added to the verification report. PDF re-rendered clean
+(7pp, zero VERIFY badges). This sheet is now the approved English master
+and the template for the other 9 sheets.
+
+**Next:** the remaining Phase-4 gates are operational, not content:
+RESEND_API_KEY + PACK_EMAIL_FROM; push master → deploy → R5 live PayFast
+test; AF tagline + native-speaker pass. Content-wise Phase 4 (remaining
+13 docs, one verification report each) is unblocked.

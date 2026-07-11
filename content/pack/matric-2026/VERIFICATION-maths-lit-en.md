@@ -1,5 +1,11 @@
 # Verification report — maths-lit.md (EN)
 
+> ✅ **SIGNED OFF by Adriaan 2026-07-11.** Verified final wording supplied
+> (`maths-lit-strategy-sheet-EN-FINAL.md`, kept one folder up as the approved
+> source), merged into `en/maths-lit.md`, all ⚠ VERIFY flags removed, PDF
+> re-rendered. This sheet is approved as the English master for the AF
+> translation. AF tagline confirmation still outstanding.
+
 Research pass done by Claude Code on 2026-07-11. Each ⚠ VERIFY flag in the
 sheet maps to a row below. **Adriaan:** open the source, find the quoted
 line, and if it matches, remove that flag from `en/maths-lit.md`. Flags are
