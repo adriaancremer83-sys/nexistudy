@@ -406,3 +406,21 @@ verification report needed (strategy/product voice, Adriaan-authored).
 Rendered `pack-dist/en/countdown-planner.pdf`. NOT yet uploaded — awaiting
 Adriaan's page-through of the PDF (empty print-table pages are new
 territory for the template), then pack:upload + AF translation for his pass.
+
+### 2026-07-11 (same day) — Countdown Planner APPROVED EN + AF in & uploaded
+Adriaan approved the EN planner PDF ("perfect") and supplied his own AF
+version (`matric-2026/countdown-planner-AF.md`, kept as approved source).
+Merged to `af/countdown-planner.md`, same structure as EN (page-per-week,
+motto callouts, print tools padded). AF terminology worth reusing across
+the pack: Puntelog (Gap Log), Meester-Puntekaart (Master Gap Map),
+Oudit-week, Afskaalweek (taper), ouer-inklok (parent check-in),
+spookvakke (scariest subjects). Both languages rendered and UPLOADED via
+pack:upload — the success page now serves 4 files (planner + maths-lit,
+EN/AF). Note: planner pack_files title includes the full subtitle ("… ·
+The one that goes on the fridge") — long but descriptive; trim subtitle
+if it wraps badly in the download list.
+**Phase 4 progress: 2 of 14 docs done both languages.** Next: subject
+sheets (Maths, Physical Sciences, Life Sciences, Accounting, Business
+Studies, Geography, History, English EN-only, Afrikaans AF-only) — each
+needs draft → verification report → Adriaan sign-off → EN+AF; then APS
+worksheet, Parents' Guide, WhatsApp scripts.
