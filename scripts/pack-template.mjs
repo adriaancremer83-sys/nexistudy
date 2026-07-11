@@ -2,18 +2,23 @@
 // One template for every document: a full-bleed navy cover page + white
 // content pages. Rendered to A4 by scripts/pack-render.mjs.
 
-// Per-language strings. AF tagline still awaiting Adriaan's confirmation
-// (see SURVIVAL_PACK.md) — flagged in the AF footer until then.
+// Per-language strings. AF tagline confirmed by Adriaan 2026-07-11.
 export const LANG = {
   en: {
     prelims: "Prelims: 29 August",
     tagline: "Every mark is a decision.",
     footerBrand: "NexiStudy — Matric Prelim Survival Pack",
+    section: "Section",
+    page: "Page",
+    pageOf: "of",
   },
   af: {
     prelims: "Rekord: 29 Augustus",
     tagline: "Elke punt is 'n besluit.",
     footerBrand: "NexiStudy — Matriek Rekord Oorlewingspak",
+    section: "Afdeling",
+    page: "Bladsy",
+    pageOf: "van",
   },
 };
 
@@ -142,6 +147,7 @@ export function coverHtml(meta, assets) {
 // ── Content pages ───────────────────────────────────────────────
 // contentHtml: markdown already rendered to HTML by pack-render.mjs.
 export function bodyHtml(meta, contentHtml, assets) {
+  const t = LANG[meta.lang] ?? LANG.en;
   return `<!doctype html><html><head><meta charset="utf-8">
 <style>
   ${assets.fontCss}
@@ -169,7 +175,7 @@ export function bodyHtml(meta, contentHtml, assets) {
     break-after: avoid;
   }
   h2::before {
-    content: "Section 0" counter(section);
+    content: "${t.section} 0" counter(section);
     display: block;
     font-size: 8.5pt;
     font-weight: 800;
@@ -304,6 +310,6 @@ export function footerTemplate(meta) {
   return `<div style="width:100%;font-family:'Segoe UI',Arial,sans-serif;font-size:7.5px;color:#7A8AA0;padding:0 16mm;display:flex;justify-content:space-between;align-items:center;">
     <span>${t.footerBrand}</span>
     <span style="color:#B08430;font-weight:bold;">nexistudy.co.za &nbsp;•&nbsp; ${t.prelims}</span>
-    <span>Page <span class="pageNumber"></span> of <span class="totalPages"></span></span>
+    <span>${t.page} <span class="pageNumber"></span> ${t.pageOf} <span class="totalPages"></span></span>
   </div>`;
 }

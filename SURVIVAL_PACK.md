@@ -355,3 +355,21 @@ and the template for the other 9 sheets.
 RESEND_API_KEY + PACK_EMAIL_FROM; push master → deploy → R5 live PayFast
 test; AF tagline + native-speaker pass. Content-wise Phase 4 (remaining
 13 docs, one verification report each) is unblocked.
+
+### 2026-07-11 (same day) — Maths Lit AF in + AF tagline CONFIRMED
+Adriaan supplied the verified Afrikaans sheet
+(`matric-2026/maths-lit-strategy-sheet-AF-FINAL.md`, kept as approved
+source alongside the EN one). Merged into `af/maths-lit.md` in pipeline
+format. His copy uses the tagline **"Rekord: 29 Augustus. Elke punt is
+'n besluit."** verbatim — the AF tagline is hereby CONFIRMED (LANG map
+already matched; stale "awaiting confirmation" comment removed).
+Template localisation gap fixed while at it: section kickers
+("Afdeling 01") and footer page numbers ("Bladsy X van Y") now come from
+the LANG map instead of hard-coded English. Both languages re-rendered:
+`pack-dist/en/maths-lit.pdf` + `pack-dist/af/maths-lit.pdf`.
+Maths Lit is now DONE in both languages — first of the 10 subject sheets
+complete end-to-end (draft → verify → sign-off → EN + AF render).
+
+**Still outstanding:** AF native-speaker pass on the /pack SALES PAGE copy
+(PackLanding.tsx) — the sheet pass doesn't cover it; Resend envs; push
+master → deploy → R5 live PayFast test. Then Phase 4: remaining 12 docs.
