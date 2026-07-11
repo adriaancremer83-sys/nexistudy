@@ -435,3 +435,12 @@ and what-NOT-to-say. No DBE claims → no verification report. Rendered +
 UPLOADED (success page now 5 files). AF version awaited from Adriaan —
 his own AF, not a translation draft. Cross-refs to WhatsApp Scripts bonus
 ("Sunday WhatsApp Scripts") — keep that doc's title consistent when built.
+
+### 2026-07-11 (same day) — Parents' Guide AF in & uploaded
+Adriaan supplied it (`matric-2026/parents-guide-AF.md`, approved source).
+Merged to `af/parents-guide.md` mirroring the EN structure. Rendered +
+uploaded — success page now 6 files (planner, maths-lit, parents' guide,
+all EN+AF). Bonus doc's AF name per his copy: **"Sondag-WhatsApp-woorde"**
+(EN: "Sunday WhatsApp Scripts") — use these titles when building it.
+**Phase 4: 3 of 14 docs done in both languages.** Remaining: 9 subject
+sheets (verify + sign-off each), APS worksheet, WhatsApp scripts.
