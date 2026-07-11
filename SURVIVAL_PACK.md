@@ -424,3 +424,14 @@ sheets (Maths, Physical Sciences, Life Sciences, Accounting, Business
 Studies, Geography, History, English EN-only, Afrikaans AF-only) — each
 needs draft → verification report → Adriaan sign-off → EN+AF; then APS
 worksheet, Parents' Guide, WhatsApp scripts.
+
+### 2026-07-11 (same day) — Parents' Guide EN in & uploaded
+Adriaan supplied it (`matric-2026/parents-guide-EN.md`, kept as approved
+source). Merged to `en/parents-guide.md`, sort 13 (pack order: planner 1,
+subject sheets 2–11, APS 12, parents' guide 13, WhatsApp scripts 14).
+7 sections, page each; callouts: the "stop asking have-you-studied" shift
++ "be the calm, not the extra storm"; H3s for the Sunday check-in shape
+and what-NOT-to-say. No DBE claims → no verification report. Rendered +
+UPLOADED (success page now 5 files). AF version awaited from Adriaan —
+his own AF, not a translation draft. Cross-refs to WhatsApp Scripts bonus
+("Sunday WhatsApp Scripts") — keep that doc's title consistent when built.
