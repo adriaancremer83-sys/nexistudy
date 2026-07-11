@@ -9,18 +9,20 @@ sort: 2
 
 ## The Paper at a Glance
 
-You write two papers. Same length, same marks — very different games.
+You write two papers. Same length, same marks, same difficulty mix — but they cover different halves of the subject.
 
 | | Paper 1 | Paper 2 |
 |---|---|---|
 | **Time** | 3 hours ⚠ VERIFY | 3 hours ⚠ VERIFY |
 | **Marks** | 150 ⚠ VERIFY | 150 ⚠ VERIFY |
-| **The game** | Straightforward skills: read, calculate, answer | Multi-step problems: plan, combine, justify |
-| **Question style** | Shorter parts, guided steps | Longer scenarios, fewer hints |
+| **The territory** | Money & numbers: Finance (±60%), Data handling (±35%) ⚠ VERIFY | Space & shape: Measurement (±55%), Maps & plans (±40%) ⚠ VERIFY |
+| **Question 1** | ±30 marks, easiest level only ⚠ VERIFY | ±30 marks, easiest level only ⚠ VERIFY |
 
-Paper 1 tests whether you can do the basics under time pressure. Paper 2 tests whether you can think through a real situation — a household budget, a building plan, a trip — using those same basics.
+Don't believe anyone who tells you Paper 1 is the easy one and Paper 2 the hard one — that stopped being true years ago. Both papers have the same spread: about 60% of the marks are knowing and routine procedures, 40% are multi-step problems and reasoning. ⚠ VERIFY The difference is territory, not difficulty. Probability sneaks about 5% into each paper inside the other questions.
 
-> Both papers use real-life contexts: bank statements, tariff tables, plans, packaging. The maths is never the hard part. Reading carefully is.
+Your prelim is set by your province or school, but it follows this same national format. ⚠ VERIFY
+
+> Question 1 in EACH paper is a ±30-mark warm-up at the easiest level. That is 60 marks across the two papers waiting for you before the real work starts. Bank them.
 
 <!-- pagebreak -->
 
@@ -36,7 +38,7 @@ The syllabus weights the five topics roughly like this across both papers: ⚠ V
 | Maps, plans & representations | ±15% ⚠ VERIFY | Scale, floor plans, directions, packaging |
 | Probability | ±5% ⚠ VERIFY | Weather, games, tree diagrams |
 
-**The play:** Finance and Data together are worth about 60% of your entire mark. If your interest calculations, tariff-table readings and mean/median work are solid, you have already secured more than half the paper before you touch a floor plan. Master those two topics first, every week, before anything else. Probability is worth the least — do not give it your best hours, but do not skip it either: its 5% is some of the easiest 5% in the paper.
+**The play:** Finance and Data together are worth about 60% of your entire mark — and they are basically the whole of Paper 1. If your interest calculations, tariff-table readings and mean/median work are solid, you have secured one entire paper before you touch a floor plan. Master those two topics first, every week, before anything else. Probability is worth the least — do not give it your best hours, but do not skip it either: its 5% is some of the easiest 5% in the paper.
 
 <!-- pagebreak -->
 
@@ -48,7 +50,7 @@ These marks are handed to you. Learners throw them away every single year.
 2. **Substituting into a formula they give you.** The formula is in the question. Replace the letters with the numbers, one step at a time, and show it.
 3. **Rounding and units.** Final answers rounded as instructed, with the right unit written down, collect marks on almost every question.
 4. **"Show that..." questions.** The answer is already in the question. You cannot get it wrong — you only have to show the steps that lead there.
-5. **CA marks (consistent accuracy).** ⚠ VERIFY Even if step one was wrong, the marker follows your work and awards the later steps if your method is right. This only works if your working is on the page. An answer with no working risks everything on one number.
+5. **CA marks (consistent accuracy).** ⚠ VERIFY Even if step one was wrong, the marker follows your work and awards the later steps if your method is right — up to your second calculation slip, then it stops. This only works if your working is on the page. An answer with no working risks everything on one number.
 
 > If you write down working for every question — even ones you're unsure of — you are already ahead of half the province.
 
@@ -96,7 +98,7 @@ Synced to the Countdown Planner. One focus per week — depth beats coverage.
 **DON'T**
 
 - Don't attempt a full new past paper the night before — it can only cost confidence
-- Don't cram formulas at midnight; Maths Lit gives you most formulas in the paper ⚠ VERIFY
+- Don't cram formulas at midnight — the complicated ones are given in the question. Just make sure perimeter, area and volume are second nature ⚠ VERIFY
 - Don't compare notes with panicking friends outside the exam room
 - Don't skip breakfast — three hours of reading and calculating burns real energy
 
