@@ -373,3 +373,21 @@ complete end-to-end (draft → verify → sign-off → EN + AF render).
 **Still outstanding:** AF native-speaker pass on the /pack SALES PAGE copy
 (PackLanding.tsx) — the sheet pass doesn't cover it; Resend envs; push
 master → deploy → R5 live PayFast test. Then Phase 4: remaining 12 docs.
+
+### 2026-07-11 (same day) — R5 live test: staged, verified to PayFast, parked
+Master pushed (deploy live), both maths-lit PDFs uploaded via pack:upload
+(first real upload — success page has real downloads), price dropped to R5
+via new `scripts/pack-set-price.mjs` (500 ↔ 19900). Full chain verified
+from this machine: /pack 200 on both domains, checkout API signs correctly,
+POST to PayFast accepted 3/3 (302 → payment.payfast.io engine).
+**Two findings:** (1) Adriaan's browser on this machine can't POST to the
+legacy www.payfast.co.za/eng/process endpoint (server error / hang) — the
+machine's TLS interception is the prime suspect; a direct
+payment.payfast.io session link worked fine. Real-buyer risk considered
+low, but the retest should be done FROM A PHONE to confirm. (2) Vercel's
+NEXT_PUBLIC_SITE_URL points at nexistudy.vercel.app, so PayFast returns
+buyers to the vercel.app domain — works, but should be changed to
+https://nexistudy.co.za before launch.
+**Test parked (Adriaan's bank app offline — couldn't complete payment);
+price RESTORED to R199.** To resume: `node scripts/pack-set-price.mjs 500`,
+buy from phone, verify purchase row paid + downloads, restore 19900.
