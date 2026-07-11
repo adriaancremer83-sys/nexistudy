@@ -391,3 +391,18 @@ https://nexistudy.co.za before launch.
 **Test parked (Adriaan's bank app offline — couldn't complete payment);
 price RESTORED to R199.** To resume: `node scripts/pack-set-price.mjs 500`,
 buy from phone, verify purchase row paid + downloads, restore 19900.
+
+### 2026-07-11 (same day) — Phase 4 begins: Countdown Planner EN (the hero doc)
+Adriaan supplied the planner content (`matric-2026/countdown-planner-EN.md`,
+kept as approved source). Merged into `en/countdown-planner.md`: sort 1
+(leads the pack, maths-lit is 2), one page per week via pagebreaks, weekly
+mottos as callouts, H3s for the daily-rhythm/Sunday-ritual/tools blocks,
+Gap Log + Master Gap Map combined under one "The Print Tools" section
+(keeps the doc at 9 H2s — the template's numbered kicker renders "Section
+0" + counter, so a 10th section would show "Section 010"; fix that before
+any doc with 10+ sections). Print tables padded to usable row counts
+(12-row Gap Log, 7-row Gap Map). No DBE factual claims in this doc → no
+verification report needed (strategy/product voice, Adriaan-authored).
+Rendered `pack-dist/en/countdown-planner.pdf`. NOT yet uploaded — awaiting
+Adriaan's page-through of the PDF (empty print-table pages are new
+territory for the template), then pack:upload + AF translation for his pass.
