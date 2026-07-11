@@ -293,6 +293,18 @@ has approved all content and removed the ⚠ VERIFY flags.
 
 **STOPPED for Adriaan's visual sign-off on the maths-lit sample, per spec.**
 
+### 2026-07-11 (same day) — Sourced verification pass on maths-lit EN
+Adriaan can't verify DBE facts from memory, so Claude Code researched every
+⚠ VERIFY flag against primary sources (DBE Exam Guidelines 2021, EC Sept 2023
+prelim paper, NSC marking guidelines). Full click-and-compare report:
+`content/pack/matric-2026/VERIFICATION-maths-lit-en.md`. One real error found
+and fixed: papers are split by TOPIC (P1 Finance 60%+Data 35%; P2 Measurement
+55%+Maps 40%), NOT by difficulty — taxonomy is identical in both papers. Added
+the Q1 ±30-mark Level-1 warm-up fact, the CA "stops at second error" limit,
+softened the formula claim (know perimeter/area/volume cold). Flags stay in
+the sheet until Adriaan checks the report's sources and removes them. This
+verification-report pattern is the template for the other 9 sheets.
+
 **Next:**
 1. Adriaan reviews `pack-dist/en/maths-lit.pdf` (design + content + VERIFY
    flags against DBE docs).
