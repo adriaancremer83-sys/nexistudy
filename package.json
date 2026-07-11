@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "set NODE_OPTIONS=--use-system-ca&& next dev --webpack",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "pack:render": "node scripts/pack-render.mjs",
+    "pack:upload": "set NODE_OPTIONS=--use-system-ca&& node scripts/pack-upload.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.104.2",
@@ -23,6 +25,9 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "marked": "^18.0.6",
+    "pdf-lib": "^1.17.1",
+    "puppeteer-core": "^25.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

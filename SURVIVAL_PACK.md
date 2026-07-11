@@ -260,3 +260,43 @@ has approved all content and removed the ⚠ VERIFY flags.
 2. Add `RESEND_API_KEY` + `PACK_EMAIL_FROM` env vars (Vercel + .env.local).
 3. Sandbox/R5 end-to-end test of the checkout → ITN → success-page flow.
 4. Then Phase 2: PDF render pipeline, maths-lit EN sample, STOP for sign-off.
+
+### 2026-07-11 — Phase 2: PDF render pipeline
+**Done:**
+- Verified the Phase-1 SQL ran: all 3 tables live, matric product seeded at
+  R199, `pack-files` bucket private. (Adriaan ran it 2026-07-10/11.)
+- `content/pack/matric-2026/en/maths-lit.md` — first sample sheet, follows
+  the 6-section template, ⚠ VERIFY flags on all factual claims (paper
+  structure, weightings, CA marks, formula sheet), sign-off line included.
+- `scripts/pack-template.mjs` — the ONE branded template: full-bleed navy
+  cover (mascot in cyan glow ring, gold kicker chip, Nunito 900 title) +
+  white content pages (numbered section kickers, navy-header tables, gold
+  badge ordered lists, warm callouts from blockquotes, navy sign-off banner,
+  loud yellow ⚠ VERIFY badges). Per-page footer: brand • nexistudy.co.za •
+  "Prelims: 29 August" • page numbers. AF strings staged in LANG map — AF
+  tagline still needs Adriaan's confirmation.
+- `scripts/pack-render.mjs` (`npm run pack:render [slug] [--lang en|af]`) —
+  markdown → A4 PDF via puppeteer-core + SYSTEM Chrome (no browser
+  download; falls back to Edge; CHROME_PATH overrides). Handles tables,
+  `>` callouts, `<!-- pagebreak -->`. Cover and body rendered separately
+  (full-bleed vs. footered) and merged with pdf-lib. Nunito embedded as
+  data URIs from the `.next/dev` font cache — fully offline render (Google
+  Fonts fetch hangs on this machine's TLS interception). NOTE: run render
+  via Git Bash — Chrome won't launch from the sandboxed PowerShell here.
+- `scripts/pack-upload.mjs` (`npm run pack:upload`) — pushes pack-dist to
+  `pack-files` at `packs/matric-2026/{lang}/{slug}.pdf` + manual upsert of
+  `pack_files` rows (title from front-matter `title — subtitle`, sort from
+  `sort`). Built but NOT run — nothing uploads before sign-off.
+- Rendered `pack-dist/en/maths-lit.pdf` (7 pages: cover + 6 sections,
+  ~1.9 MB). pack-dist/ is gitignored. New dev deps: marked, puppeteer-core,
+  pdf-lib.
+
+**STOPPED for Adriaan's visual sign-off on the maths-lit sample, per spec.**
+
+**Next:**
+1. Adriaan reviews `pack-dist/en/maths-lit.pdf` (design + content + VERIFY
+   flags against DBE docs).
+2. Still outstanding from Phase 1: RESEND_API_KEY + PACK_EMAIL_FROM env
+   vars; push commit 9194c9b (+ this one) so the R5 live test can run.
+3. After sign-off: Phase 3 — /pack sales page, homepage strip, nav link,
+   Premium dashboard card.

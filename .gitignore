@@ -20,6 +20,9 @@
 # production
 /build
 
+# survival pack rendered PDFs (rebuilt from /content via pack:render)
+/pack-dist
+
 # misc
 .DS_Store
 *.pem
