@@ -444,3 +444,16 @@ all EN+AF). Bonus doc's AF name per his copy: **"Sondag-WhatsApp-woorde"**
 (EN: "Sunday WhatsApp Scripts") — use these titles when building it.
 **Phase 4: 3 of 14 docs done in both languages.** Remaining: 9 subject
 sheets (verify + sign-off each), APS worksheet, WhatsApp scripts.
+
+### 2026-07-11 (same day) — WhatsApp Scripts EN + AF in & uploaded
+Adriaan supplied both (`matric-2026/whatsapp-scripts-{EN,AF}.md`; his EN
+was named `…EN_1.md` in en/ and AF was duplicated in af/ + root — sources
+normalised to root, duplicate removed). Canonical files sort 14, structure:
+3 H2 sections (How to Use / The Seven Sundays / Spare Scripts — "The Seven
+Sundays" heading added; his doc had messages straight after the intro),
+each message as a blockquote → renders as a gold callout box (the "copy
+this" visual). Messages contain emoji — Chrome falls back to Segoe UI
+Emoji in the PDF; check they aren't tofu in review. Rendered + UPLOADED.
+**Phase 4: 4 of 14 docs done both languages — success page serves 8 files.
+Both parents' guide cross-references now resolve to real docs.** Remaining:
+9 subject sheets (verify + sign-off each) + APS worksheet.
