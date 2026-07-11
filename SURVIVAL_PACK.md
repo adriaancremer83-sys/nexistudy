@@ -305,6 +305,35 @@ softened the formula claim (know perimeter/area/volume cold). Flags stay in
 the sheet until Adriaan checks the report's sources and removes them. This
 verification-report pattern is the template for the other 9 sheets.
 
+### 2026-07-11 (same day) — Phase 3: Sales page + entry points
+**Done:**
+- `components/PackBuyButton.tsx` — guest checkout (email only, no login;
+  prefills from session), POSTs to `/api/pack/checkout`, hidden-form PayFast
+  redirect (SubscribeButton pattern).
+- `components/PackLanding.tsx` + `/pack` page — full bilingual sales page
+  with client EN/AF toggle: countdown hero (ExamCountdown reused, given
+  optional `labels` prop for localisation — defaults unchanged), what's-inside
+  cards (planner = hero card), R199 vs R250–R400 tutoring-hour price anchor,
+  parents block with Nexi, how-it-works, FAQ (incl. "prelims are provincial
+  but follow the national format"), single CTA → #buy form.
+  `?cancelled=1` shows a gentle notice. ⚠ AF copy is a first draft —
+  Adriaan native-speaker pass needed before launch.
+- `/pack/premium` — server-side subscription check (getSubscription), premium
+  → same PackDownloads list via signed URLs, no purchase row; free → redirect
+  to /pack.
+- Dashboard: Survival Pack card under the countdown (premium → /pack/premium
+  "included"; free → /pack). Navbar: "Survival Pack" link before Pricing.
+  Homepage: gold strip between hero and stats → /pack.
+- `tsc --noEmit` clean; `npm run build` passes (/pack, /pack/premium
+  registered); smoke-tested against `next start` — desktop + mobile
+  (390px, no horizontal overflow), routes 200.
+
+**Next (Phase 4 prerequisites, all Adriaan):** sign off maths-lit design +
+verification report; RESEND_API_KEY + PACK_EMAIL_FROM; push master (now
+several commits ahead) → deploy; R5 end-to-end PayFast test on the live
+site; confirm AF tagline + AF page copy. Then Phase 4: remaining content,
+full render, pack:upload, live purchase test.
+
 **Next:**
 1. Adriaan reviews `pack-dist/en/maths-lit.pdf` (design + content + VERIFY
    flags against DBE docs).

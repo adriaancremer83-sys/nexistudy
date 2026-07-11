@@ -168,6 +168,33 @@ export default async function DashboardPage() {
         {/* ── EXAM COUNTDOWN ── */}
         <ExamCountdown />
 
+        {/* ── SURVIVAL PACK ── */}
+        <Reveal>
+          <Link
+            href={plan === "premium" ? "/pack/premium" : "/pack"}
+            className="group rounded-2xl border border-[#FFB454]/25 bg-[#FFB454]/[0.05] px-6 py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors hover:border-[#FFB454]/50 block"
+          >
+            <div className="min-w-0">
+              <p className="text-[#FFB454] text-xs font-bold uppercase tracking-widest mb-1">
+                Matric Prelim Survival Pack
+              </p>
+              <p className="text-white font-bold">
+                {plan === "premium"
+                  ? "Your Survival Pack — included with Premium"
+                  : "Seven weeks, ten subjects, one plan — R199 once-off"}
+              </p>
+              <p className="text-white/50 text-sm mt-1">
+                {plan === "premium"
+                  ? "Download the full pack in English or Afrikaans."
+                  : "Printable prelim prep for you and your parents, in English and Afrikaans. Included free with Premium."}
+              </p>
+            </div>
+            <span className="shrink-0 text-sm font-bold text-[#FFB454] group-hover:translate-x-0.5 transition-transform">
+              {plan === "premium" ? "Open your pack →" : "See the pack →"}
+            </span>
+          </Link>
+        </Reveal>
+
         {/* ── HOMEWORK FROM TEACHER (renders only if any is set) ── */}
         <Reveal>
           <HomeworkCard />

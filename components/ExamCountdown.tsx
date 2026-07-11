@@ -21,9 +21,13 @@ function daysUntil(target: Date): number {
 export default function ExamCountdown({
   variant = "card",
   className = "",
+  labels,
 }: {
   variant?: "card" | "inline";
   className?: string;
+  // Optional copy overrides so bilingual pages (e.g. /pack) can localise the
+  // pill; defaults keep every existing call site unchanged.
+  labels?: { days?: string; here?: string };
 }) {
   const [days, setDays] = useState<number | null>(null);
   useEffect(() => {
@@ -40,10 +44,10 @@ export default function ExamCountdown({
         className={`inline-flex items-center gap-2 rounded-full border border-[#FFB454]/30 bg-[#FFB454]/[0.08] px-4 py-1.5 text-sm font-semibold text-[#FFB454] ${className}`}
       >
         {here ? (
-          "Prelims are here — go get them 🍀"
+          labels?.here ?? "Prelims are here — go get them 🍀"
         ) : (
           <>
-            <span className="font-extrabold">{days}</span> days to Prelims
+            <span className="font-extrabold">{days}</span> {labels?.days ?? "days to Prelims"}
           </>
         )}
       </p>

@@ -16,7 +16,10 @@ const TOOL_LINKS = [
   { label: "Mark Answer", href: "/mark" },
   { label: "Past Papers", href: "/past-papers" },
 ];
-const END_LINKS = [{ label: "Pricing", href: "/pricing" }];
+const END_LINKS = [
+  { label: "Survival Pack", href: "/pack" },
+  { label: "Pricing", href: "/pricing" },
+];
 
 export default function Navbar() {
   const pathname = usePathname();

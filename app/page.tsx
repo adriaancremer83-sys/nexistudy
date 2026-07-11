@@ -277,6 +277,24 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* ── SURVIVAL PACK STRIP ── */}
+      <Link
+        href="/pack"
+        className="group block bg-[#FFB454]/[0.07] border-y border-[#FFB454]/25 px-4 py-4 transition-colors hover:bg-[#FFB454]/[0.11]"
+      >
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center">
+          <span className="text-[#FFB454] text-xs font-bold uppercase tracking-widest">
+            New · Matric Prelim Survival Pack
+          </span>
+          <span className="text-white/80 text-sm font-medium">
+            Seven weeks, ten subjects, one plan — for learners and parents, in English &amp; Afrikaans.
+          </span>
+          <span className="text-[#FFB454] text-sm font-bold whitespace-nowrap group-hover:translate-x-0.5 transition-transform">
+            R199 once-off →
+          </span>
+        </div>
+      </Link>
+
       {/* ── 2. STATS STRIP ── */}
       <section className="py-16 px-4 border-y border-white/[0.06]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10 text-center">
