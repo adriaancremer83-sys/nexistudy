@@ -550,6 +550,21 @@ per pack standard. Rendered + UPLOADED.
 (Life Sciences, Business Studies, Geography, History, English EN-only,
 Afrikaans AF-only).
 
+### 2026-07-12 (same day) — Business Studies EN + AF in & uploaded
+Adriaan supplied both as FINAL (`matric-2026/business-studies-{EN,AF}-
+FINAL.md`). Sanity check vs DBE BusStud Exam Guidelines — all match: two
+papers 2h/150 (P1 Environments+Operations, P2 Ventures+Roles), section
+structure A 30 compulsory / B 2-of-3 ×40 / C 1-of-2 essay ×40, cognitive
+split 30/50/20, the 8 Acts list standard. ONE FIX applied + flagged:
+"two strong essays per paper" → "a strong essay in each paper" (Section C
+is 1 essay per paper; his own "over a quarter" maths confirms the
+intended meaning) — same fix in Killers #4 ("Two 40-mark essays" → "A
+40-mark essay") and in AF. Canonical `{en,af}/business-studies.md` sort 7;
+AF Moordenaars→Puntevreters. Rendered + UPLOADED.
+**Phase 4: 9 of 14 docs done — 18 files live. Remaining: 5 sheets**
+(Life Sciences [sort 5], Geography, History, English EN-only, Afrikaans
+AF-only).
+
 ### 2026-07-12 — APS Target Worksheet EN + AF in & uploaded
 Adriaan supplied both (`matric-2026/aps-worksheet-{EN,AF}.md`, approved
 sources). Content sanity-checked before merge: 7-level table = standard
