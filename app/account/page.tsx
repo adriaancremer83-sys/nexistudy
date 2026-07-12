@@ -117,7 +117,7 @@ export default async function AccountPage() {
         <p className="text-center text-xs text-white/30">
           Payments are processed securely by PayFast. Questions? Email{" "}
           <a
-            href="mailto:support@nexistudy.co.za"
+            href="mailto:nexi@forgesystems.co.za"
             className="text-[#00D4FF] hover:underline"
           >
             support@nexistudy.co.za
