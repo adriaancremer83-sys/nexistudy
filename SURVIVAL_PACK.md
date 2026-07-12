@@ -506,6 +506,22 @@ Deliverability TODO for Adriaan: add DMARC TXT record `_dmarc` =
 STILL OPEN: /pack buy-form browser POST to PayFast hangs (direct session
 links work) — headful-Chrome debug is the last payment-flow item.
 
+### 2026-07-12 (same day) — Maths (pure) EN + AF in & uploaded
+Adriaan supplied both as FINAL (`matric-2026/maths-strategy-sheet-
+{EN,AF}-FINAL.md`, approved sources = his sign-off). DBE facts sanity-
+checked against the Mathematics Exam Guidelines before merge — ALL match:
+P1/P2 3h/150; P1 weights Functions 35, Calculus 35, Algebra 25, Patterns
+25, Finance 15, Probability 15; P2 Trig 50, Analytical 40, Euclidean 40,
+Stats 20; info sheet provided; 2-decimal rounding; prescribed theorem
+proofs per guideline. Canonical `{en,af}/maths.md` at **sort 2** — subject
+sheets now ordered Maths 2, Maths Lit 3 (maths-lit front-matter bumped
++ pack_files re-registered; PDFs unchanged). Consistency call: his AF
+"Die Moordenaars" heading aligned to the pack-standard **"Die
+Puntevreters"** (flagged to Adriaan). Both rendered + UPLOADED.
+**Phase 4: 6 of 14 docs done — 12 files live. Remaining: 8 subject
+sheets** (Physical Sciences, Life Sciences, Accounting, Business Studies,
+Geography, History, English EN-only, Afrikaans AF-only).
+
 ### 2026-07-12 — APS Target Worksheet EN + AF in & uploaded
 Adriaan supplied both (`matric-2026/aps-worksheet-{EN,AF}.md`, approved
 sources). Content sanity-checked before merge: 7-level table = standard

@@ -4,7 +4,7 @@ subtitle: Rekord-strategieblad
 kicker: Matriek Rekord Oorlewingspak
 lang: af
 slug: maths-lit
-sort: 2
+sort: 3
 ---
 
 ## Die Vraestel in 'n Oogopslag

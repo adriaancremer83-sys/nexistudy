@@ -4,7 +4,7 @@ subtitle: Prelim Strategy Sheet
 kicker: Matric Prelim Survival Pack
 lang: en
 slug: maths-lit
-sort: 2
+sort: 3
 ---
 
 ## The Paper at a Glance
