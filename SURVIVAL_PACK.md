@@ -488,6 +488,24 @@ the branded HTML lives in lib/packEmail.ts. STILL REQUIRED on Vercel
 https://www.nexistudy.co.za → Redeploy. Until then production buyers get
 no email (webhook logs the link instead).
 
+### 2026-07-12 (same day) — Production email verified + delivery template restyled
+Second R5 (pf paid 12:27) proved the FULL production pipeline hands-free:
+payment → ITN → paid → Vercel-sent delivery email (envs live; return/notify
+URLs now www.nexistudy.co.za). Email landed in SPAM with the old template →
+rebuilt lib/packEmail.ts per Adriaan's spec, approved from rendered preview:
+table-based inline-CSS-only layout, #f6f7fb page, navy header band with the
+hosted logo (siteUrl()/images/nexi-logo-new.png, white-text alt fallback), gold #e8a13a rounded CTA "Download your pack", components listed
+BY NAME (no counts), "link is yours" line kept, footer "Prelims: 29 August.
+Every mark is a decision." + nexistudy.co.za. New exported renderPackEmail()
+returns {subject, html, text} — plain-TEXT PART now sent alongside HTML
+(major spam-score fix). EN-only: purchases don't record the AF toggle
+(would need a language column + checkout change if ever wanted).
+Deliverability TODO for Adriaan: add DMARC TXT record `_dmarc` =
+"v=DMARC1; p=none;" on nexistudy.co.za DNS (none exists); mark first mail
+"Not spam". Test send of new template: Resend id 6699b2f7. Price at R199.
+STILL OPEN: /pack buy-form browser POST to PayFast hangs (direct session
+links work) — headful-Chrome debug is the last payment-flow item.
+
 ### 2026-07-12 — APS Target Worksheet EN + AF in & uploaded
 Adriaan supplied both (`matric-2026/aps-worksheet-{EN,AF}.md`, approved
 sources). Content sanity-checked before merge: 7-level table = standard

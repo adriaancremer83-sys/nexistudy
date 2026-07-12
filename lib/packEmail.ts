@@ -9,6 +9,10 @@
 //
 // Per spec, the email carries a LINK to the token-gated download page — never
 // attachments, never direct file URLs.
+//
+// Layout is table-based with inline CSS only (email clients ignore <style>).
+// The copy is EN-only: purchases don't record which language toggle the buyer
+// used, and the pack itself is bilingual either way.
 // ─────────────────────────────────────────────────────────────────────────────
 
 function siteUrl(): string {
@@ -17,6 +21,115 @@ function siteUrl(): string {
     process.env.NEXTAUTH_URL ??
     "http://localhost:3000"
   ).replace(/\/$/, "");
+}
+
+const NAVY = "#0A1628";
+const GOLD = "#e8a13a";
+const PAGE_BG = "#f6f7fb";
+
+const COMPONENTS = [
+  "The 7-Week Countdown Planner",
+  "The Subject Strategy Sheets",
+  "The APS Target Worksheet",
+  "The Parents' Guide",
+  "The Sunday WhatsApp Scripts",
+];
+
+export function renderPackEmail(downloadUrl: string): {
+  subject: string;
+  html: string;
+  text: string;
+} {
+  const logoUrl = `${siteUrl()}/images/nexi-logo-new.png`;
+
+  const componentRows = COMPONENTS.map(
+    (name) => `
+        <tr>
+          <td width="18" valign="top" style="padding:3px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:22px;color:${GOLD};font-weight:bold;">&bull;</td>
+          <td style="padding:3px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:22px;color:#33415c;">${name}</td>
+        </tr>`
+  ).join("");
+
+  const html = `<!doctype html>
+<html>
+<body style="margin:0;padding:0;background-color:${PAGE_BG};">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:${PAGE_BG};">
+    <tr>
+      <td align="center" style="padding:28px 12px;">
+        <table role="presentation" width="560" cellpadding="0" cellspacing="0" border="0" style="max-width:560px;width:100%;background-color:#ffffff;border-radius:12px;overflow:hidden;">
+
+          <!-- Header band -->
+          <tr>
+            <td align="center" style="background-color:${NAVY};padding:22px 32px;">
+              <img src="${logoUrl}" alt="NexiStudy" height="34" style="display:block;height:34px;border:0;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:bold;" />
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:32px 32px 8px;">
+              <p style="margin:0 0 4px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;letter-spacing:2px;text-transform:uppercase;color:${GOLD};font-weight:bold;">Matric Prelim Survival Pack</p>
+              <h1 style="margin:0 0 16px;font-family:Arial,Helvetica,sans-serif;font-size:24px;line-height:32px;color:${NAVY};">Your Survival Pack is ready 🎒</h1>
+              <p style="margin:0 0 14px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#33415c;">Thank you for your purchase! Everything is ready to download, in English and Afrikaans:</p>
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 8px;">
+                ${componentRows}
+              </table>
+            </td>
+          </tr>
+
+          <!-- CTA -->
+          <tr>
+            <td align="center" style="padding:20px 32px 8px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td align="center" bgcolor="${GOLD}" style="border-radius:10px;">
+                    <a href="${downloadUrl}" style="display:inline-block;padding:14px 36px;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;color:${NAVY};text-decoration:none;border-radius:10px;">Download your pack</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:16px 32px 28px;">
+              <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#7a8699;">This link is yours — keep this email safe. You can come back and download the documents again any time.</p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:18px 32px;border-top:1px solid #e7eaf3;">
+              <p style="margin:0 0 4px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:${NAVY};font-weight:bold;">Prelims: 29 August. Every mark is a decision.</p>
+              <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;color:#7a8699;"><a href="${siteUrl()}" style="color:#7a8699;text-decoration:underline;">nexistudy.co.za</a></p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+
+  const text = [
+    "Your Survival Pack is ready",
+    "",
+    "Thank you for your purchase! Everything is ready to download, in English and Afrikaans:",
+    ...COMPONENTS.map((name) => `- ${name}`),
+    "",
+    `Download your pack: ${downloadUrl}`,
+    "",
+    "This link is yours — keep this email safe. You can come back and download the documents again any time.",
+    "",
+    "Prelims: 29 August. Every mark is a decision.",
+    "nexistudy.co.za",
+  ].join("\n");
+
+  return {
+    subject: "Your Matric Prelim Survival Pack — download inside",
+    html,
+    text,
+  };
 }
 
 export async function sendPackDeliveryEmail(params: {
@@ -37,25 +150,7 @@ export async function sendPackDeliveryEmail(params: {
     return false;
   }
 
-  const html = `
-  <div style="font-family: -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; max-width: 560px; margin: 0 auto; padding: 24px; color: #1a1a2e;">
-    <h1 style="font-size: 22px; margin: 0 0 4px;">Your Survival Pack is ready 🎒</h1>
-    <p style="color: #555; margin: 0 0 20px;">NexiStudy Matric Prelim Survival Pack</p>
-    <p>Thank you for your purchase! Your bilingual pack — the 7-Week Countdown Planner,
-    all 10 Subject Strategy Sheets, the APS Target Worksheet, the Parents' Guide and
-    the Sunday check-in scripts — is waiting for you.</p>
-    <p style="text-align: center; margin: 28px 0;">
-      <a href="${downloadUrl}"
-         style="background: #00D4FF; color: #0a0a1a; text-decoration: none; font-weight: 700; padding: 14px 28px; border-radius: 10px; display: inline-block;">
-        Download your pack
-      </a>
-    </p>
-    <p style="font-size: 13px; color: #777;">This link is yours — keep this email safe.
-    You can come back and download the documents again any time.</p>
-    <p style="font-size: 13px; color: #777;">Prelims: 29 August. Every mark is a decision.</p>
-    <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;" />
-    <p style="font-size: 12px; color: #999;">NexiStudy · nexistudy.co.za · Grades 8–12, CAPS-aligned</p>
-  </div>`;
+  const { subject, html, text } = renderPackEmail(downloadUrl);
 
   try {
     const res = await fetch("https://api.resend.com/emails", {
@@ -67,8 +162,9 @@ export async function sendPackDeliveryEmail(params: {
       body: JSON.stringify({
         from,
         to: [params.to],
-        subject: "Your Matric Prelim Survival Pack — download inside",
+        subject,
         html,
+        text,
       }),
     });
     if (!res.ok) {
