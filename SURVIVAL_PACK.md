@@ -522,6 +522,19 @@ Puntevreters"** (flagged to Adriaan). Both rendered + UPLOADED.
 sheets** (Physical Sciences, Life Sciences, Accounting, Business Studies,
 Geography, History, English EN-only, Afrikaans AF-only).
 
+### 2026-07-12 (same day) — Physical Sciences EN + AF in & uploaded
+Adriaan supplied both as FINAL (`matric-2026/physical-sciences-{EN,AF}-
+FINAL.md`). DBE facts sanity-checked against the Physical Sciences Exam
+Guidelines — all match: P1 Physics/P2 Chemistry 3h/150 each; Q1 = 10 MCQ
+20 marks both papers; P1 Mechanics 65 + E&M 55 + Waves 15 + Matter 15;
+P2 Chemical change 92 + Matter & materials (organic/IMF) 58; info sheets
++ periodic table provided; no negative MCQ marking (guess > blank).
+Canonical `{en,af}/physical-sciences.md` sort 4; AF "Die Moordenaars"
+again aligned to pack-standard "Die Puntevreters". Rendered + UPLOADED.
+**Phase 4: 7 of 14 docs done — 14 files live. Remaining: 7 sheets**
+(Life Sciences, Accounting, Business Studies, Geography, History,
+English EN-only, Afrikaans AF-only).
+
 ### 2026-07-12 — APS Target Worksheet EN + AF in & uploaded
 Adriaan supplied both (`matric-2026/aps-worksheet-{EN,AF}.md`, approved
 sources). Content sanity-checked before merge: 7-level table = standard
