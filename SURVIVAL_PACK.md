@@ -565,6 +565,19 @@ AF Moordenaars→Puntevreters. Rendered + UPLOADED.
 (Life Sciences [sort 5], Geography, History, English EN-only, Afrikaans
 AF-only).
 
+### 2026-07-12 (same day) — Geography EN + AF in & uploaded
+Adriaan supplied both as FINAL (`matric-2026/geography-{EN,AF}-FINAL.md`).
+Sanity check vs DBE Geography Exam Guidelines — all match the current
+two-paper format: P1 Climate&Weather(60)+Geomorphology(60)+mapwork(30),
+P2 Settlement(60)+Economic Geog SA(60)+mapwork(30), both 3h/150, all
+compulsory; cognitive 25/50/25; six standard map calculations; concept-
+marked definitions; point-form penalty on paragraph questions. No flags.
+Canonical `{en,af}/geography.md` sort 8; AF Moordenaars→Puntevreters;
+section-2 consecutive bold lines separated (soft-break merge gotcha).
+Rendered + UPLOADED. **Phase 4: 10 of 14 docs done — 20 files live.
+Remaining: 4 sheets** (Life Sciences [sort 5], History [9], English
+EN-only [10], Afrikaans AF-only [11]).
+
 ### 2026-07-12 — APS Target Worksheet EN + AF in & uploaded
 Adriaan supplied both (`matric-2026/aps-worksheet-{EN,AF}.md`, approved
 sources). Content sanity-checked before merge: 7-level table = standard
