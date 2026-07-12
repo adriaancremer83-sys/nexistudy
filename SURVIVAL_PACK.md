@@ -475,6 +475,19 @@ account — plan is to verify nexistudy.co.za on it (do NOT add
 forgesystems.co.za there: DNS collision would break the old account that
 BosworthQuote sends through).
 
+### 2026-07-12 (same day) — Resend LIVE: delivery email verified
+Adriaan's NEW Resend account has **nexistudy.co.za VERIFIED** (he did the
+DNS himself) — account owner email nexi@forgesystems.co.za (mailbox exists,
+so the account-page support mailto works). Sender:
+**NexiStudy <pack@nexistudy.co.za>**. Real delivery email sent successfully
+(Resend id 4e0f981f) with the paid purchase's token link. Local .env.local
+updated (new key + PACK_EMAIL_FROM). No Resend hosted templates needed —
+the branded HTML lives in lib/packEmail.ts. STILL REQUIRED on Vercel
+(dashboard, Adriaan): RESEND_API_KEY (new key), PACK_EMAIL_FROM=
+"NexiStudy <pack@nexistudy.co.za>", NEXT_PUBLIC_SITE_URL=
+https://www.nexistudy.co.za → Redeploy. Until then production buyers get
+no email (webhook logs the link instead).
+
 ### 2026-07-12 — APS Target Worksheet EN + AF in & uploaded
 Adriaan supplied both (`matric-2026/aps-worksheet-{EN,AF}.md`, approved
 sources). Content sanity-checked before merge: 7-level table = standard
