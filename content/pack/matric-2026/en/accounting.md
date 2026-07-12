@@ -9,13 +9,13 @@ sort: 6
 
 ## The Paper at a Glance
 
-Accounting is one of the few subjects where you can genuinely target a distinction — the marks are logical, repetitive, and reward preparation over cleverness. Since 2021 it's split into two papers, each its own discipline.
+Accounting is one of the few subjects where you can genuinely target a distinction — the marks are logical, repetitive, and reward preparation over cleverness. Since 2020 it's split into two papers, each its own discipline.
 
 | | Paper 1 — Financial Reporting | Paper 2 — Managerial Accounting |
 |---|---|---|
 | **Time** | 2 hours | 2 hours |
 | **Marks** | 150 | 150 |
-| **The territory** | Companies: ledgers, Income Statement, Balance Sheet, Cash Flow, ratio analysis, asset & inventory valuation, corporate governance | Reconciliations, VAT, manufacturing/cost accounting, cash budgets, projected income statements, internal control & audit |
+| **The territory** | Companies: ledgers, Income Statement, Balance Sheet, Cash Flow, ratio analysis, asset valuation, corporate governance | Reconciliations, VAT, inventory valuation, manufacturing/cost accounting, cash budgets, projected income statements, internal control & audit |
 
 Every question is **compulsory** and answered in a **specially prepared answer book** — but the answer book doesn't repeat the full question, so always read the question paper too. The structure is given; your job is the right figures in the right places.
 
@@ -68,8 +68,8 @@ Syncs with your Countdown Planner.
 | 2 | P1 Companies I: ledgers, Income Statement, Balance Sheet layout — drill the skeletons until automatic |
 | 3 | P1 Companies II: notes + Cash Flow Statement, then ratio analysis (learn every P1 indicator + "quote & comment") |
 | 4 | P2 Manufacturing + cost accounting: production cost statement, unit costs, break-even — one timed section |
-| 5 | P2 Budgets + reconciliations + VAT, then a full timed Paper 2 |
-| 6 | Full Paper 1 simulation under exam conditions; rework every lost mark. Inventory valuation + internal control polish |
+| 5 | P2 Budgets + reconciliations + VAT + inventory valuation, then a full timed Paper 2 |
+| 6 | Full Paper 1 simulation under exam conditions; rework every lost mark. Internal control + ethics polish |
 | 7 | Taper: concepts list, statement skeletons + both indicator lists from memory, your error list — nothing new after Tuesday |
 
 **Starting late?** Audit first, then P1 statements + ratios and P2 manufacturing — the biggest, most predictable blocks. Format skeletons every week; they're free marks that compound.

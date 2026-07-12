@@ -578,6 +578,18 @@ Rendered + UPLOADED. **Phase 4: 10 of 14 docs done — 20 files live.
 Remaining: 4 sheets** (Life Sciences [sort 5], History [9], English
 EN-only [10], Afrikaans AF-only [11]).
 
+### 2026-07-12 (same day) — Accounting flags RESOLVED (source-verified) & re-shipped
+Both flags researched with primary sources and confirmed as errors;
+Adriaan approved the fixes. (1) Two-paper split began **2020** not 2021 —
+DBE published two-paper Exam Guidelines for 2020; WCED archive has
+separate P1/P2 memos for Nov 2020. (2) **Inventory valuation is Paper 2**
+(with reconciliations, VAT, cost accounting, budgeting); P1 keeps fixed-
+asset valuation. Fixes applied to `{en,af}/accounting.md` (glance table
+year + territory row; Week 5 gains inventory valuation, Week 6 polish
+becomes internal control + ethics), re-rendered, re-UPLOADED. FINAL
+source files left as supplied (archive of what Adriaan sent); canonical
+files are the corrected shipping truth.
+
 ### 2026-07-12 — APS Target Worksheet EN + AF in & uploaded
 Adriaan supplied both (`matric-2026/aps-worksheet-{EN,AF}.md`, approved
 sources). Content sanity-checked before merge: 7-level table = standard

@@ -9,13 +9,13 @@ sort: 6
 
 ## Die Vraestel in 'n Oogopslag
 
-Rekeningkunde is een van die min vakke waar jy werklik 'n onderskeiding kan mik — die punte is logies, herhalend, en beloon voorbereiding bo slimheid. Sedert 2021 is dit in twee vraestelle verdeel, elk sy eie dissipline.
+Rekeningkunde is een van die min vakke waar jy werklik 'n onderskeiding kan mik — die punte is logies, herhalend, en beloon voorbereiding bo slimheid. Sedert 2020 is dit in twee vraestelle verdeel, elk sy eie dissipline.
 
 | | Vraestel 1 — Finansiële Verslagdoening | Vraestel 2 — Bestuursrekeningkunde |
 |---|---|---|
 | **Tyd** | 2 uur | 2 uur |
 | **Punte** | 150 | 150 |
-| **Die gebied** | Maatskappye: grootboeke, Inkomstestaat, Balansstaat, Kontantvloei, verhoudingsanalise, bate- & voorraadwaardasie, korporatiewe bestuur | Rekonsiliasies, BTW, vervaardiging/kosterekeningkunde, kontantbegrotings, geprojekteerde inkomstestate, interne beheer & oudit |
+| **Die gebied** | Maatskappye: grootboeke, Inkomstestaat, Balansstaat, Kontantvloei, verhoudingsanalise, batewaardasie, korporatiewe bestuur | Rekonsiliasies, BTW, voorraadwaardasie, vervaardiging/kosterekeningkunde, kontantbegrotings, geprojekteerde inkomstestate, interne beheer & oudit |
 
 Elke vraag is **verpligtend** en word in 'n **spesiaal voorbereide antwoordboek** beantwoord — maar die antwoordboek herhaal nie die volle vraag nie, so lees altyd ook die vraestel. Die struktuur word gegee; jou werk is die regte syfers op die regte plekke.
 
@@ -68,8 +68,8 @@ Gesinkroniseer met jou Aftel-beplanner.
 | 2 | V1 Maatskappye I: grootboeke, Inkomstestaat, Balansstaat-uitleg — dril die geraamtes tot outomaties |
 | 3 | V1 Maatskappye II: notas + Kontantvloeistaat, dan verhoudingsanalise (leer elke V1-aanwyser + "haal aan & kommenteer") |
 | 4 | V2 Vervaardiging + kosterekeningkunde: produksiekostestaat, eenheidskoste, gelykbreekpunt — een getydde afdeling |
-| 5 | V2 Begrotings + rekonsiliasies + BTW, dan 'n volle getydde Vraestel 2 |
-| 6 | Volle Vraestel 1-simulasie onder eksamenomstandighede; herdoen elke verlore punt. Voorraadwaardasie + interne beheer poets |
+| 5 | V2 Begrotings + rekonsiliasies + BTW + voorraadwaardasie, dan 'n volle getydde Vraestel 2 |
+| 6 | Volle Vraestel 1-simulasie onder eksamenomstandighede; herdoen elke verlore punt. Interne beheer + etiek poets |
 | 7 | Afskaal: konsepte-lys, staat-geraamtes + albei aanwyser-lyste uit jou kop, jou foutelys — niks nuuts ná Dinsdag nie |
 
 **Begin jy laat?** Oudit eerste, dan V1-state + verhoudings en V2-vervaardiging — die grootste, mees voorspelbare blokke. Formaat-geraamtes elke week; dis gratis punte wat opbou.
