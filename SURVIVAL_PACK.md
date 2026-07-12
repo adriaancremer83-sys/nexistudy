@@ -535,6 +535,21 @@ again aligned to pack-standard "Die Puntevreters". Rendered + UPLOADED.
 (Life Sciences, Accounting, Business Studies, Geography, History,
 English EN-only, Afrikaans AF-only).
 
+### 2026-07-12 (same day) — Accounting EN + AF in & uploaded
+Adriaan supplied both as FINAL (`matric-2026/accounting-{EN,AF}-FINAL.md`).
+Sanity check vs DBE Accounting Exam Guidelines: two-paper P1 Financial
+Reporting / P2 Managerial 2h/150 each ✓, 30/40/30 easy-moderate-difficult
+build ✓, compulsory questions + special answer book ✓. TWO FLAGS raised
+to Adriaan (kept his wording pending his confirmation): (1) "Since 2021"
+two-paper split — first two-paper NSC was likely 2020; (2) inventory
+valuation listed under P1 territory — several guideline summaries put
+inventory systems/valuation under P2. Canonical `{en,af}/accounting.md`
+sort 6 (sort 5 reserved for Life Sciences); AF Moordenaars→Puntevreters
+per pack standard. Rendered + UPLOADED.
+**Phase 4: 8 of 14 docs done — 16 files live. Remaining: 6 sheets**
+(Life Sciences, Business Studies, Geography, History, English EN-only,
+Afrikaans AF-only).
+
 ### 2026-07-12 — APS Target Worksheet EN + AF in & uploaded
 Adriaan supplied both (`matric-2026/aps-worksheet-{EN,AF}.md`, approved
 sources). Content sanity-checked before merge: 7-level table = standard
