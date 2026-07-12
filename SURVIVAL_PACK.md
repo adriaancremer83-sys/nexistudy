@@ -457,3 +457,19 @@ Emoji in the PDF; check they aren't tofu in review. Rendered + UPLOADED.
 **Phase 4: 4 of 14 docs done both languages — success page serves 8 files.
 Both parents' guide cross-references now resolve to real docs.** Remaining:
 9 subject sheets (verify + sign-off each) + APS worksheet.
+
+### 2026-07-12 — APS Target Worksheet EN + AF in & uploaded
+Adriaan supplied both (`matric-2026/aps-worksheet-{EN,AF}.md`, approved
+sources). Content sanity-checked before merge: 7-level table = standard
+NSC achievement scale ✓; worked example arithmetic ✓ (best-6 excl LO = 31,
+three boundary subjects close the 3-point gap to 34); university-variable
+rules (LO counting, subject minimums) properly hedged in-copy → no
+verification report needed. Canonical files sort 12. Formatting fix: his
+consecutive `> **Field:** ___` fill-in lines would merge into one line
+(marked gfm, breaks off) — separated with `>` blank lines so each renders
+as its own paragraph inside the callout write-in box. References the free
+APS Calculator at nexistudy.co.za/matric (live feature ✓). Rendered +
+UPLOADED. **Phase 4: 5 of 14 docs done both languages — 10 files live.
+All that remains: the 9 subject sheets** (verification report + sign-off
+each; English sheet EN-only, Afrikaans sheet AF-only → 8 PDFs ×2 + 2 = 16
+files to come, 26 total when complete).
