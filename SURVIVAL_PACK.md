@@ -458,6 +458,23 @@ Emoji in the PDF; check they aren't tofu in review. Rendered + UPLOADED.
 Both parents' guide cross-references now resolve to real docs.** Remaining:
 9 subject sheets (verify + sign-off each) + APS worksheet.
 
+### 2026-07-12 — R5 LIVE PAYFAST TEST PASSED ✅
+Full loop verified on live PayFast: checkout → payment (pf 314088041) →
+ITN signature/amount validation → purchase marked paid → token success
+page → signed download URLs generated. Two failed attempts first: (1) an
+earlier R5 paid against a purchase row that had been manually deleted in
+Supabase mid-test (money at PayFast, refundable); (2) the /pack buy form
+hangs at the browser POST to www.payfast.co.za/eng/process on Adriaan's
+desktop AND phone-on-mobile-data, while scripted POSTs 302 instantly and
+direct payment.payfast.io session links work every time — OPEN ISSUE,
+debug next with headful Chrome watching the network tab. Delivery email
+still unsent: RESEND_API_KEY was never set on Vercel (local only). Price
+restored to R199. Also done today: account-page mailto → nexi@forgesystems
+behind displayed support@nexistudy.co.za; Adriaan opened a NEW Resend
+account — plan is to verify nexistudy.co.za on it (do NOT add
+forgesystems.co.za there: DNS collision would break the old account that
+BosworthQuote sends through).
+
 ### 2026-07-12 — APS Target Worksheet EN + AF in & uploaded
 Adriaan supplied both (`matric-2026/aps-worksheet-{EN,AF}.md`, approved
 sources). Content sanity-checked before merge: 7-level table = standard
