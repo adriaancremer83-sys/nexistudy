@@ -602,6 +602,52 @@ Remaining: 3 sheets** — History (sort 9), English EN-only (10),
 Afrikaans AF-only (11). The two language sheets ship as SINGLE PDFs
 (no cross-language pair).
 
+### 2026-07-13 — Afrikaans (AF-only) in & uploaded — PACK CONTENT COMPLETE
+Adriaan supplied it as FINAL (`matric-2026/afrikaans-AF-FINAL.md`), single
+sheet covering BOTH Huistaal (HT) and Eerste Addisionele Taal (EAT).
+Facts sanity-checked vs the NSC Afrikaans format — three papers, both HT and
+EAT total 250: HT V1 2u/70, V2 2,5u/80, V3 2,5u/100; EAT V1 2u/80, V2
+2u/70, V3 2,5u/100. ONE FIX applied + flagged (same slip as English): his
+table had **EAT Vraestel 3 (Skryfwerk) as 2 uur → corrected to 2,5 uur**
+(NSC EAT writing paper is 2,5u, same as HT). Canonical `af/afrikaans.md`
+sort 11, AF-only (no EN pair); Killers heading aligned "Die Moordenaars" →
+"Die Puntevreters" per pack standard. 6 sections. Rendered + UPLOADED.
+**Phase 4 CONTENT COMPLETE: 14 of 14 docs done — 26 files live.** Success
+page now serves the full pack. Remaining items are operational, not content
+(see the launch-gate list in earlier logs: DMARC record, AF native-speaker
+pass on the /pack SALES PAGE copy, headful-Chrome debug of the browser POST
+to legacy PayFast).
+
+### 2026-07-13 — English (EN-only) in & uploaded
+Adriaan supplied it as FINAL (`matric-2026/english-EN-FINAL.md`), single
+sheet covering BOTH Home Language (HL) and First Additional Language (FAL).
+Facts sanity-checked vs the NSC English format — three papers, both HL and
+FAL total 250: HL P1 2h/70, P2 2.5h/80, P3 2.5h/100; FAL P1 2h/80, P2
+2h/70, P3 2.5h/100. ONE FIX applied + flagged: his table had **FAL Paper 3
+(Writing) as 2 hours → corrected to 2.5 hours** (NSC FAL writing paper is
+2½h, same as HL). Everything else (paper count, HL/FAL mark splits, section
+make-up) correct; kept his hedge line under the table. Canonical
+`en/english.md` sort 10, EN-only (no AF pair). 6 sections. Rendered +
+UPLOADED. **Phase 4: 13 of 14 docs done — 25 files live. Remaining: 1
+sheet** — Afrikaans (AF-only, sort 11), ships as a SINGLE PDF.
+
+### 2026-07-13 — History EN + AF in & uploaded
+Adriaan supplied both as FINAL (`matric-2026/history-{EN,AF}-FINAL.md`).
+Facts sanity-checked against the standard NSC History format — all match:
+two papers 3h/150 each, Section A source-based + Section B essays, answer
+THREE × 50-mark questions (≥1 source + ≥1 essay, ~1 hr each, learner
+chooses topics), content split by era (Cold War, Independent Africa,
+civil resistance, coming of democracy/TRC, new world order). No blocking
+flags. One soft note left as-is per his wording: the "8-mark paragraph"
+easy-mark says ~80 words (DBE guidance for that paragraph varies, some
+papers say ~130 words / 8 lines; 8 marks is the fact that matters).
+Canonical `{en,af}/history.md` sort 9; AF Killers heading aligned
+"Die Moordenaars" → "Die Puntevreters" per pack standard. 6 sections
+(≤9 H2 limit fine). Rendered + UPLOADED. **Phase 4: 12 of 14 docs done —
+24 files live. Remaining: 2 sheets** — English (EN-only, sort 10) and
+Afrikaans (AF-only, sort 11), each shipping as a SINGLE PDF (no
+cross-language pair).
+
 ### 2026-07-12 — APS Target Worksheet EN + AF in & uploaded
 Adriaan supplied both (`matric-2026/aps-worksheet-{EN,AF}.md`, approved
 sources). Content sanity-checked before merge: 7-level table = standard
