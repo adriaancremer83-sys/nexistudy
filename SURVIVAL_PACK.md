@@ -590,6 +590,18 @@ becomes internal control + ethics), re-rendered, re-UPLOADED. FINAL
 source files left as supplied (archive of what Adriaan sent); canonical
 files are the corrected shipping truth.
 
+### 2026-07-13 — Life Sciences EN + AF in & uploaded
+Adriaan supplied both as FINAL (`matric-2026/life-sciences-{EN,AF}-
+FINAL.md`). Facts match DBE Life Sciences guidelines: P1/P2 each 2.5h/150,
+Section A 50 (objective) + Section B 100 (2×50), cognitive 40/25/20/15,
+P2 Genetics 48 + Evolution 54 = 102, P1 Responding-to-environment(humans)
+54 biggest block. No flags. Canonical `{en,af}/life-sciences.md` sort 5;
+AF Moordenaars→Puntevreters; consecutive bold weighting lines separated.
+Rendered + UPLOADED. **Phase 4: 11 of 14 docs done — 22 files live.
+Remaining: 3 sheets** — History (sort 9), English EN-only (10),
+Afrikaans AF-only (11). The two language sheets ship as SINGLE PDFs
+(no cross-language pair).
+
 ### 2026-07-12 — APS Target Worksheet EN + AF in & uploaded
 Adriaan supplied both (`matric-2026/aps-worksheet-{EN,AF}.md`, approved
 sources). Content sanity-checked before merge: 7-level table = standard
