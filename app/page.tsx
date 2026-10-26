@@ -212,10 +212,14 @@ export default async function HomePage() {
               <br className="hidden sm:block" /> who knows{" "}
               <span className="italic text-[#00D4FF]">your syllabus</span>
             </h1>
-            <p className="text-lg sm:text-xl text-white/65 mb-10 max-w-xl mx-auto md:mx-0 leading-relaxed">
+            <p className="text-lg sm:text-xl text-white/65 mb-4 max-w-xl mx-auto md:mx-0 leading-relaxed">
               Nexi is built for South African learners — CAPS now, with IEB and
               Cambridge coming soon — Grade 8 to matric, in the language you think
               in. Sit down stressed, stand up ready.
+            </p>
+            <p className="mb-10 text-base text-white/55 max-w-xl mx-auto md:mx-0 leading-relaxed">
+              Writing end-of-year exams? Whether you&apos;re in Grade 8 or matric,
+              Nexi works through past papers with you, one paper at a time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Link
@@ -277,23 +281,22 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ── SURVIVAL PACK STRIP ── */}
-      <Link
-        href="/pack"
-        className="group block bg-[#FFB454]/[0.07] border-y border-[#FFB454]/25 px-4 py-4 transition-colors hover:bg-[#FFB454]/[0.11]"
-      >
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center">
+      {/* ── EXAM SEASON STRIP ── */}
+      <div className="bg-[#FFB454]/[0.07] border-y border-[#FFB454]/25 px-4 py-4">
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-4 text-center">
           <span className="text-[#FFB454] text-xs font-bold uppercase tracking-widest">
-            New · Matric Prelim Survival Pack
+            Exam season
           </span>
           <span className="text-white/80 text-sm font-medium">
-            Seven weeks, ten subjects, one plan — for learners and parents, in English &amp; Afrikaans.
+            Matrics are in finals and Grades 8–11 write in November — revise the papers that are still coming.
           </span>
-          <span className="text-[#FFB454] text-sm font-bold whitespace-nowrap group-hover:translate-x-0.5 transition-transform">
-            R199 once-off →
+          <span className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm font-bold text-[#FFB454]">
+            <Link href="/nexi-tutor" className="whitespace-nowrap hover:underline">Ask Nexi →</Link>
+            <Link href="/past-papers" className="whitespace-nowrap hover:underline">Past papers →</Link>
+            <Link href="/practice" className="whitespace-nowrap hover:underline">Practice quizzes →</Link>
           </span>
         </div>
-      </Link>
+      </div>
 
       {/* ── 2. STATS STRIP ── */}
       <section className="py-16 px-4 border-y border-white/[0.06]">

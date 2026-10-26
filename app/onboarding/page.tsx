@@ -114,7 +114,9 @@ export default function OnboardingPage() {
       // Refresh the session so the dashboard/Study Pro see the new values
       // without forcing a re-login.
       await update({ language, grade, school, subjects, onboarded: true });
-      router.push("/studypro");
+      // /welcome pitches Premium to new Free learners (Premium → straight on
+      // to /studypro).
+      router.push("/welcome");
     } catch {
       setError("Something went wrong. Please try again.");
       setSaving(false);

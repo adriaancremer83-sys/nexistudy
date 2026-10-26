@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Nexi from "@/components/Nexi";
-import ExamCountdown from "@/components/ExamCountdown";
-import PackBuyButton from "@/components/PackBuyButton";
+import Link from "next/link";
+import PackWaitlistForm from "@/components/PackWaitlistForm";
 import Reveal from "@/components/Reveal";
 
 type Lang = "en" | "af";
@@ -12,20 +12,19 @@ type Lang = "en" | "af";
 // before launch (same rule as the pack documents themselves).
 const COPY = {
   en: {
-    countdownDays: "days to Prelims",
-    countdownHere: "Prelims are here — go get them 🍀",
+    seasonBadge: "Prelim season 2026 is over · back for 2027",
     kicker: "Matric Prelim Survival Pack",
     h1a: "Seven weeks.",
     h1b: "Ten subjects. One plan.",
-    sub: "A printable pack that turns the countdown to prelims into a week-by-week plan — for the learner AND the parent. In English and Afrikaans.",
-    heroCta: "Get the Pack",
-    heroNote: "Once-off. Delivered to your email in minutes. No account needed.",
+    sub: "The printable pack that turns the countdown to prelims into a week-by-week plan — for the learner AND the parent, in English and Afrikaans. The 2026 edition is closed; join the waitlist and we'll email you when the 2027 pack opens.",
+    heroCta: "Join the 2027 waitlist",
+    heroNote: "One email when it opens. No spam.",
     insideTitle: "What's inside",
     inside: [
       {
         title: "The 7-Week Countdown Planner",
         tag: "The hero document",
-        body: "13 July to 29 August, week by week. This is the one that goes on the fridge.",
+        body: "From the start of Term 3 up to prelims, week by week. This is the one that goes on the fridge.",
       },
       {
         title: "10 Subject Strategy Sheets",
@@ -52,56 +51,61 @@ const COPY = {
     anchorBody:
       "One hour with a private tutor costs R250–R400 and covers one subject, once. The Survival Pack costs R199 — once — and structures all ten subjects for the full seven weeks.",
     anchorPrice: "R199",
-    anchorPriceNote: "once-off · every document · both languages",
+    anchorPriceNote: "2026 price · once-off · every document · both languages",
     parentsTitle: "Built for parents too",
     parentsBody:
       "You don't need to remember matric maths to be the reason your child stays on track. The pack tells you what's happening each week, what to ask on Sunday evenings, and what actually helps in the last 48 hours before each paper.",
     howTitle: "How it works",
     how: [
-      "Pay securely with PayFast — card or instant EFT.",
-      "Your download link arrives by email within minutes.",
-      "Print it, stick it on the fridge, start Monday.",
+      "Join the waitlist with your email.",
+      "We email you once when the 2027 pack opens.",
+      "Start your seven weeks at the beginning of Term 3.",
     ],
     premiumNote: "Already a Nexi Tutor Premium member? The pack is included with your subscription — find it on your dashboard.",
     faqTitle: "Quick questions",
     faq: [
       {
         q: "Will it match my school's prelim?",
-        a: "Prelims are set by your province or school, but they follow the national exam format — the strategy sheets apply to any prelim. The planner is dated for prelims starting 29 August.",
+        a: "Prelims are set by your province or school, but they follow the national exam format — the strategy sheets apply to any prelim. The 2027 planner will be dated once the prelim dates are out.",
       },
       {
         q: "Grade 10 or 11?",
-        a: "This pack is for matrics. Grade 10 and 11 versions are coming after the prelim season.",
+        a: "This pack is for matrics. Grade 10 and 11 versions are planned — join the waitlist to hear first.",
+      },
+      {
+        q: "Writing finals right now?",
+        a: "The pack is built for prelims, but Nexi Tutor and the past papers are open now — work through the papers you still have to write.",
       },
       {
         q: "Do I need a NexiStudy account?",
         a: "No. Pay with any email address and the pack is delivered there. An account only adds the online extras.",
       },
     ],
-    buyTitle: "Get the Survival Pack",
-    buySub: "Instant delivery to your email. English and Afrikaans included.",
-    emailLabel: "Delivery email",
+    buyTitle: "Join the 2027 waitlist",
+    buySub: "Be first to know when the 2027 Survival Pack opens.",
+    emailLabel: "Your email",
     emailPlaceholder: "you@example.com",
-    cta: "Get the Pack — R199",
-    redirecting: "Taking you to PayFast…",
+    cta: "Join the waitlist",
+    saving: "Saving…",
+    done: "You're on the list — we'll email you when the 2027 pack opens.",
+    finalsLink: "Writing finals now? Revise with Nexi Tutor →",
     cancelled: "Payment cancelled — no money moved. Ready when you are.",
-    signoff: "Prelims: 29 August. Every mark is a decision.",
+    signoff: "Finals are on. Every mark is a decision.",
   },
   af: {
-    countdownDays: "dae tot Rekord",
-    countdownHere: "Rekord is hier — gaan wys hulle 🍀",
+    seasonBadge: "Rekordseisoen 2026 is verby · terug in 2027",
     kicker: "Matriek Rekord Oorlewingspak",
     h1a: "Sewe weke.",
     h1b: "Tien vakke. Een plan.",
-    sub: "'n Drukbare pak wat die aftelling na die rekordeksamen omskep in 'n week-vir-week plan — vir die leerder ÉN die ouer. In Afrikaans en Engels.",
-    heroCta: "Kry die Pak",
-    heroNote: "Eenmalig. Binne minute in jou e-pos. Geen rekening nodig nie.",
+    sub: "Die drukbare pak wat die aftelling na die rekordeksamen omskep in 'n week-vir-week plan — vir die leerder ÉN die ouer, in Afrikaans en Engels. Die 2026-uitgawe is gesluit; sluit by die waglys aan en ons e-pos jou wanneer die 2027-pak oopmaak.",
+    heroCta: "Sluit by die 2027-waglys aan",
+    heroNote: "Een e-pos wanneer dit oopmaak. Geen gemors nie.",
     insideTitle: "Wat's binne-in",
     inside: [
       {
         title: "Die 7-Week Aftelbeplanner",
         tag: "Die hoofdokument",
-        body: "13 Julie tot 29 Augustus, week vir week. Hierdie een gaan teen die yskas.",
+        body: "Van die begin van die derde kwartaal tot by die rekordeksamen, week vir week. Hierdie een gaan teen die yskas.",
       },
       {
         title: "10 Vakstrategie-blaaie",
@@ -128,40 +132,46 @@ const COPY = {
     anchorBody:
       "Een uur by 'n privaat tutor kos R250–R400 en dek een vak, een keer. Die Oorlewingspak kos R199 — een keer — en struktureer al tien vakke vir die volle sewe weke.",
     anchorPrice: "R199",
-    anchorPriceNote: "eenmalig · elke dokument · albei tale",
+    anchorPriceNote: "2026-prys · eenmalig · elke dokument · albei tale",
     parentsTitle: "Ook vir ouers gebou",
     parentsBody:
       "Jy hoef nie matriekwiskunde te onthou om die rede te wees dat jou kind op koers bly nie. Die pak sê vir jou wat elke week gebeur, wat om Sondagaande te vra, en wat werklik help in die laaste 48 uur voor elke vraestel.",
     howTitle: "Hoe dit werk",
     how: [
-      "Betaal veilig met PayFast — kaart of kits-EFT.",
-      "Jou aflaaiskakel kom binne minute per e-pos.",
-      "Druk dit, sit dit teen die yskas, begin Maandag.",
+      "Sluit met jou e-posadres by die waglys aan.",
+      "Ons e-pos jou een keer wanneer die 2027-pak oopmaak.",
+      "Begin jou sewe weke aan die begin van die derde kwartaal.",
     ],
     premiumNote: "Reeds 'n Nexi Tutor Premium-lid? Die pak is by jou subskripsie ingesluit — kry dit op jou paneelbord.",
     faqTitle: "Vinnige vrae",
     faq: [
       {
         q: "Sal dit by my skool se rekord pas?",
-        a: "Rekordeksamens word deur jou provinsie of skool opgestel, maar hulle volg die nasionale eksamenformaat — die strategie-blaaie geld vir enige rekord. Die beplanner is gedateer vir rekords wat 29 Augustus begin.",
+        a: "Rekordeksamens word deur jou provinsie of skool opgestel, maar hulle volg die nasionale eksamenformaat — die strategie-blaaie geld vir enige rekord. Die 2027-beplanner word gedateer sodra die rekorddatums bekend is.",
       },
       {
         q: "Graad 10 of 11?",
-        a: "Hierdie pak is vir matrieks. Graad 10- en 11-weergawes kom ná die rekordseisoen.",
+        a: "Hierdie pak is vir matrieks. Graad 10- en 11-weergawes word beplan — sluit by die waglys aan om eerste te hoor.",
+      },
+      {
+        q: "Skryf jy nou eindeksamen?",
+        a: "Die pak is vir die rekordeksamen gebou, maar Nexi Tutor en die vorige vraestelle is nou oop — werk deur die vraestelle wat jy nog moet skryf.",
       },
       {
         q: "Het ek 'n NexiStudy-rekening nodig?",
         a: "Nee. Betaal met enige e-posadres en die pak word daar afgelewer. 'n Rekening voeg net die aanlyn ekstras by.",
       },
     ],
-    buyTitle: "Kry die Oorlewingspak",
-    buySub: "Kitsaflewering na jou e-pos. Afrikaans en Engels ingesluit.",
-    emailLabel: "Afleweringse-pos",
+    buyTitle: "Sluit by die 2027-waglys aan",
+    buySub: "Wees die eerste om te hoor wanneer die 2027-Oorlewingspak oopmaak.",
+    emailLabel: "Jou e-pos",
     emailPlaceholder: "jy@voorbeeld.com",
-    cta: "Kry die Pak — R199",
-    redirecting: "Ons neem jou na PayFast…",
+    cta: "Sluit aan",
+    saving: "Stoor…",
+    done: "Jy is op die lys — ons e-pos jou wanneer die 2027-pak oopmaak.",
+    finalsLink: "Skryf jy nou eindeksamen? Hersien met Nexi Tutor →",
     cancelled: "Betaling gekanselleer — geen geld het beweeg nie. Reg wanneer jy is.",
-    signoff: "Rekord: 29 Augustus. Elke punt is 'n besluit.",
+    signoff: "Eindeksamens is hier. Elke punt is 'n besluit.",
   },
 } as const;
 
@@ -196,10 +206,9 @@ export default function PackLanding({ cancelled }: { cancelled: boolean }) {
           )}
 
           <div className="flex justify-center mb-5">
-            <ExamCountdown
-              variant="inline"
-              labels={{ days: t.countdownDays, here: t.countdownHere }}
-            />
+            <p className="inline-flex items-center rounded-full border border-[#FFB454]/30 bg-[#FFB454]/[0.08] px-4 py-1.5 text-sm font-semibold text-[#FFB454]">
+              {t.seasonBadge}
+            </p>
           </div>
 
           <p className="text-[#00D4FF] text-sm font-bold uppercase tracking-[0.2em] mb-4">{t.kicker}</p>
@@ -212,7 +221,7 @@ export default function PackLanding({ cancelled }: { cancelled: boolean }) {
             href="#buy"
             className="inline-block px-9 py-4 rounded-full bg-[#FFB454] text-[#0A1628] font-extrabold text-lg hover:opacity-90 transition-opacity"
           >
-            {t.heroCta} — R199
+            {t.heroCta}
           </a>
           <p className="text-white/40 text-sm mt-4">{t.heroNote}</p>
         </div>
@@ -316,12 +325,18 @@ export default function PackLanding({ cancelled }: { cancelled: boolean }) {
         <div className="max-w-md mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-2">{t.buyTitle}</h2>
           <p className="text-white/50 text-sm mb-8">{t.buySub}</p>
-          <PackBuyButton
+          <PackWaitlistForm
+            key={lang}
+            language={lang}
             cta={t.cta}
             emailLabel={t.emailLabel}
             emailPlaceholder={t.emailPlaceholder}
-            redirecting={t.redirecting}
+            saving={t.saving}
+            done={t.done}
           />
+          <Link href="/nexi-tutor" className="inline-block mt-6 text-sm font-bold text-[#00D4FF] hover:underline">
+            {t.finalsLink}
+          </Link>
           <p className="text-white/35 text-sm mt-10 italic">{t.signoff}</p>
         </div>
       </section>

@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { buildPackCheckout, payfastConfig } from "@/lib/payfast";
-import { createPendingPurchase, getActiveProduct, MATRIC_PACK_SLUG } from "@/lib/pack";
+import { createPendingPurchase, getActiveProduct, MATRIC_PACK_SLUG, PACK_ON_SALE } from "@/lib/pack";
 
 // Needs Node (crypto in lib/payfast), not the edge runtime.
 export const runtime = "nodejs";
@@ -12,6 +12,14 @@ export const runtime = "nodejs";
 // { processUrl, fields } shape as /api/payfast/checkout so the client can POST
 // a hidden form to PayFast (see components/SubscribeButton.tsx).
 export async function POST(req: NextRequest) {
+  // Closed between seasons — a cached /pack page must not be able to sell.
+  if (!PACK_ON_SALE) {
+    return NextResponse.json(
+      { error: "The Survival Pack is closed until the 2027 season. Join the waitlist on /pack." },
+      { status: 503 }
+    );
+  }
+
   const cfg = payfastConfig();
   if (!cfg.merchantId || !cfg.merchantKey) {
     return NextResponse.json(

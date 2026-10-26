@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase";
-import { markPremium, markFree } from "@/lib/users";
+import { markPremium, markFree, markCancelled } from "@/lib/users";
 import {
   parseItn,
   itnSignatureValid,
@@ -44,8 +44,12 @@ export async function POST(req: NextRequest) {
     return new NextResponse("Invalid signature", { status: 400 });
   }
 
-  // 4) Validate the gross amount matches what we charge.
-  if (!itnAmountValid(data)) {
+  const status = (data.payment_status || "").toUpperCase();
+
+  // 4) Validate the gross amount matches what we charge — for payments only.
+  // A CANCELLED/FAILED ITN needn't carry R199, and rejecting it would leave the
+  // learner on Premium. Signature + server confirmation still guard those.
+  if (status === "COMPLETE" && !itnAmountValid(data)) {
     console.warn("PayFast ITN rejected: amount mismatch", data.amount_gross);
     return new NextResponse("Invalid amount", { status: 400 });
   }
@@ -60,7 +64,6 @@ export async function POST(req: NextRequest) {
   // Resolve the user: custom_str1 carries the id; fall back to the m_payment_id
   // prefix only if needed (the id is a UUID, so prefer custom_str1).
   const userId = data.custom_str1 || null;
-  const status = (data.payment_status || "").toUpperCase();
   const pfPaymentId = data.pf_payment_id || null;
 
   // 6) Idempotency: if we've already recorded this pf_payment_id, ack and stop.
@@ -97,8 +100,12 @@ export async function POST(req: NextRequest) {
         token: data.token ?? null,
         mPaymentId: data.m_payment_id ?? null,
       });
-    } else if (status === "CANCELLED" || status === "FAILED") {
-      // Cancellation or a failed renewal → back to free.
+    } else if (status === "CANCELLED") {
+      // Cancelled → keep Premium for the month already paid; getSubscription
+      // drops them to free once premium_until passes.
+      await markCancelled(userId);
+    } else if (status === "FAILED") {
+      // Failed renewal → back to free.
       await markFree(userId);
     }
     // PENDING and other statuses are recorded but don't change access.

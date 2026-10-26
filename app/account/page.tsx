@@ -88,6 +88,14 @@ export default async function AccountPage() {
                     {sub.status === "active" ? "Active — renews monthly" : sub.status}
                   </span>
                 </div>
+                {sub.status === "cancelled" && sub.premiumUntil && (
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-white/50">Premium until</span>
+                    <span className="text-white font-semibold">
+                      {formatDate(sub.premiumUntil)}
+                    </span>
+                  </div>
+                )}
               </>
             )}
 

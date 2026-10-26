@@ -8,6 +8,13 @@ import { supabaseAdmin } from "./supabase";
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const MATRIC_PACK_SLUG = "matric-prelim-2026";
+
+// Master switch for NEW sales. Off between seasons (2026 prelims are over;
+// /pack shows the 2027 waitlist instead). Deliberately NOT the product's
+// `active` flag — /pack/premium reads the product via getActiveProduct, so
+// deactivating it would cut off Premium members' downloads. Existing buyers'
+// download links and in-flight PayFast ITNs are unaffected by this switch.
+export const PACK_ON_SALE = false;
 const PACK_BUCKET = "pack-files";
 const SIGNED_URL_TTL_SECONDS = 60 * 60; // 1 hour, per spec
 

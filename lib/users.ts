@@ -175,20 +175,48 @@ export interface SubscriptionInfo {
   status: "none" | "active" | "cancelled";
   startedAt: string | null;
   token: string | null;
+  // Paid-through date (last verified payment + PREMIUM_GRACE_DAYS). null = no
+  // expiry on record (pre-migration or manually upgraded accounts).
+  premiumUntil: string | null;
 }
 
+// One monthly cycle plus a few days for the renewal ITN to land.
+const PREMIUM_GRACE_DAYS = 33;
+
 export async function getSubscription(userId: string): Promise<SubscriptionInfo> {
-  const { data } = await supabaseAdmin
+  let { data, error } = await supabaseAdmin
     .from("users")
-    .select("plan, subscription_status, subscription_started_at, payfast_token")
+    .select("plan, subscription_status, subscription_started_at, payfast_token, premium_until")
     .eq("id", userId)
     .maybeSingle();
+  // supabase-premium-until-setup.sql not run yet → read without the column
+  // rather than treating every Premium learner as Free.
+  if (error) {
+    ({ data } = await supabaseAdmin
+      .from("users")
+      .select("plan, subscription_status, subscription_started_at, payfast_token")
+      .eq("id", userId)
+      .maybeSingle());
+  }
+
+  let plan = (data?.plan as "free" | "premium") ?? "free";
+  let status = (data?.subscription_status as SubscriptionInfo["status"]) ?? "none";
+  const premiumUntil: string | null = data?.premium_until ?? null;
+
+  // Paid period over (cancelled, or a renewal PayFast never reported) → Free.
+  // This is the backstop: it doesn't rely on a cancellation ITN ever arriving.
+  if (plan === "premium" && premiumUntil && new Date(premiumUntil).getTime() < Date.now()) {
+    await markFree(userId);
+    plan = "free";
+    status = "cancelled";
+  }
 
   return {
-    plan: (data?.plan as "free" | "premium") ?? "free",
-    status: (data?.subscription_status as SubscriptionInfo["status"]) ?? "none",
+    plan,
+    status,
     startedAt: data?.subscription_started_at ?? null,
     token: data?.payfast_token ?? null,
+    premiumUntil,
   };
 }
 
@@ -205,6 +233,7 @@ export async function markPremium(
   };
   if (opts.token) update.payfast_token = opts.token;
   if (opts.mPaymentId) update.payfast_m_payment_id = opts.mPaymentId;
+  const paidThrough = new Date(Date.now() + PREMIUM_GRACE_DAYS * 86_400_000).toISOString();
 
   // Set the start date only if it isn't already set (don't reset it on renewal).
   const { data: existing } = await supabaseAdmin
@@ -216,7 +245,12 @@ export async function markPremium(
     update.subscription_started_at = new Date().toISOString();
   }
 
-  const { error } = await supabaseAdmin.from("users").update(update).eq("id", userId);
+  let { error } = await supabaseAdmin
+    .from("users")
+    .update({ ...update, premium_until: paidThrough })
+    .eq("id", userId);
+  // Column missing (migration not run yet) — still grant Premium.
+  if (error) ({ error } = await supabaseAdmin.from("users").update(update).eq("id", userId));
   if (error) {
     console.error("markPremium failed:", error.message);
     return false;
@@ -238,8 +272,8 @@ export async function markFree(userId: string): Promise<boolean> {
 }
 
 // Mark the subscription cancelled but keep premium until the period lapses (the
-// learner already paid for the current month). A future failed/cancelled ITN
-// downgrades the plan itself.
+// learner already paid for the current month). getSubscription downgrades the
+// plan once premium_until passes.
 export async function markCancelled(userId: string): Promise<boolean> {
   const { error } = await supabaseAdmin
     .from("users")

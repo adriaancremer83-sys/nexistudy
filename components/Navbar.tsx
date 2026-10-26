@@ -16,10 +16,9 @@ const TOOL_LINKS = [
   { label: "Mark Answer", href: "/mark" },
   { label: "Past Papers", href: "/past-papers" },
 ];
-const END_LINKS = [
-  { label: "Survival Pack", href: "/pack" },
-  { label: "Pricing", href: "/pricing" },
-];
+// The Survival Pack is off sale between seasons (see lib/pack.ts PACK_ON_SALE)
+// — re-add { label: "Survival Pack", href: "/pack" } here when it reopens.
+const END_LINKS = [{ label: "Pricing", href: "/pricing" }];
 
 export default function Navbar() {
   const pathname = usePathname();

@@ -116,7 +116,7 @@ export default async function PackSuccessPage({
       </div>
 
       <p className="text-white/40 text-sm mt-10">
-        Prelims: 29 August. Every mark is a decision.
+        Finals are on. Every mark is a decision.
       </p>
     </Shell>
   );

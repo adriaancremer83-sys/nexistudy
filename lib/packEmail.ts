@@ -99,7 +99,7 @@ export function renderPackEmail(downloadUrl: string): {
           <!-- Footer -->
           <tr>
             <td style="padding:18px 32px;border-top:1px solid #e7eaf3;">
-              <p style="margin:0 0 4px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:${NAVY};font-weight:bold;">Prelims: 29 August. Every mark is a decision.</p>
+              <p style="margin:0 0 4px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:${NAVY};font-weight:bold;">Finals are on. Every mark is a decision.</p>
               <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;color:#7a8699;"><a href="${siteUrl()}" style="color:#7a8699;text-decoration:underline;">nexistudy.co.za</a></p>
             </td>
           </tr>
@@ -121,7 +121,7 @@ export function renderPackEmail(downloadUrl: string): {
     "",
     "This link is yours — keep this email safe. You can come back and download the documents again any time.",
     "",
-    "Prelims: 29 August. Every mark is a decision.",
+    "Finals are on. Every mark is a decision.",
     "nexistudy.co.za",
   ].join("\n");
 
