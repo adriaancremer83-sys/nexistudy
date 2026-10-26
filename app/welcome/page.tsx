@@ -7,7 +7,9 @@ import { authOptions } from "@/lib/auth";
 import { getSubscription } from "@/lib/users";
 import Nexi from "@/components/Nexi";
 import Reveal from "@/components/Reveal";
-import SubscribeButton from "@/components/SubscribeButton";
+import PassPicker from "@/components/PassPicker";
+import ParentLinkShare from "@/components/ParentLinkShare";
+import { getOrCreatePayCode, passChoices, payLinkUrl } from "@/lib/passes";
 import { IconCheck } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -34,7 +36,7 @@ function premiumReasons(grade: string | undefined): { title: string; reasons: [s
     return {
       title: "Finals are on — this is when Premium pays for itself",
       reasons: [
-        ["Unlimited Nexi Tutor chats", "Free stops at 5 a day. Revising a whole paper takes more than that."],
+        ["50 tutor chats a day", "Free stops at 5. Revising a whole paper takes more than that."],
         ["Examiner-style marking, 15 a day", "Snap your answer and see exactly where the marks went — with a model answer."],
         ["Past-paper walkthroughs", "Step-by-step through real NSC papers, so you know what the examiner wants."],
         ["NSFAS, bursaries & career advice", "20 reports a day in Study Pro — sort out next year while you write."],
@@ -45,30 +47,22 @@ function premiumReasons(grade: string | undefined): { title: string; reasons: [s
     return {
       title: "Build the foundation now, pick the right subjects later",
       reasons: [
-        ["Unlimited Nexi Tutor chats", "Free stops at 5 a day. Ask as many questions as homework needs."],
+        ["50 tutor chats a day", "Free stops at 5. Ask as many questions as homework needs."],
         ["Full Subject Choice Advisor", "Choose Grade 10 subjects that keep the right careers open."],
         ["Foundation Gap Finder + termly reports", "Find the gaps from earlier grades before they cost marks."],
-        ["Weekly parent progress report", "Your parents see the progress without having to nag."],
+        ["Termly parent progress report", "Your parents see the progress without having to nag."],
       ],
     };
   }
   return {
     title: "Grade 10 and 11 marks shape your university options",
     reasons: [
-      ["Unlimited Nexi Tutor chats", "Free stops at 5 a day. Work through a full chapter in one go."],
+      ["50 tutor chats a day", "Free stops at 5. Work through a full chapter in one go."],
       ["Nexi's Exam Plan", "A day-by-day route to exam day, built around your subjects."],
       ["Weak-spots map + targeted practice", "Practice aimed at the topics you actually struggle with."],
       ["Examiner-style marking, 15 a day", "See where you lose marks — with a model answer."],
     ],
   };
-}
-
-function parentWhatsAppLink(): string {
-  const text =
-    "Hi! I've joined NexiStudy to help me study. Premium is R199 a month (cancel anytime) — " +
-    "it gives me unlimited help from Nexi, examiner-style marking of my answers, and you get " +
-    "a weekly progress report. Can we get it? https://www.nexistudy.co.za/pricing";
-  return `https://wa.me/?text=${encodeURIComponent(text)}`;
 }
 
 export default async function WelcomePage() {
@@ -82,6 +76,7 @@ export default async function WelcomePage() {
 
   const { title, reasons } = premiumReasons(user.grade ?? undefined);
   const firstName = (user.name ?? "").split(" ")[0];
+  const payCode = await getOrCreatePayCode(user.id);
 
   return (
     <div className="min-h-screen">
@@ -120,7 +115,7 @@ export default async function WelcomePage() {
 
           <Reveal delay={80} className="md:col-span-3">
             <div className="glass-strong rounded-2xl p-7 h-full !border-[#00D4FF]/35">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#00D4FF] mb-2">Premium · R199/month</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-[#00D4FF] mb-2">Premium · from R99 once-off</p>
               <h2 className="text-white font-bold text-xl mb-5 leading-snug">{title}</h2>
               <ul className="space-y-4">
                 {reasons.map(([head, why]) => (
@@ -139,30 +134,28 @@ export default async function WelcomePage() {
 
         {/* ── VALUE + ACTIONS ── */}
         <Reveal delay={160}>
-          <div className="rounded-2xl border border-[#FFB454]/25 bg-[#FFB454]/[0.05] p-7 text-center">
-            <p className="text-white font-bold text-lg mb-1">Less than one hour with a private tutor</p>
-            <p className="text-white/55 text-sm max-w-xl mx-auto mb-6 leading-relaxed">
-              A tutor costs R250–R400 an hour for one subject. Premium is R199 a month for every
-              subject, any time of day — and you can cancel anytime.
+          <div className="rounded-2xl border border-[#FFB454]/25 bg-[#FFB454]/[0.05] p-6 sm:p-8">
+            <p className="text-white font-bold text-lg mb-1 text-center">Less than one hour with a private tutor</p>
+            <p className="text-white/55 text-sm max-w-xl mx-auto mb-7 leading-relaxed text-center">
+              A tutor costs R250–R400 an hour for one subject. A Premium pass covers every subject,
+              any time of day. Pay once — no subscription, no card needed.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-start">
-              <SubscribeButton
-                callbackUrl="/welcome"
-                className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-[#2D6BE4] hover:bg-[#4A82F0] text-white font-extrabold transition-colors cursor-pointer disabled:opacity-70 disabled:cursor-wait"
-              >
-                Go Premium — R199/month
-              </SubscribeButton>
-              <a
-                href={parentWhatsAppLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-3.5 rounded-xl border border-[#25D366]/40 text-[#25D366] font-bold hover:bg-[#25D366]/10 transition-colors"
-              >
-                Ask a parent on WhatsApp
-              </a>
-            </div>
+            <PassPicker passes={passChoices()} signedIn askEmail={false} cta="Get Premium —" />
           </div>
         </Reveal>
+
+        {payCode && (
+          <Reveal delay={200}>
+            <div className="rounded-2xl border border-[#25D366]/30 bg-[#25D366]/[0.05] p-6 sm:p-8">
+              <p className="text-white font-bold text-lg mb-1">Want a parent to pay?</p>
+              <p className="text-white/55 text-sm leading-relaxed mb-5">
+                Send them your private link. They pay with their own email — no password, no
+                account — and Premium switches on for you.
+              </p>
+              <ParentLinkShare url={payLinkUrl(payCode)} />
+            </div>
+          </Reveal>
+        )}
 
         <p className="text-center">
           <Link href="/studypro" className="text-white/50 hover:text-white text-sm font-semibold transition-colors">

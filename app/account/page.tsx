@@ -4,7 +4,6 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import { Suspense } from "react";
 import { getSubscription } from "@/lib/users";
-import SubscribeButton from "@/components/SubscribeButton";
 import ManageSubscription from "@/components/ManageSubscription";
 import { IconStar } from "@/components/icons";
 
@@ -73,8 +72,10 @@ export default async function AccountPage() {
             {isPremium && (
               <>
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-white/50">Price</span>
-                  <span className="text-white font-semibold">R199 / month</span>
+                  <span className="text-white/50">Plan</span>
+                  <span className="text-white font-semibold">
+                    {sub.status === "none" ? "Premium pass" : "Monthly subscription"}
+                  </span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-white/50">Member since</span>
@@ -85,10 +86,14 @@ export default async function AccountPage() {
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-white/50">Status</span>
                   <span className="text-white font-semibold capitalize">
-                    {sub.status === "active" ? "Active — renews monthly" : sub.status}
+                    {sub.status === "active"
+                      ? "Active — renews monthly"
+                      : sub.status === "none"
+                        ? "Active — doesn't renew"
+                        : sub.status}
                   </span>
                 </div>
-                {sub.status === "cancelled" && sub.premiumUntil && (
+                {sub.premiumUntil && (
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-white/50">Premium until</span>
                     <span className="text-white font-semibold">
@@ -107,15 +112,15 @@ export default async function AccountPage() {
               ) : (
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                   <p className="text-white/50 text-sm flex-1">
-                    Upgrade to unlock unlimited Nexi Tutor chats, the Exam Plan,
+                    Get a Premium pass from R99 — 50 Nexi Tutor chats a day, the Exam Plan,
                     past-paper walkthroughs and more.
                   </p>
-                  <SubscribeButton
-                    callbackUrl="/account"
-                    className="px-6 py-3 rounded-xl font-bold text-sm bg-[#2D6BE4] hover:bg-[#4A82F0] text-white transition-colors cursor-pointer disabled:opacity-70 disabled:cursor-wait whitespace-nowrap"
+                  <Link
+                    href="/pricing#passes"
+                    className="px-6 py-3 rounded-xl font-bold text-sm bg-[#2D6BE4] hover:bg-[#4A82F0] text-white transition-colors whitespace-nowrap text-center"
                   >
                     Upgrade to Premium
-                  </SubscribeButton>
+                  </Link>
                 </div>
               )}
             </div>

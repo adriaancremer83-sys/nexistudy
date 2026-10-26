@@ -11,7 +11,6 @@ import { IconAcademicCap, IconCpuChip, IconChartBar, IconStar, IconLock, IconTar
 import { getWeakSpots } from "@/lib/practice";
 import { getLearnerClasses } from "@/lib/classes";
 import { getSubscription } from "@/lib/users";
-import SubscribeButton from "@/components/SubscribeButton";
 import JoinClassCard from "@/components/JoinClassCard";
 import HomeworkCard from "@/components/HomeworkCard";
 import ExamCountdown from "@/components/ExamCountdown";
@@ -89,7 +88,7 @@ export default async function DashboardPage() {
 
   const statCards = [
     { label: "APS Score", value: String(apsScore) },
-    { label: "Chats Today", value: plan === "premium" ? "Unlimited" : "5/5" },
+    { label: "Chats Today", value: plan === "premium" ? "50/day" : "5/day" },
     { label: "Study Streak", value: "🔥 1 day" },
   ];
 
@@ -137,12 +136,12 @@ export default async function DashboardPage() {
                 {plan === "premium" ? "Premium" : "Free Plan"}
               </span>
               {plan === "free" && (
-                <SubscribeButton
-                  callbackUrl="/dashboard"
-                  className="px-4 py-2 text-sm font-bold text-white bg-[#2D6BE4] hover:bg-[#4A82F0] rounded-full transition-colors cursor-pointer disabled:opacity-70 disabled:cursor-wait"
+                <Link
+                  href="/pricing#passes"
+                  className="px-4 py-2 text-sm font-bold text-white bg-[#2D6BE4] hover:bg-[#4A82F0] rounded-full transition-colors"
                 >
                   Upgrade
-                </SubscribeButton>
+                </Link>
               )}
             </div>
 
@@ -513,15 +512,15 @@ export default async function DashboardPage() {
                 <p className="text-[#00D4FF] text-xs font-bold uppercase tracking-widest mb-1.5">Unlock More</p>
                 <h3 className="text-white font-bold text-lg mb-1">You&apos;re on the Free Plan</h3>
                 <p className="text-white/50 text-sm leading-relaxed max-w-md">
-                  Upgrade for unlimited chats, Nexi&apos;s Exam Plan, past-paper walkthroughs,
-                  the Career Roadmap, and weekly parent progress reports.
+                  Upgrade for 50 chats a day, Nexi&apos;s Exam Plan, past-paper walkthroughs,
+                  examiner-style marking and the Career Roadmap — from R99, once-off.
                 </p>
               </div>
               <Link
                 href="/pricing"
                 className="flex-shrink-0 px-6 py-3 bg-[#2D6BE4] hover:bg-[#4A82F0] text-white font-bold text-sm rounded-xl transition-colors whitespace-nowrap"
               >
-                View Pricing →
+                See passes from R99 →
               </Link>
             </div>
           </Reveal>

@@ -1,13 +1,18 @@
 import Link from "next/link";
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "@/lib/auth";
 import Reveal from "@/components/Reveal";
-import SubscribeButton from "@/components/SubscribeButton";
+import PassPicker from "@/components/PassPicker";
+import ParentLinkShare from "@/components/ParentLinkShare";
 import { pageMeta } from "@/lib/seo";
+import { getSubscription } from "@/lib/users";
+import { getOrCreatePayCode, passChoices, payLinkUrl } from "@/lib/passes";
 import { IconCheck, IconLock } from "@/components/icons";
 
 export const metadata = pageMeta({
-  title: "Pricing — Free Plan & Premium",
+  title: "Pricing — Free Plan & Premium from R99",
   description:
-    "Start free: AI tutor, APS calculator, NSC past papers, plus a daily taste of AI answer-marking and career guidance. Go Premium (R199/month) for unlimited tutoring, full examiner marking, career & NSFAS guidance, and all 11 languages.",
+    "Start free: AI tutor, APS calculator, NSC past papers, plus a daily taste of AI answer-marking and career guidance. Go Premium from R99 once-off — no subscription, pay by instant EFT or card — for 50 tutor chats a day, full examiner marking, career & NSFAS guidance, and all 11 languages.",
   path: "/pricing",
 });
 
@@ -31,31 +36,35 @@ const FREE_LOCKED = [
 ];
 
 const PREMIUM_INCLUDED = [
-  "Unlimited Nexi Tutor chats",
+  "50 Nexi Tutor chats a day — 10× Free, on Nexi's smartest model",
   "Tutor in all 11 official SA languages",
   "Mark My Answer — 15 a day, full mark-by-mark breakdown + model answer",
   "Funding & career advice in Study Pro — 20 a day: NSFAS, bursaries & a personalised plan",
   "Nexi's Exam Plan — a day-by-day route to exam day",
   "Weak-spots map + practice that targets them",
   "Past-paper walkthroughs (CAPS / NSC)",
-  "Weekly parent progress report",
-  "Grade 8–9: full Subject Choice Advisor, Foundation Gap Finder + termly reports",
+  "Grade 8–9: full Subject Choice Advisor, Foundation Gap Finder + termly parent reports",
   "Ad-free + priority support",
-];
-
-const ANNUAL_INCLUDED = [
-  "Everything in Premium",
-  "Multiple learners under one account",
-  "Perfect for Grade 8–12 siblings",
-  "Save 20% on Premium price",
 ];
 
 // ── FAQ data ──────────────────────────────────────────────────────────────────
 
 const FAQS = [
   {
-    q: "Why is there a daily chat limit on the Free plan?",
-    a: "Every answer Nexi gives uses advanced AI that costs us real money. Free gives you a genuine daily study session at no cost; Premium members make unlimited help possible. No tricks.",
+    q: "Is this a subscription?",
+    a: "No. Premium is a once-off pass — 30 days, 3 months or 12 months. It never renews by itself and there's nothing to cancel. When it ends you're simply back on the Free plan, and you can buy another pass any time (it adds on to any days you still have).",
+  },
+  {
+    q: "How can I pay? I don't have a credit card.",
+    a: "You don't need one. Passes are paid through PayFast, South Africa's trusted payment gateway — instant EFT from any major bank works, as does a debit or credit card. NexiStudy never sees your banking details.",
+  },
+  {
+    q: "Can a parent pay without logging in as their child?",
+    a: "Yes. Every learner has a private payment link. Send it to a parent on WhatsApp — they choose a pass, pay with their own email, and Premium switches on for the learner automatically. They get the receipt.",
+  },
+  {
+    q: "Why is there a daily chat limit?",
+    a: "Every answer Nexi gives uses advanced AI that costs us real money. Free gives you a genuine daily study session at no cost; Premium gives you 50 chats a day on Nexi's smartest model — enough for a full evening of revision. No tricks.",
   },
   {
     q: "Which languages does Nexi speak?",
@@ -66,10 +75,6 @@ const FAQS = [
     a: "Mark My Answer marks a photo of your handwritten answer like an NSC examiner — method marks and where you lost marks. In Study Pro, Nexi also gives funding & career advice (NSFAS, bursaries and a direction for your marks). Both are free once a day; Premium unlocks 15 markings and 20 advice reports a day, in full detail. The APS calculator and university matcher are always free.",
   },
   {
-    q: "Can I cancel anytime?",
-    a: "Yes — cancel your Premium subscription at any time with no penalties or fees. You'll keep full access until the end of your current billing period, then automatically move to the Free plan.",
-  },
-  {
     q: "Is my child's data safe?",
     a: "Absolutely. NexiStudy never sells user data. All personal information is securely stored and encrypted, and we are fully POPIA compliant. Your child's privacy is our priority.",
   },
@@ -77,15 +82,37 @@ const FAQS = [
     q: "Which grades does NexiStudy support?",
     a: "Grade 8 to 12. CAPS is fully live; IEB & Cambridge are coming. Nexi covers Senior Phase (Grade 8–9) and the full FET curriculum — including a Subject Choice Advisor that helps Grade 9s pick the right Grade 10 subjects.",
   },
-  {
-    q: "Is there a cheaper option than R199 per month?",
-    a: "We're working on two: an Exam Season Pass (a once-off pass covering the build-up to mid-year and final exams) and an Annual/Family plan that covers multiple learners at a discount. Join free and we'll let you know the moment they launch.",
-  },
 ];
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
-export default function PricingPage() {
+function formatDate(iso: string): string {
+  return new Date(iso).toLocaleDateString("en-ZA", { day: "numeric", month: "long", year: "numeric" });
+}
+
+export default async function PricingPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const query = await searchParams;
+  const cancelled = query.cancelled === "1";
+
+  // Signed-in learners pay for themselves and get their parent pay link;
+  // everyone else sees the passes with a sign-up button.
+  const session = await getServerSession(authOptions);
+  const signedIn = Boolean(session?.user?.id) && session?.user?.role !== "teacher";
+  let isPremium = false;
+  let premiumUntil: string | null = null;
+  let payUrl: string | null = null;
+  if (signedIn && session?.user?.id) {
+    const sub = await getSubscription(session.user.id);
+    isPremium = sub.plan === "premium";
+    premiumUntil = sub.premiumUntil ? formatDate(sub.premiumUntil) : null;
+    const code = await getOrCreatePayCode(session.user.id);
+    payUrl = code ? payLinkUrl(code) : null;
+  }
+
   return (
     <div className="min-h-screen">
 
@@ -96,126 +123,125 @@ export default function PricingPage() {
             Pricing
           </span>
           <h1 className="text-4xl sm:text-5xl font-bold mb-3 leading-tight text-white">
-            Choose the plan that fits{" "}
-            <span className="text-gradient">your journey</span>
+            Premium from <span className="text-gradient">R99</span>, once-off
           </h1>
           <p className="text-white/60 text-lg leading-relaxed">
-            Start free. Upgrade anytime for the full NexiStudy experience.
+            Start free. When you want more, buy a pass — no subscription, no card needed,
+            nothing to cancel.
           </p>
         </div>
       </section>
 
       <div className="section-divider" />
 
-      {/* ── PLANS ── */}
-      <section className="py-12 px-4">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+      {/* ── PASSES ── */}
+      <section id="passes" className="py-12 px-4 scroll-mt-20">
+        <div className="max-w-5xl mx-auto space-y-8">
 
-          {/* ── 1. FREE ── */}
-          <Reveal className="h-full">
-            <div className="glass-card p-8 flex flex-col h-full">
-              <p className="text-xs font-bold uppercase tracking-widest text-white/40 mb-3">Free Plan</p>
-              <div className="flex items-end gap-1 mb-1">
-                <span className="text-5xl font-extrabold text-white">R0</span>
-                <span className="text-sm text-white/40 mb-1.5">/month</span>
-              </div>
-              <p className="text-xs font-semibold text-white/40 mb-6">Forever free</p>
+          {cancelled && (
+            <p className="text-center px-4 py-2 rounded-xl bg-amber-400/10 border border-amber-400/25 text-amber-300 text-sm">
+              Payment cancelled — no money moved. Ready when you are.
+            </p>
+          )}
 
-              <ul className="space-y-3 mb-6 flex-1">
-                {FREE_INCLUDED.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm text-white">
-                    <IconCheck className="w-4 h-4 mt-0.5 text-[#00D4FF] flex-shrink-0" />
-                    {f}
-                  </li>
-                ))}
-                {FREE_LOCKED.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm">
-                    <IconLock className="w-4 h-4 mt-0.5 flex-shrink-0 text-white/25" />
-                    <span className="text-white/25 select-none blur-[2px]">{f}</span>
-                  </li>
-                ))}
-              </ul>
+          {isPremium && (
+            <p className="text-center px-4 py-3 rounded-xl bg-emerald-400/10 border border-emerald-400/25 text-emerald-300 text-sm">
+              You&apos;re on Premium{premiumUntil ? ` until ${premiumUntil}` : ""}. Buying another pass adds its days on top.
+            </p>
+          )}
 
-              <Link
-                href="/signup"
-                className="text-center py-3 rounded-xl font-semibold text-sm border-2 border-[#2D6BE4] text-[#7EABFF] hover:bg-[#2D6BE4] hover:text-white transition-colors"
-              >
-                Start Free — No Credit Card Needed
-              </Link>
+          <Reveal>
+            <div className="glass-strong rounded-2xl ring-2 ring-[#00D4FF]/50 shadow-[0_0_40px_rgba(0,212,255,0.12)] p-6 sm:p-8">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#00D4FF] mb-2 text-center">Premium pass</p>
+              <h2 className="text-white font-extrabold text-2xl sm:text-3xl text-center mb-2">
+                Pay once. No subscription. No card needed.
+              </h2>
+              <p className="text-white/50 text-sm text-center mb-7">
+                Instant EFT or card through PayFast. Your pass never renews by itself.
+              </p>
+              <PassPicker passes={passChoices()} signedIn={signedIn} askEmail={false} cta="Get Premium —" />
             </div>
           </Reveal>
 
-          {/* ── 2. PREMIUM ── */}
-          <Reveal delay={120} className="h-full">
-            <div className="glass-strong rounded-2xl ring-2 ring-[#00D4FF]/60 shadow-[0_0_40px_rgba(0,212,255,0.15)] p-8 flex flex-col h-full relative overflow-hidden">
-              {/* Best Value badge */}
-              <div className="absolute top-0 right-0">
-                <div className="bg-gradient-to-r from-[#2D6BE4] to-[#00D4FF] text-white text-[10px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">
-                  Best Value
+          {/* ── PARENT LINK ── */}
+          {payUrl ? (
+            <Reveal>
+              <div className="rounded-2xl border border-[#25D366]/30 bg-[#25D366]/[0.05] p-6 sm:p-8">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#25D366] mb-2">Parent paying?</p>
+                <h3 className="text-white font-extrabold text-xl mb-2">Send them your private payment link</h3>
+                <p className="text-white/55 text-sm leading-relaxed mb-5 max-w-2xl">
+                  They don&apos;t need your password or an account. They pick the pass, pay with their
+                  own email, and Premium switches on for you automatically.
+                </p>
+                <ParentLinkShare url={payUrl} />
+              </div>
+            </Reveal>
+          ) : (
+            !signedIn && (
+              <p className="text-center text-sm text-white/50">
+                Paying for your child? Ask them to tap <span className="text-white font-semibold">&ldquo;Send to a parent&rdquo;</span> on
+                this page after they sign in — you&apos;ll get a private link to pay without logging in.
+              </p>
+            )
+          )}
+
+          {/* ── FREE vs PREMIUM ── */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+            <Reveal className="h-full">
+              <div className="glass-card p-8 flex flex-col h-full">
+                <p className="text-xs font-bold uppercase tracking-widest text-white/40 mb-3">Free Plan</p>
+                <div className="flex items-end gap-1 mb-6">
+                  <span className="text-4xl font-extrabold text-white">R0</span>
+                  <span className="text-sm text-white/40 mb-1">forever</span>
                 </div>
+                <ul className="space-y-3 mb-6 flex-1">
+                  {FREE_INCLUDED.map((f) => (
+                    <li key={f} className="flex items-start gap-2.5 text-sm text-white">
+                      <IconCheck className="w-4 h-4 mt-0.5 text-[#00D4FF] flex-shrink-0" />
+                      {f}
+                    </li>
+                  ))}
+                  {FREE_LOCKED.map((f) => (
+                    <li key={f} className="flex items-start gap-2.5 text-sm">
+                      <IconLock className="w-4 h-4 mt-0.5 flex-shrink-0 text-white/25" />
+                      <span className="text-white/25 select-none blur-[2px]">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                {!signedIn && (
+                  <Link
+                    href="/signup"
+                    className="text-center py-3 rounded-xl font-semibold text-sm border-2 border-[#2D6BE4] text-[#7EABFF] hover:bg-[#2D6BE4] hover:text-white transition-colors"
+                  >
+                    Start Free — No Card Needed
+                  </Link>
+                )}
               </div>
+            </Reveal>
 
-              <p className="text-xs font-bold uppercase tracking-widest text-[#00D4FF] mb-3">Premium Plan</p>
-              <div className="flex items-end gap-1 mb-1">
-                <span className="text-5xl font-extrabold text-white">R199</span>
-                <span className="text-sm text-white/40 mb-1.5">/month</span>
-              </div>
-              <p className="text-xs font-semibold text-[#00D4FF] mb-6">Most Popular</p>
-
-              <ul className="space-y-3 mb-8 flex-1">
-                {PREMIUM_INCLUDED.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm text-white">
-                    <IconCheck className="w-4 h-4 mt-0.5 text-[#00D4FF] flex-shrink-0" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-
-              <SubscribeButton
-                callbackUrl="/pricing"
-                className="animate-pulse-glow w-full text-center py-3.5 rounded-xl font-bold text-sm bg-[#2D6BE4] hover:bg-[#4A82F0] text-white transition-colors cursor-pointer disabled:opacity-70 disabled:cursor-wait"
-              >
-                Upgrade to Premium — R199/mo
-              </SubscribeButton>
-            </div>
-          </Reveal>
-
-          {/* ── 3. ANNUAL / FAMILY ── */}
-          <Reveal delay={240} className="h-full">
-            <div className="glass-card p-8 flex flex-col h-full relative overflow-hidden">
-              {/* Coming soon ribbon */}
-              <div className="absolute top-0 right-0">
-                <div className="bg-white/10 text-white/70 text-[10px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">
-                  Coming Soon
+            <Reveal delay={120} className="h-full">
+              <div className="glass-strong rounded-2xl p-8 flex flex-col h-full !border-[#00D4FF]/30">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#00D4FF] mb-3">Premium</p>
+                <div className="flex items-end gap-1 mb-6">
+                  <span className="text-4xl font-extrabold text-white">from R58</span>
+                  <span className="text-sm text-white/40 mb-1">/month</span>
                 </div>
+                <ul className="space-y-3 flex-1">
+                  {PREMIUM_INCLUDED.map((f) => (
+                    <li key={f} className="flex items-start gap-2.5 text-sm text-white">
+                      <IconCheck className="w-4 h-4 mt-0.5 text-[#00D4FF] flex-shrink-0" />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
               </div>
-
-              <p className="text-xs font-bold uppercase tracking-widest text-white/40 mb-3">Annual / Family</p>
-              <div className="flex items-end gap-2 mb-1">
-                <span className="text-5xl font-extrabold text-white">–20%</span>
-              </div>
-              <p className="text-xs font-semibold text-[#00D4FF] mb-6">Save 20% on Premium</p>
-
-              <ul className="space-y-3 mb-8 flex-1">
-                {ANNUAL_INCLUDED.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm text-white">
-                    <IconCheck className="w-4 h-4 mt-0.5 text-[#00D4FF] flex-shrink-0" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-
-              <button
-                disabled
-                className="text-center py-3 rounded-xl font-semibold text-sm border-2 border-white/15 text-white/30 cursor-not-allowed"
-              >
-                Notify Me
-              </button>
-            </div>
-          </Reveal>
+            </Reveal>
+          </div>
 
         </div>
+      </section>
 
+      <section className="pb-12 px-4">
         {/* ── SCHOOLS & CLASS LICENCES ── */}
         <Reveal>
           <div className="max-w-5xl mx-auto mt-8 rounded-2xl border border-[#FFB454]/30 bg-[#FFB454]/[0.05] p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative overflow-hidden">
@@ -233,7 +259,7 @@ export default function PricingPage() {
                 Full Premium for up to 35 learners from{" "}
                 <span className="text-white font-bold">R2,999/month</span> — that&apos;s
                 about <span className="text-[#FFB454] font-bold">R86 per learner</span>{" "}
-                instead of R199. Includes the teacher dashboard with the class
+                instead of R99 each. Includes the teacher dashboard with the class
                 weak-spots heatmap. Billed to the school, termly or annually.
               </p>
             </div>
@@ -255,7 +281,7 @@ export default function PricingPage() {
         </Reveal>
 
         <p className="text-center text-xs text-white/30 mt-8">
-          All prices in South African Rand (ZAR) · Billed monthly · Cancel anytime
+          All prices in South African Rand (ZAR) · Once-off payments · Nothing renews automatically
         </p>
       </section>
 
@@ -304,7 +330,7 @@ export default function PricingPage() {
             Ready to unlock your <span className="text-gradient">full potential?</span>
           </h2>
           <p className="text-white/50 mb-6 text-sm leading-relaxed">
-            Start free — no credit card. Upgrade when you&apos;re ready.
+            Start free — no card needed. Get Premium from R99 when you&apos;re ready.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link

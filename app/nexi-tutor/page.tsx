@@ -966,14 +966,18 @@ export default function NexiTutorPage() {
               ) : chatsLeft <= 0 ? (
                 <div className="text-center py-2">
                   <p className="text-sm text-white/50 mb-2">
-                    You&apos;ve used your tutor messages for today.
+                    {plan === "premium"
+                      ? "You've used today's 50 messages — Nexi is back tomorrow."
+                      : "You've used your 5 free messages for today."}
                   </p>
-                  <Link
-                    href="/pricing"
-                    className="text-sm font-semibold text-[#00D4FF] hover:text-white transition-colors"
-                  >
-                    Go Premium for more daily messages →
-                  </Link>
+                  {plan !== "premium" && (
+                    <Link
+                      href="/pricing#passes"
+                      className="text-sm font-semibold text-[#00D4FF] hover:text-white transition-colors"
+                    >
+                      Keep going with Premium — 50 a day, from R99 once-off →
+                    </Link>
+                  )}
                 </div>
               ) : (
                 <>

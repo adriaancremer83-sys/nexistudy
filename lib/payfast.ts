@@ -210,6 +210,46 @@ export function buildPackCheckout(input: PackCheckoutInput): CheckoutPayload {
   return { processUrl: cfg.processUrl, fields };
 }
 
+// ── Outgoing: once-off Premium pass checkout ────────────────────────────────
+
+export interface PassCheckoutInput {
+  passId: string; // premium_passes.id — becomes m_payment_id
+  email: string;
+  amountCents: number; // from lib/passes PASSES, never the client
+  itemName: string;
+  returnPath: string; // where PayFast sends the payer afterwards
+  cancelPath: string;
+}
+
+// Once-off, like buildPackCheckout — so PayFast offers instant EFT (and any
+// other once-off method on the account), not just cards.
+export function buildPassCheckout(input: PassCheckoutInput): CheckoutPayload {
+  const cfg = payfastConfig();
+  const base = siteUrl();
+
+  const fields: Record<string, string> = {
+    merchant_id: cfg.merchantId,
+    merchant_key: cfg.merchantKey,
+    return_url: `${base}${input.returnPath}`,
+    cancel_url: `${base}${input.cancelPath}`,
+    notify_url: `${base}/api/pass/payfast-itn`,
+    email_address: input.email,
+    m_payment_id: input.passId,
+    amount: (input.amountCents / 100).toFixed(2),
+    item_name: input.itemName,
+  };
+
+  const sigPairs = Object.entries(fields) as [string, string][];
+  if (process.env.PAYFAST_DEBUG === "true") {
+    console.log(
+      "[PayFast] pass signature base string:\n" + signatureBaseString(sigPairs, cfg.passphrase)
+    );
+  }
+  fields.signature = signature(sigPairs, cfg.passphrase);
+
+  return { processUrl: cfg.processUrl, fields };
+}
+
 // Amount check against a specific purchase (the pack ITN validates against the
 // row's amount_cents, not the subscription's fixed PREMIUM_AMOUNT).
 export function itnAmountMatchesCents(data: ItnData, amountCents: number): boolean {

@@ -213,7 +213,7 @@ export default function MatricPage() {
                   <span className="text-xs font-bold uppercase tracking-widest text-white">Premium</span>
                 </div>
                 <ul className="space-y-3 text-sm text-white/70 leading-relaxed">
-                  <li>⭐ Unlimited Nexi Tutor — step-by-step help in every subject</li>
+                  <li>⭐ 50 Nexi Tutor chats a day — step-by-step help in every subject</li>
                   <li>⭐ Mark My Answer — photograph your work, marked like an examiner</li>
                   <li>⭐ The full funding &amp; career roadmap, and a weak-spots map</li>
                   <li>⭐ Past-paper walkthroughs and exam-season practice</li>
