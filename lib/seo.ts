@@ -4,6 +4,21 @@ import type { Metadata } from "next";
 export const SITE_URL = "https://www.nexistudy.co.za";
 export const SITE_NAME = "NexiStudy";
 
+// BreadcrumbList structured data — Google shows the trail instead of the bare
+// URL in results. `items` run from the top level down, as [name, path].
+export function breadcrumbJsonLd(items: [string, string][]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map(([name, path], i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name,
+      item: `${SITE_URL}${path}`,
+    })),
+  };
+}
+
 // Builds a consistent Metadata object for a page: document title + description,
 // a canonical URL, and matching Open Graph / Twitter tags so shared links render
 // a clean preview. The social image is inherited site-wide from

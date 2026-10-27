@@ -2,9 +2,16 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, breadcrumbJsonLd } from "@/lib/seo";
 import { IconDocumentText, IconTarget } from "@/components/icons";
 import { getSubjects, getSubjectPapers, type PastPaper } from "@/lib/pastPapers";
+
+function yearRange(papers: PastPaper[]): string {
+  const years = papers.map((p) => p.year);
+  const from = Math.min(...years);
+  const to = Math.max(...years);
+  return from === to ? String(to) : `${from}–${to}`;
+}
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -19,9 +26,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const papers = getSubjectPapers(slug);
   if (papers.length === 0) return {};
   const subject = papers[0].subject;
+  const range = yearRange(papers);
+  // Afrikaans searchers look for "vraestelle en memorandums" — say it.
+  const afrikaans = slug === "afrikaans";
   return pageMeta({
-    title: `${subject} Past Exam Papers & Memos — Free Download`,
-    description: `Official Grade 12 NSC ${subject} past exam papers with memos from the Department of Basic Education. Free downloads, organised by year.`,
+    title: afrikaans
+      ? `Graad 12 Afrikaans Vraestelle & Memos (${range}) | Past Papers`
+      : `Grade 12 ${subject} Past Papers & Memos (${range})`,
+    description: afrikaans
+      ? `Gratis amptelike NSS Graad 12 Afrikaans vraestelle en memorandums (${range}) — Huistaal, Eerste en Tweede Addisionele Taal. Free official NSC Afrikaans past papers & memos, with free help from Nexi.`
+      : `Free official Grade 12 NSC ${subject} past papers and memos (${range}), November exams — download every paper with its memorandum, then get stuck questions explained step by step by Nexi, free.`,
     path: `/past-papers/${slug}`,
   });
 }
@@ -67,11 +81,25 @@ export default async function SubjectPapersPage({ params }: Props) {
   if (papers.length === 0) notFound();
 
   const subject = papers[0].subject;
+  const group = papers[0].group;
   const years = [...new Set(papers.map((p) => p.year))].sort((a, b) => b - a);
+  const range = yearRange(papers);
+  const levels = [...new Set(papers.map((p) => p.level).filter(Boolean))] as string[];
+  const related = getSubjects().filter((s) => s.group === group && s.slug !== slug);
   const levelOrder = ["HL", "FAL", "SAL"];
+
+  const breadcrumbs = breadcrumbJsonLd([
+    ["Home", "/"],
+    ["Past Papers", "/past-papers"],
+    [`${subject} Past Papers`, `/past-papers/${slug}`],
+  ]);
 
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
+      />
       <section className="page-hero py-12 px-4">
         <div className="max-w-5xl mx-auto">
           <Link
@@ -81,11 +109,13 @@ export default async function SubjectPapersPage({ params }: Props) {
             ← All subjects
           </Link>
           <h1 className="text-3xl sm:text-4xl font-bold text-white">
-            {subject} Past Papers
+            {`Grade 12 ${subject} Past Papers & Memos`}
           </h1>
-          <p className="text-white/40 text-sm mt-2 max-w-xl leading-relaxed">
-            Official Grade 12 NSC papers and memos, newest first. Work the
-            paper under exam conditions, then mark yourself with the memo.
+          <p className="text-white/50 text-sm mt-2 max-w-2xl leading-relaxed">
+            All {papers.length} official NSC {subject} November exam papers from {range}, each with
+            its memorandum
+            {levels.length > 0 && <> — {levels.map((l) => LEVEL_LABELS[l] ?? l).join(", ")}</>}.
+            Newest first. Work the paper under exam conditions, then mark yourself with the memo.
           </p>
         </div>
       </section>
@@ -171,6 +201,33 @@ export default async function SubjectPapersPage({ params }: Props) {
               </Link>
             </div>
           </Reveal>
+        )}
+
+        <section className="rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 space-y-3">
+          <h2 className="text-white font-bold text-lg">How to get the most out of {subject} past papers</h2>
+          <ol className="list-decimal list-inside space-y-1.5 text-white/55 text-sm leading-relaxed">
+            <li>Write the most recent paper first, timed, with no notes — exactly like the real exam.</li>
+            <li>Mark it yourself with the memo. Circle every question where you lost marks.</li>
+            <li>For each circled question, ask Nexi to explain it step by step until you could teach it.</li>
+            <li>A week later, redo only the questions you got wrong. Then move on to the next year.</li>
+          </ol>
+        </section>
+
+        {related.length > 0 && (
+          <nav aria-label="Related past papers" className="pt-2">
+            <h2 className="text-white/70 font-semibold text-sm mb-3">More {group === "Languages" ? "language" : group.toLowerCase()} past papers</h2>
+            <div className="flex flex-wrap gap-2">
+              {related.map((r) => (
+                <Link
+                  key={r.slug}
+                  href={`/past-papers/${r.slug}`}
+                  className="px-3.5 py-2 rounded-lg glass text-white/70 hover:text-white text-xs font-semibold transition-colors"
+                >
+                  {r.subject} past papers
+                </Link>
+              ))}
+            </div>
+          </nav>
         )}
 
         <p className="text-white/25 text-xs leading-relaxed">

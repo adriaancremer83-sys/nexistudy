@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/subject-choice", priority: 0.8, freq: "monthly" },
     { path: "/matric", priority: 0.8, freq: "monthly" },
     { path: "/nexi-tutor", priority: 0.8, freq: "monthly" },
+    { path: "/mark", priority: 0.7, freq: "monthly" },
     { path: "/past-papers", priority: 0.9, freq: "monthly" },
     { path: "/pricing", priority: 0.7, freq: "monthly" },
     { path: "/teachers", priority: 0.7, freq: "monthly" },
@@ -20,7 +21,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/contact", priority: 0.4, freq: "yearly" },
     { path: "/privacy", priority: 0.3, freq: "yearly" },
     { path: "/signup", priority: 0.5, freq: "yearly" },
-    { path: "/login", priority: 0.3, freq: "yearly" },
   ];
 
   const staticEntries: MetadataRoute.Sitemap = staticPages.map((p) => ({

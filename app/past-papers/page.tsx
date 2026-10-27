@@ -5,7 +5,7 @@ import { IconDocumentText, IconSparkles, IconChevronDown } from "@/components/ic
 import { getSubjects, GROUP_ORDER } from "@/lib/pastPapers";
 
 export const metadata = pageMeta({
-  title: "NSC Past Exam Papers & Memos — All Subjects, Free",
+  title: "Grade 12 NSC Past Papers & Memos — All Subjects, Free",
   description:
     "Download official Grade 12 NSC past exam papers and memos for Mathematics, Physical Sciences, Life Sciences, Accounting, all 11 languages and more — free, organised by grade, subject and year. Grade 10 & 11 exam-style practice included.",
   path: "/past-papers",
