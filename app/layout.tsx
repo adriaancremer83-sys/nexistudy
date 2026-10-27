@@ -8,6 +8,7 @@ import BackgroundFX from "@/components/BackgroundFX";
 import ScrollToTop from "@/components/ScrollToTop";
 import PageViewTracker from "@/components/PageViewTracker";
 import { SITE_URL, SITE_NAME } from "@/lib/seo";
+import { Analytics } from "@vercel/analytics/next";
 
 const nunito = Nunito({
   variable: "--font-app",
@@ -70,6 +71,7 @@ export default function RootLayout({
           <main className="flex-1 relative z-10">{children}</main>
           <Footer />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
