@@ -356,6 +356,14 @@ export default function NexiTutorPage() {
     setShowJump(false);
   }
 
+  // ?q=… prefills the message box (links from past papers, /welcome) so a new
+  // learner lands one tap away from their first answer. Read from location
+  // rather than useSearchParams to avoid a Suspense boundary for the page.
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search).get("q");
+    if (q) setInput(q.slice(0, 500));
+  }, []);
+
   // Seed the real remaining count from the server once signed in.
   useEffect(() => {
     if (status !== "authenticated") return;
@@ -957,7 +965,7 @@ export default function NexiTutorPage() {
                     Sign in to chat with Nexi and get step-by-step help.
                   </p>
                   <Link
-                    href="/login"
+                    href="/signup"
                     className="text-sm font-semibold text-[#00D4FF] hover:text-white transition-colors"
                   >
                     Sign in or create a free account →

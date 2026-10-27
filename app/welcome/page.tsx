@@ -7,9 +7,8 @@ import { authOptions } from "@/lib/auth";
 import { getSubscription } from "@/lib/users";
 import Nexi from "@/components/Nexi";
 import Reveal from "@/components/Reveal";
-import PassPicker from "@/components/PassPicker";
 import ParentLinkShare from "@/components/ParentLinkShare";
-import { getOrCreatePayCode, passChoices, payLinkUrl } from "@/lib/passes";
+import { getOrCreatePayCode, payLinkUrl } from "@/lib/passes";
 import { IconCheck } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -65,6 +64,31 @@ function premiumReasons(grade: string | undefined): { title: string; reasons: [s
   };
 }
 
+// One-tap first questions — the fastest way to the moment Nexi proves itself.
+// Data showed most new learners never sent a single message, so the first job
+// of this page is a first chat, not a sale.
+function starterQuestions(grade: string | undefined): string[] {
+  if (grade === "Grade 12") {
+    return [
+      "Help me make a revision plan for the finals papers I still have to write",
+      "How do I answer a 'discuss' question for full marks?",
+      "Walk me through solving a quadratic inequality step by step",
+    ];
+  }
+  if (grade === "Grade 8" || grade === "Grade 9") {
+    return [
+      "Explain the exponent laws step by step, with examples",
+      "Help me choose my Grade 10 subjects",
+      "Quiz me on photosynthesis",
+    ];
+  }
+  return [
+    "Explain Newton's second law with an everyday example",
+    "How do I balance a chemical equation? Show me step by step",
+    "Help me plan my study time for the November exams",
+  ];
+}
+
 export default async function WelcomePage() {
   const session = await getServerSession(authOptions);
   if (!session?.user) redirect("/login");
@@ -90,13 +114,34 @@ export default async function WelcomePage() {
           <h1 className="text-3xl sm:text-5xl font-extrabold text-white leading-tight mb-4">
             Welcome{firstName ? `, ${firstName}` : ""}!
           </h1>
-          <p className="text-white/60 text-lg leading-relaxed">
-            Your free account is ready. Here&apos;s what you already have — and what Premium adds.
+          <p className="text-white/60 text-lg leading-relaxed mb-8">
+            Your free account is ready. Ask Nexi your first question — tap one below or type your own.
           </p>
+          <div className="flex flex-col gap-3 max-w-xl mx-auto">
+            {starterQuestions(user.grade ?? undefined).map((q) => (
+              <Link
+                key={q}
+                href={`/nexi-tutor?q=${encodeURIComponent(q)}`}
+                className="glass-card rounded-xl px-5 py-3.5 text-left text-white/85 text-sm font-semibold hover:!border-[#00D4FF]/50 transition-colors"
+              >
+                &ldquo;{q}&rdquo; <span className="text-[#00D4FF]">→</span>
+              </Link>
+            ))}
+            <Link
+              href="/nexi-tutor"
+              className="mt-2 px-8 py-4 rounded-2xl bg-[#2D6BE4] hover:bg-[#4A82F0] text-white font-extrabold transition-colors"
+            >
+              Ask Nexi my own question
+            </Link>
+          </div>
         </div>
       </section>
 
       <div className="max-w-4xl mx-auto px-4 pb-20 space-y-8">
+        <p className="text-center text-white/40 text-xs uppercase tracking-widest font-bold pt-4">
+          When you want more
+        </p>
+
         {/* ── FREE vs PREMIUM ── */}
         <div className="grid gap-5 md:grid-cols-5">
           <Reveal className="md:col-span-2">
@@ -117,7 +162,7 @@ export default async function WelcomePage() {
             <div className="glass-strong rounded-2xl p-7 h-full !border-[#00D4FF]/35">
               <p className="text-xs font-bold uppercase tracking-widest text-[#00D4FF] mb-2">Premium · from R99 once-off</p>
               <h2 className="text-white font-bold text-xl mb-5 leading-snug">{title}</h2>
-              <ul className="space-y-4">
+              <ul className="space-y-4 mb-6">
                 {reasons.map(([head, why]) => (
                   <li key={head} className="flex gap-3">
                     <IconCheck className="w-5 h-5 shrink-0 text-[#00D4FF] mt-0.5" />
@@ -128,24 +173,18 @@ export default async function WelcomePage() {
                   </li>
                 ))}
               </ul>
+              <Link
+                href="/pricing#passes"
+                className="inline-block px-6 py-3 rounded-xl bg-[#FFB454] text-[#0A1628] font-extrabold text-sm hover:opacity-90 transition-opacity"
+              >
+                See Premium passes — from R99, no card needed
+              </Link>
             </div>
           </Reveal>
         </div>
 
-        {/* ── VALUE + ACTIONS ── */}
-        <Reveal delay={160}>
-          <div className="rounded-2xl border border-[#FFB454]/25 bg-[#FFB454]/[0.05] p-6 sm:p-8">
-            <p className="text-white font-bold text-lg mb-1 text-center">Less than one hour with a private tutor</p>
-            <p className="text-white/55 text-sm max-w-xl mx-auto mb-7 leading-relaxed text-center">
-              A tutor costs R250–R400 an hour for one subject. A Premium pass covers every subject,
-              any time of day. Pay once — no subscription, no card needed.
-            </p>
-            <PassPicker passes={passChoices()} signedIn askEmail={false} cta="Get Premium —" />
-          </div>
-        </Reveal>
-
         {payCode && (
-          <Reveal delay={200}>
+          <Reveal delay={160}>
             <div className="rounded-2xl border border-[#25D366]/30 bg-[#25D366]/[0.05] p-6 sm:p-8">
               <p className="text-white font-bold text-lg mb-1">Want a parent to pay?</p>
               <p className="text-white/55 text-sm leading-relaxed mb-5">
@@ -159,7 +198,7 @@ export default async function WelcomePage() {
 
         <p className="text-center">
           <Link href="/studypro" className="text-white/50 hover:text-white text-sm font-semibold transition-colors">
-            Continue with the free plan →
+            Explore Study Pro →
           </Link>
         </p>
       </div>

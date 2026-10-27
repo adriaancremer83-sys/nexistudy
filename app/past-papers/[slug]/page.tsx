@@ -93,6 +93,32 @@ export default async function SubjectPapersPage({ params }: Props) {
       <div className="section-divider" />
 
       <div className="max-w-5xl mx-auto px-4 py-10 space-y-6">
+        {/* Past papers are the site's biggest traffic source — turn a download
+            into a first conversation with Nexi. */}
+        <div className="rounded-2xl border border-[#FFB454]/30 bg-[#FFB454]/[0.06] p-6 flex flex-col md:flex-row md:items-center justify-between gap-5">
+          <div>
+            <h2 className="text-white font-bold text-lg mb-1">Stuck on a question from this paper?</h2>
+            <p className="text-white/55 text-sm leading-relaxed max-w-xl">
+              Type it in and Nexi explains it step by step, the CAPS way — or snap your answer and
+              get it marked like an NSC examiner would. Free to try.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-2.5 flex-shrink-0">
+            <Link
+              href={`/nexi-tutor?q=${encodeURIComponent(`I'm working through a ${subject} past paper. Please help me with this question: `)}`}
+              className="text-center px-5 py-3 bg-[#2D6BE4] hover:bg-[#4A82F0] text-white font-bold text-sm rounded-xl transition-colors whitespace-nowrap"
+            >
+              Ask Nexi →
+            </Link>
+            <Link
+              href="/mark"
+              className="text-center px-5 py-3 glass hover:bg-white/10 text-white font-bold text-sm rounded-xl transition-colors whitespace-nowrap"
+            >
+              Mark my answer
+            </Link>
+          </div>
+        </div>
+
         {years.map((year, i) => {
           const yearPapers = papers
             .filter((p) => p.year === year)
